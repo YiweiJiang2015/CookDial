@@ -101,7 +101,7 @@ Take the [dialog-000](./data/dialog/000.1.json) as example.
 It consists of 28 utterances.
 Let's look at the first user utterance:
 
-```json
+```text
 {
     "utt_id": "utt-0",
     "utterance": "Hi. What's the first step I need to take?",
