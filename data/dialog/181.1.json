@@ -1,0 +1,208 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "HI! today we are making Grandmas Wheat Germ Cookies. Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes let's start.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Good! We can start by preparing the ingredients. The first two are one and a half cup of all-purpose flourand one and a half cup of toasted wheat germ.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok I have them. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Next two ingredients are 1 cup quick-cooking oats and 1 cup packed brown sugar.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Next two ingredients are 2 teaspoons of baking powder and 1 teaspoon salt.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok I have them as well.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Great! next are half a cup of unsweetened applesauce and half a cup ofcanola oil.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Next ingredients are 2 egg, lightly beaten and 1 cup miniature chocolate chips.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-8);\r\ninform_ingredient(ing-9);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok are there more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-10\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Yes, there is one more ingredient. It's half a cup of chopped walnuts or pecans.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-10);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok cool, can we make the cookies now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-10\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Yes! take a large mixing bowl and combine the first six ingredients. They are flour, wheat germ, oats, sugar, baking powder and salt.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok what should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "You set it aside and combine the applesauce, oil and eggs.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok should I use another bowl for that?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_tool;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Sorry, I can't say. Now add the applesauce, oil and eggs mixture to  the flour mixture. Mix it well.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok I mixed all the mixtures and mixed it well.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Good! Now stir in the chocolate chip and walnuts.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok I have done that.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Good! Now drop by rounded teaspoonfuls 2 in apart onto baking sheets coated with nonstick cooking spray.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Could you repeat that, I didn't really understand.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Sure! you have to drop by rounded teaspoonfuls 2 in apart onto baking sheets. And you have to cat those baking sheets with nonstick cooking spray. Is it clear now?",
+            "bot": true,
+            "annotations": "repeat(inst-4);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok thanks for the clarification. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Next is to flatten slightly with a glass bottom coated with nonstick cooking spray.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok I have done that. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "It's now time to bake it. It will take 10 to 12 minutes at 350 degrees.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Nothing much, you just have to make sure that the edges are lightly browned and cookies are set. After that you can cool for 1 minute before removing to wire racks. And you are ready to enjoy the cookies!",
+            "bot": true,
+            "annotations": "inform_duration(cond-6-0);\r\ninform_instruction(inst-7);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok thanks I have done that. Thanks!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "It's a pleasure to give you recipes. See you later!",
+            "bot": true,
+            "annotations": "thank();\r\ngoodbye();"
+        }
+    ]
+}

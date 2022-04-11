@@ -1,0 +1,120 @@
+{
+    "id": "139",
+    "title": "Golden Cheese Yeast Bread",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "6 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"6 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 cups shredded Cheddar cheese",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 cups shredded Cheddar cheese\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 tablespoons sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 tablespoons sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 (.25 ounce) packages active dry yeast",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 (.25 ounce) packages active dry yeast\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 teaspoons salt",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 teaspoons salt\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 cups warm milk",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 cups warm milk\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 egg",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 egg\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large mixing bowl, combine 3 cups flour, cheese, sugar, yeast and salt.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@27:34 / AC\r\n\t\t:ppt ( ing-0 \"3 cups flour\"@35:47 / FOOD )\r\n\t\t:ppt ( ing-1 \"cheese\"@49:55 / FOOD )\r\n\t\t:ppt ( ing-2 \"sugar\"@57:62 / FOOD )\r\n\t\t:ppt ( ing-3 \"yeast\"@64:69 / FOOD )\r\n\t\t:ppt ( ing-4 \"salt\"@74:78 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large mixing bowl\"@6:25 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add milk and egg; beat on low speed until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-5 \"milk\"@7:11 / FOOD )\r\n\t\t:ppt ( ing-6 \"egg\"@16:19 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"beat\"@21:25 / AC\r\n\t\t:mnr ( \"on low speed\"@29:38 / OTHER )\r\n\t\t:until ( cond-1-0 \"until smooth\"@39:51 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir in enough remaining flour to form a soft dough.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( \"enough remaining flour\"@11:33 / FOOD )\r\n\t\t:prp ( purp-2-0 \"to form a soft dough\"@34:54 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Turn onto a floured surface; knead until smooth and elastic, about 6-8 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Turn\"@3:7 / AC\r\n\t\t:gol ( tool-3-0 \"a floured surface\"@13:30 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"knead\"@32:37 / AC\r\n\t\t:until ( cond-3-0 \"until smooth and elastic\"@38:62 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-3-0 \"6-8 minutes\"@70:81 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Place in a greased bowl, turning once to grease top.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-4-0 \"a greased bowl\"@12:26 / TOOL )\r\n\t\t:simultaneous ( ac-4-1 \"turning\"@28:35 / AC\r\n\t\t\t:prp ( purp-4-0 \"to grease top\"@41:54 / PURPOSE_CLAUSE )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Cover and let rise in a warm place until doubled, about 1 hour.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Cover and let rise\"@3:21 / AC\r\n\t\t:loc ( tool-5-0 \"a warm place\"@25:37 / TOOL )\r\n\t\t:until ( cond-5-0 \"until doubled\"@38:51 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-5-0 \"1 hour\"@59:65 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Punch dough down.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Punch\"@3:8 / AC\r\n\t\t:ppt ( \"dough\"@9:14 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Divide in half and shape into two loaves.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Divide\"@3:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:reshape ( \"half\"@13:17 / OTHER )\r\n\t)\r\n\t:inform ( ac-7-1 \"shape\"@22:27 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:reshape ( \"two loaves\"@33:43 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Place in two greased 9-in pans.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Place\"@3:8 / AC\r\n\t\t:gol ( tool-8-0 \"two greased 9-in\"@12:28 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Cover and let rise until doubled, about 45 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Cover and let rise\"@-1:-1 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-9-0 \"until doubled\"@23:36 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-9-0 \"45 minutes\"@44:54 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Bake at 375 degrees F for 25-30 minutes or until golden brown.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Bake\"@4:8 / AC\r\n\t\t:heat ( temp-10-0 \"375 degrees F\"@12:25 / TEMPERATURE )\r\n\t\t:duration ( dur-10-0 \"25-30 minutes\"@30:43 / DUR )\r\n\t\t:until ( cond-10-0 \"until golden brown\"@47:65 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Remove from pans to cool on wire racks.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Remove\"@4:10 / AC\r\n\t\t:source ( tool-11-0 \"pans\"@16:20 / TOOL )\r\n\t\t:prp ( purp-11-0 \"to cool on wire racks\"@21:42 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

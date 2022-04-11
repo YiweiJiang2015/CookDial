@@ -1,0 +1,54 @@
+{
+    "id": "225",
+    "title": "Chipotle Mayo Relish",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup light mayonnaise",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup light mayonnaise\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 tablespoons canned Chipotle peppers in adobo sauce, seeded and minced",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 tablespoons canned Chipotle peppers in adobo sauce, seeded and minced\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/4 cup chopped green onion",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/4 cup chopped green onion\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup sweet pickle relish",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup sweet pickle relish\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Place the mayonnaise and chipotle peppers into a food processor, and process until well blended.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"the mayonnaise\"@9:23 / FOOD )\r\n\t\t:ppt ( ing-1 \"chipotle peppers\"@28:44 / FOOD )\r\n\t\t:gol ( tool-0-0 \"a food processor\"@50:66 / TOOL )\r\n\t)\r\n\t:inform ( ac-0-1 \"process\"@72:79 / AC\r\n\t\t:until ( cond-0-0 \"until well blended\"@80:98 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add a little bit more of the sauce if desired, I like to add about 1/2 teaspoon.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( \"a little bit more of the sauce\"@7:37 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Transfer to a serving bowl, and stir in the green onion and sweet pickle relish.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Transfer\"@3:11 / AC\r\n\t\t:gol ( tool-2-0 \"a serving bowl\"@15:29 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"stir in\"@35:42 / AC\r\n\t\t:ppt ( ing-2 \"the green onion\"@43:58 / FOOD )\r\n\t\t:ppt ( ing-3 \"sweet pickle relish\"@63:82 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Chill until serving.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Chill\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-3-0 \"until serving\"@9:22 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

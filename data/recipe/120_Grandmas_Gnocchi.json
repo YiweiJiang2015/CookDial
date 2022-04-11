@@ -1,0 +1,102 @@
+{
+    "id": "120",
+    "title": "Grandmas Gnocchi",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "6 russet potatoes",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"6 russet potatoes\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 egg, lightly beaten",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 egg, lightly beaten\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 tablespoon olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 tablespoon olive oil\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 pinch salt",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 pinch salt\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Bring a large pot of salted water to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"boil\"@42:46 / AC\r\n\t\t:ppt ( tool-0-0 \"a large pot of salted water\"@9:36 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Drop in potatoes and cook until tender but still firm, about 15 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Drop in\"@3:10 / AC\r\n\t\t:ppt ( ing-0 \"potatoes\"@11:19 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"cook\"@24:28 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-1-0 \"until tender but still firm\"@29:56 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-1-0 \"15 minutes\"@64:74 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Drain, cool slightly, and peel.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Drain\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"cool\"@10:14 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-2 \"peel\"@29:33 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Season with salt, then mash potatoes with fork.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Season\"@3:9 / AC\r\n\t\t:ppt ( ing-4 \"salt\"@15:19 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"mash\"@26:30 / AC\r\n\t\t:ppt ( \"potatoes\"@31:39 / FOOD )\r\n\t\t:instrument ( tool-3-0 \"fork\"@45:49 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Place in large bowl, and stir in egg and olive oil.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Place\"@3:8 / AC\r\n\t\t:gol ( tool-4-0 \"large bowl\"@12:22 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"stir in\"@28:35 / AC\r\n\t\t:ppt ( ing-2 \"egg\"@36:39 / FOOD )\r\n\t\t:ppt ( ing-3 \"olive oil\"@44:53 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Knead in enough flour to make a soft dough.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Knead in\"@3:11 / AC\r\n\t\t:ppt ( ing-1 \"enough flour\"@12:24 / FOOD )\r\n\t\t:prp ( purp-5-0 \"to make a soft dough\"@25:45 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) On a floured surface, roll dough into a long rope.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"roll\"@25:29 / AC\r\n\t\t:loc ( tool-6-0 \"a floured surface\"@6:23 / TOOL )\r\n\t\t:ppt ( \"dough\"@30:35 / FOOD )\r\n\t\t:reshape ( \"a long rope\"@41:52 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Cut the rope into 1/2-inch pieces.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Cut\"@3:6 / AC\r\n\t\t:ppt ( \"the rope\"@7:15 / FOOD )\r\n\t\t:reshape ( \"1/2-inch pieces\"@21:36 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Bring a large pot of lightly salted water to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"boil\"@50:54 / AC\r\n\t\t:ppt ( \"a large pot of lightly salted water\"@9:44 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Drop in gnocchi, and cook until they float to the top, about 3 to 5 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Drop in\"@3:10 / AC\r\n\t\t:ppt ( \"gnocchi\"@11:18 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-9-1 \"cook\"@24:28 / AC\r\n\t\t:until ( cond-9-0 \"until they float to the top\"@29:56 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-9-0 \"3 to 5 minutes\"@64:78 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Serve with pasta sauce.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Serve\"@4:9 / AC\r\n\t\t:ppt ( \"pasta sauce\"@15:26 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

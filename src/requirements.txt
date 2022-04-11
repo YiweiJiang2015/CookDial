@@ -1,0 +1,12 @@
+pandas==1.2.4
+spacy==2.3.5
+# Download spacy en-core model
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz#egg=en_core_web_sm
+#python -m spacy download en_core_web_sm-2.3.1
+tensorboardX==2.1
+torch>=1.7.1
+tensorboard>=2.4
+transformers>=4.6.1
+# sentencepiece==0.1.95
+pytorch-crf==0.7.2
+overrides==3.1.0

@@ -1,0 +1,72 @@
+{
+    "id": "087",
+    "title": "Cabin Hash",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "12 medium potatoes - peeled, cooked and cubed",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"12 medium potatoes - peeled, cooked and cubed\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "3 cups cubed fully cooked ham",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"3 cups cubed fully cooked ham\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup chopped onion",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup chopped onion\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 cup butter or margarine",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 cup butter or margarine\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 (10 ounce) package frozen chopped broccoli, thawed",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 (10 ounce) package frozen chopped broccoli, thawed\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"salt and pepper to taste\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "Sour cream",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"Sour cream\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large skillet, cook potatoes, ham and onion in butter, stirring frequently, until potatoes are lightly browned.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"cook\"@23:27 / AC\r\n\t\t:ppt ( ing-0 \"potatoes\"@28:36 / FOOD )\r\n\t\t:ppt ( ing-1 \"ham\"@38:41 / FOOD )\r\n\t\t:ppt ( ing-2 \"onion\"@46:51 / FOOD )\r\n\t\t:loc ( ing-3 \"butter\"@55:61 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large skillet\"@6:21 / TOOL )\r\n\t\t:until ( cond-0-0 \"until potatoes are lightly browned\"@84:118 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-0-1 \"stirring\"@63:71 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add broccoli; heat through.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-4 \"broccoli\"@7:15 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"heat\"@17:21 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Season with salt and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Season\"@3:9 / AC\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( ing-5 \"salt and pepper\"@15:19 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Serve with sour cream if desired.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( \"sour cream\"@14:24 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

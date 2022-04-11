@@ -1,0 +1,90 @@
+{
+    "id": "037",
+    "title": "Baked Aloha Chicken",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/4 cup lemon juice",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/4 cup lemon juice\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/4 cup light corn syrup",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/4 cup light corn syrup\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 tablespoons soy sauce",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 tablespoons soy sauce\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/4 teaspoon ground ginger",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/4 teaspoon ground ginger\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 cup corn oil",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 cup corn oil\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 (8 ounce) can crushed pineapple (not drained)",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 (8 ounce) can crushed pineapple (not drained)\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "10 chicken leg quarters",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"10 chicken leg quarters\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Stir together lemon juice, corn syrup, soy sauce, salt, ginger, and corn oil in a bowl until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Stir\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"lemon juice\"@17:28 / FOOD )\r\n\t\t:ppt ( ing-1 \"corn syrup\"@30:40 / FOOD )\r\n\t\t:ppt ( ing-2 \"soy sauce\"@42:51 / FOOD )\r\n\t\t:ppt ( ing-3 \"salt\"@53:57 / FOOD )\r\n\t\t:ppt ( ing-4 \"ginger\"@59:65 / FOOD )\r\n\t\t:ppt ( ing-5 \"corn oil\"@71:79 / FOOD )\r\n\t\t:heat ( tool-1-0 \"a bowl\"@83:89 / TOOL )\r\n\t\t:until ( cond-1-0 \"until smooth\"@90:102 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir in the crushed pineapple with its liquid.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-6 \"the crushed pineapple\"@11:32 / FOOD )\r\n\t\t:ppt ( \"its liquid\"@38:48 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Place the chicken legs in an ovenproof glass baking dish, and pour sauce over top.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-7 \"the chicken legs\"@9:25 / FOOD )\r\n\t\t:gol ( tool-3-0 \"an ovenproof glass baking dish\"@29:59 / TOOL )\r\n\t)\r\n\t:inform ( ac-3-1 \"pour\"@65:69 / AC\r\n\t\t:ppt ( \"sauce\"@70:75 / FOOD )\r\n\t\t:gol ( \"top\"@81:84 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Bake in preheated oven for 30 minutes, then turn the chicken over, and continue cooking until the chicken is tender, and no longer pink, about 20 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Bake\"@3:7 / AC\r\n\t\t:loc ( tool-4-0 \"preheated oven\"@11:25 / TOOL )\r\n\t\t:duration ( dur-4-0 \"30 minutes\"@30:40 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"turn\"@47:51 / AC\r\n\t\t:ppt ( \"the chicken\"@52:63 / FOOD )\r\n\t)\r\n\t:inform ( ac-4-2 \"continue cooking\"@74:90 / AC\r\n\t\t:until ( cond-4-0 \"until the chicken is tender, and no longer pink\"@91:138 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-4-1 \"20 minutes\"@146:156 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Baste with sauce frequently while baking.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Baste\"@3:8 / AC\r\n\t\t:ppt ( \"sauce\"@14:19 / FOOD )\r\n\t\t:simultaneous ( ac-5-1 \"baking\"@37:43 / AC\r\n\t\t\t:ppt ( NULL / FOOD )\r\n\t\t)\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

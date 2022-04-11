@@ -1,0 +1,102 @@
+{
+    "id": "116",
+    "title": "Date Nut Bars",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 cups sugar",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 cups sugar\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 teaspoons baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 teaspoons baking powder\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 cups chopped dates",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 cups chopped dates\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 cups chopped walnuts or pecans",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 cups chopped walnuts or pecans\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "4 eggs, lightly beaten",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"4 eggs, lightly beaten\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 tablespoons butter, melted",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 tablespoons butter, melted\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "confectioners' sugar",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"confectioners' sugar\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large bowl, combine the sugar, flour, baking powder, salt, dates and nuts.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@20:27 / AC\r\n\t\t:ppt ( ing-0 \"the sugar\"@28:37 / FOOD )\r\n\t\t:ppt ( ing-1 \"flour\"@39:44 / FOOD )\r\n\t\t:ppt ( ing-2 \"baking powder\"@46:59 / FOOD )\r\n\t\t:ppt ( ing-3 \"salt\"@61:65 / FOOD )\r\n\t\t:ppt ( ing-4 \"dates\"@67:72 / FOOD )\r\n\t\t:ppt ( ing-5 \"nuts\"@77:81 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add the eggs, butter and vanilla; stir just until dry ingredients are moistened (batter will be very stiff).",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-6 \"the eggs\"@7:15 / FOOD )\r\n\t\t:ppt ( ing-7 \"butter\"@17:23 / FOOD )\r\n\t\t:ppt ( ing-8 \"vanilla\"@28:35 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"stir\"@37:41 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-1-0 \"until dry ingredients are moistened\"@47:82 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Spread in a greased 15-in pan.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Spread\"@3:9 / AC\r\n\t\t:loc ( tool-2-0 \"a greased 15-in pan\"@13:32 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Bake at 350 degrees F for 20-25 minutes or until golden brown.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Bake\"@3:7 / AC\r\n\t\t:heat ( temp-3-0 \"350 degrees F\"@11:24 / TEMPERATURE )\r\n\t\t:duration ( dur-3-0 \"20-25 minutes\"@29:42 / DUR )\r\n\t\t:until ( cond-3-0 \"until golden brown\"@46:64 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Cool bars on a wire rack.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Cool\"@3:7 / AC\r\n\t\t:ppt ( \"bars\"@8:12 / FOOD )\r\n\t\t:loc ( tool-4-0 \"a wire rack\"@16:27 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Dust with confectioners' sugar.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Dust\"@3:7 / AC\r\n\t\t:ppt ( ing-9 \"confectioners' sugar\"@13:33 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

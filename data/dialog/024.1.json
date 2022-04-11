@@ -1,0 +1,148 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hello. today we are going to make Awesome Turkey Sandwich.",
+            "bot": true,
+            "annotations": "inform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Sounds good. What is the first step I need to take?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "You start with spreading mayonnaise on one slice of toast.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-0-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "That's done. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "On another slice of toast, spread mustard.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-0-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. what should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Prepare a smoked turkey by slicing its breast.",
+            "bot": true,
+            "annotations": "fetch(inst-1, [ing-3]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. I sliced the breast of the turkey. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Now arrange the sliced turkey breast on one side.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "I have done that. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Scoop two spoons of guacamole, then spread it over the turkey.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "I have spreaded the guacamole over the turkey. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Good. Put the salad greens, bean sprouts, avocado and cheese on the turkey.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "I have put the salad greens on the turkey. Can you repeat the other ingredients please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_repeat;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Yes. Bean sprouts, avocado and cheese. Do you need to know the quantity of them?",
+            "bot": true,
+            "annotations": "repeat(inst-3, [ing-6, ing-7, ing-8]);\r\nother();"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Yes, could you specify the quantity of each of these ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_amount;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "You need half cup salad greens, one fourth cup bean sprouts, one fourth sliced avocado and 3 ounces sliced cheese.",
+            "bot": true,
+            "annotations": "inform_amount(ing-5);\r\ninform_amount(ing-6);\r\ninform_amount(ing-7);\r\ninform_amount(ing-8);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. thank you to specify that. I have put everything on the turkey now. What's the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now we are on the final step. Put 2 tomato slices on the mixture, then place another toast on top.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "I have done that. It looks good!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Good. Enjoy it. Anything else do you need?",
+            "bot": true,
+            "annotations": "enjoy();\r\npropose_other_help();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "No everything is fine. Thank you for the instructions.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"negate; thank;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Bye.",
+            "bot": true,
+            "annotations": "goodbye();"
+        }
+    ]
+}

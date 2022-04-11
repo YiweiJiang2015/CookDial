@@ -1,0 +1,306 @@
+{
+    "id": "009",
+    "title": "Dziriat Algerian Almond Tarts",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup white sugar\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup water",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup water\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 teaspoon fresh lemon juice",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 teaspoon fresh lemon juice\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 tablespoons orange flower water",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 tablespoons orange flower water\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 tablespoons vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 tablespoons vegetable oil\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 egg",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 egg\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 teaspoon fresh lemon juice",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 teaspoon fresh lemon juice\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 pinch salt",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 pinch salt\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 tablespoon orange flower water",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 tablespoon orange flower water\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "4 cups raw almonds",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"4 cups raw almonds\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 cup sugar",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 cup sugar\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "3 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"3 eggs\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1/2 teaspoon baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1/2 teaspoon baking powder\" )"
+        },
+        {
+            "id": "ing-14",
+            "text": "1 teaspoon vanilla powder",
+            "type": "ingredient",
+            "eamr": "( ing-14 \"1 teaspoon vanilla powder\" )"
+        },
+        {
+            "id": "ing-15",
+            "text": "1 lemon, zested",
+            "type": "ingredient",
+            "eamr": "( ing-15 \"1 lemon, zested\" )"
+        },
+        {
+            "id": "ing-16",
+            "text": "2 tablespoons orange flower water",
+            "type": "ingredient",
+            "eamr": "( ing-16 \"2 tablespoons orange flower water\" )"
+        },
+        {
+            "id": "ing-17",
+            "text": "cornstarch, for rolling out the dough",
+            "type": "ingredient",
+            "eamr": "( ing-17 \"cornstarch, for rolling out the dough\" )"
+        },
+        {
+            "id": "ing-18",
+            "text": "pine nuts, for decoration",
+            "type": "ingredient",
+            "eamr": "( ing-18 \"pine nuts, for decoration\" )"
+        },
+        {
+            "id": "ing-19",
+            "text": "Bring 6 cups of water to a boil.",
+            "type": "ingredient",
+            "eamr": "( ing-19 \"Bring 6 cups of water to a boil.\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Bring 6 cups of water to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"boil\"@30:34 / AC\r\n\t\t:ppt ( ing-19 \"6 cups of water\"@9:24 / FOOD )\r\n\t\t:_result ( boiled-water )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Remove from heat, and add the almonds.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( \"heat\"@15:19 / OTHER )\r\n\t\t:ppt ( boiled-water / FOOD )\r\n\t\t:_result ( water-away-heat )\r\n\t)\r\n\t:inform ( ac-1-1 \"add\"@25:28 / AC\r\n\t\t:ppt ( ing-10 \"the almonds\"@29:40 / FOOD )\r\n\t\t:gol ( water-away-heat / FOOD )\r\n\t\t:_result ( almonds-in-water )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Let the almonds soak in water for about 5 minutes, then drain and peel.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"soak\"@19:23 / AC\r\n\t\t:ppt ( almonds-in-water \"the almonds\"@7:18 / FOOD )\r\n\t\t:loc ( water-away-heat \"water\"@27:32 / FOOD )\r\n\t\t:duration ( dur-2-0 \"5 minutes\"@43:52 / DUR )\r\n\t\t:_result ( soaked-almonds )\r\n\t)\r\n\t:inform ( ac-2-1 \"drain\"@59:64 / AC\r\n\t\t:ppt ( soaked-almonds / FOOD )\r\n\t\t:_result ( drained-almonds )\r\n\t)\r\n\t:inform ( ac-2-2 \"peel\"@69:73 / AC\r\n\t\t:ppt ( drained-almonds / FOOD )\r\n\t\t:_result ( peeled-almonds )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Spread the almonds on baking sheets, and bake at 200 degrees F(95 degrees C) until completely dry and toasted.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Spread\"@3:9 / AC\r\n\t\t:ppt ( peeled-almonds \"the almonds\"@10:21 / FOOD )\r\n\t\t:gol ( tool-3-0 \"baking sheets\"@25:38 / TOOL )\r\n\t\t:_result ( almonds-on-sheets )\r\n\t)\r\n\t:inform ( ac-3-1 \"bake\"@44:48 / AC\r\n\t\t:heat ( temp-3-0 \"200 degrees F(95 degrees C)\"@52:79 / TEMPERATURE )\r\n\t\t:until ( cond-3-0 \"until completely dry and toasted\"@80:112 / CONDITION_CLAUSE )\r\n\t\t:ppt ( almonds-on-sheets / FOOD )\r\n\t\t:_result ( dry-almonds )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) This takes several hours, and needs to be prepared ahead.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( dur-4-0 \"several hours\"@14:27 / DUR )\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Be careful not to burn the nuts, as this will give a bitter taste to the filling.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"burn\"@-1:-1 / AC\r\n\t\t:ppt ( dry-almonds \"the nuts\"@26:34 / FOOD )\r\n\t\t:polarity ( negative )\r\n\t\t:_result ( not-burned-almonds )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Combine 1 cup sugar and 1 cup water in a saucepan, and bring to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( ing-0 \"1 cup sugar\"@11:22 / FOOD )\r\n\t\t:ppt ( ing-1 \"1 cup water\"@27:38 / FOOD )\r\n\t\t:loc ( tool-6-0 \"a saucepan\"@42:52 / TOOL )\r\n\t\t:_result ( water-in-pan )\r\n\t)\r\n\t:inform ( ac-6-1 \"boil\"@69:73 / AC\r\n\t\t:ppt ( water-in-pan / FOOD )\r\n\t\t:_result ( second-boiled-water )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Add 1 teaspoon lemon juice, reduce heat to low, and let it simmer until syrupy, about 30 to 40 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-2 \"1 teaspoon lemon juice\"@7:29 / FOOD )\r\n\t\t:gol ( water-in-pan / FOOD )\r\n\t\t:_result ( lemon-juice-water )\r\n\t)\r\n\t:inform ( ac-7-1 \"reduce\"@31:37 / AC\r\n\t\t:ppt ( \"heat\"@38:42 / OTHER )\r\n\t\t:gol ( temp-7-0 \"low\"@46:49 / TEMPERATURE )\r\n\t\t:_result ( low-heat )\r\n\t)\r\n\t:inform ( ac-7-2 \"simmer\"@62:68 / AC\r\n\t\t:ppt ( lemon-juice-water \"it\"@59:61 / FOOD )\r\n\t\t:until ( cond-7-0 \"until syrupy\"@69:81 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-7-0 \"30 to 40 minutes\"@89:105 / DUR )\r\n\t\t:_result ( syrupy-lemon-juice )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Stir in orange blossom water, and remove from heat.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n   :inform ( ac-8-0 \"Stir in\"@3:10 / AC\r\n      :ppt ( ing-3 \"orange blossom water\"@11:31 / FOOD )\r\n      :gol ( syrupy-lemon-juice / FOOD )\r\n\t:_result lemon-flower-water\r\n   )\r\n   :inform ( ac-8-1 \"remove\"@37:43 / AC\r\n      :source ( \"heat\"@49:53 / OTHER )\r\n      :ppt ( lemon-flower-water / FOOD )\r\n\t:_result lemon-flower-away-heat\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Set sugar syrup aside.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n   :inform ( ac-9-0 \"Set\"@4:7 / AC\r\n      :ppt ( lemon-flower-away-heat \"sugar syrup\"@8:19 / FOOD )\r\n\t:_result set-aside-sugar-syrup\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Combine flour and salt in a large mixing bowl.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Combine\"@4:11 / AC\r\n\t\t:ppt ( ing-4 \"flour\"@12:17 / FOOD )\r\n\t\t:ppt ( ing-8 \"salt\"@22:26 / FOOD )\r\n\t\t:loc ( tool-10-0 \"a large mixing bowl\"@30:49 / TOOL )\r\n\t\t:_result ( flour-and-salt )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Make a hole in the center, and pour oil, egg, 1/2 teaspoon lemon juice, and 1 tablespoon orange blossom water into the center.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Make\"@4:8 / AC\r\n\t\t:ppt ( \"a hole\"@9:15 / OTHER )\r\n\t\t:loc ( \"the center\"@19:29 / FOOD )\r\n\t\t:_result ( a-hole-in-flour )\r\n\t)\r\n\t:inform ( ac-11-1 \"pour\"@35:39 / AC\r\n\t\t:ppt ( ing-5 \"oil\"@40:43 / FOOD )\r\n\t\t:ppt ( ing-6 \"egg\"@45:48 / FOOD )\r\n\t\t:ppt ( ing-7 \"1/2 teaspoon lemon juice\"@50:74 / FOOD )\r\n\t\t:ppt ( ing-9 \"1 tablespoon orange blossom water\"@80:113 / FOOD )\r\n\t\t:gol ( a-hole-in-flour \"the center\"@119:129 / FOOD )\r\n\t\t:_result ( egg-dough )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Mix with fingers until the dough resembles coarse crumbs.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Mix\"@4:7 / AC\r\n\t\t:until ( cond-12-0 \"until the dough resembles coarse crumbs\"@21:60 / CONDITION_CLAUSE )\r\n\t\t:instrument ( tool-12-0 \"fingers\"@13:20 / TOOL )\r\n\t\t:ppt ( egg-dough / FOOD )\r\n\t\t:_result ( coarse-dough )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Gradually sprinkle with warm water while mixing until the dough becomes soft and pliable.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"sprinkle\"@14:22 / AC\r\n\t\t:simultaneous ( ac-13-1 \"mixing\"@-1:-1 / AC )\r\n\t\t:gol ( coarse-dough / FOOD )\r\n\t\t:ppt ( \"warm water\"@28:38 / FOOD )\r\n\t\t:until ( cond-13-0 \"until the dough becomes soft and pliable\"@52:92 / CONDITION_CLAUSE )\r\n\t\t:_result ( soft-dough )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Divide into 4 equal portions.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"Divide\"@4:10 / AC\r\n\t\t:reshape ( \"4 equal portions\"@16:32 / FOOD )\r\n\t\t:ppt ( soft-dough / FOOD )\r\n\t\t:_result ( 4-portions )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-15",
+            "text": "15) Cover dough with a wet cloth, and set aside.",
+            "type": "instruction",
+            "eamr": "( inst-15 / R\r\n\t:inform ( ac-15-0 \"Cover\"@4:9 / AC\r\n\t\t:ppt ( 4-portions \"dough\"@10:15 / FOOD )\r\n\t\t:instrument ( tool-15-0 \"a wet cloth\"@21:32 / TOOL )\r\n\t\t:_result ( covered-dough )\r\n\t)\r\n\t:inform ( ac-15-1 \"set aside\"@38:47 / AC\r\n\t\t:ppt ( covered-dough / FOOD )\r\n\t\t:_result ( dough-aside )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-16",
+            "text": "16) In a food processor, finely grind the almonds.",
+            "type": "instruction",
+            "eamr": "( inst-16 / R\r\n\t:inform ( ac-16-0 \"grind\"@32:37 / AC\r\n\t\t:loc ( tool-16-0 \"a food processor\"@7:23 / TOOL )\r\n\t\t:ppt ( not-burned-almonds \"the almonds\"@38:49 / FOOD )\r\n\t\t:_result ( ground-almonds )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-17",
+            "text": "17) Measure 3 cups of the finely ground almonds into a mixing bowl, and stir together with 1 cup sugar, baking powder, vanilla powder, lemon zest, and 2 tablespoons orange flower water.",
+            "type": "instruction",
+            "eamr": "( inst-17 / R\r\n\t:inform ( ac-17-0 \"Measure\"@4:11 / AC\r\n\t\t:ppt ( ground-almonds \"3 cups of the finely ground almonds\"@12:47 / FOOD )\r\n\t\t:gol ( tool-17-0 \"a mixing bowl\"@53:66 / TOOL )\r\n\t\t:_result ( almonds-in-bowl )\r\n\t)\r\n\t:inform ( ac-17-1 \"stir\"@72:76 / AC\r\n\t\t:ppt ( ing-11 \"1 cup sugar\"@91:102 / FOOD )\r\n\t\t:ppt ( ing-13 \"baking powder\"@104:117 / FOOD )\r\n\t\t:ppt ( ing-14 \"vanilla powder\"@119:133 / FOOD )\r\n\t\t:ppt ( ing-15 \"lemon zest\"@135:145 / FOOD )\r\n\t\t:ppt ( ing-16 \"2 tablespoons orange flower water\"@151:184 / FOOD )\r\n\t\t:gol ( almonds-in-bowl / FOOD )\r\n\t\t:_result ( almond-mixture )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-18",
+            "text": "18) Mix in three eggs one at a time, stirring constantly; mix until you get a sticky, paste-like mixture.",
+            "type": "instruction",
+            "eamr": "( inst-18 / R\r\n\t:inform ( ac-18-0 \"Mix in\"@4:10 / AC\r\n\t\t:ppt ( ing-12 \"three eggs\"@11:21 / FOOD )\r\n\t\t:simultaneous ( ac-18-1 \"stirring\"@-1:-1 / AC )\r\n\t\t:gol ( almond-mixture / FOOD )\r\n\t\t:_result ( almond-egg-mixture )\r\n\t)\r\n\t:inform ( ac-18-2 \"mix\"@58:61 / AC\r\n\t\t:until ( cond-18-0 \"until you get a sticky, paste-like mixture\"@62:104 / CONDITION_CLAUSE )\r\n\t\t:ppt ( almond-egg-mixture / FOOD )\r\n\t\t:_result ( almond-filling )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-19",
+            "text": "19) Sprinkle cornstarch on the rolling surface to prevent sticking.",
+            "type": "instruction",
+            "eamr": "( inst-19 / R\r\n   :inform ( ac-19-0 \"Sprinkle\"@4:12 / AC\r\n      :ppt ( ing-17 \"cornstarch\"@13:23 / FOOD )\r\n      :gol ( \"the rolling surface\"@27:46 / FOOD )\r\n      :prp ( \"to prevent sticking\"@47:66 / PURPOSE_CLAUSE )\r\n\t:_result cornstarch-on-surface\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-20",
+            "text": "20) Roll each portion of dough very thinly, 1 to 2 millimeters (1/16 inch).",
+            "type": "instruction",
+            "eamr": "( inst-20 / R\r\n\t:inform ( ac-20-0 \"Roll\"@4:8 / AC\r\n\t\t:ppt ( dough-aside \"each portion of dough\"@9:30 / FOOD )\r\n\t\t:mnr ( \"1 to 2 millimeters (1/16 inch)\"@-1:-1 / OTHER )\r\n\t\t:_result ( rolled-dough )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-21",
+            "text": "21) Cut the rolled dough into circles of about 10 centimeters (4 inches) in diameter each.",
+            "type": "instruction",
+            "eamr": "( inst-21 / R\r\n\t:inform ( ac-21-0 \"Cut\"@4:7 / AC\r\n\t\t:ppt ( rolled-dough \"the rolled dough\"@8:24 / FOOD )\r\n\t\t:reshape ( \"circles\"@30:37 / FOOD )\r\n\t\t:mnr ( \"10 centimeters (4 inches)\"@47:61 / OTHER )\r\n\t\t:_result ( dough-circles )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-22",
+            "text": "22) Lightly wipe the surface of each circle with cornstarch, and fit into a tart mold, cornstarch side down to prevent sticking.",
+            "type": "instruction",
+            "eamr": "( inst-22 / R\r\n\t:inform ( ac-22-0 \"wipe\"@12:16 / AC\r\n\t\t:gol ( dough-circles \"the surface of each circle\"@17:43 / FOOD )\r\n\t\t:ppt ( ing-17 \"cornstarch\"@49:59 / FOOD )\r\n\t\t:_result ( wiped-dough )\r\n\t)\r\n\t:inform ( ac-22-1 \"fit\"@65:68 / AC\r\n\t\t:gol ( tool-22-0 \"a tart mold\"@74:85 / TOOL )\r\n\t\t:ppt ( wiped-dough / FOOD )\r\n\t\t:prp ( purp-22-0 \"to prevent sticking\"@108:127 / PURPOSE_CLAUSE )\r\n\t\t:mnr ( \"cornstarch side\"@87:102 / OTHER )\r\n\t\t:_result ( dough-in-mold )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-23",
+            "text": "23) Gently press the dough onto the sides and bottom of the mold, and trim extra dough from around the rim.",
+            "type": "instruction",
+            "eamr": "( inst-23 / R\r\n\t:inform ( ac-23-0 \"press\"@11:16 / AC\r\n\t\t:ppt ( dough-in-mold \"the dough\"@17:26 / FOOD )\r\n\t\t:gol ( tool-23-0 \"the sides and bottom of the mold\"@32:64 / TOOL )\r\n\t\t:_result ( pressed-dough )\r\n\t)\r\n\t:inform ( ac-23-1 \"trim\"@70:74 / AC\r\n\t\t:ppt ( \"extra dough\"@75:86 / FOOD )\r\n\t\t:loc ( tool-23-1 \"the rim\"@99:106 / TOOL )\r\n\t\t:_result ( trimmed-dough )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-24",
+            "text": "24) Fill three quarters of each mold with the almond filling.",
+            "type": "instruction",
+            "eamr": "( inst-24 / R\r\n\t:inform ( ac-24-0 \"Fill\"@4:8 / AC\r\n\t\t:gol ( tool-24-0 \"three quarters of each mold\"@9:36 / TOOL\r\n\t\t\t:contain ( trimmed-dough / FOOD )\r\n\t\t)\r\n\t\t:ppt ( \"the almond filling\"@42:60 / FOOD )\r\n\t\t:_result ( filled-tart )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-25",
+            "text": "25) Bake on the top shelf at 350 degrees F (175 degrees C) for 20 to 25 minutes, or until the surface of the tart is golden and the dough is firm.",
+            "type": "instruction",
+            "eamr": "( inst-25 / R\r\n\t:inform ( ac-25-0 \"Bake\"@4:8 / AC\r\n\t\t:loc ( tool-25-0 \"the top shelf\"@12:25 / TOOL )\r\n\t\t:heat ( temp-25-0 \"350 degrees F\"@29:42 / TEMPERATURE )\r\n\t\t:heat ( temp-25-1 \"175 degrees C\"@44:57 / TEMPERATURE )\r\n\t\t:duration ( dur-25-0 \"20 to 25 minutes\"@63:79 / DUR )\r\n\t\t:until ( cond-25-0 \"until the surface of the tart is golden and the dough is firm\"@84:145 / CONDITION_CLAUSE )\r\n\t\t:ppt ( filled-tart / FOOD )\r\n\t\t:_result ( baked-tart )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-26",
+            "text": "26) Remove the tarts from the molds as soon as they come out of the oven.",
+            "type": "instruction",
+            "eamr": "( inst-26 / R\r\n\t:inform ( ac-26-0 \"Remove\"@4:10 / AC\r\n\t\t:ppt ( baked-tart \"the tarts\"@11:20 / FOOD )\r\n\t\t:source ( tool-26-0 \"the molds\"@26:35 / TOOL )\r\n\t\t:when ( cond-26-0 \"as soon as they come out of the oven\"@36:72 / CONDITION_CLAUSE )\r\n\t\t:_result ( tart-outside-mold )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-27",
+            "text": "27) Dip each tart in the sugar syrup while still hot.",
+            "type": "instruction",
+            "eamr": "( inst-27 / R\r\n\t:inform ( ac-27-0 \"Dip\"@4:7 / AC\r\n\t\t:ppt ( tart-outside-mold \"each tart\"@8:17 / FOOD )\r\n\t\t:gol ( set-aside-sugar-syrup \"the sugar syrup\"@21:36 / FOOD )\r\n\t\t:while ( cond-27-0 \"while still hot\"@37:52 / CONDITION_CLAUSE )\r\n\t\t:_result ( tart-with-syrup )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-28",
+            "text": "28) Stick a pine nut into the middle of each tart for decoration.",
+            "type": "instruction",
+            "eamr": "( inst-28 / R\r\n\t:inform ( ac-28-0 \"Stick\"@4:9 / AC\r\n\t\t:ppt ( ing-18 \"a pine nut\"@10:20 / FOOD )\r\n\t\t:gol ( tart-with-syrup \"the middle of each tart\"@26:49 / FOOD )\r\n\t\t:prp ( purp-28-0 \"for decoration\"@50:64 / PURPOSE_CLAUSE )\r\n\t\t:_result ( tart-with-nut )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-29",
+            "text": "29) Place on a wire rack to drain.",
+            "type": "instruction",
+            "eamr": "( inst-29 / R\r\n\t:inform ( ac-29-0 \"Place\"@4:9 / AC\r\n\t\t:gol ( tool-29-0 \"a wire rack\"@13:24 / TOOL )\r\n\t\t:ppt ( tart-with-nut / FOOD )\r\n\t\t:prp ( purp-29-0 \"to drain\"@25:33 / PURPOSE_CLAUSE )\r\n\t\t:_result ( FINAL_PRODUCT )\r\n\t)\r\n)"
+        }
+    ]
+}

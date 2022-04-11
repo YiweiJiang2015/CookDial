@@ -1,0 +1,180 @@
+{
+    "id": "044",
+    "title": "Chicken Pot Pie II 2",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3 bone-in chicken breast halves, skinless",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3 bone-in chicken breast halves, skinless\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (14.5 ounce) can chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (14.5 ounce) can chicken broth\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 potatoes",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 potatoes\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 yellow onion",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 yellow onion\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "3 stalks celery",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"3 stalks celery\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 tablespoons vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 tablespoons vegetable oil\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 tablespoons all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 tablespoons all-purpose flour\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 cups frozen mixed vegetables",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 cups frozen mixed vegetables\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 to taste salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 to taste salt and pepper to taste\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/4 teaspoon garlic powder",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/4 teaspoon garlic powder\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1 (9 inch) frozen prepared pie crust, thawed",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1 (9 inch) frozen prepared pie crust, thawed\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Wash chicken breasts in water and then place in a pot with water just to cover the chicken.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Wash\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"chicken breasts\"@8:23 / FOOD )\r\n\t\t:loc ( \"water\"@27:32 / FOOD )\r\n\t)\r\n\t:inform ( ac-0-1 \"place\"@42:47 / AC\r\n\t\t:gol ( tool-0-0 \"a pot\"@51:56 / TOOL\r\n\t\t\t:todo ( \"water\"@62:67 / FOOD )\r\n\t\t)\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-0-0 \"to cover the chicken\"@73:93 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add some salt and pepper and garlic powder.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( \"some salt\"@7:16 / FOOD )\r\n\t\t:ppt ( ing-8 \"pepper\"@21:27 / FOOD )\r\n\t\t:ppt ( ing-9 \"garlic powder\"@32:45 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Let cool in the pot.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"cool\"@7:11 / AC\r\n\t\t:loc ( tool-2-0 \"the pot\"@15:22 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-3-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-3-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-3-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Wash and cut potatoes into bite size pieces and boil till almost fork tender.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Wash\"@3:7 / AC\r\n\t\t:ppt ( ing-2 \"potatoes\"@16:24 / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"cut\"@12:15 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:todo ( \"bite size pieces\"@30:46 / OTHER )\r\n\t)\r\n\t:inform ( ac-4-2 \"boil\"@51:55 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( cond-4-0 \"till almost fork tender\"@56:79 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Drain and set aside.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Drain\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"set aside\"@13:22 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Wash celery and cut to bite-size pieces.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Wash\"@3:7 / AC\r\n\t\t:ppt ( ing-4 \"celery\"@8:14 / FOOD )\r\n\t)\r\n\t:inform ( ac-6-1 \"cut\"@19:22 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:todo ( \"bite-size pieces\"@26:42 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Cut onion to bite-size pieces.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Cut\"@3:6 / AC\r\n\t\t:ppt ( ing-3 \"onion\"@7:12 / FOOD )\r\n\t\t:todo ( \"bite-size pieces\"@16:32 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) In a large heavy skillet, over medium heat, saute celery and onion with 2 tablespoons oil, for 5 to 8 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"saute\"@47:52 / AC\r\n\t\t:ppt ( \"celery\"@53:59 / FOOD )\r\n\t\t:ppt ( \"onion\"@64:69 / FOOD )\r\n\t\t:ppt ( ing-5 \"2 tablespoons oil\"@75:92 / FOOD )\r\n\t\t:duration ( dur-8-0 \"5 to 8 minutes\"@98:112 / DUR )\r\n\t\t:loc ( tool-8-0 \"a large heavy skillet\"@6:27 / TOOL )\r\n\t\t:heat ( \"medium heat\"@34:45 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Add the frozen vegetables and cook another 5 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Add\"@-1:-1 / AC\r\n\t\t:ppt ( ing-7 \"the frozen vegetables\"@-1:-1 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-9-1 \"cook\"@-1:-1 / AC\r\n\t\t:duration ( dur-9-0 \"5 minutes\"@-1:-1 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Add flour and cook about 30 seconds.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Add\"@4:7 / AC\r\n\t\t:ppt ( ing-6 \"flour\"@8:13 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-10-1 \"cook\"@18:22 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-10-0 \"30 seconds\"@29:39 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Add chicken broth and bring to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Add\"@4:7 / AC\r\n\t\t:ppt ( ing-1 \"chicken broth\"@8:21 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-11-1 \"boil\"@37:41 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) After it has become thick, add potatoes.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"add\"@31:34 / AC\r\n\t\t:duration ( cond-12-0 \"After it has become thick\"@4:29 / CONDITION_CLAUSE )\r\n\t\t:ppt ( \"potatoes\"@35:43 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Remove chicken from pot and cut into bite-size pieces and add to vegetable mixture.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Remove\"@4:10 / AC\r\n\t\t:ppt ( \"chicken\"@11:18 / FOOD )\r\n\t\t:source ( tool-13-0 \"pot\"@24:27 / TOOL )\r\n\t)\r\n\t:inform ( ac-13-1 \"cut\"@32:35 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:todo ( \"bite-size pieces\"@41:57 / OTHER )\r\n\t)\r\n\t:inform ( ac-13-2 \"add\"@62:65 / AC\r\n\t\t:ppt ( \"vegetable mixture\"@69:86 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Add salt and pepper to taste.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"Add\"@4:7 / AC\r\n\t\t:ppt ( ing-8 \"salt\"@8:12 / FOOD )\r\n\t\t:ppt ( ing-8 \"pepper\"@17:23 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-14-0 \"to taste\"@24:32 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-15",
+            "text": "15) Pour mixture into a 9 inch deep dish pie plate and cover with pie shell.",
+            "type": "instruction",
+            "eamr": "( inst-15 / R\r\n\t:inform ( ac-15-0 \"Pour\"@4:8 / AC\r\n\t\t:ppt ( \"mixture\"@9:16 / FOOD )\r\n\t\t:gol ( tool-15-0 \"a 9 inch deep dish pie plate\"@22:50 / TOOL )\r\n\t)\r\n\t:inform ( ac-15-1 \"cover\"@55:60 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( \"pie shell\"@66:75 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-16",
+            "text": "16) Make sure you crimp the edges of the pie shell to the plate so no juices spill in oven.",
+            "type": "instruction",
+            "eamr": "( inst-16 / R\r\n\t:inform ( ac-16-0 \"crimp\"@18:23 / AC\r\n\t\t:ppt ( ing-10 \"the edges of the pie shell\"@24:50 / FOOD )\r\n\t\t:gol ( tool-16-0 \"the plate\"@54:63 / TOOL )\r\n\t\t:prp ( purp-16-0 \"so no juices spill in oven\"@64:90 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-17",
+            "text": "17) Bake at 350  degrees F (175 degrees C) for 45 minutes or until pie shell is cooked and golden brown.",
+            "type": "instruction",
+            "eamr": "( inst-17 / R\r\n\t:inform ( ac-17-0 \"Bake\"@4:8 / AC\r\n\t\t:heat ( temp-17-0 \"350  degrees F\"@12:26 / TEMPERATURE )\r\n\t\t:heat ( temp-17-1 \"175 degrees C\"@28:41 / TEMPERATURE )\r\n\t\t:duration ( dur-17-0 \"45 minutes\"@47:57 / DUR )\r\n\t\t:until ( cond-17-0 \"until pie shell is cooked and golden brown\"@61:103 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

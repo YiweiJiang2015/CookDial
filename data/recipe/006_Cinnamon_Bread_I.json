@@ -1,0 +1,162 @@
+{
+    "id": "006",
+    "title": "Cinnamon Bread I",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup white sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 teaspoons baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 teaspoons baking powder\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 teaspoon baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 teaspoon baking soda\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 1/2 teaspoons ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 1/2 teaspoons ground cinnamon\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 cup buttermilk",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 cup buttermilk\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/4 cup vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/4 cup vegetable oil\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 eggs\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 teaspoons vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 teaspoons vanilla extract\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "2 tablespoons white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"2 tablespoons white sugar\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 teaspoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 teaspoon ground cinnamon\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "2 teaspoons margarine",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"2 teaspoons margarine\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t\t:_result ( preheated-oven )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Grease one 9x5 inch loaf pan.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Grease\"@3:9 / AC\r\n\t\t:ppt ( tool-1-0 \"one 9x5 inch loaf pan\"@10:31 / TOOL )\r\n\t\t:_result ( greased-pan )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Measure flour, 1 cup sugar, baking powder, baking soda, 1 1/2 teaspoons cinnamon, salt, buttermilk, oil, eggs and vanilla into large mixing bowl.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Measure\"@3:10 / AC\r\n\t\t:ppt ( ing-0 \"flour\"@11:16 / FOOD )\r\n\t\t:ppt ( ing-1 \"1 cup sugar\"@18:29 / FOOD )\r\n\t\t:ppt ( ing-2 \"baking powder\"@31:44 / FOOD )\r\n\t\t:ppt ( ing-3 \"baking soda\"@46:57 / FOOD )\r\n\t\t:ppt ( ing-4 \"1 1/2 teaspoons cinnamon\"@59:83 / FOOD )\r\n\t\t:ppt ( ing-5 \"salt\"@85:89 / FOOD )\r\n\t\t:ppt ( ing-6 \"buttermilk\"@91:101 / FOOD )\r\n\t\t:ppt ( ing-7 \"oil\"@103:106 / FOOD )\r\n\t\t:ppt ( ing-8 \"eggs\"@108:112 / FOOD )\r\n\t\t:ppt ( ing-9 \"vanilla\"@117:124 / FOOD )\r\n\t\t:gol ( tool-2-0 \"large mixing bowl\"@130:147 / TOOL )\r\n\t\t:_result ( batter-in-bowl )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Beat 3 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Beat\"@3:7 / AC\r\n\t\t:duration ( dur-3-0 \"3 minutes\"@8:17 / DUR )\r\n\t\t:ppt ( batter-in-bowl / FOOD )\r\n\t\t:_result ( beaten-batter )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Pour into prepared loaf pan.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n   :inform ( ac-4-0 \"Pour\"@3:7 / AC\r\n      :gol ( greased-pan \"prepared loaf pan\"@13:30 / TOOL )\r\n      :ppt ( beaten-batter / FOOD )\r\n\t:_result batter-in-pan\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Smooth top.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n   :inform ( ac-5-0 \"Smooth\"@3:9 / AC\r\n      :ppt ( \"top\"@10:13 / FOOD ) #top is part of the batter#\r\n\t:_result smoothed-batter\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Combine 2 tablespoons white sugar, 1 teaspoon cinnamon and butter, mixing until crumbly.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( ing-10 \"2 tablespoons white sugar\"@11:36 / FOOD )\r\n\t\t:ppt ( ing-11 \"1 teaspoon cinnamon\"@38:57 / FOOD )\r\n\t\t:ppt ( ing-12 \"butter\"@62:68 / FOOD )\r\n\t\t:_result ( butter-mixture )\r\n\t)\r\n\t:inform ( ac-6-1 \"mixing\"@70:76 / AC\r\n\t\t:ppt ( butter-mixture / FOOD )\r\n\t\t:until ( cond-6-0 \"until crumbly\"@-1:-1 / CONDITION_CLAUSE )\r\n\t\t:_result ( crumbly-butter )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Sprinkle topping over smoothed batter.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Sprinkle\"@3:11 / AC\r\n\t\t:ppt ( \"topping\"@12:19 / FOOD )\r\n\t\t:gol ( \"smoothed batter\"@25:40 / FOOD )\r\n\t\t:_result ( topped-batter )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Using knife, cut in a light swirling motion to give a marbled effect.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"cut\"@16:19 / AC\r\n\t\t:mnr ( \"a light swirling motion\"@23:46 / OTHER )\r\n\t\t:instrument ( tool-8-0 \"knife\"@9:14 / TOOL )\r\n\t\t:ppt ( topped-batter / FOOD )\r\n\t\t:prp ( purp-8-0 \"to give a marbled effect\"@47:71 / PURPOSE_CLAUSE )\r\n\t\t:_result ( swirled-batter )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Bake for about 50 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Bake\"@4:8 / AC\r\n\t\t:duration ( dur-9-0 \"50 minutes\"@19:29 / DUR )\r\n\t\t:ppt ( swirled-batter / FOOD )\r\n\t\t:_result ( baked-bread )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Test with toothpick.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Test\"@4:8 / AC\r\n\t\t:instrument ( tool-10-0 \"toothpick\"@14:23 / TOOL )\r\n\t\t:ppt ( baked-bread / FOOD )\r\n\t\t:_result ( tested-bread )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) When inserted it should come out clean.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"should come out\"@-1:-1 / COPULA\r\n\t\t:subj ( toothpick \"it\"@18:20 / PRONOUN )\r\n\t\t:obj ( \"clean\"@-1:-1 / OTHER )\r\n\t\t:when ( cond-11-0 \"inserted\"@-1:-1 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Remove bread from pan to rack to cool.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Remove\"@4:10 / AC\r\n\t\t:ppt ( tested-bread \"bread\"@11:16 / FOOD )\r\n\t\t:source ( tool-12-0 \"pan\"@22:25 / TOOL )\r\n\t\t:gol ( tool-12-1 \"rack\"@29:33 / TOOL )\r\n\t\t:prp ( purp-12-0 \"to cool\"@34:41 / PURPOSE_CLAUSE )\r\n\t\t:_result ( FINAL_PRODUCT )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "id": "136",
+    "title": "Easy Marinated Vegetables",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 1/2 cups broccoli florets",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 1/2 cups broccoli florets\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 1/2 cups cauliflower florets",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 1/2 cups cauliflower florets\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 green bell pepper, cut into 1 inch pieces",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 green bell pepper, cut into 1 inch pieces\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 cucumber - peeled, seeded and chopped",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 cucumber - peeled, seeded and chopped\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 carrot, coarsely chopped",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 carrot, coarsely chopped\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 cup Italian-style salad dressing",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 cup Italian-style salad dressing\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "Bring a large pot of salted water to boil.",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"Bring a large pot of salted water to boil.\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "Bring a large pot of salted water to boil.",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"Bring a large pot of salted water to boil.\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Bring a large pot of salted water to boil.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"boil\"@40:44 / AC\r\n\t\t:ppt ( \"salted water\"@24:36 / FOOD )\r\n\t)\r\n\t:inform ( \"a large pot\"@9:20 / OTHER )\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Place the broccoli and cauliflower florets into the boiling water for one minute.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"the broccoli\"@9:21 / FOOD )\r\n\t\t:ppt ( ing-1 \"cauliflower florets\"@26:45 / FOOD )\r\n\t\t:gol ( \"the boiling water\"@51:68 / FOOD )\r\n\t\t:duration ( dur-1-0 \"one minute\"@73:83 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Drain and rinse florets.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Drain and rinse\"@3:18 / AC\r\n\t\t:ppt ( \"florets\"@19:26 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Combine broccoli, cauliflower, bell pepper, cucumber, carrot and Italian salad dressing in a medium size mixing bowl.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( \"broccoli\"@11:19 / FOOD )\r\n\t\t:ppt ( \"cauliflower\"@21:32 / FOOD )\r\n\t\t:ppt ( ing-2 \"bell pepper\"@34:45 / FOOD )\r\n\t\t:ppt ( ing-3 \"cucumber\"@47:55 / FOOD )\r\n\t\t:ppt ( ing-4 \"carrot\"@57:63 / FOOD )\r\n\t\t:ppt ( ing-5 \"Italian salad dressing\"@68:90 / FOOD )\r\n\t\t:loc ( tool-3-0 \"a medium size mixing bowl\"@94:119 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Cover the bowl and refrigerate the vegetables for one hour.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( tool-4-0 \"the bowl\"@9:17 / TOOL )\r\n\t)\r\n\t:inform ( ac-4-1 \"refrigerate\"@22:33 / AC\r\n\t\t:ppt ( \"the vegetables\"@34:48 / FOOD )\r\n\t\t:duration ( dur-4-0 \"one hour\"@53:61 / DUR )\r\n\t)\r\n)"
+        }
+    ]
+}

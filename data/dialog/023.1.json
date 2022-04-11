@@ -1,0 +1,250 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Today we will make Caramel Chocolate Corn. Are you ready to start?",
+            "bot": true,
+            "annotations": "inform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Alright, what is the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Take some cookie sheets and grease them.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. that is done. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Place 16 cups popped popcorn and 1 cup roasted peanuts in a paper bag and set it aside.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);\r\ninform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Take a microwave safe bowl.",
+            "bot": true,
+            "annotations": "fetch(inst-3, [tool-3-0]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. should it be big or it doesn't matter?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_tool;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "It should not be a big one, a medium is sufficient.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. I have it. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Now add 1 cup brown sugar and 1/2 cup butter to the bowl.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-3, [ing-2, ing-3]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. done. Should I add more?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Yes, next add 1/4 cup light corn syrup.",
+            "bot": true,
+            "annotations": "affirm();\r\nsimplify_continue(inst-3, [ing-4]);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. done. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Finally add 1 teaspoon vanilla extract and 1 teaspoon salt.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-3, [ing-5, ing-6]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. both added. What should I do with it now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now you can place it in the microwave for 4 minutes until it becomes bubbly.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. it is bubbly now. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Next you should stir in 1/2 teaspoon baking soda.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. done. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Pour this mixture in the paper bag with the popcorn mixture and shake the bag to cover the popcorn with this mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. how long should I shake it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Until all the popcorn is coated with the mixture.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. that is done now. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Close the bag and place it in the microwave for 2 minutes. During these 2 minutes you should stop three times and mix the bag.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);\r\ninform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. done. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Take your prepared greased cookie sheets and spread the popcorn mixture onto it.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. all of it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Yes you can spread all of it. If you didn't prepare enough sheets you should prepare additional sheets.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. Thanks. I will do that. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "The sheets are used to cool down the popcorn. Next you should take an empty microwave safe bowl again.",
+            "bot": true,
+            "annotations": "inform_instruction(purp-9-0);\r\nfetch(inst-10, [tool-10-0]);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. I took another bowl again.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Combine 1 cup milk chocolate chips and 1/2 teaspoon baking soda.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. I put them both in the bowl. Should I add more?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "No you can place it now in the microwave for 90 seconds until everything is melted. During these 90 seconds stop once to stir everything.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. it's all melted. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "You can now sprinkle this over the popcorn mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok. I have done that. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Let it first cool down a bit and then you can serve it. Well Done. enjoy your Caramel Chocolate Corn.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok. thanks. It looks great!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 24}"
+        }
+    ]
+}

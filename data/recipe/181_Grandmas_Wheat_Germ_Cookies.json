@@ -1,0 +1,120 @@
+{
+    "id": "181",
+    "title": "Grandmas Wheat Germ Cookies",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 1/2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 1/2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 1/2 cups toasted wheat germ",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 1/2 cups toasted wheat germ\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup quick-cooking oats",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup quick-cooking oats\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 cup packed brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 cup packed brown sugar\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 teaspoons baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 teaspoons baking powder\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 cup unsweetened applesauce",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 cup unsweetened applesauce\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 cup canola oil",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 cup canola oil\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 egg, lightly beaten",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 egg, lightly beaten\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 cup miniature chocolate chips",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 cup miniature chocolate chips\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1/2 cup chopped walnuts or pecans",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1/2 cup chopped walnuts or pecans\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large mixing bowl, combine the first six ingredients.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@27:34 / AC\r\n\t\t:ppt ( \"the first six ingredients\"@35:60 / FOOD\r\n\t\t\t:ref ( ing-0 )\r\n\t\t\t:ref ( ing-1 )\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t\t:ref ( ing-4 )\r\n\t\t\t:ref ( ing-5 )\r\n\t\t)\r\n\t\t:loc ( tool-0-0 \"a large mixing bowl\"@6:25 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Combine the applesauce, oil and eggs.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( ing-6 \"the applesauce\"@11:25 / FOOD )\r\n\t\t:ppt ( ing-7 \"oil\"@27:30 / FOOD )\r\n\t\t:ppt ( ing-8 \"eggs\"@35:39 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Add to the flour mixture; mix well.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( \"the flour mixture\"@10:27 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"mix\"@29:32 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Stir in the chocolate chip and walnuts.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-9 \"the chocolate chip\"@11:29 / FOOD )\r\n\t\t:ppt ( ing-10 \"walnuts\"@34:41 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Drop by rounded teaspoonfuls 2 in apart onto baking sheets coated with nonstick cooking spray.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Drop\"@3:7 / AC\r\n\t\t:instrument ( tool-4-0 \"rounded teaspoonfuls\"@11:31 / TOOL )\r\n\t\t:gol ( tool-4-1 \"baking sheets\"@48:61 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Flatten slightly with a glass bottom coated with nonstick cooking spray.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Flatten\"@3:10 / AC\r\n\t\t:instrument ( tool-5-0 \"a glass bottom\"@25:39 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Bake at 350 degrees F for 10-12 minutes or until edges are lightly browned and cookies are set.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Bake\"@3:7 / AC\r\n\t\t:heat ( temp-6-0 \"350 degrees F\"@11:24 / TEMPERATURE )\r\n\t\t:duration ( dur-6-0 \"10-12 minutes\"@29:42 / DUR )\r\n\t\t:until ( cond-6-0 \"until edges are lightly browned and cookies are set\"@46:97 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Cool for 1 minute before removing to wire racks.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Cool\"@3:7 / AC\r\n\t\t:duration ( dur-7-0 \"1 minute\"@12:20 / DUR )\r\n\t\t:duration ( cond-7-0 \"before removing to wire racks\"@21:50 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

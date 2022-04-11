@@ -1,0 +1,136 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi Bot! Do you have suggestion for a dessert recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi there, what about a Double Fudge Brownie Mix?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Mmmh, I think I'll try that! Is it a long recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "No it is fairly short. Nice. There are 5 ingredients.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Good! Can I prepare the ingredients first?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Sure. the first two ingredients are 2 cups white sugar and 1 cup unsweetened cocoa powder.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Good, I have them in my cupboard. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The last ingredients are 1 cup all-purpose flour, 1 cup chopped pecans and 1 cup semisweet chocolate chips.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);\r\ninform_ingredient(ing-4);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Great! I took them, can we start now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Nice, yes let's start. First in a 1 quart or 1 liter jar, you should layer the ingredients in the order listed.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "SOrry, in which order should I put them? can you remind me of that?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "It should be in the order of the ingredients I gave to you. This recipe is to prepare only the brownie mix but not to make the brownies.",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok good! Can you repeat the ingredients in the order?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Of course. The first three are 2 cups white sugar, 1 cup unsweetened cocoa powder, 1 cup all-purpose flour.",
+            "bot": true,
+            "annotations": "repeat(ing-0);\r\nrepeat(ing-1);\r\nrepeat(ing-2);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok thanks!! What is the rest?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "The other two are 1 cup chopped pecans and 1 cup semisweet chocolate chips.",
+            "bot": true,
+            "annotations": "repeat(ing-3);\r\nrepeat(ing-4);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Great! They are in the jar now!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Nice. Now you should attach a tag with the following instructions: Preheat the oven to 325 degrees F (165 degrees C).",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok, I attached the tag on the jar, that's it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Yes that was all. I hope you are not disappointed without your brownies.",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "I am a bit disappointed, but maybe it's better like that for my diet! :).",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Alright, hope to see you next time.",
+            "bot": true,
+            "annotations": "goodbye();"
+        }
+    ]
+}

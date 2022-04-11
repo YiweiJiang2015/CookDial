@@ -1,0 +1,150 @@
+{
+    "id": "112",
+    "title": "Easy Pavlova",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "4 egg whites",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"4 egg whites\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 1/4 cups white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 1/4 cups white sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 teaspoon lemon juice",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 teaspoon lemon juice\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 teaspoons cornstarch",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 teaspoons cornstarch\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 pint heavy cream",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 pint heavy cream\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "6 kiwi, peeled and sliced",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"6 kiwi, peeled and sliced\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 300 degrees F (150 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"300 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"150 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Line a baking sheet with parchment paper.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Line\"@3:7 / AC\r\n\t\t:gol ( tool-1-0 \"a baking sheet\"@8:22 / TOOL )\r\n\t\t:ppt ( tool-1-1 \"parchment paper\"@28:43 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Draw a 9 inch circle on the parchment paper.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Draw\"@3:7 / AC\r\n\t\t:ppt ( \"a 9 inch circle\"@8:23 / OTHER )\r\n\t\t:loc ( tool-2-0 \"the parchment paper\"@27:46 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) In a large bowl, beat egg whites until stiff but not dry.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"beat\"@20:24 / AC\r\n\t\t:ppt ( ing-0 \"egg whites\"@25:35 / FOOD )\r\n\t\t:until ( cond-3-0 \"until stiff but not dry\"@36:59 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-3-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Gradually add in the sugar, 1 tablespoon at a time, beating well after each addition.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"add in\"@13:19 / AC\r\n\t\t:ppt ( ing-1 \"the sugar\"@20:29 / FOOD )\r\n\t\t:mnr ( \"1 tablespoon at a time\"@31:53 / OTHER )\r\n\t\t:simultaneous ( ac-4-1 \"beating\"@55:62 / AC\r\n\t\t\t:todo ( cond-4-0 \"after each addition\"@68:87 / CONDITION_CLAUSE )\r\n\t\t)\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Beat until thick and glossy.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Beat\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-5-0 \"until thick and glossy\"@8:30 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Overbeaten egg whites lose volume and deflate when folded into other ingredients.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"deflate\"@41:48 / AC\r\n\t\t:duration ( cond-6-0 \"when folded into other ingredients\"@49:83 / CONDITION_CLAUSE )\r\n\t\t:subj ( \"Overbeaten egg whites\"@3:24 / FOOD )\r\n\t)\r\n\t:inform ( ac-6-1 \"lose\"@25:29 / AC\r\n\t\t:ppt ( \"volume\"@30:36 / OTHER )\r\n\t\t:subj ( \"Overbeaten egg whites\"@3:24 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Be absolutely sure not a particle of grease or egg yolk gets into the whites.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"gets\"@59:63 / copula\r\n\t\t:subj ( \"not a particle of grease or egg yolk\"@22:58 / FOOD )\r\n\t\t:obj ( \"into the whites\"@69:79 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Gently fold in vanilla extract, lemon juice and cornstarch.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"fold in\"@10:17 / AC\r\n\t\t:ppt ( ing-2 \"vanilla extract\"@18:33 / FOOD )\r\n\t\t:ppt ( ing-3 \"lemon juice\"@35:46 / FOOD )\r\n\t\t:ppt ( ing-4 \"cornstarch\"@51:61 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Spoon mixture inside the circle drawn on the parchment paper.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Spoon\"@3:8 / AC\r\n\t\t:ppt ( \"mixture\"@9:16 / FOOD )\r\n\t\t:gol ( \"the circle\"@24:34 / OTHER )\r\n\t)\r\n\t:inform ( tool-9-0 \"the parchment paper\"@44:63 / TOOL )\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Working from the center, spread mixture toward the outside edge, building edge slightly.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"spread\"@29:35 / AC\r\n\t\t:ppt ( \"mixture\"@36:43 / FOOD )\r\n\t\t:gol ( \"the outside edge\"@51:67 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) This should leave a slight depression in the center.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( purp-11-0 \"leave a slight depression in the center\"@16:55 / PURPOSE_CLAUSE )\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Bake for 1 hour.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Bake\"@4:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-12-0 \"1 hour\"@13:19 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Cool on a wire rack.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Cool\"@4:8 / AC\r\n\t\t:loc ( tool-13-0 \"a wire rack\"@12:23 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Remove the paper, and place meringue on a flat serving plate.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"Remove\"@4:10 / AC\r\n\t\t:ppt ( tool-14-0 \"the paper\"@11:20 / TOOL )\r\n\t)\r\n\t:inform ( ac-14-1 \"place\"@26:31 / AC\r\n\t\t:ppt ( \"meringue\"@32:40 / FOOD )\r\n\t\t:gol ( tool-14-1 \"a flat serving plate\"@44:64 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-15",
+            "text": "15) Fill the center of the meringue with whipped cream, sweetened if desired.",
+            "type": "instruction",
+            "eamr": "( inst-15 / R\r\n\t:inform ( ac-15-0 \"Fill\"@4:8 / AC\r\n\t\t:gol ( \"the center of the meringue\"@9:35 / FOOD )\r\n\t\t:ppt ( ing-5 \"whipped cream\"@41:54 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-16",
+            "text": "16) Top whipped cream with kiwifruit slices.",
+            "type": "instruction",
+            "eamr": "( inst-16 / R\r\n\t:inform ( ac-16-0 \"Top\"@4:7 / AC\r\n\t\t:gol ( \"whipped cream\"@8:21 / FOOD )\r\n\t\t:ppt ( ing-6 \"kiwifruit slices\"@27:43 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

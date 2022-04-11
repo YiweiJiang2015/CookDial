@@ -1,0 +1,76 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we are going to make the easiest salad dressing. You may grab a jar with a tight fitting lid.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\nfetch(inst-0, [tool-0-0]);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "What should I grab?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "A jar with a tight fitting lid.",
+            "bot": true,
+            "annotations": "inform_instruction(tool-0-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. I have it now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Now add 1/2 cup of mayonnaise and 3 teaspoons of milk into the jar.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "I have added the mayonnaise and milk. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Now add 1/4 teaspoon of salt and 1 pinch of ground black pepper.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-2, ing-3]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. I added these two, what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Great. now just mix them well together and pour it over your salad. Then you are done!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);\r\nend_recipe();"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. I have done it! Thank you. it tastes good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; thank;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Ok. thanks have a nice day.",
+            "bot": true,
+            "annotations": "thank();\r\ngoodbye();"
+        }
+    ]
+}

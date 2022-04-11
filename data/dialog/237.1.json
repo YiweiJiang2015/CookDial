@@ -1,0 +1,220 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "What am I having for lunch?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "We will make Baked Pork Chops Low Fat Version today.",
+            "bot": true,
+            "annotations": "inform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Okay, what is the first thing I have to do?.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "There are 12 ingredients. Do you need me to list the ingredients?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "No. I want you to specify them when you are giving me the instructions.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"negate;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Ok. Firstly, preheat oven to 350 degrees F (175 degrees C).",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Done. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Then prepare 6 center cut pork chops, trimmed of any visible fat. Rinse them and pat dry.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-0);\r\ninform_instruction(ac-1-1);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Finished. They are rinsed and dried now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Season the porks with garlic powder and seasoning salt.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-2);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Okay, I seasoned them with garlic. What's coming up?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Prepare 1 beaten egg and 1/4 cup egg substitute. Place them in a small bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Done and placed them into a small bowl.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Now you should dredge the pork chops lightly in flour, dip in the egg, and coat liberally with bread crumbs.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "How much flour and how many breadcrumbs?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "1/4 cup all-purpose flour and 2 cups Italian-style seasoned bread crumbs.",
+            "bot": true,
+            "annotations": "repeat(ing-5);\r\nrepeat(ing-6);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Got it. What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Take a large skillet. Then heat 2 tablespoons olive oil over medium-high heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Okay. The skillet is heated over medium temperature.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now place the pork chops in the pan and coat the tops with canola cooking spray.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "With candela cooking spray? Can you repeat the last part of the instruction please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Coat the tops with canola cooking spray.",
+            "bot": true,
+            "annotations": "repeat(ac-5-1);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Got it. It's topped. What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Fry the pork chops 5 minutes per side until the breading appears well browned.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "They appeard to be well-brown by now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Transfer the chops to a 9x13 inch baking dish, and cover with foil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Bake the chops in the preheated oven for 1 hour.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "They have been baking for one hour now. Is the dish finished?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Not yet. Take a medium bowl. Prepare 1 can condensed cream of mushroom soup, 1/2 cup 1% low-fat milk and 1/3 cup white wine. Them combine them in the bowl.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "I combined them. Anything else left to do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "After the pork chops have baked for an hour, cover them with the soup mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "They are covered now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Good. Replace foil and bake for another 30 minutes. Then you can enjoy it.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Alright. Thank you very much.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

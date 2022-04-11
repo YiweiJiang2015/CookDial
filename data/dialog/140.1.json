@@ -1,0 +1,448 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello! What are we gonna cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. Today we will make Eclairs number 2.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Great! how many ingredients do I need?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "The recipe has 15 ingredients. Do you want me to give them you already?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Yes I'd like that!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "The first 3 ingredients are 1/2 cup butter, 1 cup water and 1 cup all-purpose flour.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);\r\ninform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok good! They are ready. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "1/4 teaspoon salt, 4 eggs and 1 (5 ounce) package instant vanilla pudding mix.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-3);\r\ninform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok good. They are ready! Can I have more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "2 and 1/2 cups cold milk, 1 cup heavy cream and 1/4 cup confectioners' sugar.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);\r\ninform_ingredient(ing-8);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok, can I use brown sugar?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok no problem, could you give me more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-9\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "1 teaspoon vanilla extract, 2 (1 ounce) squares semisweet chocolate abd 2 tablespoons butter.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-9);\r\ninform_ingredient(ing-10);\r\ninform_ingredient(ing-11);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok good. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-12\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "The last 3 ingredients are 1 cup confectioners' sugar, 1 teaspoon vanilla extract and 3 tablespoons hot water.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-12);\r\ninform_ingredient(ing-13);\r\ninform_ingredient(ing-14);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok good. I have them all ready! How should I start with the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-14\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "First preheat the oven already to 230 degrees Celsius. In the meantime, we can prepare the rest.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Good, I did that! What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now grease a cookie sheet and take a medium saucepan. There you should combine 1/2 cup butter and 1 cup water.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);\r\ninform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. I did that! What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now bring the saucepan to a boil. Keep on stirring until the butter melts completely.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. the butter is now melted, what should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now reduce heat to low, and also add flour and salt.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. I added flour and salt. What should i do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now you should stir it vigorously until mixture leaves the sides of the pan and begins to form a stiff ball.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok, it looks like a stiff ball now. Should I put it in the oven now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "No not yet. Remove the pan from heat. Then add eggs, one at a time. Beat them well.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-6);\r\ninform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok, should I beat the eggs before or after adding them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "You should beat them when you add them in the pan. Like this they will incorporate completely after each addition.",
+            "bot": true,
+            "annotations": "repeat(inst-7);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. I added all the eggs. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Do you have a pastry bag fitted with a Number 10, or larger?",
+            "bot": true,
+            "annotations": "verify(ac-8-0, [tool-8-2]);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Of course I have a pastry bag! Should I go and grab it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; other;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Yes please.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Good I have it now!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Now you should tip the dough onto the cookie sheet in 1 1/2 x 4 inch strips.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-8);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. the dough is on the cookie sheet. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Bake the cookies for 15 minutes in the preheated oven.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-9-0);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok. They are in now for 15 mins. How do I see if they are ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "They will not be ready after 15 minutes. Then there will follow new instructions to bake them longer.",
+            "bot": true,
+            "annotations": "inform_duration(dur-9-0);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok. What should I do now? Since they are in for 15 minutes.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Now reduce the heat to 165 degrees Celsius and bake 20 minutes more.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-9-1);\r\ninform_instruction(ac-9-2);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok. I did that! 20 minutes passed.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "If you tap lightly on the bottom it should sound hollow.",
+            "bot": true,
+            "annotations": "inform_duration(cond-9-0);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Ok. It sounds hollow! What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 26}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "Ok great. Now let it cool completely on a wire rack. We will now work on the filling. You should combine the pudding mix and milk in a medium bowl according to package directions.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);\r\ninform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Ok. I did that! What else should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "Now in another bowl, beat the cream with an electric mixer until soft peaks form.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "Ok. The cream should be ready. Should I mix pudding and cream?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 29}"
+        },
+        {
+            "utt_id": "utt-49",
+            "utterance": "Now beat in 1/4 cup confectioners' sugar and 1 teaspoon vanilla as well. Then fold the whipped cream into the pudding.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);\r\ninform_instruction(inst-14);"
+        },
+        {
+            "utt_id": "utt-50",
+            "utterance": "Ok. I added sugar and vanilla. And now added to the pudding mix. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-14\", \"tracker_completed_step_num\": 30, \"tracker_requested_step\": \"inst-15\", \"tracker_requested_step_num\": 31}"
+        },
+        {
+            "utt_id": "utt-51",
+            "utterance": "Now cut the tops off of the cooled pastry shells with a sharp knife or something similar.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-15);"
+        },
+        {
+            "utt_id": "utt-52",
+            "utterance": "Sorry I didn't understand. Can you repeat the instruction?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-15\", \"tracker_completed_step_num\": 31, \"tracker_requested_step\": \"inst-15\", \"tracker_requested_step_num\": 31}"
+        },
+        {
+            "utt_id": "utt-53",
+            "utterance": "You should cut of the tops of the cooled pastry shells. You can use a sharp knife for this.",
+            "bot": true,
+            "annotations": "repeat(inst-15);"
+        },
+        {
+            "utt_id": "utt-54",
+            "utterance": "Ok. Thanks for that. Now it's clear! I did that now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"inst-15\", \"tracker_completed_step_num\": 31, \"tracker_requested_step\": \"inst-16\", \"tracker_requested_step_num\": 32}"
+        },
+        {
+            "utt_id": "utt-55",
+            "utterance": "Now fill the shells with the pudding mixture and replace the tops back on the shells.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-16);"
+        },
+        {
+            "utt_id": "utt-56",
+            "utterance": "Ok. They are full of pudding now :). What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-16\", \"tracker_completed_step_num\": 32, \"tracker_requested_step\": \"inst-17\", \"tracker_requested_step_num\": 33}"
+        },
+        {
+            "utt_id": "utt-57",
+            "utterance": "Now for the icing you should take a medium saucepan and melt the chocolate and 2 tablespoons butter. Put it over low heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-17);"
+        },
+        {
+            "utt_id": "utt-58",
+            "utterance": "Ok. The chocolate is melted. What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-17\", \"tracker_completed_step_num\": 33, \"tracker_requested_step\": \"inst-18\", \"tracker_requested_step_num\": 34}"
+        },
+        {
+            "utt_id": "utt-59",
+            "utterance": "Now stir into the saucepan 1 cup confectioners' sugar and 1 teaspoon vanilla.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-18);"
+        },
+        {
+            "utt_id": "utt-60",
+            "utterance": "Ok. I added sugar and vanilla. Could I replace sugar with stevia?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_substitute;\", \"tracker_completed_step\": \"inst-18\", \"tracker_completed_step_num\": 34, \"tracker_requested_step\": \"inst-18\", \"tracker_requested_step_num\": 34}"
+        },
+        {
+            "utt_id": "utt-61",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-62",
+            "utterance": "Ok. no problem! Is there something else I should do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-18\", \"tracker_completed_step_num\": 34, \"tracker_requested_step\": \"inst-19\", \"tracker_requested_step_num\": 35}"
+        },
+        {
+            "utt_id": "utt-63",
+            "utterance": "Now you should stir in hot water one tablespoon at a time. Keep on doing this until the icing becomes smooth and it reaches the desired consistency.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-19);"
+        },
+        {
+            "utt_id": "utt-64",
+            "utterance": "Ok. Should I use all the hot water?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_use_all;\", \"tracker_completed_step\": \"inst-19\", \"tracker_completed_step_num\": 35, \"tracker_requested_step\": \"inst-19\", \"tracker_requested_step_num\": 35}"
+        },
+        {
+            "utt_id": "utt-65",
+            "utterance": "Yes.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-66",
+            "utterance": "Ok good. The icing mixture looks nice now. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-19\", \"tracker_completed_step_num\": 35, \"tracker_requested_step\": \"inst-20\", \"tracker_requested_step_num\": 36}"
+        },
+        {
+            "utt_id": "utt-67",
+            "utterance": "Good. Now remove the pan from heat, let it cool slightly, and then drizzle over filled eclairs.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-20);"
+        },
+        {
+            "utt_id": "utt-68",
+            "utterance": "Ok. The eclairs have the icing on now. Can I eat it right away?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-20\", \"tracker_completed_step_num\": 36, \"tracker_requested_step\": \"inst-21\", \"tracker_requested_step_num\": 37}"
+        },
+        {
+            "utt_id": "utt-69",
+            "utterance": "No not yet. Finally refrigerate until serving. Afterwards, you can enjoy your eclairs.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-21);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-70",
+            "utterance": "Ok great! Do you know for how long should I refrigerate?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-21\", \"tracker_completed_step_num\": 37, \"tracker_requested_step\": \"inst-21\", \"tracker_requested_step_num\": 37}"
+        },
+        {
+            "utt_id": "utt-71",
+            "utterance": "No, sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-72",
+            "utterance": "Ok no problem. Thank you. They taste amazing.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-21\", \"tracker_completed_step_num\": 37, \"tracker_requested_step\": \"inst-21\", \"tracker_requested_step_num\": 37}"
+        },
+        {
+            "utt_id": "utt-73",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

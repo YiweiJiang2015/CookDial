@@ -1,0 +1,48 @@
+{
+    "id": "252",
+    "title": "Corned Beef Hash",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "6 large potatoes, peeled and diced",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"6 large potatoes, peeled and diced\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (12 ounce) can corned beef, cut into chunks",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (12 ounce) can corned beef, cut into chunks\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 medium onion, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 medium onion, chopped\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 cup beef broth",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 cup beef broth\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large deep skillet, over medium heat, combine the potatoes, corned beef, onion, and beef broth.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@46:53 / AC\r\n\t\t:loc ( tool-0-0 \"a large deep skillet\"@6:26 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium heat\"@33:44 / TEMPERATURE )\r\n\t\t:ppt ( ing-0 \"the potatoes\"@54:66 / FOOD )\r\n\t\t:ppt ( ing-1 \"corned beef\"@68:79 / FOOD )\r\n\t\t:ppt ( ing-2 \"onion\"@81:86 / FOOD )\r\n\t\t:ppt ( ing-3 \"beef broth\"@92:102 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Cover and simmer until potatoes are of mashing consistency, and the liquid is almost gone.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"simmer\"@13:19 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-1-0 \"until potatoes are of mashing consistency, and the liquid is almost gone\"@20:92 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Mix well, and serve.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Mix\"@3:6 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"serve\"@17:22 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "id": "062",
+    "title": "Fiery Fish Tacos with Crunchy Corn Salsa",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup corn",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup corn\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup diced red onion",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup diced red onion\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup peeled, chopped jicama",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup peeled, chopped jicama\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 cup diced red bell pepper",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 cup diced red bell pepper\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 cup fresh cilantro leaves, finely chopped",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 cup fresh cilantro leaves, finely chopped\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 lime, zested and juiced",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 lime, zested and juiced\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 tablespoons sour cream",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 tablespoons sour cream\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 tablespoons cayenne pepper",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 tablespoons cayenne pepper\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 tablespoon ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 tablespoon ground black pepper\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 tablespoons salt",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 tablespoons salt\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "6 (4 ounce) fillets tilapia",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"6 (4 ounce) fillets tilapia\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "2 tablespoons olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"2 tablespoons olive oil\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "12 corn tortillas, warmed",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"12 corn tortillas, warmed\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat grill for high heat.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"grill\"@11:16 / TOOL )\r\n\t\t:heat ( temp-0-0 \"high heat\"@21:30 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a medium bowl, mix together corn, red onion, jicama, red bell pepper, and cilantro.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"mix\"@21:24 / AC\r\n\t\t:ppt ( ing-0 \"corn\"@34:38 / FOOD )\r\n\t\t:ppt ( ing-1 \"red onion\"@40:49 / FOOD )\r\n\t\t:ppt ( ing-2 \"jicama\"@51:57 / FOOD )\r\n\t\t:ppt ( ing-3 \"red bell pepper\"@59:74 / FOOD )\r\n\t\t:ppt ( ing-4 \"cilantro\"@80:88 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a medium bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir in lime juice and zest.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-5 \"lime juice\"@11:21 / FOOD )\r\n\t\t:ppt ( ing-5 \"zest\"@26:30 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) In a small bowl, combine cayenne pepper, ground black pepper, and salt.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"combine\"@20:27 / AC\r\n\t\t:ppt ( ing-7 \"cayenne pepper\"@28:42 / FOOD )\r\n\t\t:ppt ( ing-8 \"ground black pepper\"@44:63 / FOOD )\r\n\t\t:ppt ( ing-9 \"salt\"@69:73 / FOOD )\r\n\t\t:loc ( tool-3-0 \"a small bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Brush each fillet with olive oil, and sprinkle with spices.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Brush\"@3:8 / AC\r\n\t\t:ppt ( ing-11 \"olive oil\"@26:35 / FOOD )\r\n\t\t:gol ( \"each fillet\"@9:20 / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"sprinkle\"@41:49 / AC\r\n\t\t:ppt ( \"spices\"@55:61 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Arrange fillets on grill grate, and cook for 3 minutes per side.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Arrange\"@3:10 / AC\r\n\t\t:ppt ( ing-10 \"fillets\"@11:18 / FOOD )\r\n\t\t:gol ( tool-5-0 \"grill grate\"@22:33 / TOOL )\r\n\t)\r\n\t:inform ( ac-5-1 \"cook\"@39:43 / AC\r\n\t\t:duration ( dur-5-0 \"3 minutes\"@48:57 / DUR )\r\n\t\t:todo ( \"per side\"@58:66 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) For each fiery fish taco, top two corn tortillas with fish, sour cream, and corn salsa.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"top\"@29:32 / AC\r\n\t\t:ppt ( \"fish\"@57:61 / FOOD )\r\n\t\t:ppt ( \"sour cream\"@63:73 / FOOD )\r\n\t\t:ppt ( \"corn salsa\"@79:89 / FOOD )\r\n\t\t:gol ( \"two corn tortillas\"@33:51 / FOOD )\r\n\t\t:subtask ( \"For each fiery fish taco\"@3:27 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

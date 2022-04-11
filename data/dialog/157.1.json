@@ -1,0 +1,112 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi how do I make biga?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi! In order to make biga you'll need 4 ingredients. Would you like to prepare them first?",
+            "bot": true,
+            "annotations": "greeting();\r\nsum_ingredient_list();\r\npropose_list_ingredients();\r\n"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok yes please.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Good! The firs two ingredients are 3 fourths of a easpoon active dry yeast and half a cup warm water.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok I have them, what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Good, the next two ingredients are 3 and a half cups unbleached bread flour and one and one fourth of a cup of cold water.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);\r\n"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok alright I have them all ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Good! then place the warm water in a small bowl, and sprinkle the yeast over the top.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok, what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "You can let it stand until the yeast has dissolved and is foam. It will take around 15 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok it looks ok now. What should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Good! Now you should measure the flour into a large bowl. After that you can make a well in the center, and pour in the yeast mixture and cold water.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "You now shuld use a sturdy spoon to mix it together until sticky and difficult to stir, but nevertheless thoroughly combined.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok I think it looks like your instructions.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Great! Now cover and allow to ferment for 24 hours in the refrigerator before using it. You can store in the refrigerator for up to 2 weeks.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);\r\ninform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok thanks for the instructions!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "You are welcome!",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

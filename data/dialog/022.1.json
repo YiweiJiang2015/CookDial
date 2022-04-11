@@ -1,0 +1,178 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we are going to make Artichoke and Sun dried Tomato Chicken. Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes, I am. What is the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "First we are going to season both sides of the 4 chicken breasts with salt and pepper.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "How many salt and pepper do I need to use?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "You can add as much as you desire depending on your taste.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. that's done now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Good. Now heat some oil in a large skillet over medium high heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "The oil is heated now. Should I add the chicken breasts now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Yes you can add the chicken breasts. Cook them until both sides are brown.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. the 4 breasts are brown now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Ok. now remove them from the pan and set them aside. Keep the pan on the pit and pour 1 can of diced tomatoes with green peppers and onions.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);\r\ninform_instruction(ac-4-0);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "How many tomatoes, peppers and onions do I need to add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Just 1 prepared can which includes these ingredients.",
+            "bot": true,
+            "annotations": "inform_amount(ing-3);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. thank you for the clarification. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now cook them for 1 minute and stir constantly.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-4-1);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "One minute has passed.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now add 1/4 cup of sun-dried tomato pesto.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-5, [ing-4]);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. I have added it.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now add 1 can of artichoke hearts.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-5, [ing-5]);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "So only the hearts of an artichoke?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Yes they are coming in a can and are normally already drained in water and quartered.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_amount(ing-5);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. Thank you. I have added them.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now finally add the chicken again. Cover the pan and reduce the heat to medium.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-5-1);\r\ninform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "I have added the chicken again. For how long should I cook it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Let it slimmer for 5 to 10 minutes. Make sure the chicken is cooked through.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "The chicken is ready now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Ok. nice, enjoy the meal.",
+            "bot": true,
+            "annotations": "enjoy();"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Thank you. it is really good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 14}"
+        }
+    ]
+}

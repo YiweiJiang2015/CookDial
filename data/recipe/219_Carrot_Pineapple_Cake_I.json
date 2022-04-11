@@ -1,0 +1,174 @@
+{
+    "id": "219",
+    "title": "Carrot Pineapple Cake I",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 teaspoons baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 teaspoons baking soda\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 teaspoon baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 teaspoon baking powder\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 teaspoons ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 teaspoons ground cinnamon\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 3/4 cups white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 3/4 cups white sugar\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 cup vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 cup vegetable oil\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "3 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"3 eggs\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 cups shredded carrots",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 cups shredded carrots\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1 cup flaked coconut",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1 cup flaked coconut\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 cup chopped walnuts",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 cup chopped walnuts\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 (8 ounce) can crushed pineapple, drained",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 (8 ounce) can crushed pineapple, drained\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1 (8 ounce) package cream cheese",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1 (8 ounce) package cream cheese\" )"
+        },
+        {
+            "id": "ing-14",
+            "text": "1/4 cup butter, softened",
+            "type": "ingredient",
+            "eamr": "( ing-14 \"1/4 cup butter, softened\" )"
+        },
+        {
+            "id": "ing-15",
+            "text": "2 cups confectioners' sugar",
+            "type": "ingredient",
+            "eamr": "( ing-15 \"2 cups confectioners' sugar\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Grease and flour a 9x13 inch pan.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Grease and flour\"@3:19 / AC\r\n\t\t:ppt ( tool-1-0 \"a 9x13 inch pan\"@20:35 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Mix flour, baking soda, baking powder, salt and cinnamon.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Mix\"@3:6 / AC\r\n\t\t:ppt ( ing-0 \"flour\"@7:12 / FOOD )\r\n\t\t:ppt ( ing-1 \"baking soda\"@14:25 / FOOD )\r\n\t\t:ppt ( ing-2 \"baking powder\"@27:40 / FOOD )\r\n\t\t:ppt ( ing-3 \"salt\"@42:46 / FOOD )\r\n\t\t:ppt ( ing-4 \"cinnamon\"@51:59 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Make a well in the center and add sugar, oil, eggs and vanilla.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Make\"@3:7 / AC\r\n\t\t:ppt ( \"a well\"@8:14 / OTHER )\r\n\t\t:source ( \"the center\"@18:28 / OTHER )\r\n\t)\r\n\t:inform ( ac-3-1 \"add\"@33:36 / AC\r\n\t\t:ppt ( ing-5 \"sugar\"@37:42 / FOOD )\r\n\t\t:ppt ( ing-6 \"oil\"@44:47 / FOOD )\r\n\t\t:ppt ( ing-7 \"eggs\"@49:53 / FOOD )\r\n\t\t:ppt ( ing-8 \"vanilla\"@58:65 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Mix with wooden spoon until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Mix\"@3:6 / AC\r\n\t\t:instrument ( tool-4-0 \"wooden spoon\"@12:24 / TOOL )\r\n\t\t:until ( cond-4-0 \"until smooth\"@25:37 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Stir in carrots, coconut, walnuts and pineapple.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-9 \"carrots\"@11:18 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( ing-10 \"coconut\"@20:27 / FOOD )\r\n\t\t:ppt ( ing-11 \"walnuts\"@29:36 / FOOD )\r\n\t\t:ppt ( ing-12 \"pineapple\"@41:50 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Pour into 9x13 inch pan.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Pour\"@3:7 / AC\r\n\t\t:gol ( tool-6-0 \"9x13 inch pan\"@13:26 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Bake at 350 degrees for about 45 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Bake\"@3:7 / AC\r\n\t\t:heat ( temp-7-0 \"350 degrees\"@11:22 / TEMPERATURE )\r\n\t\t:duration ( dur-7-0 \"about 45 minutes\"@27:43 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Don't panic, the center will sink a little.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"sink\"@32:36 / AC\r\n\t\t:pag ( \"the center\"@16:26 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Allow to cool.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"cool\"@13:17 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) To make the frosting: Cream the butter and cream cheese until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Cream\"@26:31 / AC\r\n\t\t:subtask ( purp-10-0 \"To make the frosting\"@4:24 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( ing-14 \"the butter\"@32:42 / FOOD )\r\n\t)\r\n\t:inform ( ac-10-1 \"cream\"@47:52 / AC\r\n\t\t:ppt ( ing-13 \"cheese\"@53:59 / FOOD )\r\n\t\t:until ( cond-10-0 \"until smooth\"@60:72 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Add the confectioners sugar and beat until creamy.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Add\"@4:7 / AC\r\n\t\t:ppt ( ing-14 \"the confectioners sugar\"@8:31 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-11-1 \"beat\"@36:40 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-11-0 \"until creamy\"@41:53 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

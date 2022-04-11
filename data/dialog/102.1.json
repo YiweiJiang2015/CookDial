@@ -1,0 +1,154 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello, what are we cooking today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi we will make bacon wrapped hotdogs. Are you looking forward?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Great I am looking so forward!! What are the ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "First you will need 3 ingredients. Start with 10 hot dogs and cut them into thirds.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\ninform_ingredient(ing-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. Good. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "You will need 15 slices bacon, cut in half and 1/2 cup packed brown sugar.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-1);\r\ninform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. Good. Can I use white sugar?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. Good. Are the ingredients over?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Yes, that were all the ingredients. Now you should wrap 1/2 slice of bacon around each piece of hot dog.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. I wrapped the bacon around the hotdogs. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "You should secure the bacon with a toothpick.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. I've done that. Should I put them in the oven now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Do you have a slow cooker?",
+            "bot": true,
+            "annotations": "verify(inst-2, [tool-2-0]);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Yes, I do! Should I take it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; other;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Yes, place the hot dogs into a slow cooker on low heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. I did that. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now pour the brown sugar over the hot dogs and lit it cook for 5 to 6 hours.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. Good. Should I use all the sugar?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_use_all;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Yes, use all of it.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. Good. I waited six hours. How do I see if the hot dogs are ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "It will be ready when all of the bacon is cooked.",
+            "bot": true,
+            "annotations": "inform_duration(cond-3-0);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. The bacon is cooked. Is the dish ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Yes, that was all. Enjoy! I'm sure you will.",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Great, I love bacon.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 7}"
+        }
+    ]
+}

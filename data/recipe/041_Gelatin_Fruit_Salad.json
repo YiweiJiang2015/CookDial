@@ -1,0 +1,54 @@
+{
+    "id": "041",
+    "title": "Gelatin Fruit Salad",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup applesauce",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup applesauce\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 (3 ounce) packages cherry gelatin",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 (3 ounce) packages cherry gelatin\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 (12 ounce) can lemon-lime soda",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 (12 ounce) can lemon-lime soda\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 (8 ounce) can crushed pineapple, undrained",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 (8 ounce) can crushed pineapple, undrained\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a saucepan, bring applesauce to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"boil\"@40:44 / AC\r\n\t\t:ppt ( ing-0 \"applesauce\"@24:34 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a saucepan\"@6:16 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Remove from the heat; stir in gelatin until dissolved.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( \"the heat\"@15:23 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"stir in\"@25:32 / AC\r\n\t\t:ppt ( ing-1 \"gelatin\"@33:40 / FOOD )\r\n\t\t:until ( cond-1-0 \"until dissolved\"@41:56 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Slowly add soda and pineapple.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"add\"@10:13 / AC\r\n\t\t:ppt ( ing-2 \"soda\"@14:18 / FOOD )\r\n\t\t:ppt ( ing-3 \"pineapple\"@23:32 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Refrigerate until firm.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Refrigerate\"@3:14 / AC\r\n\t\t:until ( cond-3-0 \"until firm\"@15:25 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

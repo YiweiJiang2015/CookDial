@@ -1,0 +1,132 @@
+{
+    "id": "156",
+    "title": "Chicken Tacos",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 pound skinless, boneless chicken breast halves, cut into bite size pieces",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 pound skinless, boneless chicken breast halves, cut into bite size pieces\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup lemonade",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup lemonade\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 tablespoons olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 tablespoons olive oil\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 tablespoon lime juice",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 tablespoon lime juice\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 1/2 teaspoons Worcestershire sauce",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 1/2 teaspoons Worcestershire sauce\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 teaspoon garlic powder",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 teaspoon garlic powder\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 teaspoon onion powder",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 teaspoon onion powder\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 bay leaf",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 bay leaf\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 (12 ounce) package corn tortillas",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 (12 ounce) package corn tortillas\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 head lettuce, shredded",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 head lettuce, shredded\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "2 large tomatoes, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"2 large tomatoes, chopped\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 (8 ounce) package shredded sharp Cheddar cheese",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 (8 ounce) package shredded sharp Cheddar cheese\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 (8 ounce) jar salsa",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 (8 ounce) jar salsa\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1 (8 ounce) container sour cream",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1 (8 ounce) container sour cream\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large skillet over medium heat, combine chicken, lemonade, olive oil, lime juice, and Worcestershire sauce.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@40:47 / AC\r\n\t\t:ppt ( ing-0 \"chicken\"@48:55 / FOOD )\r\n\t\t:ppt ( ing-1 \"lemonade\"@57:65 / FOOD )\r\n\t\t:ppt ( ing-2 \"olive oil\"@67:76 / FOOD )\r\n\t\t:ppt ( ing-3 \"lime juice\"@78:88 / FOOD )\r\n\t\t:ppt ( ing-4 \"Worcestershire sauce\"@94:114 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large skillet\"@6:21 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium heat\"@27:38 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Season with garlic powder, onion powder, and bay leaf.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Season\"@3:9 / AC\r\n\t\t:ppt ( ing-5 \"garlic powder\"@15:28 / FOOD )\r\n\t\t:ppt ( ing-6 \"onion powder\"@30:42 / FOOD )\r\n\t\t:ppt ( ing-7 \"bay leaf\"@48:56 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Simmer until chicken is no longer pink, and juices run clear, 15 to 20 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Simmer\"@3:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-2-0 \"until chicken is no longer pink, and juices run clear\"@10:63 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-2-0 \"15 to 20 minutes\"@65:81 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Meanwhile, warm the tortillas in the oven or microwave until soft.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"warm\"@14:18 / AC\r\n\t\t:ppt ( ing-8 \"the tortillas\"@19:32 / FOOD )\r\n\t\t:loc ( \"or\"@-1:-1 / CHOICE\r\n\t\t\t:option ( tool-3-0 \"the oven\"@36:44 / TOOL )\r\n\t\t\t:option ( ac-3-1 \"microwave\"@48:57 / AC )\r\n\t\t)\r\n\t\t:until ( cond-3-0 \"until soft\"@58:68 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) When chicken is fully cooked, transfer to serving bowl.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"transfer\"@33:41 / AC\r\n\t\t:gol ( tool-4-0 \"serving bowl\"@45:57 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:when ( cond-4-0 \"When chicken is fully cooked\"@3:31 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Place lettuce, tomatoes, cheese, salsa, and sour cream in serving dishes.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-9 \"lettuce\"@9:16 / FOOD )\r\n\t\t:ppt ( ing-10 \"tomatoes\"@18:26 / FOOD )\r\n\t\t:ppt ( ing-11 \"cheese\"@28:34 / FOOD )\r\n\t\t:ppt ( ing-12 \"salsa\"@36:41 / FOOD )\r\n\t\t:ppt ( ing-13 \"sour cream\"@47:57 / FOOD )\r\n\t\t:gol ( tool-5-0 \"serving dishes\"@61:75 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Each person can create their own wrap, using their preferred ingredients.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"create\"@19:25 / AC\r\n\t\t:pag ( \"Each person\"@3:14 / OTHER )\r\n\t\t:ppt ( \"their own wrap\"@26:40 / FOOD )\r\n\t\t:mnr ( ac-6-1 \"using\"@42:47 / AC\r\n\t\t\t:ppt ( \"their preferred ingredients\"@48:75 / FOOD )\r\n\t\t)\r\n\t)\r\n)"
+        }
+    ]
+}

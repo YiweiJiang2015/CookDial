@@ -1,0 +1,78 @@
+{
+    "id": "035",
+    "title": "Delicious Artichoke Dip",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/2 cup mayonnaise",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/2 cup mayonnaise\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup sour cream",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup sour cream\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup grated Parmesan cheese",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup grated Parmesan cheese\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 (14 ounce) can artichoke hearts, drained",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 (14 ounce) can artichoke hearts, drained\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 cup minced red onion",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 cup minced red onion\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 tablespoon lemon juice",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 tablespoon lemon juice\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"salt and pepper to taste\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 400 degrees F (200 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"400 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"200 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a medium-sized mixing bowl, stir together mayonnaise, sour cream, Parmesan cheese and onion.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"stir\"@34:38 / AC\r\n\t\t:ppt ( ing-0 \"mayonnaise\"@48:58 / FOOD )\r\n\t\t:ppt ( ing-1 \"sour cream\"@60:70 / FOOD )\r\n\t\t:ppt ( ing-2 \"Parmesan cheese\"@72:87 / FOOD )\r\n\t\t:ppt ( ing-4 \"onion\"@92:97 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a medium-sized mixing bowl\"@6:32 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) When these ingredients are combined, mix in artichoke hearts, lemon juice, salt and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"mix in\"@40:46 / AC\r\n\t\t:ppt ( ing-3 \"artichoke hearts\"@47:63 / FOOD )\r\n\t\t:ppt ( ing-5 \"lemon juice\"@65:76 / FOOD )\r\n\t\t:ppt ( ing-6 \"salt and pepper\"@78:93 / FOOD )\r\n\t\t:duration ( cond-2-0 \"When these ingredients are combined\"@3:38 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Transfer mixture to a shallow baking dish.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Transfer\"@3:11 / AC\r\n\t\t:ppt ( \"mixture\"@12:19 / FOOD )\r\n\t\t:gol ( tool-3-0 \"a shallow baking dish\"@23:44 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Bake at 400 degrees F (200 degrees C) for 20 minutes, or until light brown on top.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:heat ( temp-4-0 \"400 degrees F\"@11:24 / TEMPERATURE )\r\n\t\t:heat ( temp-4-1 \"200 degrees C\"@26:39 / TEMPERATURE )\r\n\t\t:duration ( dur-4-0 \"20 minutes\"@45:55 / DUR )\r\n\t\t:until ( cond-4-0 \"until light brown on top\"@60:84 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

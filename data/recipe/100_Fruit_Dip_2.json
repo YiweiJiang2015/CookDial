@@ -1,0 +1,48 @@
+{
+    "id": "100",
+    "title": "Fruit Dip 2",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "8 ounces cream cheese",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"8 ounces cream cheese\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup marshmallow creme",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup marshmallow creme\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 cups frozen whipped topping, thawed",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 cups frozen whipped topping, thawed\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup unsweetened pineapple juice",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup unsweetened pineapple juice\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Blend together the cream cheese, marshmallow cream and thawed topping.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Blend\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"the cream cheese\"@18:34 / FOOD )\r\n\t\t:ppt ( ing-1 \"marshmallow cream\"@36:53 / FOOD )\r\n\t\t:ppt ( ing-2 \"thawed topping\"@58:72 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add enough pineapple juice to make it dipping consistency.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-3 \"enough pineapple juice\"@7:29 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-1-0 \"to make it dipping consistency\"@30:60 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Chill for 1 hour.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Chill\"@3:8 / AC\r\n\t\t:duration ( dur-2-0 \"1 hour\"@13:19 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

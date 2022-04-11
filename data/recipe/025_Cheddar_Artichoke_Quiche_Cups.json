@@ -1,0 +1,126 @@
+{
+    "id": "025",
+    "title": "Cheddar Artichoke Quiche Cups",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (7.5 ounce) jar marinated artichoke hearts",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (7.5 ounce) jar marinated artichoke hearts\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 small onion, finely chopped",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 small onion, finely chopped\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 garlic clove, minced",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 garlic clove, minced\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "4 eggs, beaten",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"4 eggs, beaten\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/4 cup dry bread crumbs",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/4 cup dry bread crumbs\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 teaspoon ground mustard",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 teaspoon ground mustard\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/8 teaspoon dried oregano",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/8 teaspoon dried oregano\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/8 teaspoon pepper",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/8 teaspoon pepper\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/8 teaspoon hot pepper sauce",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/8 teaspoon hot pepper sauce\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 (8 ounce) packages shredded Cheddar cheese",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 (8 ounce) packages shredded Cheddar cheese\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "2 tablespoons minced fresh parsley",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"2 tablespoons minced fresh parsley\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Drain artichokes, reserving half of the marinade.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Drain\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"artichokes\"@9:19 / FOOD )\r\n\t\t:simultaneous ( ac-0-1 \"reserving\"@21:30 / AC\r\n\t\t\t:ppt ( \"half of the marinade\"@31:51 / FOOD )\r\n\t\t)\r\n\t\t:_result drained-artichokes\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Chop artichokes; set aside.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Chop\"@3:7 / AC\r\n\t\t:ppt ( \"artichokes\"@8:18 / FOOD )\r\n\t\t:_result ( chopped_artichoke )\r\n\t)\r\n\t:inform ( ac-1-1 \"set\"@20:23 / AC\r\n\t\t:ppt ( chopped_artichoke / FOOD )\r\n\t\t:_result ( aside-artichoke )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) In a skillet, saute onion and garlic in reserved marinade until tender; set aside.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"saute\"@17:22 / AC\r\n\t\t:loc ( tool-2-0 \"a skillet\"@6:15 / TOOL )\r\n\t\t:ppt ( ing-1 \"onion\"@23:28 / FOOD )\r\n\t\t:ppt ( ing-2 \"garlic\"@33:39 / FOOD )\r\n\t\t:loc ( \"reserved marinade\"@43:60 / FOOD )\r\n\t\t:until ( cond-2-0 \"until tender\"@61:73 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-2-1 \"set aside\"@75:84 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) In a large bowl, combine the egg, bread crumbs, mustard, oregano, pepper and hot pepper sauce.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"combine\"@20:27 / AC\r\n\t\t:loc ( tool-3-0 \"In a large bowl\"@3:18 / TOOL )\r\n\t\t:ppt ( ing-3 \"the egg\"@28:35 / FOOD )\r\n\t\t:ppt ( ing-4 \"bread crumbs\"@37:49 / FOOD )\r\n\t\t:ppt ( ing-5 \"mustard\"@51:58 / FOOD )\r\n\t\t:ppt ( ing-6 \"oregano\"@60:67 / FOOD )\r\n\t\t:ppt ( ing-7 \"pepper\"@69:75 / FOOD )\r\n\t\t:ppt ( ing-8 \"hot pepper sauce\"@80:96 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Stir in the cheese, parsley, reserved artichokes and onion mixture.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-9 \"the cheese\"@11:21 / FOOD )\r\n\t\t:ppt ( ing-10 \"parsley\"@23:30 / FOOD )\r\n\t\t:ppt ( \"reserved artichokes\"@32:51 / FOOD )\r\n\t\t:ppt ( \"onion mixture\"@56:69 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Fill miniature muffin cups three-fourths full.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Fill\"@3:7 / AC\r\n\t\t:ppt ( tool-5-0 \"miniature muffin cups\"@8:29 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Bake at 325 degrees F for 15-17 minutes or until set.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Bake\"@3:7 / AC\r\n\t\t:heat ( temp-6-0 \"325 degrees F\"@11:24 / TEMPERATURE )\r\n\t\t:duration ( dur-6-0 \"15-17 minutes\"@29:42 / DUR )\r\n\t\t:until ( cond-6-0 \"until set\"@46:55 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Cool for 5 minutes before removing from pan to wire racks.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Cool\"@3:7 / AC\r\n\t\t:duration ( dur-7-0 \"5 minutes\"@12:21 / DUR )\r\n\t\t:duration ( cond-7-0 \"before removing from pan to wire racks\"@22:60 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Serve warm.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

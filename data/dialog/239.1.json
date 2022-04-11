@@ -1,0 +1,88 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi bot, what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi! Today we are making Bahama mama, a nice and simple cocktail perfect for your Christmas Caribbean party. Sounds fun?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();\r\n"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ah yes sounds great! How should I start.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "You can start by preparing the ingredients. The first two are one fluid ounce of dark rum and half a fluid ounce of apricots brandy.",
+            "bot": true,
+            "annotations": "propose_list_ingredients();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok how many are there in total? I got the first two ingredients.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length; confirm;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "There are only four in total. The next two or 3 and a half fluid ounces of fruit punch and half fluid ounce of pina colada mix.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\ninform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Alright, sounds like a party. How should I start?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "It will be! Take in mixing glass and combine rhum, apricot brandy, fruit punch and pina colada mix.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok should I use all of it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_use_all;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Yes sure!",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Alright, what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "You can now stir too blend and then you are ready to serve it over ice!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "OK nice. I hope all my guest will like it, thanks!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "You are welcome and I hope that you will party according to the rules!",
+            "bot": true,
+            "annotations": "thank();\r\nenjoy();"
+        }
+    ]
+}

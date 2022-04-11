@@ -1,0 +1,156 @@
+{
+    "id": "227",
+    "title": "Almond Apricot Bread",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 1/2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 1/2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup packed brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup packed brown sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "3 teaspoons baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"3 teaspoons baking powder\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 (4 ounce) jars apricot baby food, divided",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 (4 ounce) jars apricot baby food, divided\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 egg",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 egg\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "3/4 cup milk",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"3/4 cup milk\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "3 tablespoons vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"3 tablespoons vegetable oil\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 teaspoon almond extract",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 teaspoon almond extract\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "2/3 cup sliced almonds, coarsely chopped",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"2/3 cup sliced almonds, coarsely chopped\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/2 cup diced dried apricots",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/2 cup diced dried apricots\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1/2 cup confectioners' sugar",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1/2 cup confectioners' sugar\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1 teaspoon milk",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1 teaspoon milk\" )"
+        },
+        {
+            "id": "ing-14",
+            "text": "1/8 teaspoon almond extract",
+            "type": "ingredient",
+            "eamr": "( ing-14 \"1/8 teaspoon almond extract\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large bowl, combine the flour, sugars, baking powder and salt.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@20:27 / AC\r\n\t\t:ppt ( ing-0 \"the flour\"@28:37 / FOOD )\r\n\t\t:ppt ( \"sugars\"@39:45 / FOOD\r\n\t\t\t:ref ( ing-1 )\r\n\t\t\t:ref ( ing-2 )\r\n\t\t)\r\n\t\t:ppt ( ing-3 \"baking powder\"@47:60 / FOOD )\r\n\t\t:ppt ( ing-4 \"salt\"@65:69 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Set aside 1 tablespoon baby food for glaze.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Set aside\"@3:12 / AC\r\n\t\t:ppt ( ing-5 \"1 tablespoon baby food\"@13:35 / FOOD )\r\n\t\t:prp ( purp-1-0 \"for glaze\"@36:45 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) In another bowl, beat the egg, milk, oil, extract and remaining baby food.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"beat\"@20:24 / AC\r\n\t\t:loc ( tool-2-0 \"another bowl\"@6:18 / TOOL )\r\n\t\t:ppt ( ing-6 \"the egg\"@25:32 / FOOD )\r\n\t\t:ppt ( ing-7 \"milk\"@34:38 / FOOD )\r\n\t\t:ppt ( ing-8 \"oil\"@40:43 / FOOD )\r\n\t\t:ppt ( ing-9 \"extract\"@45:52 / FOOD )\r\n\t\t:ppt ( ing-5 \"remaining baby food\"@57:76 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Stir into dry ingredients just until moistened.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Stir\"@3:7 / AC\r\n\t\t:ppt ( \"dry ingredients\"@13:28 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-3-0 \"until moistened\"@34:49 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Fold in almonds and apricots.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Fold in\"@3:10 / AC\r\n\t\t:ppt ( ing-10 \"almonds\"@11:18 / FOOD )\r\n\t\t:ppt ( ing-11 \"apricots\"@23:31 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Pour into a greased 9-in loaf pan.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Pour\"@3:7 / AC\r\n\t\t:gol ( tool-5-0 \"a greased 9-in loaf pan\"@13:36 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Bake at 350 degrees F (180 degrees C) for 55-65 minutes or until a toothpick comes out clean.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:heat ( temp-6-0 \"350 degrees F\"@11:24 / TEMPERATURE )\r\n\t:heat ( temp-6-1 \"180 degrees C\"@-1:-1 / TEMPERATURE )\r\n\t\t:duration ( dur-6-0 \"55-65 minutes\"@-1:-1 / DUR )\r\n\t\t:until ( cond-6-0 \"until a toothpick comes out clean\"@-1:-1 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Cool for 10 minutes before removing from the pan to a wire rack.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Cool\"@3:7 / AC\r\n\t\t:duration ( dur-7-0 \"10 minutes\"@12:22 / DUR )\r\n\t\t:duration ( cond-7-0 \"before removing from the pan to a wire rack\"@23:66 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) For glaze, combine the confectioners' sugar, milk, extract and reserved baby food until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"combine\"@14:21 / AC\r\n\t\t:subtask ( purp-8-0 \"For glaze\"@3:12 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( ing-12 \"the confectioners' sugar\"@22:46 / FOOD )\r\n\t\t:ppt ( ing-13 \"milk\"@48:52 / FOOD )\r\n\t\t:ppt ( ing-14 \"extract\"@54:61 / FOOD )\r\n\t\t:ppt ( \"reserved baby food\"@66:84 / FOOD )\r\n\t\t:until ( cond-8-0 \"until smooth\"@85:97 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Drizzle over cooled bread.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Drizzle\"@4:11 / AC\r\n\t\t:gol ( \"cooled bread\"@17:29 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

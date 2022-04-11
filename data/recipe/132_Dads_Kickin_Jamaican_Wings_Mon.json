@@ -1,0 +1,78 @@
+{
+    "id": "132",
+    "title": "Dads Kickin Jamaican Wings Mon",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3 tablespoons Jamaican jerk seasoning blend",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3 tablespoons Jamaican jerk seasoning blend\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "3 tablespoons vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"3 tablespoons vegetable oil\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 cloves garlic, diced",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 cloves garlic, diced\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 (1 inch) piece peeled fresh ginger, diced",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 (1 inch) piece peeled fresh ginger, diced\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 bunch green onions, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 bunch green onions, chopped\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "12 slices pickled jalapeno peppers",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"12 slices pickled jalapeno peppers\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "4 pounds chicken wings",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"4 pounds chicken wings\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Place the jerk seasoning, oil, garlic, ginger, green onions, and jalapeno slices in a blender, and blend until thick and smooth.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"the jerk seasoning\"@9:27 / FOOD )\r\n\t\t:ppt ( ing-1 \"oil\"@29:32 / FOOD )\r\n\t\t:ppt ( ing-2 \"garlic\"@34:40 / FOOD )\r\n\t\t:ppt ( ing-3 \"ginger\"@42:48 / FOOD )\r\n\t\t:ppt ( ing-4 \"green onions\"@50:62 / FOOD )\r\n\t\t:ppt ( ing-5 \"jalapeno slices\"@68:83 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a blender\"@87:96 / TOOL )\r\n\t)\r\n\t:inform ( ac-0-1 \"blend\"@102:107 / AC\r\n\t\t:until ( cond-0-0 \"until thick and smooth\"@108:130 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Dunk wings in the mixture, and arrange in single layer on baking sheets.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Dunk\"@3:7 / AC\r\n\t\t:ppt ( ing-6 \"wings\"@8:13 / FOOD )\r\n\t\t:gol ( \"the mixture\"@17:28 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"arrange\"@34:41 / AC\r\n\t\t:loc ( tool-1-0 \"baking sheets\"@61:74 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:reshape ( \"single layer\"@45:57 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cover with aluminum foil, and refrigerate 8 hours, or overnight.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( tool-2-0 \"aluminum foil\"@14:27 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"refrigerate\"@33:44 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-2-0 \"8 hours\"@45:52 / DUR )\r\n\t\t:duration ( dur-2-1 \"overnight\"@57:66 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Preheat oven to 300 degrees F (150 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-3-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-3-0 \"300 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-3-1 \"150 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Bake wings 2 hours in the preheated oven.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( \"wings\"@8:13 / FOOD )\r\n\t\t:duration ( dur-4-0 \"2 hours\"@14:21 / DUR )\r\n\t\t:loc ( tool-4-0 \"the preheated oven\"@25:43 / TOOL )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "vocabularies":
+  {
+    "words": {
+        "suffix": "json",
+        "add_unk": true,
+        "unk_token": "<UNK>"
+    },
+    "agent_acts": {
+        "suffix": "json",
+        "add_unk": false,
+        "add_start": true,
+        "add_end": true
+    },
+    "intent": {
+        "suffix": "json",
+        "add_unk": false
+    },
+    "section": {
+        "suffix": "json",
+        "add_unk": false
+    }
+  }
+}

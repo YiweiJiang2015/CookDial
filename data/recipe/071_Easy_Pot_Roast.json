@@ -1,0 +1,90 @@
+{
+    "id": "071",
+    "title": "Easy Pot Roast",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "4 pounds boneless chuck roast",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"4 pounds boneless chuck roast\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 cups water",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 cups water\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 (1 ounce) package dry onion and mushroom soup mix",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 (1 ounce) package dry onion and mushroom soup mix\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 tablespoon Worcestershire sauce",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 tablespoon Worcestershire sauce\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "3 potatoes, peeled and chopped",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"3 potatoes, peeled and chopped\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 stalks celery, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 stalks celery, chopped\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 carrots, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 carrots, chopped\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Score roast on top and sides, and place in a medium sized oven bag.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Score\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"roast\"@9:14 / FOOD )\r\n\t\t:heat ( \"top and sides\"@18:31 / OTHER )\r\n\t)\r\n\t:inform ( ac-1-1 \"place\"@37:42 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-1-0 \"a medium sized oven bag\"@46:69 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Combine water, soup mix, and Worcestershire sauce; pour over roast.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( ing-1 \"water\"@11:16 / FOOD )\r\n\t\t:ppt ( ing-2 \"soup mix\"@18:26 / FOOD )\r\n\t\t:ppt ( ing-3 \"Worcestershire sauce\"@32:52 / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"pour\"@54:58 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"roast\"@64:69 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Arrange vegetables around meat.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Arrange\"@3:10 / AC\r\n\t\t:ppt ( \"vegetables\"@11:21 / FOOD\r\n\t\t\t:ref ( ing-4 )\r\n\t\t\t:ref ( ing-5 )\r\n\t\t\t:ref ( ing-6 )\r\n\t\t)\r\n\t\t:gol ( \"meat\"@29:33 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Place oven bag on a roasting pan.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( tool-4-0 \"oven bag\"@9:17 / TOOL )\r\n\t\t:gol ( tool-4-1 \"a roasting pan\"@21:35 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Place roast in oven, and immediately reduce heat to 300 degrees F (150 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( \"roast\"@9:14 / FOOD )\r\n\t\t:gol ( tool-5-0 \"oven\"@18:22 / TOOL )\r\n\t)\r\n\t:inform ( ac-5-1 \"reduce\"@40:46 / AC\r\n\t\t:ppt ( tool-5-1 \"heat\"@47:51 / TOOL )\r\n\t\t:gol ( temp-5-0 \"300 degrees F\"@55:68 / TEMPERATURE )\r\n\t\t:gol ( temp-5-1 \"150 degrees C\"@70:83 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Bake for 1 1/2 hours for medium well done, or adjust time for desired doneness.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Bake\"@3:7 / AC\r\n\t\t:duration ( dur-6-0 \"1 1/2 hours\"@12:23 / DUR )\r\n\t\t:prp ( purp-6-0 \"for medium well done\"@24:44 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-6-1 \"adjust\"@49:55 / AC\r\n\t\t:ppt ( \"time\"@56:60 / OTHER )\r\n\t\t:prp ( purp-6-1 \"for desired doneness\"@61:81 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

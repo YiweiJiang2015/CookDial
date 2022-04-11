@@ -1,0 +1,184 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi bot! My friends are coming for dinner tonight! Can you suggest me a nice recipe to impress them?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "I have a great recipe for you. Chicken Salad With Thai Flavored Dressing. Does it sound yummy?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes, sounds exactly like what I was looking for.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Ok great! Do you want to prepare all the ingredients?",
+            "bot": true,
+            "annotations": "propose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Yes, I like to have the ingredients ready before I start!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Good. There are 15 ingredients. The first ingredient is 4 cups rotisserie chicken, skinned and boned. You should shred the meat into bite-sized pieces.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok I shredded the chicken!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Good. The next ingredients are 2 medium celery ribs, cut into small dices. And 2 medium green onions, sliced thin.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-1);\r\ninform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Perfect, I've got onions and celery! Why are the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Nice, now take 1/4 cup chopped honey-roasted peanuts, 2 tablespoons lime juice and 2 tablespoons Asian fish sauce.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-3);\r\ninform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Been there done that!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Very nice. The next ingredients are 1 teaspoon ground ginger, 2 teaspoons white sugar and 1/2 teaspoon hot red pepper flakes.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);\r\ninform_ingredient(ing-8);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "All right! Is that it for the ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-9\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Not yet. The next two ingredients are 2 tablespoons minced fresh cilantro leaves and 2 tablespoons chopped fresh mint leaves.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_ingredient(ing-9);\r\ninform_ingredient(ing-10);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok I have them in my spice rack!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-10\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Nice. The next four ingredients are suggested accompaniments which you can add in the end. Boston lettuce, sliced cucumbers ,grated carrots and chopped honey-roasted peanuts.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-11);\r\ninform_ingredient(ing-12);\r\ninform_ingredient(ing-13);\r\ninform_ingredient(ing-14);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "I have iceberg salad, is it ok if use it to replace the lettuce?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_substitute;\", \"tracker_completed_step\": \"ing-14\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Since it is about suggested accompaniments, I think it is ok to suggest or adapt your own accompaniment.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Great!! Thanks, can we start with the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"ing-14\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Nice! Yes first take a medium bowl and mix chicken, celery, green onions and peanuts.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "I mixed those!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Ok, now take a small bowl and mix lime juice, fish sauce, ginger, sugar, red pepper, cilantro and mint. Also add 2 tablespoons of water.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok I made this kind of sauce, what should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Nice you should toss the dressing with the chicken mixture. Do this on a bed of Boston lettuce with the suggested accompaniments.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok I mixed the contents of the two bowls together.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Good and you serve it on the way I described?",
+            "bot": true,
+            "annotations": "verify(inst-2);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Oh yes like that it looks good!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Ok nice. That was all. I hope you and your friends enjoy the dinner. Don't forget to use the 1,5 meter distancing. And stay safe!",
+            "bot": true,
+            "annotations": "end_recipe();\r\n"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "I will, thanks for taking care of me not, it looks delicious!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

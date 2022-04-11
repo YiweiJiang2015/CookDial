@@ -1,0 +1,280 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello! What are we gonna prepare today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi today we will make carrots and onions au gratin. Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes I am! How many ingredients are there?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "There are 10 ingredients. Do you want me to give them to you so you can prepare them?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Yes please!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "The first two ingredients are 1 package baby carrots, sliced and 2 medium onions, sliced.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok, how big should the carrot package be?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "It should be 16 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-0);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok, can I have the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "The next two ingredients are 1 cup shredded Cheddar cheese and 3 tablespoons butter.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok good I prepared them. What are the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "3 tablespoons all-purpose flour and 1 1/2 cups milk.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok good, can I use also oat milk?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok no problem, can I have the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Yes, the next ingredients are 1/2 teaspoon salt and 1/8 teaspoon ground black pepper.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok good, can I start with the recipe now?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "There are still 2 more ingredients. 1 tablespoon butter and 1 cup fine dry bread crumbs.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_ingredient(ing-8);\r\ninform_ingredient(ing-9);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok good! I am ready to start now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "First preheat oven to 175 degrees Celsius.  place the carrots and onions in a pot with enough lightly salted water to cover. Then bring to a boil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "The oven is heated up.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Place the carrots and onions in a pot with enough lightly salted water to cover. Then bring to a boil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok it's boiling now. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now cook for 5 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. 5 minutes passed. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now drain the vegetables and spread 1/2 of the carrots and onions in a baking dish.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok done! What then?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Now cover it with 3/4 cup cheese. You should layer this again with the remaining carrots and onions, and then top with remaining cheese.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok I did it! Can I eat it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "No not yet. Now preheat the oven to 175 degrees Celsius. In the meantime take a saucepan. You should melt 3 tablespoons butter and mix in flour until it becomes smooth.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok, should I use all the flour?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Yes, you can use all the flour if needed.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok good. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Now gradually stir in milk until it becomes thick and then season it with salt and pepper.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok done! What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Now pour this mixture over the carrots, onions, and cheese in the baking dish.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok, I poured the mixture! Should I put it in the fridge?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Now you should not put it in the fridge. Now melt 1 tablespoon butter in a small pot and mix in the bread crumbs.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok I did it. What should I do with this mixture?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Sprinkle this mixture evenly in the baking dish. After that you may bake it for 20 minutes in the oven.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok good! How do I see that it's ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "It is ready as soon as it becomes bubbly and lightly browned.",
+            "bot": true,
+            "annotations": "inform_duration(cond-10-0);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok good, can I take it out and eat? It looks great!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "Yes. Go for it, I hope you will enjoy.",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "I hope so too, it smells delicious.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

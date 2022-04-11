@@ -1,0 +1,190 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello! I am hungry, do you have ideas for something to eat?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Yes we could make some crunchy cheese sandwiches if you like?",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Sounds good to me! Are there a lot of ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Great, no it will be a short en easy recipe with 8 ingredients. Do you want to prepare the ingredients?",
+            "bot": true,
+            "annotations": "negate();\r\nsum_ingredient_list();\r\npropose_list_ingredients();\r\n"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Yes, I'd like that please!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Ok the first two ingredients are 1 small onion, finely chopped and 1 medium tomato, diced.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok, I took the out of the fridge. Can you tell me the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "1 stalk celery, chopped. And 1 green bell pepper, finely choppedGood yes the next two ingredients ar. I meant this sentence the other way around. Good yes the next two ingredients are1 stalk celery, chopped. And 1 green bell pepper, finely chopped.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok, I also took those. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Next is 1 cup shredded Cheddar cheese and 1/4 teaspoon chili powder.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok, do you know if I can use gouda instead of cheddar?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok, no worries. Are there other ingredients left to prepare?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "There are 2 more ingredients. 1/4 teaspoon salt and finally 4 slices white bread.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok, good, could I use brown bread?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-7\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Sorry I cannot answer that question and cannot help you with that. Make sure that you have 4 slices.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok no problem, can we start to cook now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Yes let's start making the sandwiches. First preheat your oven's broiler.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok, the broiler is warm now! What can I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Good. Let's take a medium bowl. You should stirr together the onion, tomato, celery, bell pepper, cheese, chili powder and salt.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok, I stirred in the ingredients. what would you like me to do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now you should arrange the 4 slices of bread on a baking sheet or broiling pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok I've placed them in the broiler, what next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Nice, now top each slice of bread with 1/4 of the mixture. You should spread out to the edges.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok, I did spread the mixture. Is there anything else to do before I bake them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "No. You should broil for 4 to 5 minutes.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok, good, 5 minutes passed, are the toasts ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Did the cheese melt?",
+            "bot": true,
+            "annotations": "verify(cond-4-0);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": " yes, it looks nicely melted.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Yes they are ready, serve immediately and enjoy!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Good, I love cheeese!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 15}"
+        }
+    ]
+}

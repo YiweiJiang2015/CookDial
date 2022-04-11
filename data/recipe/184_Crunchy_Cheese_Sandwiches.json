@@ -1,0 +1,96 @@
+{
+    "id": "184",
+    "title": "Crunchy Cheese Sandwiches",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 small onion, finely chopped",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 small onion, finely chopped\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 medium tomato, diced",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 medium tomato, diced\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 stalk celery, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 stalk celery, chopped\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 green bell pepper, finely chopped",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 green bell pepper, finely chopped\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 cup shredded Cheddar cheese",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 cup shredded Cheddar cheese\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 teaspoon chili powder",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 teaspoon chili powder\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/4 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/4 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "4 slices white bread",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"4 slices white bread\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat your oven's broiler.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven's broiler\"@16:30 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a medium bowl, stir together the onion, tomato, celery, bell pepper, cheese, chili powder and salt.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"stir\"@21:25 / AC\r\n\t\t:ppt ( ing-0 \"the onion\"@35:44 / FOOD )\r\n\t\t:ppt ( ing-1 \"tomato\"@46:52 / FOOD )\r\n\t\t:ppt ( ing-2 \"celery\"@54:60 / FOOD )\r\n\t\t:ppt ( ing-3 \"bell pepper\"@62:73 / FOOD )\r\n\t\t:ppt ( ing-4 \"cheese\"@75:81 / FOOD )\r\n\t\t:ppt ( ing-5 \"chili powder\"@83:95 / FOOD )\r\n\t\t:ppt ( ing-6 \"salt\"@100:104 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a medium bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Arrange slices of bread on a baking sheet or broiling pan.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Arrange\"@3:10 / AC\r\n\t\t:ppt ( ing-7 \"slices of bread\"@11:26 / FOOD )\r\n\t\t:gol ( tool-2-0 \"a baking sheet\"@30:44 / TOOL )\r\n\t\t:gol ( tool-2-1 \"broiling pan\"@48:60 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Top each one with 1/4 of the mixture, spreading out to the edges.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Top\"@3:6 / AC\r\n\t\t:gol ( \"each one\"@7:15 / FOOD )\r\n\t\t:ppt ( \"1/4 of the mixture\"@21:39 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"spreading out\"@41:54 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:todo ( \"the edges\"@58:67 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Broil for 4 to 5 minutes, or until cheese melts.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Broil\"@3:8 / AC\r\n\t\t:duration ( dur-4-0 \"4 to 5 minutes\"@13:27 / DUR )\r\n\t\t:until ( cond-4-0 \"until cheese melts\"@32:50 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Watch closely to prevent burning.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Watch\"@3:8 / AC\r\n\t\t:prp ( purp-5-0 \"to prevent burning\"@17:35 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Serve immediately.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

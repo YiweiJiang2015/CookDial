@@ -1,0 +1,174 @@
+{
+    "id": "209",
+    "title": "Grand Marnier Chicken",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "4 skinless, boneless chicken breast halves",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"4 skinless, boneless chicken breast halves\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup milk",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup milk\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup dry bread crumbs",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup dry bread crumbs\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 cup grated Parmesan cheese",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 cup grated Parmesan cheese\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 tablespoons chopped fresh parsley",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 tablespoons chopped fresh parsley\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 cup olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 cup olive oil\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 orange, sliced into rounds",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 orange, sliced into rounds\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 cup dry white wine",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 cup dry white wine\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/2 cup orange juice",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/2 cup orange juice\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 (10.5 ounce) can chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 (10.5 ounce) can chicken broth\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1/4 cup brandy-based orange liqueur (Grand Marnier)",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1/4 cup brandy-based orange liqueur (Grand Marnier)\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Slice chicken breasts in thirds horizontally to make 12 thin chicken fillets.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Slice\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"chicken breasts\"@9:24 / FOOD )\r\n\t\t:prp ( purp-0-0 \"to make 12 thin chicken fillets\"@48:79 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Lightly pound each piece.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"pound\"@11:16 / AC\r\n\t\t:ppt ( \"each piece\"@17:27 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place in a dish, and pour milk over them.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-2-0 \"a dish\"@12:18 / TOOL )\r\n\t)\r\n\t:inform ( ac-2-1 \"pour\"@24:28 / AC\r\n\t\t:ppt ( ing-1 \"milk\"@29:33 / FOOD )\r\n\t\t:gol ( \"them\"@39:43 / PRONOUN )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Soak for 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Soak\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-3-0 \"10 minutes\"@12:22 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) In a shallow bowl, stir together the bread crumbs, Parmesan cheese and parsley.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"stir\"@22:26 / AC\r\n\t\t:ppt ( ing-2 \"the bread crumbs\"@36:52 / FOOD )\r\n\t\t:ppt ( ing-3 \"Parmesan cheese\"@54:69 / FOOD )\r\n\t\t:ppt ( ing-4 \"parsley\"@74:81 / FOOD )\r\n\t\t:loc ( tool-4-0 \"a shallow bowl\"@6:20 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Set aside.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Set aside\"@3:12 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Heat olive oil in a large heavy skillet over medium-high heat.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-5 \"olive oil\"@8:17 / FOOD )\r\n\t\t:loc ( tool-6-0 \"a large heavy skillet\"@21:42 / TOOL )\r\n\t\t:heat ( temp-6-0 \"medium-high heat\"@48:64 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Dredge chicken pieces in the bread crumb mixture, and place in the hot oil.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Dredge\"@3:9 / AC\r\n\t\t:ppt ( \"chicken pieces\"@10:24 / FOOD )\r\n\t\t:loc ( \"the bread crumb mixture\"@28:51 / FOOD )\r\n\t)\r\n\t:inform ( ac-7-1 \"place\"@57:62 / AC\r\n\t\t:gol ( \"the hot oil\"@66:77 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Quickly brown on both sides, then remove to a buttered 9x13 inch baking dish, or similar size.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"brown\"@11:16 / AC\r\n\t\t:loc ( \"both sides\"@20:30 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-8-1 \"remove\"@37:43 / AC\r\n\t\t:gol ( tool-8-0 \"a buttered 9x13 inch baking dish\"@47:79 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Season with salt and pepper to taste.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Season\"@4:10 / AC\r\n\t\t:ppt ( \"salt and pepper\"@16:31 / FOOD )\r\n\t\t:prp ( purp-9-0 \"to taste\"@32:40 / PURPOSE_CLAUSE )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Place orange slices over the top of the chicken.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Place\"@4:9 / AC\r\n\t\t:ppt ( ing-6 \"orange slices\"@10:23 / FOOD )\r\n\t\t:gol ( \"the top of the chicken\"@29:51 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Preheat the oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Preheat\"@4:11 / AC\r\n\t\t:ppt ( tool-11-0 \"the oven\"@12:20 / TOOL )\r\n\t\t:heat ( temp-11-0 \"350 degrees F\"@24:37 / TEMPERATURE )\r\n\t\t:heat ( temp-11-1 \"175 degrees C\"@39:52 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Drain the oil from the skillet, reserving 1/4 cup.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Drain\"@4:9 / AC\r\n\t\t:ppt ( \"the oil\"@10:17 / FOOD )\r\n\t\t:source ( tool-12-0 \"the skillet\"@23:34 / TOOL )\r\n\t\t:simultaneous ( ac-12-1 \"reserving\"@36:45 / AC\r\n\t\t\t:ppt ( \"1/4 cup\"@46:53 / OTHER )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Heat the reserved oil with the wine over medium heat until reduced by 1/2.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Heat\"@4:8 / AC\r\n\t\t:ppt ( \"the reserved oil\"@9:25 / FOOD )\r\n\t\t:ppt ( ing-7 \"the wine\"@31:39 / FOOD )\r\n\t\t:heat ( temp-13-0 \"medium heat\"@45:56 / TEMPERATURE )\r\n\t\t:until ( cond-13-0 \"until reduced by 1/2\"@57:77 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Add broth and orange juice, and reduce by 1/2 again.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"Add\"@4:7 / AC\r\n\t\t:ppt ( ing-9 \"broth\"@8:13 / FOOD )\r\n\t\t:ppt ( ing-10 \"orange juice\"@18:30 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-14-1 \"reduce\"@36:42 / AC\r\n\t\t:gol ( cond-14-0 \"by 1/2 again\"@43:55 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-15",
+            "text": "15) Pour the sauce over the chicken, then drizzle with Grand Marinier.",
+            "type": "instruction",
+            "eamr": "( inst-15 / R\r\n\t:inform ( ac-15-0 \"Pour\"@4:8 / AC\r\n\t\t:ppt ( \"the sauce\"@9:18 / FOOD )\r\n\t\t:gol ( \"the chicken\"@24:35 / FOOD )\r\n\t)\r\n\t:inform ( ac-15-1 \"drizzle\"@42:49 / AC\r\n\t\t:ppt ( \"Grand Marinier\"@55:69 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-16",
+            "text": "16) Bake for 20 to 25 minutes in the preheated oven, until bubbly.",
+            "type": "instruction",
+            "eamr": "( inst-16 / R\r\n\t:inform ( ac-16-0 \"Bake\"@4:8 / AC\r\n\t\t:duration ( dur-16-0 \"20 to 25 minutes\"@13:29 / DUR )\r\n\t\t:loc ( tool-16-0 \"the preheated oven\"@33:51 / TOOL )\r\n\t\t:until ( cond-16-0 \"until bubbly\"@53:65 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

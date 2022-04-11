@@ -1,0 +1,72 @@
+{
+    "id": "159",
+    "title": "Dilled Garlic",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 pounds garlic, peeled",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 pounds garlic, peeled\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 sprig chopped fresh dill",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 sprig chopped fresh dill\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "cayenne pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"cayenne pepper to taste\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "4 1/2 cups distilled white vinegar",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"4 1/2 cups distilled white vinegar\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "4 tablespoons salt",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"4 tablespoons salt\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Fill sterile containers with garlic, chopped fresh dill and cayenne pepper to within an inch of the top.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Fill\"@3:7 / AC\r\n\t\t:gol ( tool-0-0 \"sterile containers\"@8:26 / TOOL )\r\n\t\t:ppt ( ing-0 \"garlic\"@32:38 / FOOD )\r\n\t\t:ppt ( ing-1 \"chopped fresh dill\"@40:58 / FOOD )\r\n\t\t:ppt ( ing-2 \"cayenne pepper\"@63:77 / FOOD )\r\n\t\t:todo ( \"within an inch of the top\"@81:106 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Mix the distilled white vinegar and salt in a medium saucepan.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Mix\"@3:6 / AC\r\n\t\t:ppt ( ing-3 \"the distilled white vinegar\"@7:34 / FOOD )\r\n\t\t:ppt ( ing-4 \"salt\"@39:43 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a medium saucepan\"@47:64 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Bring to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"boil\"@14:18 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Pour the hot distilled white vinegar and salt mixture into the containers with the garlic mixture.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( \"the hot distilled white vinegar and salt mixture\"@8:56 / FOOD )\r\n\t\t:gol ( tool-3-0 \"the containers with the garlic mixture\"@62:100 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Fill to approximately 1/4 inch from the top.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Fill\"@3:7 / AC\r\n\t\t:todo ( \"approximately 1/4 inch from the top\"@11:46 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Seal and store in the refrigerator.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Seal\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"store\"@12:17 / AC\r\n\t\t:loc ( tool-5-0 \"the refrigerator\"@21:37 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "id": "249",
+    "title": "A 1 Chicken Soup",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 tablespoons vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 tablespoons vegetable oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 skinless chicken leg quarters",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 skinless chicken leg quarters\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup chopped onion",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup chopped onion\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 quarts water",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 quarts water\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "3 cubes  chicken bouillon, crumbled",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"3 cubes  chicken bouillon, crumbled\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 stalk celery, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 stalk celery, chopped\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "3 carrots, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"3 carrots, chopped\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 clove roasted garlic, minced",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 clove roasted garlic, minced\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"salt and pepper to taste\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 (12 ounce) package thin egg noodles",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 (12 ounce) package thin egg noodles\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large pot over medium heat, cook chicken pieces in oil until browned on both sides.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"cook\"@36:40 / AC\r\n\t\t:ppt ( ing-1 \"chicken pieces\"@41:55 / FOOD )\r\n\t\t:ppt ( ing-0 \"oil\"@59:62 / FOOD )\r\n\t\t:until ( cond-0-0 \"until browned on both sides\"@63:90 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-0-0 \"a large pot\"@6:17 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium heat\"@23:34 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Stir in onion and cook 2 minutes more.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-2 \"onion\"@11:16 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"cook\"@21:25 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-1-0 \"2 minutes more\"@26:40 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Pour in water and chicken bouillon and bring to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Pour in\"@3:10 / AC\r\n\t\t:ppt ( ing-3 \"water\"@11:16 / FOOD )\r\n\t\t:ppt ( ing-4 \"chicken bouillon\"@21:37 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"boil\"@53:57 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Reduce heat and simmer 45 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Reduce\"@3:9 / AC\r\n\t\t:ppt ( \"heat\"@10:14 / OTHER )\r\n\t)\r\n\t:inform ( ac-3-1 \"simmer\"@19:25 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-3-0 \"45 minutes\"@26:36 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Stir in celery, carrots, garlic, salt and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-5 \"celery\"@11:17 / FOOD )\r\n\t\t:ppt ( ing-6 \"carrots\"@19:26 / FOOD )\r\n\t\t:ppt ( ing-7 \"garlic\"@28:34 / FOOD )\r\n\t\t:ppt ( ing-8 \"salt and pepper\"@36:51 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Simmer until carrots are just tender.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Simmer\"@3:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-5-0 \"until carrots are just tender\"@10:39 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Remove chicken pieces and pull the meat from the bone.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( \"chicken pieces\"@10:24 / FOOD )\r\n\t)\r\n\t:inform ( ac-6-1 \"pull\"@29:33 / AC\r\n\t\t:ppt ( \"the meat\"@34:42 / FOOD )\r\n\t\t:source ( \"the bone\"@48:56 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Stir the noodles into the pot and cook until tender, 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Stir\"@3:7 / AC\r\n\t\t:ppt ( ing-9 \"the noodles\"@8:19 / FOOD )\r\n\t\t:ppt ( tool-7-0 \"the pot\"@25:32 / TOOL )\r\n\t)\r\n\t:inform ( ac-7-1 \"cook\"@37:41 / AC\r\n\t\t:until ( cond-7-0 \"until tender\"@42:54 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-7-0 \"10 minutes\"@56:66 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Return chicken meat to pot just before serving.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Return\"@3:9 / AC\r\n\t\t:ppt ( \"chicken meat\"@10:22 / FOOD )\r\n\t\t:gol ( tool-8-0 \"pot\"@26:29 / TOOL )\r\n\t\t:duration ( cond-8-0 \"before serving\"@35:49 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

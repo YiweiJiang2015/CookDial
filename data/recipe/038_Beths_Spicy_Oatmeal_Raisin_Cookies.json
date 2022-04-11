@@ -1,0 +1,138 @@
+{
+    "id": "038",
+    "title": "Beths Spicy Oatmeal Raisin Cookies",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/2 cup butter, softened",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/2 cup butter, softened\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup butter flavored shortening",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup butter flavored shortening\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup packed light brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup packed light brown sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 cup white sugar\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 eggs\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 1/2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 1/2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 teaspoon baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 teaspoon baking soda\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 teaspoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 teaspoon ground cinnamon\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/2 teaspoon ground cloves",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/2 teaspoon ground cloves\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "3 cups rolled oats",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"3 cups rolled oats\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 cup raisins",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 cup raisins\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a large bowl, cream together the butter, butter flavored shortening, brown sugar, white sugar, eggs, and vanilla until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"cream\"@20:25 / AC\r\n\t\t:loc ( tool-1-0 \"a large bowl\"@6:18 / TOOL )\r\n\t\t:ppt ( ing-0 \"the butter\"@35:45 / FOOD )\r\n\t\t:ppt ( ing-1 \"butter flavored shortening\"@47:73 / FOOD )\r\n\t\t:ppt ( ing-2 \"brown sugar\"@75:86 / FOOD )\r\n\t\t:ppt ( ing-3 \"white sugar\"@88:99 / FOOD )\r\n\t\t:ppt ( ing-4 \"eggs\"@101:105 / FOOD )\r\n\t\t:ppt ( ing-5 \"vanilla\"@111:118 / FOOD )\r\n\t\t:until ( cond-1-0 \"until smooth\"@119:131 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Combine the flour, baking soda, cinnamon, cloves, and salt; stir into the sugar mixture.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( ing-6 \"the flour\"@11:20 / FOOD )\r\n\t\t:ppt ( ing-7 \"baking soda\"@22:33 / FOOD )\r\n\t\t:ppt ( ing-8 \"cinnamon\"@35:43 / FOOD )\r\n\t\t:ppt ( ing-9 \"cloves\"@45:51 / FOOD )\r\n\t\t:ppt ( ing-10 \"salt\"@57:61 / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"stir\"@63:67 / AC\r\n\t\t:ppt ( \"the sugar mixture\"@73:90 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Stir in the oats and raisins.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-11 \"the oats\"@11:19 / FOOD )\r\n\t\t:ppt ( ing-12 \"raisins\"@24:31 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Drop by rounded teaspoonfuls onto ungreased cookie sheets.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Drop\"@3:7 / AC\r\n\t\t:gol ( tool-4-0 \"ungreased cookie sheets\"@37:60 / TOOL )\r\n\t\t:instrument ( tool-4-1 \"rounded teaspoonfuls\"@11:31 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Bake 10 to 12 minutes until light and golden.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Bake\"@3:7 / AC\r\n\t\t:duration ( dur-5-0 \"10 to 12 minutes\"@8:24 / DUR )\r\n\t\t:until ( cond-5-0 \"until light and golden\"@25:47 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Do not overbake.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Do not overbake\"@6:18 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Let them cool for 2 minutes before removing from cookie sheets to cool completely.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"cool\"@12:16 / AC\r\n\t\t:ppt ( \"them\"@7:11 / FOOD )\r\n\t\t:duration ( dur-7-0 \"2 minutes\"@21:30 / DUR )\r\n\t\t:duration ( cond-7-0 \"before removing from cookie sheets to cool completely\"@31:84 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Store in airtight container.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Store\"@3:8 / AC\r\n\t\t:loc ( tool-8-0 \"airtight container\"@12:30 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

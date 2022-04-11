@@ -1,0 +1,130 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. today we are going to make chocolate hazelnut fruit crepes.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "That sounds good! What's the first step I need to take?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Great. the first step is to take 4 readymade crepes and 1 cup of chocolate hazelnut spread.",
+            "bot": true,
+            "annotations": "fetch(inst-0, [ing-1, ing-0]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. I have taken the crepes and the hazelnut spread.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Now you may spread 1/4 cup of the hazelnut spread on each crepe.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "That's done. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Take 4 bananas and slice all of them in little pieces.",
+            "bot": true,
+            "annotations": "fetch(inst-1, [ing-2]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "I have sliced all the bananas into little pieces. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Great. now you may put one 1 sliced banana on the center of each crepe.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Could you repeat that please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "You may put 1 sliced banana on each crepe.",
+            "bot": true,
+            "annotations": "repeat(inst-1);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Thank you. that's done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Ok. now roll up all the crepes and place them in a skillet over medium heat for 1,5 minute.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "For how many minutes?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "For 1,5 minutes in total.",
+            "bot": true,
+            "annotations": "inform_duration(dur-3-0);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. everything is done now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Great. the last step is to serve it on plates with some whipped cream if you like.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. I have done that. They look delicious.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Ok. thanks have a nice day.",
+            "bot": true,
+            "annotations": "goodbye();"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Thank you. have a nice day too.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 9}"
+        }
+    ]
+}

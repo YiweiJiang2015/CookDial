@@ -1,0 +1,238 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi, how do I make dads flatbread?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi! In order to make Dads Flat Bread you'll need to prepare 7 ingredients, are you ready to do that?",
+            "bot": true,
+            "annotations": "greeting();\r\nsum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes I'm ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Great! The first two ingredients are 1 package active dry yeast 2 cups warm water. The water temperature should be between 110 and 115 degrees.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok good I have them ready. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "The next ingredients are one third cup of sugar and 2 tablespoons of vegetable oil.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok I got it. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The next two ingredients to prepare I want tablespoon of salt and half a cup rye or wholw wheat flour.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok I have the salt and flower. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Last is to prepare 5 and a half cups all-purpose flour.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok I have all the ingredients. Can we make dads flatbread?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Yaay! take a large mixing bowl, and dissolve yeast in 1/2 cup of water.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok I have done that.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Great! Now add sugar, oil, salt, rye or whole wheat flour, 3 cups all-purpose flour, and remaining water to the bowl. And you beat the mixture until it becomes smooth.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok it looks pretty smooth now. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": " Good! Now add enough remaining all-purpose flour to form a soft dough.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok I have done that. What should I do with the soft dough?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "You should first turn it onto a floured surface and knead until smooth and elastic. It should take about 6 to 8 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok I have waited 8 minutes. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "You now should place in a greased bowl, and turn it once to grease the top.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok I got it. What should I do afterwards?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "You can now cover the bowl and let rise in a warm place until it doubles. It will take about one hour.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok I think it is ok. How do I know?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Sorry I cannot reply to your question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok it looks fine now. What should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "You should now punch the douch down and divide it in half.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);\r\ninform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok I have divided in half. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Now take a greased baking sheet, and flatten each half to 1 inch.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok I did that. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Next step is to pierce each loaf several times with a fork.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok I have done that several times.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Great, now cover and let rise in a warm place until nearly doubled. It will take about 30 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok 30 minutes has passed. It looks nearly doubled. What should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "You can now bake it at 375 degrees F for 25-30 minutes. You will see that they are ready, when they become golden brown.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok how much is that in Celsius?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_temperature;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "375 F is 190,556 Celsius.",
+            "bot": true,
+            "annotations": "inform_temperature(temp-11-1);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok thanks it looks good now. Was that all?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Yes, that's it, enjoy!!",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok thanks I will!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 19}"
+        }
+    ]
+}

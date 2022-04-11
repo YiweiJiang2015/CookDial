@@ -1,0 +1,244 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi bot, lets start cooking.",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi, today we will make Bacon Wrapped Hamburgers. Do you like it?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Sure, what do do first?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Do you need me to tell you all the ingredients now or give them when it is needed?",
+            "bot": true,
+            "annotations": "propose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "No, I already have all the ingredients here. Just start with the first instruction.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"negate; req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "First, preheat a grill on high temperature.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok, how hot should the grill be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_temperature;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Sorry, I cannot find the answer from the recipe.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "No worries, what should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Now take a large bowl, you will mix lots of stuff in it.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok, I got a big bowl over here.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "First, add 1/2 cup shredded Cheddar cheese and 1 tablespoon grated Parmesan cheese.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "How much cheese again?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "1/2 cup Cheddar cheese and 1 tablespoon Parmesan cheese.",
+            "bot": true,
+            "annotations": "inform_amount(ing-0);\r\ninform_amount(ing-1);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok, the cheddar and parmesan are in the bowl.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now add 1 small chopped onion and 1 egg.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-2, ing-3]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "The whole egg or only the yolk?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Sorry, I cannot answer that. You can follow your intuition.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok, I will add the complete egg. Can you quickly repeat the ingredients that should now be in the bowl?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Of course, cheddar cheese, Parnesan cheese, onion and egg.",
+            "bot": true,
+            "annotations": "repeat(ing-0);\r\nrepeat(ing-1);\r\nrepeat(ing-2);\r\nrepeat(ing-3);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Great, I got them all in the bowl.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Please continue with 1 tablespoon ketchup and 1 tablespoon Worcestershire sauce.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-4, ing-5]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok, done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "The last two are 1/2 tablespoon salt and 1/8 tablespoon pepper.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-6, ing-7]);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok, I seasoned the cheese mixture.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now crumble in 1 pound ground beef and mix everything by hand.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok, I mixed in the beef.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Form the mixture into 6 patties.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-3-0);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok, I finished the paties. Can I cook them on the grill?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "No, you have to wrap a slice of bacon around each one.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(ac-3-1);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok, wrapped the bacon. Can I start grilling them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "No, secure the bacon with toothpicks.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok, done that. How many steps are there still to go? I'm getting hungry!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "There are only 2 steps left. Hold your patience :).",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "What do I do after securing the bacon with the toothpicks.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "After that, you place patties on the grill and cook each side for 5 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok, the hamburgers are done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Last thing, remove toothpicks before serving on hamburger buns. You can enjoy it now.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Thank you bot. I can't wait to eat them!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "You are welcome!",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

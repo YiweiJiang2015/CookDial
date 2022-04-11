@@ -1,0 +1,136 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi, what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi! Today we are gonna make carrot and coriander soup, a nice and healthy dish for the winter! Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Hm that sounds delicious. How many ingredients are there?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "There are 4 ingredients. Would you like to prepare them beforehand?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Yes please.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Great! The first two are 4 large carrots, 1 inch pieces and one quarter of a large onion, chopped.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. I have them. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Good! The next two ingredients are 1 quart of vegetable broth and half a cup of chopped fresh cilantro.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);\r\n"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. I have them ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Good! Are you ready to start with the recipe?",
+            "bot": true,
+            "annotations": "propose_start_instruction();"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Yes I'm ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Great! as a start, place the carrots, onion, vegetable broth and cilantro into a large saucepan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok, they are in the saucepan. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "You should bring to a boil, and cook until the carrots are tender, about 10 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok, ten minutes has passed. Is it ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "After 10 minutes you have to remove it from heat and allow to cool slightly.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. I have done that. How long should it cool?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Sorry I cannot reply to that. It should cool a little bit. When you feel it's cool enough, you can puree the soup until smooth, using a blender or food processor.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok, is there something else I should do still, or can I eat it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "You can just reheat it if you like it warm. Otherwise, you can just enjoy it! :).",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok thanks! It looks nice and healthy.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "It's a pleasure!",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

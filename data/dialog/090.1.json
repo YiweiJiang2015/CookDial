@@ -1,0 +1,274 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello. What are we gonna cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. Today we will cook chicken marsala with portobello mushrooms. It will be a long recipe with many instructions. Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "I am ready! Could I have all the ingredients to prepare two by two?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Yes, there are 10 ingredients. The first two are 3/4 cup butter and 2 tablespoons vegetable oil. They both should be divided.",
+            "bot": true,
+            "annotations": "affirm();\r\nsum_ingredient_list();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. I took them. Is it ok if I use margarine instead of butter?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_substitute;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok no problem. Could I have the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The next two ingredients are 4 portobello mushroom caps. They should be sliced. And 1 chopped garlic clove.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok good. What are the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "3/4 cup all-purpose flour. It should be divided. And 1 (14.5 ounce) can beef broth.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. How much is 14.5 ounces in grams?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Sorry, I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok no problem. What are the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "The next two ingredients are 1/2 cup dry Marsala wine and kosher salt and ground black pepper.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. Can I use white pepper instead of black pepper?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok no problem. Are the ingredients over?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "No, there are still two more ingredients. 1 tablespoon browning sauce and 6 skinless, boneless chicken breast halves. You should pound them  to 1/2 inch thickness.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_ingredient(ing-8);\r\ninform_ingredient(ing-9);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok, I don't know what browning sauce is. Can you tell me what it is?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Sorry I cannot answer that question. It should be 1 tablespoon browning sauce.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok no problem. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now preheat the oven to 175 degrees Celsius. Take a skillet and melt 1/2 cup butter and1 tablespoon vegetable oil over medium heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok done that! What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Cook and stir the mushroom slices in the skillet until tender.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. They are tender now. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now remove them from heat, cover to keep warm, and set aside. After that melt the remaining butter and heat the remaining oil in a saucepan over medium-high heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok I've put the mushrooms aside and heated oil and butter. Is that it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "No, there will be many more instructions. Now cook and stir the garlic until tender. Afterwards you should gradually whisk in the flour.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. I whisked in all the flour. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Increase heat to high and pour in the beef broth and Marsala wine.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. I've done that! What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Season it with kosher salt and pepper and whisk in the browning sauce.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. Done. How should I go on?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Now bring to a boil, and reduce heat to low. Mix in the mushrooms, and make sure to reserve remaining butter and oil in the skillet.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);\r\ninform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. I did it. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Now cover the saucepan and remove it from heat, and set aside. Season chicken with salt and pepper, and dredge in the remaining flour. Cook the chicken 2 minutes per side, until browned.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);\r\ninform_instruction(inst-11);\r\ninform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. I cooked the chicken until browned. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Arrange the chicken in the bottom of a 9x13 inch baking dish. Then cover it with the sauce and the mushroom mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok. I did it.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "The final step is to cover the baking dish and bake it 25 minutes in the preheated oven.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-14);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok. Can I bake it a little bit more?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-14\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Make sure that you bake until the chicken juices run clear.",
+            "bot": true,
+            "annotations": "inform_duration(cond-14-0);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok good. It's done. Should I take it out from the oven?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-14\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "Yes, that was all! Enjoy.",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Ok. Thank you. It looks great.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-14\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 25}"
+        }
+    ]
+}

@@ -1,0 +1,226 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi Bot, What do we make today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi, we will cook Baked Salmon with Herbs.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Great. How many ingredients do I need?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "10 ingredients in total.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. It is a bit long. I prefer you tell me when I need them. How should I start?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "First you will need 15 inches baking pan with foil and a nonstick cooking spray, do you have them?",
+            "bot": true,
+            "annotations": "fetch(tool-0-0);\r\nfetch(tool-0-1);\r\nfetch(tool-0-2);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Can you repeat the first tool?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The first tool is 15 inch baking pan.",
+            "bot": true,
+            "annotations": "repeat(tool-0-0);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. Now I have both.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "It is actually three thing you need: 15 inches baking pan; you also need a cooking foil, and finally a nonstick cooking spray. Do you have them?",
+            "bot": true,
+            "annotations": "verify(tool-0-0);\r\nverify(tool-0-1);\r\nverify(tool-0-2);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Yes, I have 3 now. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Line a 15-in baking pan with foil; coat foil with nonstick cooking spray.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. I lined the pan. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Nothing yet. Next you will need a bowl to combine multiple ingredients there. Are you ready?",
+            "bot": true,
+            "annotations": "simplify_begin(inst-1);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Yes. What to combine in the bowl?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "First ingredient is the bread crumbs; you will need 2 1/2 cups of soft bread crumbs.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-1, [ing-0]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. I add it.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Great, the next ingredient is garlick, you will need to mince 4 garlic cloves and put them in the bowl.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-1, [ing-1]);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Thanks. What is next.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "The next ingredient is parmesan cheese, you will need to grate 2 tablespoons of parmesan cheese and put it in the bowl.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-1, [ing-2]);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. Can you give me two more?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "The next two are parsley and thyme. You will need to put 2 teaspoons of dried parsley flakes and 1 teaspoon of dried thyme in the bowl.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-1, [ing-3, ing-4]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Yes, there are three ingredients more: rosemary, salt and pepper.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-1, [ing-5, ing-6, ing-7]);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Alright, I add them all. Next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Next you need to add 2 tablespoons of melted butter and toss the content of the bowl in the pan, coating evenly.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. I toss them. So now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Now you need to get one salmon fillet of around 3 pounds. Do you have it?",
+            "bot": true,
+            "annotations": "fetch(inst-3, [ing-9]);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Yes. I manage to buy the last one from the grocery.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Ok. Place the salmon on prepared pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Done. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "You will have to spray with nonstick cooking spray and close the foil. Then bake uncovered at 350 degrees F for 35-40 minutes or until fish flakes easily with a fork.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);\r\ninform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Can you tell me the temperature in Celsius?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_temperature;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "It is 176 degrees celsius.",
+            "bot": true,
+            "annotations": "inform_temperature(temp-5-1);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Thanks. 45 minutes passed. Is it done?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Yes, it is done, enjoy!",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ohh. thanks!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        }
+    ]
+}

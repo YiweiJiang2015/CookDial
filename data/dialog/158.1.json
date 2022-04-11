@@ -1,0 +1,232 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hallo Hallo! What are we gonna cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi today we will make some empanadas. We will need to prepare the dough today and tomorrow you can make the empanadas.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Great! How many ingredients are there?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "There are 6 ingredients.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Good, could I have them first so I can prepare them?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Yes of course. First you need 1/2 cup butter, softened and 1 package cream cheese.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Good, can I use Solo instead of butter?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Sorry I cannot answer that question. Do you need the size of the cream cheese package?",
+            "bot": true,
+            "annotations": "fence();\r\nother();"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Yes I'd like that please.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "It is 3 ounce. The next two ingredients are 1 cup sifted all-purpose flour and  1 cup fruit preserves.",
+            "bot": true,
+            "annotations": "inform_amount(ing-1);\r\ninform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok good, can I use lentil flour instead of the all-purpose one?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok, no problem, are there more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Yes the last two ingredients are 1/3 cup white sugar and 1 teaspoon ground cinnamon.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok good should we start then?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Yes let's start making the dough today. First Cream butter and cream cheese together until smoothly blended.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok good it looks smooth now, what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Good now beat in the flour.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok done! What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Then you should shape the dough into a smooth ball. Then wrap in foil or cling wrap and refrigerate overnight.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok it's in the fridge now. Good night.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "You too.",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Good morning, can I take it out?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Good morning, yes you can. Also start heating the oven to 190 degrees Celsius.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok good! I took the dough out and the oven is heated, what should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now roll the chilled dough thin and cut with a  3 or 4 inch round cookie cutter.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);\r\ninform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok I did that, what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "The next step is to place a small spoonful of jam in the center of each round. After you should moisten the edges with water.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok, I put the jam and moistened the edges with water. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Good. Now fold round over and press edges together.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok done!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Now bake the empanadas on an ungreased cookie sheet 15 to 20 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "What is the next step? Ok 20 minutes passed, how do I see that they are ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction; req_duration;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "You should bake them for 15-20 minutes. After that you should immediately roll them in sugar mixed with cinnamon. This is the traditional wa. Or in confectioners' sugar if preferred.",
+            "bot": true,
+            "annotations": "inform_duration(dur-9-0);\r\ninform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok I used confectionate sugar, I felt kind of funky. Is the recipe over?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Great. Yes that was all. Enjoy your empanadas.",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Nice, thanks!!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

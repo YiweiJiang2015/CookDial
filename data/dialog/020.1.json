@@ -1,0 +1,250 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. how do I make Alaskan Halibut Lasagna?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. first take a large skillet and put it on the stove on medium heat. Melt 2 tablespoons of butter.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "I have put the skillet on the stove. How many butter do I need to melt?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_amount;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "2 tablespoons is enough.",
+            "bot": true,
+            "annotations": "inform_amount(ing-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. that's Done. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "When it's melted, add 1 1/2 pounds of halibut steaks. Don't forget to remove the bones and cut them into little cubes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "I have added the Halibut steaks. For how long do I need to bake them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Also add 2 minced garlic cloves and 3/4 teaspoons of dried thyme. Then let the fish cook for about 10 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);\r\ninform_duration(dur-2-0);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "The ten minutes have passed now. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Make sure the fish flakes easily with a fork. Is that the case?",
+            "bot": true,
+            "annotations": "verify(cond-2-0);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Yes it is.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Ok. Great. now remove the fish from the pan and set it aside. Now use the skillet again and add 4 tablespoons of butter.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. I refilled the skillet with butter. What should I cook in it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Add 1/3 cup of all-purpose flour and 1/2 teaspoon of salt. Cook and stir the mixture until it is golden brown.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "The flour and salt mixture is golden-brown now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Ok. now gradually add 1 1/2 cups of chicken broth and 1 cup of heavy whipping cream.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "That's Done. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Bring it to a boil. Let it cook and stir it for 2 minutes and make sure it's thick in the end.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "The mixture is thick now. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Ok. good now remove it from the stove and take a 13 inch baking dish.",
+            "bot": true,
+            "annotations": "fetch(inst-8, [tool-8-0]);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "I have the 13 inch baking dish.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now we are going to prepare the lasagna. First make the baking dish greasy with some butter. Then add 4 ounces of lasagna noodles.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-8);\r\nsimplify_continue(inst-8, [ing-8]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "How many ounces of lasagna noodles?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "4 ounces.",
+            "bot": true,
+            "annotations": "inform_amount(ing-8);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Thank you. I added them to the baking dish.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Ok. now add half of the cooked halibut and half of the white sauce you just made.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Can you repeat the first ingredient please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Add half of the cooked halibut. The fish you cooked first.",
+            "bot": true,
+            "annotations": "repeat(inst-8, [ing-1]);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Oh Thank you. I understand it. It is done now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Ok. now still add 1 cup of shredded Swiss cheese.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-8, [ing-9]);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. I added the shredded swiss cheese. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Now repeat another layer with the same 4 steps.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "I made a second layer. Should I make another one?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "No it should be ok like that. Now cover it up and bake it in the oven for 20 minutes at 350 degrees Fahrenheit.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. I baked it for 20 minutes. Is it done now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Now uncover it and bake another 20 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Another 20 minutes have passed. Is it done now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Yes does it look bubbly? Then you let it stand for 15 minutes.",
+            "bot": true,
+            "annotations": "affirm();\r\nverify(cond-11-0);\r\ninform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Yes it looks bubbly.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Ok. great. You can still sprinkle it with a bit of parsley if you desire. Enjoy!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Thank you. it looks delicious.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 25}"
+        }
+    ]
+}

@@ -1,0 +1,244 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi! We are gonna make Armadillo Eggs! Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Sounds good, yes i'm ready!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Great! we'll starty by preparing the ingredients first! The first two are 24 jalapeno peppers  and 1 pound sausage.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok thanks the is a good plan. Ok I have both ingredients. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "The next two ingredients which you should prepare are 2 cups all-purpose baking mix and 1 (16 ounce) package Cheddar cheese, shredded.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok thanks, I have them ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Nice, you can now prepare 1 tablespoon of crushed red pepper flakes and 1 tablespoon garlic salt.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok I got it.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Good, the last ingredient is 1 (16 ounce) package Monterey Jack cheese, cubed.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Alright, I have all the ingredients ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Perfect! Now you can lightly grease a medium baking sheet.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok I have done that. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Next step is to cut a slit in each jalapeno pepper.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok what should I do with the pepper?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "You should cut a slit in each one of them, and Remove and discard the seeds and the pulp.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. Should I save the seeds and pulp?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "No, you should discard seeds and pulp.",
+            "bot": true,
+            "annotations": "negate();\r\nrepeat(inst-3);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok sorry I missed that part. Ok I discarded it. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "No problem! Take a medium bowl and mix sausage, baking mix, Cheddar cheese, crushed red pepper, and garlic salt.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok I have mixed all in the medium bowl. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "You can now stuff the jalapenos with the Monterey Jack cheese cubes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok should I use all the cubes?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_use_all;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Yes, you should use the whole package of cheese.",
+            "bot": true,
+            "annotations": "affirm();\r\n"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok I have done that. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Good, now you should shape the sausage mixture around the jalapenos to form some balls.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Sorry I couldn't understand in which way should I shape them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "You should shape them in a ball shape.",
+            "bot": true,
+            "annotations": "repeat(purp-6-0);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "A bowl shape?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "No, a ball. The spelling is b a l l.",
+            "bot": true,
+            "annotations": "negate();\r\nrepeat(purp-6-0);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ah ok, so I should make balls?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Yes indeed! you should shape the sausage mixture around the jalapenos, forming balls.",
+            "bot": true,
+            "annotations": "affirm();\r\nrepeat(inst-6);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Great, I got it now and have done that. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Ok, now you can arrange the jalapeno balls on the prepared baking sheet.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok I got it. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "You can now bake 25 minutes in the preheated oven, until the balls become lightly browned.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok they are lightly browned now. Should I take them out?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "That is up to you, the recipe is over!",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok thanks for the instructions, it smells great.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "It's a pleasure! See you next time.",
+            "bot": true,
+            "annotations": "thank();\r\ngoodbye();"
+        }
+    ]
+}

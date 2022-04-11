@@ -1,0 +1,138 @@
+{
+    "id": "155",
+    "title": "Cawl Traditional Welsh Broth",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 quarts water",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 quarts water\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "12 ounces beef shank",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"12 ounces beef shank\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 large onions, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 large onions, chopped\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 large carrots, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 large carrots, sliced\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 rutabaga, diced",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 rutabaga, diced\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"salt and pepper to taste\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "4 potatoes, peeled and quartered",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"4 potatoes, peeled and quartered\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 leeks, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 leeks, sliced\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 small head cabbage, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 small head cabbage, sliced\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 tablespoons chopped fresh parsley",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 tablespoons chopped fresh parsley\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Bring water to boil in a large pot.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"boil\"@18:22 / AC\r\n\t\t:ppt ( ing-0 \"water\"@9:14 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large pot\"@26:37 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Place beef shank in, and simmer 1 1/2 hours.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-1 \"beef shank\"@9:19 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"simmer\"@28:34 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-1-0 \"1 1/2 hours\"@35:46 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Let cool overnight.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"cool\"@7:11 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-2-0 \"overnight\"@12:21 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Lift meat out, trim off gristle and cut meat into medium sized pieces; set aside.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Lift\"@3:7 / AC\r\n\t\t:ppt ( \"meat\"@8:12 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"trim off\"@18:26 / AC\r\n\t\t:ppt ( \"gristle\"@27:34 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-2 \"cut\"@39:42 / AC\r\n\t\t:ppt ( \"meat\"@43:47 / FOOD )\r\n\t\t:reshape ( \"medium sized pieces\"@53:72 / OTHER )\r\n\t)\r\n\t:inform ( ac-3-3 \"set aside\"@74:83 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Skim fat from surface of stock, or strain through a fine sieve.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Skim\"@3:7 / AC\r\n\t\t:ppt ( \"fat\"@8:11 / OTHER )\r\n\t\t:source ( tool-4-0 \"surface of stock\"@17:33 / TOOL )\r\n\t)\r\n\t:inform ( ac-4-1 \"strain\"@38:44 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:instrument ( tool-4-1 \"a fine sieve\"@53:65 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Return stock to heat, and bring to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Return\"@3:9 / AC\r\n\t\t:ppt ( tool-5-0 \"stock\"@10:15 / TOOL )\r\n\t\t:gol ( \"heat\"@19:23 / OTHER )\r\n\t)\r\n\t:inform ( ac-5-1 \"boil\"@40:44 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Add onions, carrots and rutabaga.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-2 \"onions\"@7:13 / FOOD )\r\n\t\t:ppt ( ing-3 \"carrots\"@15:22 / FOOD )\r\n\t\t:ppt ( ing-4 \"rutabaga\"@27:35 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Season with salt and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Season\"@3:9 / AC\r\n\t\t:ppt ( ing-5 \"salt and pepper\"@15:30 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Simmer for 1 hour.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Simmer\"@3:9 / AC\r\n\t\t:duration ( dur-8-0 \"1 hour\"@14:20 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Add potatoes, and simmer until tender, 15 to 20 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Add\"@4:7 / AC\r\n\t\t:ppt ( ing-6 \"potatoes\"@8:16 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-9-1 \"simmer\"@22:28 / AC\r\n\t\t:until ( cond-9-0 \"until tender\"@29:41 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-9-0 \"15 to 20 minutes\"@43:59 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Stir in the leeks, cabbage, parsley and reserved meat.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Stir in\"@4:11 / AC\r\n\t\t:ppt ( ing-7 \"the leeks\"@12:21 / FOOD )\r\n\t\t:ppt ( ing-8 \"cabbage\"@23:30 / FOOD )\r\n\t\t:ppt ( ing-9 \"parsley\"@32:39 / FOOD )\r\n\t\t:ppt ( \"reserved meat\"@44:57 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Simmer 10 minutes, or until cabbage is tender.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Simmer\"@4:10 / AC\r\n\t\t:duration ( dur-11-0 \"10 minutes\"@11:21 / DUR )\r\n\t\t:until ( cond-11-0 \"until cabbage is tender\"@26:49 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

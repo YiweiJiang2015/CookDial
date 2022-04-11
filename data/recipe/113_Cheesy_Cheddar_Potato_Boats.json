@@ -1,0 +1,72 @@
+{
+    "id": "113",
+    "title": "Cheesy Cheddar Potato Boats",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "4 medium baked potatoes, quartered lengthwise",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"4 medium baked potatoes, quartered lengthwise\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/3 cup Hidden Valley Original Ranch Salad Dressing",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/3 cup Hidden Valley Original Ranch Salad Dressing\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup shredded Cheddar cheese",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup shredded Cheddar cheese\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "Sliced green onions (optional)",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"Sliced green onions (optional)\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "Bacon pieces (optional)",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"Bacon pieces (optional)\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 375 degrees F",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"375 degrees F\"@19:32 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Scoop the potato out of skins; coat inside of skins with Ranch.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Scoop\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"the potato\"@9:19 / FOOD )\r\n\t\t:source ( \"skins\"@27:32 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"coat\"@34:38 / AC\r\n\t\t:gol ( \"inside of skins\"@39:54 / FOOD )\r\n\t\t:ppt ( ing-1 \"Ranch\"@60:65 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place back into skins.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@3:8 / AC\r\n\t\t:gol ( \"skins\"@19:24 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Sprinkle with cheese.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Sprinkle\"@3:11 / AC\r\n\t\t:ppt ( ing-2 \"cheese\"@17:23 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Bake for 10 minutes or until cheese is melted.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Bake\"@3:7 / AC\r\n\t\t:duration ( dur-4-0 \"10 minutes\"@12:22 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-4-0 \"until cheese is melted\"@26:48 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Garnish with green onions and/or bacon bits, if desired.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Garnish\"@3:10 / AC\r\n\t\t:ppt ( ing-3 \"green onions\"@16:28 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( ing-4 \"bacon bits\"@36:46 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

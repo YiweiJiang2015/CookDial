@@ -1,0 +1,244 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. How do I make crab and lobster stuffed mushrooms?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. Would you like to have a list of the ingredients first?",
+            "bot": true,
+            "annotations": "greeting();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Sure. How many ingredients do I need?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_ingredient_list_length;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "You will need 7 ingredients plus one optional.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. What are the ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "The first two ingredients are 3/4 cup melted butter and 1 pound fresh mushrooms.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "OK. Thank you. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"thank; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The next ingredients are 1 cup crushed seasoned croutons, 1 cup shredded mozzarella cheese and 1 (6 ounce) can crabmeat, cleaned and chopped.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);\r\ninform_ingredient(ing-4);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Could you repeat the third ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "The third ingredient is 1 can of crab meat, the can should weigh 6 ounces.",
+            "bot": true,
+            "annotations": "repeat(ing-4);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "And the ingredient after that?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "The next ingredients are 1 pound of lobster tail, 3 tablespoons minced garlic and optionally 1/4 cup shredded mozzarella cheese.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-5);\r\ninform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. Thanks. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Now you should preheat the oven to 190 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. The oven is preheating. Is there something I can do in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_parallel_action;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Yes, you can brush a large baking sheet with butter.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "The next step is to arrange the mushroom caps in a single layer over the baking sheet.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. I have done that. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Ok. Now you should take a medium bowl and mix together 6 ingredients. Do you want to hear the ingredients two by two?",
+            "bot": true,
+            "annotations": "simplify_begin(inst-3);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. I will take the bowl. Yes, that would help thanks.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "You are welcome. The first two ingredients are crushed croutons and half a cup of butter.",
+            "bot": true,
+            "annotations": "thank();\r\nsimplify_continue(inst-3, [ing-2, ing-0]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "How many crushed croutons do I need?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "You need 1 cup of crushed seasoned croutons.",
+            "bot": true,
+            "annotations": "inform_amount(ing-2);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "The next two ingredients are 1 cup of shredded mozzarella cheese and the can of crabmeat.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-3, [ing-3, ing-4]);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. I have put them ready. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "The next ingredients are lobster and garlic.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-3, [ing-5, ing-6]);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "How much lobster and garlic do I need?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "You need 1 pound of lobster tail, cleaned and chopped and 3 tablespoons minced garlic.",
+            "bot": true,
+            "annotations": "inform_amount(ing-5);\r\ninform_amount(ing-6);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok now I understand. They are the ingredients I already put ready in the beginning. Is there something else I should add to the bowl?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "No, there is nothing you should add to the bowl. You can mix the ingredients in the bowl and after that you can spoon the content of the bowl into the mushroom caps.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. What should I do with the content of the bowl? I didn't understand.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_repeat;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "You can spoon the content in the mushroom caps.",
+            "bot": true,
+            "annotations": "repeat(inst-4);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok I have done that. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "The next step is to Bake for 10 to 12 minutes in the preheated oven, or until lightly browned on the top.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok I have done that. It is light brown on the top. Is there something else to do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Yes, if you like it you can sprinkle with additional cheese. After that you can serve it hot, and you are ready to enjoy your meal.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok. Thanks for the instructions. It looks very good!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Thank you!",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

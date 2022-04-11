@@ -1,0 +1,274 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. how do I make the bakers secret pie crust?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. take 4 tablespoons unsalted butter and 5 tablespoons shortening. Place them into the freezer for 20 minutes.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "5 tablespoons of what? Could you repeat that again?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "5 tablespoons of shortening. Shortening is butter or fat used for making bread.",
+            "bot": true,
+            "annotations": "repeat(inst-0, [ing-6]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. thanks for the clarification. I put everything in the freezer for 20 minutes. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Take the bowl of the food processor. In this bowl we will combine several ingredients.",
+            "bot": true,
+            "annotations": "fetch(inst-1, [tool-1-0]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. I have the bowl.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Combine 3/4 cup cake flour and 3/4 cup all-purpose flour.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-1, [ing-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. I added them to the bowl. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Next you can add 1/2 teaspoon salt and 1 teaspoon white suga.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-1, [ing-2, ing-3]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. added as well. Should I add more still?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Finally add 1/8 teaspoon baking powder.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-1, [ing-4]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. I added the baking powder. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Now mix everything for a few seconds.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Should I mix it with the machine?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Yes with the food processor.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. thanks. Done. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Next take one half of the cold butter and one half of the cold shortening you put in the freezer.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-3-0);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. I took them out. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "You can put them in the food processor with the other ingredients and mix for about 1 minutes. Make sure to scrape down the bowl twice while mixing.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-3-1);\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Could you repeat the last part once, what should I make sure of?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "During the one minute of mixing you should stop twice and scrape down the edges of the bowl.",
+            "bot": true,
+            "annotations": "repeat(inst-4);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. thanks for the clarification. What should I do now with the mixture?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now you can add the remainder of the butter and the shortening to the mixture. Mix only briefly so there are pea-sized chunks lef.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. done. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Take a measuring cup and mix 1 egg yolk and 2 teaspoons distilled white vinegar.",
+            "bot": true,
+            "annotations": "fetch(ac-6-0, [tool-6-0]);\r\ninform_instruction(ac-6-0);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "What should I add besides the two teaspoons of stilled white vinegar?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "1 egg yolk. It is the yellow part of an egg.",
+            "bot": true,
+            "annotations": "repeat(ac-6-0, [ing-7]);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. now I understood thanks. Ok. they are both in the measuring cup. Should I add more?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "If these two ingredients are well mixed, you can add 3 ice cubes and 1/2 cup cold water.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-6-1);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. done. What should I do with the mixture?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Let this cool down for about 3 to 4 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. it's cooled down now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Remove the mixture of flours and shortening from the processor and place it in a large mixing bow.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. the first mixture is in a large mixing bowl. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Now you can sprinkle 4 to 5 tablespoons of the egg and vinegar mixture on the first mixture in the mixing bowl. Mix with a fork and add the tablespoons a little at a time.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. could you repeat only the last part? I couldn't follow that, thanks!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat; thank;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "When you are adding the tablespoons of egg, add only one tablespoon at a time and mix with a fork.",
+            "bot": true,
+            "annotations": "repeat(ac-9-1);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok. thanks. It's all added now. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Now take a plastic bag, place the dough in it and place it in the refrigerator for a few minute.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok. it's in the fridge. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "After a few minutes you can remove from the fridge and roll out the dough.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok. in which shape should I roll it out, or it doesn't matter?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "No it doesn't matter. Your Pie crust is ready now, enjoy it!",
+            "bot": true,
+            "annotations": "negate();\r\nend_recipe();\r\nenjoy();\r\n"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Ok. Thanks. it looks nice.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 24}"
+        }
+    ]
+}

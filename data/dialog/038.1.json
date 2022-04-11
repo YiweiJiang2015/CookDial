@@ -1,0 +1,178 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we are making Beths Spicy Oatmeal Raisin Cookies.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Sounds good. What's the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Preheat the over to 175 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. what's the next instruction?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Now take a large bowl. We will add some ingredients to prepare the mixture. First add 1/2 cup of softened butter.",
+            "bot": true,
+            "annotations": "fetch(inst-1, [tool-1-0]);\r\nsimplify_begin(ac-1-0);\r\nsimplify_continue(ac-1-0, [ing-0]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "I added the softened butter. What else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "1/2 cup butter flavored shortening and 1 cup packed light brown sugar.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-1-0, [ing-1, ing-2]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Still add 1/2 cup white sugar, 2 eggs and 1 teaspoon vanilla extract. Cream it all together until it becomes smooth.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-1-0, [ing-3, ing-4, ing-5]);\r\nsimplify_begin(ac-1-0);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. it is smooth now. What else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Now add 5 other ingredients to the mix. The first one is 1 1/2 cups all-purpose flour.",
+            "bot": true,
+            "annotations": "simplify_begin(ac-2-0);\r\nsimplify_continue(ac-2-0, [ing-6]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Done. What's the next one?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Now add 1 teaspoon baking soda and 1 teaspoon ground cinnamon.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-2-0, [ing-7, ing-8]);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. I have added that. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Add 1/2 teaspoon ground cloves and 1/2 teaspoon salt. Stir it all together.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-2-0, [ing-9, ing-10]);\r\ninform_instruction(ac-2-1);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Can you repeat the last sentence?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Stir everything well together.",
+            "bot": true,
+            "annotations": "repeat(ac-2-1);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Done. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Also still stir in 3 cups of rolled oats and 1 cup raisins.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Done. anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now drop the mixture onto ungreased cookie sheets. Use rounded teaspoonfuls.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "I placed it on cooking sheets. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Bake them in the oven for 10 to 12 minutes until they are light and golden. Do not overbake them.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);\r\ninform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. 11 minutes have passed now and they look good. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now still let them cool for 2 minutes before removing them from the cookie sheets to cool completely.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. I have let them cool down for 2 minutes.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Ok. great. You may store them in an airtight container if you like. Enjoy!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "They look delicious, thank you.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 22}"
+        }
+    ]
+}

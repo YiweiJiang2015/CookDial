@@ -1,0 +1,108 @@
+{
+    "id": "149",
+    "title": "Barbecued Shredded Beef",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3 pounds beef roast",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3 pounds beef roast\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 onions, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 onions, chopped\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 (12 fluid ounce) cans or bottles beer",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 (12 fluid ounce) cans or bottles beer\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "6 teaspoons Worcestershire sauce",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"6 teaspoons Worcestershire sauce\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 teaspoons liquid smoke flavoring",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 teaspoons liquid smoke flavoring\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 teaspoons garlic powder",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 teaspoons garlic powder\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 teaspoons ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 teaspoons ground black pepper\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "salt to taste",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"salt to taste\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 (18 ounce) bottle barbecue sauce",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 (18 ounce) bottle barbecue sauce\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 cups water",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 cups water\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 275 degrees F (135 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"275 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"135 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Place roast in a large roasting pan and scatter chopped onions over.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"roast\"@9:14 / FOOD )\r\n\t\t:gol ( tool-1-0 \"a large roasting pan\"@18:38 / TOOL )\r\n\t)\r\n\t:inform ( ac-1-1 \"scatter\"@43:50 / AC\r\n\t\t:ppt ( ing-1 \"chopped onions\"@51:65 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) In a large bowl, combine Worcestershire sauce, liquid smoke, garlic powder, salt and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"combine\"@20:27 / AC\r\n\t\t:ppt ( ing-3 \"Worcestershire sauce\"@28:48 / FOOD )\r\n\t\t:ppt ( ing-4 \"liquid smoke\"@50:62 / FOOD )\r\n\t\t:ppt ( ing-5 \"garlic powder\"@64:77 / FOOD )\r\n\t\t:ppt ( ing-7 \"salt\"@79:83 / FOOD )\r\n\t\t:ppt ( ing-8 \"pepper\"@88:94 / FOOD )\r\n\t\t:loc ( tool-2-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Pour in beer, stir and add to roasting pan.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Pour in\"@3:10 / AC\r\n\t\t:ppt ( ing-2 \"beer\"@11:15 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"stir\"@17:21 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-2 \"add\"@26:29 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( tool-3-0 \"roasting pan\"@33:45 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Add water to the top of beef.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-9 \"water\"@7:12 / FOOD )\r\n\t\t:ppt ( \"the top of beef\"@16:31 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Cover and cook in oven at 275 degrees F (135 degrees C) for 4 to 5 hours.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"cook\"@13:17 / AC\r\n\t\t:loc ( tool-5-0 \"oven\"@21:25 / TOOL )\r\n\t\t:heat ( temp-5-0 \"275 degrees F\"@29:42 / TEMPERATURE )\r\n\t\t:heat ( temp-5-1 \"135 degrees C\"@44:57 / TEMPERATURE )\r\n\t\t:duration ( dur-5-0 \"4 to 5 hours\"@63:75 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) When meat is cooked, shred meat with 2 forks, add barbecue sauce and mix well.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"shred\"@24:29 / AC\r\n\t\t:ppt ( \"meat\"@30:34 / FOOD )\r\n\t\t:instrument ( tool-6-0 \"2 forks\"@40:47 / TOOL )\r\n\t\t:when ( cond-6-0 \"When meat is cooked\"@3:22 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-6-1 \"add\"@49:52 / AC\r\n\t\t:ppt ( ing-8 \"barbecue sauce\"@53:67 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-6-2 \"mix\"@72:75 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

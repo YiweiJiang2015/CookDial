@@ -1,0 +1,102 @@
+{
+    "id": "229",
+    "title": "Cheesy Sweet and Savory Spuds",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "6 Yukon Gold potatoes, peeled and cubed",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"6 Yukon Gold potatoes, peeled and cubed\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 sweet potatoes, peeled and cubed",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 sweet potatoes, peeled and cubed\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 tablespoons butter",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 tablespoons butter\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 cup heavy cream",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 cup heavy cream\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 tablespoon chicken bouillon granules",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 tablespoon chicken bouillon granules\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 2/3 tablespoons brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 2/3 tablespoons brown sugar\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 teaspoons black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 teaspoons black pepper\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 cups shredded Monterey Jack cheese",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 cups shredded Monterey Jack cheese\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Place the potatoes and sweet potatoes in a large pot with enough water to cover.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"the potatoes\"@9:21 / FOOD )\r\n\t\t:ppt ( ing-1 \"sweet potatoes\"@26:40 / FOOD )\r\n\t\t:gol ( tool-0-0 \"a large pot\"@44:55 / TOOL\r\n\t\t\t:todo ( \"enough water\"@61:73 / FOOD )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Bring to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"boil\"@14:18 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Remove from heat, and drain.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( tool-2-0 \"heat\"@15:19 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"drain\"@25:30 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Preheat the oven broiler.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-3-0 \"the oven broiler\"@11:27 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) In a large bowl, mash the potatoes.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"mash\"@20:24 / AC\r\n\t\t:loc ( tool-4-0 \"a large bowl\"@6:18 / TOOL )\r\n\t\t:ppt ( \"the potatoes\"@25:37 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Gradually mix in butter, heavy cream, chicken bouillon, brown sugar, and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"mix in\"@13:19 / AC\r\n\t\t:ppt ( ing-2 \"butter\"@20:26 / FOOD )\r\n\t\t:ppt ( ing-3 \"heavy cream\"@28:39 / FOOD )\r\n\t\t:ppt ( ing-4 \"chicken bouillon\"@41:57 / FOOD )\r\n\t\t:ppt ( ing-5 \"brown sugar\"@59:70 / FOOD )\r\n\t\t:ppt ( ing-6 \"pepper\"@76:82 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Transfer the mixture to a medium baking dish, and top with Monterey Jack cheese.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Transfer\"@3:11 / AC\r\n\t\t:ppt ( \"the mixture\"@12:23 / FOOD )\r\n\t\t:gol ( tool-6-0 \"a medium baking dish\"@27:47 / TOOL )\r\n\t)\r\n\t:inform ( ac-6-1 \"top\"@53:56 / AC\r\n\t\t:ppt ( ing-7 \"Monterey Jack cheese\"@62:82 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Broil uncovered in the preheated oven 10 minutes, or until the cheese is melted and lightly browned.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Broil\"@3:8 / AC\r\n\t\t:loc ( tool-7-0 \"the preheated oven\"@22:40 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-7-0 \"10 minutes\"@41:51 / DUR )\r\n\t\t:until ( cond-7-0 \"until the cheese is melted and lightly browned\"@56:102 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

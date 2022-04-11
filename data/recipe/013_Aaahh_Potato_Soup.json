@@ -1,0 +1,66 @@
+{
+    "id": "013",
+    "title": "Aaahh Potato Soup",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 Yukon Gold potatoes, cubed",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 Yukon Gold potatoes, cubed\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (5.5 ounce) package au gratin instant potato mix",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (5.5 ounce) package au gratin instant potato mix\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 (10.5 ounce) can condensed chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 (10.5 ounce) can condensed chicken broth\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 1/2 cups water",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 1/2 cups water\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 cup heavy cream",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 cup heavy cream\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large saucepan or pot, combine potatoes, au gratin potato mix, chicken broth and water.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@31:38 / AC\r\n\t\t:loc ( \"or\"@-1:-1 / CHOICE\r\n\t\t\t:option ( tool-0-0 \"a large saucepan\"@6:22 / TOOL )\r\n\t\t\t:option ( tool-0-1 \"pot\"@26:29 / TOOL )\r\n\t\t)\r\n\t\t:ppt ( ing-0 \"potatoes\"@39:47 / FOOD )\r\n\t\t:ppt ( ing-1 \"au gratin potato mix\"@49:69 / FOOD )\r\n\t\t:ppt ( ing-2 \"chicken broth\"@71:84 / FOOD )\r\n\t\t:ppt ( ing-3 \"water\"@89:94 / FOOD )\r\n\t\t:_result ( potato-mixture )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add more water to cover if necessary.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-3 \"more water\"@7:17 / FOOD )\r\n\t\t:gol ( chicken-mixture / FOOD )\r\n\t\t:todo ( cond-1-0 \"if necessary\"@27:39 / CONDITION_CLAUSE )\r\n\t\t:prp ( purp-1-0 \"to cover\"@18:26 / PURPOSE_CLAUSE )\r\n\t\t:_result ( potato-in-water )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cook over medium heat, stirring occasionally, until potatoes are tender, about  40 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cook\"@3:7 / AC\r\n\t\t:heat ( \"medium heat\"@13:24 / OTHER )\r\n\t\t:simultaneous ( ac-2-1 \"stirring\"@26:34 / AC )\r\n\t\t:until ( cond-2-0 \"until potatoes are tender\"@49:74 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-2-0 \"40 minutes\"@83:93 / DUR )\r\n\t\t:ppt ( chicken-in-water / FOOD )\r\n\t\t:_result ( cooked-potato )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Stir in cream and heat through.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n   :inform ( \"Stir in\"@3:10 / AC\r\n      :ppt ( ing-4 \"cream\"@11:16 / FOOD )\r\n      :gol ( cooked-potato / FOOD )\r\n\t:_result creamed-potato\r\n   )\r\n   :inform ( \"heat\"@21:25 / AC\r\n      :ppt ( creamed-potato / FOOD )\r\n\t:_result heated-potato\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Serve.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n   :inform ( \"Serve\"@3:8 / AC\r\n      :ppt ( heated-potato / FOOD )\r\n\t:_result FINAL_PRODUCT\r\n   )\r\n)"
+        }
+    ]
+}

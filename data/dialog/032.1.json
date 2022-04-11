@@ -1,0 +1,166 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we will make Eggnog II.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "That sounds good. What is the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "You may start by taking a large saucepan and already add 6 beaten eggs.",
+            "bot": true,
+            "annotations": "fetch(inst-0, [tool-0-0]);\r\nsimplify_continue(inst-0, [ing-0]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "That's done. What else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Now add 2 1/4 cups of milk and 1/3 cup of white sugar.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-1, ing-2]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Can you repeat the quantities please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "2, 1/4 cups of milk and 1/3 cup of white sugar.",
+            "bot": true,
+            "annotations": "inform_amount(ing-1);\r\ninform_amount(ing-2);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Thank you. Something else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "No now let it cook and stir over medium heat. Stir the mixture until it will cling to a metal spoon rather than it will run off it.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-1);\r\n"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. it seems good. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Remove it from the heat. Let it cool quickly by placing the pan in a sink with ice water. Keep stirring it for 1 to 2 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "When do I know it is ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "1 or 2 minutes is enough.",
+            "bot": true,
+            "annotations": "inform_duration(dur-3-0);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now stir in 1 teaspoon of vanilla extract and lit it chill for 4 to 24 hours.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);\r\ninform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Can I do something else during these hours?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_parallel_action;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "You can make the whip cream already. Take 1 cup of heavy whipping cream and add 2 tablespoons of sugar. Then whip the cream until soft peaks are formed.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "I have the whipping creme. How many sugar do I need to add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_amount;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Just 2 tablespoons.",
+            "bot": true,
+            "annotations": "inform_amount(ing-5);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Thank you. The whipping creme is ready now. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now transfer the cooled egg mixture into a punch bowl. Then with each serving sprinkle it with some nutmeg and fold in the whipped cream.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);\r\ninform_instruction(inst-8);\r\ninform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Can you repeat the last sentence please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "For each serving sprinkle it with some nutmeg and add the whipped cream.",
+            "bot": true,
+            "annotations": "repeat(inst-8);\r\nrepeat(inst-9);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Thank you. Anything else I need to do for serving?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_is_recipe_ongoing;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "No that is it. Enjoy!",
+            "bot": true,
+            "annotations": "negate();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Thank you for the instructions.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 16}"
+        }
+    ]
+}

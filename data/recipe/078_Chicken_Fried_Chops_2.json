@@ -1,0 +1,90 @@
+{
+    "id": "078",
+    "title": "Chicken Fried Chops 2",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/2 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/2 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 teaspoons salt",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 teaspoons salt\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 1/2 teaspoons ground mustard",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 1/2 teaspoons ground mustard\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 teaspoon garlic powder",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 teaspoon garlic powder\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "6 pork loin chops (3/4 inch thick), trimmed",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"6 pork loin chops (3/4 inch thick), trimmed\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 tablespoons vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 tablespoons vegetable oil\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 (10.75 ounce) can condensed cream of chicken soup, undiluted",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 (10.75 ounce) can condensed cream of chicken soup, undiluted\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/3 cup water",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/3 cup water\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a shallow bowl, combine flour, salt, mustard and garlic powder; dredge pork chops.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@22:29 / AC\r\n\t\t:ppt ( ing-0 \"flour\"@30:35 / FOOD )\r\n\t\t:ppt ( ing-1 \"salt\"@37:41 / FOOD )\r\n\t\t:ppt ( ing-2 \"mustard\"@43:50 / FOOD )\r\n\t\t:ppt ( ing-3 \"garlic powder\"@55:68 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a shallow bowl\"@6:20 / TOOL )\r\n\t)\r\n\t:inform ( ac-0-1 \"dredge\"@70:76 / AC\r\n\t\t:ppt ( ing-4 \"pork chops\"@77:87 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a skillet, brown the chops on both sides in oil.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"brown\"@17:22 / AC\r\n\t\t:ppt ( \"the chops\"@23:32 / FOOD )\r\n\t\t:mnr ( \"both sides\"@36:46 / FOOD )\r\n\t\t:loc ( ing-5 \"oil\"@50:53 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a skillet\"@6:15 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place in a slow cooker.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-2-0 \"a slow cooker\"@12:25 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Combine soup and water; pour over chops.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( ing-6 \"soup\"@11:15 / FOOD )\r\n\t\t:ppt ( ing-7 \"water\"@20:25 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"pour\"@27:31 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"chops\"@37:42 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Cover and cook on low for 6-8 hours or until meat is tender.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Cover and cook\"@3:17 / AC\r\n\t\t:heat ( temp-4-0 \"low\"@21:24 / TEMPERATURE )\r\n\t\t:duration ( dur-4-0 \"6-8 hours\"@29:38 / DUR )\r\n\t\t:until ( cond-4-0 \"until meat is tender\"@42:62 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) If desired, thicken pan juices and serve with the pork chops.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"thicken\"@15:22 / AC\r\n\t\t:ppt ( \"pan juices\"@23:33 / FOOD )\r\n\t\t:duration ( cond-5-0 \"If desired\"@3:13 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-5-1 \"serve\"@38:43 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:todo ( \"the pork chops\"@49:63 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "id": "126",
+    "title": "Apple Pie 2",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 gallon apple juice",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 gallon apple juice\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 gallon apple cider",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 gallon apple cider\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 cups white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 cups white sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "8 cinnamon sticks",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"8 cinnamon sticks\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 (750 milliliter) bottle 190 proof grain alcohol",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 (750 milliliter) bottle 190 proof grain alcohol\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large pot, combine apple juice, apple cider, sugar and cinnamon sticks.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@19:26 / AC\r\n\t\t:ppt ( ing-0 \"apple juice\"@27:38 / FOOD )\r\n\t\t:ppt ( ing-1 \"apple cider\"@40:51 / FOOD )\r\n\t\t:ppt ( ing-2 \"sugar\"@53:58 / FOOD )\r\n\t\t:ppt ( ing-3 \"cinnamon sticks\"@63:78 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large pot\"@6:17 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Bring to a boil, then remove from heat and let cool completely.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"boil\"@14:18 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"remove\"@25:31 / AC\r\n\t\t:source ( \"heat\"@37:41 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-2 \"cool\"@50:54 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) When juice mixture is cool, stir in the grain alcohol.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"stir in\"@31:38 / AC\r\n\t\t:ppt ( ing-4 \"the grain alcohol\"@39:56 / FOOD )\r\n\t\t:when ( cond-2-0 \"When juice mixture is cool\"@3:29 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

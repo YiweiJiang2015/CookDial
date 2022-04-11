@@ -1,0 +1,322 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello, what are we gonna cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi, today we will make corn bread sloppy Joes. Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes, I am ready! Which ingredients should I prepare?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "You will need 10 ingredients. The first two are 1 package corn bread/muffin mix and 1 egg.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. How big should the corn bread mix package be?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "It should be 8.5 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. And what is 8.5 ounces in grams?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. No problem. Can I have two more ingredients please?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Now prepare 1/3 cup milk and 2 pounds ground beef.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. I have skimmed milk, is that ok?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. No problem. Can I have two more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Continue with preparing 1/2 of chopped onions and 1 jar meatless spaghetti sauce.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. Could you repeat the second ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "The second ingredient is 1 jar meatless spaghetti sauce.",
+            "bot": true,
+            "annotations": "repeat(ing-5);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. Great, sounds delicious. What are the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Do you need the size of the spaghetti sauce jar?",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Yes, that would be good thanks.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "The size is 26 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-5);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. Good. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "The ingredients are 1 cup frozen corn  and 1 (4 ounce) can chopped green chilies. You should drain them.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. I drained them. Are the ingredients over?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "No, there are still 2 ingredients. 2 (1.3 ounce) envelopes sloppy joe mix and 1 cup shredded Cheddar cheese.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_ingredient(ing-8);\r\ninform_ingredient(ing-9);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. What is sloppy joe mix?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "It is the Sloppy Joes seasoning mix.",
+            "bot": true,
+            "annotations": "repeat(ing-8);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. Good. What is the first step of the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "You should prepare and bake the corn bread according to the instructions from the package, using the egg and milk.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. And should I use all the milk?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_use_all;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "You should use 1/3 cup milk. You don't have to use milk later in the recipe.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_amount(ing-2);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. That's good. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "You should take a large skillet and cook the beef and onion over medium heat.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-0);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. How long should I cook them for?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "You should cook it until the meat is no longer pink. Afterwards drain the liquid out.",
+            "bot": true,
+            "annotations": "inform_duration(cond-1-0);\r\ninform_instruction(ac-1-1);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. The meat is no longer pink and I drained the liquid out. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Now stir in the spaghetti sauce, corn, chilies and sloppy joe mix.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. I did it. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Now bring it a boil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok. It's boiling now. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Reduce the heat, let is simmer for 10 minutes. Don't cover the skillet.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok. I let it simmer for 10 minutes. Can I add some pepper?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Sorry I cannot answer that question. You should now sprinkle with cheese. Then cover the skillet and cook for 1 minute.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok. I cooked for one minute, but the cheese doesn't look ready. Can I leave it one more minute?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "It will be ready when the cheese is melted.",
+            "bot": true,
+            "annotations": "inform_duration(cond-5-0);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Ok. Good. The cheese is nicely melted now. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "You should cut the corn bread in six pieces. Cut each piece in half.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Ok. Then I cut it in 12 pieces?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "Yes, in total, you will have 12 pieces.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "Ok. I have 12 pieces of bread. How should I continue?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-49",
+            "utterance": "Finally top the bread with the sloppy joe mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-50",
+            "utterance": "Ok. Done. Is the food ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-51",
+            "utterance": "Yes, that was all. Enjoy!",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-52",
+            "utterance": "Ok. Great. I am very hungry.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 18}"
+        }
+    ]
+}

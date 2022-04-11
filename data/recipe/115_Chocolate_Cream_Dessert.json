@@ -1,0 +1,120 @@
+{
+    "id": "115",
+    "title": "Chocolate Cream Dessert",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/4 cup cold margarine",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/4 cup cold margarine\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 (8 ounce) package light cream cheese, softened",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 (8 ounce) package light cream cheese, softened\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 tablespoons heat-stable granular sugar substitute",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 tablespoons heat-stable granular sugar substitute\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 (8 ounce) container reduced-fat frozen whipped topping, thawed, divided",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 (8 ounce) container reduced-fat frozen whipped topping, thawed, divided\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 1/2 cups cold skim milk",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 1/2 cups cold skim milk\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 (1.4 ounce) package instant  sugar-free chocolate pudding mix",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 (1.4 ounce) package instant  sugar-free chocolate pudding mix\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a bowl, cut margarine into flour until crumbly.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"cut\"@14:17 / AC\r\n\t\t:ppt ( ing-0 \"margarine\"@18:27 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a bowl\"@6:12 / TOOL )\r\n\t\t:gol ( ing-1 \"flour\"@33:38 / FOOD )\r\n\t\t:until ( cond-0-0 \"until crumbly\"@39:52 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Press into an 11-in baking dish coated with nonstick cooking spray.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Press\"@3:8 / AC\r\n\t\t:gol ( tool-1-0 \"an 11-in baking dish\"@14:34 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Bake at 350 degrees F for 15-18 minutes or until lightly browned.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Bake\"@3:7 / AC\r\n\t\t:heat ( temp-2-0 \"350 degrees F\"@11:24 / TEMPERATURE )\r\n\t\t:duration ( dur-2-0 \"15-18 minutes\"@29:42 / DUR )\r\n\t\t:until ( cond-2-0 \"until lightly browned\"@46:67 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cool completely.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cool\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) In a mixing bowl, beat cream cheese and sweetener until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"beat\"@21:25 / AC\r\n\t\t:ppt ( ing-2 \"cream cheese\"@26:38 / FOOD )\r\n\t\t:ppt ( ing-3 \"sweetener\"@43:52 / FOOD )\r\n\t\t:until ( cond-4-0 \"until smooth\"@53:65 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-4-0 \"a mixing bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Fold in half of the whipped topping.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Fold in\"@3:10 / AC\r\n\t\t:ppt ( ing-4 \"half of the whipped topping\"@11:38 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Carefully spread over the crust.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"spread\"@13:19 / AC\r\n\t\t:gol ( \"crust\"@29:34 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) In a mixing bowl, combine milk and pudding mix.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"combine\"@21:28 / AC\r\n\t\t:ppt ( ing-5 \"milk\"@29:33 / FOOD )\r\n\t\t:ppt ( ing-6 \"pudding mix\"@38:49 / FOOD )\r\n\t\t:loc ( tool-7-0 \"a mixing bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Beat on low speed for 2 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Beat\"@3:7 / AC\r\n\t\t:mnr ( \"low speed\"@11:20 / OTHER )\r\n\t\t:duration ( dur-8-0 \"2 minutes\"@25:34 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Let stand for 2-3 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"stand\"@7:12 / AC\r\n\t\t:subj ( NULL / FOOD )\r\n\t\t:duration ( dur-9-0 \"2-3 minutes\"@-1:-1 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Spread over the cream cheese.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Spread\"@4:10 / AC\r\n\t\t:gol ( \"the cream cheese\"@16:32 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Top with the remaining whipped topping.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Top\"@4:7 / AC\r\n\t\t:ppt ( ing-4 \"the remaining whipped topping\"@13:42 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "id": "098",
+    "title": "Corn Bread Sloppy Joes",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (8.5 ounce) package corn bread/muffin mix",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (8.5 ounce) package corn bread/muffin mix\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 egg",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 egg\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/3 cup milk",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/3 cup milk\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 pounds ground beef",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 pounds ground beef\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 cup chopped onion",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 cup chopped onion\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 (26 ounce) jar meatless spaghetti sauce",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 (26 ounce) jar meatless spaghetti sauce\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 cup frozen corn",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 cup frozen corn\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 (4 ounce) can chopped green chilies, drained",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 (4 ounce) can chopped green chilies, drained\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 (1.3 ounce) envelopes sloppy joe mix",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 (1.3 ounce) envelopes sloppy joe mix\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 cup shredded Cheddar cheese",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 cup shredded Cheddar cheese\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Prepare and bake corn bread according to package directions, using the egg and milk.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Prepare\"@3:10 / AC\r\n\t\t:ppt ( ing-0 \"corn bread\"@20:30 / FOOD )\r\n\t)\r\n\t:inform ( ac-0-1 \"bake\"@15:19 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:mnr ( \"according to package directions\"@31:62 / OTHER )\r\n\t)\r\n\t:inform ( ac-0-2 \"using\"@64:69 / AC\r\n\t\t:ppt ( ing-1 \"egg\"@74:77 / FOOD )\r\n\t\t:ppt ( ing-2 \"milk\"@82:86 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Meanwhile, in a large skillet, cook beef and onion over medium heat until meat is no longer pink; drain.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"cook\"@34:38 / AC\r\n\t\t:loc ( tool-1-0 \"a large skillet\"@17:32 / TOOL )\r\n\t\t:ppt ( ing-3 \"beef\"@39:43 / FOOD )\r\n\t\t:ppt ( ing-4 \"onion\"@48:53 / FOOD )\r\n\t\t:heat ( temp-1-0 \"medium heat\"@59:70 / TEMPERATURE )\r\n\t\t:until ( cond-1-0 \"until meat is no longer pink\"@71:99 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-1-1 \"drain\"@101:106 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir in the spaghetti sauce, corn, chilies and sloppy joe mix.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-5 \"the spaghetti sauce\"@11:30 / FOOD )\r\n\t\t:ppt ( ing-6 \"corn\"@32:36 / FOOD )\r\n\t\t:ppt ( ing-7 \"chilies\"@38:45 / FOOD )\r\n\t\t:ppt ( ing-8 \"sloppy joe mix\"@50:64 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Bring to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Bring to a boil\"@-1:-1 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Reduce heat; simmer, uncovered, for 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Reduce\"@3:9 / AC\r\n\t\t:ppt ( \"heat\"@10:14 / OTHER )\r\n\t)\r\n\t:inform ( ac-4-1 \"simmer\"@16:22 / AC\r\n\t\t:mnr ( \"uncovered\"@24:33 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-4-0 \"10 minutes\"@39:49 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Sprinkle with cheese; cover and cook for 1 minute or until cheese is melted.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Sprinkle\"@3:11 / AC\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( ing-9 \"cheese\"@17:23 / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"cover\"@25:30 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-2 \"cook\"@35:39 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-5-0 \"1 minute\"@44:52 / DUR )\r\n\t\t:until ( cond-5-0 \"until cheese is melted\"@56:78 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Cut corn bread into six pieces; cut each piece in half.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Cut\"@3:6 / AC\r\n\t\t:ppt ( \"corn bread\"@7:17 / FOOD )\r\n\t\t:reshape ( \"six pieces\"@23:33 / OTHER )\r\n\t)\r\n\t:inform ( ac-6-1 \"cut\"@35:38 / AC\r\n\t\t:ppt ( \"each piece\"@39:49 / FOOD )\r\n\t\t:reshape ( \"half\"@53:57 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Top with sloppy joe mixture.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Top\"@3:6 / AC\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( \"sloppy joe mixture\"@12:30 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

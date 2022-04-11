@@ -1,0 +1,90 @@
+{
+    "id": "004",
+    "title": "Dads BBQ Roast",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 1/3 cups yellow mustard",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 1/3 cups yellow mustard\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 (1 ounce) envelopes dry onion soup mix",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 (1 ounce) envelopes dry onion soup mix\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 (5 pound) beef rump roast",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 (5 pound) beef rump roast\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a small bowl, mix together the mustard and onion soup mix.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n   :inform ( ac-0-0 \"mix\"@20:23 / AC\r\n      :ppt ( ing-0 \"the mustard\"@33:44 / FOOD )\r\n      :ppt ( ing-1 \"onion soup mix\"@49:63 / FOOD )\r\n      :loc ( tool-0-0 \"a small bowl\"@6:18 / TOOL )\r\n\t:_result mustard-mix\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Lay out two long sheets of aluminum foil crosswise.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n   :inform ( ac-1-0 \"Lay out\"@3:10 / AC\r\n      :ppt ( tool-1-0 \"two long sheets of aluminum foil\"@11:43 / TOOL )\r\n\t:_result laid-foil\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Pat the roast dry, and place in the center of the foil.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Pat\"@3:6 / AC\r\n\t\t:ppt ( ing-2 \"the roast\"@7:16 / FOOD )\r\n\t\t:mnr ( \"dry\"@-1:-1 / OTHER )\r\n\t\t:_result ( patted-roast )\r\n\t)\r\n\t:inform ( ac-2-1 \"place\"@26:31 / AC\r\n\t\t:ppt ( patted-roast / FOOD )\r\n\t\t:gol ( laid-foil \"the center of the foil\"@35:57 / TOOL )\r\n\t\t:_result ( roast-in-foil )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Generously coat the roast with the mustard mixture.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n   :inform ( ac-3-0 \"coat\"@14:18 / AC\r\n      :gol ( roast-in-foil \"the roast\"@19:28 / FOOD )\r\n      :ppt ( mustard-mix \"the mustard mixture\"@34:53 / FOOD )\r\n\t:_result coated-roast\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Wrap the foil tightly around the roast, then apply one more piece of foil to really seal it in so that the roast can be rotated without all of the juices spilling out.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Wrap\"@3:7 / AC\r\n\t\t:ppt ( laid-foil \"the foil\"@8:16 / TOOL )\r\n\t\t:gol ( coated-roast \"the roast\"@32:41 / FOOD )\r\n\t\t:_result ( wrapped-roast )\r\n\t)\r\n\t:inform ( ac-4-1 \"apply\"@48:53 / AC\r\n\t\t:ppt ( laid-foil \"one more piece of foil\"@54:76 / TOOL )\r\n\t\t:prp ( purp-4-0 \"to really seal it in\"@77:97 / PURPOSE_CLAUSE )\r\n\t\t:prp ( purp-4-1 \"so that the roast can be rotated without all of the juices spilling out\"@98:169 / PURPOSE_CLAUSE )\r\n\t\t:_result ( sealed-roast )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Prepare an outdoor grill for indirect heat.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Prepare\"@3:10 / AC\r\n\t\t:prp ( purp-5-0 \"for indirect heat\"@32:45 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( tool-5-0 \"an outdoor grill\"@11:27 / TOOL )\r\n\t\t:_result ( heated-grill )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) For charcoal, light the coals, then move to one side of the grill.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"light\"@17:22 / AC\r\n\t\t:ppt ( tool-6-0 \"the coals\"@23:32 / TOOL )\r\n\t\t:todo ( tool-6-1 \"charcoal\"@-1:-1 / TOOL )\r\n\t\t:_result ( lit-coal )\r\n\t)\r\n\t:inform ( ac-6-1 \"move\"@39:43 / AC\r\n\t\t:gol ( tool-6-2 \"one side of the grill\"@47:68 / TOOL )\r\n\t\t:ppt ( lit-coal / TOOL )\r\n\t\t:_result ( coal-in-grill )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Place the roast on the grill, and cover.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( sealed-roast \"the roast\"@9:18 / FOOD )\r\n\t\t:gol ( coal-in-grill \"the grill\"@22:31 / TOOL )\r\n\t\t:_result ( roast-on-grill )\r\n\t)\r\n\t:inform ( ac-7-1 \"cover\"@37:42 / AC\r\n\t\t:ppt ( roast-on-grill / FOOD )\r\n\t\t:_result ( covered-roast )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Cook for about 2 hours, turning every 30 to 45 minutes, or until the internal temperature is at least 145 degrees F (63 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Cook\"@3:7 / AC\r\n\t\t:duration ( dur-8-0 \"2 hours\"@18:25 / DUR )\r\n\t\t:simultaneous ( ac-8-1 \"turning\"@-1:-1 / AC\r\n\t\t\t:ppt ( covered-roast / FOOD )\r\n\t\t)\r\n\t\t:duration ( cond-8-0 \"until the internal temperature is at least 145 degrees F (63 degrees C)\"@62:133 / CONDITION_CLAUSE )\r\n\t\t:ppt ( covered-roast / FOOD )\r\n\t\t:_result ( cooked-roast )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Let stand for about 10 minutes before carving.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n   :inform ( ac-9-0 \"stand\"@8:13 / AC\r\n      :duration ( \"10 minutes\"@24:34 / DUR )\r\n      :before ( \"before carving\"@35:49 / CONDITION_CLAUSE )\r\n      :ppt ( cooked-roast / FOOD )\r\n\t:_result cooled-roast\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Place on a deep serving plate before unwrapping so you can be sure to save the juices and mustard rub to slather on the beef slices.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Place\"@4:9 / AC\r\n\t\t:before ( cond-10-0 \"before unwrapping\"@34:51 / CONDITION_CLAUSE )\r\n\t\t:gol ( tool-10-0 \"a deep serving plate\"@13:33 / TOOL )\r\n\t\t:prp ( purp-10-0 \"to save the juices and mustard rub to slather on the beef slices\"@71:135 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( cooled-roast / FOOD )\r\n\t\t:_result ( FINAL_PRODUCT )\r\n\t)\r\n)"
+        }
+    ]
+}

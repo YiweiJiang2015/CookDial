@@ -1,0 +1,220 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we will make garlic chicken stir fry. You will need many ingredients. I will announce them when you need them.",
+            "bot": true,
+            "annotations": "inform_title(title);\r\nsum_ingredient_list();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. that's good. What's the first step I need to take?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "First take a wok or a large skillet and heat 2 tablespoons of peanut oil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);\r\n"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. I have heated the oil in a large skillet. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "When the oil begins to smoke stir in 4 ingredients. The first two ingredients are 2 cloves minced garlic and 1 teaspoon grated fresh ginger.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-1);\r\nsimplify_continue(inst-1, [ing-1, ing-2]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. done. What are the other two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The second two ingredients are 1 bunch of chopped green onions and 1 teaspoon salt.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-1, [ing-3, ing-4]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "How large should the bunch of onions be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. what's the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Stir fry until the onion becomes translucent. It will take about 2 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Can you repeat the first part please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "You should stir fry the mixture in the large skillet.",
+            "bot": true,
+            "annotations": "repeat(ac-2-0);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "The onions are translucent now. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now cut 1 pound boneless skinless chicken breasts into strips and add them in the skillet for about 3 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Three minutes have passed. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now add 5 ingredients. The first two are 2 thinly sliced sweet onions and 1 cup sliced cabbage.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-4);\r\nsimplify_continue(inst-4, [ing-6, ing-7]);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Can you repeat the last ingredient please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"ing-7\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "1 cup sliced cabbage.",
+            "bot": true,
+            "annotations": "repeat(ing-7);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. what are the other three ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "The next ingredients are 1 thinly sliced red bell pepper, 2 cups sugar snap peas and 1/2 cup of chicken broth or water.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-4, [ing-8, ing-9, ing-10]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "I have added them all. What should I do know?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now cover the pan and take a small bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-4-1);\r\nfetch(inst-5, [tool-5-0]);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "I have the bowl.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now add the remaining 1/2 cup chicken broth or water, 2 tablespoons soy sauce, 2 tablespoons white sugar and 2 tablespoons cornstarch.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. that's a lot. What is the last ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"ing-13\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "The last ingredient is 2 tablespoons of cornstarch.",
+            "bot": true,
+            "annotations": "repeat(ing-13);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Oh thank you I have added the cornstarch. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"ing-13\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "No, mix it all together and add the sauce to the skillet.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-6-0);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Done. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Now stir until the chicken and vegetables are coated with the thickened sauce.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-6-1);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Yes everything is coated now. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "That was all. Serve immediately or over hot rice if desired.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);\r\nend_recipe();"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. thank you for the instructions! It looks good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Enjoy.",
+            "bot": true,
+            "annotations": "enjoy();"
+        }
+    ]
+}

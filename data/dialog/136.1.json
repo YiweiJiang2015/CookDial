@@ -1,0 +1,184 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi! What are we gonna prepare today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. Today we will make easy marinated vegetables.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Great! Sounds nice and healthy. How many ingredients does this recipe have?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "It has 6 ingredients. And 4 different kind of vegetables.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Great! Could I have the ingredients right away so I can prepare them?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Yes, the first two ingredients are 1 1/2 cups broccoli florets and 1 1/2 cups cauliflower florets.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Sorry I didn't understand the first ingredient.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "1 and 1/2 cups of broccoli.",
+            "bot": true,
+            "annotations": "repeat(ing-0);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Is that broccoli? I can't hear well. Could you maybe spell it for me?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Yes it is broccoli. Bro Cco Li.",
+            "bot": true,
+            "annotations": "affirm();\r\nrepeat(ing-0);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. thanks! You pronounce it in a funny way. Can I have two more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"thank; req_ingredient;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Yes, the next two ingredients are 1 green bell pepper, Cut it into 1 inch pieces. And 1 cucumber. It should be peeled, seeded and chopped.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Great! They are ready! What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Finally still prepare 1 carrot, coarsely chopped and 1/4 cup Italian-style salad dressing.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. Good. They are ready! Can we start with the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now we can start the recipe! You should bring a large pot of salted water to boil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Good, it's boiling! What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now place the broccoli and cauliflower florets into the boiling water for just one minute. Afterwards, take it out and then drain and rinse the florets.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);\r\ninform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. they are drained and rinsed. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Take a medium size bowl and combine the broccoli, cauliflower, bell pepper, cucumber, carrot and Italian salad dressing.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. I combined the ingredients. Should I use all the dressing that I have?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_use_all;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Yes, you may use as much as you want.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. Great. I put all of it!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Great. Now finally cover the bowl and refrigerate the vegetables for one hour.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. Can I put it in the oven first?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. No problem. I can eat it now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Yes it's ready to be eaten. Enjoy your veggies.",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. Great! Tasty. Thank you bot.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

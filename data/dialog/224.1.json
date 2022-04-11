@@ -1,0 +1,136 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi! I have a party tomorrow, and I'd like to prepare a ssalad, ideas for that?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. Yes I have a nice party salad recipe for your party. It includes chicken. Are you vegetarian?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "No, I love meat, but thanks for asking! Could you tell me the ingredients so i can prepare them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Ok great. Yes there are 10 ingredients. The first 6 ingredients you can right away put into a small bowl. The first two are 1/4 cup vegetable oil and 1/4 cup orange marmalade.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\nsimplify_begin(ac-0-0);\r\nsimplify_continue(ac-0-0, [ing-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Allright! Can you tell me two more?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Yes the next two are 3 tablespoons cider vinegar and 3 tablespoons mayonnaise.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-0-0, [ing-2, ing-3]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "And is it ok if I use white vinagre?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Sorry I help you with that question. You are always allowed of course to adapt the ingredients to your taste.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok, I'll try then. There is 2 more ingredients which I should put in the bowl now, right?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Yes indeed. The ingredients are 2 teaspoons curry powder and 1/4 teaspoon hot pepper sauce.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-0-0, [ing-4, ing-5]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Great! I put them in the bowl! Is that it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Nice. no there are 4 more ingredients left. When you are ready to serve at your party tomorrow you should add these ingredients and the previous ones in a large bowl. For now you can prepare them already if you want. The first two are 6 cups cubed, cooked chicken and 2 tablespoons golden raisins.",
+            "bot": true,
+            "annotations": "negate();\r\nsimplify_begin(ac-1-0);\r\nsimplify_continue(ac-1-0, [ing-6, ing-7]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok, can you tell me which kind of chicken should it be and how cooked?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "I am sorry I cannot answer that question. All I know is that it should be 6 cups cubed, cooked chicken.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "That's ok! How should I start to prepare then?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "There are still two ingredients left. 2 tablespoons slivered almonds, toasted and 2 tablespoons minced fresh parsley.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-1-0, [ing-8, ing-9]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Sorry, I didn't understand the first ingredient.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "The first ingredient is 2 tablespoons of almonds. They should be silvered. So tomorrow all you have to do is to combine chicken, raisins, almonds and parsley in a large bowl and add the dressing. The dressing is what you already prepared in the small bowl.",
+            "bot": true,
+            "annotations": "repeat(ing-8);\r\n"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Good! So that is it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_is_recipe_finished;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Yes that was all. I hope tomorrow you will enjoy.",
+            "bot": true,
+            "annotations": "end_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Me too!! Thanks bot you always have a great recipe for me!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

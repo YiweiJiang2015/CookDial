@@ -1,0 +1,190 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi! What are we gonna cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi today we will make date nut bars.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Great! Is it a long recipe? How many ingredients does it have?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "It is a medium long recipe. It has 9 ingredients. Do you want to prepare them beforehand?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Yes, I'd like to prepare them first!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Ok the first 3 ingredients are 2 cups sugar, 2 cups all-purpose flour and 2 teaspoons baking powder.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);\r\ninform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok good I have them ready. Which are the next ones?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "1/4 teaspoon salt, 2 cups chopped dates and 2 cups chopped walnuts or pecans.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-3);\r\ninform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok I also have those ready. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "The last 3 ingredients are 4 eggs. They should be lightly beaten. 2 tablespoons butter, melted and 1 teaspoon vanilla extract confectioners' sugar.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);\r\ninform_ingredient(ing-8);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok good! Can I use margarine instead of butter?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok no problem! Are the ingredients over? Can we start with the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Yes, that were all the ingredients. Now let's make the date nut bars. First combine the sugar, flour, baking powder, salt, dates and nuts in a large bowl.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok should I use all the dates?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Yes, you can add the 2 cups of chopped dates.",
+            "bot": true,
+            "annotations": "inform_amount(ing-4);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok good done! What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now add the eggs, butter and vanilla. Stir until it becomes dry.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);\r\n"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok it is dry now. What should I do with the mixture?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now spread in a greased 15 inch pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok done! What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Bake it at 350 degrees Fahrenheit for 20-25 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok I am doing that. Is there a way to see that it's ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "It is ready when the bars become golden brown.",
+            "bot": true,
+            "annotations": "inform_duration(cond-3-0);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok good. They are golden brown, but I like them a bit more brown. Can I leave it a bit more?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Sorry, I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok good. Should I take it out from the oven?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Yes take them out and let the bars cool on a wire rack.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Good it's cool now! Can I eat it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "The last step is to dust the bars with the confectioners' sugar. Now enjoy your date nut bars.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Nice!! Thank you!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        }
+    ]
+}

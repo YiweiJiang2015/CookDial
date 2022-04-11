@@ -1,0 +1,250 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we will make Chick Pot Pie number 2.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Sounds good. What's the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "First wash the chicken breasts in water and then place them in a pot with water.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "How many chicken breasts do I need?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "You need 3 chicken breasts halves. They should be skinless.",
+            "bot": true,
+            "annotations": "inform_amount(ing-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Now add some salt and 1/4 teaspoon of garlic powder.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Done. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "No let the chicken cool down in the pot. Now preheat the oven to 175 degrees Celsius.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-2);\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "The oven is preheating. Can I do anything in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_parallel_action;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Take 3 potatoes and cut them into bite size pieces and boil till they are almost fork-tender.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Done. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Drain the potatoes and set them aside. Wash 3 stalks of celery and cut them to bite-size pieces as well.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);\r\ninform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "That's done. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Cut an onion to bite size pieces as well.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Take a large heavy skillet. Put it over medium heat and saute the celery and onion pieces with 2 tablespoons of oil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "For how long should I bake them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "For 5-8 minutes.",
+            "bot": true,
+            "annotations": "inform_duration(dur-8-0);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. when do I know they are ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "After 8 minutes it should be good! Now add 2 cups of frozen mixed vegetables and cook for another 5 minutes.",
+            "bot": true,
+            "annotations": "inform_duration(dur-8-0);\r\ninform_instruction(inst-9);\r\n"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "How large should the cups be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. the 5 minutes have passed. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Add 2 tablespoons of all-purpose flour and cook for about 30 seconds. After that add 1 (14.5 ounce) can chicken broth and bring it to a boil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);\r\ninform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "The chicken broth is boiling now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "After it becomes thick, add the potatoes you made earlier.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Done. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Now remove chicken from pot and cut it into bite-size pieces. Afterwards add the chicken to the vegetable mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "I have done that. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 26}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "You may add some salt and pepper to the taste you desire. After that pour the mixture into a 9 inch deep dish pie plate and cover with pie shell.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-14);\r\ninform_instruction(inst-15);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. is it done now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-15\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-16\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Make sure that you crimp the edges of the pie shell to the plate. Like that you make sure no juices spill in the oven.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-16);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Can you repeat that please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-16\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-16\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "You should crimp the edges of the pie shell to the plate.",
+            "bot": true,
+            "annotations": "repeat(inst-16);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-16\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-17\", \"tracker_requested_step_num\": 29}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Now finally bake the pie at 175 degrees Celsius for 45 minutes. Make sure the pie shell is cooked and golden brown.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-17);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok. I have baked it for 45 minutes.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-17\", \"tracker_completed_step_num\": 29, \"tracker_requested_step\": \"inst-17\", \"tracker_requested_step_num\": 29}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Ok. nice, now enjoy the dish!",
+            "bot": true,
+            "annotations": "enjoy();"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "It looks good. Thank you.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-17\", \"tracker_completed_step_num\": 29, \"tracker_requested_step\": \"inst-17\", \"tracker_requested_step_num\": 29}"
+        }
+    ]
+}

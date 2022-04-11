@@ -1,0 +1,144 @@
+{
+    "id": "187",
+    "title": "Fried Apple Pies",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup shortening",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup shortening\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 cup cold water",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 cup cold water\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 apples",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 apples\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/3 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/3 cup white sugar\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 teaspoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 teaspoon ground cinnamon\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 cup vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 cup vegetable oil\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Peel and dice apples.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Peel\"@3:7 / AC\r\n\t\t:ppt ( ing-4 \"apples\"@17:23 / FOOD )\r\n\t)\r\n\t:inform ( ac-0-1 \"dice\"@12:16 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add sugar and cinnamon.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-5 \"sugar\"@7:12 / FOOD )\r\n\t\t:ppt ( ing-6 \"cinnamon\"@17:25 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cook in a saucepan on low heat.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cook\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-2-0 \"a saucepan\"@11:21 / TOOL )\r\n\t\t:heat ( temp-2-0 \"low heat\"@25:33 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cook until soft, then mash with fork to form a thick applesauce.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cook\"@3:7 / AC\r\n\t\t:until ( cond-3-0 \"until soft\"@8:18 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"mash\"@25:29 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:instrument ( tool-3-0 \"fork\"@35:39 / TOOL )\r\n\t\t:prp ( purp-3-0 \"to form a thick applesauce\"@40:66 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Sift flour and salt together.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Sift\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"flour\"@8:13 / FOOD )\r\n\t\t:ppt ( ing-2 \"salt\"@18:22 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Cut in the shortening.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Cut in\"@3:9 / AC\r\n\t\t:ppt ( ing-1 \"the shortening\"@10:24 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Add water and mix with fork.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-3 \"water\"@7:12 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-6-1 \"mix\"@17:20 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:instrument ( tool-6-0 \"fork\"@26:30 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Roll out to about 1/8 inch thick on a floured board.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Roll out\"@3:11 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:reshape ( \"about 1/8 inch thick\"@15:35 / OTHER )\r\n\t\t:loc ( tool-7-0 \"a floured board\"@39:54 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Cut with a large cookie cutter (4 inches in diameter).",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Cut\"@3:6 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:instrument ( tool-8-0 \"a large cookie cutter\"@12:33 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) In each round, place 1 heaping tablespoon fruit.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"place\"@19:24 / AC\r\n\t\t:ppt ( \"1 heaping tablespoon fruit\"@25:51 / FOOD )\r\n\t\t:loc ( \"each round\"@7:17 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Moisten edges with cold water, fold and press edge with a fork.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Moisten\"@4:11 / AC\r\n\t\t:gol ( \"edges\"@12:17 / OTHER )\r\n\t\t:ppt ( \"cold water\"@23:33 / FOOD )\r\n\t)\r\n\t:inform ( ac-10-1 \"fold and press\"@35:49 / AC\r\n\t\t:instrument ( tool-10-0 \"a fork\"@60:66 / TOOL )\r\n\t\t:ppt ( \"edge\"@50:54 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Heat oil in a large skillet on medium-high heat.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Heat\"@4:8 / AC\r\n\t\t:ppt ( ing-7 \"oil\"@9:12 / FOOD )\r\n\t\t:loc ( tool-11-0 \"a large skillet\"@16:31 / TOOL )\r\n\t\t:heat ( temp-11-0 \"medium-high heat\"@35:51 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Fry pies, a few at a time, 2 to 3 minutes on each side; cook until golden brown.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Fry\"@4:7 / AC\r\n\t\t:ppt ( \"pies\"@8:12 / FOOD )\r\n\t\t:duration ( dur-12-0 \"2 to 3 minutes on each side\"@31:58 / DUR )\r\n\t)\r\n\t:inform ( ac-12-1 \"cook\"@60:64 / AC\r\n\t\t:until ( cond-12-0 \"until golden brown\"@65:83 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Drain on paper towels.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Drain\"@4:9 / AC\r\n\t\t:loc ( tool-13-0 \"paper towels\"@13:25 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Sprinkle with confectioners sugar.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"Sprinkle\"@4:12 / AC\r\n\t\t:ppt ( \"confectioners sugar\"@18:37 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

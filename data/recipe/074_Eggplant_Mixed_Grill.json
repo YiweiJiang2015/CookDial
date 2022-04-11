@@ -1,0 +1,120 @@
+{
+    "id": "074",
+    "title": "Eggplant Mixed Grill",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 tablespoons olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 tablespoons olive oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 tablespoons chopped fresh parsley",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 tablespoons chopped fresh parsley\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 tablespoons chopped fresh oregano",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 tablespoons chopped fresh oregano\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 tablespoons chopped fresh basil",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 tablespoons chopped fresh basil\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 tablespoon balsamic vinegar",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 tablespoon balsamic vinegar\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 teaspoon kosher salt",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 teaspoon kosher salt\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 teaspoon black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 teaspoon black pepper\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "6 cloves garlic, minced",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"6 cloves garlic, minced\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 red onion, cut into wedges",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 red onion, cut into wedges\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "18 spears fresh asparagus, trimmed",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"18 spears fresh asparagus, trimmed\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "12 crimini mushrooms, stems removed",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"12 crimini mushrooms, stems removed\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 (1 pound) eggplant, sliced into 1/4 inch rounds",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 (1 pound) eggplant, sliced into 1/4 inch rounds\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 red bell pepper, cut into wedges",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 red bell pepper, cut into wedges\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1 yellow bell pepper, cut into wedges",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1 yellow bell pepper, cut into wedges\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large resealable plastic bag, mix the olive oil, parsley, oregano, basil, vinegar, kosher salt, pepper, and garlic.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"mix\"@38:41 / AC\r\n\t\t:ppt ( ing-0 \"the olive oil\"@42:55 / FOOD )\r\n\t\t:ppt ( ing-1 \"parsley\"@57:64 / FOOD )\r\n\t\t:ppt ( ing-2 \"oregano\"@66:73 / FOOD )\r\n\t\t:ppt ( ing-3 \"basil\"@75:80 / FOOD )\r\n\t\t:ppt ( ing-4 \"vinegar\"@82:89 / FOOD )\r\n\t\t:ppt ( ing-5 \"kosher salt\"@91:102 / FOOD )\r\n\t\t:ppt ( ing-6 \"pepper\"@104:110 / FOOD )\r\n\t\t:ppt ( ing-7 \"garlic\"@116:122 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large resealable plastic bag\"@6:36 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Place the onion, asparagus, mushrooms, eggplant, red bell pepper, and yellow bell pepper into the bag.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-8 \"the onion\"@9:18 / FOOD )\r\n\t\t:ppt ( ing-9 \"asparagus\"@20:29 / FOOD )\r\n\t\t:ppt ( ing-10 \"mushrooms\"@31:40 / FOOD )\r\n\t\t:ppt ( ing-11 \"eggplant\"@42:50 / FOOD )\r\n\t\t:ppt ( ing-12 \"red bell pepper\"@52:67 / FOOD )\r\n\t\t:ppt ( ing-13 \"yellow bell pepper\"@73:91 / FOOD )\r\n\t\t:gol ( tool-1-0 \"the bag\"@97:104 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Seal, and marinate 2 hours in the refrigerator, turning occasionally Preheat the grill for high heat.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Seal\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"marinate\"@13:21 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-2-0 \"2 hours\"@22:29 / DUR )\r\n\t\t:loc ( tool-2-0 \"the refrigerator\"@33:49 / TOOL )\r\n\t\t:simultaneous ( ac-2-2 \"turning\"@51:58 / AC\r\n\t\t\t:ppt ( NULL / FOOD )\r\n\t\t)\r\n\t)\r\n\t:inform ( ac-2-3 \"Preheat\"@72:79 / AC\r\n\t\t:ppt ( tool-2-1 \"the grill\"@80:89 / TOOL )\r\n\t\t:heat ( temp-2-0 \"high heat\"@94:103 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Lightly oil the grill grate.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"oil\"@11:14 / AC\r\n\t\t:ppt ( tool-3-0 \"the grill grate\"@15:30 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Grill the vegetables 6 minutes on each side, until tender.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Grill\"@3:8 / AC\r\n\t\t:ppt ( \"the vegetables\"@9:23 / FOOD )\r\n\t\t:duration ( dur-4-0 \"6 minutes\"@24:33 / DUR )\r\n\t\t:until ( cond-4-0 \"until tender\"@48:60 / CONDITION_CLAUSE )\r\n\t\t:mnr ( \"on each side\"@34:46 / OTHER )\r\n\t)\r\n)"
+        }
+    ]
+}

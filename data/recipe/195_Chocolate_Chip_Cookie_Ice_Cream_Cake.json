@@ -1,0 +1,108 @@
+{
+    "id": "195",
+    "title": "Chocolate Chip Cookie Ice Cream Cake",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (18 ounce) package small chocolate chip cookies",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (18 ounce) package small chocolate chip cookies\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/4 cup margarine, melted",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/4 cup margarine, melted\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup hot fudge topping",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup hot fudge topping\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 quarts vanilla ice cream",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 quarts vanilla ice cream\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 cup whipped cream",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 cup whipped cream\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "12 cherries",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"12 cherries\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Crush half the cookies (about 20) to make crumbs.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Crush\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"half the cookies\"@9:25 / FOOD )\r\n\t\t:prp ( purp-0-0 \"to make crumbs\"@37:51 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Combine crumbs with melted margarine and press into the bottom of a 9-inch springform pan or pie plate.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( \"crumbs\"@11:17 / FOOD )\r\n\t\t:ppt ( ing-1 \"melted margarine\"@23:39 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"press\"@44:49 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-1-0 \"the bottom of a 9-inch springform pan\"@55:92 / TOOL )\r\n\t\t:gol ( tool-1-1 \"pie plate\"@96:105 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stand remaining cookies around edge of pan.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stand\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"remaining cookies\"@9:26 / FOOD )\r\n\t\t:loc ( tool-2-0 \"edge of pan\"@34:45 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Spread 3/4 cup fudge topping over crust.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Spread\"@3:9 / AC\r\n\t\t:ppt ( ing-2 \"3/4 cup fudge topping\"@10:31 / FOOD )\r\n\t\t:gol ( \"crust\"@37:42 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Freeze 15 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Freeze\"@3:9 / AC\r\n\t\t:duration ( dur-4-0 \"15 minutes\"@10:20 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Meanwhile, soften 1 quart of ice cream in microwave or on countertop.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"soften\"@14:20 / AC\r\n\t\t:ppt ( ing-3 \"1 quart of ice cream\"@21:41 / FOOD )\r\n\t\t:loc ( tool-5-0 \"microwave\"@45:54 / TOOL )\r\n\t\t:loc ( tool-5-1 \"countertop\"@61:71 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) After crust has chilled, spread softened ice cream over fudge layer.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"spread\"@28:34 / AC\r\n\t\t:ppt ( \"softened ice cream\"@35:53 / FOOD )\r\n\t\t:gol ( \"fudge layer\"@59:70 / FOOD )\r\n\t\t:duration ( cond-6-0 \"After crust has chilled\"@3:26 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Freeze 30 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Freeze\"@3:9 / AC\r\n\t\t:duration ( dur-7-0 \"30 minutes\"@10:20 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Scoop remaining quart of ice cream into balls and arrange over spread ice cream layer.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Scoop\"@3:8 / AC\r\n\t\t:ppt ( ing-3 \"remaining quart of ice cream\"@9:37 / FOOD )\r\n\t\t:reshape ( \"balls\"@43:48 / OTHER )\r\n\t)\r\n\t:inform ( ac-8-1 \"arrange\"@53:60 / AC\r\n\t\t:gol ( \"spread ice cream layer\"@66:88 / FOOD )\r\n\t\t:ppt ( \"balls\"@43:48 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Freeze until firm, 4 hours or overnight.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Freeze\"@4:10 / AC\r\n\t\t:until ( cond-9-0 \"until firm\"@11:21 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-9-0 \"4 hours\"@23:30 / DUR )\r\n\t\t:duration ( dur-9-1 \"overnight\"@34:43 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) To serve, garnish with remainder of fudge topping, whipped cream and cherries.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"garnish\"@14:21 / AC\r\n\t\t:prp ( purp-10-0 \"To serve\"@4:12 / PURPOSE_CLAUSE )\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( ing-2 \"remainder of fudge topping\"@27:53 / FOOD )\r\n\t\t:ppt ( ing-4 \"whipped cream\"@55:68 / FOOD )\r\n\t\t:ppt ( ing-5 \"cherries\"@73:81 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

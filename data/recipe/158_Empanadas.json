@@ -1,0 +1,108 @@
+{
+    "id": "158",
+    "title": "Empanadas",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/2 cup butter, softened",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/2 cup butter, softened\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (3 ounce) package cream cheese",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (3 ounce) package cream cheese\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup sifted all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup sifted all-purpose flour\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 cup fruit preserves",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 cup fruit preserves\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/3 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/3 cup white sugar\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 teaspoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 teaspoon ground cinnamon\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) DAY BEFORE: Cream butter and cream cheese together until smoothly blended.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( cond-0-0 \"DAY BEFORE\"@3:13 / CONDITION_CLAUSE )\r\n\t:inform ( ac-0-0 \"Cream\"@15:20 / AC\r\n\t\t:ppt ( ing-0 \"butter\"@21:27 / FOOD )\r\n\t\t:ppt ( ing-1 \"cream cheese\"@32:44 / FOOD )\r\n\t\t:until ( cond-0-1 \"until smoothly blended\"@54:76 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Beat in the flour.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Beat in\"@3:10 / AC\r\n\t\t:ppt ( ing-2 \"the flour\"@11:20 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Shape dough into a smooth ball, wrap in foil or cling wrap, and refrigerate overnight or up to a week.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Shape\"@3:8 / AC\r\n\t\t:ppt ( \"dough\"@9:14 / FOOD )\r\n\t\t:reshape ( \"a smooth ball\"@20:33 / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"wrap\"@35:39 / AC\r\n\t\t:instrument ( tool-2-0 \"foil\"@43:47 / TOOL )\r\n\t\t:instrument ( tool-2-1 \"cling wrap\"@51:61 / TOOL )\r\n\t)\r\n\t:inform ( ac-2-2 \"refrigerate\"@67:78 / AC\r\n\t\t:duration ( dur-2-0 \"overnight\"@79:88 / DUR )\r\n\t\t:duration ( dur-2-1 \"up to a week\"@92:104 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) AT BAKING TIME: Remove dough from refrigerator 30 minutes before using.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Remove\"@19:25 / AC\r\n\t\t:ppt ( \"dough\"@26:31 / FOOD )\r\n\t\t:source ( tool-3-0 \"refrigerator\"@37:49 / TOOL )\r\n\t\t:duration ( dur-3-0 \"30 minutes\"@50:60 / DUR )\r\n\t\t:duration ( cond-3-0 \"before using\"@61:73 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Start heating oven to 375 degrees F (190 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"heating\"@9:16 / AC\r\n\t\t:ppt ( tool-4-0 \"oven\"@17:21 / TOOL )\r\n\t\t:heat ( temp-4-0 \"375 degrees F\"@25:38 / TEMPERATURE )\r\n\t\t:heat ( temp-4-1 \"190 degrees C\"@40:53 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Roll chilled dough thin.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Roll\"@3:7 / AC\r\n\t\t:ppt ( \"chilled dough\"@8:21 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Cut with 3 or 4 inch round cookie cutter.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Cut\"@3:6 / AC\r\n\t\t:instrument ( tool-6-0 \"3 or 4 inch round cookie cutter\"@12:43 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Place small spoonful of jam in center of each round, moisten edges with water.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-3 \"small spoonful of jam\"@9:30 / FOOD )\r\n\t\t:gol ( \"center of each round\"@34:54 / FOOD )\r\n\t)\r\n\t:inform ( ac-7-1 \"moisten\"@56:63 / AC\r\n\t\t:gol ( \"edges\"@64:69 / FOOD )\r\n\t\t:ppt ( \"water\"@75:80 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Fold round over and press edges together.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Fold\"@3:7 / AC\r\n\t\t:ppt ( \"round\"@8:13 / FOOD )\r\n\t)\r\n\t:inform ( ac-8-1 \"press\"@23:28 / AC\r\n\t\t:ppt ( \"edges\"@29:34 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Bake on ungreased cookie sheet 15 to 20 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Bake\"@4:8 / AC\r\n\t\t:loc ( tool-9-0 \"ungreased cookie sheet\"@12:34 / TOOL )\r\n\t\t:duration ( dur-9-0 \"15 to 20 minutes\"@35:51 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Immediately roll in sugar mixed with cinnamon (traditional) OR in confectioners' sugar if preferred.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"roll in\"@16:23 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( \"OR\"@-1:-1 / CHOICE\r\n\t\t\t:option ( \"sugar mixed with cinnamon\"@24:49 / FOOD \r\n\t\t\t\t:ref ing-4\r\n\t\t\t\t:ref ing-5)\r\n\t\t\t:option ( \"confectioners' sugar\"@70:90 / FOOD )\r\n\t\t)\r\n\t)\r\n)"
+        }
+    ]
+}

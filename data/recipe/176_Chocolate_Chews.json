@@ -1,0 +1,126 @@
+{
+    "id": "176",
+    "title": "Chocolate Chews",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup semisweet chocolate chips",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup semisweet chocolate chips\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup butter, softened",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup butter, softened\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup white sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 cup packed brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 cup packed brown sugar\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 eggs\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 teaspoon baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 teaspoon baking powder\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/2 teaspoon baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/2 teaspoon baking soda\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Melt the chocolate chips in a heavy saucepan over very low heat.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Melt\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"the chocolate chips\"@8:27 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a heavy saucepan\"@31:47 / TOOL )\r\n\t\t:heat ( temp-0-0 \"very low heat\"@53:66 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Stir to evenly melt.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Stir\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-1-0 \"to evenly melt\"@8:22 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cream together the butter and sugars until light.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cream\"@3:8 / AC\r\n\t\t:ppt ( ing-1 \"the butter\"@18:28 / FOOD )\r\n\t\t:ppt ( \"sugars\"@33:39 / FOOD\r\n\t\t\t:ref ( ing-1 )\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t)\r\n\t\t:until ( cond-2-0 \"until light\"@40:51 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Beat in the eggs, one at a time.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Beat in\"@3:10 / AC\r\n\t\t:ppt ( ing-4 \"the eggs\"@11:19 / FOOD )\r\n\t\t:mnr ( \"one at a time\"@21:34 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Stir in the melted chocolate and vanilla.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( \"the melted chocolate\"@11:31 / FOOD )\r\n\t\t:ppt ( ing-5 \"vanilla\"@36:43 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) In a bowl, whisk together the flour, baking powder and baking soda.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"whisk\"@14:19 / AC\r\n\t\t:ppt ( ing-6 \"the flour\"@29:38 / FOOD )\r\n\t\t:ppt ( ing-7 \"baking powder\"@40:53 / FOOD )\r\n\t\t:ppt ( ing-8 \"baking soda\"@58:69 / FOOD )\r\n\t\t:loc ( tool-5-0 \"a bowl\"@6:12 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Add to the butter mixture slowly.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( \"the butter mixture\"@10:28 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Blend thoroughly.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Blend\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Shape into 1-inch balls and place on a greased cookie sheet.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Shape\"@3:8 / AC\r\n\t\t:reshape ( \"1-inch balls\"@14:26 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-8-1 \"place\"@31:36 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-8-0 \"a greased cookie sheet\"@40:62 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Bake at 350 degrees F (180 degrees C) for 12 to 14 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Bake\"@4:8 / AC\r\n\t\t:heat ( temp-9-0 \"350 degrees F\"@12:25 / TEMPERATURE )\r\n\t\t:heat ( temp-9-1 \"180 degrees C\"@27:40 / TEMPERATURE )\r\n\t\t:duration ( dur-9-0 \"12 to 14 minutes\"@46:62 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Let sit on cookie sheet for a minute or two before removing to a rack to cool.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"sit\"@8:11 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-10-0 \"cookie sheet\"@15:27 / TOOL )\r\n\t\t:duration ( dur-10-0 \"a minute or two\"@32:47 / DUR )\r\n\t\t:duration ( cond-10-0 \"before removing to a rack to cool\"@48:81 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

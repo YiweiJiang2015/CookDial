@@ -1,0 +1,208 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hello, we are gonna make Broccoflower Risotto with Wild Mushrooms.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Nice, is it a long recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "This recipe has 10 ingredients and 7 steps. Do you consider it long?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "No it sounds like a medium recipe. Could I have all the ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Yes! the first two ingredients are 1 tablespoon butter, unsalted, and 2 cups Broccoflower, diced.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok I have them ready, What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Good, next two are 2 cups assorted wild mushrooms, chopped and half a white onion, chopped.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok, what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Good, next two are 2 tablespoons of garlic, minced, and 3 cups Arborio rice.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "What kind of rice should I use?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "You should use arborio rice.",
+            "bot": true,
+            "annotations": "repeat(ing-5);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok thanks. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"thank; req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Next two ingredients are 9 cups chicken stock, unsalted and 1 pinch fresh ground nutmeg.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok I have them what is next? Hi, good morning, what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "The next two ingredients are one third of a cup of fresh herbs. And one fourth of a cup of parmesan cheese. The fresh herbs should be tarragon, parsley and chives, diced.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-8);\r\ninform_ingredient(ing-9);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok good, so I should choose myself which fresh herbs I can use?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "No, The fresh herbs should be tarragon, parsley and chives, diced.",
+            "bot": true,
+            "annotations": "negate();\r\nrepeat(ing-8);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ah yes I missed that, thanks. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"thank; req_ingredient;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-10\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Next and last ingredient is salt and pepper to taste.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-10);\r\n"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok I have all the ingredients. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-10\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Good! We can start with the recipe! Melt butter and saute Broccoflower, mushrooms, onions and garlic for 10 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok, is there something I can do in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_parallel_action;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Not really! When it's done remove the sauteed ingredients and place aside.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "In same pan, cook the rice by adding chicken stock one-cup at a time stirring until well incorporated before adding the next cup.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok i think it is well incorporated now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Good! Once the chicken stock is absorbed and rice is tender you can stir in nutmeg, herbs and season with salt and pepper.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok for how long should I leave it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "You leave it until the risotto is cooked, then you stir in the sauteed ingredients, salt and pepper to taste.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok it looks cooked now and I stirred in the salt and pepper.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Good! Then stir in the parmesan cheese before serving and then you are ready to go!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok thanks it smells good!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "You are welcome, enjoy!",
+            "bot": true,
+            "annotations": "thank();\r\nenjoy();"
+        }
+    ]
+}

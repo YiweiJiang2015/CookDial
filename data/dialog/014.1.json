@@ -1,0 +1,142 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. how do I make Frosted Ruby Punch?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. first take a 5-cup ring mold.",
+            "bot": true,
+            "annotations": "greeting();\r\nfetch(inst-0, [tool-0-0]);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. I have the mould. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Now pour in 4 cups of cranberry juice and let it freeze over night.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. it is the next day now and the cranberry juice is frozen. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Great. Now take a punch bowl. We will add some ingredients into the bowl.",
+            "bot": true,
+            "annotations": "fetch(inst-2, [tool-2-0]);\r\nsimplify_begin(inst-2);\r\n"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. I have the punch bowl. What should I add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "First add 1 1/2 cups of sugar.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-2-0, [ing-1]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "That's done. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Then add 1 1/2 cups of lemon juice and 1 cup of orange juice.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-2-0, [ing-2, ing-3]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. what should I add next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Finally add 4 cups of ginger ale.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-2-1);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Can you repeat that please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Add 4 cups of ginger ale soda.",
+            "bot": true,
+            "annotations": "repeat(ac-2-1);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Thank you for repeating it. I added the ginger ale soda now. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now take out the frozen ice ring from the mold and add it into the punch.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. I have done that.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Great. Now finally place some scoops of raspberry sherbet around the ring of the punch bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "What should I add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Some scoops of raspberry sherbet.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4, [ing-5]);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Thank you. I added the raspberry sherbet. Is it done now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Yes, enjoy!",
+            "bot": true,
+            "annotations": "affirm();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Thank you. it looks delicious!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 11}"
+        }
+    ]
+}

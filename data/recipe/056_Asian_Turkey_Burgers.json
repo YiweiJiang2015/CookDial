@@ -1,0 +1,78 @@
+{
+    "id": "056",
+    "title": "Asian Turkey Burgers",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 egg white",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 egg white\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 tablespoon soy sauce",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 tablespoon soy sauce\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup dry bread crumbs",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup dry bread crumbs\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 tablespoon finely chopped onion",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 tablespoon finely chopped onion\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 garlic clove, minced",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 garlic clove, minced\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 teaspoon ground ginger",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 teaspoon ground ginger\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/8 teaspoon pepper",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/8 teaspoon pepper\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "12 ounces ground turkey",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"12 ounces ground turkey\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a bowl, combine the first seven ingredients.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@14:21 / AC\r\n\t\t:ppt ( \"the first seven ingredients\"@22:49 / FOOD\r\n\t\t\t:ref ( ing-0 )\r\n\t\t\t:ref ( ing-1 )\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t\t:ref ( ing-4 )\r\n\t\t\t:ref ( ing-5 )\r\n\t\t\t:ref ( ing-6 )\r\n\t\t)\r\n\t\t:loc ( tool-0-0 \"a bowl\"@6:12 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Crumble turkey over mixture and mix just until combined.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Crumble\"@3:10 / AC\r\n\t\t:ppt ( ing-7 \"turkey\"@11:17 / FOOD )\r\n\t\t:gol ( \"mixture\"@23:30 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"mix\"@35:38 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-1-0 \"until combined\"@44:58 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Shape into four patties.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Shape\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:reshape ( \"four patties\"@14:26 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cook in a nonstick skillet coated with nonstick cooking spray until no longer pink.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cook\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-3-0 \"a nonstick skillet coated with nonstick cooking spray\"@11:64 / TOOL )\r\n\t\t:until ( cond-3-0 \"until no longer pink\"@65:85 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

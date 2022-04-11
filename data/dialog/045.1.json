@@ -1,0 +1,208 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. today we are making Almond Buttercrunch.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. sounds nice. What is the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Take a saucepan and place it on low heat.",
+            "bot": true,
+            "annotations": "fetch(inst-0, [tool-0-0]);\r\n"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. should it be large ?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_tool;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Sorry I can not answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "In this saucepan, combine the butter, sugar and 1 cup chopped almonds.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-0-0);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. how much butter and sugar should I add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "3/4 cup butter and 2 cups white sugar.",
+            "bot": true,
+            "annotations": "inform_amount(ing-0);\r\ninform_amount(ing-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. I added them. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Good, now stir constantly until the mixture is boiling.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-0);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. it's boiling now. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "As soon as it is boiling, do not stir or shake the mixture anymore.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-1);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. thanks. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now heat the mixture to 149 to 154 degrees Celsius.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-2);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. Should I leave the mixture in the pan and put it in the oven?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Yes, you should leave it in the pan.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. and then put it in the oven?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "No you should heat the mixture in the pan on high heat.",
+            "bot": true,
+            "annotations": "negate();"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. Thanks. now it's clear. Ok. the mixture is heating. Is there something I can do in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_parallel_action;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "No.",
+            "bot": true,
+            "annotations": "negate();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. the mixture is on the given temperature. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "When you drop a small amount of syrup in cold water, does it form hard, brittle threads?",
+            "bot": true,
+            "annotations": "verify(cond-2-0);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Yes it does.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Great. you can now pour the mixture onto a large buttered cookie sheet.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. I have done that. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Press chocolate chips onto the hot mixture. You can use 2 cups milk chocolate chips. When the chocolate melts, you can spread it smoothly over the candy.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. I have done that. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Next you can sprinkle finely chopped almonds. You should use 1/2 cup finely chopped almonds.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-5-0);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. I sprinkled them. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Finally let it cool down and break it in uneven pieces. Enjoy!",
+            "bot": true,
+            "annotations": "inform_instruction(ac-5-1);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. thanks it looks good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Bye.",
+            "bot": true,
+            "annotations": "goodbye();"
+        }
+    ]
+}

@@ -1,0 +1,130 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi I would like to make some bread. Do you have a good recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Of course! I have an Argentine chimichurri bread which I think you'll love! Sounds like what you were looking for?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Sounds just like it. How should I start?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "We can start with the preparation of the ingredients, there are 13 of them. The first two are 1 cup water and one and a half tablespoons of white wine vinegar.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok good. I have the first two ingredients ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Good, next one's are 3 tablespoons of olive oil, one eight of a teaspoon of cayenne pepper and three fourths of a teaspoon of dried oregano.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);\r\ninform_ingredient(ing-4);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok nice I have those all in my place. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Good, you can now prepare 2 cloves of garlic, minced, 3 tablespoons of chopped onion and 3 tablespoons of fresh parsley.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-5);\r\ninform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok I got it, what are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "The next ones are 1 and a half teaspoons salt, 1 tablespoon of white sugar and 3 tablespoons of wheat bran.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-8);\r\ninform_ingredient(ing-9);\r\ninform_ingredient(ing-10);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok could you repeat the last ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-10\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"ing-10\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "3 tablespoons of wheat bran.",
+            "bot": true,
+            "annotations": "repeat(ing-10);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok good. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-10\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "The last ingredients are 3 cups of bread flour and 2 teaspoons of active dry yeast.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-11);\r\ninform_ingredient(ing-12);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Alright, I have all the ingredients ready. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-12\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "You should place all the ingredients in the pan of the bread machine in the order recommended by the manufacturer.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok I have done that. On which program should I press?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Select Basic or White Cycle, press Start and you are good to go!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok nice. Is there something else I should still do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "No, that's it!! Enjoy!!",
+            "bot": true,
+            "annotations": "negate();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok easy, thanks.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        }
+    ]
+}

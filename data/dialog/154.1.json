@@ -1,0 +1,310 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello! What are we gonna cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi we will make chicken spinach bake.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Great! Can I have all the ingredients first?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Of course. The first 2 ingredients are 3 packages frozen chopped spinach, thawed. And 3 eggs.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok! how big should the spinach packages be?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "They should be 10 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok good, what are the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "1/2 teaspoon onion salt and 1/2 teaspoon ground nutmeg.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok good! which are the next ones?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "3/4 cup grated Parmesan cheese, divided.  3/4 cup Italian seasoned bread crumbs and 16 skinless, boneless chicken breast halves.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);\r\ninform_ingredient(ing-6);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok good, which are the next ones?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"ing-7\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "5 tablespoons butter or margarine, melted and 6 tablespoons butter or margarine, divided.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-7);\r\ninform_ingredient(ing-8);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok good! I have those ready. Is there any more ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-9\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Great. Yes: 1/4 cup all-purpose flour, 1/2 teaspoon salt and 2 cups milk.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_ingredient(ing-9);\r\ninform_ingredient(ing-10);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok good I have those ready! what next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-10\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "2 cups shredded Cheddar cheese and 1 cup sliced fresh mushrooms.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-11);\r\ninform_ingredient(ing-12);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": " Okay, good! I have them ready. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-12\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"ing-13\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Good the last two ingredients are 3/4 cup grated Parmesan cheese, divided. And 6 tablespoons butter or margarine, divided.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-13);\r\ninform_ingredient(ing-14);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Okay, good! Can we start with the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-14\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Yes let's start. First drain and squeeze out the excess moisture from spinach.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Okay, I have done that. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now beat eggs, onion salt and nutmeg.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Okay I've done that. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Good now add spinach and 1/4 cup Parmesan cheese. Mix it well.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Okay it's done. What is the Next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now combine bread crumbs and remaining Parmesan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok good I did that.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Good now sprinkle chicken with salt and pepper and coat with crumb mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok I did that, can I also add cilantro to it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Sorry I cannot answer that question. Now place the chicken in two greased 13-in baking pans.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok I placed it in the pans! What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Now spread 2 tablespoons of the spinach mixture onto each breast.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok i did that! what next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Sprinkle again with remaining crumb mixture. Then drizzle with butter.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Good, I did so, can I use margarine instead?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok, no problem, what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Now bake it at 350 degrees Fahrenheit for 35-40 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok I did that, how do I see if it's ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "It will be ready when the chicken juices run clear.",
+            "bot": true,
+            "annotations": "inform_duration(cond-8-0);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok good, no juices now! what next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Good now let's make the sauce. First melt 4 tablespoons butter and then blend in flour and salt. Stir so it will form a smooth paste.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);\r\ninform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok it looks smooth now. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "Great, now add milk. Cook and stir until it becomes thickened and bubbly.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Ok it's thick and bubbly now! What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "Then add cheese and stir until it is melted.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Ok it's melted now. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 29}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "Now saute mushrooms in the remaining butter and then stir it into the cheese mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);\r\ninform_instruction(inst-14);"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "Ok done!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-14\", \"tracker_completed_step_num\": 30, \"tracker_requested_step\": \"inst-15\", \"tracker_requested_step_num\": 31}"
+        },
+        {
+            "utt_id": "utt-49",
+            "utterance": "Finally carefully pour this sauce over chicken, or pour into a serving bowl and pass. That was all. Enjoy your chicken spinach bake and enjoy your day.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-15);\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-50",
+            "utterance": "Yummy! thanks for the recipe bot! Enjoy your day too.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-15\", \"tracker_completed_step_num\": 31, \"tracker_requested_step\": \"inst-15\", \"tracker_requested_step_num\": 31}"
+        }
+    ]
+}

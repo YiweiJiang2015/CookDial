@@ -1,0 +1,96 @@
+{
+    "id": "123",
+    "title": "Chicken Fiesta Salad",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 skinless, boneless chicken breast halves",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 skinless, boneless chicken breast halves\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (1.27 ounce) packet dry fajita seasoning, divided",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (1.27 ounce) packet dry fajita seasoning, divided\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 tablespoon vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 tablespoon vegetable oil\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 (15 ounce) can black beans, rinsed and drained",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 (15 ounce) can black beans, rinsed and drained\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 (11 ounce) can Mexican-style corn",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 (11 ounce) can Mexican-style corn\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 cup salsa",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 cup salsa\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 (10 ounce) package mixed salad greens",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 (10 ounce) package mixed salad greens\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 onion, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 onion, chopped\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 tomato, cut into wedges",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 tomato, cut into wedges\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Rub chicken evenly with 1/2 the fajita seasoning.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Rub\"@3:6 / AC\r\n\t\t:gol ( ing-0 \"chicken\"@7:14 / FOOD )\r\n\t\t:ppt ( ing-1 \"1/2 the fajita seasoning\"@27:51 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Heat the oil in a skillet over medium heat, and cook the chicken 8 minutes on each side, or until juices run clear; set aside.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-2 \"the oil\"@8:15 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a skillet\"@19:28 / TOOL )\r\n\t\t:heat ( temp-1-0 \"medium heat\"@34:45 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-1-1 \"cook\"@51:55 / AC\r\n\t\t:ppt ( \"the chicken\"@56:67 / FOOD )\r\n\t\t:duration ( dur-1-0 \"8 minutes\"@68:77 / DUR )\r\n\t\t:mnr ( \"on each side\"@81:90 / OTHER )\r\n\t\t:until ( cond-1-0 \"until juices run clear\"@95:117 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-1-2 \"set aside\"@119:128 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) In a large saucepan, mix beans, corn, salsa and other 1/2 of fajita seasoning.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"mix\"@24:27 / AC\r\n\t\t:ppt ( ing-3 \"beans\"@28:33 / FOOD )\r\n\t\t:ppt ( ing-4 \"corn\"@35:39 / FOOD )\r\n\t\t:ppt ( ing-5 \"salsa\"@41:46 / FOOD )\r\n\t\t:ppt ( ing-1 \"other 1/2 of fajita seasoning\"@51:80 / FOOD )\r\n\t\t:loc ( tool-2-0 \"a large saucepan\"@6:22 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Heat over medium heat until warm.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Heat\"@3:7 / AC\r\n\t\t:heat ( temp-3-0 \"medium heat\"@13:24 / TEMPERATURE )\r\n\t\t:until ( cond-3-0 \"until warm\"@25:35 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Prepare the salad by tossing the greens, onion and tomato.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Prepare\"@3:10 / AC\r\n\t\t:mnr ( ac-4-1 \"tossing\"@24:31 / AC\r\n\t\t\t:ppt ( ing-6 \"the greens\"@32:42 / FOOD )\r\n\t\t\t:ppt ( ing-7 \"onion\"@44:49 / FOOD )\r\n\t\t\t:ppt ( ing-8 \"tomato\"@54:60 / FOOD )\r\n\t\t)\r\n\t\t:ppt ( \"the salad\"@11:20 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Top salad with chicken and dress with the bean and corn mixture.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Top\"@3:6 / AC\r\n\t\t:gol ( \"salad\"@7:12 / FOOD )\r\n\t\t:ppt ( \"chicken\"@18:25 / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"dress\"@30:35 / AC\r\n\t\t:ppt ( \"the bean\"@41:49 / FOOD )\r\n\t\t:ppt ( \"corn mixture\"@54:66 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

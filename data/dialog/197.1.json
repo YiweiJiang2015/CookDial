@@ -1,0 +1,130 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi, do you have a nice guacamole recipe for me?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Yep! I have a recipe which is called Citrus Infused Guacamole. Is it your cup of tea?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "It sounds like it.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Great! you will have to prepare 7 ingredients! The first two are 2 avocados, which should be peeled, pitted, and mashed, and half a tablespoon of lime juice.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok I have prepared the ingredients. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Good! Now you can prepare half a tablespoon of orange juice and half a tablespoon of pineapple juice.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Alright, what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The next ingredients are a quarter of ateaspoon ofground cumin and a quarter of a cup of coarsely chopped cilantro, and some salt to taste.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);\r\ninform_ingredient(ing-6);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok I have them all ready. Is that all?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"ing-7\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "No there is one left. It's optional and it's 1 teaspoon of hot pepper sauce.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok no problem. I will put it ready in case.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-7\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Perfect! Now we start!",
+            "bot": true,
+            "annotations": "propose_start_instruction();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "In a large bowl, stir together the avocados, lime juice, orange juice, pineapple juice, cumin, cilantro and salt.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok I stirred everything together. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now if you want you can mix in the hot pepper sauce.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok I will give it a try.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Great, now place one of the avocado pits into the bowl to help keep it fresh.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok I will do that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "It's now time to serve immediately, or to refrigerate until serving. Enjoy!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok thanks it looks great.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 12}"
+        }
+    ]
+}

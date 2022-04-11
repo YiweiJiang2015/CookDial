@@ -1,0 +1,154 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi bot, what are we gonna do today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "We will make dads best burgers. Are you ready to start?",
+            "bot": true,
+            "annotations": "inform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yummy yes, I am ready. What is the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Take a bowl. We will add 7 ingredients. First add 1 (3 ounce) package softened cream cheese and 1 egg.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-0);\r\nsimplify_continue(inst-0, [ing-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. should it be a big bowl?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_tool;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. I added the cream cheese and the egg. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Now add 1 medium onion, it should be finely chopped. 1/2 cup dry bread crumbs and 1 1/2 teaspoons dried parsley flakes.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-2, ing-3, ing-4]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. Done. Which are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Now still add 1/2 teaspoon seasoned salt and 1/4 teaspoon pepper.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-5, ing-6]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. Did it. Should I mix the ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Now take 1 pound ground beef and 1 pound bulk pork sausage and crumble it over mixture. Mix everything well.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. Good. Is it ok if I use ground chicken instead of the beef?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "I cannot answer that question. Sorry.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "That's no problem, i'll use beef. Ok. I mixed well.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now shape the mixture into eight patties.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. Should I do it with my hands or use a tool?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. No problem. I did it with my hands.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Grill the patties, uncovered, over medium-hot heat for 4-6 minutes on each side.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "That was all! Serve it on buns.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);\r\nend_recipe();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. Perfect. Thank you. It smells great.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "You are welcome, enjoy!",
+            "bot": true,
+            "annotations": "thank();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "See you tomorrow bot.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"goodbye;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        }
+    ]
+}

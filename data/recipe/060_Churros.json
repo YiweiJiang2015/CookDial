@@ -1,0 +1,102 @@
+{
+    "id": "060",
+    "title": "Churros",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup water",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup water\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 1/2 tablespoons white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 1/2 tablespoons white sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 tablespoons vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 tablespoons vegetable oil\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 quarts oil for frying",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 quarts oil for frying\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 cup white sugar, or to taste",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 cup white sugar, or to taste\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 teaspoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 teaspoon ground cinnamon\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a small saucepan over medium heat, combine water, 2 1/2 tablespoons sugar, salt and 2 tablespoons vegetable oil.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@41:48 / AC\r\n\t\t:ppt ( ing-0 \"water\"@49:54 / FOOD )\r\n\t\t:ppt ( ing-1 \"2 1/2 tablespoons sugar\"@56:79 / FOOD )\r\n\t\t:ppt ( ing-2 \"salt\"@81:85 / FOOD )\r\n\t\t:ppt ( ing-3 \"2 tablespoons vegetable oil\"@90:117 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a small saucepan\"@6:22 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium heat\"@28:39 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Bring to a boil and remove from heat.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"remove\"@23:29 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:source ( tool-1-0 \"heat\"@35:39 / TOOL )\r\n\t)\r\n\t:inform ( ac-1-1 \"boil\"@14:18 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir in flour until mixture forms a ball.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-4 \"flour\"@11:16 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:until ( cond-2-0 \"until mixture forms a ball\"@17:43 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Heat oil for frying in deep-fryer or deep skillet to 375 degrees F (190 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-5 \"oil for frying\"@8:22 / FOOD )\r\n\t\t:loc ( tool-3-0 \"deep-fryer\"@26:36 / TOOL )\r\n\t\t:loc ( tool-3-1 \"deep skillet\"@40:52 / TOOL )\r\n\t\t:heat ( temp-3-0 \"375 degrees F\"@56:69 / TEMPERATURE )\r\n\t\t:heat ( temp-3-1 \"190 degrees C\"@71:84 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Pipe strips of dough into hot oil using a pastry bag.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Pipe\"@3:7 / AC\r\n\t\t:ppt ( \"strips of dough\"@8:23 / FOOD )\r\n\t\t:gol ( \"hot oil\"@29:36 / FOOD )\r\n\t\t:instrument ( tool-4-0 \"a pastry bag\"@43:55 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Fry until golden; drain on paper towels.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Fry\"@3:6 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-5-0 \"until golden\"@7:19 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-5-1 \"drain\"@21:26 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-5-0 \"paper towels\"@30:42 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Combine 1/2 cup sugar and cinnamon.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( ing-6 \"1/2 cup sugar\"@11:24 / FOOD )\r\n\t\t:ppt ( ing-7 \"cinnamon\"@29:37 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Roll drained churros in cinnamon and sugar mixture.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Roll\"@3:7 / AC\r\n\t\t:ppt ( \"drained churros\"@8:23 / FOOD )\r\n\t\t:loc ( \"cinnamon and sugar mixture\"@27:53 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

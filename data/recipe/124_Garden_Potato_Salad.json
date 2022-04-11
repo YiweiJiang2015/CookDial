@@ -1,0 +1,126 @@
+{
+    "id": "124",
+    "title": "Garden Potato Salad",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "6 large potatoes, cooked, peeled and cubed",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"6 large potatoes, cooked, peeled and cubed\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "4 hard-cooked eggs, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"4 hard-cooked eggs, sliced\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 celery ribs, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 celery ribs, sliced\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "6 green onions with tops, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"6 green onions with tops, sliced\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "6 radishes, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"6 radishes, sliced\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 teaspoon pepper",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 teaspoon pepper\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "3 eggs, beaten",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"3 eggs, beaten\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/4 cup vinegar",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/4 cup vinegar\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/4 cup sugar",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/4 cup sugar\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1/2 teaspoon dry mustard",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1/2 teaspoon dry mustard\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 cup mayonnaise or salad dressing",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 cup mayonnaise or salad dressing\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large bowl, combine potatoes, eggs, celery, green onions, radishes, salt and pepper; set aside.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@20:27 / AC\r\n\t\t:loc ( tool-0-0 \"a large bowl\"@6:18 / TOOL )\r\n\t\t:ppt ( ing-0 \"potatoes\"@28:36 / FOOD )\r\n\t\t:ppt ( ing-1 \"eggs\"@38:42 / FOOD )\r\n\t\t:ppt ( ing-2 \"celery\"@44:50 / FOOD )\r\n\t\t:ppt ( ing-3 \"green onions\"@52:64 / FOOD )\r\n\t\t:ppt ( ing-4 \"radishes\"@66:74 / FOOD )\r\n\t\t:ppt ( ing-5 \"salt\"@76:80 / FOOD )\r\n\t\t:ppt ( \"pepper\"@85:91 / FOOD )\r\n\t)\r\n\t:inform ( ac-0-1 \"set aside\"@93:102 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) For dressing, combine eggs, vinegar, sugar, dry mustard and salt in a saucepan.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"combine\"@17:24 / AC\r\n\t\t:subtask ( purp-1-0 \"For dressing\"@3:15 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( ing-7 \"eggs\"@25:29 / FOOD )\r\n\t\t:ppt ( ing-8 \"vinegar\"@31:38 / FOOD )\r\n\t\t:ppt ( ing-9 \"sugar\"@40:45 / FOOD )\r\n\t\t:ppt ( ing-10 \"dry mustard\"@47:58 / FOOD )\r\n\t\t:ppt ( ing-11 \"salt\"@63:67 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a saucepan\"@71:81 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cook and stir over medium heat until thickened.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cook and stir\"@-1:-1 / AC\r\n\t\t:heat ( temp-2-0 \"medium heat\"@22:33 / TEMPERATURE )\r\n\t\t:until ( cond-2-0 \"until thickened\"@34:49 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cool.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cool\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Stir in mayonnaise; mix well.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-12 \"mayonnaise\"@11:21 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"mix\"@23:26 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Pour over potato mixture; toss to coat.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"potato mixture\"@13:27 / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"toss\"@29:33 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-5-0 \"to coat\"@34:41 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Refrigerate for several hours.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Refrigerate\"@3:14 / AC\r\n\t\t:duration ( dur-6-0 \"several hours\"@19:32 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

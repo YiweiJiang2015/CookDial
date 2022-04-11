@@ -1,0 +1,78 @@
+{
+    "name": "gene_task_exp",
+    "n_gpu": 1,
+    "vocabularies": {
+    },
+    "model": {
+        "type": "ModelGenerationTask",
+        "enc_dec": {
+            "type": "TransEncDec",
+            "bert_name": "t5-base",
+            "is_split_into_words": false,
+            "fine_tune": false,
+            "padding": true,
+            "model_path": "na",
+            "use_finetuned_model": false
+        },
+
+        "args": {
+            "dropout": 0.5
+        }
+    },
+    "dataloader": {
+        "type": "AutoSplitDataLoader",
+        "args": {
+            "merged_file": "../data/processed/dialog/cookdial_dialog_merged.json",
+            "dataset_name": "DatasetGenerationTask",
+            "ratio": [0.8, 0.1, 0.1],
+            "batch_size": 8,
+            "train_shuffle": true,
+            "valid_shuffle": false,
+            "num_workers": 0,
+            "collate_fn": "collate_generation_task",
+            "history_prepend": true,
+            "history_window": 3,
+            "use_act_hint": true,
+            "use_full_set_ptr_hint": true
+        }
+    },
+    "optimizer": {
+        "type": "AdamW",
+        "args": {
+            "lr": 3e-4,
+            "weight_decay": 0
+        }
+    },
+    "loss":{
+        "response_gene": "cross_entropy"
+    },
+    "metrics":{
+        "response_gene": "BLEU ROUGE"
+    },
+    "lr_scheduler": {
+        "type": "get_cosine_schedule_with_warmup",
+        "args": {
+            "num_warmup_steps": 1000,
+            "num_training_steps": 10000
+        }
+    },
+    "trainer": {
+        "epochs": 50,
+        "save_dir": "save/",
+        "save_period": 1000000,
+        "save_start": 1000,
+        "verbosity": 2,
+        "monitor": "max val/response_gene/BLEU-4",
+        "early_stop": 10000,
+        "tensorboard": true,
+        "use_bert": true,
+        "save_pretrained_weights": false,
+        "log_histogram": false,
+        "use_scheduler": false,
+        "grad_clip": false,
+        "max_grad_norm": 10.0
+    },
+    "main": {
+        "seed": 12345
+    }
+}

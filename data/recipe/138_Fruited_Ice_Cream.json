@@ -1,0 +1,54 @@
+{
+    "id": "138",
+    "title": "Fruited Ice Cream",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 (14 ounce) cans sweetened condensed milk",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 (14 ounce) cans sweetened condensed milk\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "5 cups milk",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"5 cups milk\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 cups heavy cream",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 cups heavy cream\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 tablespoons vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 tablespoons vanilla extract\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "3 cups chopped strawberries",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"3 cups chopped strawberries\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Combine condensed milk, milk, cream, vanilla, salt and fruit in freezer canister of ice cream maker.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( ing-0 \"condensed milk\"@11:25 / FOOD )\r\n\t\t:ppt ( ing-1 \"milk\"@27:31 / FOOD )\r\n\t\t:ppt ( ing-2 \"cream\"@33:38 / FOOD )\r\n\t\t:ppt ( ing-3 \"vanilla\"@40:47 / FOOD )\r\n\t\t:ppt ( ing-4 \"salt\"@49:53 / FOOD )\r\n\t\t:ppt ( ing-5 \"fruit\"@58:63 / FOOD )\r\n\t\t:loc ( tool-0-0 \"freezer canister of ice cream maker\"@67:102 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Freeze according to manufacturer's directions.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Freeze\"@3:9 / AC\r\n\t\t:mnr ( \"according to manufacturer's directions\"@10:48 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

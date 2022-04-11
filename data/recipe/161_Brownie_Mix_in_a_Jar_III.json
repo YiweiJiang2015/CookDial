@@ -1,0 +1,114 @@
+{
+    "id": "161",
+    "title": "Brownie Mix in a Jar III",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/2 cup flaked coconut",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/2 cup flaked coconut\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup white sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 cups packed brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 cups packed brown sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 1/2 teaspoons baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 1/2 teaspoons baking powder\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "3/4 cup butter or margarine, softened at room temperature.",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"3/4 cup butter or margarine, softened at room temperature.\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 eggs\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 teaspoons vanilla",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 teaspoons vanilla\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Mix together flour, salt and baking powder.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Mix\"@3:6 / AC\r\n\t\t:ppt ( ing-3 \"flour\"@16:21 / FOOD )\r\n\t\t:ppt ( ing-5 \"salt\"@23:27 / FOOD )\r\n\t\t:ppt ( ing-4 \"baking powder\"@32:45 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add 3/4 cup butter or margarine (do not use diet Magarine).",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-6 \"3/4 cup butter or margarine\"@7:34 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"not use\"@39:46 / AC\r\n\t\t:ppt ( \"diet Magarine\"@47:60 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Mix in 2 eggs, slightly beaten and 2 teaspoons vanilla.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Mix in\"@3:9 / AC\r\n\t\t:ppt ( ing-7 \"2 eggs\"@10:16 / FOOD )\r\n\t\t:ppt ( ing-8 \"2 teaspoons vanilla\"@38:57 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( \"slightly beaten\"@18:33 / OTHER )\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Spread batter into a sprayed 9 x 13 inch metal pan.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Spread\"@3:9 / AC\r\n\t\t:ppt ( \"batter\"@10:16 / FOOD )\r\n\t\t:gol ( tool-3-0 \"a sprayed 9 x 13 inch metal pan\"@22:53 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Bake at 375 degrees F (190 degrees C) for 25 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Bake\"@3:7 / AC\r\n\t\t:heat ( temp-4-0 \"375 degrees F\"@11:24 / TEMPERATURE )\r\n\t\t:heat ( temp-4-1 \"190 degrees C\"@26:39 / TEMPERATURE )\r\n\t\t:duration ( dur-4-0 \"25 minutes\"@45:55 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Cool 15 minutes in baking pan.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Cool\"@3:7 / AC\r\n\t\t:duration ( dur-5-0 \"15 minutes\"@8:18 / DUR )\r\n\t\t:loc ( tool-5-0 \"baking pan\"@22:32 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Cut brownies into 1 1/2 inch squares.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Cut\"@3:6 / AC\r\n\t\t:ppt ( \"brownies\"@7:15 / FOOD )\r\n\t\t:reshape ( \"1 1/2 inch squares\"@21:39 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Cool completely in pan.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Cool\"@3:7 / AC\r\n\t\t:loc ( tool-7-0 \"pan\"@22:25 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Make 2 dozen brownies.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Make\"@3:7 / AC\r\n\t\t:ppt ( \"2 dozen brownies\"@8:24 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

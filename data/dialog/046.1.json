@@ -1,0 +1,214 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we are making a cranberry apple pie. Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes I am. What ingredients do I need?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "You need 7 ingredients, if you are ready I will announce them after each other.",
+            "bot": true,
+            "annotations": "propose_skip_ing_list();\r\n"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. go ahead.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "6 apples and 1 (16 ounce) can of whole cranberry sauce.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. I have that.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The next 3 ingredients are 1/2 cup packed brown sugar, 1/3 cup all-purpose flour and 1 1/2 teaspoons ground cinnamon.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);\r\ninform_ingredient(ing-4);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Good I have them all in front of me now.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "The last two are 1/2 teaspoon ground nutmeg and 1 recipe pastry for a 9 inch double crust pie.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-5);\r\ninform_ingredient(ing-6);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Could you repeat the last one please?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "1 pastry for a 9 inch double crust pie.",
+            "bot": true,
+            "annotations": "repeat(ing-6);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Thank you. I think I have everything. What is the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "First preheat the oven to 175 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Done. Can I do something while waiting?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_parallel_action;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Yes first you may line a pie plate with pastry.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now take the apples and peel, core and slice them.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "I have sliced them. What should I do with them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Combine the pieces with the cranberry sauce in a medium sized mixing bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "I have done that. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now we will add some other things to the mixture. You may add the brown sugar, cinnamon and nutmeg to the mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Should I stir everything?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Yes mix it all well and thoroughly.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Done. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now turn the mixture into the pastry lined pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. I have done that. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Now cover it up with top crust and crimp the edges.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);\r\ninform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Done. What is the next instruction?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Cut a couple of slits in the top crust and bake it for 1 hour.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);\r\nsimplify_begin(ac-10-0); \r\n"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "How do I know when it is ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Watch if the crust becomes golden brown and the filling becomes bubbly.",
+            "bot": true,
+            "annotations": "inform_duration(cond-10-0);\r\n"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "One hour has passed and the crust is golden brown and the filling is bubbly.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Ok. great! That was it. Enjoy!",
+            "bot": true,
+            "annotations": "end_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "It looks good, thank you. Bye.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; goodbye;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 17}"
+        }
+    ]
+}

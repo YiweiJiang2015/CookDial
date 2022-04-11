@@ -1,0 +1,94 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. today we are making Campfire Angel Food Yummies. Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Sounds good. How do I start?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Take 1 angel food cake and cut it into large cubes.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-0);\r\ninform_ingredient(ing-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Sorry what should I cut into large cubes?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "1 angel food cake.",
+            "bot": true,
+            "annotations": "repeat(inst-0, [ing-0]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. Thanks. what should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Next you can toast the cake cubes over the coals of a campfire on toasting sticks until they become brown.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. they became brown. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Next you can dip the toasted cake into condensed milk. You can use 1 can sweetened condensed milk of 5 ounce.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. thanks. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Finally roll it in coconut flakes. Take about 1 cup coconut flakes.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-1);\r\ninform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. alright, I did that. Is there a next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_ongoing;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "No that's all. Enjoy your Campfire Angel Food Yummies!",
+            "bot": true,
+            "annotations": "negate();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. thanks it looks good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 5}"
+        }
+    ]
+}

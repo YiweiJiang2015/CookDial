@@ -1,0 +1,202 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi, today we are gonna prepare fresh cranberry spiced tea! Do you like tea? I love tea.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "I love tea as well. How should I make it?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "We'll have first to prepare 9 ingredients. The first two are 1 pound of fresh or frozen cranberries. And 3 quarts of cold water.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. I have the cranberries and water. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Good! Next two ingredients are 2 cups of orange juice and 2 and one eighth cup of pineapple juice.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Should it be fresh juice?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Sorry I cannot reply to your question. You need  2 cups of orange juice and 2 and one eighth cup of pineapple juice.",
+            "bot": true,
+            "annotations": "fence();\r\nrepeat(ing-2);\r\nrepeat(ing-3);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. No problem. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "The next two ingredients are one fourth of a cup of lemon juice and 2 cups of white sugar.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. Could I use brown sugar instead as well?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Sorry I cannot reply to your question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. Are there more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-7\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Yes, the last ingredients are 1 cinnamon stick 1 teaspoon of whole cloves and half a teaspoon of whole allspice berries.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_ingredient(ing-6);\r\ninform_ingredient(ing-7);\r\ninform_ingredient(ing-8);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Sorry, could you repeat the last ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-9\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "The last ingredient is  half a teaspoon of whole allspice berries.",
+            "bot": true,
+            "annotations": "repeat(ing-8);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. Now I could understand, thanks. How should I make the tea?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Good! You start by placing the cranberries and water into a large pot.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Good! Next is to Bring to a boil and cook just until the berries pop, about 5 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. 5 minutes have passed. Could you repeat that part again of the berries? What should happen?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_repeat;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "The berries should pop.",
+            "bot": true,
+            "annotations": "repeat(cond-1-0);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. They popped. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Next step is to Remove from the heat and let stand at room temperature until cold. it will take several hours.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok.It is cold now. What should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "You now should Strain out the cranberries. After that you  stir the orange juice, pineapple juice, lemon juice and sugar into the liquid.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "What should I do with the cranberries?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "You should strain the cranberries out from the water.",
+            "bot": true,
+            "annotations": "repeat(ac-3-0);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. I have done that and added the ingredients you mentioned. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Good! You can now add Add the cinnamon stick, whole cloves and allspice berries.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. I have added them as well. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "You now bring to a low boil and after that you can enjoy your Fresh Cranberry Spiced Tea!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. I have done it. It is very tasty. Thanks.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; thank;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 15}"
+        }
+    ]
+}

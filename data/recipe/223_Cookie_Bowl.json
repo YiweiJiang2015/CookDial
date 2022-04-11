@@ -1,0 +1,150 @@
+{
+    "id": "223",
+    "title": "Cookie Bowl",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 1/4 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 1/4 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup unsweetened cocoa powder",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup unsweetened cocoa powder\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup sliced almonds",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup sliced almonds\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/4 cup butter, softened",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/4 cup butter, softened\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2/3 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2/3 cup white sugar\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 egg, beaten",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 egg, beaten\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F (175 degrees C)\"@19:48 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Turn a 9x5 inch loaf pan or metal bowl upside down and cover the outside with foil.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Turn\"@3:7 / AC\r\n\t\t:ppt ( \"or\"@-1:-1 / CHOICE\r\n\t\t\t:option ( tool-1-0 \"a 9x5 inch loaf pan\"@8:27 / TOOL )\r\n\t\t\t:option ( tool-1-1 \"metal bowl\"@31:41 / TOOL )\r\n\t\t)\r\n\t)\r\n\t:inform ( ac-1-1 \"cover\"@58:63 / AC\r\n\t\t:ppt ( \"the outside\"@64:75 / OTHER )\r\n\t\t:instrument ( tool-1-2 \"foil\"@81:85 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place onto a cookie sheet.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n   :inform ( \"Place\"@3:8 / AC\r\n      :ppt( NULL / FOOD )\r\n      :gol ( \"a cookie sheet\"@14:28 / TOOL )\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Stir together the flour, cocoa, salt and almonds; set aside.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Stir\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"flour\"@21:26 / FOOD )\r\n\t\t:ppt ( ing-1 \"cocoa\"@28:33 / FOOD )\r\n\t\t:ppt ( ing-2 \"salt\"@35:39 / FOOD )\r\n\t\t:ppt ( ing-3 \"almonds\"@44:51 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"set aside\"@53:62 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) In a medium bowl, cream together the butter and sugar until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"cream\"@21:26 / AC\r\n\t\t:ppt ( ing-4 \"the butter\"@36:46 / FOOD )\r\n\t\t:ppt ( ing-5 \"sugar\"@51:56 / FOOD )\r\n\t\t:loc ( tool-4-0 \"a medium bowl\"@6:19 / TOOL )\r\n\t\t:until ( cond-4-0 \"until smooth\"@57:69 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Beat in the egg and vanilla.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Beat in\"@3:10 / AC\r\n\t\t:ppt ( ing-6 \"the egg\"@11:18 / FOOD )\r\n\t\t:ppt ( ing-7 \"vanilla\"@23:30 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Gradually stir in the dry ingredients to form a fairly stiff dough.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"stir in\"@13:20 / AC\r\n\t\t:ppt ( \"the dry ingredients\"@21:40 / FOOD )\r\n\t\t:prp ( purp-6-0 \"to form a fairly stiff dough\"@41:69 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) On a lightly floured surface, roll the dough out to 1/4 inch in thickness.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"roll\"@33:37 / AC\r\n\t\t:loc ( tool-7-0 \"a lightly floured surface\"@6:31 / TOOL )\r\n\t\t:ppt ( \"the dough\"@38:47 / FOOD )\r\n\t\t:reshape ( \"1/4 inch in thickness\"@55:76 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Cut into circles using a glass or cookie cutter.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Cut\"@3:6 / AC\r\n\t\t:reshape ( \"circles\"@12:19 / OTHER )\r\n\t\t:instrument ( tool-8-0 \"a glass\"@26:33 / TOOL )\r\n\t\t:instrument ( tool-8-1 \"cookie cutter\"@37:50 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Starting at the top (bottom) of the pan or bowl, arrange cookies so they are overlapping.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"arrange\"@53:60 / AC\r\n\t\t:ppt ( \"cookies\"@61:68 / FOOD )\r\n\t\t:prp ( purp-9-0 \"so they are overlapping\"@69:92 / PURPOSE_CLAUSE )\r\n\t)\r\n\t:inform ( tool-9-0 \"the pan\"@36:43 / TOOL )\r\n\t:inform ( tool-9-1 \"bowl\"@47:51 / TOOL )\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Work toward the edges covering as much of the pan as you can.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"covering\"@26:34 / AC\r\n\t\t:ppt ( tool-10-0 \"the pan\"@46:53 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Be sure to press each cookie on so you will have a good solid bowl.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"press\"@15:20 / AC\r\n\t\t:ppt ( \"each cookie\"@21:32 / FOOD )\r\n\t\t:prp ( purp-11-0 \"so you will have a good solid bowl\"@36:70 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Bake for 10 to 15 minutes in the preheated oven, until cookies are firm.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Bake\"@4:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-12-0 \"10 to 15 minutes\"@13:29 / DUR )\r\n\t\t:loc ( tool-12-0 \"the preheated oven\"@33:51 / TOOL )\r\n\t\t:until ( cond-12-0 \"until cookies are firm\"@53:75 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Cool completely.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Cool\"@4:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Carefully turn the pan over and remove the pan from the foil, then carefully remove the foil from inside the cookie structure.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"turn\"@14:18 / AC\r\n\t\t:ppt ( tool-14-0 \"the pan\"@19:26 / TOOL )\r\n\t)\r\n\t:inform ( ac-14-1 \"remove\"@36:42 / AC\r\n\t\t:ppt ( tool-14-1 \"the pan\"@43:50 / TOOL )\r\n\t\t:source ( tool-14-2 \"the foil\"@56:64 / TOOL )\r\n\t)\r\n\t:inform ( ac-14-2 \"remove\"@81:87 / AC\r\n\t\t:ppt ( tool-14-3 \"the foil\"@88:96 / TOOL )\r\n\t\t:source ( \"from inside the cookie structure\"@97:129 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-15",
+            "text": "15) Fill with cookie or candy.",
+            "type": "instruction",
+            "eamr": "( inst-15 / R\r\n\t:inform ( ac-15-0 \"Fill\"@4:8 / AC\r\n\t\t:ppt ( \"cookie\"@14:20 / FOOD )\r\n\t\t:ppt ( \"candy\"@24:29 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

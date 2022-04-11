@@ -1,0 +1,276 @@
+{
+    "id": "160",
+    "title": "Elizabeths Extreme Chocolate Lovers Cake",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 1/4 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 1/4 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 teaspoons baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 teaspoons baking soda\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "6 (1 ounce) squares unsweetened chocolate, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"6 (1 ounce) squares unsweetened chocolate, chopped\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 cup unsalted butter",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 cup unsalted butter\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 1/2 cups dark brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 1/2 cups dark brown sugar\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "3 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"3 eggs\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 1/2 tablespoons vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 1/2 tablespoons vanilla extract\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 cup sour cream",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 cup sour cream\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 cup water",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 cup water\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "6 (1 ounce) squares unsweetened chocolate, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"6 (1 ounce) squares unsweetened chocolate, chopped\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/4 cup unsalted butter",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/4 cup unsalted butter\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 egg yolk",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 egg yolk\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "4 cups confectioners' sugar",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"4 cups confectioners' sugar\" )"
+        },
+        {
+            "id": "ing-14",
+            "text": "2 tablespoons vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-14 \"2 tablespoons vanilla extract\" )"
+        },
+        {
+            "id": "ing-15",
+            "text": "2 tablespoons heavy cream",
+            "type": "ingredient",
+            "eamr": "( ing-15 \"2 tablespoons heavy cream\" )"
+        },
+        {
+            "id": "ing-16",
+            "text": "1 (8 ounce) package cream cheese, softened",
+            "type": "ingredient",
+            "eamr": "( ing-16 \"1 (8 ounce) package cream cheese, softened\" )"
+        },
+        {
+            "id": "ing-17",
+            "text": "2 cups bittersweet chocolate chips",
+            "type": "ingredient",
+            "eamr": "( ing-17 \"2 cups bittersweet chocolate chips\" )"
+        },
+        {
+            "id": "ing-18",
+            "text": "1 cup heavy cream",
+            "type": "ingredient",
+            "eamr": "( ing-18 \"1 cup heavy cream\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Grease and flour 2 (9 inch) pans.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Grease and flour\"@3:19 / AC\r\n\t\t:ppt ( tool-1-0 \"2 (9 inch) pans\"@20:35 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Sift together the flour, baking soda and salt.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Sift\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"the flour\"@17:26 / FOOD )\r\n\t\t:ppt ( ing-1 \"baking soda\"@28:39 / FOOD )\r\n\t\t:ppt ( ing-2 \"salt\"@44:48 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Set aside.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Set aside\"@3:12 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) In the top of a double boiler, heat 6 ounces chocolate, stirring occasionally, until chocolate is melted and smooth.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"heat\"@34:38 / AC\r\n\t\t:ppt ( ing-3 \"6 ounces chocolate\"@39:57 / FOOD )\r\n\t\t:loc ( tool-4-0 \"the top of a double boiler\"@6:32 / TOOL )\r\n\t\t:simultaneous ( ac-4-1 \"stirring\"@59:67 / AC )\r\n\t\t:until ( cond-4-0 \"until chocolate is melted and smooth\"@82:118 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Remove from heat and allow to cool to lukewarm.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( \"heat\"@15:19 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"cool\"@33:37 / AC\r\n\t\t:heat ( temp-5-0 \"lukewarm\"@41:49 / TEMPERATURE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) In a large bowl, cream together the butter and brown sugar until light and fluffy.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"cream\"@20:25 / AC\r\n\t\t:ppt ( ing-4 \"the butter\"@35:45 / FOOD )\r\n\t\t:ppt ( ing-5 \"brown sugar\"@50:61 / FOOD )\r\n\t\t:until ( cond-6-0 \"until light and fluffy\"@62:84 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-6-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Beat in the eggs one at a time, then stir in 1 1/2 teaspoon vanilla.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Beat in\"@3:10 / AC\r\n\t\t:ppt ( ing-6 \"the eggs\"@11:19 / FOOD )\r\n\t\t:mnr ( \"one at a time\"@20:33 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-7-1 \"stir in\"@40:47 / AC\r\n\t\t:ppt ( ing-7 \"1 1/2 teaspoon vanilla\"@48:70 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Stir in the melted chocolate.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( \"the melted chocolate\"@11:31 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Beat in the flour mixture alternately with the sour cream.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Beat in\"@4:11 / AC\r\n\t\t:ppt ( \"the flour mixture\"@12:29 / FOOD )\r\n\t\t:ppt ( ing-8 \"the sour cream\"@47:61 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Stir in boiling water (batter will be thin).",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Stir in\"@4:11 / AC\r\n\t\t:ppt ( \"boiling water\"@12:25 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-10-0 \"batter will be thin\"@27:46 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Pour batter into prepared pans.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Pour\"@4:8 / AC\r\n\t\t:ppt ( \"batter\"@9:15 / FOOD )\r\n\t\t:gol ( tool-11-0 \"prepared pans\"@21:34 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Bake in the preheated oven for 35 to 40 minutes, or until a toothpick inserted into the center of the cake comes out clean.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Bake\"@4:8 / AC\r\n\t\t:loc ( tool-12-0 \"the preheated oven\"@12:30 / TOOL )\r\n\t\t:duration ( dur-12-0 \"35 to 40 minutes\"@35:51 / DUR )\r\n\t\t:until ( cond-12-0 \"until a toothpick inserted into the center of the cake comes out clean\"@56:126 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Let cool in pan for 10 minutes, then turn out onto a wire rack and cool completely.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"cool\"@8:12 / AC\r\n\t\t:loc ( tool-13-0 \"pan\"@16:19 / TOOL )\r\n\t\t:duration ( dur-13-0 \"10 minutes\"@24:34 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-13-1 \"cool\"@71:75 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-13-2 \"turn out\"@41:49 / AC\r\n\t\t:gol ( tool-13-1 \"a wire rack\"@55:66 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Make the Chocolate Buttercream Frosting: In the top of a double boiler, heat 6 ounces chocolate, stirring occasionally, until chocolate is melted and smooth.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"heat\"@76:80 / AC\r\n\t\t:subtask ( \"Make the Chocolate Buttercream Frosting\"@4:43 / OTHER )\r\n\t\t:loc ( tool-14-0 \"the top of a double boiler\"@48:74 / TOOL )\r\n\t\t:ppt ( ing-10 \"6 ounces chocolate\"@81:99 / FOOD )\r\n\t\t:simultaneous ( ac-14-1 \"stirring\"@101:109 / AC )\r\n\t\t:until ( cond-14-0 \"until chocolate is melted and smooth\"@124:160 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-15",
+            "text": "15) In a large bowl, whip the butter for about 10 minutes until it is super fluffy, beat in egg yolk.",
+            "type": "instruction",
+            "eamr": "( inst-15 / R\r\n\t:inform ( ac-15-0 \"whip\"@21:25 / AC\r\n\t\t:ppt ( ing-11 \"the butter\"@26:36 / FOOD )\r\n\t\t:duration ( dur-15-0 \"10 minutes\"@47:57 / DUR )\r\n\t\t:until ( cond-15-0 \"until it is super fluffy\"@58:82 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-15-0 \"a large bowl\"@7:19 / TOOL )\r\n\t)\r\n\t:inform ( ac-15-1 \"beat in\"@84:91 / AC\r\n\t\t:ppt ( ing-12 \"egg yolk\"@92:100 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-16",
+            "text": "16) Gradually blend in the confectioners' sugar, alternating with 2 tablespoons vanilla and 2 tablespoons cream, then blend in the melted chocolate.",
+            "type": "instruction",
+            "eamr": "( inst-16 / R\r\n\t:inform ( ac-16-0 \"blend in\"@14:22 / AC\r\n\t\t:simultaneous ( ac-16-1 \"alternating\"@49:60 / AC\r\n\t\t\t:ppt ( ing-14 \"2 tablespoons vanilla\"@66:87 / FOOD )\r\n\t\t\t:ppt ( ing-15 \"2 tablespoons cream\"@92:111 / FOOD )\r\n\t\t)\r\n\t\t:ppt ( ing-13 \"the confectioners' sugar\"@23:47 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-16-2 \"blend in\"@118:126 / AC\r\n\t\t:ppt ( \"the melted chocolate\"@127:147 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-17",
+            "text": "17) Beat in the softened cream cheese.",
+            "type": "instruction",
+            "eamr": "( inst-17 / R\r\n\t:inform ( ac-17-0 \"Beat in\"@4:11 / AC\r\n\t\t:ppt ( ing-16 \"the softened cream cheese\"@12:37 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-18",
+            "text": "18) Make the Ganache: In a large saucepan, combine chocolate chips and 1 cup heavy cream.",
+            "type": "instruction",
+            "eamr": "( inst-18 / R\r\n\t:inform ( ac-18-0 \"combine\"@43:50 / AC\r\n\t\t:subtask ( \"Make the Ganache\"@4:20 / OTHER )\r\n\t\t:loc ( tool-18-0 \"a large saucepan\"@25:41 / TOOL )\r\n\t\t:ppt ( ing-17 \"chocolate chips\"@51:66 / FOOD )\r\n\t\t:ppt ( ing-18 \"1 cup heavy cream\"@71:88 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-19",
+            "text": "19) Heat, stirring constantly, until chocolate is melted and smooth.",
+            "type": "instruction",
+            "eamr": "( inst-19 / R\r\n\t:inform ( ac-19-0 \"Heat\"@4:8 / AC\r\n\t\t:simultaneous ( ac-19-1 \"stirring\"@10:18 / AC )\r\n\t\t:until ( cond-19-0 \"until chocolate is melted and smooth\"@31:67 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-20",
+            "text": "20) Remove from heat and set aside.",
+            "type": "instruction",
+            "eamr": "( inst-20 / R\r\n\t:inform ( ac-20-0 \"Remove\"@4:10 / AC\r\n\t\t:source ( \"heat\"@16:20 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-20-1 \"set aside\"@25:34 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-21",
+            "text": "21) Assemble the cake: When cake is completely cooled, cover the bottom cake layer with as much ganache as desired.",
+            "type": "instruction",
+            "eamr": "( inst-21 / R\r\n\t:inform ( ac-21-0 \"cover\"@55:60 / AC\r\n\t\t:subtask ( \"Assemble the cake\"@4:21 / OTHER )\r\n\t\t:ppt ( \"the bottom cake layer\"@61:82 / FOOD )\r\n\t\t:ppt ( \"ganache\"@96:103 / FOOD )\r\n\t\t:when ( cond-21-0 \"When cake is completely cooled\"@23:53 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-22",
+            "text": "22) Refrigerate for 5 minutes, or until ganache has set.",
+            "type": "instruction",
+            "eamr": "( inst-22 / R\r\n\t:inform ( ac-22-0 \"Refrigerate\"@4:15 / AC\r\n\t\t:duration ( dur-22-0 \"5 minutes\"@20:29 / DUR )\r\n\t\t:until ( cond-22-0 \"until ganache has set\"@34:55 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-23",
+            "text": "23) Spread frosting over the ganache.",
+            "type": "instruction",
+            "eamr": "( inst-23 / R\r\n\t:inform ( ac-23-0 \"Spread\"@4:10 / AC\r\n\t\t:ppt ( \"frosting\"@11:19 / FOOD )\r\n\t\t:gol ( \"the ganache\"@25:36 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-24",
+            "text": "24) Cover with top layer of cake.",
+            "type": "instruction",
+            "eamr": "( inst-24 / R\r\n\t:inform ( ac-24-0 \"Cover\"@4:9 / AC\r\n\t\t:ppt ( \"top layer of cake\"@15:32 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-25",
+            "text": "25) Frost top and sides with buttercream, and garnish with more ganache.",
+            "type": "instruction",
+            "eamr": "( inst-25 / R\r\n\t:inform ( ac-25-0 \"Frost\"@4:9 / AC\r\n\t\t:ppt ( \"top and sides\"@10:23 / FOOD )\r\n\t\t:ppt ( \"buttercream\"@29:40 / FOOD )\r\n\t)\r\n\t:inform ( ac-25-1 \"garnish\"@46:53 / AC\r\n\t\t:ppt ( \"more ganache\"@59:71 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

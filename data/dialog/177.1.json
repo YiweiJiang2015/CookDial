@@ -1,0 +1,178 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi what are we making today.",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi! We are gonna make Candy Coated Milk Chocolate Pieces Cookies. This recipe has 9 ingredients. Would you like to prepare them first?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\nsum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Sounds awesome, yes please.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Great! the first two ingredients are 1 cup shortening and 1 cup packed brown sugar.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok I have them.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Good, the next two are half a cup white sugar and 2 eggs.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Next two ingredients are 2 teaspoons of vanilla extract and 2 and one quarter cups all-purpose flour.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Could I use almond meal flour instead?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "You can always try to replace one of the ingredients following your intuition, but I can't guarantee about the result :).",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok what are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Next two ingredients are 1 teaspoon baking soda and 1 teaspoon salt.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok I have them.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Good, the last ingredient is one and a half cups of candy-coated milk chocolate pieces.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-8);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Nice I have all of them.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Good, we can start with the recipe then! You can start by preheating the oven to 190 degrees C. In the meantime you can thoroughly cream together shortening, sugars, eggs and vanilla.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Good! Next is to take a separate bowl and mix together the dry ingredients, except the candies.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok I have done that. What should I do with the candies? Eat them ?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "No, not yet, don't be greedy we'll use them later. Now add the mix to the creamed mixture and mix wellNow.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok I will do that. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Next step is to stir in half a cup of candies and mix well.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);\r\ninform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok what should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "You take the mixture and drop by teaspoon onto cookie sheets and decorate with remaining candies.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok are they ready to be baked?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Yes you can now bake for 10 to 12 minutes.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok I baked for 10 minutes. Are they ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Yes, you can now enjoy them!!!",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok thanks they looks just great.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 17}"
+        }
+    ]
+}

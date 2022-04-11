@@ -1,0 +1,54 @@
+{
+    "id": "061",
+    "title": "Easy Fried Eggplant",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 tablespoons canola oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 tablespoons canola oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 large eggplant, peeled and sliced",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 large eggplant, peeled and sliced\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 eggs, beaten",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 eggs, beaten\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 cups dry bread crumbs",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 cups dry bread crumbs\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Heat oil in a large skillet over medium-high heat.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"oil\"@8:11 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large skillet\"@15:30 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium-high heat\"@36:52 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Dip eggplant slices in egg, then in crumbs, and place in hot oil.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Dip\"@3:6 / AC\r\n\t\t:ppt ( ing-1 \"eggplant slices\"@7:22 / FOOD )\r\n\t\t:gol ( ing-2 \"egg\"@26:29 / FOOD )\r\n\t\t:gol ( ing-3 \"crumbs\"@39:45 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"place\"@51:56 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"hot oil\"@60:67 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Fry 2 to 3 minutes on each side, or until golden brown.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Fry\"@3:6 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-2-0 \"2 to 3 minutes\"@7:21 / DUR )\r\n\t\t:until ( cond-2-0 \"until golden brown\"@39:57 / CONDITION_CLAUSE )\r\n\t\t:todo ( \"each side\"@25:34 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Drain on paper towels.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Drain\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-3-0 \"paper towels\"@12:24 / TOOL )\r\n\t)\r\n)"
+        }
+    ]
+}

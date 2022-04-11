@@ -1,0 +1,30 @@
+{
+    "id": "173",
+    "title": "Cookie Paints",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 tablespoons evaporated milk",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 tablespoons evaporated milk\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "4 drops red food coloring",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"4 drops red food coloring\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a small bowl, stir the food coloring into the evaporated milk.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"stir\"@20:24 / AC\r\n\t\t:loc ( tool-0-0 \"a small bowl\"@6:18 / TOOL )\r\n\t\t:ppt ( ing-1 \"the food coloring\"@25:42 / FOOD )\r\n\t\t:ppt ( ing-0 \"the evaporated milk\"@48:67 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Paint onto cookies with a paintbrush before baking.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Paint\"@3:8 / AC\r\n\t\t:gol ( \"cookies\"@14:21 / FOOD )\r\n\t\t:instrument ( tool-1-0 \"a paintbrush\"@27:39 / TOOL )\r\n\t\t:duration ( cond-1-0 \"before baking\"@40:53 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

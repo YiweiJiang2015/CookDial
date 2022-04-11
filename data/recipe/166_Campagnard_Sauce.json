@@ -1,0 +1,72 @@
+{
+    "id": "166",
+    "title": "Campagnard Sauce",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 cloves garlic, minced",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 cloves garlic, minced\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup goat cheese",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup goat cheese\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 celery stalk, minced",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 celery stalk, minced\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 tablespoons balsamic vinegar",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 tablespoons balsamic vinegar\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 cup olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 cup olive oil\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"salt and pepper to taste\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a bowl, stir together garlic, goat cheese, celery, balsamic vinegar, and olive oil.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"stir\"@14:18 / AC\r\n\t\t:ppt ( ing-0 \"garlic\"@28:34 / FOOD )\r\n\t\t:ppt ( ing-1 \"goat cheese\"@36:47 / FOOD )\r\n\t\t:ppt ( ing-2 \"celery\"@49:55 / FOOD )\r\n\t\t:ppt ( ing-3 \"balsamic vinegar\"@57:73 / FOOD )\r\n\t\t:ppt ( ing-4 \"olive oil\"@79:88 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a bowl\"@6:12 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Season to taste with salt and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Season\"@3:9 / AC\r\n\t\t:ppt ( ing-5 \"salt and pepper\"@24:39 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:prp ( purp-1-0 \"to taste\"@10:18 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Blend well until the sauce is smooth.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Blend\"@3:8 / AC\r\n\t\t:until ( cond-2-0 \"until the sauce is smooth\"@14:39 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cover, and refrigerate.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"refrigerate\"@14:25 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Serve chilled.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

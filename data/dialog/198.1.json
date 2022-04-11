@@ -1,0 +1,220 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello! What can I eat for breakfast?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi, do you like Banana Chip Muffins?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Mmmh I loove them, it's like you read my mind!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Good. Well maybe in the future I can. The recipe has 9 ingredients. Do you want to prepare all of them beforehand?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ahah I hope I'll be dead by then! Yes I'd like to prepare the ingredients first!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Good, the first two recipes are 1 and 3/4 cups all-purpose flour. And 1/2 cup white sugar.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok, can I use stevia instead of white sugar?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Sorry I cannot answer that question. Hi the next two ingredients are 1 tablespoon baking powder and 1/2 teaspoon salt.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok, I have baking powder and salt ready, what should I prepare next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Next is 1/2 cup semisweet chocolate chips, 1 egg and 1/4 cup vegetable oil.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);\r\ninform_ingredient(ing-6);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok, oil and chocolate chip are also ready on my counter. Are there any more ingredients? And if so how many?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"ing-7\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Good, yes there are 2 ingredients left. 1/4 cup milk and 1 cup mashed bananas.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_ingredient(ing-7);\r\ninform_ingredient(ing-8);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok, good, do you think it's ok if I replace the milk with coconut milk?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-7\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok, no problem! So we can start with the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Good. Yes let's start. First measure flour, sugar, baking powder, salt, and chocolate chips into a large bowl.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-0);\r\n"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok, should I use all the flour?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_use_all;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Yes use all of what you prepared. You should miix thoroughly, and make a well in the center.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok I made a hole in the center, what should I put inside it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Sorry I cannot help you with that specific question. Now beat the egg in a small bowl until frothy.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok, it looks kinda foamy now, what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "The next step is to mix in cooking oil, milk, and bananas.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Should I add those to the bowl?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Yes you should add them to the large bowl.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok I did that!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Good, now pour this mixture into the well and stir only to moisten.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);\r\ninform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok the the mixture are stirred together. what now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Nice, now fill greased muffin cups and make them 3/4 full.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok the muffin cups have the mixture inside. should I bake now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Yes time to bake. Bake the muffins at 205 degrees Celsius for 20 to 25 minutes.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok, They've been in for 20 minutes, but they don't look golden brown... should I wait a bit more?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Sorry I cannot help you with that.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok, I took them out then.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Ok good. I hope you will enjoy your Banana Chip Muffins.",
+            "bot": true,
+            "annotations": "enjoy();"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "I will, thanks for the recipe!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

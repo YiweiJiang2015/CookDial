@@ -1,0 +1,190 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello! I want cake. Do you have a recipe for that?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi, yes I have a nice cake recipe from Germany's black forest. It is called a Black Forest Dump Cake.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Tremendous name, makes me hungry! Are there many ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Good, there are 5 ingredients. The first one is 1 (21 ounce) can cherry pie filling.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\ninform_ingredient(ing-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok, I already had cherry pie filling in my kitchen, great! What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Great, next is 1 can pitted dark sweet cherries and 1 package chocolate cake mix.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-1);\r\ninform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok, how big should the can be?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "It should be 16.5 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-1);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Good, could you tell me which are the last ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Yes 1 cup chopped walnuts and 3/4 cup butter, cut into pieces.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-3);\r\ninform_ingredient(ing-4);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok, I have evrything here! Should we start to make the cake?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Yes let's start. You can already preheat the oven to 190 degrees Celsius.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok, I turned the oven on. Is there something I can do while the oven heats up?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_parallel_action;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Yes we can start preparing the cake. First spray a 9x13 baking dish with cooking spray.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": " ok the dish is ready. What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now you should dump the cherry pie filling into the dish and spread evenly.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok I dumped the cherry pie filling in the dish. What can I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "You can add the cherries, including juice.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok so I added the cherries to the cherry pie filling.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Good. Now sprinkle cake mix over the top. I would like to stress that you SHOULD NOT STIR.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok, thanks for stressing that. what now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now sprinkle with chopped nuts.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Okay, I have sprinkled with nuts. Is it time to bake?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "The last step is to distribute butter pieces evenly over the top.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Hey, the butter is in.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now it is time to bake in the oven for 45 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok, goo. 45 minutes passe. 45 minutes passed. Is there a way I can see it's ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Good, no sorry I cannot help you with that.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok, then should I take it out?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Yes take it out and enjoy your Black Forest Dump Cake.",
+            "bot": true,
+            "annotations": "affirm();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok, good! It looks like a great dump cake! Thank you :).",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 13}"
+        }
+    ]
+}

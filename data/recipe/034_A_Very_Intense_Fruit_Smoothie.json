@@ -1,0 +1,36 @@
+{
+    "id": "034",
+    "title": "A Very Intense Fruit Smoothie",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (10 ounce) package frozen mixed berries",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (10 ounce) package frozen mixed berries\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (15 ounce) can sliced peaches, drained",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (15 ounce) can sliced peaches, drained\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 tablespoons honey",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 tablespoons honey\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a blender, combine frozen fruit, canned fruit and honey.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@17:24 / AC\r\n\t\t:ppt ( ing-0 \"frozen fruit\"@25:37 / FOOD )\r\n\t\t:ppt ( ing-1 \"canned fruit\"@39:51 / FOOD )\r\n\t\t:ppt ( ing-2 \"honey\"@56:61 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a blender\"@6:15 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Blend until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Blend\"@3:8 / AC\r\n\t\t:until ( cond-1-0 \"until smooth\"@9:21 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

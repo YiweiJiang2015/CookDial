@@ -1,0 +1,48 @@
+{
+    "id": "141",
+    "title": "Caramelized Apple Bites",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "6 individually wrapped caramels, unwrapped and chopped",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"6 individually wrapped caramels, unwrapped and chopped\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 tablespoons light corn syrup",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 tablespoons light corn syrup\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 apples - peeled, cored and diced",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 apples - peeled, cored and diced\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a medium microwave safe bowl, place the caramels and light corn syrup.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"place\"@36:41 / AC\r\n\t\t:ppt ( ing-0 \"the caramels\"@42:54 / FOOD )\r\n\t\t:ppt ( ing-1 \"light corn syrup\"@59:75 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a medium microwave safe bowl\"@6:34 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Microwave on high heat approximately 30 seconds, until melted.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Microwave\"@3:12 / AC\r\n\t\t:heat ( temp-1-0 \"high heat\"@16:25 / TEMPERATURE )\r\n\t\t:duration ( dur-1-0 \"30 seconds\"@40:50 / DUR )\r\n\t\t:until ( cond-1-0 \"until melted\"@52:64 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place apples in the bowl, and toss until coated with the caramel and light corn syrup mixture.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-2 \"apples\"@9:15 / FOOD )\r\n\t\t:gol ( tool-2-0 \"the bowl\"@19:27 / TOOL )\r\n\t)\r\n\t:inform ( ac-2-1 \"toss\"@33:37 / AC\r\n\t\t:until ( cond-2-0 \"until coated with the caramel and light corn syrup mixture\"@38:96 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Allow to cool before serving.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"cool\"@12:16 / AC\r\n\t\t:duration ( cond-3-0 \"before serving\"@17:31 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

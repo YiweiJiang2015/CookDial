@@ -1,0 +1,198 @@
+{
+    "id": "233",
+    "title": "Chocolate Cheesecake II",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 1/2 cups chocolate cookie crumbs",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 1/2 cups chocolate cookie crumbs\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 tablespoons white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 tablespoons white sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/4 cup butter, melted",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/4 cup butter, melted\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup semisweet chocolate chips",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup semisweet chocolate chips\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/4 cup heavy whipping cream",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/4 cup heavy whipping cream\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "3 (8 ounce) packages cream cheese, softened",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"3 (8 ounce) packages cream cheese, softened\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 cup white sugar\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/3 cup unsweetened cocoa powder",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/3 cup unsweetened cocoa powder\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "3 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"3 eggs\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1 1/2 cups semisweet chocolate chips",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1 1/2 cups semisweet chocolate chips\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/4 cup heavy whipping cream",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/4 cup heavy whipping cream\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F ( 175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@35:48 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Lightly grease a 9 inch springform pan.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"grease\"@11:17 / AC\r\n\t\t:ppt ( tool-1-0 \"a 9 inch springform pan\"@18:41 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) In a small bowl, mix together 1 1/2 cups chocolate wafer crumbs, 2 tablespoons sugar, and melted butter.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"mix\"@20:23 / AC\r\n\t\t:ppt ( ing-0 \"1 1/2 cups chocolate wafer crumbs\"@33:66 / FOOD )\r\n\t\t:loc ( tool-2-0 \"a small bowl\"@6:18 / TOOL )\r\n\t\t:ppt ( ing-1 \"2 tablespoons sugar\"@68:87 / FOOD )\r\n\t\t:ppt ( ing-2 \"melted butter\"@93:106 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Press onto the bottom and 1 1/2 inch up the sides of the prepared 9 inch springform pan.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Press\"@3:8 / AC\r\n\t\t:gol ( \"the bottom\"@14:24 / OTHER )\r\n\t\t:todo ( tool-3-0 \"1 1/2 inch up the sides of the prepared 9 inch springform pan\"@-1:-1 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Bake at 350 degrees F (175 degrees C) for 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Bake\"@3:7 / AC\r\n\t\t:heat ( temp-4-0 \"350 degrees F\"@11:24 / TEMPERATURE )\r\n\t\t:heat ( temp-4-1 \"175 degrees C\"@26:39 / TEMPERATURE )\r\n\t\t:duration ( dur-4-0 \"10 minutes\"@45:55 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Allow to cool.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"cool\"@12:16 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Reduce oven temperature to 325 degrees F (165 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Reduce\"@3:9 / AC\r\n\t\t:ppt ( \"oven temperature\"@10:26 / OTHER )\r\n\t\t:gol ( temp-6-0 \"325 degrees F (165 degrees C)\"@30:59 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) To Make Filling: In a small saucepan, heat 1/4 cup whipping cream and 1/4 cup chocolate chips, stirring constantly, until chips are melted.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"heat\"@41:45 / AC\r\n\t\t:subtask ( purp-7-0 \"To Make Filling\"@3:18 / PURPOSE_CLAUSE )\r\n\t\t:loc ( tool-7-0 \"a small saucepan\"@23:39 / TOOL )\r\n\t\t:ppt ( ing-4 \"1/4 cup whipping cream\"@46:68 / FOOD )\r\n\t\t:ppt ( ing-3 \"1/4 cup chocolate chips\"@73:96 / FOOD )\r\n\t\t:simultaneous ( ac-7-1 \"stirring\"@98:106 / AC )\r\n\t\t:until ( cond-7-0 \"until chips are melted\"@119:141 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) In a large mixing bowl, beat cream cheese and 1 cup of sugar until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"beat\"@27:31 / AC\r\n\t\t:loc ( tool-8-0 \"a large mixing bowl\"@6:25 / TOOL )\r\n\t\t:ppt ( ing-5 \"cream cheese\"@32:44 / FOOD )\r\n\t\t:ppt ( ing-6 \"1 cup of sugar\"@49:63 / FOOD )\r\n\t\t:until ( cond-8-0 \"until smooth\"@64:76 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Add cocoa and beat well.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Add\"@4:7 / AC\r\n\t\t:ppt ( ing-7 \"cocoa\"@8:13 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-9-1 \"beat\"@18:22 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Add eggs and beat on low until just blended.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Add\"@4:7 / AC\r\n\t\t:ppt ( ing-8 \"eggs\"@8:12 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-10-1 \"beat\"@17:21 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:mnr ( \"on low\"@22:28 / OTHER )\r\n\t\t:until ( cond-10-0 \"until just blended\"@29:47 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Stir in 1 teaspoon vanilla and reserved chocolate mixture until blended.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Stir in\"@4:11 / AC\r\n\t\t:ppt ( ing-9 \"1 teaspoon vanilla\"@12:30 / FOOD )\r\n\t\t:ppt ( \"reserved chocolate mixture\"@35:61 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-11-0 \"until blended\"@62:75 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Pour over crust.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Pour\"@4:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"crust\"@14:19 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Bake at 325 degrees F (165 degrees C) for 45 to 50 minutes or until center is almost set.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Bake\"@4:8 / AC\r\n\t\t:heat ( temp-13-0 \"325 degrees F\"@12:25 / TEMPERATURE )\r\n\t\t:heat ( temp-13-1 \"165 degrees C\"@27:40 / TEMPERATURE )\r\n\t\t:duration ( dur-13-0 \"45 to 50 minutes\"@46:62 / DUR )\r\n\t\t:until ( cond-13-0 \"until center is almost set\"@66:92 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) To Make Topping: In a small saucepan, heat 1/4 cup whipping cream and 1 teaspoon vanilla until just before boiling.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"heat\"@42:46 / AC\r\n\t\t:subtask ( purp-14-0 \"To Make Topping\"@4:19 / PURPOSE_CLAUSE )\r\n\t\t:loc ( tool-14-0 \"a small saucepan\"@24:40 / TOOL )\r\n\t\t:ppt ( ing-11 \"1/4 cup whipping cream\"@47:69 / FOOD )\r\n\t\t:ppt ( ing-12 \"1 teaspoon vanilla\"@74:92 / FOOD )\r\n\t\t:until ( cond-14-0 \"until just before boiling\"@93:118 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-15",
+            "text": "15) Stir constantly and be careful not to boil over.",
+            "type": "instruction",
+            "eamr": "( inst-15 / R\r\n\t:inform ( ac-15-0 \"Stir\"@4:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-15-1 \"not to boil over\"@42:51 / AC )\r\n)"
+        },
+        {
+            "id": "inst-16",
+            "text": "16) Have 1 1/2 cups chocolate chips ready in a small bowl.",
+            "type": "instruction",
+            "eamr": "( inst-16 / R\r\n\t:inform ( ac-16-0 \"Have\"@4:8 / AC\r\n\t\t:ppt ( \"1 1/2 cups chocolate chips\"@9:35 / FOOD )\r\n\t\t:loc ( tool-16-0 \"a small bowl\"@45:57 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-17",
+            "text": "17) Pour in the hot cream and stir with a spoon until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-17 / R\r\n\t:inform ( ac-17-1 \"Pour in\"@4:11 / AC\r\n\t\t:ppt ( \"the hot cream\"@12:25 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-17-0 \"stir\"@30:34 / AC\r\n\t\t:instrument ( tool-17-0 \"a spoon\"@40:47 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-17-0 \"until smooth\"@48:60 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-18",
+            "text": "18) Spread over baked cheesecake and refrigerate overnight.",
+            "type": "instruction",
+            "eamr": "( inst-18 / R\r\n\t:inform ( ac-18-0 \"Spread\"@4:10 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"baked cheesecake\"@16:32 / FOOD )\r\n\t)\r\n\t:inform ( ac-18-1 \"refrigerate\"@37:48 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-18-0 \"overnight\"@49:58 / DUR )\r\n\t)\r\n)"
+        }
+    ]
+}

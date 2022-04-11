@@ -1,0 +1,232 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello Hello, what are we gonna cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi there, today we will make those Famous Caramel Cookie Bars.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Great! I love cookies! Are there many ingredients in this recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "No, there are only 4 ingredients.",
+            "bot": true,
+            "annotations": "negate();\r\nsum_ingredient_list();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok good could you tell me the ingredients first then?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Sure the first ingredient is 40 rectangular shortbread cookies.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok good, can you tell me more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "35 individually wrapped caramels, unwrapped.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok good, what is the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "The last two ingredients are 1/4 cup water and 4 cups milk chocolate chips.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok great! Can we start with the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Yes firstl line baking sheets or trays with waxed paper.",
+            "bot": true,
+            "annotations": "affirm();\r\nfetch(inst-0, [tool-0-0]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok I did that, what next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Place the shortbread cookies on a baking sheet or tray.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok, I placed the cookies on the tray. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Good now in a small saucepan over medium-low heat, you should melt the caramels in water, stirring frequently.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok, good I am doing that, the mixture looks good now. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now spoon a thin line of caramel over each cookie.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok I did that, what next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now place cookies in the refrigerator until caramel is set.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok, how long will that take?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Sorry I cannot answer that question. It is ok when the caramel is set.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_duration(cond-3-0);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok no problem, the caramel is set now. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Good now line the baking sheets or trays with waxed paper.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok I did that, what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now melt the chocolate in a double boiler over simmering water.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok the chocolate looks nicely melted now, what next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Now dip the cookies in the chocolate. Do it one at a time. You should tap against the side of the bowl to remove excess.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok good, should I use all of the chocolate mixture?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_use_all;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Yes use all of it.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok good, what next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Now place the cookies on the prepared sheets and let them rest at room temperature several hours.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok good, they are resting now. What now? is there something else I should do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Great. When they are set then you are ready to enjoy your Famous Caramel Cookie Bars.",
+            "bot": true,
+            "annotations": "inform_duration(cond-7-0);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Great! they look delicious :).",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "You are welcome!",
+            "bot": true,
+            "annotations": "thank();"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Thanks bot, see you next week, enjoy your weekend! :).",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; goodbye;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "You as well!",
+            "bot": true,
+            "annotations": "goodbye();"
+        }
+    ]
+}

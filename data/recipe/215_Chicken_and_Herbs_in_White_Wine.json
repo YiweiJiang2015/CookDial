@@ -1,0 +1,156 @@
+{
+    "id": "215",
+    "title": "Chicken and Herbs in White Wine",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 tablespoons olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 tablespoons olive oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (4 pound) chicken, cut into pieces",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (4 pound) chicken, cut into pieces\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "garlic powder to taste",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"garlic powder to taste\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 pound fresh mushrooms, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 pound fresh mushrooms, sliced\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 large onion, diced",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 large onion, diced\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 teaspoon dried basil",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 teaspoon dried basil\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 teaspoon dried oregano",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 teaspoon dried oregano\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 teaspoon dried rosemary",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 teaspoon dried rosemary\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/2 teaspoon dried thyme",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/2 teaspoon dried thyme\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 teaspoon garlic salt",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 teaspoon garlic salt\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1/4 teaspoon black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1/4 teaspoon black pepper\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 teaspoon poultry seasoning",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 teaspoon poultry seasoning\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 cup dry white wine",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 cup dry white wine\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1 (10.5 ounce) can chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1 (10.5 ounce) can chicken broth\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Heat olive oil in a large Dutch oven over medium heat.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"olive oil\"@8:17 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large Dutch oven\"@21:39 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium heat\"@45:56 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Sprinkle chicken with garlic powder, and brown on both sides.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Sprinkle\"@3:11 / AC\r\n\t\t:gol ( ing-1 \"chicken\"@12:19 / FOOD )\r\n\t\t:ppt ( ing-2 \"garlic powder\"@25:38 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"brown\"@44:49 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:mnr ( \"on both sides\"@53:63 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Remove chicken to paper towels.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( \"chicken\"@10:17 / FOOD )\r\n\t\t:gol ( tool-2-0 \"paper towels\"@21:33 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Spoon off chicken fat, and return pan to stove.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Spoon off\"@3:12 / AC\r\n\t\t:ppt ( \"chicken fat\"@13:24 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"return\"@30:36 / AC\r\n\t\t:ppt ( tool-3-0 \"pan\"@37:40 / TOOL )\r\n\t\t:gol ( tool-3-1 \"stove\"@44:49 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Stir in mushrooms and onions; cook, stirring occasionally, until onions are soft.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-3 \"mushrooms\"@11:20 / FOOD )\r\n\t\t:ppt ( ing-4 \"onions\"@25:31 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"cook, stirring\"@33:47 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-4-0 \"until onions are soft\"@62:83 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Remove to a medium bowl.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Remove\"@3:9 / AC\r\n\t\t:gol ( tool-5-0 \"a medium bowl\"@13:26 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) In a separate bowl, mix together basil, oregano, rosemary, and thyme.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"mix\"@23:26 / AC\r\n\t\t:ppt ( ing-5 \"basil\"@36:41 / FOOD )\r\n\t\t:ppt ( ing-6 \"oregano\"@43:50 / FOOD )\r\n\t\t:ppt ( ing-7 \"rosemary\"@52:60 / FOOD )\r\n\t\t:ppt ( ing-8 \"thyme\"@66:71 / FOOD )\r\n\t\t:loc ( tool-6-0 \"a separate bowl\"@6:21 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Season with garlic salt, pepper, and poultry seasoning.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Season\"@3:9 / AC\r\n\t\t:ppt ( ing-9 \"garlic salt\"@15:26 / FOOD )\r\n\t\t:ppt ( ing-10 \"pepper\"@28:34 / FOOD )\r\n\t\t:ppt ( ing-11 \"poultry seasoning\"@40:57 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Stir in wine, and add to onion and mushrooms.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-12 \"wine\"@11:15 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-8-1 \"add\"@21:24 / AC\r\n\t\t:ppt ( \"onion\"@28:33 / FOOD )\r\n\t\t:ppt ( \"mushrooms\"@38:47 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Return chicken to Dutch oven.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Return\"@4:10 / AC\r\n\t\t:ppt ( \"chicken\"@11:18 / FOOD )\r\n\t\t:gol ( tool-9-0 \"Dutch oven\"@22:32 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Pour mushroom mixture and broth over chicken; cover, and cook over low heat until meat begins to fall off the bone, about 1 1/2 hours.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Pour\"@4:8 / AC\r\n\t\t:ppt ( \"mushroom mixture\"@9:25 / FOOD )\r\n\t\t:ppt ( ing-13 \"broth\"@30:35 / FOOD )\r\n\t\t:gol ( \"chicken\"@41:48 / FOOD )\r\n\t)\r\n\t:inform ( ac-10-1 \"cover, and cook\"@50:65 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:heat ( temp-10-0 \"low heat\"@71:79 / TEMPERATURE )\r\n\t\t:until ( cond-10-0 \"until meat begins to fall off the bone\"@80:118 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-10-0 \"1 1/2 hours\"@126:137 / DUR )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "id": "024",
+    "title": "Awesome Turkey Sandwich",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 slices whole wheat bread, toasted (optional)",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 slices whole wheat bread, toasted (optional)\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 tablespoon mayonnaise",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 tablespoon mayonnaise\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 teaspoons Dijon-style prepared mustard",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 teaspoons Dijon-style prepared mustard\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "3 slices smoked turkey breast",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"3 slices smoked turkey breast\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 tablespoons guacamole",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 tablespoons guacamole\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 cup mixed salad greens",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 cup mixed salad greens\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/4 cup bean sprouts",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/4 cup bean sprouts\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/4 avocado - peeled, pitted and sliced",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/4 avocado - peeled, pitted and sliced\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "3 ounces Colby-Monterey Jack cheese, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"3 ounces Colby-Monterey Jack cheese, sliced\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 slices tomato",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 slices tomato\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Spread mayonnaise on one slice of toast, then spread mustard on the other.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Spread\"@3:9 / AC\r\n\t\t:ppt ( ing-1 \"mayonnaise\"@10:20 / FOOD )\r\n\t\t:gol ( ing-0 \"one slice of toast\"@24:42 / FOOD )\r\n\t)\r\n\t:inform ( ac-0-1 \"spread\"@49:55 / AC\r\n\t\t:ppt ( ing-2 \"mustard\"@56:63 / FOOD )\r\n\t\t:gol ( ing-0 \"the other\"@67:76 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Arrange the sliced turkey on one side.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Arrange\"@3:10 / AC\r\n\t\t:ppt ( ing-3 \"the sliced turkey\"@11:28 / FOOD )\r\n\t\t:gol ( \"one side\"@32:40 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Spread guacamole over the turkey.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Spread\"@3:9 / AC\r\n\t\t:ppt ( ing-4 \"guacamole\"@10:19 / FOOD )\r\n\t\t:gol ( \"the turkey\"@25:35 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Pile on the salad greens, bean sprouts, avocado and cheese.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Pile\"@3:7 / AC\r\n\t\t:ppt ( ing-5 \"the salad greens\"@11:27 / FOOD )\r\n\t\t:ppt ( ing-6 \"bean sprouts\"@29:41 / FOOD )\r\n\t\t:ppt ( ing-7 \"avocado\"@43:50 / FOOD )\r\n\t\t:ppt ( ing-8 \"cheese\"@55:61 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Finish with tomato slices, then place the remaining slice of toast on top.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Finish\"@3:9 / AC\r\n\t\t:ppt ( ing-9 \"tomato slices\"@15:28 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"place\"@35:40 / AC\r\n\t\t:ppt ( \"the remaining slice of toast\"@41:69 / FOOD )\r\n\t\t:gol ( \"top\"@73:76 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

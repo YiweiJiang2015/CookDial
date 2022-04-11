@@ -1,0 +1,184 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi! Today we are gonna make Crawfish Etouffee. Do you like crawfish?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes that sounds delicious.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Great! it's a quick recipe with 5 ingredients. Would you like to prepare the ingredients before?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Yes thanks. What are the ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; thank; req_ingredient;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Great the first two ingredients are 1 onion, chopped and a can of tomato soup.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok what is the size of the can?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The size of the tomato can is 10.75 ounces.",
+            "bot": true,
+            "annotations": "inform_amount(ing-1);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok thank you. What else do I need?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"thank; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Next two ingredients are one can of condensed cream of mushroom soup and one can of diced tomatoes with green chile peppers.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Could you also give me the sizes of these cans?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Yes, the mushroom soup can should be 10.75 ounces. And the diced tomato can should be 10 ounces.",
+            "bot": true,
+            "annotations": "inform_amount(ing-2);\r\ninform_amount(ing-3);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok thanks I have both of them. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Good, the last ingredient is one crawfish. It should weight one and a half round and you should peel it.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok I prepared the crawfish. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Good! You can start by taking a large saucepan. You can saute inside the onions on medium heat, until they are clear.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok how long does that take?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "You should saute the onions until they look a bit transparent.",
+            "bot": true,
+            "annotations": "inform_duration(cond-0-0);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok no problem. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Next step is to add tomato soup, mushroom soup, and canned tomatoes to the pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "OK I added them. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Good! You now simmer it for 15 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok I have done that.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Good, you can place the crawfish into the pan and simmer for 25 minutes. After that, your crawfish etouffee is gonna be ready to eat!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok 20 minutes have passed. How do I know that it is ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "You should simmer for 25 minutes.",
+            "bot": true,
+            "annotations": "inform_duration(dur-3-0);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok I have done that. Is there something else to do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "No, that's it! Your are ready to taste it!",
+            "bot": true,
+            "annotations": "negate();\r\nend_recipe();\r\n"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok thanks. It tastes very good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "You are welcome!",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

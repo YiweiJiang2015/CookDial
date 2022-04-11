@@ -1,0 +1,108 @@
+{
+    "id": "235",
+    "title": "Baked Halibut Steaks",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 teaspoon olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 teaspoon olive oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup diced zucchini",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup diced zucchini\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup minced onion",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup minced onion\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 clove garlic, peeled and minced",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 clove garlic, peeled and minced\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 cups diced fresh tomatoes",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 cups diced fresh tomatoes\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 tablespoons chopped fresh basil",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 tablespoons chopped fresh basil\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/4 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/4 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/4 teaspoon ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/4 teaspoon ground black pepper\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "4 (6 ounce) halibut steaks",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"4 (6 ounce) halibut steaks\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/3 cup crumbled feta cheese",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/3 cup crumbled feta cheese\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 450 degrees F (230 degrees C). Lightly grease a shallow baking dish.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"450 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"230 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-0-1 \"grease\"@58:64 / AC\r\n\t\t:ppt ( tool-0-1 \"a shallow baking dish\"@65:86 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Heat olive oil in a medium saucepan over medium heat and stir in zucchini, onion, and garlic. Cook and stir 5 minutes or until tender.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"olive oil\"@8:17 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a medium saucepan\"@21:38 / TOOL )\r\n\t\t:heat ( temp-1-0 \"medium heat\"@44:55 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-1-1 \"stir in\"@60:67 / AC\r\n\t\t:ppt ( ing-1 \"zucchini\"@68:76 / FOOD )\r\n\t\t:ppt ( ing-2 \"onion\"@78:83 / FOOD )\r\n\t\t:ppt ( ing-3 \"garlic\"@89:95 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-2 \"Cook and stir\"@97:110 / AC\r\n\t\t:duration ( dur-1-0 \"5 minutes\"@111:120 / DUR )\r\n\t\t:until ( cond-1-0 \"until tender\"@124:136 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Remove saucepan from heat and mix in tomatoes, basil, salt, and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( tool-2-0 \"saucepan\"@10:18 / TOOL )\r\n\t\t:source ( tool-2-1 \"heat\"@24:28 / TOOL )\r\n\t)\r\n\t:inform ( ac-2-1 \"mix in\"@33:39 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( ing-4 \"tomatoes\"@40:48 / FOOD )\r\n\t\t:ppt ( ing-5 \"basil\"@50:55 / FOOD )\r\n\t\t:ppt ( ing-6 \"salt\"@57:61 / FOOD )\r\n\t\t:ppt ( ing-7 \"pepper\"@67:73 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Arrange halibut steaks in a single layer in the prepared baking dish.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Arrange\"@3:10 / AC\r\n\t\t:ppt ( ing-8 \"halibut steaks\"@11:25 / FOOD )\r\n\t\t:reshape ( \"a single layer\"@29:43 / OTHER )\r\n\t\t:loc ( tool-3-0 \"the prepared baking dish\"@47:71 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Spoon equal amounts of the zucchini mixture over each steak.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Spoon\"@3:8 / AC\r\n\t\t:ppt ( \"the zucchini mixture\"@26:46 / FOOD )\r\n\t\t:gol ( \"each steak\"@52:62 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Top with feta cheese.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Top\"@3:6 / AC\r\n\t\t:ppt ( ing-9 \"feta cheese\"@12:23 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Bake 15 minutes in the preheated oven, or until fish is easily flaked with a fork.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Bake\"@3:7 / AC\r\n\t\t:duration ( dur-6-0 \"15 minutes\"@8:18 / DUR )\r\n\t\t:loc ( tool-6-0 \"the preheated oven\"@22:40 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-6-0 \"until fish is easily flaked with a fork\"@45:84 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

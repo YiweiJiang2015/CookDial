@@ -1,0 +1,130 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. can you tell me how to make Churros?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. first take a small saucepan and put it over medium heat. We will combine 4 ingredients into the pan.",
+            "bot": true,
+            "annotations": "greeting();\r\nsimplify_begin(inst-0);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. done. What are the ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "First 1 cup of water and 2 1/2 tablespoons sugar.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Done. What are the other two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "1/2 teaspoon salt and 2 tablespoons of vegetable oil. Bring it to a boil and then remove from heat.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-2, ing-3]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. it is boiling now and I removed it from the heat.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Now stir in 1 cup all-purpose flour until the mixture forms a ball.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. done. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Now heat 2 quarts of oil for frying in a deep fryer or deep skillet at 190 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "The oil in the deep fryer is now at 190 degrees Celsius. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Now make pipe strips of the dough and put them into the hot oil using a pastry bag.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. done. For how long should I fry them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Fry them until they are golden. Then drain them on paper towels.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. they are all drained now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now combine 1/2 cup white sugar and 1 teaspoon of ground cinnamon.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Yes done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now finally roll the drained churros in the cinnamon and sugar mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. that's done. Are they ready now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Yes enjoy!",
+            "bot": true,
+            "annotations": "affirm();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Great. thank you for the instructions!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 16}"
+        }
+    ]
+}

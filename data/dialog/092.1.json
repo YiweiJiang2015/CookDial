@@ -1,0 +1,400 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello. What are we gonna cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. Today we will make cinnamon rolls I. Are you ready and looking forward to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "I am ready and looking very forward!! Which are the ingredients that I should prepare?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "There are 14 ingredients to prepare.The first two are 1 cup  warm water and 1 egg.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. Which is the size of the egg I should use?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok no problem. Could I have the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The next 2 ingredients are 3 cups bread flour and 1/4 cup white sugar.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok good. Is it ok if I use brown sugar?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Sorry I also not answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok no problem. Can I have the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "The next two ingredients are 3 tablespoons instant powdered milk and 1 1/2 teaspoons salt.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. I've prepared them, what next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Good the next 3 ingredients are 5 tablespoons butter, softened, 1 teaspoon instant yeast and 1/3 cup butter.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);\r\ninform_ingredient(ing-8);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. I've got them. Which ingredients should I prepare next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-9\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "1/2 cup vanilla ice cream, 1/2 cup brown sugar and 1/2 cup butter, softened (for spreading).",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-9);\r\ninform_ingredient(ing-10);\r\ninform_ingredient(ing-11);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok good. Are the ingredients over?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-12\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "There are 2 more ingredients left. 1 tablespoon ground cinnamon and 1/2 cup brown sugar.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_ingredient(ing-12);\r\ninform_ingredient(ing-13);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. done. Is that it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"ing-13\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Yes, that were all the ingredients to prepare. Do you have a bread machine?",
+            "bot": true,
+            "annotations": "affirm();\r\nfetch(inst-0, [tool-0-0]);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Yes, I have one at home! What is the first step of the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now you should put 8 ingredients in the bread machine in the order suggested by the manufacturer. The first 3 ingredients are the water, egg and bread flour.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-0);\r\nsimplify_continue(inst-0, [ing-0, ing-1, ing-2]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok I put them in.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "The other 3 ingredients are white sugar, powdered milk and salt.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-3, ing-4, ing-5]);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok I add them.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "The last two ingredients are 5 tablespoons butter and yeast.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-6, ing-7]);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok done! Which program should I use on the machine?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "You should select the DOUGH setting and then turn on the machine.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. I selected the dough program and turned on the machine. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Ok. In the meantime, take a small saucepan and melt 1/3 cup of butter.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. Can I use margarine instead of butter?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Sorry I cannot answer that question. You should use the butter you prepared before.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok no problem. I melted butter in the saucepan.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Add 1/2 cup brown sugar and the ice cream. Cook it for 2 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok I've done that. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Now lightly grease a 9 x 13 inch pan and pour in caramel into the bottom.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. I've poured the caramel. Is the recipe over?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "No, not yet, we have 9 more instructions to go. Now preheat the oven to 175 degrees Celsius.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Do you know on which program I should preheat the oven?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok no problem. The oven is nicely heated now. What is the next step of the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "When the bread machine has finished cycling then you should remove the dough from pan and turn it out onto a lightly floured surface.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Sorry I didn't understand correctly I think. Should I remove the dough from the bread machine?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "Yes, you should remove it from the machine.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Ok I put the dough out. How should I continue?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "Now pat the dough into a rectangle.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Ok I will. Do you know what should I use to cut it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "Ok no worries. I just cut the dough into a rectangle. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-49",
+            "utterance": "You should spread the dough with softened butter and sprinkle it lightly with cinnamon.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-50",
+            "utterance": "Ok. I sprinkled cinnamon. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-51",
+            "utterance": "Now crumble 1/2 cup brown sugar over the top of the dough.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-52",
+            "utterance": "Ok. I've crumbled sugar. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-53",
+            "utterance": "Roll up, and seal the edge. Then cut it into 12 rolls and place them in the prepared pan of caramel you made before.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);\r\ninform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-54",
+            "utterance": "Ok. How wide should the rolls be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-55",
+            "utterance": "Sorry I cannot answer that question. You should make 12 rolls out of it.",
+            "bot": true,
+            "annotations": "fence();\r\nother();"
+        },
+        {
+            "utt_id": "utt-56",
+            "utterance": "Ok. I cut it into 12 rolls. What should I do with them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-57",
+            "utterance": "Now allow it to rise until it will be doubled in size. It will take about 45 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-58",
+            "utterance": "Ok. 45 mins have passed and the rolls doubled in size. Should I put them in the oven?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-59",
+            "utterance": "Finally bake them in the preheated oven for approximately 20 to 25 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-60",
+            "utterance": "Ok. How do I see that they are ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-61",
+            "utterance": "When they become golden brown they should be ready.",
+            "bot": true,
+            "annotations": "inform_duration(cond-13-0);"
+        },
+        {
+            "utt_id": "utt-62",
+            "utterance": "Ok perfect. They are now golden brown. Should I take them out?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-63",
+            "utterance": "Yes, take them out and enjoy your cinnamon rolls!",
+            "bot": true,
+            "annotations": "affirm();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-64",
+            "utterance": "Mmmh they smell great. Thank you.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-65",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

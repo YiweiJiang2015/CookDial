@@ -1,0 +1,202 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Today we are making Caraway Rye Muffins. Are you ready?",
+            "bot": true,
+            "annotations": "inform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. Great. yes!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Take a large bowl to combine some ingredients.",
+            "bot": true,
+            "annotations": "fetch(inst-0, [tool-0-0]);\r\n"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. how many ingredients should I add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "You should add 5 ingredients. Start by adding the flours and sugar.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-0);\r\nsimplify_continue(inst-0, [ing-0, ing-1, ing-2]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. how much flour and sugar should I add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "For the flours add 1 cup rye flour and 3/4 cup all-purpose. For the sugar add 1/4 cup.",
+            "bot": true,
+            "annotations": "inform_amount(ing-0);\r\ninform_amount(ing-1);\r\ninform_amount(ing-2);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "What is the second type of flour I should add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "All-purpose flour.",
+            "bot": true,
+            "annotations": "repeat(ing-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. thanks. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Next add 2 1/2  teaspoons baking powder and 1/2 teaspoon salt.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-3, ing-4]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. done. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Finally add 1/2 teaspoon caraway seeds.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-5]);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "What kind of seeds? I couldn't understand.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Caraway seeds.",
+            "bot": true,
+            "annotations": "repeat(inst-0, [ing-5]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ah Ok. thanks. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now you can stir in 3/4 cup shredded Cheddar cheese.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. something else to add still?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now you may add 1 beaten egg, 3/4 cup milk and 1/3 cup vegetable oil. Keep stiring until everything is moistened.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. could you repeat the first ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "The first ingredient is 1 beaten egg.",
+            "bot": true,
+            "annotations": "repeat(inst-2, [ing-7]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. thanks. I added all and I am stirring. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Take some muffin cups and add some grease.",
+            "bot": true,
+            "annotations": "fetch(inst-3, [tool-3-0]);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. I have done that. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now you can add the muffin cups two-thirds full.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. I have added the mixture into the cups. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Bake the muffins in an oven at 400 degrees Fahrenheit for about 20-23 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. when do I know that they are ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "You can verify whey are ready by inserting a toothpick and see if it comes out clean.",
+            "bot": true,
+            "annotations": "inform_duration(cond-4-0);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. it looks good. Is there something else I should do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_ongoing;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "You can let them cool down for 5 minutes and place them on a wire rack. That's all. Enjoy it!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. Thanks. it looks nice!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        }
+    ]
+}

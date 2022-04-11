@@ -1,0 +1,72 @@
+{
+    "id": "194",
+    "title": "Cabbage Kielbasa Supper",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "8 cups shredded cabbage",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"8 cups shredded cabbage\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "3 medium potatoes, cut into 1/2 inch cubes",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"3 medium potatoes, cut into 1/2 inch cubes\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 medium onion, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 medium onion, chopped\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 3/4 teaspoons salt",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 3/4 teaspoons salt\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/4 teaspoon pepper",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/4 teaspoon pepper\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 (14.5 ounce) can chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 (14.5 ounce) can chicken broth\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 pounds fully cooked kielbasa or Polish sausage, cut into serving size pieces",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 pounds fully cooked kielbasa or Polish sausage, cut into serving size pieces\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a 5-qt. slow cooker, combine the cabbage, potatoes, onion, salt and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@27:34 / AC\r\n\t\t:ppt ( ing-0 \"the cabbage\"@35:46 / FOOD )\r\n\t\t:ppt ( ing-1 \"potatoes\"@48:56 / FOOD )\r\n\t\t:ppt ( ing-2 \"onion\"@58:63 / FOOD )\r\n\t\t:ppt ( ing-3 \"salt\"@65:69 / FOOD )\r\n\t\t:ppt ( ing-4 \"pepper\"@74:80 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a 5-qt. slow cooker\"@6:25 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Pour broth over all.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( ing-5 \"broth\"@8:13 / FOOD )\r\n\t\t:gol ( \"all\"@19:22 / PRONOUN )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place sausage on top (slow cooker will be full, but cabbage will cook down).",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-6 \"sausage\"@9:16 / FOOD )\r\n\t\t:gol ( \"top\"@20:23 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cover and cook on low for 8-9 hours or until vegetables are tender and sausage is heated through.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cover and cook\"@3:17 / AC\r\n\t\t:heat ( temp-3-0 \"low\"@21:24 / TEMPERATURE )\r\n\t\t:duration ( dur-3-0 \"8-9 hours\"@29:38 / DUR )\r\n\t\t:until ( cond-3-0 \"until vegetables are tender and sausage is heated through\"@42:99 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

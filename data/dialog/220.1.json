@@ -1,0 +1,280 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi! I have a lot of apples which will go bad, do you have any suggestions on how to use them?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi I don't have any recipe for that. But maybe a French Apple Cream Pie comes close? You won't need the apples but replace it by a can with apple pie filling.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Okay, cool! Let's do that!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Ok nice. You will need 10 ingredients.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Great! Could you tell them to me beforehand?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Of course. The first two ingredients are 1 recipe pastry for a 9 inch double crust pie and the 1 (21 ounce) can apple pie filling I was telling you about.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok, I've got those. Could you tell me 3 more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Yes the next ingredients are 1/4 teaspoon ground cinnamon, 1/4 teaspoon ground nutmeg and 1 teaspoon lemon zest.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);\r\ninform_ingredient(ing-4);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Okay, good. Are there any other spices that I should use?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "There are 5 ingredients left and 1 of them is still a spice. It is 1/3 cup white sugar.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok, cool! So now there are 4 ingredients left?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Yes, 1 egg, 1 tablespoon lemon juice, 3 ounces cream cheese and 1/4 cup sour cream.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-5);\r\ninform_ingredient(ing-7);\r\ninform_ingredient(ing-8);\r\ninform_ingredient(ing-9);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok, should I beat the egg?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "This you will have to do later in the recipe. For now just put everything ready in your kitchen.",
+            "bot": true,
+            "annotations": "negate();"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Everything is ready now! How do we start?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Nice. You can first start preheating the oven to 220 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "The oven is getting warm! Is there something I can do while I wait?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_parallel_action;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Good. Yes we can prepare the pie. First you should roll out the pastry shell and let it allow to rest in refrigerator.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "How long should i let it rest?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "I cannot answer that question, sorry. The next step is to line a 9 inch pie pan with the rolled out pastry crust.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "That's ok, no problem! the crust is on the pan now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Ok good. now take a medium bowl. You should combine the pie filling, cinnamon, nutmeg, and lemon rind.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "And should I put all the cinnamon I prepared?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Yes you should use all of it.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Alright! I mixed the filling and the spices together, should I stir it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Good. Yes stir until they are fully combined. Then spread the mixture into the pastry lined pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "They looked well combined, so I spread it on the pie dough. Is it time to bake it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Not yet. Now take a small mixing bowl and combine egg, sugar, lemon juice, cream cheese, and sour cream.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok this looks creamy! What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "You should beat at medium speed until it becomes smooth.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "It does look smooth now!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Ok nice now spread this cheese mixture over the apple mixture. And then place top crust over filling.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok, the pie is closed now! Should I make cuts in the top part?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Great! Yes you may do that. Also seal edges and sprinkle top with sugar.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok, but if that's ok I'd not put sugar, I am on diet...",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Sorry I can't help you with that question. You may aways adapt the recipe to your taste.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok, I didn't put it then! Is it time to bake?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Alright. Yes bake in the preheated oven for 25 to 30 minutes.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Alright, 25 minuted passed! Is there a way I can see that the pie is ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Yes does it look golden brown?",
+            "bot": true,
+            "annotations": "inform_duration(cond-9-0);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Yes it does, should I take it out?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Good yes take it out. And let cool completely before serving.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Great! And when it's cool I can eat it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "Yes that was all! Enjoy your pie. I hope you can do something with your apples still as well.",
+            "bot": true,
+            "annotations": "end_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Thank you!!! I'll give the apples to the dog!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

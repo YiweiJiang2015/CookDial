@@ -1,0 +1,280 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi I would like to eat some chicken again. Do you a have recipe for me?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Sure! I can propose you the grand marnier chicken!",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok sounds great. How many ingredients does the recipe have?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "This recipe has 11 ingredients. Wanna prepare them now?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Yes please.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Cool! You can start by preparing 4 skinless, boneless chicken breast halves, 1 cup of milk and 1 cup of dry bread crumbs.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);\r\ninform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok I will do that. Can I also use almond milk instead?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_substitute;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Sorry, I can't reply to your question...",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok no problem. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Next ingredients are 1 cup of grated Parmesan cheese, 2 tablespoons of chopped fresh parsley and 1 cup olive oil.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-3);\r\ninform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok I have all 3 of them. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "You can now take 1 orange, sliced into round, 1 cup of dry white wine and half a cup orange juice.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);\r\ninform_ingredient(ing-8);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok good I took all the ingredients and prepared them. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-9\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "The last two ingredients are 1 can of chicken broth and one fourth of a cup of brandy-based orange liqueur, like Grand Marnier for example.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-9);\r\ninform_ingredient(ing-10);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok good I still had some Grand Marnier at home.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-10\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Great, I knew you were a grand marnier lover\". Now slice thechicken breasts in thirds horizontally to make 12 thin chicken fillets.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok I made the 12 chicken filets. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Great! now lightly pound each piece, place in a dish, and pour milk over them.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);\r\ninform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok I poured milk over them. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Great, now soak for 10 minutes. When 10 minutes passed take a shallow bowl, stir together the bread crumbs, Parmesan cheese and parsley.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok I stirred them together. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "You should set it aside and take a skillet. Inside the skillet heat olive oil over medium-high heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);\r\ninform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok I have done that.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "It should be a large and heavy skillet.",
+            "bot": true,
+            "annotations": "inform_tool(tool-6-0);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok the olive oil is heated.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Great! Dredge the chicken pieces in the bread crumb mixture, and place in the hot oil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok i. I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "You can now quickly brown the chicken on both sides. And then remove to a buttered 9 by 13 inch baking dish, or similar size.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Yummy yes I have moved them to the baking dish.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Perfect, now season with salt and pepper to taste.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok I have done that. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "You can place the orange slices over the top of the chicken.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok it looks good. What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Now preheat the oven to 350 degrees F, or 175 degrees C.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok the oven is preheated. What should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Drain the oil from the skillet, reserving 1 fourth of a cup. And Heat the reserved oil with the wine over medium heat until reduced by half.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);\r\ninform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok the oil is now reduced by half. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 26}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "You can add in the broth and the orange juice, and again reduce by half again.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-14);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok good I have done that. I reduced it again by half.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-14\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"inst-15\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Good! Now pour the sauce over the chicken, then drizzle with Grand Marinier.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-15);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok it looks good, is it time to eat already?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-15\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-16\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Just a last step! Bake for 20 to 25 minutes in the preheated oven, until it becomes bubbly. And then your food is ready!!",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-16);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok 25 minutes have passed. How do I know if it is ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-16\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-16\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "It will become bubbly!",
+            "bot": true,
+            "annotations": "inform_duration(cond-16-0);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Ok good, it looks very tasty! Thanks.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-16\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-16\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "You are welcome!",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

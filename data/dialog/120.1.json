@@ -1,0 +1,238 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello what are we gonna make today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi today we will make grandmas gnocchi. Do you like gnocchi?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "I love them, they remind me of home! Are we gonna make handmade gnocchi?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Nice, yes we will. You will need 5 ingredients. Do you want me to give them to you?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Great, can you tell me the ingredients first?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Yes, the first two are 6 russet potatoes and 1 cup all-purpose flour.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok good. What are the next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The others are 1 egg, lightly beaten.1 tablespoon olive oil and 1 pinch salt.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);\r\ninform_ingredient(ing-4);\r\n"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok good the ingredients are ready. Can we start with the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Yes let's start. First bring a large pot of salted water to a boil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok it's boiling!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Now drop in potatoes and cook until tender but still firm, about 15 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok 15 mins passed and I think they are ok. Should I take them out?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Yes now drain them, cool slightly, and peel them.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Good they are peeled now. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now season them with salt and then mash potatoes with fork.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok I did it! Should I use all the salt?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_use_all;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Yes. Now place them in a large bowl, and stir in egg and olive oil.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok can I also add butter?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok no problem. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "The next step is to knead in enough flour in order to make a soft dough.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Good! Ok the flour is in. Should I use all of it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Is should be enough to make the dough soft. But keep some in case for later.",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok I'll keep some then! What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "The next step is to make a floured surface and roll the dough into a long rope.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "How should I roll the dough? I didn't understand.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "You should make a long rope out of the dough. If it helps the next step is to cut the rope into 1/2-inch pieces.",
+            "bot": true,
+            "annotations": "repeat(inst-6);\r\ninform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok good, now I get it. Thanks! So I cut the rope in to 1 inch pieces. What should I do now? Can I eat them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "No not yet. We still have to cook them. First bring a large pot of lightly salted water to a boil.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok good, the water is boiling now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Now drop in the gnocchi and cook until they float to the top.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok good! How long will it take?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "It will about 3 to 5 minutes.",
+            "bot": true,
+            "annotations": "inform_duration(dur-9-0);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok great they are floating on the water now. Should I take them out of the pot?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Yes, take them out and serve them with a pasta sauce. I hope you enjoy your grandmas gnocchi.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-10);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Looks good! But what do you mean with pasta sauce?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Sorry I cannot answer that question. You should serve it with pasta sauce.",
+            "bot": true,
+            "annotations": "fence();\r\nrepeat(inst-10);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok no problem! Smells great. Thank you :).",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 16}"
+        }
+    ]
+}

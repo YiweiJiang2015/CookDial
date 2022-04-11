@@ -1,0 +1,156 @@
+{
+    "id": "002",
+    "title": "Cake Doughnuts",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 1/2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 1/2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup white sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 tablespoon baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 tablespoon baking powder\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 teaspoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 teaspoon ground cinnamon\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 teaspoon ground nutmeg",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 teaspoon ground nutmeg\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 cup milk",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 cup milk\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 egg, beaten",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 egg, beaten\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/4 cup butter, melted and cooled",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/4 cup butter, melted and cooled\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 teaspoons vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 teaspoons vanilla extract\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "2 quarts oil for deep frying",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"2 quarts oil for deep frying\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/2 teaspoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/2 teaspoon ground cinnamon\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1/2 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1/2 cup white sugar\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large bowl, stir together the flour, 1/2 cup sugar, baking powder, salt, 1 teaspoon of cinnamon and nutmeg.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"stir\"@20:24 / AC\r\n\t\t:ppt ( ing-0 \"the flour\"@34:43 / FOOD )\r\n\t\t:ppt ( ing-1 \"1/2 cup sugar\"@45:58 / FOOD )\r\n\t\t:ppt ( ing-2 \"baking powder\"@60:73 / FOOD )\r\n\t\t:ppt ( ing-3 \"salt\"@75:79 / FOOD )\r\n\t\t:ppt ( ing-4 \"1 teaspoon of cinnamon\"@81:103 / FOOD )\r\n\t\t:ppt ( ing-5 \"nutmeg\"@108:114 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large bowl\"@6:18 / TOOL )\r\n\t\t:_result ( flour-mixture )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Make a well in the center and pour in the milk, egg, butter, and vanilla.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Make\"@3:7 / AC\r\n\t\t:ppt ( \"a well\"@8:14 / OTHER )\r\n\t\t:loc ( \"the center\"@18:28 / FOOD )\r\n\t\t:_result ( well-in-flour )\r\n\t)\r\n\t:inform ( ac-1-1 \"pour in\"@33:40 / AC\r\n\t\t:ppt ( ing-6 \"the milk\"@41:49 / FOOD )\r\n\t\t:ppt ( ing-7 \"egg\"@51:54 / FOOD )\r\n\t\t:ppt ( ing-8 \"butter\"@56:62 / FOOD )\r\n\t\t:ppt ( ing-9 \"vanilla\"@68:75 / FOOD )\r\n\t\t:gol ( well-in-flour / FOOD )\r\n\t\t:_result ( dough-with-milk-egg )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Mix until well blended.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Mix\"@3:6 / AC\r\n\t\t:ppt ( dough-with-milk-egg / FOOD )\r\n\t\t:until ( cond-2-0 \"until well blended\"@7:25 / CONDITION_CLAUSE )\r\n\t\t:_result ( well-blended-dough )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cover and refrigerate for 1 hour.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( well-blended-dough / FOOD )\r\n\t\t:_result ( covered-dough )\r\n\t)\r\n\t:inform ( ac-3-1 \"refrigerate\"@13:24 / AC\r\n\t\t:duration ( dur-3-0 \"1 hour\"@29:35 / DUR )\r\n\t\t:ppt ( covered-dough / FOOD )\r\n\t\t:_result ( regfrigerated-dough )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Heat oil in a deep heavy skillet or deep-fryer to 370 degrees F (185 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Heat\"@3:7 / AC\r\n\t\t:mnr ( temp-4-0 \"370 degrees F\"@53:66 / TEMPERATURE )\r\n\t\t:mnr ( temp-4-1 \"185 degrees C\"@68:81 / TEMPERATURE )\r\n\t\t:ppt ( \"oil\"@8:11 / FOOD )\r\n\t\t:loc ( \"or\"@-1:-1 / CHOICE\r\n\t\t\t:option ( tool-4-0 \"a deep heavy skillet\"@15:35 / TOOL )\r\n\t\t\t:option ( tool-4-1 \"deep-fryer\"@39:49 / TOOL )\r\n\t\t)\r\n\t\t:_result ( hot-oil )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) On a floured board, roll chilled dough out to 1/2 inch thickness.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"roll\"@23:27 / AC\r\n\t\t:loc ( tool-5-0 \"a floured board\"@6:21 / TOOL )\r\n\t\t:ppt ( regfrigerated-dough \"chilled dough\"@28:41 / FOOD )\r\n\t\t:product ( \"1/2 inch thickness\"@-1:-1 / OTHER )\r\n\t\t:_result ( rolled-dough )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Use a 3 inch round cutter to cut out doughnuts.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"cut out\"@32:39 / AC\r\n\t\t:ppt ( rolled-dough / FOOD )\r\n\t\t:instrument ( tool-6-0 \"a 3 inch round cutter\"@7:28 / TOOL )\r\n\t\t:product ( \"doughnuts\"@40:49 / FOOD )\r\n\t\t:_result ( doughnuts )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Use a smaller cutter to cut holes from center.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"cut\"@27:30 / AC\r\n\t\t:product ( \"holes\"@31:36 / OTHER )\r\n\t\t:ppt ( doughnuts \"center\"@42:48 / FOOD )\r\n\t\t:instrument ( tool-7-0 \"a smaller cutter\"@7:23 / TOOL )\r\n\t\t:_result ( hollowed-doughnuts )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Fry doughnuts in hot oil until golden brown, turning once.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Fry\"@3:6 / AC\r\n\t\t:ppt ( hollowed-doughnuts \"doughnuts\"@7:16 / FOOD )\r\n\t\t:loc ( hot-oil \"hot oil\"@20:27 / FOOD )\r\n\t\t:until ( cond-8-0 \"until golden brown\"@28:46 / CONDITION_CLAUSE )\r\n\t\t:simultaneous ( ac-8-1 \"turning\"@48:55 / AC\r\n\t\t\t:ppt ( hollowed-doughnuts / FOOD )\r\n\t\t)\r\n\t\t:_result ( fried-doughnuts )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Remove from oil to drain on paper plates.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Remove\"@4:10 / AC\r\n\t\t:source ( hot-oil \"oil\"@16:19 / FOOD )\r\n\t\t:ppt ( hollowed-doughnuts / FOOD )\r\n\t\t:prp ( purp-9-0 \"to drain on paper plates\"@20:44 / PURPOSE_CLAUSE )\r\n\t\t:_result ( drained-doughnuts )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Combine the remaining 1/2 teaspoon cinnamon and 1/2 cup sugar in a large resealable bag.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n   :inform ( ac-10-0 \"Combine\"@4:11 / AC\r\n      :ppt ( ing-11 \"the remaining 1/2 teaspoon cinnamon\"@12:47 / FOOD )\r\n      :ppt ( ing-12 \"1/2 cup sugar\"@52:65 / FOOD )\r\n      :loc ( tool-10-0 \"a large resealable bag\"@69:91 / TOOL )\r\n\t:_result bag-with-cinnamon-sugar\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Place a few warm donuts into the bag at a time, seal and shake to coat.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Place\"@4:9 / AC\r\n\t\t:ppt ( drained-doughnuts \"a few warm donuts\"@10:27 / FOOD )\r\n\t\t:gol ( bag-with-cinnamon-sugar \"the bag\"@33:40 / TOOL )\r\n\t\t:_result ( doughnuts-bag )\r\n\t)\r\n\t:inform ( ac-11-1 \"seal\"@52:56 / AC\r\n\t\t:ppt ( doughnuts-bag / TOOL )\r\n\t\t:_result ( sealed-bag )\r\n\t)\r\n\t:inform ( ac-11-2 \"shake\"@61:66 / AC\r\n\t\t:ppt ( sealed-bag / TOOL )\r\n\t\t:prp ( purp-11-0 \"to coat\"@67:74 / PURPOSE_CLAUSE )\r\n\t\t:_result ( FINAL_PRODUCT )\r\n\t)\r\n)"
+        }
+    ]
+}

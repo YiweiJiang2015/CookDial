@@ -1,0 +1,126 @@
+{
+    "id": "053",
+    "title": "Banana Orange Bars",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 cups mashed ripe bananas",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 cups mashed ripe bananas\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 2/3 cups sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 2/3 cups sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup vegetable oil\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "4 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"4 eggs\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 teaspoons ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 teaspoons ground cinnamon\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 teaspoons baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 teaspoons baking powder\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 teaspoon baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 teaspoon baking soda\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/4 cup butter or margarine, softened",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/4 cup butter or margarine, softened\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "3 cups confectioners' sugar",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"3 cups confectioners' sugar\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/4 cup orange juice",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/4 cup orange juice\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1/2 teaspoon grated orange peel",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1/2 teaspoon grated orange peel\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a mixing bowl, beat bananas, sugar, oil and eggs until well blended.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"beat\"@21:25 / AC\r\n\t\t:until ( cond-0-0 \"until well blended\"@55:73 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-0-0 \"a mixing bowl\"@6:19 / TOOL )\r\n\t\t:ppt ( ing-0 \"bananas\"@26:33 / FOOD )\r\n\t\t:ppt ( ing-1 \"sugar\"@35:40 / FOOD )\r\n\t\t:ppt ( ing-2 \"oil\"@42:45 / FOOD )\r\n\t\t:ppt ( ing-3 \"eggs\"@50:54 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Combine dry ingredients; fold into the banana mixture until well mixed.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( \"dry ingredients\"@11:26 / FOOD\r\n\t\t\t:ref ( ing-4 )\r\n\t\t\t:ref ( ing-5 )\r\n\t\t\t:ref ( ing-6 )\r\n\t\t\t:ref ( ing-7 )\r\n\t\t\t:ref ( ing-8 )\r\n\t\t)\r\n\t)\r\n\t:inform ( ac-1-1 \"fold\"@28:32 / AC\r\n\t\t:ppt ( \"the banana mixture\"@38:56 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-1-0 \"until well mixed\"@57:73 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Spread over bars.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Spread\"@3:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-2-0 \"bars\"@15:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Pour into a greased 15-in. baking pan.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-3-0 \"a greased 15-in. baking pan\"@13:40 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Bake at 350 degrees F for 25-30 minutes; cool.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-4-0 \"25-30 minutes\"@29:42 / DUR )\r\n\t\t:heat ( temp-4-0 \"350 degrees F\"@11:24 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-4-1 \"cool\"@44:48 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) For frosting, cream butter and sugar in a mixing bowl.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"cream\"@17:22 / AC\r\n\t\t:ppt ( ing-9 \"butter\"@23:29 / FOOD )\r\n\t\t:ppt ( ing-10 \"sugar\"@34:39 / FOOD )\r\n\t\t:loc ( tool-5-0 \"a mixing bowl\"@43:56 / TOOL )\r\n\t\t:subtask ( \"For frosting\"@3:15 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Add orange juice and peel and beat until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-11 \"orange juice\"@7:19 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( ing-12 \"peel\"@-1:-1 / FOOD )\r\n\t)\r\n\t:inform ( ac-6-1 \"beat\"@33:37 / AC\r\n\t\t:until ( cond-6-0 \"until smooth\"@38:50 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

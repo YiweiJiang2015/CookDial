@@ -1,0 +1,232 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi! Today Fab Summer Blackened Chicken Salad is on the menu! Sounds tasty?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Hm, yes I love salads. Is it  a long recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "I'd say it's a medium recipe with 12 ingredients. Are you ready to start to prepare the ingredients?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok good, yes what are the first two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_ingredient;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Alrighty! Here are the first two: 2 tablespoons olive oil, divided, and 2 skinless, boneless chicken breast halves.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok how big should the chicken be? Ok thanks. I got them, what is next.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The breast halves should weight 6 ounces each.",
+            "bot": true,
+            "annotations": "inform_amount(ing-1);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok thanks. I got them, what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"thank; confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Next two are 1 and a half tablespoons Cajun seasoning and 2 cloves of garlic, crushed.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok I have them ready. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Next ingredients are 1 tablespoon balsamic vinegar and 1 teaspoon Dijon mustard.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok could I use English mustard as well?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "It's always up to you to replace or add an ingredient following your intuition, but I can't guarantee that it's gonna work :).",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok no problem,  what are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "The next two ingredients to prepare are salt and black pepper to taste and 2 cups of mixed salad greens.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Alright, I got it. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now you should take 1 cup of arugula and 1 avocado - peeled, pitted, and diced.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-8);\r\ninform_ingredient(ing-9);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok I prepared both ingredients. Are there more ingredients left?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-10\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Yes, we just miss the last two! They are 12 oil-packed sun-dried tomatoes, drained and sliced and half a cup of sliced black olives.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_ingredient(ing-10);\r\ninform_ingredient(ing-11);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Could you repeat the first ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-10\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "The ingredient is oil-packed sun-dried tomatoes. The quantity is 12. They should be drained and sliced.",
+            "bot": true,
+            "annotations": "repeat(ing-10);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok good, I have all the ingredients prepared.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-10\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Good! Let's start! Warm 1 tablespoon of olive oil in a large skillet over medium heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok the oil is heated, what should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now you should season both sides of the chicken with Cajun seasoning, and place in hot oil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok for how long should I fry them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Stir in crushed garlic and cook chicken 5 minutes on each side, or until juices run clear.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok the chicken looks good now. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "You can now remove the chicken from the skillet, drain on paper towels, cool slightly, and dice. When you did that you can discard oil and garlic.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "OK I have diced the chicken. What is the next step ?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Nice! You can now take a small bowl and mix inside the remaining olive oil, balsamic vinegar, mustard, salt, and pepper.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok I have done that. What should I do with the mixture?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "You prepare a large bowl, and toss the dressing in with the mixed salad greens, arugula, avocado, sun-dried tomatoes, and olives.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok I have done that, it looks nice. Can I eat it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "You should now top it with diced chicken and serve it!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);\r\nend_recipe();"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "It looks even better with the chicken. Thanks for the instructions.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Nice, enjoy!",
+            "bot": true,
+            "annotations": "enjoy();"
+        }
+    ]
+}

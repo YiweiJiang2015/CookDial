@@ -1,0 +1,268 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi! Today we are going to make coq au vin all'Italiana! It's an Italian recipe with 13 ingredients, are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\nsum_ingredient_list();\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Sounds good, yes I'm ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Nice! do you want to prepare the ingredients beforehand?",
+            "bot": true,
+            "annotations": "propose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Yes please.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Great! the first two ingredients are 4 pounds of dark meat chicken pieces and 1 tablespoon vegetable oil.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok I have them. Should I do something with the chicken? Prepare?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Not yet, the next two ingredients are 5 cloves of crushed garlic and half a cup all-purpose flour.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Alright, Ok I have them ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Good, the next two are 1 teaspoon poultry seasoning and 3 links of sweet Italian sausage, sliced.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok what are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "The next two ingredients are 1 cup of chopped onions and 3 carrots, sliced.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok good I have them as well. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Good! next two ingredients are half a  pound of fresh mushrooms, sliced and half a teaspoon dried rosemary.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-8);\r\ninform_ingredient(ing-9);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok can I also use fresh rosemary instead?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "I don't really know, but you can always follow your instinct and change one of the ingredients.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok thanks, what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"thank;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-10\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "No problem! Next two ingredients are 1 cup red wine 1 can whole peeled tomatoes and salt and pepper to taste.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-10);\r\ninform_ingredient(ing-11);\r\ninform_ingredient(ing-12);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok how big should the can be?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-12\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "The can should be 14.5 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-11);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok are there more ingredients left?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "No, there are no more ingredients left, do you want to start with the recipe?",
+            "bot": true,
+            "annotations": "negate();\r\npropose_start_instruction();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Good yes let's start!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Great! take a large skillet, and heat the oil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok it looks ok now. What should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Good! you can now add half of the garlic.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok the garlic is in the skillet. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Good, next is to season the flour with poultry seasoning.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok I have done that.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Good! now dredge the chicken parts in flour, then brown in the skillet for 4 or 5 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok how do I know when it is done?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Sorry, I cannot reply to your question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Next add the sausage, and saute for a few minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok it looks ok now. What should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Good! Now add onion, carrots, mushrooms, rosemary and the remaining garlic.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok for how long should I cook it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "You should first stir all together, then add wine and tomatoes, and then stir again. Then cover and let simmer over low heat for 25 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);\r\ninform_instruction(inst-7);\r\ninform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok good, I have let it simmer for 25 minutes. Is it ready now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Not yet. You now season with salt and pepper to taste and let simmer for another 10 minutes.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok good it tasted good now. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Good, you can now let cool covered for 10 minutes, then serve.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok thanks it looks cool!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "Great! Enjoy!!!",
+            "bot": true,
+            "annotations": "enjoy();"
+        }
+    ]
+}

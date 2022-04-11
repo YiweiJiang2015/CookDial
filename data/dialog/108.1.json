@@ -1,0 +1,382 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello! What are we gonna cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi today we will make baked fake steak with gravy. You will need 12 ingredients. Do you want me to give them so you can prepare?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\nsum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes sure! Sounds good. What is a fake steak?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Sorry, your question is beyond my knowledge.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Oh! I guess it is vege-food. So could I ask the first two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "First take 3 pounds ground beef and 17 saltine crackers which should be finely crushed.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok I took them! What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "You need 1/2 cup milk, 1 1/2 teaspoons garlic powder and 1 1/2 teaspoons onion powder.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);\r\ninform_ingredient(ing-4);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok good. I don't have onion powder. Can I use onions.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok no problem! Are there more ingredients that I should prepare?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Yes, you should take 1/4 teaspoon ground black pepper, 1 pinch salt, or to taste and 1/2 cup all-purpose flour.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-5);\r\ninform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok good. Is it ok if I use whole grain flour?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok no problem. Are the ingredients over?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Not yet. We have 4 more ingredients to go. You should take 1 tablespoon vegetable oil and 1 1/2 cups water.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_ingredient(ing-8);\r\ninform_ingredient(ing-9);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok I took them. Can I also have the last two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-10\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Finally take 1 can condensed beef and mushroom soup and 1 packet dry brown gravy mix.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-10);\r\ninform_ingredient(ing-11);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. Could I have the quantities for the packages?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-10\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "They should be a 10.75 ounce can and a 0.75 ounce packet.",
+            "bot": true,
+            "annotations": "inform_amount(ing-10);\r\ninform_amount(ing-11);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok good! Which tools do I need for the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_tool;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-10\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "You will have to do a lot of different instructions. I will tell you what to take with every instruction.",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok good! How should I start?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "You should take a large bowl and mix together the ground beef, saltine crackers and milk.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok I did it! What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now you should season it with garlic powder, onion powder, salt and pepper. Mix it until well blended.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok good. I did it. Can I also add a bit of oil?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Sorry I cannot answer your question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok no problem! What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Now line a 10x15 inch jellyroll pan with waxed paper and press the beef mixture firmly into the pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. I pressed the beef inside! What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "You should cover it with plastic wrap and refrigerate 8 to 10 hours, or overnight.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok, I'll go to sleep then. Good morning, I took it out of the fridge now. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "I hope you slept well. Now preheat the oven to 175 degrees Celsius. We will do some other things in the meantime.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. I preheat the oven. What should I do in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_parallel_action;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "You should remove the plastic wrap from the meat and rub flour over the top side of the beef.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. I did it!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Put it onto waxed paper, and rub flour on the other side as well.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok. I coated it onto wax paper and rubbed flour. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Now cut it into pieces with for instance a pizza cutter.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok good. How big should the pieces be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok. So what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "Now you should heat the oil in a large heavy skillet over medium-high heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Ok. I heated the oil.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "Fry the meat until it becomes brown on each side. You should turn only once.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Should I put the meat inside?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "Yes.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "Ok I did it. How long should I cook it for?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-49",
+            "utterance": "It is ready when it becomes brown on each side.",
+            "bot": true,
+            "annotations": "inform_duration(cond-10-0);"
+        },
+        {
+            "utt_id": "utt-50",
+            "utterance": "Ok can I cook it a bit more? I like it crunchy.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-51",
+            "utterance": "Sorry I cannot answer that question. Now put them on a 9x13 inch baking dish and take a medium bowl.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_instruction(inst-11);\r\nfetch(inst-12, [tool-12-0]);"
+        },
+        {
+            "utt_id": "utt-52",
+            "utterance": "Sorry I didnt understand the second part of the instructions.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-53",
+            "utterance": "You should take a medium bowl. We will add some ingredients in there.",
+            "bot": true,
+            "annotations": "repeat(inst-12, [tool-12-0]);\r\nsimplify_begin(inst-12);"
+        },
+        {
+            "utt_id": "utt-54",
+            "utterance": "Ok I did it. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-55",
+            "utterance": "Now mix together the water, condensed soup, and gravy mix in the bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-56",
+            "utterance": "Ok I mixed them. What should I do with the mixture?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 26}"
+        },
+        {
+            "utt_id": "utt-57",
+            "utterance": "Pour the mixture over the meat in the baking dish.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-58",
+            "utterance": "Ok. It's cool enough now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-59",
+            "utterance": "Now you should cover the dish loosely with aluminum foil and then bake it for 1 hour in the preheated oven.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-14);\r\ninform_instruction(inst-15);"
+        },
+        {
+            "utt_id": "utt-60",
+            "utterance": "What is the next step? Is the dish ready? Ok I will! I baked it for one hour in the oven. Should I take it out??",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-15\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-16\", \"tracker_requested_step_num\": 29}"
+        },
+        {
+            "utt_id": "utt-61",
+            "utterance": "Ok nice. Yes, you should take it out. Serve the steak and gravy with potatoes, rice, or noodles. Enjoy!",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-16);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-62",
+            "utterance": "Mmmh looks very good! thank you.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-16\", \"tracker_completed_step_num\": 29, \"tracker_requested_step\": \"inst-16\", \"tracker_requested_step_num\": 29}"
+        }
+    ]
+}

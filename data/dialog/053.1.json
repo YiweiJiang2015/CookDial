@@ -1,0 +1,226 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. today we are making banana Orange Bars.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. nice, what is the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Take a mixing bowl.",
+            "bot": true,
+            "annotations": "fetch(inst-0, [tool-0-0]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Alright. What should I add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "You should add 4 ingredients. Start with 2 cups mashed ripe bananas and 1 2/3 cups sugar.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-0);\r\nsimplify_continue(inst-0, [ing-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. I have both added them. What are the next two?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The next two are 1 cup vegetable oil and 4 eggs.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-2, ing-3]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. I also added them. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Now beat everything until well blended.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-0);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Combine the dry ingredients into the banana mixture. Start with 2 cups all purpose flour and 2 teaspoons ground cinnamon.",
+            "bot": true,
+            "annotations": "simplify_begin(ac-1-0);\r\nsimplify_continue(ac-1-0, [ing-4, ing-5]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. both added into the mixture. What are the next dry ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Next add 2 teaspoons baking powder and 1 teaspoon baking soda.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-1-0, [ing-6, ing-7]);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. I also added them. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Finally add 1 teaspoon salt.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-1-0, [ing-8]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. added as well. What should I do with the mixture?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Fold the dry mixture into the banana mix you just made.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-1);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. Done. What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Spread it over bars.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. I did it. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Pour the mixture into a greased 15 inch baking pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. on what heat should it be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_temperature;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Bake it at 350 degrees Fahrenheit for about 25-30 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. When do I know if they are ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. I have baked them for 30 minutes. Is there something else I should do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Now we will create the frosting.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-5);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. What should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Add 1/4 cup butter softened and 3 cups confectioners' sugar in a mixing bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-5-0);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. I added them in the bowl. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Next add 1/4 cup orange juice and 1/2 teaspoon grated orange peel.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-6-0);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. both added as well. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Finally beat until smooth.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-6-1);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. it's smooth now. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "That's all. Enjoy Banana Orange Bars.",
+            "bot": true,
+            "annotations": "end_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. thanks it looks nice.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 20}"
+        }
+    ]
+}

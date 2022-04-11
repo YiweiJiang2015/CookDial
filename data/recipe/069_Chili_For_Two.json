@@ -1,0 +1,66 @@
+{
+    "id": "069",
+    "title": "Chili For Two",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/4 pound ground beef",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/4 pound ground beef\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/4 cup chopped onion",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/4 cup chopped onion\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 garlic clove, minced",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 garlic clove, minced\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 (15.5 ounce) can chili beans, undrained",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 (15.5 ounce) can chili beans, undrained\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 (14.5 ounce) can diced tomatoes, undrained",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 (14.5 ounce) can diced tomatoes, undrained\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 1/2 teaspoons chili powder",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 1/2 teaspoons chili powder\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 teaspoon ground cumin",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 teaspoon ground cumin\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a saucepan, cook beef, onion and garlic over medium heat until meat is no longer pink; drain.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"cook\"@18:22 / AC\r\n\t\t:ppt ( ing-0 \"beef\"@23:27 / FOOD )\r\n\t\t:ppt ( ing-1 \"onion\"@29:34 / FOOD )\r\n\t\t:ppt ( ing-2 \"garlic\"@39:45 / FOOD )\r\n\t\t:heat ( temp-0-0 \"medium heat\"@51:62 / TEMPERATURE )\r\n\t\t:until ( cond-0-0 \"until meat is no longer pink\"@63:91 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-0-0 \"a saucepan\"@6:16 / TOOL )\r\n\t)\r\n\t:inform ( ac-0-1 \"drain\"@93:98 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Stir in the remaining ingredients; bring to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( \"the remaining ingredients\"@11:36 / FOOD\r\n\t\t\t:ref ( ing-3 )\r\n\t\t\t:ref ( ing-4 )\r\n\t\t\t:ref ( ing-5 )\r\n\t\t\t:ref ( ing-6 )\r\n\t\t)\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"boil\"@49:53 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Reduce heat; cover and simmer for 10-15 minutes or until heated through.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Reduce\"@3:9 / AC\r\n\t\t:ppt ( tool-2-0 \"heat\"@10:14 / TOOL )\r\n\t)\r\n\t:inform ( ac-2-1 \"cover\"@16:21 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-2 \"simmer\"@26:32 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-2-0 \"10-15 minutes\"@37:50 / DUR )\r\n\t\t:until ( cond-2-0 \"until heated through\"@54:74 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "id": "245",
+    "title": "Gingered Mango Salsa",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup chopped peeled mango",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup chopped peeled mango\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/4 cup chopped red onion",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/4 cup chopped red onion\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/4 cup minced fresh cilantro",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/4 cup minced fresh cilantro\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup lime juice",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup lime juice\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 tablespoons minced fresh mint",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 tablespoons minced fresh mint\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 tablespoon minced fresh ginger root",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 tablespoon minced fresh ginger root\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 teaspoon olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 teaspoon olive oil\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/4 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/4 teaspoon salt\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a bowl, combine all ingredients.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@14:21 / AC\r\n\t\t:ppt ( \"all ingredients\"@22:37 / FOOD\r\n\t\t\t:ref ( ing-0 )\r\n\t\t\t:ref ( ing-1 )\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t\t:ref ( ing-4 )\r\n\t\t\t:ref ( ing-5 )\r\n\t\t\t:ref ( ing-6 )\r\n\t\t\t:ref ( ing-7 )\r\n\t\t)\r\n\t\t:loc ( tool-0-0 \"a bowl\"@6:12 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Let stand for 30 minutes before serving.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"stand\"@7:12 / AC\r\n\t\t:ppt (NULL / FOOD )\r\n\t\t:duration ( dur-1-0 \"30 minutes\"@17:27 / DUR )\r\n\t\t:duration ( cond-1-0 \"before serving\"@28:42 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

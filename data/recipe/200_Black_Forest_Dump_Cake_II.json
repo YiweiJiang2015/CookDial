@@ -1,0 +1,84 @@
+{
+    "id": "200",
+    "title": "Black Forest Dump Cake II",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (21 ounce) can cherry pie filling",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (21 ounce) can cherry pie filling\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (16.5 ounce) can pitted dark sweet cherries",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (16.5 ounce) can pitted dark sweet cherries\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 (18.25 ounce) package chocolate cake mix",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 (18.25 ounce) package chocolate cake mix\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 cup chopped walnuts",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 cup chopped walnuts\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "3/4 cup butter, cut into pieces",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"3/4 cup butter, cut into pieces\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 375 degrees F (190 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"375 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"190 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Spray 9x13 baking dish with cooking spray.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Spray\"@3:8 / AC\r\n\t\t:gol ( tool-1-0 \"9x13 baking dish\"@9:25 / TOOL )\r\n\t\t:ppt ( \"cooking spray\"@31:44 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Dump cherry pie filling into dish and spread evenly.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Dump\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"cherry pie filling\"@8:26 / FOOD )\r\n\t\t:gol ( tool-2-0 \"dish\"@32:36 / TOOL )\r\n\t)\r\n\t:inform ( ac-2-1 \"spread\"@41:47 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Repeat with cherries, including juice.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n   :inform ( \"Repeat\"@3:9 / AC\r\n      :ppt ( ing-1 \"cherries\"@15:23 / FOOD )\r\n      :ppt ( \"juice\"@35:40 / FOOD )\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Sprinkle cake mix over the top - DO NOT STIR.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Sprinkle\"@3:11 / AC\r\n\t\t:ppt ( ing-2 \"cake mix\"@12:20 / FOOD )\r\n\t\t:gol ( \"the top\"@26:33 / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"NOT STIR\"@39:47 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Sprinkle with chopped nuts.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Sprinkle\"@3:11 / AC\r\n\t\t:ppt ( ing-3 \"chopped nuts\"@17:29 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Distribute butter pieces evenly over the top.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Distribute\"@3:13 / AC\r\n\t\t:ppt ( ing-4 \"butter pieces\"@14:27 / FOOD )\r\n\t\t:loc ( \"the top\"@40:47 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Bake in the preheated oven for 45 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-7-0 \"the preheated oven\"@11:29 / TOOL )\r\n\t\t:duration ( dur-7-0 \"45 minutes\"@34:44 / DUR )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,208 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi bot, what do we make today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi, today we are making Corned Beef Hash!",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Sounds great. How many ingredients do I need to prepare?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "You need 4 ingredients.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. Just tell me one by one pls.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "The first ingredient we need are six potatoes.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "I got the potatoes. Next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The second one is 1 can or (12 ounce) of corned beef.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. How large is the can?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "12 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Thanks. The next ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"thank; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "1 medium onion.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "The last ingredient you need is 1 cup of beef broth.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Great. I have them all. How should I start?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "First, peel and dice the 6 potatoes.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-0]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. I did it. Then?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Cut the corned beef into chunks if necessary.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-1]);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "How big should the chunk be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "I cannot answer that. You can choose it yourself.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Alright, what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Next, you need to the chop the medium onion.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-2]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Easy job. What to do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now, in a large deep skillet, over medium heat, combine the potatoes, corned beef, onion, and beef broth.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. I add the three to the skillet. Shall I keep heating it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Yes, cover and simmer until potatoes are of mashing consistency, and the liquid is almost gone.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. Do you have a specific time for me to wait?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Sorry I cannot answer that. You have will have to wait until the liquid is almost gone and the potatoes are of mashing conistency.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_duration(cond-1-0);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Alright, I think it is done. Next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Mix well, and serve.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "That's it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "That's it. Enjoy your meal!",
+            "bot": true,
+            "annotations": "end_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Fine! Goodbye!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"goodbye;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Goodbye!",
+            "bot": true,
+            "annotations": "goodbye();"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "id": "054",
+    "title": "Buttermilk Shake",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 pint vanilla ice cream",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 pint vanilla ice cream\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup buttermilk",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup buttermilk\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 teaspoon grated lemon peel",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 teaspoon grated lemon peel\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 drop lemon extract",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 drop lemon extract\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Place all ingredients in a blender container.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( \"all ingredients\"@9:24 / FOOD\r\n\t\t\t:ref ( ing-0 )\r\n\t\t\t:ref ( ing-1 )\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t\t:ref ( ing-4 )\r\n\t\t)\r\n\t\t:gol ( tool-0-0 \"a blender container\"@28:47 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Cover and process on high until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"process\"@13:20 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:heat ( temp-1-0 \"high\"@24:28 / TEMPERATURE )\r\n\t\t:until ( cond-1-0 \"until smooth\"@29:41 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Pour into glasses.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-2-0 \"glasses\"@13:20 / TOOL )\r\n\t)\r\n)"
+        }
+    ]
+}

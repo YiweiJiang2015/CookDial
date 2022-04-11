@@ -1,0 +1,114 @@
+{
+    "id": "072",
+    "title": "Classic Peanut Butter Cookies",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup unsalted butter",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup unsalted butter\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup crunchy peanut butter",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup crunchy peanut butter\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup white sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 cup packed brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 cup packed brown sugar\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 eggs\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 1/2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 1/2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 teaspoon baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 teaspoon baking powder\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 1/2 teaspoons baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 1/2 teaspoons baking soda\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Cream together butter, peanut butter and sugars.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Cream\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"butter\"@18:24 / FOOD )\r\n\t\t:ppt ( ing-1 \"peanut butter\"@26:39 / FOOD )\r\n\t\t:ppt ( \"sugars\"@44:50 / FOOD\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Beat in eggs.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Beat in\"@3:10 / AC\r\n\t\t:ppt ( ing-4 \"eggs\"@11:15 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) In a separate bowl, sift together flour, baking powder, baking soda, and salt.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"sift\"@23:27 / AC\r\n\t\t:ppt ( ing-5 \"flour\"@37:42 / FOOD )\r\n\t\t:ppt ( ing-6 \"baking powder\"@44:57 / FOOD )\r\n\t\t:ppt ( ing-8 \"baking soda\"@59:70 / FOOD )\r\n\t\t:ppt ( ing-7 \"salt\"@76:80 / FOOD )\r\n\t\t:loc ( tool-2-0 \"a separate bowl\"@6:21 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Stir into batter.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n   :inform ( \"Stir\"@3:7 / AC\r\n      :ppt( NULL / FOOD )\r\n      :gol ( \"batter\"@13:19 / FOOD )\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Put batter in refrigerator for 1 hour.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Put\"@3:6 / AC\r\n\t\t:ppt ( \"batter\"@7:13 / FOOD )\r\n\t\t:gol ( tool-4-0 \"refrigerator\"@17:29 / TOOL )\r\n\t\t:duration ( dur-4-0 \"1 hour\"@34:40 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Roll into 1 inch balls and put on baking sheets.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Roll\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:reshape ( \"1 inch balls\"@13:25 / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"put\"@30:33 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-5-0 \"baking sheets\"@37:50 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Flatten each ball with a fork, making a criss-cross pattern.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Flatten\"@3:10 / AC\r\n\t\t:ppt ( \"each ball\"@11:20 / FOOD )\r\n\t\t:instrument ( tool-6-0 \"a fork\"@26:32 / TOOL )\r\n\t)\r\n\t:inform ( ac-6-1 \"making\"@34:40 / AC\r\n\t\t:ppt ( \"a criss-cross pattern\"@41:62 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Bake in a preheated 375 degrees F oven for about 10 minutes or until cookies begin to brown.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Bake\"@3:7 / AC\r\n\t\t:loc ( tool-7-0 \"a preheated 375 degrees F oven\"@11:41 / TOOL )\r\n\t\t:duration ( dur-7-0 \"about 10 minutes\"@46:62 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-7-0 \"until cookies begin to brown\"@66:94 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Do not over-bake.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"over-bake\"@10:19 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:polarity ( - )\r\n\t)\r\n)"
+        }
+    ]
+}

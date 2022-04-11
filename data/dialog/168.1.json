@@ -1,0 +1,304 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello, what are we going to cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi, today we will make a banana kiwi strawberry tart. There are 13 ingredients. Do you want to prepare them?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\nsum_ingredient_list();\r\npropose_list_ingredients();\r\n"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes please!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "The first two ingredients are 1/2 cup all-purpose flour and 1 tablespoon light brown sugar.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok, good, I have them, which are the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "The next ingredients are 1/4 teaspoon ground cinnamon, 1/8 teaspoon salt and 2 tablespoons unsalted butter.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);\r\ninform_ingredient(ing-4);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok, good, could you tell me the other ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Next are 1 and 1/2 tablespoons ice water, 1 cup skim milk and 3 egg whites.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-5);\r\ninform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Good, could I use Allmond milk instead?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Sorry I cannot answer that question. Next are 2 tablespoons white sugar and 1/4 teaspoon vanilla extract.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_ingredient(ing-8);\r\ninform_ingredient(ing-9);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Okay, good. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-10\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "1 banana and 1 kiwi. Both peeled and sliced.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-10);\r\ninform_ingredient(ing-11);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok, good! Is there more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "The last ingredient is 1 cup sliced fresh strawberries. Now take a bowl and sift together the flour, light brown sugar, cinnamon, and salt.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-12);\r\ninform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok I did that, what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Good now cut in the butter until the mixture resembles coarse crumbs.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Good I did that, what next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Afterwards sprinkle the mixture with the ice water, and toss the mixture with a fork until it becomes evenly moistened.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok, it looks moistened evenly now, what next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Good now pat into a round, and wrap in plastic. Then refrigerate for 30 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok 30 minutes passed, ehat should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now heat the milk until it begins to bubble. Do this in the top half of a double boiler.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok, the milk is bubbling, what should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now you take another bowl. Beat together the egg whites, sugar, and 1 tablespoon of the hot milk.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "The egg is mixed well, I think. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Afterwards you should whisk the egg white mixture into the remaining hot milk.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok, I did that, what next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Now cook and stir without boiling about 10 minutes. The mixture should become thick enough to coat the back of a metal spoon.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok, i think it's thich enough now. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Remove from heat and also stir in the vanilla. Let is cool to room temperature.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);\r\ninform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok, it's cool enough now, what next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Now preheat the oven to 190 degrees Celsius. And lightly grease an 8 inch tart pan with a removable bottom.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);\r\ninform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok, done! should I put the mixture in the pan?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Not yet. Now roll the tart dough out to 1/4 inch thickness. Do this on a floured surface.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok it it rolled, what should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Then press the chilled dough into the prepared tart pan. You should trim the edges, and pierce the bottom with a fork.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-14);\r\ninform_instruction(inst-15);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok I did that! Should I put it in the oven?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-15\", \"tracker_completed_step_num\": 29, \"tracker_requested_step\": \"inst-16\", \"tracker_requested_step_num\": 30}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Now bake it 15 to 18 minutes in the preheated oven.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-16);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok I am baking it, how do I see that it's ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-16\", \"tracker_completed_step_num\": 30, \"tracker_requested_step\": \"inst-16\", \"tracker_requested_step_num\": 30}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Good, it will be ready when it becomes golden brown.",
+            "bot": true,
+            "annotations": "inform_duration(cond-16-0);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok, I think it's good now! What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-16\", \"tracker_completed_step_num\": 30, \"tracker_requested_step\": \"inst-17\", \"tracker_requested_step_num\": 31}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Now remove the tart to a wire rack and let it cool completely.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-17);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok it's cool now. Is it ready to eat?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-17\", \"tracker_completed_step_num\": 31, \"tracker_requested_step\": \"inst-18\", \"tracker_requested_step_num\": 32}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "When it is cooled you should spoon the filling mixture into the crust and bake again for 18 to 20 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-18);\r\ninform_instruction(inst-19);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Ok, I am doing that, how do I see it's ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-19\", \"tracker_completed_step_num\": 33, \"tracker_requested_step\": \"inst-20\", \"tracker_requested_step_num\": 34}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "Good, sorry I cannot answer that question. Take them out and cool to  room temperature on a wire rack. Take them out and cool to room temperature on a wire rack.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_instruction(inst-20);"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Ok it's cool now! Is it ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-20\", \"tracker_completed_step_num\": 34, \"tracker_requested_step\": \"inst-21\", \"tracker_requested_step_num\": 35}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "Finally refrigerate for 8 hours. I hope you enjoy your Banana Kiwi Strawberry Tart.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-21);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "Yess, it's great thanks.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-21\", \"tracker_completed_step_num\": 35, \"tracker_requested_step\": \"inst-21\", \"tracker_requested_step_num\": 35}"
+        },
+        {
+            "utt_id": "utt-49",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

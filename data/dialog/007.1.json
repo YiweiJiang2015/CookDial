@@ -1,0 +1,178 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. how do I make baked chicken breasts supreme?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. first you should take a large bowl to create a mixture.",
+            "bot": true,
+            "annotations": "greeting();\r\nfetch(inst-0, [tool-0-0]);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. I took the large bowl.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "You should combine eight ingredients in total. I will say them one by one if you are ready.",
+            "bot": true,
+            "annotations": "simplify_begin(ac-0-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. I'm ready what is the first ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "First add 1/2 cups sour cream.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-0]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. done what is the next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Next add 1/4 cup lemon juice and 1/2 teaspoon Worcestershire sauce.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-1, ing-2]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Then add 1/2 teaspoon celery seed and 1/2 teaspoon Hungarian sweet paprika.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-3, ing-4]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. I added both. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Furthermore add 1 minced garlic glove.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-5]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. I also added that. Now what should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Finally add 1/2 teaspoon salt and 1/4 teaspoon pepper.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-6, ing-7]);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. all added.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Good, your mixture is ready. Now you can place the chicken in the mixture and turn the chicken so everything is coated with the mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. all of the chicken is coated with the mixture. What should I do with it now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "You should covered it and let it marinate in the refrigerator during the night.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. thanks. I just let it marinate this night. What should I do today?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Great. you are back. Now you can remove the chicken from the marinade and coat the chicken with crumbs.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Thanks. Sorry can you repeat the second part with the crumbs?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_repeat;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "You should coat each piece of chicken with crumbs. You should use about 2 cups fine dry bread crumbs.",
+            "bot": true,
+            "annotations": "repeat(ac-3-1);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. I have coated each piece of chicken with crumbs. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now arrange the chicken on a shallow baking pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. I have put the chicken in the pan. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now you should bake it at 350 degrees Fahrenheit for 45 minutes. The chicken should be uncovered.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. I bake the chicken for 45 minutes. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "That's all. Enjoy your Baked Chicken Breasts.",
+            "bot": true,
+            "annotations": "end_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. thank you for the instructions. It looks good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        }
+    ]
+}

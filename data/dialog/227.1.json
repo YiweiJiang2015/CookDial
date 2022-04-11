@@ -1,0 +1,274 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi I would like to make some type of sweet bread for tomorrow's breakfast. Do you have a recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Of course!! What do you think about Almond Apricot Bread? I think it's way better then banana bread!",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Sounds nice!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Great! We'll prepare the 15 ingredients first. The first two are 2 and a half cups of  all-purpose flour and half a cup of sugar.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Alright. I have them ready. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "The next two ingredients are one and a half cup of packed brown sugar and 3 teaspoons baking powder.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "OK easy I have them here already. What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Great! now you can take 1 teaspoon of salt and 2 jars of apricot baby food, divided.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Could you repeat the second ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Sure, the last ingredient is apricot baby food. You'll have to take 2 jars.",
+            "bot": true,
+            "annotations": "repeat(ing-5);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ah ok thanks. What about the size of the jars?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "The size of the jar is 4 ounces.",
+            "bot": true,
+            "annotations": "inform_amount(ing-5);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok thanks. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"thank; req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Next is to prepare 1 egg and 3 quarters of a cup of milk.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok nice I have them ready in the kitchen. How many ingredients are left still?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "There is 7 ingredients left. You can take 3 tablespoons of vegetable oil, 1 teaspoon of almond extract and two thirds of a cup of sliced almonds, coarsely chopped.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-8);\r\ninform_ingredient(ing-9);\r\ninform_ingredient(ing-10);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok what are the next ones?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-10\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Perfect! The next two ingredients are half a cup of diced dried apricots and half a cup of confectioners' sugar.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-11);\r\ninform_ingredient(ing-12);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok can I also use fresh apricots in stead?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-12\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Mmmh, not sure, but you can always try! :).",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok thanks I will try. What are the last ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"thank; req_ingredient;\", \"tracker_completed_step\": \"ing-12\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"ing-13\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "The last two ingredients are 1 teaspoon of milk and one eight of a teaspoon of almond extract.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-13);\r\ninform_ingredient(ing-14);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok easy I have all of them ready. Can we start baking now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-14\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "We can start with preparing the dough! In a large bowl, combine the flour, sugars, baking powder and salt.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Nice, ok everything is combined. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Good, then set aside 1 tablespoon baby food for glaze.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Alright. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "You can take another bowl, beat the egg, milk, oil, almond extract and the remaining baby food.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok I put it in another bowl. What should I do with that?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "You can take this mixture and stir into the dry ingredients just to moisten it.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Alright I stirred in the mixture. What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Bravo! Now fold in the almonds and the apricots.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok they are in the mixture. What is the next thing I should do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "You should pour into a greased 9-in loaf pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok good the mixture is in the loaf pan. Should I bake it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Yes! You should bake at 350 degrees Farenheit for 55-65 minutes or until a toothpick comes out clean.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok sure. Could you give me the temperature in degrees Celsius? Since my oven is set on degrees Celsius I want to know if I chose the right temperature.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other; req_temperature;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Sure! that would be around 180 degrees celsius.",
+            "bot": true,
+            "annotations": "inform_temperature(temp-6-1);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok thanks. The toothpick came out clean. So should I take it out?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "You should let it cool for 10 minutes before removing from the pan to a wire rack.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok I have done that. Is it ready now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Not yet, we should make the glaze first. Combine the confectioners' sugar, milk, extract and reserved baby food until they look smooth.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ah yes. Ok I have combine them. What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "You can now drizzle over the cooled bread. After that you are ready to enjoy!!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Ok thanks it looks good. I will tomorrow morning!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 25}"
+        }
+    ]
+}

@@ -1,0 +1,142 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi, what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi! Today we'll make Cheesy Cheddar Potato Boats. It's a quick recipe, with just three ingredients plus two optional ones. Do you want to hear the first 3 ingredients?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "OK. Sounds nice. Yes please.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Good! Here they come. 4 medium baked potatoes, quartered lengthwise, one third of a cup Hidden Valley Original Ranch Salad Dressing and 1 cup shredded Cheddar cheese.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);\r\ninform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Could you repeat the second ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "The quantity is one third of a cup. The ingredient is Hidden Valley Original Ranch Salad Dressing.",
+            "bot": true,
+            "annotations": "repeat(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok I have them. What are the next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "There are two optional ingredients. They are Sliced green onions and Bacon pieces.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-3);\r\ninform_ingredient(ing-4);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Could you repeat the second ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "The second ingredient is Bacon pieces.",
+            "bot": true,
+            "annotations": "repeat(ing-4);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ah ok, alright. I have them ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Good! Do you want to start?",
+            "bot": true,
+            "annotations": "propose_start_instruction();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Yes, I'm ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Great! You can start to preheat the oven to 375 degrees F.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. I have done that. Can I do something in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_parallel_action;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "You can Scoop the potatoes out of their skins. You then coat inside of skins with Ranch.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "You now place the mixture back inside the skins.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. They are back inside. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "You can now Sprinkle with the cheese. And then Bake for 10 minutes or until cheese is melted.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. The cheese is melted. Is there something else to do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Yes, if you want you can Garnish with green onions and/or bacon bits. Then you enjoy!!",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-5);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Yes, I will add the bacon. Thanks. It looks nice.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; thank;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 11}"
+        }
+    ]
+}

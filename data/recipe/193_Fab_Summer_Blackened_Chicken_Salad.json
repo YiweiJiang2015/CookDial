@@ -1,0 +1,126 @@
+{
+    "id": "193",
+    "title": "Fab Summer Blackened Chicken Salad",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 tablespoons olive oil, divided",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 tablespoons olive oil, divided\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 (6 ounce) skinless, boneless chicken breast halves",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 (6 ounce) skinless, boneless chicken breast halves\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 1/2 tablespoons Cajun seasoning",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 1/2 tablespoons Cajun seasoning\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 cloves garlic, crushed",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 cloves garlic, crushed\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 tablespoon balsamic vinegar",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 tablespoon balsamic vinegar\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 teaspoon Dijon mustard",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 teaspoon Dijon mustard\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "salt and black pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"salt and black pepper to taste\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 cups mixed salad greens",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 cups mixed salad greens\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 cup arugula",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 cup arugula\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 avocado - peeled, pitted, and diced",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 avocado - peeled, pitted, and diced\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "12 oil-packed sun-dried tomatoes, drained and sliced",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"12 oil-packed sun-dried tomatoes, drained and sliced\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/2 cup sliced black olives",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/2 cup sliced black olives\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Warm 1 tablespoon olive oil in a large skillet over medium heat.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Warm\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"1 tablespoon olive oil\"@8:30 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large skillet\"@34:49 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium heat\"@55:66 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Season both sides of chicken with Cajun seasoning, and place in hot oil.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Season\"@3:9 / AC\r\n\t\t:gol ( ing-1 \"both sides of chicken\"@10:31 / FOOD )\r\n\t\t:ppt ( ing-2 \"Cajun seasoning\"@37:52 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"place\"@58:63 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"hot oil\"@67:74 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir in crushed garlic.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-3 \"crushed garlic\"@11:25 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cook chicken 5 minutes on each side, or until juices run clear.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cook\"@3:7 / AC\r\n\t\t:ppt ( \"chicken\"@8:15 / FOOD )\r\n\t\t:duration ( dur-3-0 \"5 minutes\"@16:25 / DUR )\r\n\t\t:until ( cond-3-0 \"until juices run clear\"@43:65 / CONDITION_CLAUSE )\r\n\t\t:mnr ( \"on each side\"@26:38 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Remove chicken from skillet, drain on paper towels, cool slightly, and dice; discard oil and garlic.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( tool-4-0 \"skillet\"@23:30 / TOOL )\r\n\t\t:ppt ( \"chicken\"@10:17 / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"drain\"@32:37 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-4-1 \"paper towels\"@41:53 / TOOL )\r\n\t)\r\n\t:inform ( ac-4-2 \"cool\"@55:59 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-3 \"dice\"@-1:-1 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-4 \"discard\"@80:87 / AC\r\n\t\t:ppt ( \"oil\"@88:91 / FOOD )\r\n\t\t:ppt ( \"garlic\"@96:102 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) In a small bowl, mix remaining olive oil, balsamic vinegar, mustard, salt, and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"mix\"@20:23 / AC\r\n\t\t:ppt ( ing-0 \"remaining olive oil\"@24:43 / FOOD )\r\n\t\t:ppt ( ing-4 \"balsamic vinegar\"@45:61 / FOOD )\r\n\t\t:ppt ( ing-5 \"mustard\"@63:70 / FOOD )\r\n\t\t:ppt ( ing-6 \"salt, and pepper\"@72:88 / FOOD )\r\n\t\t:loc ( tool-5-0 \"a small bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) In a large bowl, gently toss the dressing with the mixed salad greens, arugula, avocado, sun-dried tomatoes, and olives.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"toss\"@27:31 / AC\r\n\t\t:ppt ( \"the dressing\"@32:44 / FOOD )\r\n\t\t:ppt ( ing-7 \"the mixed salad greens\"@50:72 / FOOD )\r\n\t\t:ppt ( ing-8 \"arugula\"@74:81 / FOOD )\r\n\t\t:ppt ( ing-9 \"avocado\"@83:90 / FOOD )\r\n\t\t:ppt ( ing-10 \"sun-dried tomatoes\"@92:110 / FOOD )\r\n\t\t:ppt ( ing-11 \"olives\"@116:122 / FOOD )\r\n\t\t:loc ( tool-6-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Top with diced chicken to serve.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Top\"@3:6 / AC\r\n\t\t:ppt ( \"diced chicken\"@12:25 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:prp ( purp-7-0 \"to serve\"@26:34 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

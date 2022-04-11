@@ -1,0 +1,220 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we are making Chicken Tortellini Soup with Zucchini and Tomatoes.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. how do I start?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Prepare Fast Chicken Soup Base and bring it to a simmer.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "What should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "You should prepare Fast Chicken Soup Base yourself. I cannot help you with that. When you have made it you should bring the soup to a simmer.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "How do I prepare it? In a pan?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Next you should add four ingredients to the soup. I will say them one by one if you are ready.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-2);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. what are the ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Start with 1 package refrigerated small cheese tortellini.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-2, [ing-1]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. how large should the package be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "The package should be 9 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-1);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. what is the next ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Next add 1 can diced tomatoes.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-2, [ing-2]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Do you want to know the quantity of the can? It should be 14.5 ounces.",
+            "bot": true,
+            "annotations": "other();\r\ninform_amount(ing-2);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ah thanks good to know! What is the next ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "The next ingredient is 2 medium zucchinis. The zucchinis should be diced.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-2, [ing-3]);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. I have also added them. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Finally add 1 teaspoon dried basil.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-2, [ing-4]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now let it simmer for 10-20 minutes until it is tender.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. is there something I should do in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_parallel_action;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "No you do not need to do anything in the meantime.",
+            "bot": true,
+            "annotations": "negate();"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "When it is tender you can remove it from the heat.",
+            "bot": true,
+            "annotations": "inform_instruction(cond-4-0);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. it's tender now. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "You can now stir in 1/2 cup chopped fresh parsley.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-4-0);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. I have stirred the parsley in. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Now add salt and freshly ground black pepper to taste.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. I have done that. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "That's all. Enjoy your Chicken Tortellini soup with zucchini and tomatoes!",
+            "bot": true,
+            "annotations": "end_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. thanks for the instructions. It looks nice. Bye.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; goodbye;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Bye.",
+            "bot": true,
+            "annotations": "goodbye();"
+        }
+    ]
+}

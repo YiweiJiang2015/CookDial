@@ -1,0 +1,180 @@
+{
+    "id": "108",
+    "title": "Baked Fake Steak with Gravy",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3 pounds ground beef",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3 pounds ground beef\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "17 saltine crackers, finely crushed",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"17 saltine crackers, finely crushed\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup milk",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup milk\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 1/2 teaspoons garlic powder",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 1/2 teaspoons garlic powder\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 1/2 teaspoons onion powder",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 1/2 teaspoons onion powder\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 teaspoon ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 teaspoon ground black pepper\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 pinch salt, or to taste",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 pinch salt, or to taste\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 tablespoon vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 tablespoon vegetable oil\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 1/2 cups water",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 1/2 cups water\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1 (10.75 ounce) can  condensed beef and mushroom soup",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1 (10.75 ounce) can  condensed beef and mushroom soup\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 (.75 ounce) packet dry brown gravy mix",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 (.75 ounce) packet dry brown gravy mix\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large bowl, mix together the ground beef, saltine crackers and milk.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"mix\"@20:23 / AC\r\n\t\t:ppt ( ing-0 \"the ground beef\"@33:48 / FOOD )\r\n\t\t:ppt ( ing-1 \"saltine crackers\"@50:66 / FOOD )\r\n\t\t:ppt ( ing-2 \"milk\"@71:75 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Season with garlic powder, onion powder, salt and pepper, and mix until well blended.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Season\"@3:9 / AC\r\n\t\t:ppt ( ing-3 \"garlic powder\"@15:28 / FOOD )\r\n\t\t:ppt ( ing-4 \"onion powder\"@30:42 / FOOD )\r\n\t\t:ppt ( ing-6 \"salt\"@44:48 / FOOD )\r\n\t\t:ppt ( ing-5 \"pepper\"@53:59 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"mix\"@65:68 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-1-0 \"until well blended\"@69:87 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Line a 10x15 inch jellyroll pan with waxed paper.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Line\"@3:7 / AC\r\n\t\t:gol ( tool-2-0 \"a 10x15 inch jellyroll pan\"@8:34 / TOOL )\r\n\t\t:ppt ( tool-2-1 \"waxed paper\"@40:51 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Press the beef mixture firmly into the pan.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Press\"@3:8 / AC\r\n\t\t:ppt ( \"the beef mixture\"@9:25 / FOOD )\r\n\t\t:gol ( tool-3-0 \"the pan\"@38:45 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Cover with plastic wrap, and refrigerate 8 to 10 hours, or overnight.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( tool-4-0 \"plastic wrap\"@14:26 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"refrigerate\"@32:43 / AC\r\n\t\t:duration ( dur-4-0 \"8 to 10 hours\"@44:57 / DUR )\r\n\t\t:duration ( dur-4-1 \"overnight\"@62:71 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Preheat the oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-5-0 \"the oven\"@11:19 / TOOL )\r\n\t\t:heat ( temp-5-0 \"350 degrees F\"@23:36 / TEMPERATURE )\r\n\t\t:heat ( temp-5-1 \"175 degrees C\"@38:51 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Remove plastic wrap from meat, and rub flour over the top side of the beef.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( tool-6-0 \"plastic wrap\"@10:22 / TOOL )\r\n\t\t:source ( \"meat\"@28:32 / FOOD )\r\n\t)\r\n\t:inform ( ac-6-1 \"rub\"@38:41 / AC\r\n\t\t:ppt ( ing-7 \"flour\"@42:47 / FOOD )\r\n\t\t:gol ( \"the top side of the beef\"@53:77 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Flip out of the pan onto waxed paper, and rub flour on the other side as well.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Flip\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:source ( tool-7-0 \"the pan\"@15:22 / TOOL )\r\n\t\t:gol ( tool-7-1 \"waxed paper\"@28:39 / TOOL )\r\n\t)\r\n\t:inform ( ac-7-1 \"rub\"@45:48 / AC\r\n\t\t:ppt ( ing-7 \"flour\"@49:54 / FOOD )\r\n\t\t:gol ( \"the other side\"@58:72 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Cut into pieces (I use a pizza cutter).",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Cut\"@3:6 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:reshape ( \"pieces\"@12:18 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Heat oil in a large heavy skillet over medium-high heat.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Heat\"@-1:-1 / AC\r\n\t\t:ppt ( ing-8 \"oil\"@-1:-1 / FOOD )\r\n\t\t:loc ( tool-9-0 \"a large heavy skillet\"@-1:-1 / TOOL )\r\n\t\t:heat ( temp-9-0 \"medium-high heat\"@-1:-1 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Fry the meat until browned on each side, turning only once.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Fry\"@4:7 / AC\r\n\t\t:ppt ( \"the meat\"@8:16 / FOOD )\r\n\t\t:until ( cond-10-0 \"until browned on each side\"@17:43 / CONDITION_CLAUSE )\r\n\t\t:simultaneous ( ac-10-1 \"turning\"@45:52 / AC )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Remove to a 9x13 inch baking dish.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Remove\"@4:10 / AC\r\n\t\t:gol ( tool-11-0 \"a 9x13 inch baking dish\"@14:37 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) In a medium bowl, mix together the water, condensed soup, and gravy mix.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"mix\"@22:25 / AC\r\n\t\t:loc ( tool-12-0 \"a medium bowl\"@7:20 / TOOL )\r\n\t\t:ppt ( ing-9 \"the water\"@35:44 / FOOD )\r\n\t\t:ppt ( ing-10 \"condensed soup\"@46:60 / FOOD )\r\n\t\t:ppt ( ing-11 \"gravy mix\"@66:75 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Pour over the meat in the dish.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Pour\"@4:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"the meat in the dish\"@14:34 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Cover the dish loosely with aluminum foil.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"Cover\"@4:9 / AC\r\n\t\t:ppt ( tool-14-0 \"the dish\"@10:18 / TOOL )\r\n\t\t:ppt ( tool-14-1 \"aluminum foil\"@32:45 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-15",
+            "text": "15) Bake for 1 hour in the preheated oven.",
+            "type": "instruction",
+            "eamr": "( inst-15 / R\r\n\t:inform ( ac-15-0 \"Bake\"@4:8 / AC\r\n\t\t:duration ( dur-15-0 \"1 hour\"@13:19 / DUR )\r\n\t\t:loc ( tool-15-0 \"the preheated oven\"@23:41 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-16",
+            "text": "16) Serve fake steak and gravy with potatoes, rice, or noodles.",
+            "type": "instruction",
+            "eamr": "( inst-16 / R\r\n   :inform ( \"Serve\"@4:9 / AC\r\n      :ppt ( \"fake steak and gravy\"@10:30 / FOOD )\r\n      :ppt ( \"potatoes\"@36:44 / FOOD )\r\n      :ppt ( \"rice\"@46:50 / FOOD )\r\n      :ppt ( \"noodles\"@55:62 / FOOD )\r\n   )\r\n)"
+        }
+    ]
+}

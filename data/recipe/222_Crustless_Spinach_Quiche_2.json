@@ -1,0 +1,90 @@
+{
+    "id": "222",
+    "title": "Crustless Spinach Quiche 2",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3 ounces reduced fat cream cheese, softened",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3 ounces reduced fat cream cheese, softened\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup fat-free milk",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup fat-free milk\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup egg substitute",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup egg substitute\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 teaspoon pepper",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 teaspoon pepper\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "3 cups shredded reduced-fat Cheddar cheese",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"3 cups shredded reduced-fat Cheddar cheese\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 (10 ounce) package frozen chopped spinach, thawed and squeezed dry",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 (10 ounce) package frozen chopped spinach, thawed and squeezed dry\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 cup frozen chopped broccoli, thawed and well drained",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 cup frozen chopped broccoli, thawed and well drained\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 small onion, finely chopped",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 small onion, finely chopped\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "5 fresh mushrooms, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"5 fresh mushrooms, sliced\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a small mixing bowl, beat cream cheese.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"beat\"@27:31 / AC\r\n\t\t:ppt ( ing-0 \"cream cheese\"@32:44 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a small mixing bowl\"@6:25 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add milk, egg substitute and pepper; beat until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-1 \"milk\"@7:11 / FOOD )\r\n\t\t:ppt ( ing-2 \"egg substitute\"@13:27 / FOOD )\r\n\t\t:ppt ( ing-3 \"pepper\"@32:38 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"beat\"@40:44 / AC\r\n\t\t:until ( cond-1-0 \"until smooth\"@45:57 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir in remaining ingredients.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( \"remaining ingredients\"@11:32 / FOOD\r\n\t\t\t:ref ( ing-4 )\r\n\t\t\t:ref ( ing-5 )\r\n\t\t\t:ref ( ing-6 )\r\n\t\t\t:ref ( ing-7 )\r\n\t\t\t:ref ( ing-8 )\r\n\t\t)\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Add the mixture to a quiche pan coated with nonstick cooking spray.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( \"the mixture\"@-1:-1 / FOOD )\r\n\t\t:gol ( tool-3-0 \"a quiche pan\"@-1:-1 / TOOL\r\n\t\t\t:todo ( \"coated with nonstick cooking spray\"@-1:-1 / FOOD )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Bake at 350 degrees F for 45-50 minutes or until a knife inserted near the center comes out clean.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Bake\"@3:7 / AC\r\n\t\t:heat ( temp-4-0 \"350 degrees F\"@11:24 / TEMPERATURE )\r\n\t\t:duration ( dur-4-0 \"45-50 minutes\"@29:42 / DUR )\r\n\t\t:until ( cond-4-0 \"until a knife inserted near the center comes out clean\"@46:100 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

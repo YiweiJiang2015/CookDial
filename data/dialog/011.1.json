@@ -1,0 +1,214 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. how do I make the deep fried turkey?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Do you have a large stockpot or turkey fryer?",
+            "bot": true,
+            "annotations": "verify(inst-0, [tool-0-0, tool-0-1]);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes I have a turkey fryer.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Great. take your turkey fryer and heat oil to 400 degrees.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. is that Fahrenheit or Celsius?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_temperature;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "It is 400 degreesFahrenheit or equivalently 200 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_temperature(temp-0-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. Thanks. done. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Did you leave enough room in the fryer for the turkey? Otherwise oil will spill over.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ah, thanks for letting me know there is enough room now for the turkey.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "That's good, now you can place food-safe paper bags on a large platter.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. done. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Take the turkey and rinse it. Then pat dry with paper towels.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. can you repeat the first part before drying it with paper towels?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Rinse the turkey with water.",
+            "bot": true,
+            "annotations": "repeat(ac-3-0);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. thanks for the clarification. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Rub 1/4 cup Creole seasoning over the inside and outside of the turkey.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. done. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "The hole at the neck of the turkey should be at least 2 inches so the oil can flow easily through the turkey.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. the whole is at least 2 inches. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now you can place the turkey and 1 white onion in the drain basket of the fryer.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. Done. I put it in the fryer. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Make sure the neck end of the turkey is downwards.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. it is. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now slowly place the basket into the fryer so the turkey is covered completely in oil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. the turkey is in the fryer. How long should it stay?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Cook it for about 45 minutes. Make sure the temperature of the oil is maintained at 175 degrees.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. it's now 45 minutes later. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Remove the basket from the oil and let the turkey drain.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. I let the turkey drain. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Place a meat thermometer in the thickest part of the turkey and verify if the internal temperature is around 80 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Yes the temperature is 80 degrees Celsius. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Finish the drain of the turkey on the platter you prepared earlier with paper bags.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. done. Is there another step to take?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_ongoing;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "No, well done. You can now enjoy your deep fried turkey.",
+            "bot": true,
+            "annotations": "negate();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. thanks for the explanation.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 17}"
+        }
+    ]
+}

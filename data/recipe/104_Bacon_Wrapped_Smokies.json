@@ -1,0 +1,66 @@
+{
+    "id": "104",
+    "title": "Bacon Wrapped Smokies",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 pound sliced bacon, cut into thirds",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 pound sliced bacon, cut into thirds\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (14 ounce) package beef cocktail wieners",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (14 ounce) package beef cocktail wieners\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3/4 cup brown sugar, or to taste",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3/4 cup brown sugar, or to taste\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat the oven to 325 degrees F (165 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"the oven\"@11:19 / TOOL )\r\n\t\t:heat ( temp-0-0 \"325 degrees F\"@23:36 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"165 degrees C\"@38:51 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Refrigerate 2/3 of the bacon until needed.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Refrigerate\"@3:14 / AC\r\n\t\t:ppt ( ing-0 \"2/3 of the bacon\"@15:31 / FOOD )\r\n\t\t:until ( cond-1-0 \"until needed\"@32:44 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Wrap each cocktail wiener with a piece of bacon and secure with a toothpick.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Wrap\"@3:7 / AC\r\n\t\t:ppt ( ing-1 \"each cocktail wiener\"@8:28 / FOOD )\r\n\t\t:ppt ( \"a piece of bacon\"@34:50 / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"secure\"@55:61 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:instrument ( tool-2-0 \"a toothpick\"@67:78 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Place on a large baking sheet.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-3-0 \"a large baking sheet\"@12:32 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Sprinkle brown sugar generously over all.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Sprinkle\"@3:11 / AC\r\n\t\t:ppt ( ing-2 \"brown sugar\"@12:23 / FOOD )\r\n\t\t:gol ( \"all\"@40:43 / PRONOUN )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Bake for 40 minutes in the preheated oven, until the sugar is bubbly.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Bake\"@3:7 / AC\r\n\t\t:duration ( dur-5-0 \"40 minutes\"@12:22 / DUR )\r\n\t\t:loc ( tool-5-0 \"the preheated oven\"@26:44 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-5-0 \"until the sugar is bubbly\"@46:71 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) To serve, place the wieners in a slow cooker and keep on the low heat.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"place\"@13:18 / AC\r\n\t\t:prp ( purp-6-0 \"To serve\"@3:11 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( \"the wieners\"@19:30 / FOOD )\r\n\t\t:gol ( tool-6-0 \"a slow cooker\"@34:47 / TOOL )\r\n\t)\r\n\t:inform ( ac-6-1 \"keep\"@52:56 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:heat ( temp-6-0 \"the low heat\"@60:72 / TEMPERATURE )\r\n\t)\r\n)"
+        }
+    ]
+}

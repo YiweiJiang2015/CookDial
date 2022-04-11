@@ -1,0 +1,148 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. how do I make the potato soup?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. to start, you can take a large saucepan or pot to combine several ingredients. I will say the ingredients one by one if you are ready.",
+            "bot": true,
+            "annotations": "greeting();\r\nfetch(inst-0, [tool-0-0]);\r\nsimplify_begin(inst-0);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. Thanks. I took the pan and I am ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "First add 2 Yukon Gold potatoes. Make sure the potatoes are cut in cubes.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-0]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. should they cubes be big or small or it doesn't matter?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "It doesn't matter but not too big or too small.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. Thanks. what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Then you can add 1 package au gratin instant potato mix to the saucepan. One package should weigh around 5.5 ounce.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-1]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. thanks I have added the potato mix. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Now add 1 can condensed chicken broth. One can should weigh around 10.5 ounce.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-2]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. I added the chicken broth. Should I add more to the mix?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Yes finally you can add 1/2 cups water. You might need to add more water if necessary.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-0]);\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. thanks. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Cook the mixture over medium heat until the potatoes become tender. This will take about 40 minutes. Make sure to stir occasionally.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. I cooked the mixture. What should I do with it now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now you can stir in 1 cup heavy cream while still heating.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "How much cream do I need?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "You need 1 cup.",
+            "bot": true,
+            "annotations": "inform_amount(ing-4);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. and should I add it into the pan?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Yes you should add the cream to the saucepan and continue heating.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. I did that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "That's all. You can serve the Potato soup and enjoy it.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);\r\nenjoy();\r\n"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. thanks it looks good. Have a nice day.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Have a nice day too.",
+            "bot": true,
+            "annotations": "goodbye();"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "id": "043",
+    "title": "Campfire Angel Food Yummies",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (10 inch) angel food cake, cut into large cubes",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (10 inch) angel food cake, cut into large cubes\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (5 ounce) can sweetened condensed milk",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (5 ounce) can sweetened condensed milk\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup coconut flakes",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup coconut flakes\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Toast the angel food cake cubes over the coals of a campfire on toasting sticks until browned.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Toast\"@3:8 / AC\r\n\t\t:loc ( tool-0-0 \"toasting sticks\"@67:82 / TOOL )\r\n\t\t:until ( cond-0-0 \"until browned\"@83:96 / CONDITION_CLAUSE )\r\n\t\t:ppt ( ing-0 \"the angel food cake cubes\"@9:34 / FOOD )\r\n\t\t:instrument ( tool-0-1 \"the coals of a campfire\"@40:63 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Dip the toasted cake into the condensed milk, and roll in coconut flakes.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Dip\"@3:6 / AC\r\n\t\t:ppt ( \"the toasted cake\"@7:23 / FOOD )\r\n\t\t:gol ( ing-1 \"the condensed milk\"@29:47 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"roll in\"@53:60 / AC\r\n\t\t:ppt ( ing-2 \"coconut flakes\"@61:75 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

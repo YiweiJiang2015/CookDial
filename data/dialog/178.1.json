@@ -1,0 +1,292 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello! What are we gonna cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi we will make a bacon mushroom Swiss meatloaf.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Great! Sounds delicious! Could you tell me the ingredients to prepare?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Of course, the first two ingredients are 12 ounces chopped raw bacon and 1 small white onion, chopped.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok good, I have them ready. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "5 button mushrooms, chopped. And 1 and a 1/2 pounds extra-lean ground beef.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok, good. which are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "1 egg and 1/4 cup evaporated milk.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok good, are there more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "The last two ingredients are 6 ounces shredded Swiss cheese, divided and 1/2 cup corn flake crumbs.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok, good! Can we start with the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Yes let's start! First preheat the oven to 175 degrees Celsius.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok good the oven is warm now. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Good now place the bacon in a skillet and cook over medium heat. The pieces should become browned.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok the bacon is browned now. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now remove the bacon with a slotted spoon to paper towels.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok I did that. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Discard all but 1 tablespoon of bacon grease.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "What shall I do with the remaining grease?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now mix it with onions and mushrooms, then cook until soft.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. They are tender now. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Remove the onions and mushrooms from heat. Prepare a large bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);\r\nfetch(inst-6, [tool-6-0]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "I have it now. What shall I do with the bowl?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Add beef, egg and milk to the bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "How much milk should I add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "1/4 cup evaporated milk.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Thanks. Shall I put the onions and mushrooms into the bowl?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Yes, stir in the onions and mushrooms.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok, I add them as well. Next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Next is to mix in about 4 ounces of Swiss cheese, and all but 1 tablespoon of bacon.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Sorry, how much cheese? Could you repeat that?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "4 ounces of Swiss cheese.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ohh, thanks. I add it and the bacon. What shall I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Stir in cornflake crumbs, and mix them until well blended.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "I think it is well blended now. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Shape the mixture into a loaf, and place it in a meatloaf pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Sorry, I don't have that kind of pan. Can I just use a normal pan?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Sorry, I cannot answer your question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Never mind. Continue please.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Now, you can bake it in the preheated oven for 1 hour.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok. 1 hour is gone and I have taken it out. Is it over?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "No, not yet. Now drain fat and sprinkle with remaining cheese and bacon.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok. It is done. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "The last step is to return it to the oven and bake until cheese is melted, about 5 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Great, thank you bot.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Bye!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"goodbye;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "Goodbye.",
+            "bot": true,
+            "annotations": "goodbye();"
+        }
+    ]
+}

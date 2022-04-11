@@ -1,0 +1,102 @@
+{
+    "id": "183",
+    "title": "Armadillo Eggs",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "24 jalapeno peppers",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"24 jalapeno peppers\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 pound sausage",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 pound sausage\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 cups all-purpose baking mix",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 cups all-purpose baking mix\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 (16 ounce) package Cheddar cheese, shredded",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 (16 ounce) package Cheddar cheese, shredded\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 tablespoon crushed red pepper flakes",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 tablespoon crushed red pepper flakes\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 tablespoon garlic salt",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 tablespoon garlic salt\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 (16 ounce) package Monterey Jack cheese, cubed",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 (16 ounce) package Monterey Jack cheese, cubed\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 325 degrees F (165 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"325 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"165 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Lightly grease a medium baking sheet.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"grease\"@11:17 / AC\r\n\t\t:ppt ( tool-1-0 \"a medium baking sheet\"@18:39 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cut a slit in each jalapeno pepper.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cut\"@3:6 / AC\r\n\t\t:source ( ing-0 \"each jalapeno pepper\"@17:37 / FOOD )\r\n\t\t:ppt ( \"a slit\"@7:13 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Remove and discard seeds and pulp.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-1 \"Remove and discard\"@3:21 / AC\r\n\t\t:ppt ( \"seeds\"@22:27 / FOOD )\r\n\t\t:ppt ( \"pulp\"@32:36 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) In a medium bowl, mix sausage, baking mix, Cheddar cheese, crushed red pepper, and garlic salt.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"mix\"@21:24 / AC\r\n\t\t:ppt ( ing-1 \"sausage\"@25:32 / FOOD )\r\n\t\t:ppt ( ing-2 \"baking mix\"@34:44 / FOOD )\r\n\t\t:ppt ( ing-3 \"Cheddar cheese\"@46:60 / FOOD )\r\n\t\t:ppt ( ing-4 \"crushed red pepper\"@62:80 / FOOD )\r\n\t\t:ppt ( ing-5 \"garlic salt\"@86:97 / FOOD )\r\n\t\t:loc ( tool-4-0 \"a medium bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Stuff jalapenos with the Monterey Jack cheese cubes.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Stuff\"@3:8 / AC\r\n\t\t:gol ( \"jalapenos\"@9:18 / FOOD )\r\n\t\t:ppt ( ing-6 \"the Monterey Jack cheese cubes\"@24:54 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Shape sausage mixture around the jalapenos to form balls.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Shape\"@3:8 / AC\r\n\t\t:ppt ( \"sausage mixture\"@9:24 / FOOD )\r\n\t\t:loc ( \"the jalapenos\"@32:45 / FOOD )\r\n\t\t:prp ( purp-6-0 \"to form balls\"@46:59 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Arrange jalapeno balls on the prepared baking sheet.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Arrange\"@3:10 / AC\r\n\t\t:ppt ( \"jalapeno balls\"@11:25 / FOOD )\r\n\t\t:loc ( tool-7-0 \"the prepared baking sheet\"@29:54 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Bake 25 minutes in the preheated oven, until lightly browned.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-8-0 \"the preheated oven\"@22:40 / TOOL )\r\n\t\t:duration ( dur-8-0 \"25 minutes\"@8:18 / DUR )\r\n\t\t:until ( cond-8-0 \"until lightly browned\"@42:63 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

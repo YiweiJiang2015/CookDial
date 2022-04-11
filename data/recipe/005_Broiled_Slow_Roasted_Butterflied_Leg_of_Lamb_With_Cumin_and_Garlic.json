@@ -1,0 +1,144 @@
+{
+    "id": "005",
+    "title": "Broiled  Slow Roasted Butterflied Leg of Lamb With Cumin and Garlic",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/4 cup olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/4 cup olive oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "8 cloves garlic, minced",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"8 cloves garlic, minced\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 1/2 teaspoons salt",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 1/2 teaspoons salt\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 teaspoon pepper",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 teaspoon pepper\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 tablespoons ground cumin",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 tablespoons ground cumin\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 tablespoon dried oregano",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 tablespoon dried oregano\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 (8 pound) leg of lamb, boned and butterflied to a more or less even thickness, 4 3/4 to 5 1/2 pounds trimmed weight, fell and most fat removed",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 (8 pound) leg of lamb, boned and butterflied to a more or less even thickness, 4 3/4 to 5 1/2 pounds trimmed weight, fell and most fat removed\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 lemon, juiced",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 lemon, juiced\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "Minced fresh parsley, cilantro or mint  (optional)",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"Minced fresh parsley, cilantro or mint  (optional)\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Mix oil, garlic, salt, pepper, cumin and oregano; spread paste on both sides of the lamb and let stand for an hour until meat comes to room temperature.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Mix\"@3:6 / AC\r\n\t\t:ppt ( ing-0 \"oil\"@7:10 / FOOD )\r\n\t\t:ppt ( ing-1 \"garlic\"@12:18 / FOOD )\r\n\t\t:ppt ( ing-2 \"salt\"@20:24 / FOOD )\r\n\t\t:ppt ( ing-3 \"pepper\"@26:32 / FOOD )\r\n\t\t:ppt ( ing-4 \"cumin\"@34:39 / FOOD )\r\n\t\t:ppt ( ing-5 \"oregano\"@44:51 / FOOD )\r\n\t\t:_result ( paste )\r\n\t)\r\n\t:inform ( ac-0-1 \"spread\"@53:59 / AC\r\n\t\t:ppt ( paste \"paste\"@60:65 / FOOD )\r\n\t\t:gol ( ing-6 \"both sides of the lamb\"@69:91 / FOOD )\r\n\t\t:_result ( pasted-lamb )\r\n\t)\r\n\t:inform ( ac-0-2 \"stand\"@100:105 / AC\r\n\t\t:duration ( dur-0-0 \"an hour\"@110:117 / DUR )\r\n\t\t:until ( cond-0-0 \"meat comes to room temperature\"@-1:-1 / CONDITION_CLAUSE )\r\n\t\t:ppt ( pasted-lamb / FOOD )\r\n\t\t:_result ( rested-lamb )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Adjust oven rack to upper or upper-middle position (depending on lamb's thickness) and preheat broiler on high for at least 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n   :inform ( ac-1-0 \"Adjust\"@3:9 / AC\r\n      :ppt ( tool-1-0 \"oven rack\"@10:19 / TOOL )\r\n      :mnr ( \"upper or upper-middle position\"@23:53 / OTHER )\r\n\t:_result adjusted-oven-rack\r\n   )\r\n   :inform ( ac-1-1 \"preheat\"@90:97 / AC\r\n      :ppt ( tool-1-1 \"broiler\"@98:105 / TOOL )\r\n      :heat ( \"high\"@109:113 / TEMPERATURE )\r\n      :duration ( \"10 minutes\"@127:137 / DUR )\r\n\t:_result preheated-broiler\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place lamb, cut side up, on a large wire rack set over a foil-lined roasting pan.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n   :inform ( ac-2-0 \"Place\"@3:8 / AC\r\n      :ppt ( rested-lamb \"lamb, cut side up\" / FOOD ) #what to do with side up#\r\n      :gol ( tool-2-0 \"a large wire rack set\" / TOOL) \r\n\t:over (tool-2-1 \"a foil-lined roasting pan\" / TOOL)\r\n\t:_result lamb-in-pan\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Broil, moving pan so entire surface browns evenly, about 8 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R #the recipe may be wrong#\r\n   :inform ( ac-3-0 \"Broil\"@3:8 / AC\r\n      :duration ( \"8 minutes\"@60:69 / DUR )\r\n      :ppt ( tool-3-0 \"pan\"@-1:-1 / TOOL )\r\n      :prp ( \"so entire surface browns evenly\"@21:52 / PURPOSE_CLAUSE )\r\n\t:_result half-browned-lamb\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Turn lamb over; continue to broil until well browned on the other side, about 8 minutes longer.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n   :inform ( ac-4-0 \"Turn\"@3:7 / AC\r\n      :ppt ( half-browned-lamb \"lamb\"@8:12 / FOOD )\r\n\t:_result (turned-lamb)\r\n   )\r\n   :inform ( ac-4-1 \"broil\"@31:36 / AC\r\n      :until ( \"well browned on the other side\" / CONDITION_CLAUSE )\r\n      :duration ( \"8 minutes\"@81:90 / DUR )\r\n      :ppt ( turned-lamb / FOOD  )\r\n\t:_result browned-lamb \r\n   )\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Turn off broiler, remove lamb from oven and let rest for 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R \r\n   :inform ( ac-5-0 \"Turn off\"@3:11 / AC\r\n      :ppt ( preheated-broiler \"broiler\" / TOOL )\r\n\t:_result off-broiler\r\n   )\r\n   :inform ( ac-5-1 \"remove\"@21:27 / AC\r\n      :ppt ( browned-lamb \"lamb\"@28:32 / FOOD )\r\n      :source ( preheated-broiler \"broiler\" / TOOL )\r\n\t:_result lamb-ouside-broiler\r\n   )\r\n   :inform ( ac-5-2 \"rest\"@51:55 / AC\r\n      :duration ( \"10 minutes\"@60:70 / DUR )\r\n      :ppt ( lamb-ouside-broiler / FOOD )\r\n\t:_result cooled-lamb\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Heat oven to 325 degrees.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n   :inform ( \"Heat\"@3:7 / AC\r\n      :ppt ( tool-6-0 \"oven\"@8:12 / TOOL )\r\n      :heat ( \"325 degrees\"@16:27 / TEMPERATURE )\r\n\t:_result preheated-oven\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Stick a meat thermometer into the thickest portion of the lamb; return it to the oven.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n   :inform ( ac-7-0 \"Stick\"@3:8 / AC\r\n      :ppt ( \"a meat thermometer\"@9:27 / TOOL )\r\n      :gol ( cooled-lamb \"the thickest portion of the lamb\"@33:65 / FOOD )\r\n\t:_result lamb-with-thermometer\r\n   )\r\n   :inform ( ac-7-1 \"return\"@67:73 / AC\r\n      :ppt ( lamb-with-thermometer \"it\"@74:76 / PRONOUN )\r\n      :gol ( \"the oven\"@80:88 / FOOD )\r\n\t:_result lamb-in-oven\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Roast for a total of 50 minutes to 1 hour, until thermometer registers a rosy-pink 140 degrees.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n   :inform ( ac-8-0 \"Roast\"@3:8 / AC\r\n      :duration ( \"50 minutes to 1 hour\"@24:44 / DUR )\r\n      :until ( \"thermometer registers a rosy-pink 140 degrees\"@52:97 / CONDITION_CLAUSE )\r\n      :ppt ( lamb-in-oven / FOOD ) \r\n\t:_result roasted-lamb\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Check lamb several times after 30 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform (ac-9-0 \"Check\" / AC \r\n\t\t:ppt ( lamb-in-oven \"lamb\" / FOOD )\r\n\t\t:todo (\"several times\" / POINT_IN_TIME )\r\n\t\t:duration (\"30 minutes\" / DUR ) \r\n\t\t:_result checked-lamb\r\n  )\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) If lamb gets done sooner, simply turn down oven to 170 degrees until ready to serve.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform (ac-10-0 \"turn down\" / AC \r\n\t\t:ppt (preheated-oven \"oven\" / TOOL)\r\n\t\t:heat (\"170 degrees\" / TEMPERATURE )\r\n\t\t:until (\"ready to serve\" / CONDITION_CLAUSE ) \r\n\t\t:todo (\"lamb gets done sooner\" / CONDITION_CLAUSE )\r\n\t\t:_result cooked-lamb \r\n  )\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) As soon as lamb comes out of the oven, squeeze on lemon juice and sprinkle with fresh herbs.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"squeeze\"@43:50 / AC\r\n\t\t:when ( \"As soon as lamb comes out of the oven\"@4:41 / CONDITION_CLAUSE )\r\n\t\t:ppt ( ing-7 \"lemon juice\"@54:65 / FOOD )\r\n\t\t:gol (cooked-lamb / FOOD)\r\n\t\t:_result lamb-with-lemon\r\n)\r\n   :inform ( ac-11-1 \"sprinkle\"@70:78 / AC\r\n      :ppt ( ing-8 \"fresh herbs\"@84:95 / FOOD )\r\n      :gol ( lamb-with-lemon  / FOOD )\r\n\t:_result lamb-with-herbs\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Carve, slicing across the grain when possible.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n   :inform ( ac-12-0 \"Carve, slicing\" / AC\r\n         :ppt ( lamb-with-herbs \"the grain\"@26:35 / FOOD ) #part of the lamb#\r\n         :when ( \"possible\" / CONDITION_CLAUSE )\r\n\t:_result sliced-lamb\r\n      )\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Arrange on a platter, drizzle with accumulated juices, and serve.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n   :inform ( ac-13-0 \"Arrange\"@4:11 / AC\r\n      :loc ( \"a platter\"@15:24 / TOOL )\r\n      :ppt (  sliced-lamb / FOOD )\r\n\t:_result lamb-on-platter\r\n   )\r\n   :inform ( ac-13-1 \"drizzle\"@26:33 / AC\r\n      :ppt ( \"accumulated juices\"@39:57 / FOOD )\r\n      :gol ( lamb-on-platter / FOOD )\r\n\t:_result lamb-with-juices\r\n   )\r\n   :inform ( ac-13-2 \"serve\"@63:68 / AC\r\n      :ppt ( lamb-with-juices / FOOD )\r\n\t:_result FINAL_PRODUCT\r\n   )\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "id": "151",
+    "title": "Dutch Cream Waffles",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/4 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/4 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 egg yolks, separated",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 eggs, separated\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "3 eggs whites, separated",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"3 eggs, separated\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 cup heavy whipping cream",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 cup heavy whipping cream\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large mixing bowl, combine flour and salt.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@27:34 / AC\r\n\t\t:ppt ( ing-0 \"flour\"@35:40 / FOOD )\r\n\t\t:ppt ( ing-1 \"salt\"@45:49 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large mixing bowl\"@6:25 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a small mixing bowl, beat egg yolks on low while adding cream.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"beat\"@27:31 / AC\r\n\t\t:ppt ( ing-2 \"egg yolks\"@32:41 / FOOD )\r\n\t\t:simultaneous ( ac-1-1 \"adding\"@55:61 / AC\r\n\t\t\t:ppt ( ing-4 \"cream\"@62:67 / FOOD )\r\n\t\t)\r\n\t\t:loc ( tool-1-0 \"a small mixing bowl\"@6:25 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Beat for 1 minute.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Beat\"@3:7 / AC\r\n\t\t:duration ( dur-2-0 \"1 minute\"@12:20 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Add to flour mixture; combine on low speed, then beat on medium-high until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( \"flour mixture\"@10:23 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"combine\"@25:32 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:mnr ( \"on low speed\"@33:45 / OTHER )\r\n\t)\r\n\t:inform ( ac-3-2 \"beat\"@52:56 / AC\r\n\t\t:until ( cond-3-0 \"until smooth\"@72:84 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:mnr ( \"on medium-high\"@57:71 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) In another small mixing bowl and with clean beaters, beat egg whites on high until stiff peaks form.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"beat\"@56:60 / AC\r\n\t\t:instrument ( tool-4-0 \"clean beaters\"@41:54 / TOOL )\r\n\t\t:loc ( tool-4-1 \"another small mixing bowl\"@6:31 / TOOL )\r\n\t\t:ppt ( ing-3 \"egg whites\"@61:71 / FOOD )\r\n\t\t:until ( cond-4-0 \"until stiff peaks form\"@80:102 / CONDITION_CLAUSE )\r\n\t\t:mnr ( \"on high\"@72:79 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Gently fold into batter.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"fold\"@10:14 / AC\r\n\t\t:ppt ( \"batter\"@20:26 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Bake in a preheated waffle iron according to manufacturer's directions.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Bake\"@3:7 / AC\r\n\t\t:loc ( tool-6-0 \"a preheated waffle iron\"@11:34 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:mnr ( \"according to manufacturer's directions\"@35:73 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Serve with warm maple syrup or fresh fruit in season.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( \"or\"@-1:-1 / CHOICE\r\n\t\t\t:option ( \"warm maple syrup\"@14:30 / FOOD )\r\n\t\t\t:option ( \"fresh fruit in season\"@34:55 / FOOD )\r\n\t\t)\r\n\t\t:ppt ( \"fresh fruit in season\"@34:55 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

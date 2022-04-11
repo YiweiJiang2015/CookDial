@@ -1,0 +1,102 @@
+{
+    "id": "000",
+    "title": "English Walnut Pie",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3 eggs\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/4 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/4 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3/4 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3/4 cup white sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 teaspoons vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 teaspoons vanilla extract\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "3/4 cup light corn syrup",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"3/4 cup light corn syrup\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 cup chopped walnuts",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 cup chopped walnuts\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/4 cup butter",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/4 cup butter\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 (9 inch) deep dish pie crust",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 (9 inch) deep dish pie crust\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 400 degrees F (205 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"400 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"205 degrees C\"@34:47 / TEMPERATURE )\r\n\t\t:_result ( preheated-oven / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Beat the eggs in a large bowl.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Beat\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"the eggs\"@8:16 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a large bowl\"@20:32 / TOOL )\r\n\t\t:_result ( beaten-eggs )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Mix in sugar, salt, vanilla, and syrup.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Mix in\"@3:9 / AC\r\n\t\t:ppt ( ing-2 \"sugar\"@10:15 / FOOD )\r\n\t\t:ppt ( ing-1 \"salt\"@17:21 / FOOD )\r\n\t\t:ppt ( ing-3 \"vanilla\"@23:30 / FOOD )\r\n\t\t:ppt ( ing-4 \"syrup\"@36:41 / FOOD )\r\n\t\t:gol ( beaten-eggs / FOOD )\r\n\t\t:_result ( syrup-egg-mixture / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Melt the butter or margarine, and add it to the egg mixture.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Melt\"@3:7 / AC\r\n\t\t:ppt ( \"or\"@-1:-1 / CHOICE )\r\n\t\t:option ( ing-6 \"the butter\"@8:18 / FOOD )\r\n\t\t:option ( \"margarine\"@22:31 / FOOD )\r\n\t\t:_result ( melted-butter )\r\n\t)\r\n\t:inform ( ac-3-1 \"add\"@37:40 / AC\r\n\t\t:ppt ( ing-6 \"it\"@41:43 / PRONOUN )\r\n\t\t:gol ( syrup-egg-mixture \"the egg mixture\"@47:62 / FOOD )\r\n\t\t:_result ( butter-egg-mixture )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Stir in the nuts.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-5 \"the nuts\"@11:19 / FOOD )\r\n\t\t:gol ( butter-egg-mixture / FOOD )\r\n\t\t:_result ( nuts-filling / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Pour filling into pie shell.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( nuts-filling \"filling\"@8:15 / FOOD )\r\n\t\t:gol ( ing-7 \"pie shell\"@21:30 / FOOD )\r\n\t\t:_result ( uncooked-pie / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Bake in preheated oven for 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Bake\"@3:7 / AC\r\n\t\t:loc ( preheated-oven \"preheated oven\"@11:25 / TOOL )\r\n\t\t:duration ( dur-6-0 \"10 minutes\"@30:40 / DUR )\r\n\t\t:ppt ( uncooked-pie / FOOD )\r\n\t\t:_result ( baked-pie )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Reduce heat to 300 degrees F (150 degrees C), and continue baking for 35 to 45 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Reduce\"@3:9 / AC\r\n\t\t:ppt ( \"heat\"@10:14 / OTHER )\r\n\t\t:gol ( temp-7-0 \"300 degrees F\"@18:31 / TEMPERATURE )\r\n\t\t:gol ( temp-7-1 \"150 degrees C\"@33:46 / TEMPERATURE )\r\n\t\t:_result ( reduced-heat )\r\n\t)\r\n\t:inform ( ac-7-1 \"baking\"@62:68 / AC\r\n\t\t:ppt ( baked-pie / FOOD )\r\n\t\t:duration ( dur-7-0 \"35 to 45 minutes\"@73:89 / DUR )\r\n\t\t:_result ( FINAL_PRODUCT )\r\n\t)\r\n)"
+        }
+    ]
+}

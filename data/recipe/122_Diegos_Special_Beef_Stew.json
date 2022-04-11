@@ -1,0 +1,174 @@
+{
+    "id": "122",
+    "title": "Diegos Special Beef Stew",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 pound cubed beef stew meat",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 pound cubed beef stew meat\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 tablespoon all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 tablespoon all-purpose flour\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 tablespoons olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 tablespoons olive oil\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 teaspoons butter",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 teaspoons butter\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 medium yellow onion, thinly sliced",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 medium yellow onion, thinly sliced\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 cup red wine",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 cup red wine\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 beef bouillon cube",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 beef bouillon cube\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 cup hot water",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 cup hot water\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 large potato, cubed",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 large potato, cubed\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/2 cup baby carrots",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/2 cup baby carrots\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1/2 teaspoon rosemary",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1/2 teaspoon rosemary\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/2 teaspoon dried thyme",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/2 teaspoon dried thyme\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1/2 tablespoon garlic powder",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1/2 tablespoon garlic powder\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1/2 teaspoon ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1/2 teaspoon ground black pepper\" )"
+        },
+        {
+            "id": "ing-14",
+            "text": "1/4 cup water",
+            "type": "ingredient",
+            "eamr": "( ing-14 \"1/4 cup water\" )"
+        },
+        {
+            "id": "ing-15",
+            "text": "2 dashes Worcestershire sauce",
+            "type": "ingredient",
+            "eamr": "( ing-15 \"2 dashes Worcestershire sauce\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Place cubed beef and flour in a resealable plastic bag.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"cubed beef\"@9:19 / FOOD )\r\n\t\t:ppt ( ing-1 \"flour\"@24:29 / FOOD )\r\n\t\t:gol ( tool-0-0 \"a resealable plastic bag\"@33:57 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Seal and shake to evenly coat beef with flour.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Seal and shake\"@3:17 / AC\r\n\t\t:prp ( purp-1-0 \"to evenly coat beef with flour\"@18:48 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Heat the oil in a skillet over medium heat, and brown beef on all sides.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-2 \"the oil\"@8:15 / FOOD )\r\n\t\t:loc ( tool-2-0 \"a skillet\"@19:28 / TOOL )\r\n\t\t:heat ( temp-2-0 \"medium heat\"@34:45 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-2-1 \"brown\"@51:56 / AC\r\n\t\t:ppt ( \"beef\"@57:61 / FOOD )\r\n\t\t:mnr ( \"on all sides\"@62:74 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Transfer to a slow cooker.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Transfer\"@3:11 / AC\r\n\t\t:gol ( tool-3-0 \"a slow cooker\"@15:28 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Melt the butter in the skillet over medium heat, and cook onion until tender.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Melt\"@3:7 / AC\r\n\t\t:ppt ( ing-3 \"the butter\"@8:18 / FOOD )\r\n\t\t:loc ( tool-4-0 \"the skillet\"@22:33 / TOOL )\r\n\t\t:heat ( temp-4-0 \"medium heat\"@39:50 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-4-1 \"cook\"@56:60 / AC\r\n\t\t:ppt ( ing-4 \"onion\"@61:66 / FOOD )\r\n\t\t:until ( cond-4-0 \"until tender\"@67:79 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Transfer to the slow cooker with the beef.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Transfer\"@3:11 / AC\r\n\t\t:gol ( tool-5-0 \"the slow cooker\"@15:30 / TOOL\r\n\t\t\t:todo ( \"the beef\"@36:44 / FOOD )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Pour wine into the skillet to deglaze, then pour wine into slow cooker.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( ing-5 \"wine\"@8:12 / FOOD )\r\n\t\t:gol ( tool-6-0 \"the skillet\"@18:29 / TOOL )\r\n\t\t:prp ( purp-6-0 \"to deglaze\"@30:40 / PURPOSE_CLAUSE )\r\n\t)\r\n\t:inform ( ac-6-1 \"pour\"@47:51 / AC\r\n\t\t:ppt ( ing-5 \"wine\"@52:56 / FOOD )\r\n\t\t:gol ( tool-6-1 \"slow cooker\"@62:73 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Dissolve the beef bouillon cube in 1 cup hot water, and pour into slow cooker.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Dissolve\"@3:11 / AC\r\n\t\t:ppt ( ing-6 \"the beef bouillon cube\"@12:34 / FOOD )\r\n\t\t:gol ( ing-7 \"1 cup hot water\"@38:53 / FOOD )\r\n\t)\r\n\t:inform ( ac-7-1 \"pour\"@59:63 / AC\r\n\t\t:gol ( tool-7-0 \"slow cooker\"@69:80 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Place potato and carrots in slow cooker, and season with rosemary, thyme, garlic powder, and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-8 \"potato\"@9:15 / FOOD )\r\n\t\t:ppt ( ing-9 \"carrots\"@20:27 / FOOD )\r\n\t\t:gol ( tool-8-0 \"slow cooker\"@31:42 / TOOL )\r\n\t)\r\n\t:inform ( ac-8-1 \"season\"@48:54 / AC\r\n\t\t:ppt ( ing-10 \"rosemary\"@60:68 / FOOD )\r\n\t\t:ppt ( ing-11 \"thyme\"@70:75 / FOOD )\r\n\t\t:ppt ( ing-12 \"garlic powder\"@77:90 / FOOD )\r\n\t\t:ppt ( ing-13 \"pepper\"@96:102 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Mix in remaining water and Worcestershire sauce.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Mix in\"@3:9 / AC\r\n\t\t:ppt ( ing-14 \"remaining water\"@10:25 / FOOD )\r\n\t\t:ppt ( ing-15 \"Worcestershire sauce\"@30:50 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Add more water if needed to cover all ingredients.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Add\"@4:7 / AC\r\n\t\t:ppt ( \"more water\"@8:18 / FOOD )\r\n\t\t:prp ( purp-10-0 \"to cover all ingredients\"@29:53 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Cover slow cooker, and cook stew 7 to 8 hours on low heat.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Cover\"@4:9 / AC\r\n\t\t:ppt ( tool-11-0 \"slow cooker\"@10:21 / TOOL )\r\n\t)\r\n\t:inform ( ac-11-1 \"cook\"@27:31 / AC\r\n\t\t:ppt ( \"stew\"@32:36 / FOOD )\r\n\t\t:duration ( dur-11-0 \"7 to 8 hours\"@37:49 / DUR )\r\n\t\t:heat ( temp-11-0 \"low heat\"@53:61 / TEMPERATURE )\r\n\t)\r\n)"
+        }
+    ]
+}

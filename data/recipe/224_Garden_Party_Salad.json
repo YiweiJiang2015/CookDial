@@ -1,0 +1,78 @@
+{
+    "id": "224",
+    "title": "Garden Party Salad",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/4 cup vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/4 cup vegetable oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/4 cup orange marmalade",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/4 cup orange marmalade\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 tablespoons cider vinegar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 tablespoons cider vinegar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "3 tablespoons mayonnaise",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"3 tablespoons mayonnaise\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 teaspoons curry powder",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 teaspoons curry powder\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 teaspoon hot pepper sauce",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 teaspoon hot pepper sauce\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "6 cups cubed, cooked chicken",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"6 cups cubed, cooked chicken\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 tablespoons golden raisins",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 tablespoons golden raisins\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 tablespoons slivered almonds, toasted",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 tablespoons slivered almonds, toasted\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 tablespoons minced fresh parsley",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 tablespoons minced fresh parsley\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a small bowl, whisk first six ingredients until smooth; chill.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"whisk\"@20:25 / AC\r\n\t\t:loc ( tool-0-0 \"a small bowl\"@6:18 / TOOL )\r\n\t\t:ppt ( \"first six ingredients\"@26:47 / FOOD\r\n\t\t\t:ref ( ing-0 )\r\n\t\t\t:ref ( ing-1 )\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t\t:ref ( ing-4 )\r\n\t\t\t:ref ( ing-5 )\r\n\t\t)\r\n\t\t:until ( cond-0-0 \"until smooth\"@48:60 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-0-1 \"chill\"@62:67 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Just before serving, combine chicken, raisins, almonds and parsley in a large bowl; add dressing and toss.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"combine\"@24:31 / AC\r\n\t\t:ppt ( ing-6 \"chicken\"@32:39 / FOOD )\r\n\t\t:ppt ( ing-7 \"raisins\"@41:48 / FOOD )\r\n\t\t:ppt ( ing-8 \"almonds\"@50:57 / FOOD )\r\n\t\t:ppt ( ing-9 \"parsley\"@62:69 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a large bowl\"@73:85 / TOOL )\r\n\t\t:duration ( cond-1-0 \"before serving\"@8:22 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-1-1 \"add\"@87:90 / AC\r\n\t\t:ppt ( \"dressing\"@91:99 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-2 \"toss\"@104:108 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

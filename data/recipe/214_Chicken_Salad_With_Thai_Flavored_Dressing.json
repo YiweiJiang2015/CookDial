@@ -1,0 +1,114 @@
+{
+    "id": "214",
+    "title": "Chicken Salad With Thai Flavored Dressing",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "4 cups rotisserie chicken, skinned and boned, meat shredded into bite-sized pieces",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"4 cups rotisserie chicken, skinned and boned, meat shredded into bite-sized pieces\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 medium celery ribs, cut into small dice",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 medium celery ribs, cut into small dice\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 medium green onions, sliced thin",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 medium green onions, sliced thin\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup chopped honey-roasted peanuts",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup chopped honey-roasted peanuts\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 tablespoons lime juice",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 tablespoons lime juice\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 tablespoons Asian fish sauce",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 tablespoons Asian fish sauce\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 teaspoon ground ginger",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 teaspoon ground ginger\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 teaspoons white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 teaspoons white sugar\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/2 teaspoon hot red pepper flakes",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/2 teaspoon hot red pepper flakes\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 tablespoons minced fresh cilantro leaves",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 tablespoons minced fresh cilantro leaves\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "2 tablespoons chopped fresh mint leaves",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"2 tablespoons chopped fresh mint leaves\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "Boston lettuce",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"Boston lettuce\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "sliced cucumbers",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"sliced cucumbers\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "grated carrots",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"grated carrots\" )"
+        },
+        {
+            "id": "ing-14",
+            "text": "chopped honey-roasted peanuts",
+            "type": "ingredient",
+            "eamr": "( ing-14 \"chopped honey-roasted peanuts\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a medium bowl, mix chicken, celery, green onions and peanuts.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"mix\"@21:24 / AC\r\n\t\t:ppt ( ing-0 \"chicken\"@25:32 / FOOD )\r\n\t\t:ppt ( ing-1 \"celery\"@34:40 / FOOD )\r\n\t\t:ppt ( ing-2 \"green onions\"@42:54 / FOOD )\r\n\t\t:ppt ( ing-3 \"peanuts\"@59:66 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a medium bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a small bowl, whisk lime juice, fish sauce, ginger, sugar, red pepper, cilantro and mint, plus 2 Tbs. water.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"whisk\"@20:25 / AC\r\n\t\t:ppt ( ing-4 \"lime juice\"@26:36 / FOOD )\r\n\t\t:ppt ( ing-5 \"fish sauce\"@38:48 / FOOD )\r\n\t\t:ppt ( ing-6 \"ginger\"@50:56 / FOOD )\r\n\t\t:ppt ( ing-7 \"sugar\"@58:63 / FOOD )\r\n\t\t:ppt ( ing-8 \"red pepper\"@65:75 / FOOD )\r\n\t\t:ppt ( ing-9 \"cilantro\"@77:85 / FOOD )\r\n\t\t:ppt ( ing-10 \"mint\"@90:94 / FOOD )\r\n\t\t:ppt ( \"2 Tbs. water\"@101:113 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a small bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Toss dressing with chicken mixture and serve on a bed of Boston lettuce with the suggested accompaniments.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Toss\"@3:7 / AC\r\n\t\t:ppt ( \"dressing\"@8:16 / FOOD )\r\n\t\t:ppt ( \"chicken mixture\"@22:37 / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"serve\"@42:47 / AC\r\n\t\t:ppt ( ing-11 \"a bed of Boston lettuce\"@51:74 / FOOD )\r\n\t\t:ppt ( \"the suggested accompaniments\"@80:108 / FOOD\r\n\t\t\t:ref ( ing-12 )\r\n\t\t\t:ref ( ing-13 )\r\n\t\t\t:ref ( ing-14 )\r\n\t\t)\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

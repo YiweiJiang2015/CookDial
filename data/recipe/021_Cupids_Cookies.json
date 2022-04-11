@@ -1,0 +1,168 @@
+{
+    "id": "021",
+    "title": "Cupids Cookies",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup butter",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup butter\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup white sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 egg",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 egg\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 1/2 teaspoons vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 1/2 teaspoons vanilla extract\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 1/2 cups sifted all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 1/2 cups sifted all-purpose flour\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 cup rolled oats",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 cup rolled oats\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/4 teaspoon peppermint extract",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/4 teaspoon peppermint extract\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "3 drops red food coloring",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"3 drops red food coloring\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 tablespoons confectioners' sugar",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 tablespoons confectioners' sugar\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "5 (1.5 ounce) bars milk chocolate candy",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"5 (1.5 ounce) bars milk chocolate candy\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a medium bowl, cream together butter or margarine and white sugar until light and fluffy.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"cream\"@21:26 / AC\r\n\t\t:ppt ( ing-0 \"butter\"@36:42 / FOOD )\r\n\t\t:ppt ( ing-0 \"margarine\"@46:55 / FOOD )\r\n\t\t:ppt ( ing-1 \"white sugar\"@60:71 / FOOD )\r\n\t\t:until ( cond-0-0 \"until light and fluffy\"@72:94 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-0-0 \"a medium bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Blend in egg and vanilla.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Blend in\"@3:11 / AC\r\n\t\t:ppt ( ing-2 \"egg\"@12:15 / FOOD )\r\n\t\t:ppt ( ing-3 \"vanilla\"@20:27 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Sift together flour and salt.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Sift\"@3:7 / AC\r\n\t\t:ppt ( ing-4 \"flour\"@17:22 / FOOD )\r\n\t\t:ppt ( ing-5 \"salt\"@27:31 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Add to creamed mixture and mix well.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( \"creamed mixture\"@10:25 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"mix\"@30:33 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Stir in oats.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-6 \"oats\"@11:15 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Divide dough in half.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Divide\"@3:9 / AC\r\n\t\t:ppt ( \"dough\"@10:15 / FOOD )\r\n\t\t:todo ( \"half\"@19:23 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Add peppermint extract and a few drops of food color to half of dough.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-7 \"peppermint extract\"@7:25 / FOOD )\r\n\t\t:ppt ( ing-8 \"a few drops of food color\"@30:55 / FOOD )\r\n\t\t:ppt ( \"half of dough\"@59:72 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Chill for several hours.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Chill\"@3:8 / AC\r\n\t\t:duration ( dur-7-0 \"several hours\"@13:26 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-8-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-8-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-8-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Roll out each half of dough to 1/8 inch thickness on surface sprinkled lightly with confectioners' sugar.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Roll out\"@-1:-1 / AC\r\n\t\t:ppt ( \"each half of dough\"@-1:-1 / FOOD )\r\n\t\t:loc ( ing-9 \"surface sprinkled lightly with confectioners' sugar\"@-1:-1 / TOOL )\r\n\t\t:todo ( \"1/8 inch thickness\"@-1:-1 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Cut out half of each color with the 2 1/2 inch heart shaped cookie cutter, and half with a 1 1/2 inch cookie cutter.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Cut out\"@4:11 / AC\r\n\t\t:instrument ( tool-10-0 \"the 2 1/2 inch heart shaped cookie cutter\"@36:77 / TOOL )\r\n\t\t:todo ( \"half of each color\"@12:30 / FOOD )\r\n\t\t:todo ( \"half\"@83:87 / FOOD )\r\n\t\t:instrument ( tool-10-1 \"a 1 1/2 inch cookie cutter\"@93:119 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Place them on unprepared cookie sheets.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Place\"@4:9 / AC\r\n\t\t:ppt ( \"them\"@10:14 / PRONOUN\r\n\t\t\t:ref ( NULL / FOOD )\r\n\t\t)\r\n\t\t:gol ( tool-11-0 \"unprepared cookie sheets\"@18:42 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Bake for 10 to 12 minutes in the preheated oven.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Bake\"@4:8 / AC\r\n\t\t:duration ( dur-12-0 \"10 to 12 minutes\"@13:29 / DUR )\r\n\t\t:heat ( tool-12-0 \"the preheated oven\"@33:51 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Remove from oven and place 1 one square (1/8) of a chocolate bar onto the center of each large heart.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Remove\"@4:10 / AC\r\n\t\t:source ( tool-13-0 \"oven\"@16:20 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-13-1 \"place\"@25:30 / AC\r\n\t\t:ppt ( ing-10 \"1 one square (1/8) of a chocolate bar\"@31:68 / FOOD )\r\n\t\t:gol ( \"the center of each large heart\"@74:104 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Place small heart on top and press lightly to secure.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"Place\"@4:9 / AC\r\n\t\t:ppt ( \"small heart\"@10:21 / FOOD )\r\n\t\t:gol ( \"top\"@25:28 / FOOD )\r\n\t)\r\n\t:inform ( ac-14-1 \"press\"@33:38 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-14-0 \"to secure\"@47:56 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-15",
+            "text": "15) Transfer to rack to cool.",
+            "type": "instruction",
+            "eamr": "( inst-15 / R\r\n\t:inform ( ac-15-0 \"Transfer\"@4:12 / AC\r\n\t\t:gol ( tool-15-0 \"rack\"@16:20 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-15-0 \"to cool\"@21:28 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

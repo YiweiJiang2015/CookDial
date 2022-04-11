@@ -1,0 +1,84 @@
+{
+    "id": "202",
+    "title": "Avocado Tzatziki",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 large avocado, peeled and pitted",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 large avocado, peeled and pitted\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 cloves garlic, minced",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 cloves garlic, minced\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 lemons, juiced",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 lemons, juiced\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup sour cream (optional)",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup sour cream (optional)\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 cup chopped seeded cucumber",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 cup chopped seeded cucumber\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 teaspoon red pepper flakes, or to taste",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 teaspoon red pepper flakes, or to taste\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 tablespoon chopped fresh cilantro",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 tablespoon chopped fresh cilantro\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 tablespoon chopped fresh mint",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 tablespoon chopped fresh mint\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"salt and pepper to taste\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a medium bowl, combine the avocado, garlic, lemon juice, sour cream and cucumber.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@21:28 / AC\r\n\t\t:loc ( tool-0-0 \"a medium bowl\"@6:19 / TOOL )\r\n\t\t:ppt ( ing-0 \"the avocado\"@29:40 / FOOD )\r\n\t\t:ppt ( ing-1 \"garlic\"@42:48 / FOOD )\r\n\t\t:ppt ( ing-2 \"lemon juice\"@50:61 / FOOD )\r\n\t\t:ppt ( ing-3 \"sour cream\"@63:73 / FOOD )\r\n\t\t:ppt ( ing-4 \"cucumber\"@78:86 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Mash with a fork until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Mash\"@3:7 / AC\r\n\t\t:instrument ( tool-1-0 \"a fork\"@13:19 / TOOL )\r\n\t\t:until ( cond-1-0 \"until smooth\"@20:32 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Season with red pepper flakes, cilantro, mint, salt and pepper, and mix well.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Season\"@3:9 / AC\r\n\t\t:ppt ( ing-5 \"red pepper flakes\"@15:32 / FOOD )\r\n\t\t:ppt ( ing-6 \"cilantro\"@34:42 / FOOD )\r\n\t\t:ppt ( ing-7 \"mint\"@44:48 / FOOD )\r\n\t\t:ppt ( ing-8 \"salt and pepper\"@50:54 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"mix\"@71:74 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cover and refrigerate for 1 hour before serving.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"refrigerate\"@13:24 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-3-0 \"1 hour\"@29:35 / DUR )\r\n\t\t:duration ( cond-3-0 \"before serving\"@36:50 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

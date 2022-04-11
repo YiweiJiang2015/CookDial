@@ -1,0 +1,84 @@
+{
+    "id": "049",
+    "title": "Eggnog Blend",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "4 cups half-and-half",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"4 cups half-and-half\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup white sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "11 egg yolks, beaten",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"11 egg yolks, beaten\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 cups heavy cream",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 cups heavy cream\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2/3 cup dark rum",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2/3 cup dark rum\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 cup Scotch whiskey",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 cup Scotch whiskey\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 pint vanilla ice cream",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 pint vanilla ice cream\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a saucepan over low heat, stir together the half-and-half and sugar.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"stir\"@32:36 / AC\r\n\t\t:ppt ( ing-0 \"the half-and-half\"@46:63 / FOOD )\r\n\t\t:ppt ( ing-1 \"sugar\"@68:73 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a saucepan\"@6:16 / TOOL )\r\n\t\t:heat ( \"low heat\"@22:30 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Whisk in egg yolks and cook until light custard forms; do not boil.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Whisk in\"@3:11 / AC\r\n\t\t:ppt ( ing-2 \"egg yolks\"@12:21 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"cook\"@26:30 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-1-0 \"until light custard forms\"@31:56 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-1-2 \"not boil\"@61:69 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Remove from heat and cool, then place in refrigerator and chill overnight.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( \"heat\"@15:19 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"cool\"@24:28 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-2 \"place\"@35:40 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-2-0 \"refrigerator\"@44:56 / TOOL )\r\n\t)\r\n\t:inform ( ac-2-3 \"chill\"@61:66 / AC\r\n\t\t:duration ( dur-2-0 \"overnight\"@67:76 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Into the chilled mixture, stir in vanilla, cream, dark rum, scotch, and vanilla ice cream.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"stir in\"@29:36 / AC\r\n\t\t:ppt ( ing-3 \"vanilla\"@37:44 / FOOD )\r\n\t\t:ppt ( ing-4 \"cream\"@46:51 / FOOD )\r\n\t\t:ppt ( ing-5 \"dark rum\"@53:61 / FOOD )\r\n\t\t:ppt ( ing-6 \"scotch\"@63:69 / FOOD )\r\n\t\t:ppt ( ing-7 \"vanilla ice cream\"@75:92 / FOOD )\r\n\t\t:ppt ( \"the chilled mixture\"@8:27 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Serve cold.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

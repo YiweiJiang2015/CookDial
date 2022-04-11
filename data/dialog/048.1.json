@@ -1,0 +1,280 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we will make black bean chili! Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes I am ready. What's the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "First we will get some ingredients and prepare them. If you are ready I will announce them one by one.",
+            "bot": true,
+            "annotations": "propose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Go ahead.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "First take one onion and chop it.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Done. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Yes now take 2 red bell peppers and chop them.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "I have chopped two red bell peppers. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Now take 1 jalapeno pepper, seeded and minced. Also take 10 fresh mushrooms and chop them in quarters.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-3);\r\ninform_ingredient(ing-4);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Done. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Take 6 roma (plum) tomatoes and make little dices. Also grab 1 cup of fresh corn kernels.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-5);\r\ninform_ingredient(ing-6);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Do the tomatoes need to be peeled before cutting it into pieces?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "No problem, what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Take a large saucepan and heat some oil over medium-high heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Yes I have done that. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now sautee the ingredients you just prepared for about 10 minutes.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-1);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ten minutes have passed now. How do I know when they are ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "It's ready when the onions became translucent.",
+            "bot": true,
+            "annotations": "inform_duration(dur-1-0);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "They are translucent now. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now we will season it with some ingredients. First add 1 teaspoon ground black pepper.",
+            "bot": true,
+            "annotations": "simplify_begin(ac-2-0);\r\nsimplify_continue(ac-2-0, [ing-7]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "I have added it. What else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now add 1 teaspoon ground cumin and 1 tablespoon chili powder.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-2-0, [ing-8, ing-9]);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Both added. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now stir in 2 cans of drained and rinsed black beans.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-3-0, [ing-10]);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "How large should the cans be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"ing-10\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "They should be both 15 ounces.",
+            "bot": true,
+            "annotations": "inform_amount(ing-10);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. done. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-10\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Now in addition to that still add 1 1/2 cups of chicken broth and 1 teaspoon salt. Bring it to a boil.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-3-0, [ing-11, ing-12]);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "What's the volume of 1 cup chicken broth?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Sorry I cannot answer that.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Is it boiling? Do you have a food processor or blender?",
+            "bot": true,
+            "annotations": "verify(inst-4);\r\nverify(ac-5-0, [tool-5-0]);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Yes it is boiling and I have a blender.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; confirm;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Now remove 1 1/2 cups of the soup and put it in the blender.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-5-0);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Done. For how long should I blend it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "I cannot answer that question. You have to puree the mixture you put into the blender. After that stir it back into the soup.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_instruction(ac-5-1);\r\ninform_instruction(ac-5-2);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "What should I do with the mixture in the blender?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "You can stir it back into the soup in the saucepan.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-5-2);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Can you repeat the last part, in what?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Into the soup in the saucepan.",
+            "bot": true,
+            "annotations": "repeat(ac-5-2);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Thank you for repeating it. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "That was all. You can serve it hot by itself or over rice.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "It looks good. Thank you for the instructions!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "You are welcome! enjoy.",
+            "bot": true,
+            "annotations": "thank();\r\nenjoy();"
+        }
+    ]
+}

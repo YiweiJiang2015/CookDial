@@ -1,0 +1,106 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we will make a fruit smoothie. It will be quick and easy. Are you ready?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes I am. What's the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Do you have a blender?",
+            "bot": true,
+            "annotations": "verify(ac-0-0, [tool-0-0]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Yes I have one. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Take it and add 1 package of frozen mixed berries.",
+            "bot": true,
+            "annotations": "fetch(inst-0, [tool-0-0]);\r\nsimplify_continue(inst-0, [ing-0]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "How large should the package be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "It should be a 10 ounce package.",
+            "bot": true,
+            "annotations": "inform_amount(ing-0);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Thank you. I have added it to the blender. What else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Now add a can of sliced drained peaches as well.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-1]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "How large should the can of peaches be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "It should be 15 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-1);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Thank you. anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Before blending, add 2 tablespoons of honey.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-2]);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. I have added the hony. Can I blend everything now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Yes go ahead. Blend until smooth and enjoy.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "It looks good. Thank you for the instructions!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 5}"
+        }
+    ]
+}

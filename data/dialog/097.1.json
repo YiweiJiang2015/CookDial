@@ -1,0 +1,382 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi! today we are gonna prepare chicken Pot Pie. It's a pretty long recipe so I will give you the ingredients two by two so you can prepare them. Are you ready to go?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes. What are the first two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_ingredient;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "The first two are. One and a half pounds of skinless, boneless chicken breast meat and 1 cup of chicken broth.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. I have them. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "The next two ingredients are half a teaspoon of salt and one quarter teaspoon black pepper.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. I have them as well. What are the next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The next ingredients are one and a half cup of milk and 3 tablespoons butter.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. what kind of milk should I use?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "I am sorry I cannot reply to your question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. No problem. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "The next two ingredients are 1 onion, chopped and 1 cup chopped celery.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. I have them. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Next is one third of a cup of allpurpose flour and 2 cups frozen mixed vegetables, thawed.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-8);\r\ninform_ingredient(ing-9);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Could you repeat the last part?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-9\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "2 cups of frozen mixed vegetables, They should be thawed.",
+            "bot": true,
+            "annotations": "repeat(ing-9);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. I have them. Are there more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-10\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Yes there are 4 more ingredients. The first two are 1 tablespoon chopped fresh parsley and half a teaspoon dried thyme.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_ingredient(ing-10);\r\ninform_ingredient(ing-11);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "OK. What are the last two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-12\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "The last two ingredients are one pastry for a 9 inch single crust pie and 1 egg, lightly beaten. Are you ready to start with the recipe?",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-12);\r\ninform_ingredient(ing-13);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. I have all of them. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-13\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Next is to combine the chicken meat, chicken broth, salt and pepper In a large saucepan over medium high heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. For how long should it stay? On the heat?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "You should Bring to a boil and reduce heat to low.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. I reduced the heat to low now. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "You now Cover and let simmer for 30 minutes. You should remove the chicken when it is no longer pink in the center and the juices run clear.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Is there anything I can do in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_parallel_action;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-16\", \"tracker_requested_step_num\": 31}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "You can already start to preheat the oven at 200 degrees celsuis.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-16);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-16\", \"tracker_completed_step_num\": 31, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "You can Pour the remaining chicken broth mixture into a measuring cup.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. I have done that. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "You then let it stand and spoon off the fat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. I have done that. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Add enough milk to the broth mixture to equal 2 and a half cups.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. it is 2, 1/2 cups now. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Now you cut the chicken into one and a half inch pieces.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "In the same pan, melt butter or margarine over medium heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok. It's melted now. What should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "You now add add the onion and celery.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok. Added. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Then Saute, stirring, for 3 minutes. You then Stir in flour until well blended.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);\r\ninform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok. 3 minutes have passed.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "And Gradually stir in broth mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "It's well blended now! Ok. I have stirred in the broth mixture. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "You Simmer, stirring constantly, until the sauce thickens and boils.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Ok. How long should I do that?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "You should do that until the sauce thickens and boils.",
+            "bot": true,
+            "annotations": "inform_duration(cond-13-0);"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "Ok. It is thick now. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 29}"
+        },
+        {
+            "utt_id": "utt-49",
+            "utterance": "After that you add the chicken, vegetables, parsley and thyme.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-14);"
+        },
+        {
+            "utt_id": "utt-50",
+            "utterance": "Ok. I have added all of them. What should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-14\", \"tracker_completed_step_num\": 29, \"tracker_requested_step\": \"inst-15\", \"tracker_requested_step_num\": 30}"
+        },
+        {
+            "utt_id": "utt-51",
+            "utterance": "You now pour the mixture into a 1 1/2 quart deep casserole dish.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-15);"
+        },
+        {
+            "utt_id": "utt-52",
+            "utterance": "Ok. It is in the dish. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-15\", \"tracker_completed_step_num\": 30, \"tracker_requested_step\": \"inst-17\", \"tracker_requested_step_num\": 32}"
+        },
+        {
+            "utt_id": "utt-53",
+            "utterance": "You can now roll out pastry 1 inch larger than the diameter of the casserole dish on a lightly floured surface. And Cut slits in the pastry for venting air.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-17);"
+        },
+        {
+            "utt_id": "utt-54",
+            "utterance": "Ok. I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-17\", \"tracker_completed_step_num\": 32, \"tracker_requested_step\": \"inst-19\", \"tracker_requested_step_num\": 34}"
+        },
+        {
+            "utt_id": "utt-55",
+            "utterance": "You now place the pastry on top of casserole.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-19);"
+        },
+        {
+            "utt_id": "utt-56",
+            "utterance": "Ok. The pastry is on top. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-19\", \"tracker_completed_step_num\": 34, \"tracker_requested_step\": \"inst-20\", \"tracker_requested_step_num\": 35}"
+        },
+        {
+            "utt_id": "utt-57",
+            "utterance": "Roll the edges, cut away the extra pastry, and flute edges by pinching together.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-20);"
+        },
+        {
+            "utt_id": "utt-58",
+            "utterance": "Ok. I have done all of that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-20\", \"tracker_completed_step_num\": 35, \"tracker_requested_step\": \"inst-21\", \"tracker_requested_step_num\": 36}"
+        },
+        {
+            "utt_id": "utt-59",
+            "utterance": "Brush pastry with beaten egg and bake in the preheated oven for 30 minute. It's ready when the crust is golden brown and the filling is bubbling.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-21);"
+        },
+        {
+            "utt_id": "utt-60",
+            "utterance": "Ok. 30 minutes have passed. What is next? It is golden brown now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-21\", \"tracker_completed_step_num\": 36, \"tracker_requested_step\": \"inst-22\", \"tracker_requested_step_num\": 37}"
+        },
+        {
+            "utt_id": "utt-61",
+            "utterance": "You now let it cool for 10 minutes and serve it. The recipe is ready! enjoyy!!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-22);\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-62",
+            "utterance": "Ok. Thanks. It looks nice!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-22\", \"tracker_completed_step_num\": 37, \"tracker_requested_step\": \"inst-22\", \"tracker_requested_step_num\": 37}"
+        }
+    ]
+}

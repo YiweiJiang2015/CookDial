@@ -1,0 +1,256 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello! What are we gonna cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi, today we will make chocolate covered banana pie.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Good! Can I have the ingredients? Is it a long recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list; req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "It contains 10 ingredients. Do you want to have them already in order to prepare them?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Yes, that would be great!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "First 3 cups crushed vanilla wafers, 1/2 cup chopped pecans  and 2/3 cup butter. The butter should be melted.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);\r\ninform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok good! Can I have the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The next ingredients are 2 cups semisweet chocolate chips 4 cups milk 4 1/2 cups miniature marshmallows.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-3);\r\ninform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. Could you repeat the last ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "4 1/2 cups miniature marshmallows.",
+            "bot": true,
+            "annotations": "repeat(ing-5);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok good. Can I have more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "2 packages instant vanilla pudding mix and 1 cup frozen whipped topping.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. How big should the vanilla pudding mix packages be?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "They should be 2 times a 3.5 ounce package.",
+            "bot": true,
+            "annotations": "inform_amount(ing-6);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok good. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "The last two ingredients are 2 large bananas. You should slice them and  1 bar milk chocolate candy.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-8);\r\ninform_ingredient(ing-9);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok good. Is Mars ok as chocolate candy?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "I cannot answer that question. It should be 1 bar milk chocolate candy but you can choose which one.",
+            "bot": true,
+            "annotations": "fence();\r\n"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok no problem. Are the ingredients over?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Yes, that was all. Now combine crushed cookie crumbs, pecans, and butter or margarine.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok good. I did it! What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "You should press them into a 9 x 13 inch pan and bake them at 190 degrees Celsius for 5 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);\r\ninform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. I did so! Is there a way I can see that they are ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "No, sorry I cannot answer that question. After 5 minutes, let them cool down.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. I let them cool down! What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now we will make a little sauce. Take a sauce pan and combine the chocolate chips, 1 cup milk, and 2 cups marshmallows.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. I combined the ingredients. What should I do with the mixture?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Now stir them over low heat until they are melted. After that, pour them over the cooled crust.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);\r\ninform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. they looked melted, so I poured them into the crust. Is the recipe over? Can I eat the cake?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "No, not yet, sorry. First let the pie chill for 1 hour. Afterwards, there are still some steps to take.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. One hour passed. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Now arrange the banana slices over the chilled chocolate layer.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. I arranged the bananas. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Now it's time to still prepare the pudding mix. Do it as directed on the box except use only 3 cups of milk.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. The pudding is ready. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Now fold in the nondairy whipped topping and remaining marshmallows. Then pour the mixture over the banans.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);\r\ninform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok good. Done! Can I add cocoa powder to it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Sorry I cannot answer that question. The last step is to grate the chocolate bar over the top.",
+            "bot": true,
+            "annotations": "fence();\r\ninform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok good. I grated the chocolate bar! Is it all?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Now let it chill for 2 to 3 hours before serving. I guess it will not be easy but worth the wait. Then enjoy.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Mmmmh ok. It looks delicious. I'll try to wait! Thank you bot.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

@@ -1,0 +1,180 @@
+{
+    "id": "103",
+    "title": "Grandmas Carrot Cake",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 teaspoons baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 teaspoons baking soda\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 teaspoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 teaspoon ground cinnamon\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 cups white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 cups white sugar\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 cup vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 cup vegetable oil\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "3 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"3 eggs\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 cup chopped walnuts",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 cup chopped walnuts\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 (15 ounce) can crushed pineapple, drained",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 (15 ounce) can crushed pineapple, drained\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 cups carrots, grated",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 cups carrots, grated\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1 cup flaked coconut",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1 cup flaked coconut\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/2 cup butter",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/2 cup butter\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 cup white sugar\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1/2 cup buttermilk",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1/2 cup buttermilk\" )"
+        },
+        {
+            "id": "ing-14",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-14 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Grease a 9x13 inch pan.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Grease\"@3:9 / AC\r\n\t\t:ppt ( tool-1-0 \"a 9x13 inch pan\"@10:25 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Sift together the flour, baking soda and cinnamon.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Sift\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"the flour\"@17:26 / FOOD )\r\n\t\t:ppt ( ing-1 \"baking soda\"@28:39 / FOOD )\r\n\t\t:ppt ( ing-2 \"cinnamon\"@44:52 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Set aside.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Set aside\"@3:12 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) In a large bowl, combine the sugar and oil until blended.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"combine\"@20:27 / AC\r\n\t\t:loc ( tool-4-0 \"a large bowl\"@6:18 / TOOL )\r\n\t\t:ppt ( ing-3 \"the sugar\"@28:37 / FOOD )\r\n\t\t:ppt ( ing-4 \"oil\"@42:45 / FOOD )\r\n\t\t:until ( cond-4-0 \"until blended\"@46:59 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Beat in the eggs one at a time, then stir in the vanilla.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Beat in\"@3:10 / AC\r\n\t\t:ppt ( ing-5 \"the eggs\"@11:19 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:mnr ( \"one at a time\"@20:33 / OTHER )\r\n\t)\r\n\t:inform ( ac-5-1 \"stir in\"@40:47 / AC\r\n\t\t:ppt ( ing-6 \"the vanilla\"@48:59 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Stir in the flour mixture just until incorporated.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( \"the flour mixture\"@11:28 / FOOD )\r\n\t\t:until ( cond-6-0 \"until incorporated\"@34:52 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Fold in the pineapple, carrots, coconut and walnuts.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Fold in\"@3:10 / AC\r\n\t\t:ppt ( ing-8 \"the pineapple\"@11:24 / FOOD )\r\n\t\t:ppt ( ing-9 \"carrots\"@26:33 / FOOD )\r\n\t\t:ppt ( ing-10 \"coconut\"@35:42 / FOOD )\r\n\t\t:ppt ( ing-7 \"walnuts\"@47:54 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Pour batter into prepared pan.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( \"batter\"@8:14 / FOOD )\r\n\t\t:gol ( tool-8-0 \"prepared pan\"@20:32 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Bake in the preheated oven for 45 minutes, or until a toothpick inserted into the center of the cake comes out clean.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Bake\"@-1:-1 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-9-0 \"the preheated oven\"@-1:-1 / TOOL )\r\n\t\t:duration ( dur-9-0 \"45 minutes\"@-1:-1 / DUR )\r\n\t\t:until ( cond-9-0 \"until a toothpick inserted into the center of the cake comes out clean\"@-1:-1 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) While still warm, poke holes in the cake with a fork.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"poke\"@22:26 / AC\r\n\t\t:instrument ( tool-10-0 \"a fork\"@50:56 / TOOL )\r\n\t\t:ppt ( \"holes\"@27:32 / OTHER )\r\n\t\t:source ( \"the cake\"@36:44 / FOOD )\r\n\t\t:while ( cond-10-0 \"While still warm\"@4:20 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) For the glaze: In a saucepan, combine butter, sugar, buttermilk and vanilla.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"combine\"@34:41 / AC\r\n\t\t:loc ( tool-11-0 \"a saucepan\"@22:32 / TOOL )\r\n\t\t:ppt ( ing-11 \"butter\"@42:48 / FOOD )\r\n\t\t:subtask ( \"the glaze\"@8:17 / FOOD )\r\n\t\t:ppt ( ing-12 \"sugar\"@50:55 / FOOD )\r\n\t\t:ppt ( ing-13 \"buttermilk\"@57:67 / FOOD )\r\n\t\t:ppt ( ing-14 \"vanilla\"@72:79 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Bring mixture to a boil over medium heat, then reduce heat and cook for 5 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"boil\"@23:27 / AC\r\n\t\t:ppt ( \"mixture\"@10:17 / FOOD )\r\n\t\t:heat ( temp-12-0 \"medium heat\"@33:44 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-12-1 \"reduce\"@51:57 / AC\r\n\t\t:ppt ( \"heat\"@58:62 / OTHER )\r\n\t)\r\n\t:inform ( ac-12-2 \"cook\"@67:71 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-12-0 \"5 minutes\"@76:85 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Pour glaze over warm cake, then allow to cool completely.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n   :inform ( \"Pour\"@4:8 / AC\r\n      :ppt ( \"glaze\"@9:14 / FOOD )\r\n      :gol ( \"warm cake\"@20:29 / FOOD )\r\n   )\r\n   :inform ( \"cool\"@45:49 / AC\r\n      :ppt( NULL / FOOD )\r\n      :duration ( \"completely\"@50:60 / OTHER )\r\n   )\r\n)"
+        }
+    ]
+}

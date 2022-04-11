@@ -1,0 +1,54 @@
+{
+    "id": "180",
+    "title": "Easy Punch",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "4 (0.13 ounce) packages unsweetened strawberry-flavored drink mix powder",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"4 (0.13 ounce) packages unsweetened strawberry-flavored drink mix powder\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 (46 fluid ounce) cans pineapple juice",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 (46 fluid ounce) cans pineapple juice\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 cups white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 cups white sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "4 quarts water",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"4 quarts water\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 liters ginger ale",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 liters ginger ale\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large punch bowl combine drink mix, pineapple juice, sugar and water.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@25:32 / AC\r\n\t\t:ppt ( ing-0 \"drink mix\"@33:42 / FOOD )\r\n\t\t:ppt ( ing-1 \"pineapple juice\"@44:59 / FOOD )\r\n\t\t:ppt ( ing-2 \"sugar\"@61:66 / FOOD )\r\n\t\t:ppt ( ing-3 \"water\"@71:76 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large punch bowl\"@6:24 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Stir until dissolved.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Stir\"@3:7 / AC\r\n\t\t:until ( cond-1-0 \"until dissolved\"@8:23 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir in the ginger ale.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-4 \"the ginger ale\"@11:25 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

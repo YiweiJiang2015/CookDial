@@ -1,0 +1,42 @@
+{
+    "id": "018",
+    "title": "Easiest Salad Dressing",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/2 cup mayonnaise",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/2 cup mayonnaise\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "3 teaspoons milk",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"3 teaspoons milk\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/4 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/4 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 pinch ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 pinch ground black pepper\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Combine the mayonnaise, milk, salt and pepper in a jar with a tight fitting lid.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( ing-0 \"the mayonnaise\"@11:25 / FOOD )\r\n\t\t:ppt ( ing-1 \"milk\"@27:31 / FOOD )\r\n\t\t:ppt ( ing-2 \"salt\"@33:37 / FOOD )\r\n\t\t:ppt ( ing-3 \"pepper\"@42:48 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a jar with a tight fitting lid\"@52:82 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Shake vigorously to mix, then pour over your salad.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Shake\"@3:8 / AC\r\n\t\t:prp ( purp-1-0 \"to mix\"@20:26 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"pour\"@33:37 / AC\r\n\t\t:gol ( \"your salad\"@43:53 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,142 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what is the first step to bake basil burgers?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. the first step is to preheat an outdoor grill to a high heat temperature.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. I preheated the outdoor grill to a high heat temperature. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Next you should take a bowl to prepare a mixture.",
+            "bot": true,
+            "annotations": "fetch(inst-1, [tool-1-0]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. should it be a large bowl or it doesn't matter?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_tool;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "It doesn't matter as long as it fits the mixture in the end. You can take a large bowl to be safe.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. I took a large bowl. How do we proceed?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "First add 1/4 pounds of ground beef to the bowl.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-1-0, [ing-0]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. I added the beef to the bowl. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Next add 3 tablespoons Worcestershire sauce and 1/2 tablespoons dried basil.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-1-0, [ing-1, ing-2]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. I added the sauce and dry basil. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Finally add 1/4 teaspoon garlic salt and 1/4 teaspoon ground black pepper.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-1-0, [ing-3, ing-4]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. I added the garlic salt and black pepper to the mix. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "You should now form 4 burger patties from the mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. I made 4 patties from the mixture. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now you should oil the preheated grill and cook the burgers to desired doneness.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. I oiled the grill. How long should I cook the burgers?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "You should cook them as desired or you can cook them about 6 minutes to an internal temperature of 70 degrees celsius.",
+            "bot": true,
+            "annotations": "inform_duration(dur-3-0);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. thanks I did that and the burgers are cooked. Is there a next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "You can now serve the cooked burgers on hamburger buns.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. I served the burgers on the buns. It looks good, thank you.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; thank;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "That's all, enjoy your Basil Burgers.",
+            "bot": true,
+            "annotations": "end_recipe();\r\nenjoy();\r\n"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Thanks for the instructions.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 11}"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "id": "131",
+    "title": "Broccoli Coleslaw",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup olive oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/3 cup distilled white vinegar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/3 cup distilled white vinegar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup white sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 (3 ounce) package chicken flavored ramen noodles, crushed, seasoning packet reserved",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 (3 ounce) package chicken flavored ramen noodles, crushed, seasoning packet reserved\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 large head fresh broccoli, diced",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 large head fresh broccoli, diced\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 carrots, grated",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 carrots, grated\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 bunches green onions, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 bunches green onions, chopped\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 cup sunflower seeds",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 cup sunflower seeds\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a small bowl combine oil, vinegar, sugar and the seasoning packet from the ramen noodles.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@19:26 / AC\r\n\t\t:ppt ( ing-0 \"oil\"@27:30 / FOOD )\r\n\t\t:ppt ( ing-1 \"vinegar\"@32:39 / FOOD )\r\n\t\t:ppt ( ing-2 \"sugar\"@41:46 / FOOD )\r\n\t\t:ppt ( ing-3 \"the seasoning packet from the ramen noodles\"@51:94 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a small bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Mix well and refrigerate at least one hour before serving, or overnight.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Mix\"@3:6 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"refrigerate\"@16:27 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-1-0 \"at least one hour\"@28:45 / DUR )\r\n\t\t:duration ( dur-1-1 \"overnight\"@65:74 / DUR )\r\n\t\t:duration ( cond-1-0 \"before serving\"@46:60 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) In a large bowl combine broccoli, carrots, green onions and sunflower seeds.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"combine\"@19:26 / AC\r\n\t\t:ppt ( ing-4 \"broccoli\"@27:35 / FOOD )\r\n\t\t:ppt ( ing-5 \"carrots\"@37:44 / FOOD )\r\n\t\t:ppt ( ing-6 \"green onions\"@46:58 / FOOD )\r\n\t\t:ppt ( ing-7 \"sunflower seeds\"@63:78 / FOOD )\r\n\t\t:loc ( tool-2-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Crush ramen noodles and stir in.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Crush\"@3:8 / AC\r\n\t\t:ppt ( ing-3 \"ramen noodles\"@9:22 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"stir in\"@27:34 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Pour dressing over salad about 10 minutes before serving.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( \"dressing\"@8:16 / FOOD )\r\n\t\t:gol ( \"salad\"@22:27 / FOOD )\r\n\t\t:duration ( dur-4-0 \"10 minutes\"@34:44 / DUR )\r\n\t\t:duration ( cond-4-0 \"before serving\"@45:59 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

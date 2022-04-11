@@ -1,0 +1,120 @@
+{
+    "id": "163",
+    "title": "Arroz con Pollo II",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (2 to 3 pound) whole chicken, cut into pieces",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (2 to 3 pound) whole chicken, cut into pieces\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 tablespoon olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 tablespoon olive oil\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 onions, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 onions, chopped\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "3 cloves garlic, crushed",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"3 cloves garlic, crushed\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 green bell pepper, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 green bell pepper, chopped\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 (15 ounce) can tomato sauce",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 (15 ounce) can tomato sauce\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 pinch saffron",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 pinch saffron\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "salt to taste",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"salt to taste\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 cubes  chicken bouillon",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 cubes  chicken bouillon\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 1/2 cups uncooked white rice",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 1/2 cups uncooked white rice\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1 cup beer",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1 cup beer\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 (15 ounce) can peas, drained",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 (15 ounce) can peas, drained\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1/2 red bell pepper, roasted and sliced",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1/2 red bell pepper, roasted and sliced\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Heat oil in a large skillet over medium high heat.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-1 \"oil\"@8:11 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large skillet\"@15:30 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium high heat\"@36:52 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Saute chicken until lightly browned; remove from skillet and set aside.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Saute\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"chicken\"@9:16 / FOOD )\r\n\t\t:until ( cond-1-0 \"until lightly browned\"@17:38 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-1-1 \"remove\"@40:46 / AC\r\n\t\t:source ( tool-1-0 \"skillet\"@52:59 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-2 \"set aside\"@64:73 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Saute onion, garlic and green bell pepper until soft; stir in tomato sauce, saffron, salt and bouillon and return chicken pieces to skillet.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Saute\"@3:8 / AC\r\n\t\t:ppt ( ing-2 \"onion\"@9:14 / FOOD )\r\n\t\t:ppt ( ing-3 \"garlic\"@16:22 / FOOD )\r\n\t\t:ppt ( ing-4 \"green bell pepper\"@27:44 / FOOD )\r\n\t\t:until ( cond-2-0 \"until soft\"@45:55 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-2-1 \"stir in\"@57:64 / AC\r\n\t\t:ppt ( ing-5 \"tomato sauce\"@65:77 / FOOD )\r\n\t\t:ppt ( ing-6 \"saffron\"@79:86 / FOOD )\r\n\t\t:ppt ( ing-7 \"salt\"@88:92 / FOOD )\r\n\t\t:ppt ( ing-8 \"bouillon\"@97:105 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-2 \"return\"@110:116 / AC\r\n\t\t:ppt ( \"chicken pieces\"@117:131 / FOOD )\r\n\t\t:gol ( tool-2-0 \"skillet\"@135:142 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cook for 10 minutes, then add rice and reduce heat to low.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cook\"@3:7 / AC\r\n\t\t:duration ( dur-3-0 \"10 minutes\"@12:22 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"add\"@29:32 / AC\r\n\t\t:ppt ( ing-9 \"rice\"@33:37 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-2 \"reduce\"@42:48 / AC\r\n\t\t:ppt ( \"heat\"@49:53 / OTHER )\r\n\t\t:gol ( temp-3-0 \"low\"@57:60 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Add beer and simmer for 8 to 10 minutes, stirring occasionally, until rice is tender.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-10 \"beer\"@7:11 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"simmer\"@16:22 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-4-0 \"8 to 10 minutes\"@27:42 / DUR )\r\n\t\t:simultaneous ( ac-4-2 \"stirring\"@44:52 / AC )\r\n\t\t:until ( cond-4-0 \"until rice is tender\"@67:87 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Finally, stir in peas with liquid and garnish with roasted red bell pepper.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"stir in\"@12:19 / AC\r\n\t\t:ppt ( ing-11 \"peas\"@20:24 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"garnish\"@41:48 / AC\r\n\t\t:ppt ( ing-12 \"roasted red bell pepper\"@54:77 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

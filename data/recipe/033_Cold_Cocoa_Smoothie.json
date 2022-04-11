@@ -1,0 +1,54 @@
+{
+    "id": "033",
+    "title": "Cold Cocoa Smoothie",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 1/2 scoops vanilla ice cream",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 1/2 scoops vanilla ice cream\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 1/2 cups milk",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 1/2 cups milk\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/4 cup whipped cream",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/4 cup whipped cream\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 tablespoons instant hot chocolate mix",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 tablespoons instant hot chocolate mix\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "5 chocolate sandwich cookies, crushed",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"5 chocolate sandwich cookies, crushed\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a blender, combine ice cream, milk, whipped cream, hot chocolate mix and crushed cookies.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@17:24 / AC\r\n\t\t:ppt ( ing-0 \"ice cream\"@25:34 / FOOD )\r\n\t\t:ppt ( ing-1 \"milk\"@36:40 / FOOD )\r\n\t\t:ppt ( ing-2 \"whipped cream\"@42:55 / FOOD )\r\n\t\t:ppt ( ing-3 \"hot chocolate mix\"@57:74 / FOOD )\r\n\t\t:ppt ( ing-4 \"crushed cookies\"@79:94 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a blender\"@6:15 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Blend until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Blend\"@3:8 / AC\r\n\t\t:until ( cond-1-0 \"until smooth\"@9:21 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Pour into a large chilled glass.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Pour\"@3:7 / AC\r\n\t\t:gol ( tool-2-0 \"a large chilled glass\"@13:34 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

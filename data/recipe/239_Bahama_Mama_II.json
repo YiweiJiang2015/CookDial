@@ -1,0 +1,42 @@
+{
+    "id": "239",
+    "title": "Bahama Mama II",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 fluid ounce dark rum",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 fluid ounce dark rum\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 fluid ounce apricot brandy",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 fluid ounce apricot brandy\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 1/2 fluid ounces fruit punch",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 1/2 fluid ounces fruit punch\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 fluid ounce pina colada mix",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 fluid ounce pina colada mix\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a mixing glass combine the rum, apricot brandy, fruit punch and pina colada mix.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@21:28 / AC\r\n\t\t:ppt ( ing-0 \"the rum\"@29:36 / FOOD )\r\n\t\t:ppt ( ing-1 \"apricot brandy\"@38:52 / FOOD )\r\n\t\t:ppt ( ing-2 \"fruit punch\"@54:65 / FOOD )\r\n\t\t:ppt ( ing-3 \"pina colada mix\"@70:85 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a mixing glass\"@6:20 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Stir to blend and serve over ice.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Stir\"@3:7 / AC\r\n\t\t:prp ( purp-1-0 \"to blend\"@8:16 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"serve\"@21:26 / AC\r\n\t\t:ppt ( \"ice\"@32:35 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

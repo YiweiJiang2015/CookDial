@@ -1,0 +1,142 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. how do I make chili for two?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. first take a saucepan.",
+            "bot": true,
+            "annotations": "fetch(inst-0, [tool-0-0]);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. should it be small or large?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_tool;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Now you should add three ingredients to this saucepan. Start with 1/4 pound ground beef.",
+            "bot": true,
+            "annotations": "simplify_begin(ac-0-0);\r\nsimplify_continue(ac-0-0, [ing-0]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. what are the other 2 ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The other two ingredients are 1/4 cup chopped onion and 1 garlic clove minced.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-0-0, [ing-1, ing-2]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. I have added both. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Place it over medium heat and cook until the meat is no longer pink.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-0-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. the meat is no longer pink. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "You can now drain the mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-0-1);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. I have done that. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Now you should stir in the remaining 4 ingredients. Start with 1 can chili beans, undrained and 1 can diced tomatoes, undrained.",
+            "bot": true,
+            "annotations": "simplify_begin(ac-1-0);\r\nsimplify_continue(ac-1-0, [ing-3, ing-4]);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. I have added both. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Next add 1 1/2 teaspoon chili powder and 1/2 teaspoon ground cumin.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-1-0, [ing-5, ing-6]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. I have also added these ingredients. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now stir everything well and bring it to a boil.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-1);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. it's boiling. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now you can reduce the heat. Cover it and let it simmer for 10-15 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. the 15 minutes have passed. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "That's all, enjoy it!",
+            "bot": true,
+            "annotations": "end_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. thanks it looks nice.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        }
+    ]
+}

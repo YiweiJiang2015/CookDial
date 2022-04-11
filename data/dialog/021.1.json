@@ -1,0 +1,262 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. today we are making Cupids Cookies. Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes. how should I start?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Great. take a medium bowl and combine 1 cup butter and 1 cup white sugar until it looks light and fluffy.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. done. what should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Blend in 1 egg and 1/2 teaspoons of vanilla extract in the bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "How much vanilla extract should I add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "1/2 teaspoons.",
+            "bot": true,
+            "annotations": "inform_amount(ing-3);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. that is done. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Sift 2 1/2 cups all-purpose flour and 1/2 teaspoon salt in the bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. added as well. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Mix everything well and stir in 1 cup rolled oats.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Sorry can you repeat the last part?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Add 1 cup rolled oats and stir everything.",
+            "bot": true,
+            "annotations": "repeat(inst-4);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. thanks. Everything is stirred.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now divide the dough in half.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. done. What should I do with the dough?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Take one half of the dough and add 1/4 teaspoons peppermint extract 3 drops red food coloring.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. both added on the one half on the dough. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Let it rest for several hours.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. I let it rest for a couple hours. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Good, you can now preheat the oven to 175 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. I will do that. What should I do afterwards?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Roll out both halves of the dough to a thickness of 1/8 inch. Do this on a surface that is sprinkled with 2 tablespoons confectioners' sugar.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. I rolled out both. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Next you should cut out half of each color with the 2 1/2 inch heart shaped cookie cutter and the other half with the 1 1/2 inch cookie cutter.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "In what shape should I cut it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "One half in heart shapes and the other half in standard cookie shapes.",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. thanks. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Next place them on cookie sheets.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. I did that. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "If the oven is preheated you can bake them for 10 to 12 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. I baked them for 10 minutes now. When are they ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "You can remove them from the oven. Place 1/8 of a chocolate bar onto the center of each heart.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "What should I add to the center of each heart?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Add 1/8 of a chocolate bar onto the center of each heart.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-13-1);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 26}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Now place the other cookie shape on top of it and press lightly.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-14);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok. I did that. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-14\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"inst-15\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Finally you can place them on a rack to cool.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-15);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok. I did that. How long should they cool, or is it done now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-15\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-15\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "It is done now. You can enjoy your Cupids Cookies.",
+            "bot": true,
+            "annotations": "end_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok. Thanks. they look good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-15\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-15\", \"tracker_requested_step_num\": 27}"
+        }
+    ]
+}

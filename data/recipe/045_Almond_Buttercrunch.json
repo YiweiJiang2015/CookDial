@@ -1,0 +1,72 @@
+{
+    "id": "045",
+    "title": "Almond Buttercrunch",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3/4 cup butter",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3/4 cup butter\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 cups white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 cups white sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup chopped almonds",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup chopped almonds\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 cups milk chocolate chips",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 cups milk chocolate chips\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 cup finely chopped almonds",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 cup finely chopped almonds\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a saucepan over low heat, combine the butter, sugar and 1 cup chopped almonds.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@32:39 / AC\r\n\t\t:ppt ( ing-0 \"the butter\"@40:50 / FOOD )\r\n\t\t:ppt ( ing-1 \"sugar\"@52:57 / FOOD )\r\n\t\t:ppt ( ing-2 \"1 cup chopped almonds\"@62:83 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a saucepan\"@6:16 / TOOL )\r\n\t\t:heat ( temp-0-0 \"low heat\"@22:30 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Stir constantly until mixture boils, then do not stir or shake.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Stir\"@3:7 / AC\r\n\t\t:until ( cond-1-0 \"until mixture boils\"@19:38 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-1-1 \"stir\"@52:56 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-2 \"shake\"@60:65 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Heat to 300 to 310 degrees F (149 to 154 degrees C), or until a small amount of syrup dropped into cold water forms hard, brittle threads.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Heat\"@3:7 / AC\r\n\t\t:heat ( temp-2-0 \"300 to 310 degrees F\"@11:31 / TEMPERATURE )\r\n\t\t:heat ( temp-2-1 \"149 to 154 degrees C\"@33:53 / TEMPERATURE )\r\n\t\t:until ( cond-2-0 \"until a small amount of syrup dropped into cold water forms hard, brittle threads\"@59:140 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Pour onto a large buttered cookie sheet.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Pour\"@3:7 / AC\r\n\t\t:gol ( tool-3-0 \"a large buttered cookie sheet\"@13:42 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Immediately press chocolate chips onto the hot candy. As the chocolate melts, spread it into a coating over the candy.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"press\"@15:20 / AC\r\n\t\t:ppt ( ing-3 \"chocolate chips\"@21:36 / FOOD )\r\n\t\t:gol ( \"the hot candy\"@42:55 / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"spread\"@81:87 / AC\r\n\t\t:ppt ( \"it\"@88:90 / FOOD )\r\n\t\t:reshape ( \"a coating\"@96:105 / FOOD )\r\n\t\t:duration ( cond-4-0 \"As the chocolate melts\"@57:79 / CONDITION_CLAUSE )\r\n\t\t:gol ( \"the candy\"@111:120 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Sprinkle finely chopped almonds over the top; cool, and break into uneven pieces.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Sprinkle\"@3:11 / AC\r\n\t\t:ppt ( ing-4 \"chopped almonds\"@19:34 / FOOD )\r\n\t\t:gol ( \"the top\"@40:47 / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"cool\"@49:53 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-2 \"break\"@59:64 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:reshape ( \"uneven pieces\"@70:83 / OTHER )\r\n\t)\r\n)"
+        }
+    ]
+}

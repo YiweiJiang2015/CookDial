@@ -1,0 +1,124 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hello!! Today we are making Doreens Oriental Swordfish Steaks. Do you like swordfish?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok nice. I happen to love swordfish and eat it a lot. How many ingredients does the recipe contain?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "This recipe has 6 ingredients. Do you want me to tell you the ingredients 2 by 2?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "No. It's ok. Just guide me through the recipe and announce the ingredients then.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"negate;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Ok I will. First of all, take a medium bowl. You will whisk inside 5 ingredients.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok I have the bowl.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "They are 3 tablespoons of soy sauce, half a cup of vegetable oil. 2 tablespoons sherry, 1 teaspoon grated ginger root and 2 cloves of garlic, peeled and minced.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-0, ing-1, ing-2]);\r\nsimplify_continue(inst-0, [ing-3, ing-4]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok I have added all of them to the bowl.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Good, now take a large resealable bag and fill it with the mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Good now you take 4 swordfish steaks (4 ounces each) and place them into the bag with the mixture. You then shake the bag to coat the fish well.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok what should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "You can now place the bag in the fridge, and allow the steaks to marinate at least 4 hours.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. Is there something I can do in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_parallel_action;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "You can preheat an outdoor grill for high heat and lightly oil grate.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Next is to grill then swordfish steaks 8 to 10 minutes per side, until the swordfish flakes easily and is opaque in the center. Then you are ready enjoy the delicate taste of your swordfish.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Hm it looks amazing, I love swordfish. Thanks for the instructions.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "No problem. Glad to help!",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

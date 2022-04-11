@@ -1,0 +1,114 @@
+{
+    "id": "080",
+    "title": "Crab Quiche",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (9 inch) deep dish frozen pie crust",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (9 inch) deep dish frozen pie crust\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "4 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"4 eggs\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup heavy cream",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup heavy cream\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 teaspoon black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 teaspoon black pepper\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "3 dashes hot pepper sauce (e.g. Tabasco), or to taste",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"3 dashes hot pepper sauce (e.g. Tabasco), or to taste\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 cup shredded Monterey Jack cheese",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 cup shredded Monterey Jack cheese\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/4 cup grated Parmesan cheese",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/4 cup grated Parmesan cheese\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 (8 ounce) package imitation crabmeat, flaked",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 (8 ounce) package imitation crabmeat, flaked\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 green onion, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 green onion, chopped\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat the oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"the oven\"@11:19 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@23:36 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@38:51 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Bake the pie crust for about 10 minutes, until just starting to brown.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"the pie crust\"@8:21 / FOOD )\r\n\t\t:duration ( dur-1-0 \"about 10 minutes\"@26:42 / DUR )\r\n\t\t:until ( cond-1-0 \"until just starting to brown\"@44:72 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Remove from the oven, and allow to cool.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( tool-2-0 \"the oven\"@15:23 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"cool\"@38:42 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) In a large bowl, whisk together the eggs, cream, salt, pepper, and hot sauce.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"whisk\"@20:25 / AC\r\n\t\t:ppt ( ing-1 \"the eggs\"@35:43 / FOOD )\r\n\t\t:ppt ( ing-2 \"cream\"@45:50 / FOOD )\r\n\t\t:ppt ( ing-3 \"salt\"@52:56 / FOOD )\r\n\t\t:ppt ( ing-4 \"pepper\"@58:64 / FOOD )\r\n\t\t:ppt ( ing-5 \"hot sauce\"@70:79 / FOOD )\r\n\t\t:loc ( tool-3-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Stir in shredded cheese, onion and imitation crab.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( \"shredded cheese\"@11:26 / FOOD\r\n\t\t\t:ref ( ing-6 )\r\n\t\t\t:ref ( ing-7 )\r\n\t\t)\r\n\t\t:ppt ( ing-9 \"onion\"@28:33 / FOOD )\r\n\t\t:ppt ( ing-8 \"imitation crab\"@38:52 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Pour into the pie shell.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"the pie shell\"@13:26 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Bake for 25 to 30 minutes in the preheated oven, then turn off the oven, but leave the door closed.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-6-0 \"25 to 30 minutes\"@12:28 / DUR )\r\n\t\t:loc ( tool-6-0 \"the preheated oven\"@32:50 / TOOL )\r\n\t)\r\n\t:inform ( ac-6-1 \"turn off\"@57:65 / AC\r\n\t\t:ppt ( tool-6-1 \"the oven\"@66:74 / TOOL )\r\n\t)\r\n\t:inform ( ac-6-2 \"leave\"@80:85 / AC\r\n\t\t:ppt ( tool-6-2 \"the door\"@86:94 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Leave quiche in the oven for an additional 20 to 30 minutes until firm.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Leave\"@3:8 / AC\r\n\t\t:ppt ( \"quiche\"@9:15 / FOOD )\r\n\t\t:loc ( tool-7-0 \"the oven\"@19:27 / TOOL )\r\n\t\t:duration ( dur-7-0 \"an additional 20 to 30 minutes\"@32:62 / DUR )\r\n\t\t:until ( cond-7-0 \"until firm\"@63:73 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,298 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "What are we going to cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. Today we are going to make Chicken Fried Chops.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. What is the first step to prepare chicken fried chops?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "First, you need a shallow bowl to combine some ingredients.",
+            "bot": true,
+            "annotations": "fetch(inst-0, [tool-0-0]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. Which ingredients should I have?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "There are 8 ingredients. Do you need me to read them one by one?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Yes, that would be nice.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Ok. You have to prepare flour, salt, ground mustard and garlic powder.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);\r\ninform_ingredient(ing-2);\r\ninform_ingredient(ing-3);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. Are these all the ingredients I need for the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "You also need pork loin chops, vegetable oil, condensed cream of chicken soup and water.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-4);\r\ninform_ingredient(ing-5);\r\ninform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. Thanks.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "I will specify the quantity when we use them.",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. So what is the first step ?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "In the bowl, add 1/2 cup flour and 2 teaspoons salt.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Is it ok if I use whole grain flour?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "It is recommended to use all-purpose flour.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. I have the flour and the salt. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Then continue adding 1 1/2 teaspoons ground mustard and 1/2 teaspoon garlic powder.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-2, ing-3]);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. Done. what should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now you should prepare 6 pork chops, each of which is about 3/4 inch thick.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-0-0, [ing-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. Done. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Then put the chops into the bowl and combine everything.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-0-1);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "What is the ideal temperature for the chops to be mixed?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_temperature;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Sorry, I cannot answer this question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. Good. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now take a skillet and oil it.",
+            "bot": true,
+            "annotations": "fetch(inst-1, [tool-1-0]);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. How much oil should I use?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "You need 2 tablespoons vegetable oil.",
+            "bot": true,
+            "annotations": "inform_amount(ing-5);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. Done. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Good. Brown the chops on both sides.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-1);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. For how long should I brown the chops?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Until the chops get brown.",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. Done. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Move the chops to a slow cooker.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. What is a slow cooker?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "It is a tool that has low heat to cook food.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. Done. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Now mix the 1 can of chicken soup and 1/3 cup water. Then pour the mix over chops.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok. Done. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Cover the slow cooker and heat it in low temperature for 6-8 hours or until the pork is tender.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok. What is the exact temperature I should have?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_temperature;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Use the lowest heat of the cooker.",
+            "bot": true,
+            "annotations": "inform_temperature(temp-4-0);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok. Thanks. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "If you want, you can thicken pan juices and serve with the pork chops.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Sorry, I didn't understand. Could you repeat the first part of the sentence?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "Sure. You can utilize the juices remaining at the bottom of the pan to make the chops more tasty.",
+            "bot": true,
+            "annotations": "repeat(ac-5-0);"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Ok. Perfect. Is the recipe over?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "Yes. That is the final step. Enjoy your meal.",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "Thank you bot.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 14}"
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "id": "142",
+    "title": "Badische Schupfnudeln Potato Noodles",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 1/2 pounds russet potatoes",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 1/2 pounds russet potatoes\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 egg",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 egg\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 tablespoon chopped fresh parsley",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 tablespoon chopped fresh parsley\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 teaspoon freshly ground nutmeg",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 teaspoon freshly ground nutmeg\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/4 cup lard or other cooking fat",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/4 cup lard or other cooking fat\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Place whole potatoes in their skins into a large pot of boiling water; boil for 25 to 30 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"whole potatoes\"@9:23 / FOOD )\r\n\t\t:gol ( \"a large pot of boiling water\"@44:72 / FOOD )\r\n\t)\r\n\t:inform ( ac-0-1 \"boil\"@74:78 / AC\r\n\t\t:duration ( dur-0-0 \"25 to 30 minutes\"@83:99 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Remove potatoes, and discard water.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( \"potatoes\"@10:18 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"discard\"@24:31 / AC\r\n\t\t:ppt ( \"water\"@32:37 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) When cool enough to handle, peel potatoes, and place on a lightly floured surface.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"peel\"@31:35 / AC\r\n\t\t:when ( cond-2-0 \"When cool enough to handle\"@3:29 / CONDITION_CLAUSE )\r\n\t\t:ppt ( \"potatoes\"@36:44 / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"place\"@50:55 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-2-0 \"a lightly floured surface\"@59:84 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Mash potatoes with a rolling pin.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Mash\"@3:7 / AC\r\n\t\t:ppt ( \"potatoes\"@8:16 / FOOD )\r\n\t\t:instrument ( tool-3-0 \"a rolling pin\"@22:35 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Place mashed potatoes into a large bowl.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( \"mashed potatoes\"@9:24 / FOOD )\r\n\t\t:gol ( tool-4-0 \"a large bowl\"@30:42 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Stir in flour, egg, parsley, salt, and nutmeg.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-1 \"flour\"@11:16 / FOOD )\r\n\t\t:ppt ( ing-2 \"egg\"@18:21 / FOOD )\r\n\t\t:ppt ( ing-3 \"parsley\"@23:30 / FOOD )\r\n\t\t:ppt ( ing-4 \"salt\"@32:36 / FOOD )\r\n\t\t:ppt ( ing-5 \"nutmeg\"@42:48 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Knead well to form a smooth dough.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Knead\"@3:8 / AC\r\n\t\t:prp ( purp-6-0 \"to form a smooth dough\"@14:36 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Then roll out the dough to a thickness of about 1/2 inch.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"roll out\"@8:16 / AC\r\n\t\t:ppt ( \"the dough\"@17:26 / FOOD )\r\n\t\t:reshape ( \"a thickness of about 1/2 inch\"@30:59 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Cut flattened dough into thin strips, about 1 1/2 inches long.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Cut\"@3:6 / AC\r\n\t\t:ppt ( \"flattened dough\"@7:22 / FOOD )\r\n\t\t:reshape ( \"thin strips\"@28:39 / FOOD\r\n\t\t\t:todo ( \"1 1/2 inches long\"@47:64 / OTHER )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Gently roll out the strips, or stretch them until the ends taper.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"roll out\"@10:18 / AC\r\n\t\t:ppt ( \"the strips\"@19:29 / FOOD )\r\n\t)\r\n\t:inform ( ac-9-1 \"stretch\"@34:41 / AC\r\n\t\t:ppt ( \"them\"@42:46 / PRONOUN )\r\n\t\t:until ( cond-9-0 \"until the ends taper\"@47:67 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Set aside for 15 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Set aside\"@4:13 / AC\r\n\t\t:duration ( dur-10-0 \"15 minutes\"@18:28 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) In a large skillet, heat lard over medium heat.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"heat\"@24:28 / AC\r\n\t\t:ppt ( ing-6 \"lard\"@29:33 / FOOD )\r\n\t\t:heat ( temp-11-0 \"medium heat\"@39:50 / TEMPERATURE )\r\n\t\t:loc ( tool-11-0 \"a large skillet\"@7:22 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Place the potato strips into the skillet, and fry until golden brown on both sides.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Place\"@4:9 / AC\r\n\t\t:ppt ( \"the potato strips\"@10:27 / FOOD )\r\n\t\t:gol ( tool-12-0 \"the skillet\"@33:44 / TOOL )\r\n\t)\r\n\t:inform ( ac-12-1 \"fry\"@50:53 / AC\r\n\t\t:until ( cond-12-0 \"until golden brown on both sides\"@54:86 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "id": "251",
+    "title": "Buffalo Chicken Wings I",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "24 chicken wings",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"24 chicken wings\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 quarts vegetable oil for deep frying",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 quarts vegetable oil for deep frying\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "4 tablespoons butter",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"4 tablespoons butter\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 tablespoon distilled white vinegar",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 tablespoon distilled white vinegar\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "5 tablespoons hot pepper sauce",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"5 tablespoons hot pepper sauce\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"salt and pepper to taste\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large skillet or deep fryer, fry chicken wings in oil until done, about 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"fry\"@37:40 / AC\r\n\t\t:ppt ( ing-0 \"chicken wings\"@41:54 / FOOD )\r\n\t\t:ppt ( ing-1 \"oil\"@58:61 / FOOD )\r\n\t\t:until ( cond-0-0 \"until done\"@62:72 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-0-0 \"about 10 minutes\"@74:90 / DUR )\r\n\t\t:loc ( \"or\"@-1:-1 / CHOICE\r\n\t\t\t:option ( tool-0-0 \"a large skillet\"@6:21 / TOOL )\r\n\t\t\t:option ( tool-0-1 \"deep fryer\"@25:35 / TOOL )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Remove chicken and oil from skillet, drain oil and reserve chicken.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( \"chicken\"@10:17 / FOOD )\r\n\t\t:ppt ( \"oil\"@22:25 / FOOD )\r\n\t\t:source ( tool-1-0 \"skillet\"@31:38 / TOOL )\r\n\t)\r\n\t:inform ( ac-1-1 \"drain\"@40:45 / AC\r\n\t\t:ppt ( \"oil\"@46:49 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-2 \"reserve\"@54:61 / AC\r\n\t\t:ppt ( \"chicken\"@62:69 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Melt butter in skillet, then add vinegar and hot sauce.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Melt\"@3:7 / AC\r\n\t\t:ppt ( ing-2 \"butter\"@8:14 / FOOD )\r\n\t\t:loc ( tool-2-0 \"skillet\"@18:25 / TOOL )\r\n\t)\r\n\t:inform ( ac-2-1 \"add\"@32:35 / AC\r\n\t\t:ppt ( ing-3 \"vinegar\"@36:43 / FOOD )\r\n\t\t:ppt ( ing-4 \"hot sauce\"@48:57 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Season with salt and pepper to taste.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Season\"@3:9 / AC\r\n\t\t:ppt ( ing-5 \"salt and pepper to taste\"@15:39 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Add cooked chicken to sauce and stir over low heat to coat.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( \"cooked chicken\"@7:21 / FOOD )\r\n\t\t:ppt ( \"sauce\"@25:30 / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"stir\"@35:39 / AC\r\n\t\t:heat ( temp-4-0 \"low heat\"@45:53 / TEMPERATURE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-4-0 \"to coat\"@54:61 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) The longer the wings simmer in the sauce, the hotter they will be.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"simmer\"@24:30 / AC\r\n\t\t:ppt ( \"the wings\"@14:23 / FOOD )\r\n\t\t:heat ( \"The longer\"@3:13 / OTHER )\r\n\t\t:loc ( \"the sauce\"@34:43 / FOOD )\r\n\t\t:prp ( purp-5-0 \"the hotter they will be\"@45:68 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Serve warm.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

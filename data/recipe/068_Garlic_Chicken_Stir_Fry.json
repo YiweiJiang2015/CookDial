@@ -1,0 +1,138 @@
+{
+    "id": "068",
+    "title": "Garlic Chicken Stir Fry",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 tablespoons peanut oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 tablespoons peanut oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "6 cloves garlic, minced",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"6 cloves garlic, minced\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 teaspoon grated fresh ginger",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 teaspoon grated fresh ginger\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 bunch green onions, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 bunch green onions, chopped\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 pound boneless skinless chicken breasts, cut into strips",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 pound boneless skinless chicken breasts, cut into strips\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 onions, thinly sliced",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 onions, thinly sliced\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 cup sliced cabbage",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 cup sliced cabbage\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 red bell pepper, thinly sliced",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 red bell pepper, thinly sliced\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 cups sugar snap peas",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 cups sugar snap peas\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1 cup chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1 cup chicken broth\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "2 tablespoons soy sauce",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"2 tablespoons soy sauce\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "2 tablespoons white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"2 tablespoons white sugar\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "2 tablespoons cornstarch",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"2 tablespoons cornstarch\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Heat peanut oil in a wok or large skillet.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"peanut oil\"@8:18 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a wok\"@22:27 / TOOL )\r\n\t\t:loc ( tool-0-1 \"large skillet\"@31:44 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) When oil begins to smoke, quickly stir in 2 cloves minced garlic, ginger root, green onions and salt.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"stir in\"@37:44 / AC\r\n\t\t:ppt ( ing-1 \"2 cloves minced garlic\"@45:67 / FOOD )\r\n\t\t:ppt ( ing-2 \"ginger root\"@69:80 / FOOD )\r\n\t\t:ppt ( ing-3 \"green onions\"@82:94 / FOOD )\r\n\t\t:ppt ( ing-4 \"salt\"@99:103 / FOOD )\r\n\t\t:when ( cond-1-0 \"When oil begins to smoke\"@3:27 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir fry until onion becomes translucent, about 2 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir\"@3:7 / AC\r\n\t\t:until ( cond-2-0 \"until onion becomes translucent\"@12:43 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-2-0 \"about 2 minutes\"@45:60 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Add chicken and stir until opaque, about 3 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-5 \"chicken\"@7:14 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"stir\"@19:23 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-3-0 \"until opaque\"@24:36 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-3-0 \"about 3 minutes\"@38:53 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Add sweet onions, cabbage, bell pepper, peas and 1/2 cup of the broth/water and cover.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-6 \"sweet onions\"@7:19 / FOOD )\r\n\t\t:ppt ( ing-7 \"cabbage\"@21:28 / FOOD )\r\n\t\t:ppt ( ing-8 \"bell pepper\"@30:41 / FOOD )\r\n\t\t:ppt ( ing-9 \"peas\"@43:47 / FOOD )\r\n\t\t:ppt ( ing-10 \"1/2 cup of the broth/water\"@52:78 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"cover\"@83:88 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) In a small bowl, mix the remaining 1/2 cup broth/water, soy sauce, sugar and cornstarch.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"mix\"@20:23 / AC\r\n\t\t:ppt ( ing-10 \"the remaining 1/2 cup broth/water\"@24:57 / FOOD )\r\n\t\t:ppt ( ing-11 \"soy sauce\"@59:68 / FOOD )\r\n\t\t:ppt ( ing-12 \"sugar\"@70:75 / FOOD )\r\n\t\t:ppt ( ing-13 \"cornstarch\"@80:90 / FOOD )\r\n\t\t:loc ( tool-5-0 \"a small bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Add sauce mixture to wok/skillet and stir until chicken and vegetables are coated with the thickened sauce.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( \"sauce mixture\"@7:20 / FOOD )\r\n\t\t:ppt ( tool-6-0 \"wok/skillet\"@24:35 / TOOL )\r\n\t)\r\n\t:inform ( ac-6-1 \"stir\"@40:44 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-6-0 \"until chicken and vegetables are coated with the thickened sauce\"@45:109 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Serve immediately, over hot rice if desired.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( \"hot rice\"@27:35 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

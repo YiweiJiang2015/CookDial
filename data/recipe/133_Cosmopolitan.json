@@ -1,0 +1,54 @@
+{
+    "id": "133",
+    "title": "Cosmopolitan",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (1.5 fluid ounce) jigger vodka",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (1.5 fluid ounce) jigger vodka\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 fluid ounce cointreau",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 fluid ounce cointreau\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 teaspoon fresh lime juice",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 teaspoon fresh lime juice\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 1/2 fluid ounces cranberry juice",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 1/2 fluid ounces cranberry juice\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 twist lime zest, garnish",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 twist lime zest, garnish\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Pour all the ingredients into a shaker with lots of ice.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( \"all the ingredients\"@8:27 / FOOD\r\n\t\t\t:ref ( ing-0 )\r\n\t\t\t:ref ( ing-1 )\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t\t:ref ( ing-4 )\r\n\t\t)\r\n\t\t:gol ( tool-0-0 \"a shaker\"@33:41 / TOOL\r\n\t\t\t:todo ( \"lots of ice\"@47:58 / FOOD )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Shake vigorously for several seconds and strain into a cocktail glass.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Shake\"@3:8 / AC\r\n\t\t:duration ( dur-1-0 \"several seconds\"@24:39 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"strain\"@44:50 / AC\r\n\t\t:gol ( tool-1-0 \"a cocktail glass\"@56:72 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Garnish with a lime twist.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Garnish\"@3:10 / AC\r\n\t\t:ppt ( tool-2-0 \"a lime twist\"@16:28 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

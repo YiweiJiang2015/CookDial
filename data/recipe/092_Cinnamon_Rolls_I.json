@@ -1,0 +1,174 @@
+{
+    "id": "092",
+    "title": "Cinnamon Rolls I",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup warm water (110 degrees F)",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup warm water (110 degrees F)\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 egg",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 egg\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 cups bread flour",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 cups bread flour\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup white sugar\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "3 tablespoons instant powdered milk",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"3 tablespoons instant powdered milk\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 1/2 teaspoons salt",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 1/2 teaspoons salt\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "5 tablespoons butter, softened",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"5 tablespoons butter, softened\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 teaspoon instant yeast",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 teaspoon instant yeast\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/3 cup butter",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/3 cup butter\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/2 cup vanilla ice cream",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/2 cup vanilla ice cream\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1/2 cup brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1/2 cup brown sugar\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/2 cup butter, softened (for spreading)",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/2 cup butter, softened (for spreading)\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 tablespoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 tablespoon ground cinnamon\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1/2 cup brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1/2 cup brown sugar\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Place water, egg, bread flour, white sugar, powdered milk, salt, 5 tablespoons butter and yeast in bread machine in the order suggested by the manufacturer.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"water\"@9:14 / FOOD )\r\n\t\t:ppt ( ing-1 \"egg\"@16:19 / FOOD )\r\n\t\t:ppt ( ing-2 \"bread flour\"@21:32 / FOOD )\r\n\t\t:ppt ( ing-3 \"white sugar\"@34:45 / FOOD )\r\n\t\t:ppt ( ing-4 \"powdered milk\"@47:60 / FOOD )\r\n\t\t:ppt ( ing-5 \"salt\"@62:66 / FOOD )\r\n\t\t:ppt ( ing-6 \"5 tablespoons butter\"@68:88 / FOOD )\r\n\t\t:ppt ( ing-7 \"yeast\"@93:98 / FOOD )\r\n\t\t:gol ( tool-0-0 \"bread machine\"@102:115 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Select DOUGH setting, and turn machine on.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Select\"@3:9 / AC\r\n\t\t:ppt ( \"DOUGH setting\"@10:23 / OTHER )\r\n\t)\r\n\t:inform ( ac-1-1 \"turn\"@29:33 / AC\r\n\t\t:ppt ( tool-1-0 \"machine\"@34:41 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Meanwhile; in a small saucepan, melt 1/3 cup butter.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"melt\"@35:39 / AC\r\n\t\t:ppt ( ing-8 \"1/3 cup butter\"@40:54 / FOOD )\r\n\t\t:loc ( tool-2-0 \"a small saucepan\"@17:33 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Add 1/2 cup brown sugar and ice cream; bring to a boil, and cook for 2 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-10 \"1/2 cup brown sugar\"@7:26 / FOOD )\r\n\t\t:ppt ( ing-9 \"ice cream\"@31:40 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"boil\"@53:57 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-2 \"cook\"@63:67 / AC\r\n\t\t:duration ( dur-3-0 \"2 minutes\"@72:81 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Pour caramel into the bottom of a lightly greased 9 x 13 inch pan.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( \"caramel\"@8:15 / FOOD )\r\n\t\t:gol ( tool-4-0 \"lightly greased 9 x 13 inch pan\"@37:68 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-5-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-5-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-5-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) When machine has finished cycling remove dough from pan and turn it out onto a lightly floured surface.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"remove\"@37:43 / AC\r\n\t\t:when ( cond-6-0 \"When machine has finished cycling\"@3:36 / CONDITION_CLAUSE )\r\n\t\t:ppt ( \"dough\"@44:49 / FOOD )\r\n\t\t:source ( tool-6-0 \"pan\"@55:58 / TOOL )\r\n\t)\r\n\t:inform ( ac-6-1 \"turn\"@63:67 / AC\r\n\t\t:gol ( tool-6-1 \"lightly floured surface\"@82:105 / TOOL )\r\n\t\t:ppt ( \"it\"@68:70 / PRONOUN )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Pat dough into a rectangle.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Pat\"@3:6 / AC\r\n\t\t:ppt ( \"dough\"@7:12 / FOOD )\r\n\t\t:reshape ( \"a rectangle\"@18:29 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Spread with softened butter and sprinkle lightly with cinnamon.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Spread\"@3:9 / AC\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( \"softened butter\"@15:30 / FOOD )\r\n\t)\r\n\t:inform ( ac-8-1 \"sprinkle\"@35:43 / AC\r\n\t\t:ppt ( ing-12 \"cinnamon\"@57:65 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Crumble 1/2 cup brown sugar over the top.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Crumble\"@-1:-1 / AC\r\n\t\t:ppt ( ing-13 \"1/2 cup brown sugar\"@-1:-1 / FOOD )\r\n\t\t:gol ( \"the top\"@-1:-1 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Roll up, and seal edge.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Roll up\"@4:11 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-10-1 \"seal\"@17:21 / AC\r\n\t\t:ppt ( \"edge\"@22:26 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Cut into 12 rolls, and place in prepared pan of caramel.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Cut\"@4:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:reshape ( \"12 rolls\"@13:21 / FOOD )\r\n\t)\r\n\t:inform ( ac-11-1 \"place\"@27:32 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-11-0 \"prepared pan of caramel\"@36:59 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Allow to rise until doubled in size, about 45 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"rise\"@13:17 / AC\r\n\t\t:until ( cond-12-0 \"until doubled in size\"@18:39 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-12-0 \"about 45 minutes\"@41:57 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Bake at 350 degrees F (175 degrees C) for approximately 20 to 25 minutes, until golden brown.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Bake\"@4:8 / AC\r\n\t\t:heat ( temp-13-0 \"350 degrees F\"@12:25 / TEMPERATURE )\r\n\t\t:heat ( temp-13-1 \"175 degrees C\"@27:40 / TEMPERATURE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-13-0 \"20 to 25 minutes\"@60:76 / DUR )\r\n\t\t:until ( cond-13-0 \"until golden brown\"@78:96 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

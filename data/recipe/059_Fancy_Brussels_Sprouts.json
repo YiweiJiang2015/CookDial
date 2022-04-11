@@ -1,0 +1,72 @@
+{
+    "id": "059",
+    "title": "Fancy Brussels Sprouts",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup water",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup water\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/4 cup minced fresh parsley",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/4 cup minced fresh parsley\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 teaspoon sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 teaspoon sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "4 cups Brussels sprouts, halved",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"4 cups Brussels sprouts, halved\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 (8 ounce) can water chestnuts, drained and diced",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 (8 ounce) can water chestnuts, drained and diced\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 tablespoon butter or margarine",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 tablespoon butter or margarine\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a saucepan over medium heat, bring water, parsley, sugar and salt to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"boil\"@77:81 / AC\r\n\t\t:ppt ( ing-0 \"water\"@41:46 / FOOD )\r\n\t\t:ppt ( ing-1 \"parsley\"@48:55 / FOOD )\r\n\t\t:ppt ( ing-2 \"sugar\"@57:62 / FOOD )\r\n\t\t:ppt ( ing-3 \"salt\"@67:71 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a saucepan\"@6:16 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium heat\"@22:33 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add brussels sprouts.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-4 \"brussels sprouts\"@7:23 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cover and simmer for 6-8 minutes or until tender; drain.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"simmer\"@13:19 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-2-0 \"6-8 minutes\"@24:35 / DUR )\r\n\t\t:until ( cond-2-0 \"until tender\"@39:51 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-2-2 \"drain\"@53:58 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Add water chestnuts and butter; heat through.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-5 \"water chestnuts\"@7:22 / FOOD )\r\n\t\t:ppt ( ing-6 \"butter\"@27:33 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"heat\"@35:39 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": "232",
+    "title": "Double Fudge Brownie Mix",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 cups white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 cups white sugar\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup unsweetened cocoa powder",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup unsweetened cocoa powder\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 cup chopped pecans",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 cup chopped pecans\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 cup semisweet chocolate chips",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 cup semisweet chocolate chips\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a 1 quart or 1 liter jar, layer the ingredients in the order listed.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"layer\"@32:37 / AC\r\n\t\t:loc ( tool-0-0 \"a 1 quart or 1 liter jar\"@6:30 / TOOL )\r\n\t\t:ppt ( \"the ingredients\"@38:53 / FOOD\r\n\t\t\t:ref ( ing-0 )\r\n\t\t\t:ref ( ing-1 )\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t\t:ref ( ing-4 )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Attach a tag with the following instructions: Preheat the oven to 325 degrees F (165 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Attach\"@3:9 / AC\r\n\t\t:ppt ( tool-1-0 \"a tag\"@10:15 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"Preheat\"@49:56 / AC\r\n\t\t:ppt ( tool-1-1 \"the oven\"@57:65 / TOOL )\r\n\t\t:heat ( temp-1-0 \"325 degrees F\"@69:82 / TEMPERATURE )\r\n\t)\r\n)"
+        }
+    ]
+}

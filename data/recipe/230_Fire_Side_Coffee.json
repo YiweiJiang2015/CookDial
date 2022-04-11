@@ -1,0 +1,60 @@
+{
+    "id": "230",
+    "title": "Fire Side Coffee",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 cups powdered non-dairy creamer",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 cups powdered non-dairy creamer\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 1/2 cups instant hot chocolate mix",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 1/2 cups instant hot chocolate mix\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 1/2 cups instant coffee granules",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 1/2 cups instant coffee granules\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 teaspoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 teaspoon ground cinnamon\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 teaspoon ground nutmeg",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 teaspoon ground nutmeg\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Sift together creamer, hot chocolate mix, instant coffee, cinnamon and nutmeg.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Sift\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"creamer\"@17:24 / FOOD )\r\n\t\t:ppt ( ing-1 \"hot chocolate mix\"@26:43 / FOOD )\r\n\t\t:ppt ( ing-2 \"instant coffee\"@45:59 / FOOD )\r\n\t\t:ppt ( ing-3 \"cinnamon\"@61:69 / FOOD )\r\n\t\t:ppt ( ing-4 \"nutmeg\"@74:80 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Pour into a jar and seal with a lid.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Pour\"@3:7 / AC\r\n\t\t:gol ( tool-1-0 \"a jar\"@13:18 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"seal\"@23:27 / AC\r\n\t\t:instrument ( tool-1-1 \"a lid\"@33:38 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) To prepare: Stir 3 teaspoons of mixture into 1 cup of hot water.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir\"@15:19 / AC\r\n\t\t:subtask ( purp-2-0 \"To prepare\"@3:13 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( \"3 teaspoons of mixture\"@20:42 / FOOD )\r\n\t\t:ppt ( \"1 cup of hot water\"@48:66 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Adjust to taste.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Adjust\"@3:9 / AC\r\n\t\t:prp ( purp-3-0 \"to taste\"@10:18 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

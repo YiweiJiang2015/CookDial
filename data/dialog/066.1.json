@@ -1,0 +1,82 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we will make crab cake sauce. It will be a short recipe. Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes I am ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Take 1 cup sour cream an 1 cup of mayonnaise.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-0-0, [ing-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "I have them both. What should I do with them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "We still need 5 more ingredients. You should put all the ingredients in a blender. The next two ingredients are 1/2 cup cottage cheese and 1/3 cup hot salsa.",
+            "bot": true,
+            "annotations": "simplify_begin(ac-0-0);\r\nsimplify_continue(ac-0-0, [ing-2, ing-3]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Should I place the mayonnaise and the sour creme also in the blender?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Yes all the ingredients should go into a blender.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. what are the other three ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "1/4 teaspoon cayenne pepper, 1 tablespoon lemon juice and 1/2 cup plain yogurt. Now puree until it becomes smooth.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-0-0, [ing-4, ing-5, ing-6]);\r\ninform_instruction(ac-0-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. it is smooth. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "That was all. Let it chill before serving.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);\r\nend_recipe();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. thank you. It looks good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 9}"
+        }
+    ]
+}

@@ -1,0 +1,214 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. how should I start making the Roasted Butterflied Leg of Lamb?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. the first step is to mix some oil, garlic, salt, pepper, cumin and oregano.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_instruction(ac-0-0);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. should I mix it in a pan or a bowl?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_tool;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Sorry I cannot answer that.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Alright I made the mixture. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Now you should spread the mixture on both sides of the lamb. Wait for about one hour until the lamb is at room temperature.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-0-1);\r\ninform_instruction(ac-0-2);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Can you repeat the second part? I added the mixture to the lamb.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat; confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Wait for one hour until the lamb comes at room temperature.",
+            "bot": true,
+            "annotations": "repeat(ac-0-2);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. the lamb is on room temperature.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Ok. now you can preheat the oven to high heat for at least 10 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. I preheated the oven. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Cover a roasting pan with foil.",
+            "bot": true,
+            "annotations": "fetch(inst-2, [tool-2-1]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. I covered the roasting pan with foil. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Now you can place the lamb in the roasting pan and place it on a large wire rack in the oven. Make sure the cut side of the lamb is upwards.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "I placed the lamb in the oven. Can you repeat the last phrase?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_repeat;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Make sure the side of the lamb were it is cut, is facing upwards.",
+            "bot": true,
+            "annotations": "repeat(inst-2);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. the side of the lamb is facing upwards. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now you should broil the lamb for about 8 minutes. Meanwhile you should move the pan regularly so the entire surface browns evenly.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. I have done that. The entire surface is brown. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now you should turn the lamb over so the other surface is facing upwards. Repeat the 8 minutes while moving the pan regularly.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. I have done that. The other side also turned out ok.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now you can turn off the broiler and let rest the lamb outside the oven for 10 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. the lamb rested for 10 minutes. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now heat the oven to 325 degrees Fahrenheit.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. the oven is heated.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Place a thermometer into the thickest portion of the lamb.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-7-0);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. I did. What should be the temperature?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_temperature;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Now you should roast the lamb until the thermometer shows 140 degrees. This should be about 50 minutes to 1 hour.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-7-1);\r\ninform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. the temperature shows 140 degrees. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Take the lamb out of the oven and squeeze on some lemon juice and sprinkle with fresh herbs.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. I have done that. How to finish it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Slice the lamb and serve on a platter. Sprinkle the lamb with the accumulated juices from the lamb.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);\r\ninform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. I have served it on a platter. Something else to do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_ongoing;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "No that's all, well done! Enjoy your meal.",
+            "bot": true,
+            "annotations": "negate();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. thanks it looks good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 22}"
+        }
+    ]
+}

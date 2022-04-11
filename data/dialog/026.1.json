@@ -1,0 +1,196 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. how do I make British bread pudding?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "First of all, you need to preheat oven to 190 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "I have set the oven to 190 degrees Celsius. What can I do while the oven is preheating?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_parallel_action;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Take a large bowl and add six and one fourth cups of cubed bread. Then add one and one fourth cups of milk into the bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. I have added the cubed bread and milk into the bowl. What else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Let the bread soak for 5 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. should I do something else during the five minutes?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_parallel_action;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "No, just wait for it. Afterwards, stir in 1 egg, one third cup of soften butter.",
+            "bot": true,
+            "annotations": "negate();\r\nsimplify_continue(inst-2, [ing-2, ing-3]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. the 5 minutes have passed and the eggs and butter are added. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Also three fourth cup of raisins, one fourth cup of dried mixed fruit, half cup of brown sugar.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-2, [ing-4, ing-5, ing-6]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "That's a lot. Can you repeat the last ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_repeat;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Yes, it is half cup of brown sugar. Can we continue?",
+            "bot": true,
+            "annotations": "repeat(inst-2, [ing-6]);\r\nother();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Yes everything is added. Continue please.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "For the bowl, you still need to add one tablespoon of ground nutmeg, one tablespoon of ground cinnamon.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-2, [ing-7, ing-8]);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Done. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "No. That is all. Now you can mix them in the bowl.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "For how long should I mix it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Sorry. I cannot answer your question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "No problem. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Take a 9 inch square baking pan, then press the mixture into the pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. should I heat the pan now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Sorry, are you requesting the next instruction?",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Yes what's the next instruction?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Place the pan in the preheated oven. Then bake for 35 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. I have set the timer on 45 minutes. Can I do something while waiting.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_parallel_action;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "It is better to set it as 35 minutes.",
+            "bot": true,
+            "annotations": "inform_duration(dur-5-0);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. I have adjusted it to 35 minutes.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "You do not need to do anything while waiting.",
+            "bot": true,
+            "annotations": "negate();"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "The 35 minutes have passed now. What's the next instruction?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "This is the final step. Let the pudding cool in the pan, then cut into squares. Then you can enjoy it.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. I have done that. They are delicious. Bye!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; goodbye;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Bye!",
+            "bot": true,
+            "annotations": "goodbye();"
+        }
+    ]
+}

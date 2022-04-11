@@ -1,0 +1,232 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. today we are making Beet and Pear Puree.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Nice. How do I start?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "First preheat the oven to 400 degrees Fahrenheit or 200 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Wash 8 medium beets and place them in a roasting pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. what should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Bake the beets for 45 minutes to 1 hour.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-2-0);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. when do I know when they are ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "The beets are ready when they have become tender.",
+            "bot": true,
+            "annotations": "inform_duration(cond-2-0);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. they are ready now. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Take a large skillet and melt butter over medium heat. You can use 1 pound unsalted butter for it.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. I will do that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "You should stir in four ingredients into the large skillet. Start with 1 1/2 cups minced Vidalia onions.",
+            "bot": true,
+            "annotations": "simplify_begin(ac-4-0);\r\nsimplify_continue(ac-4-0, [ing-2]);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. what are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Next add 4 Bosc pears. The pears should be peeled, cored and minced.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-4-0, [ing-3]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. I have done that as well. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Finally add 2 tablespoons white sugar and 1/2 cup cranberry vinegar.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-4-0, [ing-4, ing-5]);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Cook it for 20 minutes. Stir frequently.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-4-1);\r\ninform_instruction(ac-4-2);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. how do I know when it's ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Peel and coarsely chop the beets when they are cool enough to handle.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. I have done that. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Place the onion mixture into a food processor with metal blade and puree the onion mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. for how long should I puree it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Until it becomes puree.",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. Is there something else to do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Now you can add 1 teaspoon salt and 1/2 of the beets. When this is added pulse 4 to 5 times.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Could you repeat the last part?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Pulse 4 to 5 times with the food processor.",
+            "bot": true,
+            "annotations": "repeat(ac-7-1);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Now you can add the remaining 1/2 of the beets and pulse 2 to 3 minutes with the food processor.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. I have done that as well. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "That's all. It is finished now. Enjoy your Beat and Pear Puree.",
+            "bot": true,
+            "annotations": "end_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. thanks it looks good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Bye.",
+            "bot": true,
+            "annotations": "goodbye();"
+        }
+    ]
+}

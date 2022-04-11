@@ -1,0 +1,90 @@
+{
+    "name": "agent_task_exp",
+    "n_gpu": 1,
+    "vocabularies": {
+        "agent_acts": {
+            "suffix": "json",
+            "add_unk": false,
+            "add_start": true,
+            "add_end": true
+        }
+    },
+    "model": {
+        "type": "ModelAgentTask",
+        "encoder_dialog": {
+            "type": "TransModel",
+            "bert_name": "google/bigbird-roberta-base",
+            "is_split_into_words": true,
+            "fine_tune": true,
+            "padding": true,
+            "model_path": "na",
+            "use_finetuned_model": false
+        },
+        "span_embedder_full_set_ptr": {
+            "type": "SpanEmbedding",
+            "use_self_attention": false,
+            "use_dummy_span": true,
+            "hidden_dim": 768,
+            "method": "end_point"
+        },
+        "args": {
+            "dropout": 0.2,
+            "loss_alpha": 1.0,
+            "loss_beta": 1.0
+        }
+    },
+    "dataloader": {
+        "type": "AutoSplitDataLoader",
+        "args": {
+            "merged_file": "../data/processed/dialog/cookdial_dialog_merged.json",
+            "ratio": [0.8, 0.1, 0.1],
+            "dataset_name": "DatasetAgentTask",
+            "batch_size": 8,
+            "train_shuffle": true,
+            "valid_shuffle": false,
+            "num_workers": 0,
+            "collate_fn": "collate_agent_task",
+            "history_prepend": false,
+            "history_window": 1
+        }
+    },
+    "optimizer": {
+        "type": "AdamW",
+        "args": {
+            "lr": 1e-5,
+            "weight_decay": 0
+        }
+    },
+    "loss":{
+        "full_set_ptr": "sequence_cross_entropy_with_logits"
+    },
+    "metrics":{
+        "agent_acts": "F1DecodedPred",
+        "full_set_ptr": "F1DynamicClassWithinBatch"
+    },
+    "lr_scheduler": {
+        "type": "get_cosine_schedule_with_warmup",
+        "args": {
+            "num_warmup_steps": 1000,
+            "num_training_steps": 10000
+        }
+    },
+    "trainer": {
+        "epochs": 50,
+        "save_dir": "save/",
+        "save_period": 1e6,
+        "save_start": 1000,
+        "verbosity": 2,
+        "monitor": "max val/agent_acts/fscore",
+        "early_stop": 10000,
+        "tensorboard": true,
+        "use_bert": true,
+        "log_histogram": false,
+        "use_scheduler": false,
+        "grad_clip": false,
+        "max_grad_norm": 10.0
+    },
+    "main": {
+        "seed": 12345
+    }
+}

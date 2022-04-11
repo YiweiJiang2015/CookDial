@@ -1,0 +1,84 @@
+{
+    "id": "218",
+    "title": "Fudge Drops",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 2/3 cups sugar",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 2/3 cups sugar\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (5 ounce) can evaporated milk",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (5 ounce) can evaporated milk\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 tablespoons butter or margarine",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 tablespoons butter or margarine\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 3/4 cups miniature marshmallows",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 3/4 cups miniature marshmallows\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 cups semisweet chocolate chips",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 cups semisweet chocolate chips\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 cup coarsely chopped walnuts",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 cup coarsely chopped walnuts\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 cup raisins",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 cup raisins\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a heavy saucepan, combine the sugar, milk, butter and salt.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@24:31 / AC\r\n\t\t:ppt ( ing-0 \"sugar\"@36:41 / FOOD )\r\n\t\t:ppt ( ing-1 \"milk\"@43:47 / FOOD )\r\n\t\t:ppt ( ing-2 \"butter\"@49:55 / FOOD )\r\n\t\t:ppt ( ing-3 \"salt\"@60:64 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a heavy saucepan\"@6:22 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Bring to a boil over medium heat, stirring constantly.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"boil\"@14:18 / AC\r\n\t\t:heat ( temp-1-0 \"medium heat\"@24:35 / TEMPERATURE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:simultaneous ( ac-1-1 \"stirring\"@37:45 / AC )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Remove from the heat; stir in remaining ingredients.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( tool-2-0 \"the heat\"@15:23 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"stir in\"@25:32 / AC\r\n\t\t:ppt ( \"remaining ingredients\"@33:54 / FOOD\r\n\t\t\t:ref ( ing-4 )\r\n\t\t\t:ref ( ing-5 )\r\n\t\t\t:ref ( ing-6 )\r\n\t\t\t:ref ( ing-7 )\r\n\t\t)\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Drop by tablespoonfuls onto waxed paper-lined baking sheets.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Drop\"@3:7 / AC\r\n\t\t:instrument ( tool-3-0 \"tablespoonfuls\"@11:25 / TOOL )\r\n\t\t:gol ( tool-3-1 \"waxed paper-lined baking sheets\"@31:62 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Let stand at room temperature until cool.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"stand\"@7:12 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:heat ( temp-4-0 \"room temperature\"@16:32 / TEMPERATURE )\r\n\t\t:until ( cond-4-0 \"until cool\"@33:43 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

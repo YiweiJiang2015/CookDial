@@ -1,0 +1,84 @@
+{
+    "id": "244",
+    "title": "Artichoke Hummus",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (15 ounce) can chickpeas (garbanzo beans), drained",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (15 ounce) can chickpeas (garbanzo beans), drained\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 clove garlic",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 clove garlic\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup drained marinated artichoke hearts",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup drained marinated artichoke hearts\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 tablespoons lemon juice",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 tablespoons lemon juice\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 tablespoons water",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 tablespoons water\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 tablespoon chopped fresh parsley",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 tablespoon chopped fresh parsley\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "Quaker Quakes Ranch or Sour Cream and Onion Flavor Rice Snacks",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"Quaker Quakes Ranch or Sour Cream and Onion Flavor Rice Snacks\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Combine all ingredients except parsley and Quaker Rice Snacks in work bowl of food processor.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( \"all ingredients except parsley and Quaker Rice Snacks\"@11:64 / FOOD\r\n\t\t\t:ref ( ing-0 )\r\n\t\t\t:ref ( ing-1 )\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t\t:ref ( ing-4 )\r\n\t\t)\r\n\t\t:loc ( tool-0-0 \"work bowl of food processor\"@68:95 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Pulse until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Pulse\"@3:8 / AC\r\n\t\t:until ( cond-1-0 \"until smooth\"@9:21 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Transfer to serving bowl.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Transfer\"@3:11 / AC\r\n\t\t:gol ( tool-2-0 \"serving bowl\"@15:27 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cover and refrigerate until ready to serve.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"refrigerate\"@13:24 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-3-0 \"until ready to serve\"@25:45 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Stir in parsley.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-5 \"parsley\"@11:18 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Dip or spread each Quakes Ranch Flavor Rice Snack with hummus.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Dip\"@3:6 / AC\r\n\t\t:ppt ( ing-6 \"each Quakes Ranch Flavor Rice Snack\"@17:52 / FOOD )\r\n\t\t:ppt ( \"hummus\"@58:64 / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"spread\"@10:16 / AC )\r\n)"
+        }
+    ]
+}

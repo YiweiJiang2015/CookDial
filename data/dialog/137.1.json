@@ -1,0 +1,142 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. How do I make chicken eileen?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi! Chicken Eileen is an easy but very tasty recipe! It has only 3 ingredients and you will need just 7 steps to complete it. Would you like the hear the ingredients out?",
+            "bot": true,
+            "annotations": "greeting();\r\nsum_ingredient_list();\r\npropose_list_ingredients();\r\n"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes please.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Great! So you will need 8 skinless, boneless chicken breast halves. 1 package herb-seasoned dry bread stuffing mix. And 16 medium slices mozzarella cheese.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);\r\ninform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "How large is the package? And can I use scamorza in stead of mozzarella.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount; req_substitute;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "The package should be a 6 ounce one. Sorry, I don't know what scamorza is.",
+            "bot": true,
+            "annotations": "inform_amount(ing-0);\r\nfence();"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "You can start to preheat the oven to 175 degrees celsius?",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. Is there anything I can do in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_parallel_action;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Sure! You can prepare the stuffing according to package directions.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Now you should wash the chicken, pat dry and pound out to about half an inch of thickness.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. I have done that.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Good! Now place a slice of cheese on each breast, followed by a scoop of prepared stuffing.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Yes ready. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Good job! Now take the stuffed breasts and place them in a lightly greased 9x13 inch baking dish.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. Should I put them in the oven now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Yes, you can bake them at 175 degrees celsius for 25 minutes. Or until chicken juices run clear.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(ac-5-0);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. It looks fine now. Is there something else to do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "I bet it looks great! You can now second slice of cheese over each stuffed chicken, and bake for 2 more minutes, or until cheese becomes bubbly.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-5-1);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ah yes of course. The cheese is melted on top. Is it done now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Yes it's done! you can enjoy you chicken!!",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. thanks it looks good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 9}"
+        }
+    ]
+}

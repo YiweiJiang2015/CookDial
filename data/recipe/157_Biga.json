@@ -1,0 +1,72 @@
+{
+    "id": "157",
+    "title": "Biga",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3/4 teaspoon active dry yeast",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3/4 teaspoon active dry yeast\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup warm water",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup warm water\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 1/2 cups unbleached bread flour",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 1/2 cups unbleached bread flour\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 1/4 cups cold water",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 1/4 cups cold water\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Place the warm water in a small bowl, and sprinkle the yeast over the top.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-1 \"the warm water\"@9:23 / FOOD )\r\n\t\t:gol ( tool-0-0 \"a small bowl\"@27:39 / TOOL )\r\n\t)\r\n\t:inform ( ac-0-1 \"sprinkle\"@45:53 / AC\r\n\t\t:ppt ( ing-0 \"the yeast\"@54:63 / FOOD )\r\n\t\t:gol ( \"the top\"@69:76 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Let stand until yeast has dissolved and is foamy, about 15 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"stand\"@7:12 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-1-0 \"until yeast has dissolved and is foamy\"@13:51 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-1-0 \"15 minutes\"@59:69 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Measure flour into a large bowl.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Measure\"@3:10 / AC\r\n\t\t:ppt ( ing-2 \"flour\"@11:16 / FOOD )\r\n\t\t:gol ( tool-2-0 \"a large bowl\"@22:34 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Make a well in the center, and pour in the yeast mixture and cold water.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Make\"@3:7 / AC\r\n\t\t:loc ( \"the center\"@18:28 / FOOD )\r\n\t\t:ppt ( \"a well\"@8:14 / OTHER )\r\n\t)\r\n\t:inform ( ac-3-1 \"pour in\"@34:41 / AC\r\n\t\t:ppt ( \"the yeast mixture\"@42:59 / FOOD )\r\n\t\t:ppt ( ing-3 \"cold water\"@64:74 / FOOD )\r\n\t\t:gol ( \"a well\"@8:14 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Use a sturdy spoon to mix it together until sticky and difficult to stir, but nevertheless thoroughly combined.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"mix\"@25:28 / AC\r\n\t\t:ppt ( \"it\"@29:31 / PRONOUN )\r\n\t\t:until ( cond-4-0 \"until sticky and difficult to stir, but nevertheless thoroughly combined\"@41:113 / CONDITION_CLAUSE )\r\n\t\t:instrument ( tool-4-0 \"a sturdy spoon\"@7:21 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Cover and allow to ferment for 24 hours in the refrigerator before using.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"ferment\"@22:29 / AC\r\n\t\t:duration ( dur-5-0 \"24 hours\"@34:42 / DUR )\r\n\t\t:loc ( tool-5-0 \"the refrigerator\"@46:62 / TOOL )\r\n\t\t:duration ( cond-5-0 \"before using\"@63:75 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Store in the refrigerator for up to 2 weeks.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Store\"@3:8 / AC\r\n\t\t:loc ( tool-6-0 \"the refrigerator\"@12:28 / TOOL )\r\n\t\t:duration ( dur-6-0 \"up to 2 weeks\"@33:46 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

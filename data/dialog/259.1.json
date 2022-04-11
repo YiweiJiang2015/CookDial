@@ -1,0 +1,244 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello!",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi today we will make Chicken and Black Bean Chili. Do you like it?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "I like it. What ingredients do I need?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "There are 18 ingredients. Do you want me to specify them when you need them?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_skip_ing_list();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Yes. What do I need to do first.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "First, add 2 teaspoons oil to a large pot and heat it over medium heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Done. What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Prepare 3 large chicken breast halves and cut into 1 inch pieces. Then place chicken in the pot and brown on all sides.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Okay. The chicken breast halves are cut and browned.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Good. Now you have to do some seasoning. First, add sea salt, 1 tablespoon chili powder and 1/2 tablespoon ground cumin.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-2);\r\nsimplify_continue(inst-2, [ing-2, ing-3, ing-4]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Everything is seasoned.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Continue adding 1 dried chipotle chili pepper, ground black pepper and 1/2 teaspoon ground cayenne pepper.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-2, [ing-5, ing-6, ing-7]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Now mix in other stuff. First, add 1 small yellow onion, 1 medium green bell pepper and 1 medium yellow bell pepper.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Do I need to chop the bell peppers first?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "You need to dice them.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok, the mixture is done with the diced bell peppers. What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Pour in about 3 cups water and continue cooking 10 minutes until about 1/2 the water has evaporated.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "The water has evaporated. I think it's done now. What do I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now you have to add 3 things to the pot. The first two are 1 can undrained kidney beans and 1 can undrained black beans.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-5);\r\nsimplify_continue(inst-5, [ing-12, ing-13]);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "How large should the cans be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"ing-12\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "They are both 15 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-12);\r\ninform_amount(ing-13);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. Done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-13\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "The last thing to add is 1 can drained whole kernel corn.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-5, [ing-14]);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "How large does the can have to be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"ing-14\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "It is 11 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-14);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Okay. Finished. How do I proceed from here?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-14\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Season the mixture with 1 teaspoon green pepper sauce.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 26}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Now reduce the heat to low temperature.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-7-0);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Okay. What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 26}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Then mix in 2 cups water and 1 can roasted garlic tomato paste.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-7-1);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "How large should the can of tomato paste be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"ing-16\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "It should be 6 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-16);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-16\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Now simmer and stir it occasionally for 30 minutes until thickened.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "It has simmered for 30 minutes and is thickened. What do I need to do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "The last step is to top with chopped fresh cilantro then serve it.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Alright, all finished! Looks great! Thanks.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; thank;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Enjoy! Have a nice day!",
+            "bot": true,
+            "annotations": "enjoy();"
+        }
+    ]
+}

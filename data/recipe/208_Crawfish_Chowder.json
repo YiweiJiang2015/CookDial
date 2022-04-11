@@ -1,0 +1,120 @@
+{
+    "id": "208",
+    "title": "Crawfish Chowder",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/4 cup butter",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/4 cup butter\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 bunch green onions, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 bunch green onions, chopped\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup butter",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup butter\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 pounds frozen crawfish, cleaned",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 pounds frozen crawfish, cleaned\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 (10.75 ounce) cans condensed cream of potato soup",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 (10.75 ounce) cans condensed cream of potato soup\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 (10.75 ounce) can condensed cream of mushroom soup",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 (10.75 ounce) can condensed cream of mushroom soup\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 (15.25 ounce) can whole kernel corn, drained",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 (15.25 ounce) can whole kernel corn, drained\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "4 ounces cream cheese, softened",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"4 ounces cream cheese, softened\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 cups half-and-half cream",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 cups half-and-half cream\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/2 teaspoon cayenne pepper",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/2 teaspoon cayenne pepper\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Melt 1/4 cup of butter in a large skillet over medium heat.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Melt\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"1/4 cup of butter\"@8:25 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large skillet\"@29:44 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium heat\"@50:61 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Saute green onions in butter until tender.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Saute\"@3:8 / AC\r\n\t\t:ppt ( ing-1 \"green onions\"@9:21 / FOOD )\r\n\t\t:loc ( ing-2 \"butter\"@25:31 / FOOD )\r\n\t\t:until ( cond-1-0 \"until tender\"@32:44 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Remove from pan, and set aside.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( tool-2-0 \"pan\"@15:18 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"set aside\"@24:33 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) In the same skillet, melt 1/2 cup of butter, and saute the crawfish for 5 minutes; set aside.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"melt\"@24:28 / AC\r\n\t\t:loc ( tool-3-0 \"the same skillet\"@6:22 / TOOL )\r\n\t\t:ppt ( ing-2 \"1/2 cup of butter\"@29:46 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"saute\"@52:57 / AC\r\n\t\t:ppt ( ing-3 \"the crawfish\"@58:70 / FOOD )\r\n\t\t:duration ( dur-3-0 \"5 minutes\"@75:84 / DUR )\r\n\t)\r\n\t:inform ( ac-3-2 \"set aside\"@86:95 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) In a large pot over medium heat, combine potato soup, mushroom soup, corn, and cream cheese.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"combine\"@36:43 / AC\r\n\t\t:ppt ( ing-4 \"potato soup\"@44:55 / FOOD )\r\n\t\t:ppt ( ing-5 \"mushroom soup\"@57:70 / FOOD )\r\n\t\t:ppt ( ing-6 \"corn\"@72:76 / FOOD )\r\n\t\t:ppt ( ing-7 \"cream cheese\"@82:94 / FOOD )\r\n\t\t:loc ( tool-4-0 \"a large pot\"@6:17 / TOOL )\r\n\t\t:heat ( temp-4-0 \"medium heat\"@23:34 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Mix well, and bring to a slow boil.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Mix\"@3:6 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"boil\"@33:37 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Stir in half-and-half, sauteed green onions, and crawfish.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( \"sauteed green onions\"@26:46 / FOOD )\r\n\t\t:ppt ( \"crawfish\"@52:60 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Season with cayenne pepper.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Season\"@3:9 / AC\r\n\t\t:ppt ( ing-9 \"cayenne pepper\"@15:29 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Bring to a low boil, and simmer 5 minutes to blend flavors.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"boil\"@18:22 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-8-1 \"simmer\"@28:34 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-8-0 \"5 minutes\"@35:44 / DUR )\r\n\t\t:prp ( purp-8-0 \"to blend flavors\"@45:61 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

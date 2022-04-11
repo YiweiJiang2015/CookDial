@@ -1,0 +1,102 @@
+{
+    "id": "135",
+    "title": "Butterscotch Brownies in a Jar",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 1/2 tablespoons baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 1/2 tablespoons baking powder\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/4 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/4 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 cup flaked coconut",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 cup flaked coconut\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "3/4 cup chopped pecans",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"3/4 cup chopped pecans\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 cups packed brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 cups packed brown sugar\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "3/4 cup softened butter",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"3/4 cup softened butter\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 beaten eggs",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 beaten eggs\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 teaspoons of vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 teaspoons of vanilla extract\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 375 degrees F (190 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"375 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"190 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Grease a 9x13 inch baking pan.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Grease\"@3:9 / AC\r\n\t\t:ppt ( tool-1-0 \"a 9x13 inch baking pan\"@10:32 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Empty jar of brownie mix into a large mixing bowl; stir to break up lumps.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Empty\"@3:8 / AC\r\n\t\t:ppt ( tool-2-0 \"jar of brownie mix\"@-1:-1 / TOOL )\r\n\t\t:gol ( tool-2-1 \"a large mixing bowl\"@-1:-1 / TOOL )\r\n\t)\r\n\t:inform ( ac-2-1 \"stir\"@54:58 / AC\r\n\t\t:prp ( purp-2-0 \"to break up lumps\"@59:76 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Add 3/4 cup softened butter, 2 beaten eggs, and 2 teaspoons of vanilla extract; mix until well blended.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-6 \"3/4 cup softened butter\"@7:30 / FOOD )\r\n\t\t:ppt ( ing-7 \"2 beaten eggs\"@32:45 / FOOD )\r\n\t\t:ppt ( ing-8 \"2 teaspoons of vanilla extract\"@51:81 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"mix\"@83:86 / AC\r\n\t\t:until ( cond-3-0 \"until well blended\"@87:105 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Spread batter evenly in the prepared pan.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Spread\"@3:9 / AC\r\n\t\t:ppt ( \"batter\"@10:16 / FOOD )\r\n\t\t:gol ( tool-4-0 \"the prepared pan\"@27:43 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Bake for 25 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Bake\"@3:7 / AC\r\n\t\t:duration ( dur-5-0 \"25 minutes\"@12:22 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Allow to cool in the pan some before cutting into squares.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"cool\"@12:16 / AC\r\n\t\t:duration ( dur-6-0 \"the pan\"@20:27 / DUR )\r\n\t\t:duration ( cond-6-0 \"before cutting into squares\"@33:60 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

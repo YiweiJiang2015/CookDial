@@ -1,0 +1,126 @@
+{
+    "id": "130",
+    "title": "Adriennes Tom Ka Gai",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 teaspoons peanut oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 teaspoons peanut oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 cloves garlic, thinly sliced",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 cloves garlic, thinly sliced\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 tablespoons grated fresh ginger root",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 tablespoons grated fresh ginger root\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup chopped lemon grass",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup chopped lemon grass\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 teaspoons crushed red pepper",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 teaspoons crushed red pepper\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 teaspoon ground coriander",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 teaspoon ground coriander\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 teaspoon ground cumin",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 teaspoon ground cumin\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 skinless, boneless chicken breast halves - cut into thin strips",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 skinless, boneless chicken breast halves - cut into thin strips\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 onion, thinly sliced",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 onion, thinly sliced\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 cups bok choy, shredded",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 cups bok choy, shredded\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "4 cups water",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"4 cups water\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 (10 ounce) can coconut milk",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 (10 ounce) can coconut milk\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1/4 cup fish sauce",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1/4 cup fish sauce\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1/4 cup chopped fresh cilantro",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1/4 cup chopped fresh cilantro\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large saucepan over medium heat, heat peanut oil.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"heat\"@41:45 / AC\r\n\t\t:ppt ( ing-0 \"peanut oil\"@46:56 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large saucepan\"@6:22 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium heat\"@28:39 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Stir in garlic, ginger, lemon grass, red pepper, coriander and cumin and cook until fragrant, 2 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-1 \"garlic\"@11:17 / FOOD )\r\n\t\t:ppt ( ing-2 \"ginger\"@19:25 / FOOD )\r\n\t\t:ppt ( ing-3 \"lemon grass\"@27:38 / FOOD )\r\n\t\t:ppt ( ing-4 \"red pepper\"@40:50 / FOOD )\r\n\t\t:ppt ( ing-5 \"coriander\"@52:61 / FOOD )\r\n\t\t:ppt ( ing-6 \"cumin\"@66:71 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"cook\"@76:80 / AC\r\n\t\t:until ( cond-1-0 \"until fragrant\"@81:95 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-1-0 \"2 minutes\"@97:106 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir in chicken and onion and cook, stirring, until chicken is white and onion is translucent, 5 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-7 \"chicken\"@11:18 / FOOD )\r\n\t\t:ppt ( ing-8 \"onion\"@23:28 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"cook, stirring\"@-1:-1 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-2-0 \"until chicken is white and onion is translucent\"@49:96 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-2-0 \"5 minutes\"@98:107 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Stir in bok choy and cook until it begins to wilt, 5 to 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-9 \"bok choy\"@11:19 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"cook\"@24:28 / AC\r\n\t\t:until ( cond-3-0 \"until it begins to wilt\"@29:52 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-3-0 \"5 to 10 minutes\"@54:69 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Stir in water, coconut milk, fish sauce and cilantro.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-10 \"water\"@11:16 / FOOD )\r\n\t\t:ppt ( ing-11 \"coconut milk\"@18:30 / FOOD )\r\n\t\t:ppt ( ing-12 \"fish sauce\"@32:42 / FOOD )\r\n\t\t:ppt ( ing-13 \"cilantro\"@47:55 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Simmer until chicken is thoroughly cooked and flavors are well blended, 30 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Simmer\"@3:9 / AC\r\n\t\t:until ( cond-5-0 \"until chicken is thoroughly cooked and flavors are well blended\"@10:73 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-5-0 \"30 minutes\"@75:85 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

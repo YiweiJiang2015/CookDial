@@ -1,0 +1,78 @@
+{
+    "id": "196",
+    "title": "Absolutely Awesome BBQ Sauce",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup brown sugar\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup chile sauce",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup chile sauce\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup rum",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup rum\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup soy sauce",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup soy sauce\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/4 cup ketchup",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/4 cup ketchup\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 cup Worcestershire sauce",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 cup Worcestershire sauce\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 cloves garlic, crushed",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 cloves garlic, crushed\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 teaspoon ground dry mustard",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 teaspoon ground dry mustard\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "ground black pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"ground black pepper to taste\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a saucepan over low heat, mix the brown sugar, chile sauce, rum, soy sauce, ketchup, Worcestershire sauce, garlic, dry mustard, and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"mix\"@32:35 / AC\r\n\t\t:ppt ( ing-0 \"the brown sugar\"@36:51 / FOOD )\r\n\t\t:ppt ( ing-1 \"chile sauce\"@53:64 / FOOD )\r\n\t\t:ppt ( ing-2 \"rum\"@66:69 / FOOD )\r\n\t\t:ppt ( ing-3 \"soy sauce\"@71:80 / FOOD )\r\n\t\t:ppt ( ing-4 \"ketchup\"@82:89 / FOOD )\r\n\t\t:ppt ( ing-5 \"Worcestershire sauce\"@91:111 / FOOD )\r\n\t\t:ppt ( ing-6 \"garlic\"@113:119 / FOOD )\r\n\t\t:ppt ( ing-7 \"dry mustard\"@121:132 / FOOD )\r\n\t\t:ppt ( ing-8 \"pepper\"@138:144 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a saucepan\"@6:16 / TOOL )\r\n\t\t:heat ( temp-0-0 \"low heat\"@22:30 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Simmer 30 minutes, stirring occasionally.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Simmer\"@3:9 / AC\r\n\t\t:duration ( dur-1-0 \"30 minutes\"@10:20 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:simultaneous ( ac-1-1 \"stirring\"@22:30 / AC )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cool, and refrigerate until ready to use.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cool\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"refrigerate\"@13:24 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-2-0 \"until ready to use\"@25:43 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "id": "109",
+    "title": "Feta Chicken Salad",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3 cups diced cooked chicken",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3 cups diced cooked chicken\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 large stalks  celery, diced",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 large stalks  celery, diced\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 red bell pepper, seeded and diced",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 red bell pepper, seeded and diced\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 red onion, diced",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 red onion, diced\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "6 tablespoons mayonnaise",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"6 tablespoons mayonnaise\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "6 tablespoons sour cream",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"6 tablespoons sour cream\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 (4 ounce) package feta cheese, crumbled",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 (4 ounce) package feta cheese, crumbled\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 teaspoons dried dill weed",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 teaspoons dried dill weed\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 pinch salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 pinch salt and pepper to taste\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a serving bowl, mix together the chicken, celery, and red onion.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"mix\"@22:25 / AC\r\n\t\t:ppt ( ing-0 \"the chicken\"@35:46 / FOOD )\r\n\t\t:ppt ( ing-1 \"celery\"@48:54 / FOOD )\r\n\t\t:ppt ( ing-3 \"red onion\"@60:69 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a serving bowl\"@6:20 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a separate bowl, stir together the mayonnaise, sour cream, feta cheese, and dill.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"stir\"@23:27 / AC\r\n\t\t:ppt ( ing-4 \"the mayonnaise\"@37:51 / FOOD )\r\n\t\t:ppt ( ing-5 \"sour cream\"@53:63 / FOOD )\r\n\t\t:ppt ( ing-6 \"feta cheese\"@65:76 / FOOD )\r\n\t\t:ppt ( ing-7 \"dill\"@82:86 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a separate bowl\"@6:21 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Pour over the chicken mixture, and stir to blend.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Pour\"@3:7 / AC\r\n\t\t:gol ( \"the chicken mixture\"@13:32 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"stir\"@38:42 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-2-0 \"to blend\"@43:51 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Taste, and season with salt and pepper as needed.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Taste\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"season\"@14:20 / AC\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( ing-8 \"salt and pepper\"@26:41 / FOOD )\r\n\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Serve immediately, or refrigerate until serving.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"refrigerate\"@25:36 / AC\r\n\t\t:until ( cond-4-0 \"until serving\"@37:50 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

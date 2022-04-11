@@ -1,0 +1,192 @@
+{
+    "id": "242",
+    "title": "Cinnamon Chocolate Cake 2",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 cups sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 cups sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 1/2 teaspoons ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 1/2 teaspoons ground cinnamon\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 cup water",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 cup water\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 cup vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 cup vegetable oil\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 cup butter or margarine",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 cup butter or margarine\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/4 cup baking cocoa",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/4 cup baking cocoa\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 eggs\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/2 cup buttermilk",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/2 cup buttermilk\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 teaspoon baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 teaspoon baking soda\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1/2 cup butter or margarine",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1/2 cup butter or margarine\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1/3 cup whipping cream",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1/3 cup whipping cream\" )"
+        },
+        {
+            "id": "ing-14",
+            "text": "1/4 cup baking cocoa",
+            "type": "ingredient",
+            "eamr": "( ing-14 \"1/4 cup baking cocoa\" )"
+        },
+        {
+            "id": "ing-15",
+            "text": "1 1/2 teaspoons ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-15 \"1 1/2 teaspoons ground cinnamon\" )"
+        },
+        {
+            "id": "ing-16",
+            "text": "3 cups confectioners' sugar",
+            "type": "ingredient",
+            "eamr": "( ing-16 \"3 cups confectioners' sugar\" )"
+        },
+        {
+            "id": "ing-17",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-17 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-18",
+            "text": "1 cup finely chopped walnuts",
+            "type": "ingredient",
+            "eamr": "( ing-18 \"1 cup finely chopped walnuts\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a mixing bowl, combine the first four ingredients.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@21:28 / AC\r\n\t\t:ppt ( \"the first four ingredients\"@29:55 / FOOD\r\n\t\t\t:ref ( ing-0 )\r\n\t\t\t:ref ( ing-1 )\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t)\r\n\t\t:loc ( tool-0-0 \"a mixing bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a saucepan, combine water, oil, butter and cocoa; bring to a boil over medium heat.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"combine\"@18:25 / AC\r\n\t\t:ppt ( ing-4 \"water\"@26:31 / FOOD )\r\n\t\t:ppt ( ing-5 \"oil\"@33:36 / FOOD )\r\n\t\t:ppt ( ing-6 \"butter\"@38:44 / FOOD )\r\n\t\t:ppt ( ing-7 \"cocoa\"@49:54 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a saucepan\"@6:16 / TOOL )\r\n\t)\r\n\t:inform ( ac-1-1 \"boil\"@67:71 / AC\r\n\t\t:heat ( temp-1-0 \"medium heat\"@77:88 / TEMPERATURE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) pour over dry ingredients; mix well.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"pour\"@3:7 / AC\r\n\t\t:gol ( \"dry ingredients\"@13:28 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"mix\"@30:33 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Add eggs, buttermilk, vanilla and baking soda; mix well.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-8 \"eggs\"@7:11 / FOOD )\r\n\t\t:ppt ( ing-9 \"buttermilk\"@13:23 / FOOD )\r\n\t\t:ppt ( ing-10 \"vanilla\"@25:32 / FOOD )\r\n\t\t:ppt ( ing-11 \"baking soda\"@37:48 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"mix\"@50:53 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Pour into a greased and floured 15-in pan.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Pour\"@3:7 / AC\r\n\t\t:gol ( tool-4-0 \"a greased and floured 15-in pan\"@13:44 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Bake at 375 degrees F for 15-20 minutes or until a toothpick inserted near the center comes out clean.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Bake\"@3:7 / AC\r\n\t\t:heat ( temp-5-0 \"375 degrees F\"@11:24 / TEMPERATURE )\r\n\t\t:duration ( dur-5-0 \"15-20 minutes\"@29:42 / DUR )\r\n\t\t:until ( cond-5-0 \"until a toothpick inserted near the center comes out clean\"@46:104 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Meanwhile, for frosting, combine the butter, cream, cocoa and cinnamon in a saucepan.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"combine\"@28:35 / AC\r\n\t\t:subtask ( \"for frosting\"@-1:-1 / FOOD )\r\n\t\t:ppt ( ing-12 \"the butter\"@36:46 / FOOD )\r\n\t\t:ppt ( ing-13 \"cream\"@48:53 / FOOD )\r\n\t\t:ppt ( ing-14 \"cocoa\"@55:60 / FOOD )\r\n\t\t:ppt ( ing-15 \"cinnamon\"@65:73 / FOOD )\r\n\t\t:loc ( tool-6-0 \"a saucepan\"@77:87 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Cook and stir over medium heat until butter is melted and mixture is heated through.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Cook and stir\"@3:16 / AC\r\n\t\t:heat ( temp-7-0 \"medium heat\"@22:33 / TEMPERATURE )\r\n\t\t:until ( cond-7-0 \"until butter is melted and mixture is heated through\"@34:86 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Remove from the heat; beat in sugar and vanilla until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( tool-8-0 \"the heat\"@15:23 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-8-1 \"beat in\"@25:32 / AC\r\n\t\t:ppt ( ing-16 \"sugar\"@33:38 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( ing-17 \"vanilla\"@43:50 / FOOD )\r\n\t\t:until ( cond-8-0 \"until smooth\"@51:63 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Stir in walnuts.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Stir in\"@4:11 / AC\r\n\t\t:ppt ( ing-18 \"walnuts\"@12:19 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Carefully spread over hot cake.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"spread\"@14:20 / AC\r\n\t\t:gol ( \"hot cake\"@26:34 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Cool completely.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Cool\"@4:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

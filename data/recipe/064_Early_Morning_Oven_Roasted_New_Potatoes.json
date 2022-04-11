@@ -1,0 +1,72 @@
+{
+    "id": "064",
+    "title": "Early Morning Oven Roasted New Potatoes",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 1/2 pounds new potatoes, cut into wedges",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 1/2 pounds new potatoes, cut into wedges\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "4 tablespoons butter",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"4 tablespoons butter\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 teaspoons fresh rosemary",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 teaspoons fresh rosemary\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"salt and pepper to taste\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 450 degrees F (230 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"450 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"230 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a hot skillet, melt the butter.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"melt\"@21:25 / AC\r\n\t\t:loc ( tool-1-0 \"a hot skillet\"@6:19 / TOOL )\r\n\t\t:ppt ( ing-1 \"the butter\"@26:36 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir in rosemary, salt and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-2 \"rosemary\"@11:19 / FOOD )\r\n\t\t:ppt ( ing-3 \"salt\"@21:25 / FOOD )\r\n\t\t:ppt ( ing-3 \"pepper\"@30:36 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Coat potatoes evenly with the melted butter.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Coat\"@3:7 / AC\r\n\t\t:gol ( ing-0 \"potatoes\"@8:16 / FOOD )\r\n\t\t:ppt ( \"the melted butter\"@29:46 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Arrange the potatoes in a single layer on a baking pan.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Arrange\"@3:10 / AC\r\n\t\t:ppt ( \"the potatoes\"@11:23 / FOOD )\r\n\t\t:gol ( tool-4-0 \"a baking pan\"@45:57 / TOOL )\r\n\t\t:todo ( \"a single layer\"@27:41 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Bake in a preheated oven until potatoes are golden brown, approximately 20 to 25 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-5-0 \"a preheated oven\"@11:27 / TOOL )\r\n\t\t:until ( cond-5-0 \"until potatoes are golden brown\"@28:59 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-5-0 \"approximately 20 to 25 minutes\"@61:91 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Toss them occasionally to ensure that they brown on all sides.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Toss\"@3:7 / AC\r\n\t\t:ppt ( \"them\"@8:12 / FOOD )\r\n\t\t:prp ( purp-6-0 \"to ensure that they brown on all sides\"@26:64 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

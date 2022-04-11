@@ -1,0 +1,120 @@
+{
+    "id": "175",
+    "title": "Cornbread Dressing I",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (12 ounce) package refrigerated biscuit dough",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (12 ounce) package refrigerated biscuit dough\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (8 ounce) package corn bread mix",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (8 ounce) package corn bread mix\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup diced onion",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup diced onion\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 cup diced celery",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 cup diced celery\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 cup butter, softened",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 cup butter, softened\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 teaspoon ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 teaspoon ground black pepper\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 (14.5 ounce) cans chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 (14.5 ounce) cans chicken broth\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/8 pound pork sausage",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/8 pound pork sausage\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 hard-cooked eggs",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 hard-cooked eggs\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1 teaspoon dried sage (optional)",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1 teaspoon dried sage (optional)\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Prepare biscuits (enough to make 4 cups crumbled), and one 8x8 inch pan cornbread according to package directions.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Prepare\"@3:10 / AC\r\n\t\t:ppt ( ing-0 \"biscuits\"@11:19 / FOOD )\r\n\t\t:ppt ( ing-1 \"one 8x8 inch pan cornbread\"@58:84 / FOOD )\r\n\t\t:mnr ( \"according to package directions\"@85:116 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Cool and crumble.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Cool\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"crumble\"@12:19 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-2-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-2-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-2-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) In a small pot, combine onion, celery, margarine and chicken broth.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"combine\"@19:26 / AC\r\n\t\t:ppt ( ing-2 \"onion\"@27:32 / FOOD )\r\n\t\t:ppt ( ing-3 \"celery\"@34:40 / FOOD )\r\n\t\t:ppt ( ing-4 \"margarine\"@42:51 / FOOD )\r\n\t\t:ppt ( ing-7 \"chicken broth\"@56:69 / FOOD )\r\n\t\t:loc ( tool-3-0 \"a small pot\"@6:17 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Bring to boil and cook vegetables until tender.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"boil\"@12:16 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"cook\"@21:25 / AC\r\n\t\t:ppt ( \"vegetables\"@26:36 / FOOD )\r\n\t\t:until ( cond-4-0 \"until tender\"@37:49 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) In a 2-quart casserole dish, combine 4 cups crumbled cornbread, 4 cups biscuit crumbs, salt, pepper, sausage, chopped eggs and sage.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"combine\"@32:39 / AC\r\n\t\t:ppt ( \"4 cups crumbled cornbread\"@40:65 / FOOD )\r\n\t\t:ppt ( \"4 cups biscuit crumbs\"@67:88 / FOOD )\r\n\t\t:ppt ( ing-5 \"salt\"@90:94 / FOOD )\r\n\t\t:ppt ( ing-6 \"pepper\"@96:102 / FOOD )\r\n\t\t:ppt ( ing-8 \"sausage\"@104:111 / FOOD )\r\n\t\t:ppt ( ing-9 \"chopped eggs\"@113:125 / FOOD )\r\n\t\t:ppt ( ing-10 \"sage\"@130:134 / FOOD )\r\n\t\t:loc ( tool-5-0 \"a 2-quart casserole dish\"@6:30 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Pour broth and vegetables over bread mixture, and stir until combined.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( \"broth\"@8:13 / FOOD )\r\n\t\t:ppt ( \"vegetables\"@18:28 / FOOD )\r\n\t\t:gol ( \"bread mixture\"@34:47 / FOOD )\r\n\t)\r\n\t:inform ( ac-6-1 \"stir\"@53:57 / AC\r\n\t\t:until ( cond-6-0 \"until combined\"@58:72 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Bake in the preheated oven for 30 to 45 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Bake\"@3:7 / AC\r\n\t\t:loc ( tool-7-0 \"the preheated oven\"@11:29 / TOOL )\r\n\t\t:duration ( dur-7-0 \"30 to 45 minutes\"@34:50 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

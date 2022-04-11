@@ -1,0 +1,42 @@
+{
+    "id": "241",
+    "title": "Chocolate Covered Pretzels",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 (10 ounce) packages pretzels",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 (10 ounce) packages pretzels\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 tablespoon heavy whipping cream",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 tablespoon heavy whipping cream\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 cups semisweet chocolate chips",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 cups semisweet chocolate chips\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Melt chocolate and cream in double boiler over low heat, stirring constantly.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Melt\"@3:7 / AC\r\n\t\t:ppt ( ing-2 \"chocolate\"@8:17 / FOOD )\r\n\t\t:ppt ( ing-1 \"cream\"@22:27 / FOOD )\r\n\t\t:loc ( tool-0-0 \"double boiler\"@31:44 / TOOL )\r\n\t\t:heat ( temp-0-0 \"low heat\"@50:58 / TEMPERATURE )\r\n\t\t:simultaneous ( ac-0-1 \"stirring\"@60:68 / AC )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Dip pretzels one at a time quickly to coat while mixture is still very warm.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Dip\"@3:6 / AC\r\n\t\t:ppt ( ing-0 \"pretzels\"@7:15 / FOOD )\r\n\t\t:prp ( purp-1-0 \"to coat while mixture is still very warm\"@38:78 / PURPOSE_CLAUSE )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place pretzels on wax paper to set and cool.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( \"pretzels\"@9:17 / FOOD )\r\n\t\t:gol ( tool-2-0 \"wax paper\"@21:30 / TOOL )\r\n\t\t:prp ( purp-2-0 \"to set and cool\"@31:46 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "id": "077",
+    "title": "Chicken Tortellini Soup With Zucchini and Tomatoes",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 recipe Fast Chicken Soup Base",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 recipe Fast Chicken Soup Base\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (9 ounce) package refrigerated small cheese tortellini",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (9 ounce) package refrigerated small cheese tortellini\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 (14.5 ounce) can diced tomatoes",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 (14.5 ounce) can diced tomatoes\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 medium zucchini, diced",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 medium zucchini, diced\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 teaspoon dried basil",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 teaspoon dried basil\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 cup chopped fresh parsley",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 cup chopped fresh parsley\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "Salt and freshly ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"Salt and freshly ground black pepper\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Prepare Fast Chicken Soup Base.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Prepare\"@3:10 / AC\r\n\t\t:ppt ( ing-0 \"Fast Chicken Soup Base\"@11:33 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Bring to a simmer.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"simmer\"@14:20 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Add these: 1 9-ounce package refrigerated small cheese tortellini; 1 14.5-ounce can diced tomatoes; 2 medium zucchini, diced; 1 tsp. dried basil.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-1 \"1 9-ounce package refrigerated small cheese tortellini\"@14:68 / FOOD )\r\n\t\t:ppt ( ing-2 \"1 14.5-ounce can diced tomatoes\"@70:101 / FOOD )\r\n\t\t:ppt ( ing-3 \"2 medium zucchini, diced\"@103:127 / FOOD )\r\n\t\t:ppt ( ing-4 \"1 tsp. dried basil\"@129:147 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Then simmer for 10-20 minutes until tender.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"simmer\"@8:14 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-3-0 \"10-20 minutes\"@19:32 / DUR )\r\n\t\t:until ( cond-3-0 \"until tender\"@33:45 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Before removing from heat, stir in 1/2 cup chopped fresh parsley.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"stir in\"@30:37 / AC\r\n\t\t:ppt ( ing-5 \"1/2 cup chopped fresh parsley\"@38:67 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( cond-4-0 \"Before removing from heat\"@3:28 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Add salt and pepper, to taste.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-6 \"salt and pepper\"@7:11 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-5-0 \"to taste\"@24:32 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

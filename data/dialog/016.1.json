@@ -1,0 +1,232 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we are going to make a Cheezy Pie.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "What's the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "First you can already preheat the oven and set it on 175 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. that's Done. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Now take a medium size mixing bowl and add 8 ounce of softened cream cheese.",
+            "bot": true,
+            "annotations": "fetch(inst-1, [tool-1-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "I added the creme cheese to the bowl. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "First whip the cream cheese a bit until it becomes fluffy.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-0);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "It looks fluffy now, what should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Now add 1/2 cup of sugar and 1 teaspoon of vanilla extract and mix it together.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Can you repeat the second ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "1 teaspoon of vanilla extract.",
+            "bot": true,
+            "annotations": "repeat(inst-2, [ing-3]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Thank you. that's done now. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Add 2 eggs to the mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. I have added the eggs, what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now beat the eggs and make sure that all the ingredients are well mixed.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "That's Done. everything is well mixed now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Ok. great. Now pour the mixture into 2 pre-baked pie shells.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. should I put them in the oven now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Yes you may bake them for 20 minutes. Let me know when it's finished.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "The 20 minutes passed, it is finished now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Great, now leave it for 5 minutes outside of the oven and grab a small bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. I have a small bowl. What should I do with it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Combine 1 cup of sour cream and 3 tablespoons of sugar and put it in the bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Can you repeat the first ingredient please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "1 cup of sour cream.",
+            "bot": true,
+            "annotations": "repeat(inst-9, [ing-5]);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. I have added the sour cream and the sugar now. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Mix them well and spread half of the mixture on each pie.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "That's done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Now place the pies in the oven for 15 minutes but turn the oven off.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);\r\ninform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "So I should turn the oven off before placing them in the oven?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Yes and then just 15 minutes inside still.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "The 15 minutes have passed now, what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Take them out of the oven and let the pies chill overnight.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. I'm back. Are they ready now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "The final step is to top each pie with 1 cup of strawberries.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-14);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. that's done. It looks good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-14\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Ok. glad to hear that, enjoy!",
+            "bot": true,
+            "annotations": "enjoy();"
+        }
+    ]
+}

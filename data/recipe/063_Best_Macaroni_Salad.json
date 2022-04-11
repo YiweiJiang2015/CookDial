@@ -1,0 +1,96 @@
+{
+    "id": "063",
+    "title": "Best Macaroni Salad",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (16 ounce) package macaroni",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (16 ounce) package macaroni\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup mayonnaise",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup mayonnaise\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup cucumber - peeled, seeded and chopped",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup cucumber - peeled, seeded and chopped\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 tablespoon dried minced onion",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 tablespoon dried minced onion\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 cup diced ham",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 cup diced ham\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 cup shredded Cheddar cheese",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 cup shredded Cheddar cheese\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "3 tablespoons olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"3 tablespoons olive oil\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "3 tablespoons white wine vinegar",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"3 tablespoons white wine vinegar\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"salt and pepper to taste\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large pot of salted boiling water, cook pasta until al dente, rinse under cold water and drain.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"cook\"@43:47 / AC\r\n\t\t:ppt ( ing-0 \"pasta\"@48:53 / FOOD )\r\n\t\t:until ( cond-0-0 \"until al dente\"@54:68 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-0-0 \"a large pot of salted boiling water\"@6:41 / TOOL )\r\n\t)\r\n\t:inform ( ac-0-1 \"rinse\"@70:75 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( \"cold water\"@82:92 / FOOD )\r\n\t)\r\n\t:inform ( ac-0-2 \"drain\"@97:102 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a large bowl, combine the pasta, mayonnaise and mix well.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"combine\"@20:27 / AC\r\n\t\t:ppt ( \"the pasta\"@28:37 / FOOD )\r\n\t\t:ppt ( ing-1 \"mayonnaise\"@39:49 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n\t:inform ( ac-1-1 \"mix\"@54:57 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir in cucumber, onion, ham and cheese.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-2 \"cucumber\"@11:19 / FOOD )\r\n\t\t:ppt ( ing-3 \"onion\"@21:26 / FOOD )\r\n\t\t:ppt ( ing-4 \"ham\"@28:31 / FOOD )\r\n\t\t:ppt ( ing-5 \"cheese\"@36:42 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Mix well.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Mix\"@3:6 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Drizzle oil and vinegar over top and toss.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Drizzle\"@3:10 / AC\r\n\t\t:ppt ( ing-6 \"oil\"@11:14 / FOOD )\r\n\t\t:ppt ( ing-7 \"vinegar\"@19:26 / FOOD )\r\n\t\t:gol ( \"top\"@32:35 / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"toss\"@40:44 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Refrigerate for at least 4 hours.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Refrigerate\"@3:14 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-5-0 \"at least 4 hours\"@19:35 / DUR )\r\n\t)\r\n)"
+        }
+    ]
+}

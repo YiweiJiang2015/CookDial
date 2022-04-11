@@ -1,0 +1,54 @@
+{
+    "id": "089",
+    "title": "Drunken Fruit Salsa",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 medium mango, peeled and finely diced",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 medium mango, peeled and finely diced\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "3/4 cup chopped fresh strawberries",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"3/4 cup chopped fresh strawberries\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 kiwi, peeled and finely diced",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 kiwi, peeled and finely diced\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 jalapeno pepper, seeded and finely chopped",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 jalapeno pepper, seeded and finely chopped\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 tablespoons chopped fresh mint",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 tablespoons chopped fresh mint\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 cup rum",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 cup rum\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Stir together mango, strawberries, kiwi, jalapeno, mint, and rum in a glass bowl.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Stir\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"mango\"@17:22 / FOOD )\r\n\t\t:ppt ( ing-1 \"strawberries\"@24:36 / FOOD )\r\n\t\t:ppt ( ing-2 \"kiwi\"@38:42 / FOOD )\r\n\t\t:ppt ( ing-3 \"jalapeno\"@44:52 / FOOD )\r\n\t\t:ppt ( ing-4 \"mint\"@54:58 / FOOD )\r\n\t\t:ppt ( ing-5 \"rum\"@64:67 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a glass bowl\"@71:83 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Refrigerate for 1 to 3 hours, stirring once or twice.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Refrigerate\"@3:14 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-1-0 \"1 to 3 hours\"@19:31 / DUR )\r\n\t\t:simultaneous ( ac-1-1 \"stirring\"@33:41 / AC\r\n\t\t\t:ppt ( NULL / FOOD )\r\n\t\t\t:mnr ( \"once or twice\"@42:55 / OTHER )\r\n\t\t)\r\n\t)\r\n)"
+        }
+    ]
+}

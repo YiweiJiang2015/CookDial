@@ -1,0 +1,232 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we are going to cook Dads BBQ Roast, are you ready?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes I'm ready, what's the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Take a small bowl.",
+            "bot": true,
+            "annotations": "fetch(inst-0, [tool-0-0]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "I have taken a small bowl, what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Now add 1/3 cups of yellow mustard and 1 ounce of dry onion soup mix to the bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. I have added the mustard and onions to the bowl.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Now take out some aluminium foil and lay out two long sheets crosswise.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "How long do the sheets need to be or does it not matter?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_tool;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Better take two long sheets.",
+            "bot": true,
+            "annotations": "fetch(inst-1, [tool-1-0]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. I have two long sheets now, what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Now take the 5 pound beef rump roast and pat the roast dry before placing it in the center of the aluminium foil.",
+            "bot": true,
+            "annotations": "fetch(inst-1, [ing-2]);\r\ninform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "I have taken the five pound beef  but could you repeat the last part please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_repeat;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Pat the beef dry before putting it on the aluminium foil.",
+            "bot": true,
+            "annotations": "repeat(inst-2);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. Thank you. that's done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Great. Now mix the mustard onion soup in the bowl and coat the roast with the mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now you may wrap the foil tightly around the roast so it's all covered.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-4-0);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "The roast is all covered now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Ok. now take one more piece of the aluminum foil and wrap it all around the roast.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-4-1);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "In this way the roast can be rotated but the juices will stay inside. Now prepare an outdoor grill. You need some charcoal, do you have that?",
+            "bot": true,
+            "annotations": "fetch(inst-5, [tool-5-0]);\r\nverify(inst-6, [tool-6-0]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Yes I have some charcoal. The grill is now ready.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Ok. now light the charcoal then move it to one side of the grill then place the roast on the grill and cover it.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);\r\ninform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Does the roast need to be on the side above the charcoal or on the other side of the grill?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "The roast should be all over the grill but the coals are on one side.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. that's clear. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Now cook the roast for about 2 hours. Don't forget to turn every 30 to 45 minutes. Let me know if something doesn't work.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. I have cooked the roast for two hours now and I have turned the roast regularly.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Great. Is the internal temperature at least 63 degrees Celsius?",
+            "bot": true,
+            "annotations": "verify(cond-8-0);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Yes the internal temperature is about 65 degrees celsius.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Ok. now let the roast stand for 10 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "That's done. Is it done now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "No, place the roast on a deep serving plate before unwrapping.",
+            "bot": true,
+            "annotations": "negate();\r\nsimplify_begin(ac-10-0);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. I placed it on a deep serving plate. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "You can slather the juices and mustard rub onto the beef slices. It's up to you.",
+            "bot": true,
+            "annotations": "inform_instruction(purp-10-0);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. I have done it. Thank you for the instructions.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; thank;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Ok. Great. enjoy the roasted beef.",
+            "bot": true,
+            "annotations": "enjoy();"
+        }
+    ]
+}

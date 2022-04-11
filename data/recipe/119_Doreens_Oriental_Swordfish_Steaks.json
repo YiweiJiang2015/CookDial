@@ -1,0 +1,78 @@
+{
+    "id": "119",
+    "title": "Doreens Oriental Swordfish Steaks",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3 tablespoons soy sauce",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3 tablespoons soy sauce\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup vegetable oil\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 tablespoons sherry",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 tablespoons sherry\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 teaspoon grated fresh ginger root",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 teaspoon grated fresh ginger root\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 cloves garlic, peeled and minced",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 cloves garlic, peeled and minced\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "4 (6 ounce) swordfish steaks",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"4 (6 ounce) swordfish steaks\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a medium bowl, whisk together soy sauce, vegetable oil, sherry, ginger root and garlic.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"whisk\"@21:26 / AC\r\n\t\t:ppt ( ing-0 \"soy sauce\"@36:45 / FOOD )\r\n\t\t:ppt ( ing-1 \"vegetable oil\"@47:60 / FOOD )\r\n\t\t:ppt ( ing-2 \"sherry\"@62:68 / FOOD )\r\n\t\t:ppt ( ing-3 \"ginger root\"@70:81 / FOOD )\r\n\t\t:ppt ( ing-4 \"garlic\"@86:92 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a medium bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Fill a large resealable bag with the mixture.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Fill\"@3:7 / AC\r\n\t\t:gol ( tool-1-0 \"a large resealable bag\"@8:30 / TOOL )\r\n\t\t:ppt ( \"the mixture\"@36:47 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place swordfish steaks into the bag with mixture, and shake to coat.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-5 \"swordfish steaks\"@9:25 / FOOD )\r\n\t\t:gol ( tool-2-0 \"the bag with mixture\"@31:51 / TOOL )\r\n\t)\r\n\t:inform ( ac-2-1 \"shake\"@57:62 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-2-0 \"to coat\"@63:70 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Place bag in the refrigerator, and allow the steaks to marinate at least 4 hours.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( tool-3-0 \"bag\"@9:12 / TOOL )\r\n\t\t:gol ( tool-3-1 \"the refrigerator\"@16:32 / TOOL )\r\n\t)\r\n\t:inform ( ac-3-1 \"marinate\"@58:66 / AC\r\n\t\t:ppt ( \"the steaks\"@44:54 / FOOD )\r\n\t\t:duration ( dur-3-0 \"at least 4 hours\"@67:83 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Preheat an outdoor grill for high heat and lightly oil grate.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-4-0 \"an outdoor grill\"@11:27 / TOOL )\r\n\t\t:heat ( temp-4-0 \"high heat\"@32:41 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-4-1 \"oil\"@54:57 / AC\r\n\t\t:ppt ( tool-4-1 \"grate\"@58:63 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Grill swordfish steaks 8 to 10 minutes per side, until the swordfish flakes easily and is opaque in the center.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Grill\"@3:8 / AC\r\n\t\t:ppt ( \"swordfish steaks\"@9:25 / FOOD )\r\n\t\t:duration ( dur-5-0 \"8 to 10 minutes per side\"@26:50 / DUR )\r\n\t\t:until ( cond-5-0 \"until the swordfish flakes easily and is opaque in the center\"@52:113 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "id": "188",
+    "title": "Baked Fish and Rice 2",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 1/2 cups boiling chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 1/2 cups boiling chicken broth\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup uncooked long grain rice",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup uncooked long grain rice\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/4 teaspoon Italian seasoning",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/4 teaspoon Italian seasoning\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 teaspoon garlic powder",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 teaspoon garlic powder\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 (10 ounce) package frozen chopped broccoli, thawed and drained",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 (10 ounce) package frozen chopped broccoli, thawed and drained\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 tablespoon grated Parmesan cheese",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 tablespoon grated Parmesan cheese\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 (2.8 ounce) can French-fried onions, divided",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 (2.8 ounce) can French-fried onions, divided\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 pound fresh or frozen fish fillets, thawed",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 pound fresh or frozen fish fillets, thawed\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 dash paprika",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 dash paprika\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/2 cup shredded Cheddar cheese",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/2 cup shredded Cheddar cheese\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a greased 11-in. baking dish, combine the broth, rice, Italian seasoning and garlic powder.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@36:43 / AC\r\n\t\t:ppt ( ing-0 \"broth\"@48:53 / FOOD )\r\n\t\t:ppt ( ing-1 \"rice\"@55:59 / FOOD )\r\n\t\t:ppt ( ing-2 \"Italian seasoning\"@61:78 / FOOD )\r\n\t\t:ppt ( ing-3 \"garlic powder\"@83:96 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a greased 11-in. baking dish\"@6:34 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Cover and bake at 375 degrees F (190 degrees C) for 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"bake\"@13:17 / AC\r\n\t\t:heat ( temp-1-0 \"375 degrees F\"@21:34 / TEMPERATURE )\r\n\t\t:heat ( temp-1-1 \"190 degrees C\"@-1:-1 / TEMPERATURE )\r\n\t\t:duration ( dur-1-0 \"10 minutes\"@-1:-1 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Add the broccoli, Parmesan cheese and half of the onions.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-4 \"broccoli\"@11:19 / FOOD )\r\n\t\t:ppt ( ing-5 \"Parmesan cheese\"@21:36 / FOOD )\r\n\t\t:ppt ( ing-6 \"half of the onions\"@41:59 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Top with fish fillets; sprinkle with paprika.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Top\"@3:6 / AC\r\n\t\t:ppt ( ing-7 \"fish fillets\"@12:24 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"sprinkle\"@26:34 / AC\r\n\t\t:ppt ( ing-8 \"paprika\"@40:47 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Cover and bake 20-25 minutes longer or until the fish flakes easily with a fork.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"bake\"@13:17 / AC\r\n\t\t:duration ( dur-4-0 \"20-25 minutes longer\"@18:38 / DUR )\r\n\t\t:until ( cond-4-0 \"until the fish flakes easily with a fork\"@42:82 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Uncover; sprinkle with cheddar cheese and remaining onions.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Uncover\"@3:10 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"sprinkle\"@12:20 / AC\r\n\t\t:ppt ( ing-9 \"cheddar cheese\"@26:40 / FOOD )\r\n\t\t:ppt ( ing-6 \"remaining onions\"@45:61 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Return to the oven for 3 minutes or until cheese is melted.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Return\"@3:9 / AC\r\n\t\t:gol ( tool-6-0 \"the oven\"@13:21 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-6-0 \"3 minutes\"@26:35 / DUR )\r\n\t\t:until ( cond-6-0 \"until cheese is melted\"@39:61 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

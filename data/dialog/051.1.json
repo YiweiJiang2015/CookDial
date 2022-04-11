@@ -1,0 +1,322 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. today we are making Biriyani.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. where do we start with?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Take a large skillet and heat 2 1/2 tablespoons olive oil over medium heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. I have done that, what should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Mix in 3 tablespoons plain yoghurt and 2 tablespoons distilled white vinegar.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. I have done that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Now you should place 1 medium onion sliced into the skillet and cook until tender.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. I also added that. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Next you should mix in four ingredients. Start with 2 cloves crushed garlic and 1 tablespoon ginger paste.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-3);\r\nsimplify_continue(inst-3, [ing-4, ing-5]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. I added both, what are the next two ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Then mix in 2 small green chile peppers and 2 chopped tomatoes.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-3, [ing-6, ing-7]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. both added as well. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 26}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Cook and stir it until tomatoes are tender.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. The tomatoes are tender. What should I do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "We use some species to season it. Start with 2 tablespoons garam masala, then 1 tablespoon dried mint.",
+            "bot": true,
+            "annotations": "simplify_begin(ac-5-0); \r\nsimplify_continue(ac-5-0, [ing-8, ing-9]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. What else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Add salt and pepper. Then mix in 5 sprigs cilantro.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-5-0, [ing-10]);\r\ninform_instruction(ac-5-1);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "5 what?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "5 sprigs cilantro.",
+            "bot": true,
+            "annotations": "repeat(ing-11);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. It is being seasoned. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now you can place the chicken in the skillet.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "How big should the chicken be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"ing-12\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "You should take 1 whole chicken of 3 pounds, skin removed and cut into pieces.",
+            "bot": true,
+            "annotations": "inform_amount(ing-12);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. I have added the chicken as well. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-12\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 29}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Next you can reduce the heat to medium-low and continue cooking.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-7-0);\r\ninform_instruction(ac-7-1);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. I have done that. For how long should I continue to cook?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 29, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 29}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "For about 45 minutes. You should stir occasionally and chicken juices should run clear in the end.",
+            "bot": true,
+            "annotations": "inform_duration(dur-7-0);\r\ninform_duration(cond-7-0);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. it's 45 minutes later. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 29, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 30}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Bring 2 quarts water and 4 cups uncooked basmati rice to a boil in a large pot.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. the rice is boiling. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 30, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 31}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "In the skillet with the chicken, mix four ingredients. Start with 1 bay leaf and 4 pods green cardamom.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-9);\r\nsimplify_continue(inst-9, [ing-15, ing-16]);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Could you repeat the first part?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 31, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 31}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "In the skillet with the chicken, mix in four ingredients.",
+            "bot": true,
+            "annotations": "repeat(inst-9);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "You mean to add 4 ingredients in the skillet with the chicken?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 31, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 31}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Yes.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "What are the other 2 ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 31, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 31}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "The other two ingredients are 1 pod black cardamom and 1 cinnamon stick.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-9, [ing-17, ing-18]);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ok. I also added both. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 31, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 32}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Now you can season the mixture with salt to taste.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok. I have done that. Is there something else to do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 32, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 33}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Yes, cover the skillet, reduce the heat to low and let it simmer for another 20 minutes.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok. is there something I can do in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_parallel_action;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 33, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 33}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "No.",
+            "bot": true,
+            "annotations": "negate();"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Ok. what is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 33, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 34}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "Take a separate pot and alternate rice and chicken mixture layers with rice as top layer.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Could you repeat the first part?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 34, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 34}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "Take another pot. In this pot you should alternate rice and chicken layers. Make sure the top layer is a rice layer.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "Ok. thanks to clarify. I have done that. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 34, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 35}"
+        },
+        {
+            "utt_id": "utt-49",
+            "utterance": "Sprinkle with 1/4 teaspoon powdered yellow food coloring and mix to serve.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-50",
+            "utterance": "Ok. I have done that. Is that all?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 35, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 35}"
+        },
+        {
+            "utt_id": "utt-51",
+            "utterance": "Yes that's all. Enjoy it!",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-52",
+            "utterance": "Ok. thanks for the instructions.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 35, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 35}"
+        }
+    ]
+}

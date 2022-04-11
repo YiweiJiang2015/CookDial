@@ -1,0 +1,114 @@
+{
+    "id": "125",
+    "title": "Caribbean Canadian Glazed Chicken",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/2 cup ketchup",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/2 cup ketchup\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "4 tablespoons unsweetened pineapple juice",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"4 tablespoons unsweetened pineapple juice\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "4 tablespoons molasses",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"4 tablespoons molasses\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 tablespoons dark rum",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 tablespoons dark rum\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 tablespoons prepared Dijon-style mustard",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 tablespoons prepared Dijon-style mustard\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 cloves garlic, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 cloves garlic, chopped\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"salt and pepper to taste\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "8 chicken thighs",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"8 chicken thighs\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) To Make Glaze: In a medium bowl combine the ketchup, pineapple juice, molasses, rum, mustard and garlic.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@35:42 / AC\r\n\t\t:subtask ( purp-0-0 \"To Make Glaze\"@3:16 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( ing-0 \"the ketchup\"@43:54 / FOOD )\r\n\t\t:ppt ( ing-1 \"pineapple juice\"@56:71 / FOOD )\r\n\t\t:ppt ( ing-2 \"molasses\"@73:81 / FOOD )\r\n\t\t:ppt ( ing-3 \"rum\"@83:86 / FOOD )\r\n\t\t:ppt ( ing-4 \"mustard\"@88:95 / FOOD )\r\n\t\t:ppt ( ing-5 \"garlic\"@100:106 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a medium bowl\"@21:34 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Season with salt and pepper to taste and mix well.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Season\"@3:9 / AC\r\n\t\t:ppt ( ing-6 \"salt and pepper\"@15:30 / FOOD )\r\n\t\t:prp ( purp-1-0 \"to taste and mix well\"@31:52 / PURPOSE_CLAUSE )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place chicken pieces in a lightly oiled 9x13 inch baking dish; brush both sides with prepared glaze, using about 1/2 of the glaze.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-7 \"chicken pieces\"@9:23 / FOOD )\r\n\t\t:gol ( tool-2-0 \"a lightly oiled 9x13 inch baking dish\"@27:64 / TOOL )\r\n\t)\r\n\t:inform ( ac-2-1 \"brush\"@66:71 / AC\r\n\t\t:mnr ( \"using about 1/2 of the glaze\"@104:132 / OTHER )\r\n\t\t:gol ( \"both sides\"@72:82 / OTHER )\r\n\t\t:ppt ( \"prepared glaze\"@88:102 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cover dish and refrigerate to marinate for at least 2 hours or overnight.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cover\"@3:8 / AC\r\n\t\t:gol ( tool-3-0 \"dish\"@9:13 / TOOL )\r\n\t)\r\n\t:inform ( ac-3-1 \"refrigerate\"@18:29 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-3-0 \"to marinate\"@30:41 / PURPOSE_CLAUSE )\r\n\t\t:duration ( dur-3-0 \"at least 2 hours\"@46:62 / DUR )\r\n\t\t:duration ( dur-3-1 \"overnight\"@66:75 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Also, refrigerate remaining glaze.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"refrigerate\"@9:20 / AC\r\n\t\t:ppt ( \"remaining glaze\"@21:36 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Preheat oven to 375  degrees F (190 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-5-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-5-0 \"375  degrees F\"@19:33 / TEMPERATURE )\r\n\t\t:heat ( temp-5-1 \"190 degrees C\"@35:48 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Lightly brush chicken pieces on one side with some of the reserved glaze and bake uncovered in preheated oven for about 25 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"brush\"@11:16 / AC\r\n\t\t:gol ( \"chicken pieces\"@17:31 / FOOD )\r\n\t\t:ppt ( \"some of the reserved glaze\"@49:75 / FOOD )\r\n\t)\r\n\t:inform ( \"one side\"@35:43 / OTHER )\r\n\t:inform ( ac-6-1 \"bake\"@80:84 / AC\r\n\t\t:loc ( tool-6-0 \"preheated oven\"@98:112 / TOOL )\r\n\t\t:duration ( dur-6-0 \"25 minutes\"@123:133 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Turn pieces, brush with remaining glaze and bake for another 25 minutes or until chicken is tender.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Turn\"@3:7 / AC\r\n\t\t:ppt ( \"pieces\"@8:14 / FOOD )\r\n\t)\r\n\t:inform ( ac-7-1 \"brush\"@16:21 / AC\r\n\t\t:ppt ( \"remaining glaze\"@27:42 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-7-2 \"bake\"@47:51 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-7-0 \"another 25 minutes\"@56:74 / DUR )\r\n\t\t:until ( cond-7-0 \"until chicken is tender\"@78:101 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Preheat oven to broil.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-8-0 \"oven\"@11:15 / TOOL )\r\n\t\t:prp ( purp-8-0 \"to broil\"@16:24 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Put chicken under broiler and lightly brown on both sides, about 2 to 3 minutes each side.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Put\"@3:6 / AC\r\n\t\t:ppt ( \"chicken\"@7:14 / FOOD )\r\n\t\t:gol ( tool-9-0 \"broiler\"@21:28 / TOOL )\r\n\t)\r\n\t:inform ( ac-9-1 \"brown\"@41:46 / AC\r\n\t\t:duration ( dur-9-0 \"2 to 3 minutes each side\"@68:92 / DUR )\r\n\t\t:loc ( \"both sides\"@50:60 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "id": "201",
+    "title": "Asparagus Sandwiches",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (10 ounce) can asparagus tips, drained",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (10 ounce) can asparagus tips, drained\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup mayonnaise",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup mayonnaise\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 tablespoons finely chopped onion",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 tablespoons finely chopped onion\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 pinch seasoning salt",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 pinch seasoning salt\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 (1 pound) loaf soft, sliced white bread",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 (1 pound) loaf soft, sliced white bread\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Set asparagus spears onto paper towels to absorb excess liquid.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Set\"@3:6 / AC\r\n\t\t:ppt ( ing-0 \"asparagus spears\"@7:23 / FOOD )\r\n\t\t:gol ( tool-0-0 \"paper towels\"@29:41 / TOOL )\r\n\t\t:prp ( purp-0-0 \"to absorb excess liquid\"@42:65 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a small bowl, mix together the mayonnaise, onion and seasoning salt.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"mix\"@20:23 / AC\r\n\t\t:loc ( tool-1-0 \"a small bowl\"@6:18 / TOOL )\r\n\t\t:ppt ( ing-1 \"the mayonnaise\"@33:47 / FOOD )\r\n\t\t:ppt ( ing-2 \"onion\"@49:54 / FOOD )\r\n\t\t:ppt ( ing-3 \"seasoning salt\"@59:73 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Remove crusts from bread slices, and spread mayonnaise mixture thinly on each slice.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( \"crusts\"@10:16 / FOOD )\r\n\t\t:source ( ing-4 \"bread slices\"@22:34 / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"spread\"@40:46 / AC\r\n\t\t:ppt ( \"mayonnaise mixture\"@47:65 / FOOD )\r\n\t\t:gol ( \"each slice\"@76:86 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Place a spear onto the slice and roll up.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( \"a spear\"@9:16 / FOOD )\r\n\t\t:gol ( \"the slice\"@22:31 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"roll up\"@36:43 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Cut each roll in half, and arrange on a serving tray.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Cut\"@3:6 / AC\r\n\t\t:ppt ( \"each roll\"@7:16 / FOOD )\r\n\t\t:reshape ( \"half\"@20:24 / OTHER )\r\n\t)\r\n\t:inform ( ac-4-1 \"arrange\"@30:37 / AC\r\n\t\t:loc ( tool-4-0 \"a serving tray\"@41:55 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Cover with plastic wrap, and refrigerate until serving.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( tool-5-0 \"plastic wrap\"@14:26 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"refrigerate\"@32:43 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-5-0 \"until serving\"@44:57 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

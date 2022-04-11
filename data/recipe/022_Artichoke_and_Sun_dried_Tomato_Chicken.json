@@ -1,0 +1,90 @@
+{
+    "id": "022",
+    "title": "Artichoke and Sun dried Tomato Chicken",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "4 skinless, boneless chicken breast halves",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"4 skinless, boneless chicken breast halves\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"salt and pepper to taste\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 teaspoons olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 teaspoons olive oil\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 (14.5 ounce) can diced tomatoes with green peppers and onions",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 (14.5 ounce) can diced tomatoes with green peppers and onions\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/4 cup sun-dried tomato pesto",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/4 cup sun-dried tomato pesto\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 (14 ounce) can artichoke hearts in water, drained and quartered",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 (14 ounce) can artichoke hearts in water, drained and quartered\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Season both sides of chicken breasts with salt and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Season\"@3:9 / AC\r\n\t\t:gol ( ing-0 \"both sides of chicken breasts\"@10:39 / FOOD )\r\n\t\t:ppt ( ing-1 \"salt\"@45:49 / FOOD )\r\n\t\t:ppt ( ing-1 \"pepper\"@54:60 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Heat oil in a large skillet over medium-high heat.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-2 \"oil\"@8:11 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a large skillet\"@15:30 / TOOL )\r\n\t\t:heat ( \"medium-high heat\"@36:52 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place chicken in skillet; cook, turning once to brown each side.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( \"chicken\"@9:16 / FOOD )\r\n\t\t:gol ( tool-2-0 \"skillet\"@20:27 / TOOL )\r\n\t)\r\n\t:inform ( ac-2-1 \"cook\"@29:33 / AC\r\n\t\t:simultaneous ( ac-2-2 \"turning\"@35:42 / AC\r\n\t\t\t:ppt ( NULL / FOOD )\r\n\t\t\t:prp ( purp-2-0 \"to brown each side\"@48:66 / PURPOSE_CLAUSE )\r\n\t\t)\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Remove chicken from pan, and set aside.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"set aside\"@32:41 / AC\r\n\t\t:ppt ( ac-3-1 \"Remove\"@3:9 / AC\r\n\t\t\t:ppt ( \"chicken\"@10:17 / FOOD )\r\n\t\t\t:source ( tool-3-0 \"pan\"@23:26 / TOOL )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Pour tomatoes into pan; cook for 1 minute, stirring constantly, and incorporating any brown bits from bottom of pan.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( ing-3 \"tomatoes\"@8:16 / FOOD )\r\n\t\t:gol ( tool-4-0 \"pan\"@22:25 / TOOL )\r\n\t)\r\n\t:inform ( ac-4-1 \"cook\"@27:31 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:simultaneous ( ac-4-2 \"stirring\"@46:54 / AC\r\n\t\t\t:ppt ( NULL / FOOD )\r\n\t\t)\r\n\t\t:duration ( dur-4-0 \"1 minute\"@36:44 / DUR )\r\n\t\t:simultaneous ( ac-4-3 \"incorporating\"@71:84 / AC\r\n\t\t\t:ppt ( \"any brown bits\"@85:99 / FOOD\r\n\t\t\t\t:todo ( tool-4-1 \"bottom of pan\"@105:118 / TOOL )\r\n\t\t\t)\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Stir in pesto and artichokes, and return chicken to pan.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-4 \"pesto\"@11:16 / FOOD )\r\n\t\t:ppt ( ing-5 \"artichokes\"@21:31 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"return\"@37:43 / AC\r\n\t\t:ppt ( \"chicken\"@44:51 / FOOD )\r\n\t\t:gol ( tool-5-0 \"pan\"@55:58 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Cover, and reduce heat to medium.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-6-1 \"reduce\"@14:20 / AC\r\n\t\t:ppt ( \"heat\"@21:25 / OTHER )\r\n\t\t:gol ( temp-6-0 \"medium\"@29:35 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Simmer for 5 to 10 minutes, or until chicken is cooked through.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Simmer\"@3:9 / AC\r\n\t\t:duration ( dur-7-0 \"5 to 10 minutes\"@14:29 / DUR )\r\n\t\t:until ( cond-7-0 \"until chicken is cooked through\"@34:65 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

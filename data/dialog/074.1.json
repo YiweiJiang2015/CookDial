@@ -1,0 +1,202 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we will make eggplant mixed grill. Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes I am ready. What ingredients do I need?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "It will consist of 14 ingredients. I will give them to you step by step. First take a large resealable plastic bag.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_skip_ing_list();\r\nfetch(inst-0, [tool-0-0]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. I have the bag in front of me. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Now add 2 tablespoons chopped fresh parsley and 2 tablespoons olive oil.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-0);\r\nsimplify_continue(inst-0, [ing-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Done. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Add 2 tablespoons chopped fresh oregano and 2 tablespoons chopped fresh basil.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-2, ing-3]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "What is the last one?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "2 tablespoons chopped fresh basil.",
+            "bot": true,
+            "annotations": "repeat(ing-3);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Thank you. What should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"ing-3\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "We still have to add 10 more ingredients. The next two are 1 tablespoon balsamic vinegar and 1 teaspoon kosher salt.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-4, ing-5]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Yes both added. What else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "1/2 teaspoon black pepper and 6 cloves minced garlic.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-6, ing-7]);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. done. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now cut 1 red onion into wedges and trim 18 spears fresh asparagus. Put them both into the bag.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-8, ing-9]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Can you repeat the second ingredient please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"ing-9\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "18 spears fresh asparagus. You should trim them and put them into the bag.",
+            "bot": true,
+            "annotations": "repeat(ing-9);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. I have done that. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now take 12 crimini mushrooms and remove the stems. Also take 1 eggplant and slice it into 1/4 inch rounds. Add both into the bag.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-10, ing-11]);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Should the eggplant be peeled?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Finally add 1 red bell pepper and 1 yellow bell pepper. Cut both into wedges.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-12, ing-13]);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. done. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Seal the bag and let it marinate 2 hours in the refrigerator. Turn it occasionally.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-2-0);\r\ninform_instruction(ac-2-1);\r\ninform_instruction(ac-2-2);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Can I do anything in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_parallel_action;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Yes you can preheat the grill for high heat. Lightly oil the grill grate.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(ac-2-3);\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Now take out the bag and grill the vegetables 6 minutes on each side.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "I have done that so 12 minutes in total. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Make sure they are tender. That was all! Enjoy.",
+            "bot": true,
+            "annotations": "inform_instruction(cond-4-0);\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Yes they are tender. Thank you for the instructions.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; thank;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 19}"
+        }
+    ]
+}

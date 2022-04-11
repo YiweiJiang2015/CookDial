@@ -1,0 +1,66 @@
+{
+    "id": "095",
+    "title": "Figs with Goat Cheese Pecans and Bacon",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "6 figs, halved",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"6 figs, halved\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "6 ounces goat cheese",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"6 ounces goat cheese\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup toasted, chopped pecans",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup toasted, chopped pecans\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "3 slices bacon, cut in half",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"3 slices bacon, cut in half\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat the broiler.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"the broiler\"@11:22 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Stuff fig halves with goat cheese.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Stuff\"@3:8 / AC\r\n\t\t:gol ( ing-0 \"fig halves\"@9:19 / FOOD )\r\n\t\t:ppt ( ing-1 \"goat cheese\"@25:36 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Press pecans into the cheese.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Press\"@3:8 / AC\r\n\t\t:ppt ( ing-2 \"pecans\"@9:15 / FOOD )\r\n\t\t:gol ( \"the cheese\"@21:31 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Wrap each stuffed fig half with half a slice of bacon, securing with toothpicks.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Wrap\"@3:7 / AC\r\n\t\t:gol ( \"each stuffed fig half\"@8:29 / FOOD )\r\n\t\t:ppt ( ing-3 \"half a slice of bacon\"@35:56 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"securing\"@58:66 / AC\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( tool-3-0 \"toothpicks\"@72:82 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Arrange on a medium baking sheet.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Arrange\"@3:10 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-4-0 \"a medium baking sheet\"@14:35 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Broil 5 minutes, or until bacon is evenly brown and crisp and goat cheese is bubbly and lightly browned.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Broil\"@3:8 / AC\r\n\t\t:duration ( dur-5-0 \"5 minutes\"@9:18 / DUR )\r\n\t\t:until ( cond-5-0 \"until bacon is evenly brown and crisp and goat cheese is bubbly and lightly browned\"@23:106 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

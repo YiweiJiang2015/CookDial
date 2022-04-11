@@ -1,0 +1,54 @@
+{
+    "id": "236",
+    "title": "Cranberry Brandy Slush",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 cups cherry brandy liqueur",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 cups cherry brandy liqueur\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (16 ounce) can frozen orange juice concentrate",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (16 ounce) can frozen orange juice concentrate\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 (16 ounce) can frozen lemonade concentrate",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 (16 ounce) can frozen lemonade concentrate\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 quarts cranberry juice",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 quarts cranberry juice\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 (2 liter) bottle lemon-lime flavored carbonated beverage, chilled",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 (2 liter) bottle lemon-lime flavored carbonated beverage, chilled\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a plastic container, mix together cherry brandy, orange juice concentrate, lemonade concentrate, and cranberry juice.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"mix\"@27:30 / AC\r\n\t\t:ppt ( ing-0 \"cherry brandy\"@40:53 / FOOD )\r\n\t\t:ppt ( ing-1 \"orange juice concentrate\"@55:79 / FOOD )\r\n\t\t:ppt ( ing-2 \"lemonade concentrate\"@81:101 / FOOD )\r\n\t\t:ppt ( ing-3 \"cranberry juice\"@107:122 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a plastic container\"@6:25 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Freeze overnight.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Freeze\"@3:9 / AC\r\n\t\t:duration ( dur-1-0 \"overnight\"@10:19 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) To serve, scoop desired amount of frozen mixture into a glass, and fill with lemon-lime soda.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"scoop\"@13:18 / AC\r\n\t\t:ppt ( \"desired amount of frozen mixture\"@19:51 / FOOD )\r\n\t\t:gol ( tool-2-0 \"a glass\"@57:64 / TOOL )\r\n\t\t:prp ( purp-2-0 \"To serve\"@3:11 / PURPOSE_CLAUSE )\r\n\t)\r\n\t:inform ( ac-2-1 \"fill\"@70:74 / AC\r\n\t\t:ppt ( ing-4 \"lemon-lime soda\"@80:95 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

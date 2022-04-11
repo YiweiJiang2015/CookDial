@@ -1,0 +1,66 @@
+{
+    "id": "170",
+    "title": "Dipping Sauce",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/2 cup mayonnaise",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/2 cup mayonnaise\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 teaspoons ketchup",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 teaspoons ketchup\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 tablespoons prepared horseradish",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 tablespoons prepared horseradish\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 teaspoon paprika",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 teaspoon paprika\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/4 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/4 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/8 teaspoon dried oregano",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/8 teaspoon dried oregano\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 dash ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 dash ground black pepper\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "cayenne pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"cayenne pepper to taste\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a small bowl combine mayonnaise, ketchup, horseradish, paprika, salt, oregano, black pepper and cayenne pepper.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@19:26 / AC\r\n\t\t:ppt ( ing-0 \"mayonnaise\"@27:37 / FOOD )\r\n\t\t:ppt ( ing-1 \"ketchup\"@39:46 / FOOD )\r\n\t\t:ppt ( ing-2 \"horseradish\"@48:59 / FOOD )\r\n\t\t:ppt ( ing-3 \"paprika\"@61:68 / FOOD )\r\n\t\t:ppt ( ing-4 \"salt\"@70:74 / FOOD )\r\n\t\t:ppt ( ing-5 \"oregano\"@76:83 / FOOD )\r\n\t\t:ppt ( ing-6 \"black pepper\"@85:97 / FOOD )\r\n\t\t:ppt ( ing-7 \"cayenne pepper\"@102:116 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a small bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Store, covered, in the refrigerator.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Store\"@3:8 / AC\r\n\t\t:loc ( tool-1-0 \"the refrigerator\"@22:38 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

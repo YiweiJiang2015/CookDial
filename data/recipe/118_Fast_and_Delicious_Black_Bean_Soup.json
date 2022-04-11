@@ -1,0 +1,144 @@
+{
+    "id": "118",
+    "title": "Fast and Delicious Black Bean Soup",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 tablespoons vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 tablespoons vegetable oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 medium onion, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 medium onion, chopped\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 green bell pepper, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 green bell pepper, chopped\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 large carrot, peeled and thinly sliced",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 large carrot, peeled and thinly sliced\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "3 cloves garlic, minced",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"3 cloves garlic, minced\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 (15 ounce) cans black beans",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 (15 ounce) cans black beans\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 (14 ounce) can chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 (14 ounce) can chicken broth\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 cups cubed cooked ham",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 cups cubed cooked ham\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/4 teaspoon cumin",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/4 teaspoon cumin\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "ground black pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"ground black pepper to taste\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 cup shredded Cheddar cheese",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 cup shredded Cheddar cheese\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 cup sour cream",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 cup sour cream\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Heat the oil in a large pot over medium heat.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"the oil\"@8:15 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large pot\"@19:30 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium heat\"@36:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Stir in the onion, bell pepper, carrot, and garlic, and cook 5 minutes, until tender.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-1 \"the onion\"@11:20 / FOOD )\r\n\t\t:ppt ( ing-2 \"bell pepper\"@22:33 / FOOD )\r\n\t\t:ppt ( ing-3 \"carrot\"@35:41 / FOOD )\r\n\t\t:ppt ( ing-4 \"garlic\"@47:53 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"cook\"@59:63 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-1-0 \"5 minutes\"@64:73 / DUR )\r\n\t\t:until ( cond-1-0 \"until tender\"@75:87 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Mix in 1 can black beans and chicken broth.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Mix in\"@3:9 / AC\r\n\t\t:ppt ( ing-5 \"1 can black beans\"@10:27 / FOOD )\r\n\t\t:ppt ( ing-6 \"chicken broth\"@32:45 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) In a blender, puree remaining can of beans until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"puree\"@17:22 / AC\r\n\t\t:ppt ( ing-5 \"remaining can of beans\"@23:45 / FOOD )\r\n\t\t:until ( cond-3-0 \"until smooth\"@46:58 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-3-0 \"a blender\"@6:15 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Mix into the pot.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Mix\"@3:6 / AC\r\n\t\t:gol ( tool-4-0 \"the pot\"@12:19 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Bring soup to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"boil\"@19:23 / AC\r\n\t\t:ppt ( \"soup\"@9:13 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Reduce heat to low.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Reduce\"@3:9 / AC\r\n\t\t:ppt ( \"heat\"@10:14 / OTHER )\r\n\t\t:gol ( temp-6-0 \"low\"@18:21 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Mix in ham, cumin, salt, and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Mix in\"@3:9 / AC\r\n\t\t:ppt ( ing-7 \"ham\"@10:13 / FOOD )\r\n\t\t:ppt ( ing-8 \"cumin\"@15:20 / FOOD )\r\n\t\t:ppt ( ing-9 \"salt\"@22:26 / FOOD )\r\n\t\t:ppt ( ing-10 \"pepper\"@32:38 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Simmer 20 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Simmer\"@3:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-8-0 \"20 minutes\"@10:20 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Garnish with Cheddar cheese and sour cream to serve.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Garnish\"@3:10 / AC\r\n\t\t:ppt ( ing-11 \"Cheddar cheese\"@16:30 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( ing-12 \"sour cream\"@35:45 / FOOD )\r\n\t\t:prp ( purp-9-0 \"to serve\"@46:54 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

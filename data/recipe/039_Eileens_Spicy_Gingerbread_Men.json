@@ -1,0 +1,144 @@
+{
+    "id": "039",
+    "title": "Eileens Spicy Gingerbread Men",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/2 cup margarine",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/2 cup margarine\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup molasses",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup molasses\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 egg yolk",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 egg yolk\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 cups sifted all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 cups sifted all-purpose flour\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 teaspoon baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 teaspoon baking powder\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 teaspoon baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 teaspoon baking soda\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/2 teaspoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/2 teaspoon ground cinnamon\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 teaspoon ground cloves",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 teaspoon ground cloves\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1 teaspoon ginger",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1 teaspoon ginger\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/2 teaspoon ground nutmeg",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/2 teaspoon ground nutmeg\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large bowl, cream together the margarine and sugar until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n   :inform ( \"cream\"@20:25 / AC\r\n      :ppt ( ing-0 \"the margarine\"@35:48 / FOOD )\r\n      :ppt ( ing-1 \"sugar\"@53:58 / FOOD )\r\n      :until ( \"until smooth\"@59:71 / CONDITION_CLAUSE )\r\n      :loc ( tool-0-0 \"a large bowl\"@6:18 / TOOL )\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Stir in molasses and egg yolk.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n   :inform ( \"Stir in\"@3:10 / AC\r\n      :ppt ( ing-2 \"molasses\"@11:19 / FOOD )\r\n      :ppt ( ing-3 \"egg yolk\"@24:32 / FOOD )\r\n      :ppt( NULL / FOOD )\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Combine the flour, salt, baking powder, baking soda, cinnamon, cloves, ginger, and nutmeg; blend into the molasses mixture until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( ing-4 \"the flour\"@11:20 / FOOD )\r\n\t\t:ppt ( ing-5 \"salt\"@22:26 / FOOD )\r\n\t\t:ppt ( ing-6 \"baking powder\"@28:41 / FOOD )\r\n\t\t:ppt ( ing-7 \"baking soda\"@43:54 / FOOD )\r\n\t\t:ppt ( ing-8 \"cinnamon\"@56:64 / FOOD )\r\n\t\t:ppt ( ing-9 \"cloves\"@66:72 / FOOD )\r\n\t\t:ppt ( ing-10 \"ginger\"@74:80 / FOOD )\r\n\t\t:ppt ( ing-11 \"nutmeg\"@86:92 / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"blend\"@94:99 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( \"the molasses mixture\"@105:125 / FOOD )\r\n\t\t:until ( cond-2-0 \"until smooth\"@126:138 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cover, and chill for at least one hour.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"chill\"@14:19 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-3-0 \"at least one hour\"@24:41 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Preheat the oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-4-0 \"the oven\"@11:19 / TOOL )\r\n\t\t:heat ( temp-4-0 \"350 degrees F\"@23:36 / TEMPERATURE )\r\n\t\t:heat ( temp-4-1 \"175 degrees C\"@38:51 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) On a lightly floured surface, roll the dough out to 1/4 inch thickness.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"roll\"@33:37 / AC\r\n\t\t:loc ( tool-5-0 \"a lightly floured surface\"@6:31 / TOOL )\r\n\t\t:ppt ( \"the dough\"@38:47 / FOOD )\r\n\t\t:todo ( \"1/4 inch thickness\"@55:73 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Cut into desired shapes with cookie cutters.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Cut\"@3:6 / AC\r\n\t\t:heat ( tool-6-0 \"cookie cutters\"@32:46 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:todo ( \"desired shapes\"@12:26 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Place cookies 2 inches apart on ungreased cookie sheets.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( \"cookies\"@9:16 / FOOD )\r\n\t\t:gol ( tool-7-0 \"ungreased cookie sheets\"@35:58 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Bake for 8 to 10 minutes in the preheated oven, until firm.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Bake\"@3:7 / AC\r\n\t\t:duration ( dur-8-0 \"8 to 10 minutes\"@12:27 / DUR )\r\n\t\t:loc ( tool-8-0 \"the preheated oven\"@31:49 / TOOL )\r\n\t\t:until ( cond-8-0 \"until firm\"@51:61 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Remove from cookie sheets to cool on wire racks.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Remove\"@-1:-1 / AC\r\n\t\t:source ( tool-9-0 \"cookie sheets\"@-1:-1 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-9-0 \"to cool on wire racks\"@-1:-1 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Frost or decorate when cool.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Frost or decorate\"@-1:-1 / AC\r\n\t\t:when ( cond-10-0 \"when cool\"@22:31 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

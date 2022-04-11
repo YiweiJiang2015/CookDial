@@ -1,0 +1,156 @@
+{
+    "id": "090",
+    "title": "Chicken Marsala with Portobello Mushrooms",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3/4 cup butter, divided",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3/4 cup butter, divided\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 tablespoons vegetable oil, divided",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 tablespoons vegetable oil, divided\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "4 portobello mushroom caps, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"4 portobello mushroom caps, sliced\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 clove garlic, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 clove garlic, chopped\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "3/4 cup all-purpose flour, divided",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"3/4 cup all-purpose flour, divided\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 (14.5 ounce) can beef broth",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 (14.5 ounce) can beef broth\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 cup dry Marsala wine",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 cup dry Marsala wine\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "kosher salt and ground black pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"kosher salt and ground black pepper to taste\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 tablespoon browning sauce",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 tablespoon browning sauce\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "6 skinless, boneless chicken breast halves - pounded to 1/2 inch thickness",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"6 skinless, boneless chicken breast halves - pounded to 1/2 inch thickness\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Melt 1/2 cup butter and heat 1 tablespoon vegetable oil in a skillet over medium heat.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Melt\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"1/2 cup butter\"@8:22 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"heat\"@27:31 / AC\r\n\t\t:ppt ( ing-1 \"1 tablespoon vegetable oil\"@32:58 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a skillet\"@62:71 / TOOL )\r\n\t\t:heat ( temp-1-0 \"medium heat\"@77:88 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cook and stir the mushroom slices in the skillet until tender.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cook and stir\"@-1:-1 / AC\r\n\t\t:ppt ( ing-2 \"mushroom slices\"@21:36 / FOOD )\r\n\t\t:until ( cond-2-0 \"until tender\"@52:64 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-2-0 \"the skillet\"@40:51 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Remove from heat, cover to keep warm, and set aside.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( \"heat\"@15:19 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"cover\"@21:26 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-3-0 \"to keep warm\"@27:39 / PURPOSE_CLAUSE )\r\n\t)\r\n\t:inform ( ac-3-2 \"set aside\"@45:54 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Melt the remaining butter and heat the remaining oil in a saucepan over medium-high heat.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Melt\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"the remaining butter\"@8:28 / FOOD )\r\n\t\t:loc ( tool-4-0 \"a saucepan\"@59:69 / TOOL )\r\n\t\t:heat ( temp-4-0 \"medium-high heat\"@75:91 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-4-1 \"heat\"@33:37 / AC\r\n\t\t:ppt ( ing-1 \"the remaining oil\"@38:55 / FOOD )\r\n\t\t:loc ( tool-4-1 \"a saucepan\"@59:69 / TOOL )\r\n\t\t:heat ( temp-4-1 \"medium-high heat\"@75:91 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Cook and stir the garlic until tender, then gradually whisk in the flour.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Cook and stir\"@-1:-1 / AC\r\n\t\t:ppt ( ing-3 \"the garlic\"@17:27 / FOOD )\r\n\t\t:until ( cond-5-0 \"until tender,\"@28:41 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-5-1 \"whisk in\"@57:65 / AC\r\n\t\t:ppt ( ing-4 \"the flour\"@66:75 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Increase heat to high, and pour in the beef broth and Marsala wine.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Increase\"@3:11 / AC\r\n\t\t:gol ( temp-6-0 \"high\"@20:24 / TEMPERATURE )\r\n\t\t:ppt ( \"heat\"@12:16 / OTHER )\r\n\t)\r\n\t:inform ( ac-6-1 \"pour in\"@30:37 / AC\r\n\t\t:ppt ( ing-5 \"beef broth\"@42:52 / FOOD )\r\n\t\t:ppt ( ing-6 \"Marsala wine\"@57:69 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Season with kosher salt and pepper, and whisk in the browning sauce.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Season\"@3:9 / AC\r\n\t\t:ppt ( ing-7 \"kosher salt and pepper\"@15:21 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-7-1 \"whisk in\"@43:51 / AC\r\n\t\t:ppt ( ing-8 \"browning sauce\"@56:70 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Bring to a boil, and reduce heat to low.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Bring to a boil\"@-1:-1 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-8-1 \"reduce\"@24:30 / AC\r\n\t\t:ppt ( \"heat\"@31:35 / OTHER )\r\n\t\t:heat ( temp-8-0 \"low\"@39:42 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Mix in the mushrooms, reserving remaining butter and oil in the skillet.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Mix in\"@-1:-1 / AC\r\n\t\t:ppt ( \"mushrooms\"@-1:-1 / FOOD )\r\n\t\t:simultaneous ( ac-9-1 \"reserving\"@-1:-1 / AC\r\n\t\t\t:ppt ( \"remaining butter\"@-1:-1 / FOOD )\r\n\t\t\t:ppt ( \"oil\"@-1:-1 / FOOD )\r\n\t\t\t:loc ( tool-9-0 \"the skillet\"@-1:-1 / TOOL )\r\n\t\t)\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Cover saucepan, remove from heat, and set aside.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Cover\"@4:9 / AC\r\n\t\t:ppt ( tool-10-0 \"saucepan\"@10:18 / TOOL )\r\n\t)\r\n\t:inform ( ac-10-1 \"remove\"@20:26 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:source ( \"heat\"@32:36 / OTHER )\r\n\t)\r\n\t:inform ( ac-10-2 \"set aside\"@42:51 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Season chicken with salt and pepper, and dredge in the remaining flour.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Season\"@4:10 / AC\r\n\t\t:gol ( ing-9 \"chicken\"@11:18 / FOOD )\r\n\t\t:ppt ( ing-7 \"salt and pepper\"@24:28 / FOOD )\r\n\t)\r\n\t:inform ( ac-11-1 \"dredge in\"@45:54 / AC\r\n\t\t:ppt ( ing-4 \"the remaining flour\"@55:74 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Cook the chicken 2 minutes per side, until browned.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Cook\"@4:8 / AC\r\n\t\t:until ( cond-12-0 \"until browned\"@41:54 / CONDITION_CLAUSE )\r\n\t\t:ppt ( \"the chicken\"@9:20 / FOOD\r\n\t\t\t:duration ( dur-12-0 \"2 minutes per side\"@21:39 / DUR )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Arrange the chicken in the bottom of a 9x13 inch baking dish, and cover with the sauce and mushroom mixture.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Arrange\"@4:11 / AC\r\n\t\t:ppt ( \"the chicken\"@12:23 / FOOD )\r\n\t\t:gol ( tool-13-0 \"the bottom of a 9x13 inch baking dish\"@27:64 / TOOL )\r\n\t)\r\n\t:inform ( ac-13-1 \"cover\"@70:75 / AC\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( \"the sauce and mushroom mixture\"@81:111 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Cover baking dish, and bake 25 minutes in the preheated oven, or until chicken juices run clear.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"Cover\"@4:9 / AC\r\n\t\t:ppt ( tool-14-0 \"baking dish\"@10:21 / TOOL )\r\n\t)\r\n\t:inform ( ac-14-1 \"bake\"@27:31 / AC\r\n\t\t:duration ( dur-14-0 \"25 minutes\"@32:42 / DUR )\r\n\t\t:until ( cond-14-0 \"until chicken juices run clear\"@69:99 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-14-1 \"the preheated oven\"@46:64 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,220 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. what are we making today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. we are making a crustless spinach quiche. Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes I am ready. What is the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "First preheat the oven to 175 degrees Celsius. Then lightly grease a 9 inch pie pan.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);\r\ninform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. I have preheated the oven. How large should the pan be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_tool;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "It should be a 9 inch pie pan.",
+            "bot": true,
+            "annotations": "inform_instruction(tool-1-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Thank you. I have greased it in. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Now cut 1 onion and take a large skillet.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-1);\r\nfetch(inst-2, [tool-2-0]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Done. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Heat some oil in the large skillet on medium high heat and add the onions.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);\r\ninform_instruction(ac-3-0);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "For how long should I bake the onions?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "They are done when they are soft. Stir occasionally.",
+            "bot": true,
+            "annotations": "inform_duration(cond-3-0);\r\ninform_instruction(ac-3-2);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "They are soft now. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Take 1 package frozen chopped spinach and add it to the onions.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-4-0);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "How large should the package be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "It should be 10 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-2);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Thank you. I have added it. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm; req_instruction;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Continue cooking the spinach until excess moisture has evaporated.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-4-1);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "That's done. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Take a large bowl. We will combine some ingredients into the bowl.",
+            "bot": true,
+            "annotations": "fetch(inst-5, [tool-5-0]);\r\nsimplify_begin(ac-5-0);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "I have a large bowl in front of me. What should I add to this bowl?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "First add 5 beaten eggs and 3 cups of shredded Muenster cheese.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-5-0, [ing-3, ing-4]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Done. What else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now still add 1/4 teaspoon salt and 1/8 teaspoon ground black pepper.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-5-0, [ing-5, ing-6]);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "How much ground black pepper?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "1/8 teaspoon.",
+            "bot": true,
+            "annotations": "inform_amount(ing-6);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Thank you for repeating it. What can I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Now add the spinach mixture you made before and stir everything together.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Done. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Scoop the mixture into the pie pan you prepared before.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "The mixture is in the pie pan now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Great. Now bake it in the oven for about 30 minutes. Make sure that the eggs have set.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. I have set the oven timer on 40 minutes. Can I do something in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "No that was all. After it's done just let it cool for 10 minutes before serving the dish.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. it has cooled down now. Thank you for the instructions. It looks good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; thank;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Ok. Thanks. enjoy.",
+            "bot": true,
+            "annotations": "thank();\r\nenjoy();"
+        }
+    ]
+}

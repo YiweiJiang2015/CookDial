@@ -1,0 +1,60 @@
+{
+    "id": "008",
+    "title": "Chocolate Hazelnut Fruit Crepes",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup chocolate hazelnut spread",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"chocolate hazelnut spread\")"
+        },
+        {
+            "id": "ing-1",
+            "text": "4 crepes",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"4 crepes\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "4 bananas, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"4 bananas, sliced\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 (7 ounce) can pressurized whipped cream",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 (7 ounce) can pressurized whipped cream\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Spread 1/4 cup of chocolate hazelnut onto each crepe.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Spread\"@3:9 / AC\r\n\t\t:ppt ( ing-0 \"1/4 cup of chocolate hazelnut\"@10:39 / FOOD )\r\n\t\t:gol ( ing-1 \"each crepe\"@45:55 / FOOD )\r\n\t\t:_result ( crepe-with-hazelnut )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Arrange 1 sliced banana down the center of each one.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n   :inform ( ac-1-0 \"Arrange\"@3:10 / AC\r\n      :ppt ( ing-2 \"1 sliced banana\"@11:26 / FOOD )\r\n      :gol ( \"the center of each one\"@32:54 / FOOD )\r\n\t:_result crepe-with-banana\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Roll up, and place in a warm skillet over medium heat.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Roll up\"@3:10 / AC\r\n\t\t:ppt ( crepe-with-banana / FOOD )\r\n\t\t:_result ( crepe-roll )\r\n\t)\r\n\t:inform ( ac-2-1 \"place\"@16:21 / AC\r\n\t\t:ppt ( crepe-roll / FOOD )\r\n\t\t:gol ( tool-2-0 \"a warm skillet\"@25:39 / TOOL )\r\n\t\t:heat ( temp-2-0 \"medium heat\"@45:56 / TEMPERATURE )\r\n\t\t:_result ( crepe-on-skillet )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Let them warm up for about 90 seconds.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"warm up\"@12:19 / AC\r\n\t\t:ppt ( \"them\"@7:11 / PRONOUN )\r\n\t\t:duration ( dur-3-0 \"90 seconds\"@30:40 / DUR )\r\n\t\t:_result ( warmed-crepe )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Transfer to plates, and serve topped with whipped cream.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Transfer\"@3:11 / AC\r\n\t\t:gol ( tool-4-0 \"plates\"@15:21 / TOOL )\r\n\t\t:ppt ( warmed-crepes / FOOD )\r\n\t\t:_result ( crepe-on-plates )\r\n\t)\r\n\t:inform ( ac-4-1 \"serve\"@27:32 / AC\r\n\t\t:ppt ( crepe-on-plates / FOOD )\r\n\t\t:todo ( \"topped with whipped cream\"@-1:-1 / COMPLEMENT )\r\n\t\t:_result ( FINAL_PRODUCT )\r\n\t)\r\n)"
+        }
+    ]
+}

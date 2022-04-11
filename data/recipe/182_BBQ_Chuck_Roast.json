@@ -1,0 +1,114 @@
+{
+    "id": "182",
+    "title": "BBQ Chuck Roast",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (5 pound) chuck roast",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (5 pound) chuck roast\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup barbeque sauce",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup barbeque sauce\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup teriyaki sauce",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup teriyaki sauce\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 (12 fluid ounce) can or bottle beer",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 (12 fluid ounce) can or bottle beer\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "3 teaspoons minced garlic",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"3 teaspoons minced garlic\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "3 teaspoons thinly sliced fresh ginger root",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"3 teaspoons thinly sliced fresh ginger root\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 onion, finely chopped",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 onion, finely chopped\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "3 teaspoons coarsely ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"3 teaspoons coarsely ground black pepper\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 teaspoons salt",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 teaspoons salt\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large bowl, mix barbeque sauce, teriyaki sauce, beer, garlic, ginger, onion, black pepper, and salt.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"mix\"@20:23 / AC\r\n\t\t:ppt ( ing-1 \"barbeque sauce\"@24:38 / FOOD )\r\n\t\t:ppt ( ing-2 \"teriyaki sauce\"@40:54 / FOOD )\r\n\t\t:ppt ( ing-3 \"beer\"@56:60 / FOOD )\r\n\t\t:ppt ( ing-4 \"garlic\"@62:68 / FOOD )\r\n\t\t:ppt ( ing-5 \"ginger\"@70:76 / FOOD )\r\n\t\t:ppt ( ing-6 \"onion\"@78:83 / FOOD )\r\n\t\t:ppt ( ing-7 \"black pepper\"@85:97 / FOOD )\r\n\t\t:ppt ( ing-8 \"salt\"@103:107 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Place the roast into the marinade, cover and refrigerate for six hours, turning often.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"the roast\"@9:18 / FOOD )\r\n\t\t:gol ( \"the marinade\"@24:36 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"cover\"@38:43 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-2 \"refrigerate\"@48:59 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-1-0 \"six hours\"@64:73 / DUR )\r\n\t\t:simultaneous ( ac-1-3 \"turning\"@75:82 / AC )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Preheat an outdoor grill for indirect heat.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-2-0 \"an outdoor grill\"@11:27 / TOOL )\r\n\t\t:mnr ( \"indirect heat\"@32:45 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Remove the roast from the marinade, and pour the marinade into a saucepan.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( \"the roast\"@10:19 / FOOD )\r\n\t\t:source ( \"the marinade\"@25:37 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"pour\"@43:47 / AC\r\n\t\t:ppt ( \"the marinade\"@48:60 / FOOD )\r\n\t\t:gol ( tool-3-0 \"a saucepan\"@66:76 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Bring to a boil, and cook for 5 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"cook\"@24:28 / AC\r\n\t\t:duration ( dur-4-0 \"5 minutes\"@33:42 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"boil\"@14:18 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Set aside for use as a basting sauce.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Set aside\"@3:12 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:prp ( purp-5-0 \"for use as a basting sauce\"@13:39 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Thread the roast onto a rotating barbecue spit above indirect heat.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Thread\"@3:9 / AC\r\n\t\t:ppt ( \"the roast\"@10:19 / FOOD )\r\n\t\t:loc ( tool-6-0 \"a rotating barbecue spit\"@25:49 / TOOL )\r\n\t\t:heat ( \"indirect heat\"@56:69 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Cook the roast for two hours, or until the internal temperature of the roast is at least 145 degrees F (63 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Cook\"@3:7 / AC\r\n\t\t:ppt ( \"the roast\"@8:17 / FOOD )\r\n\t\t:duration ( dur-7-0 \"two hours\"@22:31 / DUR )\r\n\t\t:until ( cond-7-0 \"until the internal temperature of the roast is at least 145 degrees F (63 degrees C)\"@36:120 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Baste often during the last hour with reserved marinade.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Baste\"@3:8 / AC\r\n\t\t:ppt ( \"reserved marinade\"@41:58 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( dur-8-0 \"the last hour\"@22:35 / DUR )\r\n)"
+        }
+    ]
+}

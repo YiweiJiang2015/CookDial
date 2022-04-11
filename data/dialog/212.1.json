@@ -1,0 +1,394 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello bot, what is the recipe of the day?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi it is Butterscotch Basketball Cookies. Do you like basketball?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "I do! Let's do it! Can we first prepare the ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Nice, sure. There are 14 ingredients. The first 3 are 1 cup butterscotch chips, 1 cup butter (no substitutes). It should be softened. And 1/2 cup sugar.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\ninform_ingredient(ing-0);\r\ninform_ingredient(ing-1);\r\ninform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok, I have them ready, what are the next ones?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Nice, 1/2 cup packed brown sugar. 1 egg and 2 tablespoons milk.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-3);\r\ninform_ingredient(ing-4);\r\ninform_ingredient(ing-5);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok, good, should I use skimmed milk?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-3\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Sorry I cannot help you with that question. In my recipe there is written 2 tablespoons milk.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "That's ok! Can you tell me more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Alright, The next ingredients are 2 teaspoons vanilla extract, 3 cups all-purpose flour and  3/4 cup shortening.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-6);\r\ninform_ingredient(ing-7);\r\ninform_ingredient(ing-8);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Good, I have them in my baking shelf! Is that it?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient_list_ends;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"ing-9\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "No not yet. Ok nice. The next ingredients are 1/4 cup water, 2 tablespoons all-purpose flour and 1, 1/2 teaspoons vanilla extract.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_ingredient(ing-9);\r\ninform_ingredient(ing-10);\r\ninform_ingredient(ing-11);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Good! I have water baking powder and vanilla exctract!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-12\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Ok nice. The last two ingredients are 4 cups confectioners' sugar and paste food coloring.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-12);\r\ninform_ingredient(ing-13);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Great! I look forward to start then!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-13\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Good! let's make the cookies! First in a microwave, melt butterscotch chips. Afterwards let them cool for 10 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok, for how long should I cook them i the microwave?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "The butterscotch chips should be melted.",
+            "bot": true,
+            "annotations": "repeat(ac-0-0);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Oook, it should be ok. What can I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now take a mixing bowl and cream the butter and sugars.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok, I made the mixture, what should I do with it.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now add egg, milk and vanilla; mix well.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok, should I beat the egg before I add it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Sorry I don't know.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "No worries! What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now beat in melted chips. Gradually add flour and  mix well.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok, I am doing that. Should I use all the chips?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_use_all;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Yes you can use all of them.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Tremendous! Can I tell me what is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Now cover and refrigerate for 1 hour.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok, one hour passed!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Good. Now use a floured surface and roll out dough to 1/4-in. thickness.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok, I am rolling the dough.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Cut the dough with a floured 4-1/2-in. gingerbread man cookie cutter and a 3-in. round cutter.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Sorry I didn't understand.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "You should cut the dough with a floured 4 and a half inch gingerbread man cookie cutter and with a 3 inch round cutter.",
+            "bot": true,
+            "annotations": "repeat(inst-7);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok, I cut it!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Nice. now place them 2 inch apart on greased baking sheets.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "They are on the baking sheets now, should I bake them in the oven?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Nice now bake them at 375 degrees Fahrenheit for  5-8 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok, 7 minutes passed. Should I wait until they look nicely brown?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "The edges should become lightly browned. Now cool for 1 minute. You should remove them to wire racks to cool completely.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Ok they are cool I think. Can I eat them now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 26}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "Nice. No not yet there are quite some more steps. Let's make the frosting. Combine shortening, water, flour and vanilla in a mixing bowl and mix well.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Ok, I am mixing now, what should I do with this mixture'.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "Nice, first gradually beat in sugar as well.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Should I add all of the sugar?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_use_all;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "Yes.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "And what should I do after?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-49",
+            "utterance": "Now place 1 cup frosting in a plastic bag and cut a small hole in the corner of bag.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-50",
+            "utterance": "So what should I do after i make a hole in the plastic bag?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 29}"
+        },
+        {
+            "utt_id": "utt-51",
+            "utterance": "You should pipe the shirt and shorts on players with the frosting in the plastic bag. The players are what you cut before with the cutters.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-14);"
+        },
+        {
+            "utt_id": "utt-52",
+            "utterance": "Ok good so I did that rght I think! What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-14\", \"tracker_completed_step_num\": 29, \"tracker_requested_step\": \"inst-15\", \"tracker_requested_step_num\": 30}"
+        },
+        {
+            "utt_id": "utt-53",
+            "utterance": "Ok, now fill in outline and smooth it afterwards with a metal spatula.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-15);"
+        },
+        {
+            "utt_id": "utt-54",
+            "utterance": "Ok, I smoothed them out. Are they ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-15\", \"tracker_completed_step_num\": 30, \"tracker_requested_step\": \"inst-16\", \"tracker_requested_step_num\": 31}"
+        },
+        {
+            "utt_id": "utt-55",
+            "utterance": "Nice. No not yet. The next step is to tint 1/4 cup frosting black. Then place it in a plastic bag.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-16);"
+        },
+        {
+            "utt_id": "utt-56",
+            "utterance": "Ok the frosting black is in the bag!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-16\", \"tracker_completed_step_num\": 31, \"tracker_requested_step\": \"inst-17\", \"tracker_requested_step_num\": 32}"
+        },
+        {
+            "utt_id": "utt-57",
+            "utterance": "Now you should pipe lines on the round cookies in order to create basketballs. You should pipe the hair, eyes and noses on the players.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-17);"
+        },
+        {
+            "utt_id": "utt-58",
+            "utterance": "Ok, I did that. I think it doesn't look that great but that's my fault probably...",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-17\", \"tracker_completed_step_num\": 32, \"tracker_requested_step\": \"inst-18\", \"tracker_requested_step_num\": 33}"
+        },
+        {
+            "utt_id": "utt-59",
+            "utterance": "I'm sorry to hear that. Now tint 1/4 cup frosting red. And then you should pipe a mouth on each player.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-18);"
+        },
+        {
+            "utt_id": "utt-60",
+            "utterance": "Ok, I  piped a mouth on each player. They are smiling. Is it normal that they look creepy?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-18\", \"tracker_completed_step_num\": 33, \"tracker_requested_step\": \"inst-19\", \"tracker_requested_step_num\": 34}"
+        },
+        {
+            "utt_id": "utt-61",
+            "utterance": "Nice, now tint the remaining frosting to match team colors of your choice. Now you can decorate by piping around shirts and shorts and add a letter on shirts if desired. Maybe it becomes less creepy.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-19);"
+        },
+        {
+            "utt_id": "utt-62",
+            "utterance": "Oh nice, I used yellow and purple like LA Lakers.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-19\", \"tracker_completed_step_num\": 34, \"tracker_requested_step\": \"inst-19\", \"tracker_requested_step_num\": 34}"
+        },
+        {
+            "utt_id": "utt-63",
+            "utterance": "Ok nice. That was all, I hope you will enjoy your Butterscotch Basketball Cookies. And don't forget if I may use some words of the great Michael Jordan: \"The key to success is failure.\" I hope next time your cookies will look less creepy.",
+            "bot": true,
+            "annotations": "end_recipe();\r\nenjoy();\r\n"
+        },
+        {
+            "utt_id": "utt-64",
+            "utterance": "Ahah lol! Thanks for that, I'll keep it in mind.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-19\", \"tracker_completed_step_num\": 34, \"tracker_requested_step\": \"inst-19\", \"tracker_requested_step_num\": 34}"
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+{
+    "id": "178",
+    "title": "Bacon Mushroom Swiss Meatloaf",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "12 ounces chopped raw bacon",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"12 ounces chopped raw bacon\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 small white onion, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 small white onion, chopped\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "5 button mushrooms, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"5 button mushrooms, chopped\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 1/2 pounds extra-lean ground beef",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 1/2 pounds extra-lean ground beef\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 egg",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 egg\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 cup evaporated milk",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 cup evaporated milk\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "6 ounces shredded Swiss cheese, divided",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"6 ounces shredded Swiss cheese, divided\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 cup corn flake crumbs",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 cup corn flake crumbs\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Place bacon in a skillet and cook over medium heat until the pieces are browned.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"bacon\"@9:14 / FOOD )\r\n\t\t:gol ( tool-1-0 \"a skillet\"@18:27 / TOOL )\r\n\t)\r\n\t:inform ( ac-1-1 \"cook\"@32:36 / AC\r\n\t\t:heat ( temp-1-0 \"medium heat\"@42:53 / TEMPERATURE )\r\n\t\t:until ( cond-1-0 \"until the pieces are browned\"@54:82 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Remove with a slotted spoon to paper towels.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Remove\"@3:9 / AC\r\n\t\t:instrument ( tool-2-0 \"a slotted spoon\"@15:30 / TOOL )\r\n\t\t:loc ( tool-2-1 \"paper towels\"@34:46 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Discard all but 1 tablespoon of bacon grease.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Discard\"@3:10 / AC\r\n\t\t:ppt ( \"all but 1 tablespoon of bacon grease\"@11:47 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Stir in onions and mushrooms, and cook until soft.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-1 \"onions\"@11:17 / FOOD )\r\n\t\t:ppt ( ing-2 \"mushrooms\"@22:31 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"cook\"@37:41 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( cond-4-0 \"until soft\"@42:52 / CONDITION_CLAUSE )\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Remove from heat.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( \"heat\"@15:19 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) In a large bowl, stir together beef, egg, and milk.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"stir\"@20:24 / AC\r\n\t\t:ppt ( ing-3 \"beef\"@34:38 / FOOD )\r\n\t\t:ppt ( ing-4 \"egg\"@40:43 / FOOD )\r\n\t\t:ppt ( ing-5 \"milk\"@49:53 / FOOD )\r\n\t\t:loc ( tool-6-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Stir in the onion and mushrooms.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( \"the onion\"@11:20 / FOOD )\r\n\t\t:ppt ( \"mushrooms\"@25:34 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Mix in about 4 ounces of Swiss cheese, and all but 1 tablespoon of bacon.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Mix in\"@3:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( ing-6 \"4 ounces of Swiss cheese\"@16:40 / FOOD )\r\n\t\t:ppt ( \"all but 1 tablespoon of bacon\"@46:75 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Stir in cornflake crumbs, and mix until well blended.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Stir in\"@4:11 / AC\r\n\t\t:ppt ( ing-7 \"cornflake crumbs\"@12:28 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-9-1 \"mix\"@34:37 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-9-0 \"until well blended\"@38:56 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Shape into a loaf, and place in a meatloaf pan.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Shape\"@4:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:reshape ( \"a loaf\"@15:21 / FOOD )\r\n\t)\r\n\t:inform ( ac-10-1 \"place\"@27:32 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-10-0 \"a meatloaf pan\"@36:50 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Bake in a preheated oven for 1 hour.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Bake\"@4:8 / AC\r\n\t\t:loc ( tool-11-0 \"a preheated oven\"@12:28 / TOOL )\r\n\t\t:duration ( dur-11-0 \"1 hour\"@33:39 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Drain fat, and sprinkle with remaining cheese and bacon.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Drain\"@4:9 / AC\r\n\t\t:ppt ( \"fat\"@10:13 / OTHER )\r\n\t)\r\n\t:inform ( ac-12-1 \"sprinkle\"@19:27 / AC\r\n\t\t:ppt ( \"remaining cheese\"@33:49 / FOOD )\r\n\t\t:ppt ( \"bacon\"@54:59 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Return to oven, and bake until cheese is melted, about 5 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Return\"@4:10 / AC\r\n\t\t:loc ( tool-13-0 \"oven\"@14:18 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-13-1 \"bake\"@24:28 / AC\r\n\t\t:until ( cond-13-0 \"until cheese is melted\"@29:51 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-13-0 \"5 minutes\"@59:68 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

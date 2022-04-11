@@ -1,0 +1,96 @@
+{
+    "id": "253",
+    "title": "Bs Cordon Bleu Bundles",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 teaspoons olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 teaspoons olive oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "4 boneless, skinless chicken breast halves",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"4 boneless, skinless chicken breast halves\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 (10 ounce) can refrigerated large crescent roll dough",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 (10 ounce) can refrigerated large crescent roll dough\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "8 ounces Brie cheese",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"8 ounces Brie cheese\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 bunch fresh spinach, rinsed and stems removed",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 bunch fresh spinach, rinsed and stems removed\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "4 (1/2 ounce) slices prosciutto",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"4 (1/2 ounce) slices prosciutto\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Heat oil in a heavy skillet; or spray a nonstick frying pan with cooking spray.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"oil\"@8:11 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a heavy skillet\"@15:30 / TOOL )\r\n\t)\r\n\t:inform ( ac-0-1 \"spray\"@35:40 / AC\r\n\t\t:gol ( tool-0-1 \"a nonstick frying pan\"@41:62 / TOOL )\r\n\t\t:ppt ( \"cooking spray\"@68:81 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Saute chicken breasts until no longer pink, and juices run clear; set aside.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Saute\"@3:8 / AC\r\n\t\t:ppt ( ing-1 \"chicken breasts\"@9:24 / FOOD )\r\n\t\t:until ( cond-1-0 \"until no longer pink, and juices run clear\"@25:67 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-1-1 \"set aside\"@69:78 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Preheat oven to 375  degrees F (190 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-2-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-2-0 \"375  degrees F\"@19:33 / TEMPERATURE )\r\n\t\t:heat ( temp-2-1 \"190 degrees C\"@35:48 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Unroll 4 large crescent rolls.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Unroll\"@3:9 / AC\r\n\t\t:ppt ( \"4 large crescent rolls\"@10:32 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Layer each with 3 thin slices brie, 3 leaves spinach and 1 slice prosciutto.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Layer\"@3:8 / AC\r\n\t\t:gol ( \"each\"@9:13 / FOOD )\r\n\t\t:ppt ( ing-3 \"3 thin slices brie\"@19:37 / FOOD )\r\n\t\t:ppt ( ing-4 \"3 leaves spinach\"@39:55 / FOOD )\r\n\t\t:ppt ( ing-5 \"1 slice prosciutto\"@60:78 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Place chicken breast in the center of dough.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( \"chicken breast\"@9:23 / FOOD )\r\n\t\t:gol ( \"the center of dough\"@27:46 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Wrap and tuck dough around chicken until completely enclosed.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Wrap and tuck\"@3:16 / AC\r\n\t\t:ppt ( \"dough\"@17:22 / FOOD )\r\n\t\t:gol ( \"chicken\"@30:37 / FOOD )\r\n\t\t:until ( cond-6-0 \"until completely enclosed\"@38:63 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Place seam side down on baking sheet.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( \"seam side\"@9:18 / FOOD )\r\n\t\t:gol ( tool-7-0 \"baking sheet\"@27:39 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Bake in preheated oven for 10 to 15 minutes, or until golden brown.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Bake\"@3:7 / AC\r\n\t\t:loc ( tool-8-0 \"preheated oven\"@11:25 / TOOL )\r\n\t\t:duration ( dur-8-0 \"10 to 15 minutes\"@30:46 / DUR )\r\n\t\t:until ( cond-8-0 \"until golden brown\"@51:69 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

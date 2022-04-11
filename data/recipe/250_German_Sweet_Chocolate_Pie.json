@@ -1,0 +1,90 @@
+{
+    "id": "250",
+    "title": "German Sweet Chocolate Pie",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (4 ounce) bar German sweet chocolate, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (4 ounce) bar German sweet chocolate, chopped\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/3 cup milk",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/3 cup milk\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "4 ounces cream cheese, softened",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"4 ounces cream cheese, softened\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 tablespoons white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 tablespoons white sugar\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 (12 ounce) container frozen whipped topping, thawed",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 (12 ounce) container frozen whipped topping, thawed\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 (9 inch) prepared graham cracker crust",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 (9 inch) prepared graham cracker crust\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Microwave chocolate and 2 tablespoons of the milk in large microwave-safe bowl on high 1 1/2 to 2 minutes or until chocolate is almost melted, stirring halfway through heating time.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Microwave\"@3:12 / AC\r\n\t\t:ppt ( ing-0 \"chocolate\"@13:22 / FOOD )\r\n\t\t:ppt ( ing-1 \"2 tablespoons of the milk\"@27:52 / FOOD )\r\n\t\t:loc ( tool-0-0 \"large microwave-safe bowl\"@56:81 / TOOL )\r\n\t\t:heat ( temp-0-0 \"high\"@85:89 / TEMPERATURE )\r\n\t\t:duration ( dur-0-0 \"1 1/2 to 2 minutes\"@90:108 / DUR )\r\n\t\t:until ( cond-0-0 \"until chocolate is almost melted\"@112:144 / CONDITION_CLAUSE )\r\n\t\t:simultaneous ( ac-0-1 \"stirring\"@146:154 / AC )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Beat in cream cheese, sugar, and remaining milk with wire whisk until blended.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Beat in\"@3:10 / AC\r\n\t\t:ppt ( ing-2 \"cream cheese\"@11:23 / FOOD )\r\n\t\t:ppt ( ing-3 \"sugar\"@25:30 / FOOD )\r\n\t\t:ppt ( ing-1 \"remaining milk\"@36:50 / FOOD )\r\n\t\t:instrument ( tool-1-0 \"wire whisk\"@56:66 / TOOL )\r\n\t\t:until ( cond-1-0 \"until blended\"@67:80 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Refrigerate 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Refrigerate\"@3:14 / AC\r\n\t\t:duration ( dur-2-0 \"10 minutes\"@15:25 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Gently fold in 3 1/2 cups of the whipped topping until no streaks remain.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"fold in\"@10:17 / AC\r\n\t\t:ppt ( ing-4 \"3 1/2 cups of the whipped topping\"@18:51 / FOOD )\r\n\t\t:until ( cond-3-0 \"until no streaks remain\"@52:75 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Spoon into crust.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Spoon\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( ing-5 \"crust\"@14:19 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Freeze pie 4 hours.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Freeze\"@3:9 / AC\r\n\t\t:ppt ( \"pie\"@10:13 / FOOD )\r\n\t\t:duration ( dur-5-0 \"4 hours\"@14:21 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Before cutting pie, let stand at room temperature 15 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"stand\"@27:32 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( cond-6-0 \"Before cutting pie\"@3:21 / CONDITION_CLAUSE )\r\n\t\t:heat ( temp-6-0 \"room temperature\"@36:52 / TEMPERATURE )\r\n\t\t:duration ( dur-6-0 \"15 minutes\"@53:63 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Serve with remaining whipped topping.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( ing-4 \"remaining whipped topping\"@14:39 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

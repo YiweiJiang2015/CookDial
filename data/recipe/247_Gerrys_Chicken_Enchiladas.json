@@ -1,0 +1,204 @@
+{
+    "id": "247",
+    "title": "Gerrys Chicken Enchiladas",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "4 boneless, skinless chicken breast halves",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"4 boneless, skinless chicken breast halves\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 tablespoon vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 tablespoon vegetable oil\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 onion, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 onion, chopped\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 (10 ounce) can diced tomatoes with green chile peppers",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 (10 ounce) can diced tomatoes with green chile peppers\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 (14.5 ounce) can stewed tomatoes",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 (14.5 ounce) can stewed tomatoes\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "12 small chile peppers, diced  (optional)",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"12 small chile peppers, diced  (optional)\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 (10.75 ounce) can condensed cream of chicken soup",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 (10.75 ounce) can condensed cream of chicken soup\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 (14.5 ounce) can chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 (14.5 ounce) can chicken broth\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 bunch green onions, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 bunch green onions, chopped\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/2 pint heavy cream",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/2 pint heavy cream\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "6 (6 inch) corn tortillas",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"6 (6 inch) corn tortillas\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "3 cups shredded Cheddar cheese",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"3 cups shredded Cheddar cheese\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 (10 ounce) can enchilada sauce",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 (10 ounce) can enchilada sauce\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Cut chicken breasts into 1 inch strips.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Cut\"@3:6 / AC\r\n\t\t:ppt ( ing-0 \"chicken breasts\"@7:22 / FOOD )\r\n\t\t:reshape ( \"1 inch strips\"@28:41 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Place in a medium bowl with desired marinade, and marinate in the refrigerator for at least 30 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Place\"@3:8 / AC\r\n\t\t:gol ( tool-1-0 \"a medium bowl\"@12:25 / TOOL\r\n\t\t\t:todo ( \"desired marinade\"@31:47 / FOOD )\r\n\t\t)\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"marinate\"@53:61 / AC\r\n\t\t:loc ( tool-1-1 \"the refrigerator\"@65:81 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-1-0 \"at least 30 minutes\"@86:105 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-2-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-2-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-2-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Heat oil in a large skillet over medium heat.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-1 \"oil\"@8:11 / FOOD )\r\n\t\t:loc ( tool-3-0 \"a large skillet\"@15:30 / TOOL )\r\n\t\t:heat ( temp-3-0 \"medium heat\"@36:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Saute chicken and onions until chicken is evenly brown.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Saute\"@3:8 / AC\r\n\t\t:ppt ( \"chicken\"@9:16 / FOOD )\r\n\t\t:ppt ( ing-2 \"onions\"@21:27 / FOOD )\r\n\t\t:until ( cond-4-0 \"until chicken is evenly brown\"@28:57 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Stir in diced tomatoes with green chile peppers, stewed tomatoes, chile peppers, soup and broth.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-3 \"diced tomatoes\"@11:25 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( ing-5 \"green chile peppers\"@31:50 / FOOD )\r\n\t\t:ppt ( ing-4 \"stewed tomatoes\"@52:67 / FOOD )\r\n\t\t:ppt ( ing-6 \"soup\"@84:88 / FOOD )\r\n\t\t:ppt ( ing-7 \"broth\"@93:98 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Bring mixture to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"boil\"@22:26 / AC\r\n\t\t:ppt ( \"mixture\"@9:16 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Reduce heat, cover skillet, and simmer for 20 to 30 minutes, or until chicken is no longer pink and juices run clear.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Reduce\"@3:9 / AC\r\n\t\t:ppt ( \"heat\"@10:14 / OTHER )\r\n\t)\r\n\t:inform ( ac-7-1 \"cover\"@16:21 / AC\r\n\t\t:ppt ( tool-7-0 \"skillet\"@22:29 / TOOL )\r\n\t)\r\n\t:inform ( ac-7-2 \"simmer\"@35:41 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-7-0 \"20 to 30 minutes\"@46:62 / DUR )\r\n\t\t:until ( cond-7-0 \"until chicken is no longer pink and juices run clear\"@67:119 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Remove chicken from skillet, and shred when cool enough to handle.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( \"chicken\"@10:17 / FOOD )\r\n\t\t:source ( tool-8-0 \"skillet\"@23:30 / TOOL )\r\n\t)\r\n\t:inform ( ac-8-1 \"shred\"@36:41 / AC\r\n\t\t:duration ( cond-8-0 \"when cool enough to handle\"@42:68 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Meanwhile, allow skillet mixture to simmer and reduce to about 2 1/4 cups.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"simmer\"@40:46 / AC\r\n\t\t:ppt ( \"skillet mixture\"@21:36 / FOOD )\r\n\t)\r\n\t:inform ( ac-9-1 \"reduce\"@51:57 / AC\r\n\t\t:gol ( \"about 2 1/4 cups\"@61:77 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) In a medium bowl, combine shredded chicken and about 1/4 cup skillet mixture (just enough to make a paste like mixture).",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"combine\"@22:29 / AC\r\n\t\t:ppt ( \"shredded chicken\"@30:46 / FOOD )\r\n\t\t:ppt ( \"1/4 cup skillet mixture\"@57:80 / FOOD )\r\n\t\t:prp ( purp-10-0 \"just enough to make a paste like mixture\"@82:122 / PURPOSE_CLAUSE )\r\n\t\t:loc ( tool-10-0 \"a medium bowl\"@7:20 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Mix together with half the chopped green onions.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Mix\"@4:7 / AC\r\n\t\t:ppt ( ing-8 \"half the chopped green onions\"@22:51 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Pour remaining 2 cups of skillet mixture into a 9x13 inch baking dish.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Pour\"@4:8 / AC\r\n\t\t:ppt ( \"remaining 2 cups of skillet mixture\"@9:44 / FOOD )\r\n\t\t:gol ( tool-12-0 \"a 9x13 inch baking dish\"@50:73 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) In a second skillet, heat cream over low heat, being careful not to boil.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"heat\"@25:29 / AC\r\n\t\t:loc ( tool-13-0 \"a second skillet\"@7:23 / TOOL )\r\n\t\t:ppt ( ing-9 \"cream\"@30:35 / FOOD )\r\n\t\t:heat ( temp-13-0 \"low heat\"@41:49 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-13-1 \"not to boil\"@65:76 / AC )\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Dip tortillas in the warm cream to soften and coat.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"Dip\"@4:7 / AC\r\n\t\t:ppt ( \"tortillas\"@8:17 / FOOD )\r\n\t\t:gol ( \"the warm cream\"@21:35 / FOOD )\r\n\t\t:prp ( purp-14-0 \"to soften and coat\"@36:54 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-15",
+            "text": "15) Spoon about 1/3 cup chicken mixture onto each tortilla.",
+            "type": "instruction",
+            "eamr": "( inst-15 / R\r\n\t:inform ( ac-15-0 \"Spoon\"@4:9 / AC\r\n\t\t:ppt ( \"1/3 cup chicken mixture\"@16:39 / FOOD )\r\n\t\t:gol ( ing-10 \"each tortilla\"@45:58 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-16",
+            "text": "16) Top chicken mixture with half the shredded cheese, and roll up tortillas.",
+            "type": "instruction",
+            "eamr": "( inst-16 / R\r\n\t:inform ( ac-16-0 \"Top\"@4:7 / AC\r\n\t\t:gol ( \"chicken mixture\"@8:23 / FOOD )\r\n\t\t:ppt ( ing-11 \"half the shredded cheese\"@29:53 / FOOD )\r\n\t)\r\n\t:inform ( ac-16-1 \"roll up\"@59:66 / AC\r\n\t\t:ppt ( \"tortillas\"@67:76 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-17",
+            "text": "17) Place rolled tortillas in baking dish, seam side down, and drizzle with enchilada sauce.",
+            "type": "instruction",
+            "eamr": "( inst-17 / R\r\n\t:inform ( ac-17-0 \"Place\"@4:9 / AC\r\n\t\t:ppt ( \"rolled tortillas\"@10:26 / FOOD )\r\n\t\t:gol ( tool-17-0 \"baking dish\"@30:41 / TOOL )\r\n\t)\r\n\t:inform ( ac-17-1 \"drizzle\"@63:70 / AC\r\n\t\t:ppt ( ing-12 \"enchilada sauce\"@76:91 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-18",
+            "text": "18) Cover with remaining shredded cheese, and sprinkle remaining chopped green onion over cheese.",
+            "type": "instruction",
+            "eamr": "( inst-18 / R\r\n\t:inform ( ac-18-0 \"Cover\"@4:9 / AC\r\n\t\t:ppt ( \"remaining shredded cheese\"@15:40 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-18-1 \"sprinkle\"@46:54 / AC\r\n\t\t:gol ( \"cheese\"@90:96 / FOOD )\r\n\t\t:ppt ( \"remaining chopped green onion\"@55:84 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-19",
+            "text": "19) Bake uncovered in preheated oven for 25 minutes, or until cheese is melted and bubbling.",
+            "type": "instruction",
+            "eamr": "( inst-19 / R\r\n\t:inform ( ac-19-0 \"Bake\"@4:8 / AC\r\n\t\t:loc ( tool-19-0 \"preheated oven\"@22:36 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-19-0 \"25 minutes\"@41:51 / DUR )\r\n\t\t:until ( cond-19-0 \"until cheese is melted and bubbling\"@56:91 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

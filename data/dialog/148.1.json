@@ -1,0 +1,364 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello! What are we gonna prepare today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi, today we will make Baked Fettuccine Lasagna. Do you like Italian cuisine?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "I love Italian cuisine I think it's the best in the world. How many ingredients are there?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "I'm happy I may instruct you today making this lasagna. You will need 14 ingredients. Do you want to prepare all of them?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_list_ingredients();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Yes I'd like to prepare them first, thank you!",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; thank;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Ok, the first two ingredients are 12 ounces dry fettuccine pasta and optional 1 pound lean ground beef. Do you want beef in the lasagna?",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-0);\r\ninform_ingredient(ing-1);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Yes please I'd like beef in the lasagna. I got these ingredients ready, what should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Good. Next is 1 cup chopped onion, 1 cup red bell pepper, chopped, and 1 tablespoon butter.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-2);\r\ninform_ingredient(ing-3);\r\ninform_ingredient(ing-4);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Okay good, can I use margarine instead of butter?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Okay no problem, could I have two more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Yes, 1 can diced tomatoes and 1 can sliced mushrooms.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-5);\r\ninform_ingredient(ing-6);\r\n"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Okay, could I have the exact weight of the cans please?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"ing-4\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Yes, the first can is 29 ounce and the second is 4 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-4);\r\ninform_amount(ing-5);\r\n"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Good. Thank you. Are there more ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"thank; req_ingredient;\", \"tracker_completed_step\": \"ing-5\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"ing-7\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Yes, there are 7 more. The next 3 ingredients are 3 tablespoons chopped black olives, 2 teaspoons dried oregano and 1 cup shredded Cheddar cheese.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_ingredient(ing-7);\r\ninform_ingredient(ing-8);\r\ninform_ingredient(ing-9);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Okay good, I prepared. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm; req_ingredient;\", \"tracker_completed_step\": \"ing-9\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"ing-10\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Good. Next is 1 cup shredded mozzarella cheese and 1 can condensed cream of mushroom soup.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-10);\r\ninform_ingredient(ing-11);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Okay good. How big should the can of cream be?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "It should be 10.75 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-11);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Okay good. Thanks. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"thank; req_ingredient;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-12\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "The last two ingredients are 1/4 cup beef broth and 1/4 cup grated Parmesan cheese.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-12);\r\ninform_ingredient(ing-13);\r\n"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Okay good. I have them ready. Can we start with the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-13\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Great. Let's start. Bring a large pot of lightly salted water to a boil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Okay it is boiling. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Good now cook the pasta for 8 to 10 minutes, or until \"al dente\".",
+            "bot": true,
+            "annotations": "inform_instruction(ac-1-0);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Okay I cooked it for six minutes because I like it al dente. Is that okay with you?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Yes, now drain it.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(ac-1-1);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Okay, it is drained now. What is the next step to follow?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Take a large skillet and brown the beef. Use medium heat.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Okay good, for how long should I cook the beef?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "You should brown it and then drain fat from the pan and transfer meat to a bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Okay, done. The meat is in the bowl. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Now use the same skillet and cook the  onion and bell pepper in butter until tender.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Okay the onions are now tender. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Now stir in the tomatoes, mushrooms, olives, and beef, and season with oregano.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "I added all of that. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Let is simmer for 10 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Okay, is there something about that I can do in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_parallel_action;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "In the meantime, you can preheat the oven to 175 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Okay, the oven is not warm and 10 minutes passed. What is the next step to follow?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Great. Now lightly grease a 9x13 inch baking dish.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Okay I did that, should I put the mixture in the pan?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "Now we will prepare the lasagna. Arrange half of the cooked fettuccine in the prepared dish and then top with half of the beef and vegetable mixture.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-9-0);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Okay I will try to change it and vegetable and beef mixture. Should I put another layer now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "First sprinkle this layer with 1/2 cup of Cheddar cheese and 1/2 cup of mozzarella cheese.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-9-1);"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Okay I added cheddar and mozzarella. What a great cheese combination. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "Now repeat the layers.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "Okay I made another layer. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 26}"
+        },
+        {
+            "utt_id": "utt-49",
+            "utterance": "Now mix together the soup and beef broth until it becomes smooth and then pour it over the casserole.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-50",
+            "utterance": "Okay, good. I poured the soup and broth on the lasagna. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-51",
+            "utterance": "Good sprinkle with some delicious Parmesan cheese.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-52",
+            "utterance": "Okay I sprinkled the Parmesan. Should I now put the lasagna in the oven?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-53",
+            "utterance": "Yes, it is time. Now bake the lasagna in the preheated oven for 30 to 35 minutes.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-54",
+            "utterance": "Okay, how do I see that it's ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-55",
+            "utterance": "It is ready when the lasagna is all heated through.",
+            "bot": true,
+            "annotations": "inform_duration(cond-13-0);"
+        },
+        {
+            "utt_id": "utt-56",
+            "utterance": "Okay good. Can I eat it now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-57",
+            "utterance": "Yes, go ahead and enjoy. Buon Appetito.",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-58",
+            "utterance": "Mmmh, it smells great. I love authentic Italian cuisine! Thank you for this recipe bot :).",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-59",
+            "utterance": "You are welcome.",
+            "bot": true,
+            "annotations": "thank();"
+        }
+    ]
+}

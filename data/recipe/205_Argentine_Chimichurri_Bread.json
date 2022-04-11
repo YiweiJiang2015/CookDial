@@ -1,0 +1,96 @@
+{
+    "id": "205",
+    "title": "Argentine Chimichurri Bread",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup water",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup water\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 1/2 tablespoons white wine vinegar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 1/2 tablespoons white wine vinegar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 tablespoons olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 tablespoons olive oil\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/8 teaspoon cayenne pepper",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/8 teaspoon cayenne pepper\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "3/4 teaspoon dried oregano",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"3/4 teaspoon dried oregano\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 cloves garlic, minced",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 cloves garlic, minced\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "3 tablespoons chopped onion",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"3 tablespoons chopped onion\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "3 tablespoons fresh parsley",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"3 tablespoons fresh parsley\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 1/2 teaspoons salt",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 1/2 teaspoons salt\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 tablespoon white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 tablespoon white sugar\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "3 tablespoons wheat bran",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"3 tablespoons wheat bran\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "3 cups bread flour",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"3 cups bread flour\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "2 teaspoons active dry yeast",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"2 teaspoons active dry yeast\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Place ingredients in the pan of the bread machine in the order recommended by the manufacturer.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( \"ingredients\"@9:20 / FOOD\r\n\t\t\t:ref ( ing-0 )\r\n\t\t\t:ref ( ing-1 )\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t\t:ref ( ing-4 )\r\n\t\t\t:ref ( ing-5 )\r\n\t\t\t:ref ( ing-6 )\r\n\t\t\t:ref ( ing-7 )\r\n\t\t\t:ref ( ing-8 )\r\n\t\t\t:ref ( ing-9 )\r\n\t\t\t:ref ( ing-10 )\r\n\t\t\t:ref ( ing-11 )\r\n\t\t\t:ref ( ing-12 )\r\n\t\t)\r\n\t\t:gol ( tool-0-0 \"the pan of the bread machine\"@24:52 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Select Basic or White Cycle; press Start.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Select\"@3:9 / AC\r\n\t\t:ppt ( \"Basic or White Cycle\"@10:30 / OTHER )\r\n\t)\r\n\t:inform ( ac-1-1 \"press\"@32:37 / AC\r\n\t\t:ppt ( \"Start\"@38:43 / OTHER )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "id": "096",
+    "title": "Cucumber Sandwiches",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (8 ounce) package cream cheese spread",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (8 ounce) package cream cheese spread\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 teaspoons ranch salad dressing mix",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 teaspoons ranch salad dressing mix\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "12 slices pumpernickel rye bread",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"12 slices pumpernickel rye bread\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 medium cucumbers",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 medium cucumbers\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a bowl, combine cream cheese and dressing mix.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@14:21 / AC\r\n\t\t:loc ( tool-0-0 \"a bowl\"@6:12 / TOOL )\r\n\t\t:ppt ( ing-0 \"cream cheese\"@22:34 / FOOD )\r\n\t\t:ppt ( ing-1 \"dressing mix\"@39:51 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Spread on one side of each slice of bread.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Spread\"@3:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( ing-2 \"one side of each slice of bread\"@13:44 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Peel cucumbers if desired thinly slice and place on six slices of bread.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Peel\"@3:7 / AC\r\n\t\t:ppt ( ing-3 \"cucumbers\"@8:17 / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"slice\"@36:41 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-2 \"place\"@46:51 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"six slices of bread\"@55:74 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Top with remaining bread.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Top\"@3:6 / AC\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( \"remaining bread\"@12:27 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Serve immediately.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

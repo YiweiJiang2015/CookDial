@@ -1,0 +1,66 @@
+{
+    "id": "179",
+    "title": "Chunky Pizza Dip",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 tablespoons olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 tablespoons olive oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "3 garlic cloves, minced",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"3 garlic cloves, minced\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 (14.5 ounce) cans petite diced tomatoes",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 (14.5 ounce) cans petite diced tomatoes\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup tomato paste",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup tomato paste\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 teaspoon dried basil",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 teaspoon dried basil\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 teaspoon dried oregano",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 teaspoon dried oregano\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Heat oil and garlic in a large saucepan or Dutch oven until garlic starts to sizzle and turn golden.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"oil\"@8:11 / FOOD )\r\n\t\t:ppt ( ing-1 \"garlic\"@16:22 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large saucepan\"@26:42 / TOOL )\r\n\t\t:loc ( tool-0-1 \"Dutch oven\"@46:56 / TOOL )\r\n\t\t:until ( cond-0-0 \"until garlic starts to sizzle and turn golden\"@57:102 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add tomatoes, tomato paste, basil and oregano; bring to a simmer.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-2 \"tomatoes\"@7:15 / FOOD )\r\n\t\t:ppt ( ing-3 \"tomato paste\"@17:29 / FOOD )\r\n\t\t:ppt ( ing-4 \"basil\"@31:36 / FOOD )\r\n\t\t:ppt ( ing-5 \"oregano\"@41:48 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"bring\"@50:55 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-1-0 \"a simmer\"@59:67 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Simmer, uncovered, until sauce is thick enough for dipping, 15 to 20 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Simmer\"@3:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-2-0 \"until sauce is thick enough for dipping\"@22:61 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-2-0 \"15 to 20 minutes\"@63:79 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cool and refrigerate.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Cool\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"refrigerate\"@12:23 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

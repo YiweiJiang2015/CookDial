@@ -1,0 +1,126 @@
+{
+    "id": "256",
+    "title": "Fried Chicken Tenders",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 cups Italian-style seasoned bread crumbs",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 cups Italian-style seasoned bread crumbs\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 teaspoon ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 teaspoon ground black pepper\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 teaspoon cayenne pepper",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 teaspoon cayenne pepper\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 eggs, beaten",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 eggs, beaten\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 tablespoons water",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 tablespoons water\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "24 chicken tenderloins",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"24 chicken tenderloins\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 quarts oil for frying",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 quarts oil for frying\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 cup mayonnaise",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 cup mayonnaise\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "3 tablespoons prepared horseradish",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"3 tablespoons prepared horseradish\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1/2 cup sour cream",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1/2 cup sour cream\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 dash Worcestershire sauce",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 dash Worcestershire sauce\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "3 tablespoons prepared mustard",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"3 tablespoons prepared mustard\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Place flour in a shallow bowl.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"flour\"@9:14 / FOOD )\r\n\t\t:gol ( tool-0-0 \"a shallow bowl\"@18:32 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Place breadcrumbs in a separate shallow bowl, and mix with ground black pepper and cayenne pepper.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-1 \"breadcrumbs\"@9:20 / FOOD )\r\n\t\t:gol ( tool-1-0 \"a separate shallow bowl\"@24:47 / TOOL )\r\n\t)\r\n\t:inform ( ac-1-1 \"mix\"@53:56 / AC\r\n\t\t:ppt ( ing-2 \"ground black pepper\"@62:81 / FOOD )\r\n\t\t:ppt ( ing-3 \"cayenne pepper\"@86:100 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place eggs and water in a small bowl.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-4 \"eggs\"@9:13 / FOOD )\r\n\t\t:ppt ( ing-5 \"water\"@18:23 / FOOD )\r\n\t\t:gol ( tool-2-0 \"a small bowl\"@27:39 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) One piece at a time, coat the chicken in the flour, the eggs and the bread crumbs, and set aside.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"coat\"@24:28 / AC\r\n\t\t:gol ( ing-6 \"the chicken\"@29:40 / FOOD )\r\n\t\t:ppt ( \"the flour\"@44:53 / FOOD )\r\n\t\t:ppt ( \"the eggs\"@55:63 / FOOD )\r\n\t\t:ppt ( \"the bread crumbs\"@68:84 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"set aside\"@90:99 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Heat oil in a deep fryer to 375 degrees F (190 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-7 \"oil\"@8:11 / FOOD )\r\n\t\t:loc ( tool-4-0 \"a deep fryer\"@15:27 / TOOL )\r\n\t\t:heat ( temp-4-0 \"375 degrees F\"@31:44 / TEMPERATURE )\r\n\t\t:heat ( temp-4-1 \"190 degrees C\"@46:59 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) In small batches, fry chicken 6 to 8 minutes, or until golden brown.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"fry\"@21:24 / AC\r\n\t\t:ppt ( \"chicken\"@25:32 / FOOD )\r\n\t\t:duration ( dur-5-0 \"6 to 8 minutes\"@33:47 / DUR )\r\n\t\t:until ( cond-5-0 \"until golden brown\"@52:70 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) In a separate small bowl, combine the mayonnaise, horseradish, sour cream, Worcestershire sauce and mustard.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"combine\"@29:36 / AC\r\n\t\t:ppt ( ing-8 \"the mayonnaise\"@37:51 / FOOD )\r\n\t\t:ppt ( ing-9 \"horseradish\"@53:64 / FOOD )\r\n\t\t:loc ( tool-6-0 \"a separate small bowl\"@6:27 / TOOL )\r\n\t\t:ppt ( ing-10 \"sour cream\"@66:76 / FOOD )\r\n\t\t:ppt ( ing-11 \"Worcestershire sauce\"@78:98 / FOOD )\r\n\t\t:ppt ( ing-12 \"mustard\"@103:110 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

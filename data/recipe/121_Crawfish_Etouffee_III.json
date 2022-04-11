@@ -1,0 +1,60 @@
+{
+    "id": "121",
+    "title": "Crawfish Etouffee III",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 onion, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 onion, chopped\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (10.75 ounce) can condensed tomato soup",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (10.75 ounce) can condensed tomato soup\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 (10.75 ounce) can condensed cream of mushroom soup",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 (10.75 ounce) can condensed cream of mushroom soup\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 (10 ounce) can diced tomatoes with green chile peppers",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 (10 ounce) can diced tomatoes with green chile peppers\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 1/2 pounds crawfish, peeled",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 1/2 pounds crawfish, peeled\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large saucepan on medium heat, saute onion until clear.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"saute\"@39:44 / AC\r\n\t\t:ppt ( ing-0 \"onion\"@45:50 / FOOD )\r\n\t\t:until ( cond-0-0 \"until clear\"@51:62 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-0-0 \"a large saucepan\"@6:22 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium heat\"@26:37 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add tomato soup, mushroom soup, and canned tomatoes.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-1 \"tomato soup\"@7:18 / FOOD )\r\n\t\t:ppt ( ing-2 \"mushroom soup\"@20:33 / FOOD )\r\n\t\t:ppt ( ing-3 \"canned tomatoes\"@39:54 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Simmer for 15 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Simmer\"@3:9 / AC\r\n\t\t:duration ( dur-2-0 \"15 minutes\"@14:24 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Place the crawfish into the pan and simmer for 25 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-4 \"the crawfish\"@9:21 / FOOD )\r\n\t\t:gol ( tool-3-0 \"the pan\"@27:34 / TOOL )\r\n\t)\r\n\t:inform ( ac-3-1 \"simmer\"@39:45 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-3-0 \"25 minutes\"@50:60 / DUR )\r\n\t)\r\n)"
+        }
+    ]
+}

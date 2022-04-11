@@ -1,0 +1,138 @@
+{
+    "id": "111",
+    "title": "Caramel Shortbread Squares",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2/3 cup butter, softened",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2/3 cup butter, softened\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/4 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/4 cup white sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 1/4 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 1/4 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 cup butter",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 cup butter\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 cup packed light brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 cup packed light brown sugar\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 tablespoons light corn syrup",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 tablespoons light corn syrup\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 cup sweetened condensed milk",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 cup sweetened condensed milk\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 1/4 cups milk chocolate chips",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 1/4 cups milk chocolate chips\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (176 degrees C)",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:33 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"176 degrees C\"@-1:-1 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a medium bowl, mix together 2/3 cup butter, 1/4 cup white sugar, and 1 1/4 cup flour until evenly crumbly.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"mix\"@21:24 / AC\r\n\t\t:ppt ( ing-0 \"2/3 cup butter\"@34:48 / FOOD )\r\n\t\t:ppt ( ing-1 \"1/4 cup white sugar\"@50:69 / FOOD )\r\n\t\t:ppt ( ing-2 \"1 1/4 cup flour\"@75:90 / FOOD )\r\n\t\t:until ( cond-1-0 \"until evenly crumbly\"@91:111 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-1-0 \"a medium bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Press into 9 inch square baking pan.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Press\"@3:8 / AC\r\n\t\t:gol ( tool-2-0 \"9 inch square baking pan\"@-1:-1 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Bake for 20 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-3-0 \"20 minutes\"@12:22 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) In a 2 quart saucepan, combine 1/2 cup butter, brown sugar, corn syrup, and sweetened condensed milk.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"combine\"@26:33 / AC\r\n\t\t:ppt ( ing-3 \"1/2 cup butter\"@34:48 / FOOD )\r\n\t\t:ppt ( ing-4 \"brown sugar\"@50:61 / FOOD )\r\n\t\t:ppt ( ing-5 \"corn syrup\"@63:73 / FOOD )\r\n\t\t:ppt ( ing-6 \"sweetened condensed milk\"@79:103 / FOOD )\r\n\t\t:loc ( tool-4-0 \"a 2 quart saucepan\"@6:24 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Bring to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Bring to a boil\"@-1:-1 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Continue to boil for 5 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Continue to boil\"@3:19 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-6-0 \"5 minutes\"@24:33 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Remove from heat and beat vigorously with a wooden spoon for about 3 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:source ( \"heat\"@15:19 / OTHER )\r\n\t)\r\n\t:inform ( ac-7-1 \"beat\"@24:28 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:instrument ( tool-7-0 \"a wooden spoon\"@45:59 / TOOL )\r\n\t\t:duration ( dur-7-0 \"3 minutes\"@70:79 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Pour over baked crust (warm or cool).",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n   :inform ( \"Pour\"@3:7 / AC\r\n      :gol ( \"baked crust\"@13:24 / FOOD )\r\n      :ppt( NULL / FOOD )\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Cool until it begins to firm.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Cool\"@-1:-1 / AC\r\n\t\t:until ( cond-9-0 \"until it begins to firm\"@-1:-1 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Melt chocolate and pour over caramel layer.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Melt\"@4:8 / AC\r\n\t\t:ppt ( ing-7 \"chocolate\"@9:18 / FOOD )\r\n\t)\r\n\t:inform ( ac-10-1 \"pour\"@23:27 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"caramel layer\"@33:46 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Cover the layer completely.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Cover\"@4:9 / AC\r\n\t\t:ppt ( \"the layer\"@10:19 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Chill.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Chill\"@4:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Cut into squares (about 48 - small because it is rich).",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Cut\"@4:7 / AC\r\n\t\t:reshape ( \"squares\"@13:20 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "id": "237",
+    "title": "Baked Pork Chops   Low Fat Version",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "6 center cut pork chops, trimmed of any visible fat",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"6 center cut pork chops, trimmed of any visible fat\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 teaspoon garlic powder",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 teaspoon garlic powder\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 teaspoon seasoning salt",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 teaspoon seasoning salt\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 egg, beaten with",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 egg, beaten with\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/4 cup egg substitute",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/4 cup egg substitute\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 cups Italian-style seasoned bread crumbs",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 cups Italian-style seasoned bread crumbs\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 tablespoons olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 tablespoons olive oil\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "canola cooking spray",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"canola cooking spray\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 (10.75 ounce) can  reduced fat condensed cream of mushroom soup",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 (10.75 ounce) can  reduced fat condensed cream of mushroom soup\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1/2 cup 1% low-fat milk",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1/2 cup 1% low-fat milk\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/3 cup white wine",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/3 cup white wine\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Rinse pork chops, pat dry, and season with garlic powder and seasoning salt to taste.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Rinse\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"pork chops\"@9:19 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"pat\"@21:24 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-2 \"season\"@34:40 / AC\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( ing-1 \"garlic powder\"@46:59 / FOOD )\r\n\t\t:ppt ( ing-2 \"seasoning salt\"@64:78 / FOOD )\r\n\t\t:prp ( purp-1-0 \"to taste\"@79:87 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place the beaten egg and egg substitute mixture in a small bowl.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-3 \"the beaten egg\"@9:23 / FOOD )\r\n\t\t:ppt ( ing-4 \"egg substitute mixture\"@28:50 / FOOD )\r\n\t\t:gol ( tool-2-0 \"a small bowl\"@54:66 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Dredge the pork chops lightly in flour, dip in the egg, and coat liberally with bread crumbs.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Dredge\"@3:9 / AC\r\n\t\t:ppt ( \"the pork chops\"@10:24 / FOOD )\r\n\t\t:loc ( ing-5 \"flour\"@36:41 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"dip\"@43:46 / AC\r\n\t\t:gol ( \"the egg\"@50:57 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-2 \"coat\"@63:67 / AC\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( ing-6 \"bread crumbs\"@83:95 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Heat the olive oil in a large skillet over medium-high heat.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-7 \"the olive oil\"@8:21 / FOOD )\r\n\t\t:loc ( tool-4-0 \"a large skillet\"@25:40 / TOOL )\r\n\t\t:heat ( temp-4-0 \"medium-high heat\"@46:62 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Place the pork chops in the pan and coat the tops with canola cooking spray.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( \"the pork chops\"@9:23 / FOOD )\r\n\t\t:gol ( tool-5-0 \"the pan\"@27:34 / TOOL )\r\n\t)\r\n\t:inform ( ac-5-1 \"coat\"@39:43 / AC\r\n\t\t:ppt ( ing-8 \"canola cooking spray\"@58:78 / FOOD )\r\n\t\t:gol ( \"the tops\"@44:52 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Fry the pork chops 5 minutes per side, or until the breading appears well browned.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Fry\"@3:6 / AC\r\n\t\t:ppt ( \"the pork chops\"@7:21 / FOOD )\r\n\t\t:duration ( dur-6-0 \"5 minutes\"@22:31 / DUR )\r\n\t\t:until ( cond-6-0 \"until the breading appears well browned\"@45:84 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Transfer the chops to a 9x13 inch baking dish, and cover with foil.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Transfer\"@3:11 / AC\r\n\t\t:ppt ( \"the chops\"@12:21 / FOOD )\r\n\t\t:gol ( tool-7-0 \"a 9x13 inch baking dish\"@25:48 / TOOL )\r\n\t)\r\n\t:inform ( ac-7-1 \"cover\"@54:59 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:instrument ( tool-7-1 \"foil\"@65:69 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Bake in the preheated oven for 1 hour.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Bake\"@3:7 / AC\r\n\t\t:loc ( tool-8-0 \"the preheated oven\"@11:29 / TOOL )\r\n\t\t:duration ( dur-8-0 \"1 hour\"@34:40 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) While baking, combine the cream of mushroom soup, milk, and white wine in a medium bowl.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"combine\"@18:25 / AC\r\n\t\t:while ( cond-9-0 \"While baking\"@4:16 / CONDITION_CLAUSE )\r\n\t\t:ppt ( ing-9 \"the cream of mushroom soup\"@26:52 / FOOD )\r\n\t\t:ppt ( ing-10 \"milk\"@54:58 / FOOD )\r\n\t\t:ppt ( ing-11 \"white wine\"@64:74 / FOOD )\r\n\t\t:loc ( tool-9-0 \"a medium bowl\"@78:91 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) After the pork chops have baked for an hour, cover them with the soup mixture.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"cover\"@49:54 / AC\r\n\t\t:ppt ( \"them\"@55:59 / PRONOUN )\r\n\t\t:ppt ( \"the soup mixture\"@65:81 / FOOD )\r\n\t\t:duration ( cond-10-0 \"After the pork chops have baked for an hour\"@4:47 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Replace foil, and bake for another 30 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Replace\"@4:11 / AC\r\n\t\t:ppt ( tool-11-0 \"foil\"@12:16 / TOOL )\r\n\t)\r\n\t:inform ( ac-11-1 \"bake\"@22:26 / AC\r\n\t\t:duration ( dur-11-0 \"another 30 minutes\"@31:49 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

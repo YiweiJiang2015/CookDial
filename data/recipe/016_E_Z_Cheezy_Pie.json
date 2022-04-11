@@ -1,0 +1,144 @@
+{
+    "id": "016",
+    "title": "E Z Cheezy Pie",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 (9 inch)  pie shells, baked",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 (9 inch)  pie shells, baked\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "3 (8 ounce) packages cream cheese, softened",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"3 (8 ounce) packages cream cheese, softened\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup white sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 eggs\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 cup sour cream",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 cup sour cream\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "3 tablespoons white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"3 tablespoons white sugar\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 cups sliced fresh strawberries",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 cups sliced fresh strawberries\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a medium mixing bowl, whip cream cheese until fluffy.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"whip\"@28:32 / AC\r\n\t\t:ppt ( ing-1 \"cream cheese\"@33:45 / FOOD )\r\n\t\t:until ( cond-1-0 \"until fluffy\"@46:58 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-1-0 \"a medium mixing bowl\"@6:26 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Add 1/2 cup sugar and vanilla extract.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-2 \"1/2 cup sugar\"@7:20 / FOOD )\r\n\t\t:ppt ( ing-3 \"vanilla extract\"@25:40 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Mix until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Mix\"@3:6 / AC\r\n\t\t:until ( cond-3-0 \"until smooth\"@7:19 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Add eggs.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-4 \"eggs\"@7:11 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Beat until all ingredients are thoroughly combined.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Beat\"@3:7 / AC\r\n\t\t:until ( cond-5-0 \"until all ingredients are thoroughly combined\"@8:53 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Pour mixture into pastry shells.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( \"mixture\"@8:15 / FOOD )\r\n\t\t:gol ( ing-0 \"pastry shells\"@21:34 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Bake in preheated oven for 20 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Bake\"@3:7 / AC\r\n\t\t:loc ( tool-7-0 \"preheated oven\"@11:25 / TOOL )\r\n\t\t:duration ( dur-7-0 \"20 minutes\"@30:40 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Remove and let stand for 5 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-8-1 \"stand\"@18:23 / AC\r\n\t\t:duration ( dur-8-0 \"5 minutes\"@28:37 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) In a small bowl, combine sour cream and 3 tablespoons sugar.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"combine\"@-1:-1 / AC\r\n\t\t:ppt ( ing-5 \"sour cream\"@-1:-1 / FOOD )\r\n\t\t:ppt ( ing-6 \"3 tablespoons sugar\"@-1:-1 / FOOD )\r\n\t\t:loc ( tool-9-0 \"a small bowl\"@-1:-1 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Mix well, then spread half of mixture over each pie.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Mix\"@4:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-10-1 \"spread\"@19:25 / AC\r\n\t\t:ppt ( \"half of mixture\"@26:41 / FOOD )\r\n\t\t:gol ( \"each pie\"@47:55 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Turn off oven.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Turn\"@4:8 / AC\r\n\t\t:ppt ( tool-11-0 \"oven\"@13:17 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Place pies in oven for 15 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Place\"@4:9 / AC\r\n\t\t:ppt ( \"pies\"@10:14 / FOOD )\r\n\t\t:gol ( tool-12-0 \"oven\"@18:22 / TOOL )\r\n\t\t:duration ( dur-12-0 \"15 minutes\"@27:37 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Remove and chill overnight.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Remove\"@4:10 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-13-1 \"chill\"@15:20 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-13-0 \"overnight\"@21:30 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Before serving, top each pie with 1 cup of strawberries.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"top\"@20:23 / AC\r\n\t\t:gol ( \"each pie\"@24:32 / FOOD )\r\n\t\t:ppt ( ing-7 \"1 cup of strawberries\"@38:59 / FOOD )\r\n\t\t:duration ( cond-14-0 \"Before serving\"@4:18 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "id": "190",
+    "title": "Chicken Stuffed Buns",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "6 large sourdough buns",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"6 large sourdough buns\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 cups boneless chicken breast halves, cooked and diced",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 cups boneless chicken breast halves, cooked and diced\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 (8 ounce) package cream cheese, softened",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 (8 ounce) package cream cheese, softened\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 cup shredded Pepper Jack cheese",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 cup shredded Pepper Jack cheese\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 cup grated Parmesan cheese",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 cup grated Parmesan cheese\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "6 cloves garlic, pressed",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"6 cloves garlic, pressed\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 (10 ounce) package frozen chopped spinach, thawed and drained",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 (10 ounce) package frozen chopped spinach, thawed and drained\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Slice the top off of each bun, saving the tops.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Slice\"@3:8 / AC\r\n\t\t:source ( ing-0 \"each bun\"@24:32 / FOOD )\r\n\t\t:ppt ( \"the top\"@9:16 / FOOD )\r\n\t\t:prp ( purp-1-0 \"saving the tops\"@34:49 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Hollow out each bun, leaving a shell.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Hollow out\"@3:13 / AC\r\n\t\t:ppt ( \"each bun\"@14:22 / FOOD )\r\n\t\t:prp ( purp-2-0 \"leaving a shell\"@24:39 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) In a medium bowl combine chicken, cream cheese, Pepper Jack cheese, Parmesan cheese, garlic and spinach.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"combine\"@20:27 / AC\r\n\t\t:ppt ( ing-1 \"chicken\"@28:35 / FOOD )\r\n\t\t:ppt ( ing-2 \"cream cheese\"@37:49 / FOOD )\r\n\t\t:ppt ( ing-3 \"Pepper Jack cheese\"@51:69 / FOOD )\r\n\t\t:ppt ( ing-4 \"Parmesan cheese\"@71:86 / FOOD )\r\n\t\t:ppt ( ing-5 \"garlic\"@88:94 / FOOD )\r\n\t\t:ppt ( ing-6 \"spinach\"@99:106 / FOOD )\r\n\t\t:loc ( tool-3-0 \"a medium bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Spoon mixture into each bun, packing it tightly; cap with bun tops.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Spoon\"@3:8 / AC\r\n\t\t:ppt ( \"mixture\"@9:16 / FOOD )\r\n\t\t:prp ( purp-4-0 \"packing it tightly\"@32:50 / PURPOSE_CLAUSE )\r\n\t\t:gol ( \"each bun\"@22:30 / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"cap\"@52:55 / AC\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( \"bun tops\"@61:69 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Wrap each bun tightly in foil.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Wrap\"@3:7 / AC\r\n\t\t:gol ( \"each bun\"@8:16 / FOOD )\r\n\t\t:ppt ( tool-5-0 \"foil\"@28:32 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Bake in preheated oven for 20 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Bake\"@3:7 / AC\r\n\t\t:loc ( tool-6-0 \"preheated oven\"@11:25 / TOOL )\r\n\t\t:duration ( dur-6-0 \"20 minutes\"@30:40 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

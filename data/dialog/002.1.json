@@ -1,0 +1,388 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi.",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. are you ready to cook the cake doughnuts?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes I'm ready. What's the first step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "First take a large bowl so we can add some ingredients to prepare the batter.",
+            "bot": true,
+            "annotations": "fetch(inst-0, [tool-0-0]);\r\nsimplify_begin(ac-0-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. I have the large bowl. How should I start making the batter?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Ok! Now we will make the batter and we need some ingredients. First add 2 and 1/2 cups of all-purpose flour to the bowl.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-0]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Thank you. I have added the all-purpose flour to the bowl.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Ok. very good. Now add 1/2 cup of white sugar and 1 tablespoon of baking powder.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-1, ing-2]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "I have added the white sugar. Could you repeat the second ingredient please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "The second ingredient is 1 tablespoon of baking powder.",
+            "bot": true,
+            "annotations": "repeat(inst-0, [ing-2]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Thank you for repeating it. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Now continue and add 1/2 teaspoon of salt and 1 teaspoon of cinnamon to the batter.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-3, ing-4]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "I didn't understand the last ingredient, could you repeat it please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "1 teaspoon of cinnamon.",
+            "bot": true,
+            "annotations": "repeat(inst-0, [ing-4]);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. thank you. What is the next instruction?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Now to finish the first part add 1/4 teaspoon of ground nutmeg.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-5]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "I have added the nutmeg.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "You may mix all these dry ingredients and make a well in the middle of it.",
+            "bot": true,
+            "annotations": "simplify_begin(ac-0-0);\r\ninform_instruction(ac-1-0);\r\n"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. what should I put in the well?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Good question, you may first pour in 1 cup of milk.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-1-1, [ing-6]);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "I have poured the milk in the well.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now you may beat an egg and add it as well in the well.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-1-1, [ing-7]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "I didn't understand the first part of the sentence, could you repeat it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "You may beat an egg with an egg beater or mixer.",
+            "bot": true,
+            "annotations": "repeat(ac-1-1, [ing-7]);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Oh now it is clear. I have beaten an egg and should I add it to the well now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Yes you may add it to the well and also add 1/4 cup of butter.",
+            "bot": true,
+            "annotations": "affirm(ac-1-1);\r\nsimplify_continue(ac-1-1, [ing-8]);\r\n"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "That's done. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Now add 2 teaspoons of vanilla extract and mix everything until it is well blended.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-1-1, [ing-9]);\r\ninform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. the batter seems to be well-blended. Is it done now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Very good. Yes it is done. You may cover it and put it in the refrigerator for 1 hour.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "I have waited for one hour. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Do you have a deep heavy skillet or a deep-fryer?",
+            "bot": true,
+            "annotations": "verify(inst-4, [tool-4-0, tool-4-1]);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "What did you say after deep heavy skillet?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "A deep-fryer.",
+            "bot": true,
+            "annotations": "repeat(inst-4, [tool-4-1]);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Oh now it is clear. Yes I have a deep fryer.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Ok. good you may heat the fryer to 185 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. the fryer is now heated to 185 degrees.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Now put some flour on a cutting board.",
+            "bot": true,
+            "annotations": "fetch(inst-5, [tool-5-0]);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Yes I have put some flour on my cutting board.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Good. You may take out the dough batter from the fridge and put it on the cutting board.",
+            "bot": true,
+            "annotations": "fetch(inst-5);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok. what should I do next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Roll out the dough to 1/2 inch thickness.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Should I knead the flour into the dough?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "No you may just put the dough on the cutting board. The flour on the cutting board is there to not make it sticky.",
+            "bot": true,
+            "annotations": "negate();\r\nother();"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Thank you for the clarification. The dough is now rolled out to one inch thickness.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "Very well. Now take a 3 inch round cutter so we can cut out the doughnuts.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Ok. I have cut out all the donuts.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "Ah I still had to give you the instructions how to do that. Did it work out?",
+            "bot": true,
+            "annotations": "verify(inst-6);"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "I have cut out all circles with the three inch round cutter.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-49",
+            "utterance": "Ok. very good. Now you can still cut holes from the center.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-50",
+            "utterance": "What is the diameter of the inner hole?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-51",
+            "utterance": "As you want. Just try to keep it small holes.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-52",
+            "utterance": "Ok. I have cut out everything then.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-53",
+            "utterance": "Very good. Now you can fry the doughnuts in the deep-fryer until the become golden brown. Turn them only one time.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-54",
+            "utterance": "I have fried all the donuts. Is it done now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-55",
+            "utterance": "Very good. Almost. First let them drain on some paper plates for a little while.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-56",
+            "utterance": "Ok. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-57",
+            "utterance": "Combine 1/2 teaspoon of cinnamon and 1/2 cup of sugar in a large resealable bag.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-58",
+            "utterance": "Ok. I have combined everything in the bag.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-59",
+            "utterance": "Ok. now you may place a couple of warm donuts in the bag at a time and seal it and shake it.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-60",
+            "utterance": "That's done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-61",
+            "utterance": "Ok. great. Now you are done! I hope the donuts taste well.",
+            "bot": true,
+            "annotations": "enjoy();"
+        },
+        {
+            "utt_id": "utt-62",
+            "utterance": "Thank you for the instructions. The doughnuts are delicious.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-63",
+            "utterance": "You are welcome, I'm happy to hear that. Have a good day.",
+            "bot": true,
+            "annotations": "thank();\r\ngoodbye();"
+        }
+    ]
+}

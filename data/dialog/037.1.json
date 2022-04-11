@@ -1,0 +1,166 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. how do I make baked aloha chicken?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. the first step is to preheat the oven to 350 degrees Fahrenheit.",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. what can I do in the meantime?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_parallel_action;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Take a bowl to combine some ingredients.",
+            "bot": true,
+            "annotations": "fetch(inst-1, [tool-1-0]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. How many ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "You need to combine 6 ingredients in total. The first two are 1/4 cup lemon juice and 1/4 cup light corn syrup.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-1);\r\nsimplify_continue(inst-1, [ing-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. I added both. What are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Next add 2 tablespoons soy sauce and 1 teaspoon salt.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-1, [ing-2, ing-3]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. both added as well. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Finally add 1/4 teaspoon ground ginger and 1/4 cup corn oil.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-1, [ing-4, ing-5]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. also added. What should I do with it now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Now stir everything until smooth.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-1);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. What is the next step?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Now stir in 1 can crushed pineapple including its liquid.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Could you repeat what comes after stir?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 11}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "1 can crushed pineapple including its liquid.",
+            "bot": true,
+            "annotations": "repeat(inst-2, [ing-6]);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ah ok. It's added. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now place 10 chicken leg quarters in an ovenproof glass baking dish and pour the sauce you prepared on top.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. I have done that. Something else I should add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Now you can bake the chicken legs in the preheated oven for 30 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-4-0);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. 30 minutes haves passed. Is there something else I should do?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Now you can turn the chicken over and continue baking for about 20 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(ac-4-1);\r\ninform_instruction(ac-4-2);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. when do I know it's done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "When the chicken is tender and no longer pink, it should be ready.",
+            "bot": true,
+            "annotations": "inform_duration(cond-4-0);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. Thanks. is there something else still?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_is_recipe_ongoing;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "No that's all. Enjoy your Aloha Chicken!",
+            "bot": true,
+            "annotations": "negate();\r\nend_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. thanks it looks good.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 13}"
+        }
+    ]
+}

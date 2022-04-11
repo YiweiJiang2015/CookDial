@@ -1,0 +1,144 @@
+{
+    "id": "210",
+    "title": "Chicken with Vegetables",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup sliced fresh mushrooms",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup sliced fresh mushrooms\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "4 chicken drumsticks, skin removed",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"4 chicken drumsticks, skin removed\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "4 chicken thighs, skin removed",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"4 chicken thighs, skin removed\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "4 celery ribs, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"4 celery ribs, sliced\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 cup sliced zucchini",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 cup sliced zucchini\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 cup sliced carrots",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 cup sliced carrots\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 medium onion, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 medium onion, sliced\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 cup tomato juice",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 cup tomato juice\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/2 cup chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/2 cup chicken broth\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 garlic clove, minced",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 garlic clove, minced\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1/4 teaspoon paprika",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1/4 teaspoon paprika\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"pepper to taste\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "3 tablespoons cornstarch",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"3 tablespoons cornstarch\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "3 tablespoons cold water",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"3 tablespoons cold water\" )"
+        },
+        {
+            "id": "ing-14",
+            "text": "Hot cooked rice",
+            "type": "ingredient",
+            "eamr": "( ing-14 \"Hot cooked rice\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Place mushrooms and chicken in a slow cooker.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"mushrooms\"@9:18 / FOOD )\r\n\t\t:ppt ( ing-1 \"chicken\"@23:30 / FOOD )\r\n\t\t:gol ( tool-0-0 \"a slow cooker\"@34:47 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add the celery, zucchini, carrots, onion, tomato juice, broth, garlic, paprika and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-3 \"the celery\"@7:17 / FOOD )\r\n\t\t:ppt ( ing-4 \"zucchini\"@19:27 / FOOD )\r\n\t\t:ppt ( ing-5 \"carrots\"@29:36 / FOOD )\r\n\t\t:ppt ( ing-6 \"onion\"@38:43 / FOOD )\r\n\t\t:ppt ( ing-7 \"tomato juice\"@45:57 / FOOD )\r\n\t\t:ppt ( ing-8 \"broth\"@59:64 / FOOD )\r\n\t\t:ppt ( ing-9 \"garlic\"@66:72 / FOOD )\r\n\t\t:ppt ( ing-10 \"paprika\"@74:81 / FOOD )\r\n\t\t:ppt ( ing-11 \"pepper\"@86:92 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cover and cook on low for 5 hours or until meat juices run clear.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"cook\"@13:17 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:heat ( temp-2-0 \"low\"@21:24 / TEMPERATURE )\r\n\t\t:duration ( dur-2-0 \"5 hours\"@29:36 / DUR )\r\n\t\t:until ( cond-2-0 \"until meat juices run clear\"@40:67 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Remove chicken and vegetables and keep warm.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( \"chicken\"@10:17 / FOOD )\r\n\t\t:ppt ( \"vegetables\"@22:32 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"keep\"@37:41 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Transfer cooking juices to a saucepan; skim fat.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Transfer\"@3:11 / AC\r\n\t\t:ppt ( \"cooking juices\"@12:26 / FOOD )\r\n\t\t:gol ( tool-4-0 \"a saucepan\"@30:40 / TOOL )\r\n\t)\r\n\t:inform ( ac-4-1 \"skim\"@42:46 / AC\r\n\t\t:ppt ( \"fat\"@47:50 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Combine the cornstarch and water until smooth; add to the juices.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( ing-12 \"the cornstarch\"@11:25 / FOOD )\r\n\t\t:ppt ( ing-13 \"water\"@30:35 / FOOD )\r\n\t\t:until ( cond-5-0 \"until smooth\"@36:48 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-5-1 \"add\"@50:53 / AC\r\n\t\t:ppt ( \"the juices\"@57:67 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Bring to a boil; cook and stir for 2 minutes or until thickened.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"boil\"@14:18 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-6-1 \"cook and stir\"@20:33 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-6-0 \"2 minutes\"@38:47 / DUR )\r\n\t\t:until ( cond-6-0 \"until thickened\"@51:66 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Pour over chicken and vegetables; serve over rice.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Pour\"@3:7 / AC\r\n\t\t:gol ( \"chicken\"@13:20 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"vegetables\"@25:35 / FOOD )\r\n\t)\r\n\t:inform ( ac-7-1 \"serve\"@37:42 / AC\r\n\t\t:ppt ( ing-14 \"rice\"@48:52 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

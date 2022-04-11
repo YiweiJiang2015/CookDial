@@ -1,0 +1,150 @@
+{
+    "id": "114",
+    "title": "Chocolate Covered Banana Pie",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3 cups crushed vanilla wafers",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3 cups crushed vanilla wafers\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup chopped pecans",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup chopped pecans\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2/3 cup butter, melted",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2/3 cup butter, melted\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 cups semisweet chocolate chips",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 cups semisweet chocolate chips\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "4 cups milk",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"4 cups milk\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "4 1/2 cups miniature marshmallows",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"4 1/2 cups miniature marshmallows\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 (3.5 ounce) packages instant vanilla pudding mix",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 (3.5 ounce) packages instant vanilla pudding mix\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 cup frozen whipped topping, thawed",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 cup frozen whipped topping, thawed\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 large bananas, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 large bananas, sliced\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 (1.5 ounce) bar milk chocolate candy",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 (1.5 ounce) bar milk chocolate candy\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Combine crushed cookie crumbs, pecans, and butter or margarine.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n   :inform ( \"Combine\"@3:10 / AC\r\n      :ppt ( \"crushed cookie crumbs\"@11:32 / FOOD )\r\n      :ppt ( \"pecans\"@34:40 / FOOD )\r\n      :ppt ( \"butter\"@46:52 / FOOD )\r\n      :ppt ( \"margarine\"@56:65 / FOOD )\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Press into a 9 x 13 inch pan.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n   :inform ( \"Press\"@3:8 / AC\r\n      :gol ( \"a 9 x 13 inch pan\"@14:31 / TOOL )\r\n      :ppt( NULL / FOOD )\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Bake at 375 degrees F (190 degrees C) for 5 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n   :inform ( \"Bake\"@3:7 / AC\r\n      :heat ( \"375 degrees F\"@11:24 / TEMPERATURE )\r\n      :heat ( \"190 degrees C\"@26:39 / TEMPERATURE )\r\n      :duration ( \"5 minutes\"@45:54 / DUR )\r\n      :ppt( NULL / FOOD )\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Cool.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n         :inform ( \"Cool\"@3:7 / AC\r\n            :ppt ( NULL / FOOD )\r\n         )\r\n\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Combine chocolate chips, 1 cup milk, and 2 cups marshmallows in a sauce pan.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( ing-3 \"chocolate chips\"@11:26 / FOOD )\r\n\t\t:ppt ( ing-4 \"1 cup milk\"@28:38 / FOOD )\r\n\t\t:ppt ( ing-5 \"2 cups marshmallows\"@44:63 / FOOD )\r\n\t\t:loc ( tool-4-0 \"a sauce pan\"@67:78 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Stir over low heat until melted.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Stir\"@3:7 / AC\r\n\t\t:heat ( temp-5-0 \"low heat\"@13:21 / TEMPERATURE )\r\n\t\t:until ( cond-5-0 \"until melted\"@22:34 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Pour over cooled crust.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"cooled crust\"@13:25 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Chill for 1 hour.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Chill\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-7-0 \"1 hour\"@13:19 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Arrange banana slices over chilled chocolate layer.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Arrange\"@3:10 / AC\r\n\t\t:ppt ( ing-8 \"banana slices\"@11:24 / FOOD )\r\n\t\t:gol ( \"chilled chocolate layer\"@30:53 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Prepare pudding mix as directed on box except use only 3 cups of milk.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Prepare\"@3:10 / AC\r\n\t\t:ppt ( ing-6 \"pudding mix\"@11:22 / FOOD )\r\n\t\t:inform ( \"as directed on box\"@23:41 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Fold in nondairy whipped topping and remaining marshmallows.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Fold in\"@4:11 / AC\r\n\t\t:ppt ( ing-7 \"nondairy whipped topping\"@12:36 / FOOD )\r\n\t\t:ppt ( ing-5 \"remaining marshmallows\"@41:63 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Pour pudding mixture over bananas.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Pour\"@4:8 / AC\r\n\t\t:ppt ( \"pudding mixture\"@9:24 / FOOD )\r\n\t\t:gol ( \"bananas\"@30:37 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Grate chocolate bar over the top.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Grate\"@4:9 / AC\r\n\t\t:ppt ( ing-9 \"chocolate bar\"@10:23 / FOOD )\r\n\t\t:gol ( \"the top\"@29:36 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Chill for 2 to 3 hours before serving.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Chill\"@4:9 / AC\r\n\t\t:duration ( dur-13-0 \"2 to 3 hours\"@14:26 / DUR )\r\n\t\t:duration ( cond-13-0 \"before serving\"@27:41 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

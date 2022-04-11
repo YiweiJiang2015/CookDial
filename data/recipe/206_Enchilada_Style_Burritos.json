@@ -1,0 +1,132 @@
+{
+    "id": "206",
+    "title": "Enchilada Style Burritos",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "6 frozen prepared bean and cheese burritos",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"6 frozen prepared bean and cheese burritos\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 tablespoons butter or margarine",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 tablespoons butter or margarine\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 tablespoons all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 tablespoons all-purpose flour\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 3/4 cups water",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 3/4 cups water\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 (8 ounce) can tomato sauce",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 (8 ounce) can tomato sauce\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 1/2 teaspoons chili powder",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 1/2 teaspoons chili powder\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 teaspoon beef bouillon granules",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 teaspoon beef bouillon granules\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "3/4 teaspoon ground cumin",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"3/4 teaspoon ground cumin\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 cups shredded Mexican blend cheese or Cheddar cheese",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 cups shredded Mexican blend cheese or Cheddar cheese\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1 (2.25 ounce) can sliced ripe olives, drained",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1 (2.25 ounce) can sliced ripe olives, drained\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/3 cup chopped green onions",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/3 cup chopped green onions\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Place frozen burritos in a greased 13-in baking dish; set aside.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"frozen burritos\"@9:24 / FOOD )\r\n\t\t:gol ( tool-0-0 \"a greased 13-in baking dish\"@28:55 / TOOL )\r\n\t)\r\n\t:inform ( ac-0-1 \"set aside\"@57:66 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a saucepan, melt butter.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"melt\"@18:22 / AC\r\n\t\t:ppt ( ing-1 \"butter\"@23:29 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a saucepan\"@6:16 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir in flour until smooth; gradually stir in water.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-2 \"flour\"@11:16 / FOOD )\r\n\t\t:until ( cond-2-0 \"until smooth\"@17:29 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"stir in\"@41:48 / AC\r\n\t\t:ppt ( ing-3 \"water\"@49:54 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Bring to a boil; cook and stir for 2 minutes or until thickened.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"boil\"@14:18 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"cook and stir\"@20:33 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-3-0 \"2 minutes\"@38:47 / DUR )\r\n\t\t:until ( cond-3-0 \"until thickened\"@51:66 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Add the tomato sauce, chili powder, bouillon, cumin and salt.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n   :inform ( \"Add\"@3:6 / AC\r\n      :ppt ( ing-4 \"the tomato sauce\"@7:23 / FOOD )\r\n      :ppt( NULL / FOOD )\r\n      :ppt ( ing-5 \"chili powder\"@25:37 / FOOD )\r\n      :ppt ( ing-6 \"bouillon\"@39:47 / FOOD )\r\n      :ppt ( ing-7 \"cumin\"@49:54 / FOOD )\r\n      :ppt ( ing-8 \"salt\"@59:63 / FOOD )\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Simmer, uncovered, for 5 minutes or until thickened.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Simmer\"@3:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-5-0 \"5 minutes\"@26:35 / DUR )\r\n\t\t:until ( cond-5-0 \"until thickened\"@39:54 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Pour over the burritos.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Pour\"@3:7 / AC\r\n\t\t:gol ( \"the burritos\"@13:25 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Sprinkle with cheese, olives if desired and onions.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Sprinkle\"@3:11 / AC\r\n\t\t:ppt ( ing-9 \"cheese\"@17:23 / FOOD )\r\n\t\t:ppt ( ing-10 \"olives\"@25:31 / FOOD )\r\n\t\t:ppt ( ing-11 \"onions\"@47:53 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Bake, uncovered, at 350 degrees F (176 degrees C) for 35-40 minutes or until heated through.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:heat ( temp-8-0 \"350 degrees F\"@23:36 / TEMPERATURE )\r\n\t\t:heat ( temp-8-1 \"176 degrees C\"@-1:-1 / TEMPERATURE )\r\n\t\t:duration ( dur-8-0 \"35-40 minutes\"@41:54 / DUR )\r\n\t\t:until ( cond-8-0 \"until heated through\"@58:78 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

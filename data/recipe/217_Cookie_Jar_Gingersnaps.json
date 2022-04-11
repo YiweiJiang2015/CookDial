@@ -1,0 +1,102 @@
+{
+    "id": "217",
+    "title": "Cookie Jar Gingersnaps",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3/4 cup shortening",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3/4 cup shortening\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 egg",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 egg\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup molasses",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup molasses\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 teaspoons baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 teaspoons baking soda\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 1/2 teaspoons ground ginger",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 1/2 teaspoons ground ginger\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 teaspoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 teaspoon ground cinnamon\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "Additional sugar",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"Additional sugar\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large mixing bowl, cream the shortening and sugar.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"cream\"@27:32 / AC\r\n\t\t:ppt ( ing-0 \"the shortening\"@33:47 / FOOD )\r\n\t\t:ppt ( ing-1 \"sugar\"@52:57 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large mixing bowl\"@6:25 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Beat in the egg and molasses.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Beat in\"@3:10 / AC\r\n\t\t:ppt ( ing-2 \"the egg\"@11:18 / FOOD )\r\n\t\t:ppt ( ing-3 \"molasses\"@23:31 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Combine flour, baking soda, ginger, cinnamon and salt; gradually add to creamed mixture.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( ing-4 \"flour\"@11:16 / FOOD )\r\n\t\t:ppt ( ing-5 \"baking soda\"@18:29 / FOOD )\r\n\t\t:ppt ( ing-6 \"ginger\"@31:37 / FOOD )\r\n\t\t:ppt ( ing-7 \"cinnamon\"@39:47 / FOOD )\r\n\t\t:ppt ( ing-8 \"salt\"@52:56 / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"add\"@68:71 / AC\r\n\t\t:ppt ( \"creamed mixture\"@75:90 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Roll teaspoonfuls of dough into balls.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Roll\"@3:7 / AC\r\n\t\t:ppt ( \"teaspoonfuls of dough\"@8:29 / FOOD )\r\n\t\t:reshape ( \"balls\"@35:40 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Dip one side of each ball into sugar; place with sugar side up on a greased baking sheet.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Dip\"@3:6 / AC\r\n\t\t:ppt ( \"one side of each ball\"@7:28 / FOOD )\r\n\t\t:gol ( ing-9 \"sugar\"@34:39 / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"place\"@41:46 / AC\r\n\t\t:gol ( tool-4-0 \"a greased baking sheet\"@69:91 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Bake at 350 degrees F for 12-15 minutes or until lightly browned and crinkly.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Bake\"@3:7 / AC\r\n\t\t:heat ( temp-5-0 \"350 degrees F\"@11:24 / TEMPERATURE )\r\n\t\t:duration ( dur-5-0 \"12-15 minutes\"@29:42 / DUR )\r\n\t\t:until ( cond-5-0 \"until lightly browned and crinkly\"@46:79 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

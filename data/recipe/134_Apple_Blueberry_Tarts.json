@@ -1,0 +1,138 @@
+{
+    "id": "134",
+    "title": "Apple Blueberry Tarts",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 medium cooking apples, peeled, cored, and chopped",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 medium cooking apples, peeled, cored, and chopped\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2/3 cup fresh or frozen blueberries",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2/3 cup fresh or frozen blueberries\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 tablespoon heat-stable granular sugar substitute",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 tablespoon heat-stable granular sugar substitute\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 teaspoon apple pie spice or ground allspice",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 teaspoon apple pie spice or ground allspice\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 1/3 cups whole wheat pastry flour",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 1/3 cups whole wheat pastry flour\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 teaspoon kosher salt",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 teaspoon kosher salt\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/3 cup extra-virgin olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/3 cup extra-virgin olive oil\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "3 tablespoons low-fat milk",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"3 tablespoons low-fat milk\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a medium bowl combine apples, blueberries, sugar substitute, and the 1/4 teaspoon apple pie spice; set aside.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@20:27 / AC\r\n\t\t:ppt ( ing-0 \"apples\"@28:34 / FOOD )\r\n\t\t:ppt ( ing-1 \"blueberries\"@36:47 / FOOD )\r\n\t\t:ppt ( ing-2 \"sugar substitute\"@49:65 / FOOD )\r\n\t\t:ppt ( ing-3 \"the 1/4 teaspoon apple pie spice\"@71:103 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a medium bowl\"@6:19 / TOOL )\r\n\t)\r\n\t:inform ( ac-0-1 \"set aside\"@105:114 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In another medium bowl stir together whole wheat pastry flour, kosher salt, and the 1/8 teaspoon apple pie spice.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"stir together\"@26:39 / AC\r\n\t\t:ppt ( ing-4 \"whole wheat pastry flour\"@40:64 / FOOD )\r\n\t\t:ppt ( ing-5 \"kosher salt\"@66:77 / FOOD )\r\n\t\t:ppt ( ing-3 \"the 1/8 teaspoon apple pie spice\"@83:115 / FOOD )\r\n\t\t:loc ( tool-1-0 \"another medium bowl\"@6:25 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Add oil and milk all at once to flour mixture.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-6 \"oil\"@7:10 / FOOD )\r\n\t\t:ppt ( ing-7 \"milk\"@15:19 / FOOD )\r\n\t\t:ppt ( \"flour mixture\"@35:48 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Stir lightly with a fork until dough comes together.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Stir\"@3:7 / AC\r\n\t\t:instrument ( tool-3-0 \"a fork\"@21:27 / TOOL )\r\n\t\t:until ( cond-3-0 \"until dough comes together\"@28:54 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Divide dough into 6 portions.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Divide\"@3:9 / AC\r\n\t\t:ppt ( \"dough\"@10:15 / FOOD )\r\n\t\t:reshape ( \"6 portions\"@21:31 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Using six 3 1/2- to 4-inch individual tart pans with removable bottoms, press one dough portion on the bottom and up the side of each tart pan.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"press\"@75:80 / AC\r\n\t\t:ppt ( \"one dough portion\"@81:98 / FOOD )\r\n\t\t:loc ( tool-5-0 \"the bottom and up the side of each tart pan\"@102:145 / TOOL )\r\n\t\t:instrument ( tool-5-1 \"six 3 1/2- to 4-inch individual tart pans\"@9:50 / TOOL\r\n\t\t\t:todo ( tool-5-2 \"removable bottoms\"@56:73 / TOOL )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Divide fruit mixture among pastry-lined pans.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Divide\"@3:9 / AC\r\n\t\t:ppt ( \"fruit mixture\"@10:23 / FOOD )\r\n\t\t:loc ( tool-6-0 \"pastry-lined pans\"@30:47 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Place tart pans on a large baking sheet.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( tool-7-0 \"tart pans\"@9:18 / TOOL )\r\n\t\t:gol ( tool-7-1 \"a large baking sheet\"@22:42 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Place a large piece of foil over tart pans; press down lightly around the edges to seal.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( tool-8-0 \"a large piece of foil\"@9:30 / TOOL )\r\n\t\t:gol ( tool-8-1 \"tart pans\"@36:45 / TOOL )\r\n\t)\r\n\t:inform ( ac-8-1 \"press\"@47:52 / AC\r\n\t\t:prp ( purp-8-0 \"to seal\"@83:90 / PURPOSE_CLAUSE )\r\n\t\t:loc ( tool-8-2 \"the edges\"@73:82 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Bake in a 375 degrees F oven for 20 minutes; remove foil.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Bake\"@3:7 / AC\r\n\t\t:loc ( tool-9-0 \"a 375 degrees F oven\"@11:31 / TOOL )\r\n\t\t:duration ( dur-9-0 \"20 minutes\"@36:46 / DUR )\r\n\t)\r\n\t:inform ( ac-9-1 \"remove\"@48:54 / AC\r\n\t\t:ppt ( tool-9-1 \"foil\"@55:59 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Bake about 20 minutes more or until fruit is tender.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Bake\"@4:8 / AC\r\n\t\t:duration ( dur-10-0 \"20 minutes\"@15:25 / DUR )\r\n\t\t:until ( cond-10-0 \"until fruit is tender\"@34:55 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Let cool in tart pans on a wire rack for 15 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"cool\"@8:12 / AC\r\n\t\t:loc ( tool-11-0 \"tart pans\"@16:25 / TOOL )\r\n\t\t:loc ( tool-11-1 \"a wire rack\"@29:40 / TOOL )\r\n\t\t:duration ( dur-11-0 \"15 minutes\"@45:55 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Carefully remove sides of tart pans.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"remove\"@14:20 / AC\r\n\t\t:ppt ( tool-12-0 \"sides of tart pans\"@21:39 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Serve warm or cool.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Serve\"@4:9 / AC )\r\n)"
+        }
+    ]
+}

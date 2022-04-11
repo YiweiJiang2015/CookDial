@@ -1,0 +1,78 @@
+{
+    "id": "197",
+    "title": "Citrus Infused Guacamole",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 avocados - peeled, pitted, and mashed",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 avocados - peeled, pitted, and mashed\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 tablespoon lime juice",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 tablespoon lime juice\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 tablespoon orange juice",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 tablespoon orange juice\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 tablespoon pineapple juice",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 tablespoon pineapple juice\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/4 teaspoon ground cumin",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/4 teaspoon ground cumin\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 cup coarsely chopped cilantro",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 cup coarsely chopped cilantro\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "salt to taste",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"salt to taste\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 teaspoon hot pepper sauce, or to taste (optional)",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 teaspoon hot pepper sauce, or to taste (optional)\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large bowl, stir together the avocados, lime juice, orange juice, pineapple juice, cumin, cilantro and salt.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"stir\"@20:24 / AC\r\n\t\t:ppt ( ing-0 \"the avocados\"@34:46 / FOOD )\r\n\t\t:ppt ( ing-1 \"lime juice\"@48:58 / FOOD )\r\n\t\t:ppt ( ing-2 \"orange juice\"@60:72 / FOOD )\r\n\t\t:ppt ( ing-3 \"pineapple juice\"@74:89 / FOOD )\r\n\t\t:ppt ( ing-4 \"cumin\"@91:96 / FOOD )\r\n\t\t:ppt ( ing-5 \"cilantro\"@98:106 / FOOD )\r\n\t\t:ppt ( ing-6 \"salt\"@111:115 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Mix in hot pepper sauce if using.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Mix in\"@3:9 / AC\r\n\t\t:ppt ( ing-7 \"hot pepper sauce\"@10:26 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:todo ( cond-1-0 \"if using\"@27:35 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place one of the avocado pits into the bowl to help keep it fresh.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( \"one of the avocado pits\"@9:32 / FOOD )\r\n\t\t:gol ( tool-2-0 \"the bowl\"@38:46 / TOOL )\r\n\t\t:prp ( purp-2-0 \"to help keep it fresh\"@47:68 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Serve immediately, or refrigerate until serving.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"refrigerate\"@25:36 / AC\r\n\t\t:until ( cond-3-0 \"until serving\"@37:50 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

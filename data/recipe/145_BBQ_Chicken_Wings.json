@@ -1,0 +1,108 @@
+{
+    "id": "145",
+    "title": "BBQ Chicken Wings",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/2 cup teriyaki sauce",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/2 cup teriyaki sauce\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup oyster sauce",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup oyster sauce\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/4 cup soy sauce",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/4 cup soy sauce\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup ketchup",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup ketchup\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 tablespoons garlic powder",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 tablespoons garlic powder\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 cup gin",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 cup gin\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 dashes liquid smoke flavoring",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 dashes liquid smoke flavoring\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 cup white sugar\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 1/2 pounds chicken wings, separated at joints, tips discarded",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 1/2 pounds chicken wings, separated at joints, tips discarded\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/4 cup honey",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/4 cup honey\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large bowl, mix the teriyaki sauce, oyster sauce, soy sauce, ketchup, garlic powder, gin, liquid smoke, and sugar.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"mix\"@20:23 / AC\r\n\t\t:ppt ( ing-0 \"the teriyaki sauce\"@24:42 / FOOD )\r\n\t\t:ppt ( ing-1 \"oyster sauce\"@44:56 / FOOD )\r\n\t\t:ppt ( ing-2 \"soy sauce\"@58:67 / FOOD )\r\n\t\t:ppt ( ing-3 \"ketchup\"@69:76 / FOOD )\r\n\t\t:ppt ( ing-4 \"garlic powder\"@78:91 / FOOD )\r\n\t\t:ppt ( ing-5 \"gin\"@93:96 / FOOD )\r\n\t\t:ppt ( ing-6 \"liquid smoke\"@98:110 / FOOD )\r\n\t\t:ppt ( ing-7 \"sugar\"@116:121 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Place the chicken wings in the bowl, cover, and marinate in the refrigerator 8 hours or overnight.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-8 \"the chicken wings\"@9:26 / FOOD )\r\n\t\t:gol ( tool-1-0 \"the bowl\"@30:38 / TOOL )\r\n\t)\r\n\t:inform ( ac-1-1 \"cover\"@40:45 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-2 \"marinate\"@51:59 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-1-1 \"the refrigerator\"@63:79 / TOOL )\r\n\t\t:duration ( dur-1-0 \"8 hours\"@80:87 / DUR )\r\n\t\t:duration ( dur-1-1 \"overnight\"@91:100 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Preheat the grill for low heat.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-2-0 \"the grill\"@11:20 / TOOL )\r\n\t\t:heat ( temp-2-0 \"low heat\"@25:33 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Lightly oil the grill grate.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"oil\"@11:14 / AC\r\n\t\t:ppt ( tool-3-0 \"the grill grate\"@15:30 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Arrange chicken on the grill, and discard the marinade.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Arrange\"@3:10 / AC\r\n\t\t:ppt ( ing-8 \"chicken\"@11:18 / FOOD )\r\n\t\t:loc ( tool-4-0 \"the grill\"@22:31 / TOOL )\r\n\t)\r\n\t:inform ( ac-4-1 \"discard\"@37:44 / AC\r\n\t\t:ppt ( \"the marinade\"@45:57 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Grill the chicken wings on one side for 20 minutes, then turn and brush with honey.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Grill\"@3:8 / AC\r\n\t\t:ppt ( \"the chicken wings\"@9:26 / FOOD )\r\n\t\t:mnr ( \"on one side\"@-1:-1 / FOOD )\r\n\t\t:duration ( dur-5-0 \"20 minutes\"@43:53 / DUR )\r\n\t)\r\n\t:inform ( ac-5-1 \"turn and brush\"@-1:-1 / AC\r\n\t\t:ppt ( ing-9 \"honey\"@80:85 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Continue grilling 25 minutes, or until juices run clear.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"grilling\"@12:20 / AC\r\n\t\t:duration ( dur-6-0 \"25 minutes\"@21:31 / DUR )\r\n\t\t:until ( cond-6-0 \"until juices run clear\"@36:58 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

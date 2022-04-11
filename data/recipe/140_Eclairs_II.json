@@ -1,0 +1,228 @@
+{
+    "id": "140",
+    "title": "Eclairs II",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/2 cup butter",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/2 cup butter\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup water",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup water\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "4 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"4 eggs\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 (5 ounce) package instant vanilla pudding mix",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 (5 ounce) package instant vanilla pudding mix\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "2 1/2 cups cold milk",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"2 1/2 cups cold milk\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 cup heavy cream",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 cup heavy cream\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/4 cup confectioners' sugar",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/4 cup confectioners' sugar\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "2 (1 ounce) squares semisweet chocolate",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"2 (1 ounce) squares semisweet chocolate\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "2 tablespoons butter",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"2 tablespoons butter\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 cup confectioners' sugar",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 cup confectioners' sugar\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-14",
+            "text": "3 tablespoons hot water",
+            "type": "ingredient",
+            "eamr": "( ing-14 \"3 tablespoons hot water\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 450 degrees F (230 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"450 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"230 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Grease a cookie sheet.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Grease\"@3:9 / AC\r\n\t\t:ppt ( tool-1-0 \"a cookie sheet\"@10:24 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) In a medium saucepan, combine 1/2 cup butter and 1 cup water.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"combine\"@25:32 / AC\r\n\t\t:ppt ( ing-0 \"1/2 cup butter\"@33:47 / FOOD )\r\n\t\t:ppt ( ing-1 \"1 cup water\"@52:63 / FOOD )\r\n\t\t:loc ( tool-2-0 \"a medium saucepan\"@6:23 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Bring to a boil, stirring until butter melts completely.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"boil\"@14:18 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:simultaneous ( ac-3-1 \"stirring\"@20:28 / AC\r\n\t\t\t:until ( cond-3-0 \"until butter melts completely\"@29:58 / CONDITION_CLAUSE )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Reduce heat to low, and add flour and salt.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Reduce\"@3:9 / AC\r\n\t\t:ppt ( \"heat\"@10:14 / OTHER )\r\n\t\t:gol ( temp-4-0 \"low\"@18:21 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-4-1 \"add\"@27:30 / AC\r\n\t\t:ppt ( ing-2 \"flour\"@31:36 / FOOD )\r\n\t\t:ppt ( ing-3 \"salt\"@41:45 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Stir vigorously until mixture leaves the sides of the pan and begins to form a stiff ball.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Stir\"@3:7 / AC\r\n\t\t:until ( cond-5-0 \"until mixture leaves the sides of the pan and begins to form a stiff ball\"@19:92 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Remove from heat.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( \"heat\"@15:19 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Add eggs, one at a time, beating well to incorporate completely after each addition.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Add\"@3:6 / AC\r\n\t\t:heat ( \"one at a time\"@13:26 / OTHER )\r\n\t\t:ppt ( ing-4 \"eggs\"@7:11 / FOOD )\r\n\t\t:simultaneous ( ac-7-1 \"beating\"@28:35 / AC\r\n\t\t\t:prp ( purp-7-0 \"to incorporate completely after each addition\"@41:86 / PURPOSE_CLAUSE )\r\n\t\t)\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) With a spoon or a pastry bag fitted with a No. 10, or larger, tip, spoon or pipe dough onto cookie sheet in 1 1/2 x 4 inch strips.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"tip, spoon or pipe\"@65:83 / AC\r\n\t\t:ppt ( \"dough\"@84:89 / FOOD )\r\n\t\t:gol ( tool-8-0 \"cookie sheet\"@95:107 / TOOL )\r\n\t\t:instrument ( \"or\"@-1:-1 / CHOICE\r\n\t\t\t:op ( tool-8-1 \"a spoon\"@8:15 / TOOL )\r\n\t\t\t:op ( tool-8-2 \"a pastry bag\"@19:31 / TOOL )\r\n\t\t)\r\n\t\t:reshape ( \"1 1/2 x 4 inch strips\"@111:132 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Bake 15 minutes in the preheated oven, then reduce heat to 325 degrees F (165 degrees C) and bake 20 minutes more, until hollow sounding when lightly tapped on the bottom.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Bake\"@3:7 / AC\r\n\t\t:duration ( dur-9-0 \"15 minutes\"@8:18 / DUR )\r\n\t\t:loc ( tool-9-0 \"the preheated oven\"@22:40 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-9-1 \"reduce\"@47:53 / AC\r\n\t\t:ppt ( \"heat\"@54:58 / OTHER )\r\n\t\t:heat ( temp-9-0 \"165 degrees C\"@77:90 / TEMPERATURE )\r\n\t\t:gol ( temp-9-1 \"325 degrees F\"@62:75 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-9-2 \"bake\"@96:100 / AC\r\n\t\t:duration ( dur-9-1 \"20 minutes\"@101:111 / DUR )\r\n\t\t:until ( cond-9-0 \"until hollow sounding when lightly tapped on the bottom\"@118:173 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Cool completely on a wire rack.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Cool\"@4:8 / AC\r\n\t\t:loc ( tool-10-0 \"a wire rack\"@23:34 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) For the filling, combine pudding mix and milk in medium bowl according to package directions.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"combine\"@21:28 / AC\r\n\t\t:subtask ( \"For the filling\"@4:19 / FOOD )\r\n\t\t:ppt ( ing-5 \"pudding mix\"@29:40 / FOOD )\r\n\t\t:ppt ( ing-6 \"milk\"@45:49 / FOOD )\r\n\t\t:loc ( tool-11-0 \"medium bowl\"@53:64 / TOOL )\r\n\t\t:mnr ( \"according to package directions\"@65:96 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) In a separate bowl, beat the cream with an electric mixer until soft peaks form.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"beat\"@24:28 / AC\r\n\t\t:ppt ( ing-7 \"the cream\"@29:38 / FOOD )\r\n\t\t:instrument ( tool-12-0 \"an electric mixer\"@44:61 / TOOL )\r\n\t\t:until ( cond-12-0 \"until soft peaks form\"@62:83 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-12-1 \"a separate bowl\"@7:22 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Beat in 1/4 cup confectioners' sugar and 1 teaspoon vanilla.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Beat in\"@4:11 / AC\r\n\t\t:ppt ( ing-8 \"1/4 cup confectioners' sugar\"@12:40 / FOOD )\r\n\t\t:ppt ( ing-9 \"1 teaspoon vanilla\"@45:63 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Fold whipped cream into pudding.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"Fold\"@4:8 / AC\r\n\t\t:ppt ( \"whipped cream\"@9:22 / FOOD )\r\n\t\t:reshape ( \"pudding\"@28:35 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-15",
+            "text": "15) Cut tops off of cooled pastry shells with a sharp knife.",
+            "type": "instruction",
+            "eamr": "( inst-15 / R\r\n\t:inform ( ac-15-0 \"Cut\"@4:7 / AC\r\n\t\t:ppt ( \"tops\"@8:12 / OTHER )\r\n\t\t:source ( \"cooled pastry shells\"@20:40 / FOOD )\r\n\t\t:instrument ( tool-15-0 \"a sharp knife\"@46:59 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-16",
+            "text": "16) Fill shells with pudding mixture and replace tops.",
+            "type": "instruction",
+            "eamr": "( inst-16 / R\r\n\t:inform ( ac-16-0 \"Fill\"@4:8 / AC\r\n\t\t:gol ( \"shells\"@9:15 / FOOD )\r\n\t\t:ppt ( \"pudding mixture\"@21:36 / FOOD )\r\n\t)\r\n\t:inform ( ac-16-1 \"replace\"@41:48 / AC\r\n\t\t:ppt ( \"tops\"@49:53 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-17",
+            "text": "17) For the icing, melt the chocolate and 2 tablespoons butter in a medium saucepan over low heat.",
+            "type": "instruction",
+            "eamr": "( inst-17 / R\r\n\t:inform ( ac-17-0 \"melt\"@19:23 / AC\r\n\t\t:subtask ( \"For the icing\"@4:17 / FOOD )\r\n\t\t:ppt ( ing-10 \"the chocolate\"@24:37 / FOOD )\r\n\t\t:ppt ( ing-11 \"2 tablespoons butter\"@42:62 / FOOD )\r\n\t\t:loc ( tool-17-0 \"a medium saucepan\"@66:83 / TOOL )\r\n\t\t:heat ( temp-17-0 \"low heat\"@89:97 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-18",
+            "text": "18) Stir in 1 cup confectioners' sugar and 1 teaspoon vanilla.",
+            "type": "instruction",
+            "eamr": "( inst-18 / R\r\n\t:inform ( ac-18-0 \"Stir in\"@4:11 / AC\r\n\t\t:ppt ( ing-12 \"1 cup confectioners' sugar\"@12:38 / FOOD )\r\n\t\t:ppt ( ing-13 \"1 teaspoon vanilla\"@43:61 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-19",
+            "text": "19) Stir in hot water, one tablespoon at a time, until icing is smooth and has reached desired consistency.",
+            "type": "instruction",
+            "eamr": "( inst-19 / R\r\n\t:inform ( ac-19-0 \"Stir in\"@4:11 / AC\r\n\t\t:ppt ( ing-14 \"hot water\"@12:21 / FOOD )\r\n\t\t:mnr ( \"one tablespoon at a time\"@23:47 / OTHER )\r\n\t\t:until ( cond-19-0 \"until icing is smooth and has reached desired consistency\"@49:106 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-20",
+            "text": "20) Remove from heat, cool slightly, and drizzle over filled eclairs.",
+            "type": "instruction",
+            "eamr": "( inst-20 / R\r\n\t:inform ( ac-20-0 \"Remove\"@4:10 / AC\r\n\t\t:source ( \"heat\"@16:20 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-20-1 \"cool\"@22:26 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-20-2 \"drizzle\"@41:48 / AC\r\n\t\t:gol ( \"filled eclairs\"@54:68 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-21",
+            "text": "21) Refrigerate until serving.",
+            "type": "instruction",
+            "eamr": "( inst-21 / R\r\n\t:inform ( ac-21-0 \"Refrigerate\"@4:15 / AC\r\n\t\t:until ( cond-21-0 \"until serving\"@16:29 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

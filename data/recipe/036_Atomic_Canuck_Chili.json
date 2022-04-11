@@ -1,0 +1,150 @@
+{
+    "id": "036",
+    "title": "Atomic Canuck Chili",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 pounds lean ground beef",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 pounds lean ground beef\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 large onion, diced",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 large onion, diced\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 tablespoon crushed red pepper",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 tablespoon crushed red pepper\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "3 tablespoons garlic powder",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"3 tablespoons garlic powder\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 tablespoon seasoned pepper",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 tablespoon seasoned pepper\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 (4 ounce) cans mushroom pieces, drained",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 (4 ounce) cans mushroom pieces, drained\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 (28 ounce) can baked beans",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 (28 ounce) can baked beans\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 (15.25 ounce) cans kidney beans with liquid",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 (15.25 ounce) cans kidney beans with liquid\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 (6 ounce) cans tomato paste",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 (6 ounce) cans tomato paste\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/4 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/4 cup white sugar\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "3 carrots, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"3 carrots, sliced\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "3 stalks celery, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"3 stalks celery, sliced\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 green bell pepper, diced",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 green bell pepper, diced\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1 red bell pepper, diced",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1 red bell pepper, diced\" )"
+        },
+        {
+            "id": "ing-14",
+            "text": "2 jalapeno chile peppers, diced",
+            "type": "ingredient",
+            "eamr": "( ing-14 \"2 jalapeno chile peppers, diced\" )"
+        },
+        {
+            "id": "ing-15",
+            "text": "1/4 cup Canadian beer",
+            "type": "ingredient",
+            "eamr": "( ing-15 \"1/4 cup Canadian beer\" )"
+        },
+        {
+            "id": "ing-16",
+            "text": "2 tablespoons crushed red pepper",
+            "type": "ingredient",
+            "eamr": "( ing-16 \"2 tablespoons crushed red pepper\" )"
+        },
+        {
+            "id": "ing-17",
+            "text": "hot sauce",
+            "type": "ingredient",
+            "eamr": "( ing-17 \"hot sauce\" )"
+        },
+        {
+            "id": "ing-18",
+            "text": "1/4 cup barbeque sauce",
+            "type": "ingredient",
+            "eamr": "( ing-18 \"1/4 cup barbeque sauce\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large skillet over medium heat, brown ground beef together with onion, crushed red pepper, garlic powder, and seasoned pepper.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"brown\"@40:45 / AC\r\n\t\t:ppt ( ing-0 \"ground beef\"@46:57 / FOOD )\r\n\t\t:ppt ( ing-1 \"onion\"@72:77 / FOOD )\r\n\t\t:ppt ( ing-2 \"crushed red pepper\"@79:97 / FOOD )\r\n\t\t:ppt ( ing-3 \"garlic powder\"@99:112 / FOOD )\r\n\t\t:ppt ( ing-4 \"seasoned pepper\"@118:133 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large skillet\"@6:21 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium heat\"@27:38 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Drain off the fat, and place the mixture into a slow cooker.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Drain off\"@3:12 / AC\r\n\t\t:ppt ( \"the fat\"@13:20 / FOOD )\r\n\t\t:source ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"place\"@26:31 / AC\r\n\t\t:ppt ( \"the mixture\"@32:43 / FOOD )\r\n\t\t:gol ( tool-1-0 \"a slow cooker\"@49:62 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Stir mushrooms, baked beans, kidney beans with liquid, tomato paste, sugar, carrots, celery, peppers, beer, and barbeque sauce into the slow cooker.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Stir\"@3:7 / AC\r\n\t\t:ppt ( ing-5 \"mushrooms\"@8:17 / FOOD )\r\n\t\t:ppt ( ing-6 \"baked beans\"@19:30 / FOOD )\r\n\t\t:ppt ( ing-7 \"kidney beans with liquid\"@32:56 / FOOD )\r\n\t\t:ppt ( ing-8 \"tomato paste\"@58:70 / FOOD )\r\n\t\t:ppt ( ing-9 \"sugar\"@72:77 / FOOD )\r\n\t\t:ppt ( ing-10 \"carrots\"@79:86 / FOOD )\r\n\t\t:ppt ( ing-11 \"celery\"@88:94 / FOOD )\r\n\t\t:ppt ( \"peppers\"@96:103 / FOOD\r\n\t\t\t:ref ( ing-12 )\r\n\t\t\t:ref ( ing-13 )\r\n\t\t\t:ref ( ing-14 )\r\n\t\t)\r\n\t\t:ppt ( ing-15 \"beer\"@105:109 / FOOD )\r\n\t\t:ppt ( ing-18 \"barbeque sauce\"@115:129 / FOOD )\r\n\t\t:loc ( tool-2-0 \"the slow cooker\"@135:150 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Season with hot sauce and more crushed red pepper.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Season\"@3:9 / AC\r\n\t\t:ppt ( ing-17 \"hot sauce\"@15:24 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( ing-16 \"more crushed red pepper\"@29:52 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Cover, and cook on Low for 4 to 5 hours.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"cook\"@14:18 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:heat ( temp-4-0 \"Low\"@22:25 / TEMPERATURE )\r\n\t\t:duration ( dur-4-0 \"4 to 5 hours\"@30:42 / DUR )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,132 @@
+{
+    "id": "028",
+    "title": "Cinnamon Crackle Cookies",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/2 cup butter, softened",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/2 cup butter, softened\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup shortening",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup shortening\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 cup sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 cup sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 cup packed brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 cup packed brown sugar\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 egg",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 egg\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 teaspoon almond extract",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 teaspoon almond extract\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "2 1/2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"2 1/2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 tablespoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 tablespoon ground cinnamon\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 teaspoons baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 teaspoons baking soda\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "2 teaspoons cream of tartar",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"2 teaspoons cream of tartar\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "2 teaspoons ground nutmeg",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"2 teaspoons ground nutmeg\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "2 teaspoons grated orange peel",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"2 teaspoons grated orange peel\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1 teaspoon grated lemon peel",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1 teaspoon grated lemon peel\" )"
+        },
+        {
+            "id": "ing-14",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-14 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-15",
+            "text": "Additional sugar",
+            "type": "ingredient",
+            "eamr": "( ing-15 \"Additional sugar\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a mixing bowl, cream butter, shortening and sugars.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"cream\"@21:26 / AC\r\n\t\t:loc ( tool-0-0 \"a mixing bowl\"@6:19 / TOOL )\r\n\t\t:ppt ( ing-0 \"butter\"@27:33 / FOOD )\r\n\t\t:ppt ( ing-1 \"shortening\"@35:45 / FOOD )\r\n\t\t:ppt ( \"sugars\"@50:56 / FOOD\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add egg and extracts; mix well.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-4 \"egg\"@7:10 / FOOD )\r\n\t\t:ppt ( \"extracts\"@15:23 / FOOD\r\n\t\t\t:ref ( ing-5 )\r\n\t\t\t:ref ( ing-6 )\r\n\t\t)\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"mix\"@25:28 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Combine the next eight ingredients; gradually add to the creamed mixture.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Combine\"@3:10 / AC\r\n\t\t:ppt ( \"the next eight ingredients\"@11:37 / FOOD\r\n\t\t\t:ref ( ing-7 )\r\n\t\t\t:ref ( ing-8 )\r\n\t\t\t:ref ( ing-9 )\r\n\t\t\t:ref ( ing-10 )\r\n\t\t\t:ref ( ing-11 )\r\n\t\t\t:ref ( ing-12 )\r\n\t\t\t:ref ( ing-13 )\r\n\t\t\t:ref ( ing-14 )\r\n\t\t)\r\n\t)\r\n\t:inform ( ac-2-1 \"add\"@49:52 / AC\r\n\t\t:ppt ( \"the creamed mixture\"@56:75 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Shape into 1-in balls; roll in sugar apart on ungreased baking sheets.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Shape\"@3:8 / AC\r\n\t\t:todo ( \"1-in balls\"@14:24 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"roll in\"@26:33 / AC\r\n\t\t:loc ( tool-3-0 \"ungreased baking sheets\"@49:72 / TOOL )\r\n\t\t:ppt ( ing-15 \"sugar\"@34:39 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Bake at 350 degrees F (177 degrees C) for 10-15 minutes or until lightly browned.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Bake\"@3:7 / AC\r\n\t\t:heat ( temp-4-0 \"350 degrees F\"@11:24 / TEMPERATURE )\r\n\t\t:heat ( temp-4-1 \"177 degrees C\"@-1:-1 / TEMPERATURE )\r\n\t\t:duration ( dur-4-0 \"10-15 minutes\"@-1:-1 / DUR )\r\n\t\t:until ( cond-4-0 \"until lightly browned\"@-1:-1 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

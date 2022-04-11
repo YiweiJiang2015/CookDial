@@ -1,0 +1,228 @@
+{
+    "id": "097",
+    "title": "Chicken Pot Pie II",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 1/2 pounds skinless, boneless chicken breast meat",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 1/2 pounds skinless, boneless chicken breast meat\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 cup chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 cup chicken broth\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 teaspoon ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 teaspoon ground black pepper\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 1/2 cups milk",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 1/2 cups milk\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "3 tablespoons butter",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"3 tablespoons butter\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 onion, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 onion, chopped\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 cup chopped celery",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 cup chopped celery\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/3 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/3 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 cups frozen mixed vegetables, thawed",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 cups frozen mixed vegetables, thawed\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1 tablespoon chopped fresh parsley",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1 tablespoon chopped fresh parsley\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/2 teaspoon dried thyme",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/2 teaspoon dried thyme\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 (9 inch) pastry for a 9 inch single crust pie",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 (9 inch) pastry for a 9 inch single crust pie\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1 egg, lightly beaten",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1 egg, lightly beaten\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large saucepan over medium high heat, combine the chicken meat, chicken broth, salt and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@46:53 / AC\r\n\t\t:loc ( tool-0-0 \"a large saucepan\"@6:22 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium high heat\"@28:44 / TEMPERATURE )\r\n\t\t:ppt ( ing-0 \"the chicken meat\"@54:70 / FOOD )\r\n\t\t:ppt ( ing-1 \"chicken broth\"@72:85 / FOOD )\r\n\t\t:ppt ( ing-2 \"salt\"@87:91 / FOOD )\r\n\t\t:ppt ( ing-3 \"pepper\"@96:102 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Bring to a boil and reduce heat to low.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"boil\"@14:18 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"reduce\"@23:29 / AC\r\n\t\t:ppt ( \"heat\"@30:34 / OTHER )\r\n\t\t:gol ( temp-1-0 \"low\"@38:41 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cover and let simmer for 30 minutes, or until chicken is no longer pink in the center and the juices run clear.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cover and let simmer\"@17:23 / AC\r\n\t\t:duration ( dur-2-0 \"30 minutes\"@28:38 / DUR )\r\n\t\t:until ( cond-2-0 \"until chicken is no longer pink in the center and the juices run clear\"@43:113 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Remove the chicken and let cool.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( \"the chicken\"@10:21 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"cool\"@30:34 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Pour the remaining chicken broth mixture into a measuring cup.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( \"the remaining chicken broth mixture\"@8:43 / FOOD )\r\n\t\t:gol ( \"measuring cup\"@51:64 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Let stand; spoon off fat.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"spoon off\"@14:23 / AC\r\n\t\t:ppt ( \"fat\"@24:27 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Add enough milk to the broth mixture to equal 2 1/2 cups.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-4 \"milk\"@14:18 / FOOD )\r\n\t\t:ppt ( \"broth mixture\"@26:39 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Cut chicken into 1/2 inch pieces.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Cut\"@3:6 / AC\r\n\t\t:ppt ( \"chicken\"@7:14 / FOOD )\r\n\t\t:reshape ( \"1/2 inch pieces\"@20:35 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) In the same pan, melt butter or margarine over medium heat.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"melt\"@20:24 / AC\r\n\t\t:ppt ( ing-5 \"butter or margarine\"@25:31 / FOOD )\r\n\t\t:heat ( temp-8-0 \"medium heat\"@50:61 / TEMPERATURE )\r\n\t\t:loc ( tool-8-0 \"the same pan\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Add the onion and celery.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Add\"@-1:-1 / AC\r\n\t\t:ppt ( ing-6 \"the onion\"@-1:-1 / FOOD )\r\n\t\t:ppt ( ing-7 \"celery\"@-1:-1 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Saute, stirring, for 3 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Saute\"@4:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-10-0 \"3 minutes\"@25:34 / DUR )\r\n\t\t:simultaneous ( ac-10-1 \"stirring\"@11:19 / AC\r\n\t\t\t:ppt ( NULL / FOOD )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Stir in flour until well blended.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Stir in\"@4:11 / AC\r\n\t\t:ppt ( ing-8 \"flour\"@12:17 / FOOD )\r\n\t\t:until ( cond-11-0 \"until well blended\"@18:36 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Gradually stir in broth mixture.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"stir in\"@14:21 / AC\r\n\t\t:ppt ( \"broth mixture\"@22:35 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Simmer, stirring constantly, until the sauce thickens and boils.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Simmer\"@4:10 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-13-0 \"until the sauce thickens and boils\"@33:67 / CONDITION_CLAUSE )\r\n\t\t:simultaneous ( ac-13-1 \"stirring\"@12:20 / AC\r\n\t\t\t:ppt ( NULL / FOOD )\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Add the chicken, vegetables, parsley and thyme.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"Add\"@4:7 / AC\r\n\t\t:ppt ( \"the chicken\"@8:19 / FOOD )\r\n\t\t:ppt ( ing-9 \"vegetables\"@21:31 / FOOD )\r\n\t\t:ppt ( ing-10 \"parsley\"@33:40 / FOOD )\r\n\t\t:ppt ( ing-11 \"thyme\"@45:50 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-15",
+            "text": "15) Pour mixture into a 1 1/2 quart deep casserole dish.",
+            "type": "instruction",
+            "eamr": "( inst-15 / R\r\n\t:inform ( ac-15-0 \"Pour\"@4:8 / AC\r\n\t\t:ppt ( \"mixture\"@9:16 / FOOD )\r\n\t\t:gol ( tool-15-0 \"1 1/2 quart deep casserole dish\"@24:55 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-16",
+            "text": "16) Preheat oven to 400 degrees F (200 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-16 / R\r\n\t:inform ( ac-16-0 \"Preheat\"@4:11 / AC\r\n\t\t:ppt ( tool-16-0 \"oven\"@12:16 / TOOL )\r\n\t\t:heat ( temp-16-0 \"400 degrees F\"@20:33 / TEMPERATURE )\r\n\t\t:heat ( temp-16-1 \"200 degrees C\"@35:48 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-17",
+            "text": "17) Roll out pastry 1 inch larger than the diameter of the casserole dish on a lightly floured surface.",
+            "type": "instruction",
+            "eamr": "( inst-17 / R\r\n\t:inform ( ac-17-0 \"Roll out\"@4:12 / AC\r\n\t\t:ppt ( ing-12 \"pastry\"@13:19 / FOOD )\r\n\t\t:loc ( tool-17-0 \"a lightly floured surface\"@77:102 / TOOL )\r\n\t\t:reshape ( \"1 inch larger than the diameter of the casserole dish\"@20:73 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-18",
+            "text": "18) Cut slits in the pastry for venting air.",
+            "type": "instruction",
+            "eamr": "( inst-18 / R\r\n\t:inform ( ac-18-0 \"Cut\"@4:7 / AC\r\n\t\t:prp ( purp-18-0 \"for venting air\"@28:43 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( \"slits\"@8:13 / OTHER )\r\n\t\t:source ( \"the pastry\"@17:27 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-19",
+            "text": "19) Place pastry on top of casserole.",
+            "type": "instruction",
+            "eamr": "( inst-19 / R\r\n\t:inform ( ac-19-0 \"Place\"@4:9 / AC\r\n\t\t:ppt ( \"pastry\"@10:16 / FOOD )\r\n\t\t:gol ( tool-19-0 \"top of casserole\"@20:36 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-20",
+            "text": "20) Roll edges and cut away extra pastry; flute edges by pinching together.",
+            "type": "instruction",
+            "eamr": "( inst-20 / R\r\n\t:inform ( ac-20-0 \"Roll\"@4:8 / AC\r\n\t\t:ppt ( \"edges\"@9:14 / FOOD )\r\n\t)\r\n\t:inform ( ac-20-1 \"cut away\"@19:27 / AC\r\n\t\t:ppt ( \"extra pastry\"@28:40 / FOOD )\r\n\t)\r\n\t:inform ( ac-20-2 \"flute\"@42:47 / AC\r\n\t\t:ppt ( \"edges\"@48:53 / FOOD )\r\n\t\t:mnr ( ac-20-3 \"pinching together\"@57:74 / AC )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-21",
+            "text": "21) Brush pastry with beaten egg and bake in the preheated oven for 30 minutes or until the crust is golden brown and the filling is bubbling.",
+            "type": "instruction",
+            "eamr": "( inst-21 / R\r\n\t:inform ( ac-21-0 \"Brush\"@4:9 / AC\r\n\t\t:gol ( \"pastry\"@10:16 / FOOD )\r\n\t\t:ppt ( ing-13 \"beaten egg\"@22:32 / FOOD )\r\n\t)\r\n\t:inform ( ac-21-1 \"bake\"@37:41 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-21-0 \"the preheated oven\"@45:63 / TOOL )\r\n\t\t:duration ( dur-21-0 \"30 minutes\"@68:78 / DUR )\r\n\t\t:until ( cond-21-0 \"until the crust is golden brown and the filling is bubbling\"@82:141 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-22",
+            "text": "22) Let cool for 10 minutes and serve.",
+            "type": "instruction",
+            "eamr": "( inst-22 / R\r\n\t:inform ( ac-22-0 \"cool\"@8:12 / AC\r\n\t\t:duration ( dur-22-0 \"10 minutes\"@17:27 / DUR )\r\n\t)\r\n\t:inform ( ac-22-1 \"serve\"@32:37 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

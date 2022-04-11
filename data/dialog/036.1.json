@@ -1,0 +1,238 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi. how do I make Atomic Canuck Chili?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi. first take a large skillet.",
+            "bot": true,
+            "annotations": "greeting();\r\nfetch(inst-0, [tool-0-0]);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "I have the large skillet. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Now first still dice 1/2 large onion.",
+            "bot": true,
+            "annotations": "fetch(inst-0, [ing-1]);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Put the skillet on medium heat and start cooking the onions for a bit and then add 2 pounds lean ground beef.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-0, ing-1]);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Can you repeat what I should add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "2 pounds of lean ground beef.",
+            "bot": true,
+            "annotations": "repeat(inst-0, [ing-0]);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "That's done. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Still add some spices: 1 tablespoon crushed red pepper, 3 tablespoons garlic powder and 1 tablespoon seasoned pepper.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-0, [ing-2, ing-3, ing-4]);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "I have added the first two. What is the last one?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "1 tablespoon seasoned pepper.",
+            "bot": true,
+            "annotations": "repeat(inst-0, [ing-4]);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. what is the next instruction?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Drain off the fat from what you cooked and place the mixture into a slow cooker.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. I placed it in a slow cooker without the fat.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Good. Now we will add 10 ingredients into the slow cooker. If you are ready I will announce them.",
+            "bot": true,
+            "annotations": "simplify_begin(inst-2);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Yes I am ready. What's the first ingredient?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "First add 2 cans of mushroom pieces and 1 can of baked beans.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-2, [ing-5, ing-6]);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "How large should the cans be?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "2 4 ounce cans for the mushrooms and 1 28 ounce can baked beans.",
+            "bot": true,
+            "annotations": "inform_amount(ing-5);\r\ninform_amount(ing-6);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Good, what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"ing-6\", \"tracker_completed_step_num\": 7, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Add 2 cans kidney beans. The size should be 15.25 ounce.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-2, [ing-7]);"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "That's added, anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Yes still 7 more ingredients. Now add 2 (6 ounce) cans tomato paste and 1/4 cup of white sugar.",
+            "bot": true,
+            "annotations": "affirm();\r\nsimplify_continue(inst-2, [ing-8, ing-9]);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. what are the next ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Now add 3 sliced carrots, 3 stalks of celery and 1 green bell pepper.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-2, [ing-10, ing-11, ing-12]);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "What is the third one?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"ing-12\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "1 green bell pepper.",
+            "bot": true,
+            "annotations": "repeat(ing-12);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. I have add these three ingredients. What's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"ing-12\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "Add 1 red bell pepper and 2 jalapeno chile peppers.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-2, [ing-13, ing-14]);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. that's done. Are there any other ingredients?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Finally still add 1/4 cup of Canadian beer into the slow cooker.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-2, [ing-15, ing-18]);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "I have added the Canadian beer. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Now season it with hot sauce and more crushed red pepper as desired. Then cover it and cook on a low stand for 4 to 5 hours.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok. can I do something else during these 4 to 5 hours?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_parallel_action;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "No, that is all, just let it slow cook.",
+            "bot": true,
+            "annotations": "negate();\r\n\r\n"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. I have cooked it for 5 hours now. What should I do now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "That is all, enjoy!",
+            "bot": true,
+            "annotations": "end_recipe();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "It looks good. Bye.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"goodbye;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 23}"
+        }
+    ]
+}

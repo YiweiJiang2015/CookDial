@@ -1,0 +1,126 @@
+{
+    "id": "048",
+    "title": "Black Bean Chili",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 tablespoon olive oil",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 tablespoon olive oil\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 onion, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 onion, chopped\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 red bell pepper, seeded and chopped",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 red bell pepper, seeded and chopped\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 jalapeno pepper, seeded and minced",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 jalapeno pepper, seeded and minced\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "10 fresh mushrooms, quartered",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"10 fresh mushrooms, quartered\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "6 roma (plum) tomatoes, diced",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"6 roma (plum) tomatoes, diced\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 cup fresh corn kernels",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 cup fresh corn kernels\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 teaspoon ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 teaspoon ground black pepper\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 teaspoon ground cumin",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 teaspoon ground cumin\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 tablespoon chili powder",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 tablespoon chili powder\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "2 (15 ounce) cans black beans, drained and rinsed",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"2 (15 ounce) cans black beans, drained and rinsed\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 1/2 cups chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 1/2 cups chicken broth\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 teaspoon salt\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Heat oil in a large saucepan over medium-high heat.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"oil\"@8:11 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large saucepan\"@15:31 / TOOL )\r\n\t\t:heat ( \"medium-high heat\"@37:53 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Sautee the onion, red bell peppers, jalapeno, mushrooms, tomatoes and corn for 10 minutes or until the onions are translucent.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Sautee\"@3:9 / AC\r\n\t\t:ppt ( ing-1 \"the onion\"@10:19 / FOOD )\r\n\t\t:ppt ( ing-2 \"red bell peppers\"@21:37 / FOOD )\r\n\t\t:ppt ( ing-3 \"jalapeno\"@39:47 / FOOD )\r\n\t\t:ppt ( ing-4 \"mushrooms\"@49:58 / FOOD )\r\n\t\t:ppt ( ing-5 \"tomatoes\"@60:68 / FOOD )\r\n\t\t:ppt ( ing-6 \"corn\"@73:77 / FOOD )\r\n\t\t:duration ( dur-1-0 \"10 minutes\"@82:92 / DUR )\r\n\t\t:until ( cond-1-0 \"until the onions are translucent\"@96:128 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Season with black pepper, cumin and chili powder.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Season\"@3:9 / AC\r\n\t\t:ppt ( ing-7 \"black pepper\"@15:27 / FOOD )\r\n\t\t:ppt ( ing-8 \"cumin\"@29:34 / FOOD )\r\n\t\t:ppt ( ing-9 \"chili powder\"@39:51 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Stir in the black beans, chicken broth and salt.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-10 \"the black beans\"@11:26 / FOOD )\r\n\t\t:ppt ( ing-11 \"chicken broth\"@28:41 / FOOD )\r\n\t\t:ppt ( ing-12 \"salt\"@46:50 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) bring to a boil.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"boil\"@14:18 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Remove 1 1/2 cups of the soup to food processor or blender; puree and stir the bean mixture back into the soup.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( \"1 1/2 cups of the soup\"@10:32 / FOOD )\r\n\t\t:gol ( tool-5-0 \"food processor\"@36:50 / TOOL )\r\n\t\t:gol ( tool-5-1 \"blender\"@54:61 / TOOL )\r\n\t)\r\n\t:inform ( ac-5-1 \"puree\"@63:68 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-2 \"stir\"@73:77 / AC\r\n\t\t:ppt ( \"the bean mixture\"@78:94 / FOOD )\r\n\t\t:gol ( \"the soup\"@105:113 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Serve hot by itself or over rice.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n   :inform ( \"Serve\"@3:8 / AC\r\n      :heat ( \"over rice\"@26:35 / OTHER )\r\n      :ppt( NULL / FOOD )\r\n   )\r\n)"
+        }
+    ]
+}

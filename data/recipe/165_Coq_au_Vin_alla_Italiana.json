@@ -1,0 +1,150 @@
+{
+    "id": "165",
+    "title": "Coq au Vin alla Italiana",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "4 pounds dark meat chicken pieces",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"4 pounds dark meat chicken pieces\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 tablespoon vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 tablespoon vegetable oil\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "5 cloves crushed garlic",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"5 cloves crushed garlic\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 teaspoon poultry seasoning",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 teaspoon poultry seasoning\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "3 (4 ounce) links sweet Italian sausage, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"3 (4 ounce) links sweet Italian sausage, sliced\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 cup chopped onion",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 cup chopped onion\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "3 carrots, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"3 carrots, sliced\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/2 pound fresh mushrooms, sliced",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/2 pound fresh mushrooms, sliced\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/2 teaspoon dried rosemary",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/2 teaspoon dried rosemary\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1 cup red wine",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1 cup red wine\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 (14.5 ounce) can whole peeled tomatoes",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 (14.5 ounce) can whole peeled tomatoes\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"salt and pepper to taste\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large skillet, heat oil.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"heat\"@23:27 / AC\r\n\t\t:ppt ( ing-1 \"oil\"@28:31 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large skillet\"@6:21 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add 1/2 of the garlic.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-2 \"1/2 of the garlic\"@7:24 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Season flour with poultry seasoning.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Season\"@3:9 / AC\r\n\t\t:gol ( ing-3 \"flour\"@10:15 / FOOD )\r\n\t\t:ppt ( ing-4 \"poultry seasoning\"@21:38 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Dredge chicken parts in flour, then brown in the skillet for 4 or 5 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Dredge\"@3:9 / AC\r\n\t\t:ppt ( ing-0 \"chicken parts\"@10:23 / FOOD )\r\n\t\t:gol ( \"flour\"@27:32 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"brown\"@39:44 / AC\r\n\t\t:loc ( tool-3-0 \"the skillet\"@48:59 / TOOL )\r\n\t\t:duration ( dur-3-0 \"4 or 5 minutes\"@64:78 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Add the sausage, and saute for a few minutes.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-5 \"the sausage\"@7:18 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"saute\"@24:29 / AC\r\n\t\t:duration ( dur-4-0 \"a few minutes\"@34:47 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Add the onion, carrots, mushrooms, rosemary and the remaining garlic.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-6 \"the onion\"@7:16 / FOOD )\r\n\t\t:ppt ( ing-7 \"carrots\"@18:25 / FOOD )\r\n\t\t:ppt ( ing-8 \"mushrooms\"@27:36 / FOOD )\r\n\t\t:ppt ( ing-9 \"rosemary\"@38:46 / FOOD )\r\n\t\t:ppt ( ing-2 \"the remaining garlic\"@51:71 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Stir all together.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Stir\"@3:7 / AC\r\n\t\t:ppt ( \"all\"@8:11 / PRONOUN )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Add the wine and tomatoes; stir.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-10 \"the wine\"@7:15 / FOOD )\r\n\t\t:ppt ( ing-11 \"tomatoes\"@20:28 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-7-1 \"stir\"@30:34 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Cover and let simmer over low heat for 25 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-8-1 \"simmer\"@17:23 / AC\r\n\t\t:heat ( temp-8-0 \"low heat\"@29:37 / TEMPERATURE )\r\n\t\t:duration ( dur-8-0 \"25 minutes\"@42:52 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Season with salt and pepper to taste and let simmer for another 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Season\"@4:10 / AC\r\n\t\t:ppt ( ing-12 \"salt and pepper to taste\"@16:31 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-9-1 \"simmer\"@49:55 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-9-0 \"another 10 minutes\"@60:78 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Let cool covered for 10 minutes, then serve.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"cool\"@8:12 / AC\r\n\t\t:duration ( dur-10-0 \"10 minutes\"@25:35 / DUR )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-10-1 \"serve\"@42:47 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

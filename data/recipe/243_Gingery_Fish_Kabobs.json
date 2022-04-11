@@ -1,0 +1,108 @@
+{
+    "id": "243",
+    "title": "Gingery Fish Kabobs",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 cups pineapple juice",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 cups pineapple juice\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 tablespoon cornstarch",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 tablespoon cornstarch\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 tablespoons light soy sauce (50% less sodium)",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 tablespoons light soy sauce (50% less sodium)\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 1/2 tablespoons white vinegar",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 1/2 tablespoons white vinegar\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 garlic cloves, crushed",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 garlic cloves, crushed\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "3 tablespoons minced fresh ginger",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"3 tablespoons minced fresh ginger\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 1/4 pounds raw firm fish, such as salmon, tuna or halibut, cut in chunks",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 1/4 pounds raw firm fish, such as salmon, tuna or halibut, cut in chunks\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "4 cups fresh pineapple in large chunks (or substitute canned pineapple chunks)",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"4 cups fresh pineapple in large chunks (or substitute canned pineapple chunks)\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 large red onion, cut in wedges",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 large red onion, cut in wedges\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a small saucepan, dissolve cornstarch in pineapple juice.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"dissolve\"@24:32 / AC\r\n\t\t:ppt ( ing-1 \"cornstarch\"@33:43 / FOOD )\r\n\t\t:gol ( ing-0 \"pineapple juice\"@47:62 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a small saucepan\"@6:22 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add soy sauce, vinegar, garlic and ginger.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-2 \"soy sauce\"@7:16 / FOOD )\r\n\t\t:ppt ( ing-3 \"vinegar\"@18:25 / FOOD )\r\n\t\t:ppt ( ing-4 \"garlic\"@27:33 / FOOD )\r\n\t\t:ppt ( ing-5 \"ginger\"@38:44 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Simmer until slightly thickened, about 7 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Simmer\"@3:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-2-0 \"until slightly thickened\"@10:34 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-2-0 \"about 7 minutes\"@36:51 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Let cool.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"cool\"@7:11 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Add fish and pineapple to sauce and marinate in the refrigerator for 30 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-6 \"fish\"@7:11 / FOOD )\r\n\t\t:ppt ( ing-7 \"pineapple\"@16:25 / FOOD )\r\n\t\t:ppt ( \"sauce\"@29:34 / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"marinate\"@39:47 / AC\r\n\t\t:loc ( tool-4-0 \"the refrigerator\"@51:67 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-4-0 \"30 minutes\"@72:82 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Thread fish, pineapple and onion on skewers.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Thread\"@3:9 / AC\r\n\t\t:ppt ( \"fish\"@10:14 / FOOD )\r\n\t\t:ppt ( \"pineapple\"@16:25 / FOOD )\r\n\t\t:ppt ( ing-8 \"onion\"@30:35 / FOOD )\r\n\t\t:instrument ( tool-5-0 \"skewers\"@39:46 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Place on a hot grill (or under a broiler) until fish is done to your liking.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Place\"@3:8 / AC\r\n\t\t:gol ( tool-6-0 \"a hot grill\"@12:23 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-6-1 \"under a broiler\"@28:43 / TOOL )\r\n\t\t:until ( cond-6-0 \"until fish is done to your liking\"@45:78 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Serve with rice.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( \"rice\"@14:18 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

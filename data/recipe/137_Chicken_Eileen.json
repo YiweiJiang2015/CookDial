@@ -1,0 +1,60 @@
+{
+    "id": "137",
+    "title": "Chicken Eileen",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (6 ounce) package herb-seasoned dry bread stuffing mix",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (6 ounce) package herb-seasoned dry bread stuffing mix\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "8 skinless, boneless chicken breast halves",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"8 skinless, boneless chicken breast halves\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "16 medium slices mozzarella cheese",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"16 medium slices mozzarella cheese\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Prepare stuffing according to package directions.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Prepare\"@3:10 / AC\r\n\t\t:mnr ( \"according to package directions\"@20:51 / OTHER )\r\n\t\t:ppt ( ing-0 \"stuffing\"@11:19 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Wash the chicken, pat dry and pound out to about a 1/2 inch thickness.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Wash\"@3:7 / AC\r\n\t\t:ppt ( ing-1 \"the chicken\"@8:19 / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"pat\"@21:24 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-2 \"pound out\"@33:42 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:reshape ( \"a 1/2 inch thickness\"@52:72 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Place a slice of cheese on each breast, followed by a scoop of prepared stuffing.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-2 \"a slice of cheese\"@9:26 / FOOD )\r\n\t\t:gol ( \"each breast\"@30:41 / FOOD )\r\n\t\t:ppt ( \"a scoop of prepared stuffing\"@55:83 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Place stuffed breasts in a lightly greased 9x13 inch baking dish.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( \"stuffed breasts\"@9:24 / FOOD )\r\n\t\t:gol ( tool-4-0 \"a lightly greased 9x13 inch baking dish\"@28:67 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Bake at 350 degrees F (175 degrees C) for 25 minutes, or until chicken juices run clear, then place a second slice of cheese over each stuffed chicken, and bake for 2 more minutes, or until cheese is bubbly.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Bake\"@3:7 / AC\r\n\t\t:heat ( temp-5-0 \"350 degrees F\"@11:24 / TEMPERATURE )\r\n\t\t:heat ( temp-5-1 \"175 degrees C\"@26:39 / TEMPERATURE )\r\n\t\t:duration ( dur-5-0 \"25 minutes\"@45:55 / DUR )\r\n\t\t:until ( cond-5-0 \"until chicken juices run clear\"@60:90 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"place\"@97:102 / AC\r\n\t\t:ppt ( \"a second slice of cheese\"@103:127 / FOOD )\r\n\t\t:gol ( \"each stuffed chicken\"@133:153 / FOOD )\r\n\t)\r\n\t:inform ( ac-5-2 \"bake\"@159:163 / AC\r\n\t\t:duration ( dur-5-1 \"2 more minutes\"@168:182 / DUR )\r\n\t\t:until ( cond-5-1 \"until cheese is bubbly\"@187:209 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

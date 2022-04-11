@@ -1,0 +1,156 @@
+{
+    "id": "020",
+    "title": "Alaskan Halibut Lasagna",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "6 tablespoons butter or margarine, divided",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"6 tablespoons butter or margarine, divided\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 1/2 pounds halibut steaks, bones removed and cut into 1 inch cubes",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 1/2 pounds halibut steaks, bones removed and cut into 1 inch cubes\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 garlic cloves, minced",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 garlic cloves, minced\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "3/4 teaspoon dried thyme",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"3/4 teaspoon dried thyme\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/3 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/3 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 1/2 cups chicken broth",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 1/2 cups chicken broth\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 cup heavy whipping cream",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 cup heavy whipping cream\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "8 ounces lasagna noodles, cooked and drained",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"8 ounces lasagna noodles, cooked and drained\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 cups shredded Swiss cheese",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 cups shredded Swiss cheese\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "Minced fresh parsley",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"Minced fresh parsley\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large skillet over medium heat, melt 2 tablespoons butter.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"melt\"@40:44 / AC\r\n\t\t:ppt ( ing-0 \"2 tablespoons butter\"@45:65 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large skillet\"@6:21 / TOOL )\r\n\t\t:heat ( \"medium heat\"@27:38 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Add halibut, garlic and thyme.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-1 \"halibut\"@7:14 / FOOD )\r\n\t\t:ppt ( ing-2 \"garlic\"@16:22 / FOOD )\r\n\t\t:ppt ( ing-3 \"thyme\"@27:32 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cook until fish flakes easily with a fork, about 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cook\"@3:7 / AC\r\n\t\t:until ( cond-2-0 \"until fish flakes easily with a fork\"@8:44 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-2-0 \"10 minutes\"@52:62 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Remove and set aside.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"set aside\"@14:23 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Add the remaining butter to the skillet.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-0 \"the remaining butter\"@7:27 / FOOD )\r\n\t\t:ppt ( tool-4-0 \"the skillet\"@31:42 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Stir in flour and salt until smooth; cook and stir until golden brown.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Stir\"@3:7 / AC\r\n\t\t:ppt ( ing-4 \"flour\"@11:16 / FOOD )\r\n\t\t:ppt ( ing-5 \"salt\"@21:25 / FOOD )\r\n\t\t:duration ( cond-5-0 \"until smooth\"@26:38 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"cook\"@40:44 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( cond-5-1 \"until golden brown\"@54:72 / CONDITION_CLAUSE )\r\n\t)\r\n\t:inform ( ac-5-2 \"stir\"@49:53 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Gradually add broth and cream.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"add\"@13:16 / AC\r\n\t\t:ppt ( ing-6 \"broth\"@17:22 / FOOD )\r\n\t\t:ppt ( ing-7 \"cream\"@27:32 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Bring to a boil; cook and stir for 2 minutes or until thickened.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Bring to a boil\"@-1:-1 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-7-1 \"cook\"@20:24 / AC\r\n\t\t:duration ( dur-7-0 \"2 minutes\"@38:47 / DUR )\r\n\t\t:until ( cond-7-0 \"until thickened\"@51:66 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-7-2 \"stir\"@29:33 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) In a greased 13-in baking dish, layer half of the noodles, halibut, white sauce and cheese.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"layer\"@35:40 / AC\r\n\t\t:ppt ( ing-8 \"half of the noodles\"@41:60 / FOOD )\r\n\t\t:ppt ( \"halibut\"@62:69 / FOOD )\r\n\t\t:ppt ( \"white sauce\"@71:82 / FOOD )\r\n\t\t:ppt ( ing-9 \"cheese\"@87:93 / FOOD )\r\n\t\t:loc ( tool-8-0 \"a greased 13-in baking dish\"@6:33 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Repeat layers.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Repeat\"@4:10 / AC\r\n\t\t:ppt ( \"layers\"@11:17 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Cover and bake at 350 degrees F for 20 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Cover\"@4:9 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-10-1 \"bake\"@14:18 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:heat ( temp-10-0 \"350 degrees F\"@22:35 / TEMPERATURE )\r\n\t\t:duration ( dur-10-0 \"20 minutes\"@40:50 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Uncover; bake 20 minutes longer or until bubbly.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Uncover\"@4:11 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-11-1 \"bake\"@13:17 / AC\r\n\t\t:duration ( dur-11-0 \"20 minutes\"@18:28 / DUR )\r\n\t\t:until ( cond-11-0 \"until bubbly\"@39:51 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Let stand 15 minutes before serving.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"stand\"@8:13 / AC\r\n\t\t:duration ( dur-12-0 \"15 minutes\"@14:24 / DUR )\r\n\t\t:duration ( cond-12-0 \"before serving\"@25:39 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Sprinkle with parsley if desired.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Sprinkle\"@4:12 / AC\r\n\t\t:ppt ( ing-10 \"parsley\"@18:25 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

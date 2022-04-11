@@ -1,0 +1,496 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi, bot, what do we make today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Good morning, today we will cook Chicken Enchiladas!",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Good. Is it a long recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list_length;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Yes, you will need at least 1 hour before you can serve this dish.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Can you tell me the ingredients I need?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "In total there are 13 ingredients: first you will need 4 boneless chicken breast halves.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\ninform_ingredient(ing-0);"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. I got 4 chicken halves and remove the bones.",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Then you will need vegetable oil, an onion, a can diced tomatoes, a can stewed tomatoes.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-1);\r\ninform_ingredient(ing-2);\r\ninform_ingredient(ing-3);\r\ninform_ingredient(ing-4);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "How many onions?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-4\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"ing-2\", \"tracker_requested_step_num\": 3}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "1 onion will suffice.",
+            "bot": true,
+            "annotations": "repeat(ing-2);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-5\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Yes, you will also need 12 chili pepers, a can of condensed cream chicken soup and a can chicken borth.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-5);\r\ninform_ingredient(ing-6);\r\ninform_ingredient(ing-7);"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. Next?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-7\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"ing-8\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "You also need 1 bunch green onions, some heavy cream and corn tortillas.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-8);\r\ninform_ingredient(ing-9);\r\ninform_ingredient(ing-10);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-10\", \"tracker_completed_step_num\": 11, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "You also need cheddar cheese and 1 can of enchilada sauce. Thats all.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-11);\r\ninform_ingredient(ing-12);"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "A lot of peppers. Ok. I have them all.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-12\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Ok, do you want me to start reading out the instructions?",
+            "bot": true,
+            "annotations": "propose_start_instruction();"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Of course. What should I do first.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; req_instruction;\", \"tracker_completed_step\": \"ing-12\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "Cut the chicken breast into strips of 1 inch.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "All the chicken halves?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_use_all;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Yes, cut all of the 4 chicken breast halves into strips.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. I made them strips. What now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Place strips in a medium bowl with desired marinade, and marinate in the refrigerator for at least 30 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Done. Shall I keep it in the fridge?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "Yes, let it marinade for at least 30 minutes.",
+            "bot": true,
+            "annotations": "affirm();"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. 30 minutes passed. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Preheat your oven to 175 degrees C.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "The oven is preheated. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "In a large skillet heat 1 tablespoon of vegetable oil.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Done. What to do with the oil?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Saute chicken strips and a chopped onion.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "For how long?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Until the chicken is evenly brown.",
+            "bot": true,
+            "annotations": "inform_duration(cond-4-0);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Emm. It smells good now. So next thing is?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Add 1 can of diced tomatoes with green chili peppers.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-5, [ing-3]);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Then keep sauting them or is there more to add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Yes, you have 5 more ingredients to add. Next you should add 1 can of stewed tomatoes.",
+            "bot": true,
+            "annotations": "affirm();\r\nsimplify_continue(inst-5, [ing-4]);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Ohh. I add tomatoes. Can you give me two more?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "Dice 12 small chili peppers and add them.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-5, [ing-5]);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Ok. I like spicy things! What else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "Finally add the chicken soup and the chicken broth.",
+            "bot": true,
+            "annotations": "simplify_continue(inst-5, [ing-6, ing-7]);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Good. So what should I do with the mixture in the skillet?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "Bring it to a boil, reduce the heat, cover it and let it simmer for 20 to 30 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);\r\ninform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "I should also add some water, I think. Ok. I let them simmer for 30 minutes. Can I eat them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "No, with the broth and chicken soup it should be more than enough moisture.",
+            "bot": true,
+            "annotations": "negate();"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "I have my own choice in this. Never mind. The broth mix is totally cooked now. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "Fine, remove the chicken from the skillet and shred it. Be careful, it might be hot!",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "I will let them cool for a while. ok. It is shredded now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-49",
+            "utterance": "Meanwhile let the mixture in the skillet simmer until its reduced to about 2 1/4 cups.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-50",
+            "utterance": "Hard to measure this. I did it. Next is?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 24}"
+        },
+        {
+            "utt_id": "utt-51",
+            "utterance": "Combine 1/4 cup of the reduced mixture with the shredded chicken in a medium sized bowl.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);"
+        },
+        {
+            "utt_id": "utt-52",
+            "utterance": "They are in bowl now. Next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 24, \"tracker_requested_step\": \"inst-11\", \"tracker_requested_step_num\": 25}"
+        },
+        {
+            "utt_id": "utt-53",
+            "utterance": "Chop 1 bunch of green onions and mix it together with the chicken.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-11);"
+        },
+        {
+            "utt_id": "utt-54",
+            "utterance": "Any thing else to add?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-11\", \"tracker_completed_step_num\": 25, \"tracker_requested_step\": \"inst-12\", \"tracker_requested_step_num\": 26}"
+        },
+        {
+            "utt_id": "utt-55",
+            "utterance": "No, pour the remaining skillet mixture into a baking dish.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-12);"
+        },
+        {
+            "utt_id": "utt-56",
+            "utterance": "Alright, many things on the board now. Shall I move the dish to the oven?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; other;\", \"tracker_completed_step\": \"inst-12\", \"tracker_completed_step_num\": 26, \"tracker_requested_step\": \"inst-13\", \"tracker_requested_step_num\": 27}"
+        },
+        {
+            "utt_id": "utt-57",
+            "utterance": "No, take a new skillet and heat 1/2 pint of heavy cream. Don't let it boil!",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-13);"
+        },
+        {
+            "utt_id": "utt-58",
+            "utterance": "I heat the cream. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-13\", \"tracker_completed_step_num\": 27, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-59",
+            "utterance": "Dip the tortillas in the warm cream to soften and coat them.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-14);"
+        },
+        {
+            "utt_id": "utt-60",
+            "utterance": "Coat them completely?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-14\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-14\", \"tracker_requested_step_num\": 28}"
+        },
+        {
+            "utt_id": "utt-61",
+            "utterance": "Sorry, the recipe doesnt specify this.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-62",
+            "utterance": "No problem. We can continue, bot.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-14\", \"tracker_completed_step_num\": 28, \"tracker_requested_step\": \"inst-15\", \"tracker_requested_step_num\": 29}"
+        },
+        {
+            "utt_id": "utt-63",
+            "utterance": "Spoon 1/3 cup of chicken mixture onto each tortilla.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-15);"
+        },
+        {
+            "utt_id": "utt-64",
+            "utterance": "Nice combination. Next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-15\", \"tracker_completed_step_num\": 29, \"tracker_requested_step\": \"inst-16\", \"tracker_requested_step_num\": 30}"
+        },
+        {
+            "utt_id": "utt-65",
+            "utterance": "Top the chicken mixture with 1 1/2 cup of shredded cheese. Then, roll up the tortillas.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-16);"
+        },
+        {
+            "utt_id": "utt-66",
+            "utterance": "What kind of cheese? I don't remember its name.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-16\", \"tracker_completed_step_num\": 30, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-67",
+            "utterance": "Cheddar cheese.",
+            "bot": true,
+            "annotations": "repeat(ing-11);"
+        },
+        {
+            "utt_id": "utt-68",
+            "utterance": "Ok. Thanks! Can I eat the rolls now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_is_recipe_finished;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"ing-11\", \"tracker_requested_step_num\": 12}"
+        },
+        {
+            "utt_id": "utt-69",
+            "utterance": "No, we still have 3 steps to go.",
+            "bot": true,
+            "annotations": "negate();"
+        },
+        {
+            "utt_id": "utt-70",
+            "utterance": "Ok. I will follow you, boss.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"ing-11\", \"tracker_completed_step_num\": 12, \"tracker_requested_step\": \"inst-17\", \"tracker_requested_step_num\": 31}"
+        },
+        {
+            "utt_id": "utt-71",
+            "utterance": "Place the rolled tortillas in the baking dish. Drizzle them with enchilada sauce.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-17);"
+        },
+        {
+            "utt_id": "utt-72",
+            "utterance": "Can you repeat the last part?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-17\", \"tracker_completed_step_num\": 31, \"tracker_requested_step\": \"inst-17\", \"tracker_requested_step_num\": 31}"
+        },
+        {
+            "utt_id": "utt-73",
+            "utterance": "Drizzle the rolled tortillas with enchilada sauce.",
+            "bot": true,
+            "annotations": "repeat(ac-17-1);"
+        },
+        {
+            "utt_id": "utt-74",
+            "utterance": "Thanks! Now I understand it. What is next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; req_instruction;\", \"tracker_completed_step\": \"inst-17\", \"tracker_completed_step_num\": 31, \"tracker_requested_step\": \"inst-18\", \"tracker_requested_step_num\": 32}"
+        },
+        {
+            "utt_id": "utt-75",
+            "utterance": "Cover with the remaining cheese and sprinkle the remaining chopped green onions over the cheese.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-18);"
+        },
+        {
+            "utt_id": "utt-76",
+            "utterance": "Emm. It looks nice. Anything else?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-18\", \"tracker_completed_step_num\": 32, \"tracker_requested_step\": \"inst-19\", \"tracker_requested_step_num\": 33}"
+        },
+        {
+            "utt_id": "utt-77",
+            "utterance": "Now you can bake them uncovered in the oven for 25 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-19);"
+        },
+        {
+            "utt_id": "utt-78",
+            "utterance": "So after 25 minutes, I can eat them?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-19\", \"tracker_completed_step_num\": 33, \"tracker_requested_step\": \"inst-19\", \"tracker_requested_step_num\": 33}"
+        },
+        {
+            "utt_id": "utt-79",
+            "utterance": "Yes, the Chicken Enchiladas are ready to be eaten.",
+            "bot": true,
+            "annotations": "affirm();\r\nend_recipe();"
+        },
+        {
+            "utt_id": "utt-80",
+            "utterance": "Great. Thank you!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-19\", \"tracker_completed_step_num\": 33, \"tracker_requested_step\": \"inst-19\", \"tracker_requested_step_num\": 33}"
+        },
+        {
+            "utt_id": "utt-81",
+            "utterance": "Bye!",
+            "bot": true,
+            "annotations": "goodbye();"
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "id": "007",
+    "title": "Baked Chicken Breasts Supreme",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 1/2 cups Plain yogurt or sour cream",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 1/2 cups Plain yogurt or sour cream\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/4 cup lemon juice",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/4 cup lemon juice\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 teaspoon Worcestershire sauce",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 teaspoon Worcestershire sauce\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 teaspoon celery seed",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 teaspoon celery seed\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 teaspoon Hungarian sweet paprika",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 teaspoon Hungarian sweet paprika\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 garlic clove, minced",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 garlic clove, minced\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/4 teaspoon pepper",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/4 teaspoon pepper\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "8 skinless, boneless chicken breast halves",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"8 skinless, boneless chicken breast halves\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 cups fine dry bread crumbs",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 cups fine dry bread crumbs\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large bowl, combine first eight ingredients.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n   :inform ( ac-0-0 \"combine\"@20:27 / AC\r\n      :ppt ( \"first eight ingredients\"@28:51 / FOOD \r\n\t\t:ref ing-0\r\n\t\t:ref ing-1\r\n\t\t:ref ing-2\r\n\t\t:ref ing-3\r\n\t\t:ref ing-4\r\n\t\t:ref ing-5\r\n\t\t:ref ing-6\r\n\t\t:ref ing-7\r\n\t)\r\n      :loc ( tool-0-0 \"a large bowl\"@6:18 / TOOL )\r\n\t:_result eight-ing-mixture\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Place chicken in mixture and turn to coat.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-8 \"chicken\"@9:16 / FOOD )\r\n\t\t:gol ( eight-ing-mixture \"mixture\"@20:27 / FOOD )\r\n\t\t:_result ( chicken-mixture )\r\n\t)\r\n\t:inform ( ac-1-1 \"turn\"@32:36 / AC\r\n\t\t:ppt ( chicken-mixture / FOOD )\r\n\t\t:prp ( purp-1-0 \"to coat\"@37:44 / PURPOSE_CLAUSE )\r\n\t\t:_result ( coated-chicken )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cover and marinate overnight in the refrigerator.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( coated-chicken / FOOD )\r\n\t\t:_result ( covered-chicken )\r\n\t)\r\n\t:inform ( ac-2-1 \"marinate\"@13:21 / AC\r\n\t\t:ppt ( covered-chicken / FOOD )\r\n\t\t:duration ( dur-2-0 \"overnight\"@22:31 / DUR )\r\n\t\t:loc ( too-2-0 \"the refrigerator\"@35:51 / TOOL )\r\n\t\t:_result ( marinated-chicken )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Remove chicken from marinade; coat each piece with crumbs.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n   :inform ( ac-3-0 \"Remove\"@3:9 / AC\r\n      :ppt ( marinated-chicken \"chicken\"@10:17 / FOOD )\r\n      :source ( \"marinade\"@23:31 / FOOD )\r\n\t:_result chicken-without-marinade\r\n   )\r\n   :inform ( ac-3-1 \"coat\"@33:37 / AC\r\n      :gol ( chicken-without-marinade \"each piece\"@38:48 / FOOD )\r\n      :ppt ( ing-9 \"crumbs\"@54:60 / FOOD )\r\n\t:_result chicken-with-crumbs\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Arrange on a shallow baking pan.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n   :inform ( ac-4-0 \"Arrange\"@3:10 / AC\r\n      :loc ( tool-4-0 \"a shallow baking pan\"@14:34 / TOOL )\r\n      :ppt ( chicken-with-crumbs / FOOD )\r\n\t:_result chicken-on-pan\r\n   )\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Bake, uncovered, at 350 degrees for 45 minutes or until juices run clear.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Bake\"@3:7 / AC\r\n\t\t:heat ( temp-5-0 \"350 degrees\"@23:34 / TEMPERATURE )\r\n\t\t:duration ( dur-5-0 \"45 minutes\"@39:49 / DUR )\r\n\t\t:until ( cond-5-0 \"juices run clear\"@-1:-1 / CONDITION_CLAUSE )\r\n\t\t:ppt ( chicken-on-pan / FOOD )\r\n\t\t:_result ( FINAL_PRODUCT )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,180 @@
+{
+    "id": "162",
+    "title": "Cindis Egg Rolls",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 pound ground pork",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 pound ground pork\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "4 cups shredded cabbage",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"4 cups shredded cabbage\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 large carrot, shredded",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 large carrot, shredded\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 green bell pepper, cut into thin strips",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 green bell pepper, cut into thin strips\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 medium onion, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 medium onion, chopped\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "3 cloves garlic, minced",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"3 cloves garlic, minced\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "3 teaspoons fresh ginger root, grated",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"3 teaspoons fresh ginger root, grated\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 tablespoon cornstarch",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 tablespoon cornstarch\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 tablespoons soy sauce",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 tablespoons soy sauce\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 1/2 tablespoons molasses",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 1/2 tablespoons molasses\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "2 tablespoons vegetable oil",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"2 tablespoons vegetable oil\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 quart oil for frying",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 quart oil for frying\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1 1/2 (14 ounce) packages egg roll wrappers",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1 1/2 (14 ounce) packages egg roll wrappers\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1 1/2 cups sweet and sour sauce",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1 1/2 cups sweet and sour sauce\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Cook pork in a large wok over medium-high heat.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Cook\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"pork\"@8:12 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a large wok\"@16:27 / TOOL )\r\n\t\t:heat ( temp-0-0 \"medium-high heat\"@33:49 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Drain and set aside.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Drain\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"set aside\"@13:22 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) In a large bowl, mix the cabbage, carrot, green bell pepper, onion, garlic and ginger.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"mix\"@20:23 / AC\r\n\t\t:ppt ( ing-1 \"the cabbage\"@24:35 / FOOD )\r\n\t\t:loc ( tool-2-0 \"a large bowl\"@6:18 / TOOL )\r\n\t\t:ppt ( ing-2 \"carrot\"@37:43 / FOOD )\r\n\t\t:ppt ( ing-3 \"green bell pepper\"@45:62 / FOOD )\r\n\t\t:ppt ( ing-4 \"onion\"@64:69 / FOOD )\r\n\t\t:ppt ( ing-5 \"garlic\"@71:77 / FOOD )\r\n\t\t:ppt ( ing-6 \"ginger\"@82:88 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) In a small bowl, mix the cornstarch, soy sauce, and molasses until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"mix\"@20:23 / AC\r\n\t\t:ppt ( ing-7 \"the cornstarch\"@24:38 / FOOD )\r\n\t\t:ppt ( ing-8 \"soy sauce\"@40:49 / FOOD )\r\n\t\t:ppt ( ing-9 \"molasses\"@55:63 / FOOD )\r\n\t\t:until ( cond-3-0 \"until smooth\"@64:76 / CONDITION_CLAUSE )\r\n\t\t:loc ( tool-3-0 \"a small bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Heat 2 tablespoons oil in wok.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-10 \"2 tablespoons oil\"@8:25 / FOOD )\r\n\t\t:loc ( tool-4-0 \"wok\"@29:32 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Stir in cabbage mixture in batches, cooking each batch 3 to 4 minutes, just until tender.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( \"cabbage mixture\"@11:26 / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"cooking\"@39:46 / AC\r\n\t\t:ppt ( \"each batch\"@47:57 / FOOD )\r\n\t\t:duration ( dur-5-0 \"3 to 4 minutes\"@58:72 / DUR )\r\n\t\t:until ( cond-5-0 \"until tender\"@79:91 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Return vegetables to bowl, and mix in pork.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Return\"@3:9 / AC\r\n\t\t:ppt ( \"vegetables\"@10:20 / FOOD )\r\n\t\t:gol ( tool-6-0 \"bowl\"@24:28 / TOOL )\r\n\t)\r\n\t:inform ( ac-6-1 \"mix in\"@34:40 / AC\r\n\t\t:ppt ( \"pork\"@41:45 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Stir in the cornstarch mixture.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( \"the cornstarch mixture\"@11:33 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Heat 1 quart oil in a deep fryer to 365 degrees F (185 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( ing-11 \"1 quart oil\"@8:19 / FOOD )\r\n\t\t:loc ( tool-8-0 \"a deep fryer\"@23:35 / TOOL )\r\n\t\t:heat ( temp-8-0 \"365 degrees F\"@39:52 / TEMPERATURE )\r\n\t\t:heat ( temp-8-1 \"185 degrees C\"@54:67 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Place about 1 tablespoon filling on each egg roll wrapper.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Place\"@4:9 / AC\r\n\t\t:ppt ( \"1 tablespoon filling\"@16:36 / FOOD )\r\n\t\t:gol ( ing-12 \"each egg roll wrapper\"@40:61 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Fold one corner of wrapper over filling.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"Fold\"@4:8 / AC\r\n\t\t:ppt ( \"one corner of wrapper\"@9:30 / FOOD )\r\n\t\t:gol ( \"filling\"@36:43 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Fold wrapper sides over filling.",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Fold\"@4:8 / AC\r\n\t\t:ppt ( \"wrapper sides\"@9:22 / FOOD )\r\n\t\t:gol ( \"filling\"@28:35 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Roll wrappers to form egg rolls.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Roll\"@4:8 / AC\r\n\t\t:ppt ( \"wrappers\"@9:17 / FOOD )\r\n\t\t:prp ( purp-12-0 \"to form egg rolls\"@18:35 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-13",
+            "text": "13) Fry egg rolls in batches in the hot oil until golden brown.",
+            "type": "instruction",
+            "eamr": "( inst-13 / R\r\n\t:inform ( ac-13-0 \"Fry\"@4:7 / AC\r\n\t\t:ppt ( \"egg rolls\"@8:17 / FOOD )\r\n\t\t:loc ( \"the hot oil\"@32:43 / FOOD )\r\n\t\t:until ( cond-13-0 \"until golden brown\"@44:62 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-14",
+            "text": "14) Drain on paper towels and serve with sweet and sour sauce.",
+            "type": "instruction",
+            "eamr": "( inst-14 / R\r\n\t:inform ( ac-14-0 \"Drain\"@4:9 / AC\r\n\t\t:loc ( tool-14-0 \"paper towels\"@13:25 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-14-1 \"serve\"@30:35 / AC\r\n\t\t:ppt ( ing-13 \"sweet and sour sauce\"@41:61 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

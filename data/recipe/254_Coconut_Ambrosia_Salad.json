@@ -1,0 +1,66 @@
+{
+    "id": "254",
+    "title": "Coconut Ambrosia Salad",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 (11 ounce) can mandarin oranges, drained",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 (11 ounce) can mandarin oranges, drained\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (8 ounce) can crushed pineapple, drained",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (8 ounce) can crushed pineapple, drained\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 1/2 cups frozen whipped topping, thawed",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 1/2 cups frozen whipped topping, thawed\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 cups shredded coconut",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 cups shredded coconut\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 cups miniature marshmallows",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 cups miniature marshmallows\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 cup milk",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 cup milk\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 cup maraschino cherries",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 cup maraschino cherries\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large bowl, combine the oranges, pineapple, whipped topping, coconut, marshmallows and milk.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@20:27 / AC\r\n\t\t:loc ( tool-0-0 \"a large bowl\"@6:18 / TOOL )\r\n\t\t:ppt ( ing-0 \"the oranges\"@28:39 / FOOD )\r\n\t\t:ppt ( ing-1 \"pineapple\"@41:50 / FOOD )\r\n\t\t:ppt ( ing-2 \"whipped topping\"@52:67 / FOOD )\r\n\t\t:ppt ( ing-3 \"coconut\"@69:76 / FOOD )\r\n\t\t:ppt ( ing-4 \"marshmallows\"@78:90 / FOOD )\r\n\t\t:ppt ( ing-5 \"milk\"@95:99 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Mix together well and chill 1 hour before serving.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Mix\"@3:6 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"chill\"@25:30 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-1-0 \"1 hour\"@31:37 / DUR )\r\n\t\t:duration ( cond-1-0 \"before serving\"@38:52 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Garnish with cherries.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Garnish\"@3:10 / AC\r\n\t\t:ppt ( \"cherries\"@16:24 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

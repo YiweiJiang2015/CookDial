@@ -1,0 +1,114 @@
+{
+    "id": "129",
+    "title": "Best Ever Tuna Salad",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 eggs\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (12 ounce) can white tuna",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (12 ounce) can white tuna\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 (6 ounce) can crabmeat, shredded",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 (6 ounce) can crabmeat, shredded\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 cup mayonnaise",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 cup mayonnaise\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 teaspoon sour cream",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 teaspoon sour cream\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 teaspoon yellow mustard",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 teaspoon yellow mustard\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/2 teaspoon dried dill weed",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/2 teaspoon dried dill weed\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/8 teaspoon lemon pepper",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/8 teaspoon lemon pepper\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "2 tablespoons dill pickle relish",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"2 tablespoons dill pickle relish\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "2 tablespoons sweet pickle relish",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"2 tablespoons sweet pickle relish\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "3/4 cup finely chopped onion",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"3/4 cup finely chopped onion\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Place eggs in a saucepan and cover with cold water.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-0 \"eggs\"@9:13 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a saucepan\"@17:27 / TOOL )\r\n\t)\r\n\t:inform ( ac-0-1 \"cover\"@32:37 / AC\r\n\t\t:ppt ( \"cold water\"@43:53 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Bring water to a boil and immediately remove from heat.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"boil\"@20:24 / AC\r\n\t\t:ppt ( \"water\"@9:14 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"remove\"@41:47 / AC\r\n\t\t:source ( \"heat\"@53:57 / OTHER )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Cover and let eggs stand in hot water for 10 to 12 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Cover\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-2-1 \"stand\"@22:27 / AC\r\n\t\t:pag ( \"eggs\"@17:21 / FOOD )\r\n\t\t:loc ( \"hot water\"@31:40 / FOOD )\r\n\t\t:duration ( dur-2-0 \"10 to 12 minutes\"@45:61 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Remove from hot water, cool, peel and chop finely.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Remove\"@3:9 / AC\r\n\t\t:source ( \"hot water\"@15:24 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"cool\"@26:30 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-2 \"peel\"@32:36 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-3 \"chop\"@41:45 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) In a mixing bowl, combine tuna, crabmeat, mayonnaise, sour cream and mustard.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"combine\"@21:28 / AC\r\n\t\t:ppt ( ing-1 \"tuna\"@29:33 / FOOD )\r\n\t\t:ppt ( ing-2 \"crabmeat\"@35:43 / FOOD )\r\n\t\t:ppt ( ing-3 \"mayonnaise\"@45:55 / FOOD )\r\n\t\t:ppt ( ing-4 \"sour cream\"@57:67 / FOOD )\r\n\t\t:ppt ( ing-5 \"mustard\"@72:79 / FOOD )\r\n\t\t:loc ( tool-4-0 \"a mixing bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Stir in chopped egg, dill weed, lemon pepper, dill and sweet relish and chopped onion.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( \"chopped egg\"@11:22 / FOOD )\r\n\t\t:ppt ( ing-6 \"dill weed\"@24:33 / FOOD )\r\n\t\t:ppt ( ing-7 \"lemon pepper\"@35:47 / FOOD )\r\n\t\t:ppt ( \"dill and sweet relish\"@49:70 / FOOD \r\n\t\t\t:ref ing-8\r\n\t\t\t:ref ing-9)\r\n\t\t:ppt ( ing-10 \"chopped onion\"@75:88 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Mix thoroughly.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Mix\"@3:6 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

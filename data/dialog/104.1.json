@@ -1,0 +1,238 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hi bot, what are we gonna cook today?",
+            "bot": false,
+            "annotations": "{\"section\": \"title\", \"intent\": \"greeting; req_title;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"title\", \"tracker_requested_step_num\": 0}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "Hi today we will make bacon wrapped smokies. Are you ready to start?",
+            "bot": true,
+            "annotations": "greeting();\r\ninform_title(title);\r\npropose_start_recipe();"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Yes, I am ready I love bacon!! Could I ask you to tell me the ingredients first?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"affirm; req_ingredient_list;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Then you will enjoy this recipe. You will need 3 ingredients. The first one is 1 pound sliced bacon cut into thirds.",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\ninform_ingredient(ing-0);"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Good, could I ask how many grams is 1 pound?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-0\", \"tracker_requested_step_num\": 1}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Sorry I cannot answer that question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "Ok. No problem. Could you tell me the last two ingredients please?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_ingredient;\", \"tracker_completed_step\": \"ing-0\", \"tracker_completed_step_num\": 1, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "The other two ingredients are 1 package beef cocktail wieners and 3/4 cup brown sugar.",
+            "bot": true,
+            "annotations": "inform_ingredient(ing-1);\r\ninform_ingredient(ing-2);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "Ok. Can I ask how big should the package of wieners be?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"ing-2\", \"tracker_completed_step_num\": 3, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Yes, the package should be 14 ounce.",
+            "bot": true,
+            "annotations": "inform_amount(ing-1);"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Ok. Good. And can I use stevia instead of brown sugar?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_substitute;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Sorry I cannot answer that question. You should take brown sugar. You may add more to taste if you desire.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. Good. I'll get it. Could I ask you also which tools I need for the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"req_tool;\", \"tracker_completed_step\": \"ing-1\", \"tracker_completed_step_num\": 2, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "You will need a large baking sheet, oven, refrigerator and slow cooker.",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "Ok. Good. I don't have a slow cooker. Is there something else I can use instead?",
+            "bot": false,
+            "annotations": "{\"section\": \"ing\", \"intent\": \"other;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"ing-1\", \"tracker_requested_step_num\": 2}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Sorry I cannot answer that question. You will need the slow cooker only in the end on low heat to serve.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "Ok. No problem. I'll go and buy it. Ok. I bought the slow cooker. How should I start to prepare the recipe?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"title\", \"tracker_completed_step_num\": 0, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 4}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "First preheat the oven to 165 degrees Celsius and refrigerate 2/3 of the bacon until needed.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. Should I refrigerate all the bacon strips?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 4, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "No, just 2/3 of the bacon strips.",
+            "bot": true,
+            "annotations": "negate();\r\nrepeat(inst-1);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "Ok. Cool the oven is preheated and the bacon is in the fridge. How long should it stay in the fridge?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 5}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "Sorry I cannot answer that question. You should leave them until needed.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "Ok. Good. What next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 5, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 6}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Now you should wrap each cocktail wiener with a piece of bacon and secure with a toothpick.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-2);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Ok. I did it! Is that it? Can I eat it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 6, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "No we should bake them still. Place them on a large baking sheet and sprinkle brown sugar on top of all the bacon wrapped wieners.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-3);\r\ninform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Ok. Done! Should I cook them in the oven?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 8, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "You should bake them for 40 minutes in the preheated oven.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Ok. Good. They stayed in the oven for 40 minutes. How do I see that they are ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_duration;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 9}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "They will be ready when the sugar became bubbly.",
+            "bot": true,
+            "annotations": "inform_duration(cond-5-0);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Ok. They look good now. Is that it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "Yes. Now to serve you should place the wieners in the slow cooker you just bought and keep on the low heat.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ah right, cool! I did it. For how long should it stay?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "You should put them on low heat just for serving.",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "Ok, cool. How do I see that they are ready?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_duration;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "They should be ready now and placed in the slow cooker just to keep them warm.",
+            "bot": true,
+            "annotations": "other();"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "Ok. Good. Can I eat them now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_is_recipe_finished;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Yes, enjoy your bacon wrapped smokies.",
+            "bot": true,
+            "annotations": "affirm();\r\nenjoy();"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Great!! Smells delicious.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 10, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 10}"
+        }
+    ]
+}

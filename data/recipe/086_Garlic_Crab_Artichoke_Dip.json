@@ -1,0 +1,66 @@
+{
+    "id": "086",
+    "title": "Garlic Crab Artichoke Dip",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup mayonnaise",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup mayonnaise\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "8 ounces sour cream",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"8 ounces sour cream\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1 (1 ounce) package garlic and mushroom soup mix",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1 (1 ounce) package garlic and mushroom soup mix\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 (14 ounce) can artichoke hearts, drained and chopped",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 (14 ounce) can artichoke hearts, drained and chopped\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 cup shredded Swiss cheese",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 cup shredded Swiss cheese\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 (6 ounce) can crab meat, drained",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 (6 ounce) can crab meat, drained\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a 1-1/2 quart casserole dish, combine mayonnaise, sour cream, soup mix, artichoke hearts, cheese and crab meat.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"combine\"@36:43 / AC\r\n\t\t:ppt ( ing-0 \"mayonnaise\"@44:54 / FOOD )\r\n\t\t:ppt ( ing-1 \"sour cream\"@56:66 / FOOD )\r\n\t\t:ppt ( ing-2 \"soup mix\"@68:76 / FOOD )\r\n\t\t:ppt ( ing-3 \"artichoke hearts\"@78:94 / FOOD )\r\n\t\t:ppt ( ing-4 \"cheese\"@96:102 / FOOD )\r\n\t\t:ppt ( ing-5 \"crab meat\"@107:116 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a 1-1/2 quart casserole dish\"@6:34 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Bake uncovered for 30 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-2-0 \"30 minutes\"@22:32 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Serve immediately.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

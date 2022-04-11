@@ -1,0 +1,92 @@
+{
+    "name": "user_task_exp",
+    "n_gpu": 1,
+    "vocabularies": {
+        "intent": {
+            "suffix": "json",
+            "add_unk": false
+        }
+    },
+    "model": {
+        "type": "ModelUserTask",
+        "encoder_dialog": {
+            "type": "TransModel",
+            "bert_name": "google/bigbird-roberta-base",
+            "is_split_into_words": true,
+            "fine_tune": true,
+            "padding": true,
+            "model_path": "na",
+            "use_finetuned_model": false
+        },
+        "span_embedder_step": {
+            "type": "SpanEmbedding",
+            "use_self_attention": false,
+            "use_dummy_span": false,
+            "hidden_dim": 768,
+            "method": "end_point"
+        },
+        "args": {
+            "dropout": 0.5,
+            "loss_alpha": 0.2,
+            "loss_beta": 0.2,
+            "loss_gamma": 0.2
+        }
+    },
+    "dataloader": {
+        "type": "AutoSplitDataLoader",
+        "args": {
+            "merged_file": "../data/processed/dialog/cookdial_dialog_merged.json",
+            "ratio": [0.8, 0.1, 0.1],
+            "dataset_name": "DatasetUserTask",
+            "batch_size": 8,
+            "train_shuffle": true,
+            "valid_shuffle": false,
+            "num_workers": 0,
+            "collate_fn": "collate_user_task",
+            "history_prepend": true,
+            "history_window": 2
+        }
+    },
+    "optimizer": {
+        "type": "AdamW",
+        "args": {
+            "lr": 1e-5,
+            "weight_decay": 0
+        }
+    },
+    "loss":{
+        "intent": "bce_logits_loss",
+        "tracker_requested_step": "cross_entropy",
+        "tracker_completed_step": "cross_entropy"
+    },
+    "metrics":{
+        "intent": "F1MultiLabelMeasure",
+        "tracker_requested_step": "Accuracy",
+        "tracker_completed_step": "Accuracy"
+    },
+    "lr_scheduler": {
+        "type": "get_cosine_schedule_with_warmup",
+        "args": {
+            "num_warmup_steps": 1000,
+            "num_training_steps": 10000
+        }
+    },
+    "trainer": {
+        "epochs": 50,
+        "save_dir": "save/",
+        "save_period": 1e6,
+        "save_start": 1000,
+        "verbosity": 2,
+        "monitor": "max val/intent/fscore",
+        "early_stop": 10000,
+        "tensorboard": true,
+        "use_bert": true,
+        "log_histogram": false,
+        "use_scheduler": false,
+        "grad_clip": false,
+        "max_grad_norm": 10.0
+    },
+    "main": {
+        "seed": 12345
+    }
+}

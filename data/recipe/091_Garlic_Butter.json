@@ -1,0 +1,60 @@
+{
+    "id": "091",
+    "title": "Garlic Butter",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup butter, softened",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup butter, softened\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 tablespoon minced garlic",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 tablespoon minced garlic\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/4 cup grated Parmesan cheese",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/4 cup grated Parmesan cheese\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 tablespoon garlic salt",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 tablespoon garlic salt\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 teaspoon Italian seasoning",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 teaspoon Italian seasoning\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/2 teaspoon ground black pepper",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/2 teaspoon ground black pepper\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/4 teaspoon ground paprika",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/4 teaspoon ground paprika\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a small bowl, combine softened butter, minced garlic and parmesan cheese.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@20:27 / AC\r\n\t\t:ppt ( ing-0 \"softened butter\"@28:43 / FOOD )\r\n\t\t:ppt ( ing-1 \"minced garlic\"@45:58 / FOOD )\r\n\t\t:ppt ( ing-2 \"parmesan cheese\"@63:78 / FOOD )\r\n\t\t:loc ( tool-0-0 \"a small bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Season with garlic salt, Italian seasoning, pepper and paprika.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Season\"@3:9 / AC\r\n\t\t:gol ( NULL / FOOD )\r\n\t\t:ppt ( ing-3 \"garlic salt\"@15:26 / FOOD )\r\n\t\t:ppt ( ing-4 \"Italian seasoning\"@28:45 / FOOD )\r\n\t\t:ppt ( ing-5 \"pepper\"@47:53 / FOOD )\r\n\t\t:ppt ( ing-6 \"paprika\"@58:65 / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "id": "213",
+    "title": "Curried Winter Squash",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3 cups cooked, mashed winter squash",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3 cups cooked, mashed winter squash\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 1/2 tablespoons curry powder",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 1/2 tablespoons curry powder\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 tablespoons butter or trans fat-free margarine",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 tablespoons butter or trans fat-free margarine\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 tablespoons maple syrup",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 tablespoons maple syrup\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1/2 teaspoon Salt, to taste",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1/2 teaspoon Salt, to taste\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/4 teaspoon cayenne pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/4 teaspoon cayenne pepper to taste\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "3 tablespoons sweetened coconut flakes, toasted (optional)",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"3 tablespoons sweetened coconut flakes, toasted (optional)\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a medium bowl, combine first six ingredients.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"combine\"@21:28 / AC\r\n\t\t:ppt ( \"first six ingredients\"@29:50 / FOOD\r\n\t\t\t:ref ( ing-0 )\r\n\t\t\t:ref ( ing-1 )\r\n\t\t\t:ref ( ing-2 )\r\n\t\t\t:ref ( ing-3 )\r\n\t\t\t:ref ( ing-4 )\r\n\t\t\t:ref ( ing-5 )\r\n\t\t)\r\n\t\t:loc ( tool-0-0 \"a medium bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Microwave on high until heated through, about 5 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Microwave\"@3:12 / AC\r\n\t\t:heat ( temp-1-0 \"high\"@16:20 / TEMPERATURE )\r\n\t\t:until ( cond-1-0 \"until heated through\"@21:41 / CONDITION_CLAUSE )\r\n\t\t:duration ( dur-1-0 \"5 minutes\"@49:58 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Sprinkle on coconut, if desired.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Sprinkle\"@3:11 / AC\r\n\t\t:ppt ( ing-6 \"coconut\"@15:22 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Serve.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Serve\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

@@ -1,0 +1,132 @@
+{
+    "id": "211",
+    "title": "apple butter spice cake",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 cup packed brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 cup packed brown sugar\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 teaspoon ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 teaspoon ground cinnamon\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 teaspoon ground nutmeg",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 teaspoon ground nutmeg\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 cup chopped pecans",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 cup chopped pecans\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1 teaspoon baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1 teaspoon baking powder\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 teaspoon baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 teaspoon baking soda\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/2 cup butter, softened",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/2 cup butter, softened\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 cup white sugar\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "3/4 cup apple butter",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"3/4 cup apple butter\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-12",
+            "text": "1/2 cup whole bran cereal or wheat germ",
+            "type": "ingredient",
+            "eamr": "( ing-12 \"1/2 cup whole bran cereal or wheat germ\" )"
+        },
+        {
+            "id": "ing-13",
+            "text": "1 cup sour cream",
+            "type": "ingredient",
+            "eamr": "( ing-13 \"1 cup sour cream\" )"
+        },
+        {
+            "id": "ing-14",
+            "text": "2 eggs, beaten",
+            "type": "ingredient",
+            "eamr": "( ing-14 \"2 eggs, beaten\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 350 degrees F (175 degrees C). Spray or grease one 9x13 inch pan.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"350 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"175 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-0-1 \"Spray\"@50:55 / AC\r\n\t\t:ppt ( tool-0-1 \"one 9x13 inch pan\"@66:83 / TOOL )\r\n\t)\r\n\t:inform ( ac-0-2 \"grease\"@59:65 / AC\r\n\t\t:ppt ( tool-0-2 \"one 9x13 inch pan\"@66:83 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Prepare the topping by mixing together the brown sugar, cinnamon, nutmeg and chopped pecans.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"mixing\"@26:32 / AC\r\n\t\t:subtask ( purp-1-0 \"Prepare the topping\"@3:22 / PURPOSE_CLAUSE )\r\n\t\t:ppt ( ing-0 \"the brown sugar\"@42:57 / FOOD )\r\n\t\t:ppt ( ing-1 \"cinnamon\"@59:67 / FOOD )\r\n\t\t:ppt ( ing-2 \"nutmeg\"@69:75 / FOOD )\r\n\t\t:ppt ( ing-3 \"chopped pecans\"@80:94 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Sift together the flour, baking powder, baking soda and salt.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Sift\"@3:7 / AC\r\n\t\t:ppt ( ing-4 \"the flour\"@17:26 / FOOD )\r\n\t\t:ppt ( ing-5 \"baking powder\"@28:41 / FOOD )\r\n\t\t:ppt ( ing-6 \"baking soda\"@43:54 / FOOD )\r\n\t\t:ppt ( ing-7 \"salt\"@59:63 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Blend together butter and sugar; add eggs and beat well; Add apple butter, vanilla, wheat germ or bran cereal; Add sifted dry ingredients alternately with sour cream; mix well after each addition.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Blend\"@3:8 / AC\r\n\t\t:ppt ( ing-8 \"butter\"@18:24 / FOOD )\r\n\t\t:ppt ( ing-9 \"sugar\"@29:34 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"add\"@36:39 / AC\r\n\t\t:ppt ( ing-14 \"eggs\"@40:44 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-2 \"beat\"@49:53 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-3 \"Add\"@-1:-1 / AC\r\n\t\t:ppt ( \"apple butter\"@-1:-1 / FOOD )\r\n\t\t:ppt ( \"vanilla\"@-1:-1 / FOOD )\r\n\t\t:ppt ( \"wheat germ or bran cereal\"@-1:-1 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-4 \"Add\"@114:117 / AC\r\n\t\t:ppt ( \"sifted dry ingredients\"@118:140 / FOOD )\r\n\t\t:ppt ( ing-13 \"sour cream\"@158:168 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-5 \"mix\"@170:173 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:todo ( \"after each addition\"@-1:-1 / OTHER )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Bake for 40 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-4-0 \"40 minutes\"@12:22 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Pour 1/2 batter into pan, sprinkle 1/2 the topping over top; Pour remaining batter and top with remaining topping.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( \"1/2 batter\"@8:18 / FOOD )\r\n\t\t:gol ( tool-5-0 \"pan\"@24:27 / TOOL )\r\n\t)\r\n\t:inform ( ac-5-1 \"sprinkle\"@29:37 / AC\r\n\t\t:gol ( \"top\"@59:62 / OTHER )\r\n\t\t:ppt ( \"1/2 the topping\"@38:53 / FOOD )\r\n\t)\r\n\t:inform ( ac-5-2 \"Pour\"@64:68 / AC\r\n\t\t:ppt ( \"remaining batter\"@69:85 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-5-3 \"top\"@90:93 / AC\r\n\t\t:ppt ( \"remaining topping\"@99:116 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}

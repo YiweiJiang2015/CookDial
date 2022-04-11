@@ -1,0 +1,132 @@
+{
+    "id": "258",
+    "title": "Banana Bran Muffins",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1/2 cup butter, softened",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1/2 cup butter, softened\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/2 cup brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/2 cup brown sugar\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "3 bananas, mashed",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"3 bananas, mashed\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/4 cup milk",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/4 cup milk\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 teaspoon vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 teaspoon vanilla extract\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 eggs",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 eggs\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1 1/2 cups all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1 1/2 cups all-purpose flour\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 cup wheat bran",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 cup wheat bran\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1 teaspoon baking powder",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1 teaspoon baking powder\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1 teaspoon baking soda",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1 teaspoon baking soda\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "1/4 teaspoon salt",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"1/4 teaspoon salt\" )"
+        },
+        {
+            "id": "ing-11",
+            "text": "1/2 cup chopped walnuts",
+            "type": "ingredient",
+            "eamr": "( ing-11 \"1/2 cup chopped walnuts\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 375 degrees F (190 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"375 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"190 degrees C\"@34:47 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Grease a muffin pan or line with paper muffin liners.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Grease\"@3:9 / AC\r\n\t\t:ppt ( tool-1-0 \"a muffin pan\"@10:22 / TOOL )\r\n\t)\r\n\t:inform ( ac-1-1 \"line\"@26:30 / AC\r\n\t\t:instrument ( tool-1-1 \"paper muffin liners\"@36:55 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) In a large mixing bowl, cream butter and brown sugar together until fluffy.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"cream\"@27:32 / AC\r\n\t\t:ppt ( ing-0 \"butter\"@33:39 / FOOD )\r\n\t\t:loc ( tool-2-0 \"a large mixing bowl\"@6:25 / TOOL )\r\n\t\t:ppt ( ing-1 \"brown sugar\"@44:55 / FOOD )\r\n\t\t:until ( cond-2-0 \"until fluffy\"@65:77 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Add bananas, milk, vanilla and eggs; mix well.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-2 \"bananas\"@7:14 / FOOD )\r\n\t\t:ppt ( ing-3 \"milk\"@16:20 / FOOD )\r\n\t\t:ppt ( ing-4 \"vanilla\"@22:29 / FOOD )\r\n\t\t:ppt ( ing-5 \"eggs\"@34:38 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"mix\"@40:43 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Stir in flour, bran, baking powder, soda and salt; blend just until moistened.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:ppt ( ing-6 \"flour\"@11:16 / FOOD )\r\n\t\t:ppt ( ing-7 \"bran\"@18:22 / FOOD )\r\n\t\t:ppt ( ing-8 \"baking powder\"@24:37 / FOOD )\r\n\t\t:ppt ( ing-9 \"soda\"@39:43 / FOOD )\r\n\t\t:ppt ( ing-10 \"salt\"@48:52 / FOOD )\r\n\t)\r\n\t:inform ( ac-4-1 \"blend\"@54:59 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-4-0 \"until moistened\"@65:80 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Stir in walnuts.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-11 \"walnuts\"@11:18 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Pour batter into prepared muffin cups.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( \"batter\"@8:14 / FOOD )\r\n\t\t:gol ( tool-6-0 \"prepared muffin cups\"@20:40 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Bake at 375 degrees F (190 degrees C) for 20 to 25 minutes or until a toothpick inserted into the center of a muffin comes out clean.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:heat ( temp-7-0 \"375 degrees F\"@11:24 / TEMPERATURE )\r\n\t\t:heat ( temp-7-1 \"190 degrees C\"@26:39 / TEMPERATURE )\r\n\t\t:duration ( dur-7-0 \"20 to 25 minutes\"@45:61 / DUR )\r\n\t\t:until ( cond-7-0 \"until a toothpick inserted into the center of a muffin comes out clean\"@65:135 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Cool in the cups for 5 minutes, then remove muffins and place on a wire rack to cool completely.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Cool\"@3:7 / AC\r\n\t\t:duration ( dur-8-0 \"5 minutes\"@24:33 / DUR )\r\n\t\t:loc ( tool-8-0 \"the cups\"@11:19 / TOOL )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-8-1 \"remove\"@40:46 / AC\r\n\t\t:ppt ( \"muffins\"@47:54 / FOOD )\r\n\t)\r\n\t:inform ( ac-8-2 \"place\"@59:64 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-8-1 \"a wire rack\"@68:79 / TOOL )\r\n\t\t:prp ( purp-8-0 \"to cool completely\"@80:98 / PURPOSE_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

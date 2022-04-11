@@ -1,0 +1,108 @@
+{
+    "id": "057",
+    "title": "Apple Cranberry Crisp 2",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "2 pounds Granny Smith apples - peeled, cored and thinly sliced",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"2 pounds Granny Smith apples - peeled, cored and thinly sliced\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "3/4 cup cranberries",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"3/4 cup cranberries\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/4 cup white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/4 cup white sugar\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "3 teaspoons ground cinnamon",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"3 teaspoons ground cinnamon\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "1 teaspoon ground nutmeg",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"1 teaspoon ground nutmeg\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "1/3 cup quick-cooking oats",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"1/3 cup quick-cooking oats\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "1/3 cup all-purpose flour",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"1/3 cup all-purpose flour\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/2 cup packed light brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/2 cup packed light brown sugar\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/4 cup butter, cut into pieces",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/4 cup butter, cut into pieces\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/2 cup chopped pecans",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/2 cup chopped pecans\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Preheat oven to 375 degrees F (190 degrees C.) Butter an 8 inch square baking dish.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Preheat\"@3:10 / AC\r\n\t\t:ppt ( tool-0-0 \"oven\"@11:15 / TOOL )\r\n\t\t:heat ( temp-0-0 \"375 degrees F\"@19:32 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"190 degrees C.\"@34:48 / TEMPERATURE )\r\n\t)\r\n\t:inform ( ac-0-1 \"Butter\"@50:56 / AC\r\n\t\t:ppt ( tool-0-1 \"an 8 inch square baking dish\"@57:85 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) In a large bowl, mix together apples, cranberries, white sugar, cinnamon and nutmeg.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"mix\"@20:23 / AC\r\n\t\t:ppt ( ing-0 \"apples\"@33:39 / FOOD )\r\n\t\t:ppt ( ing-1 \"cranberries\"@41:52 / FOOD )\r\n\t\t:ppt ( ing-2 \"white sugar\"@54:65 / FOOD )\r\n\t\t:ppt ( ing-3 \"cinnamon\"@67:75 / FOOD )\r\n\t\t:ppt ( ing-4 \"nutmeg\"@80:86 / FOOD )\r\n\t\t:loc ( tool-1-0 \"a large bowl\"@6:18 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place evenly into baking dish.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( tool-2-0 \"baking dish\"@21:32 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) In the same bowl, combine oats, flour and brown sugar.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"combine\"@21:28 / AC\r\n\t\t:ppt ( ing-5 \"oats\"@29:33 / FOOD )\r\n\t\t:ppt ( ing-6 \"flour\"@35:40 / FOOD )\r\n\t\t:ppt ( ing-7 \"brown sugar\"@45:56 / FOOD )\r\n\t\t:loc ( tool-3-0 \"the same bowl\"@6:19 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) With a fork, mix in butter until crumbly.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"mix in\"@16:22 / AC\r\n\t\t:ppt ( ing-8 \"butter\"@23:29 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:instrument ( tool-4-0 \"a fork\"@8:14 / TOOL )\r\n\t\t:until ( cond-4-0 \"until crumbly\"@30:43 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Stir in pecans. Sprinkle over apples.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Sprinkle\"@19:27 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:gol ( \"apples\"@33:39 / FOOD )\r\n\t)\r\n\t:inform ( ac-5-1 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-9 \"pecans\"@11:17 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Bake in preheated oven for 40 to 50 minutes, or until topping is golden brown, and apples are tender.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Bake\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:loc ( tool-6-0 \"preheated oven\"@11:25 / TOOL )\r\n\t\t:duration ( dur-6-0 \"40 to 50 minutes\"@30:46 / DUR )\r\n\t\t:until ( cond-6-0 \"until topping is golden brown, and apples are tender\"@51:103 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

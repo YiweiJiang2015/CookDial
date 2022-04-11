@@ -1,0 +1,108 @@
+{
+    "id": "011",
+    "title": "Deep Fried Turkey",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "3 gallons peanut oil for frying, or as needed",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"3 gallons peanut oil for frying, or as needed\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1 (12 pound) whole turkey, neck and giblets removed",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1 (12 pound) whole turkey, neck and giblets removed\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/4 cup Creole seasoning",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/4 cup Creole seasoning\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1 white onion",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1 white onion\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) In a large stockpot or turkey fryer, heat oil to 400 degrees F (200 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"heat\"@40:44 / AC\r\n\t\t:ppt ( ing-0 \"oil\"@45:48 / FOOD )\r\n\t\t:heat ( temp-0-0 \"400 degrees F\"@52:65 / TEMPERATURE )\r\n\t\t:heat ( temp-0-1 \"200 degrees C\"@67:80 / TEMPERATURE )\r\n\t\t:loc ( tool-0-0 \"turkey fryer\"@26:38 / TOOL ) \r\n\t\t:loc ( tool-0-1 \"a large stockpot\"@6:22 / TOOL )\r\n\t\t:_result ( heated-oil )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Be sure to leave room for the turkey, or the oil will spill over.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"leave\"@14:19 / AC\r\n\t\t:ppt ( \"room\"@20:24 / OTHER )\r\n\t\t:prp ( ing-1 \"the turkey\"@29:39 / FOOD )\r\n\t\t:todo ( cond-1-0 \"or the oil will spill over\"@-1:-1 / CONDITION_CLAUSE )\r\n\t\t:_result ( oil-in-pan )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Layer a large platter with food-safe paper bags.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Layer\"@3:8 / AC\r\n\t\t:ppt ( tool-2-0 \"a large platter\"@9:24 / TOOL )\r\n\t\t:instrument ( tool-2-1 \"food-safe paper bags\"@30:50 / TOOL )\r\n\t\t:_result ( platter-with-bags )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Rinse turkey, and thoroughly pat dry with paper towels.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Rinse\"@3:8 / AC\r\n\t\t:ppt ( \"turkey\"@9:15 / FOOD )\r\n\t\t:_result ( rinsed-turkey )\r\n\t)\r\n\t:inform ( ac-3-1 \"pat\"@32:35 / AC\r\n\t\t:ppt ( rinsed-turkey / FOOD )\r\n\t\t:mnr ( \"dry\"@36:39 / OTHER )\r\n\t\t:instrument ( tool-3-0 \"paper towels\"@45:57 / TOOL )\r\n\t\t:_result ( dry-turkey )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Rub Creole seasoning over turkey inside and out.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Rub\"@3:6 / AC\r\n\t\t:ppt ( ing-2 \"Creole seasoning\"@7:23 / FOOD )\r\n\t\t:gol ( dry-turkey \"turkey\"@29:35 / FOOD )\r\n\t\t:_result ( rubbed-turkey )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Make sure the hole at the neck is open at least 2 inches so the oil can flow freely through the bird.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( \"is\"@-1:-1 / COPULA\r\n\t\t:subj ( \"the hole at the neck\"@-1:-1 / OTHER )\r\n\t\t:obj ( \"open at least 2 inches\"@-1:-1 / OTHER )\r\n\t\t:prp ( purp-5-0 \"so the oil can flow freely through the bird\"@60:103 / PURPOSE_CLAUSE )\r\n\t\t:_result ( turkey-with-hole )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Place the whole onion and turkey in drain basket.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Place\"@3:8 / AC\r\n\t\t:ppt ( ing-3 \"the whole onion\"@9:24 / FOOD )\r\n\t\t:ppt ( turkey-with-hole \"turkey\"@29:35 / FOOD )\r\n\t\t:gol ( tool-6-0 \"drain basket\"@39:51 / TOOL )\r\n\t\t:_result ( onion-turkey-in-basket )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) The turkey should be placed in basket neck end first.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"placed\"@-1:-1 / AC\r\n\t\t:ppt ( \"The turkey\"@-1:-1 / FOOD )\r\n\t\t:gol ( tool-7-0 \"basket\"@-1:-1 / TOOL )\r\n\t\t:mnr ( \"neck end first\"@-1:-1 / OTHER )\r\n\t\t:_result ( placed-turkey )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Slowly lower basket into hot oil to completely cover turkey.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"lower\"@10:15 / AC\r\n\t\t:ppt ( tool-8-0 \"basket\"@16:22 / TOOL )\r\n\t\t:gol ( heated-oil \"hot oil\"@28:35 / FOOD )\r\n\t\t:prp ( purp-8-0 \"to completely cover turkey\"@36:62 / PURPOSE_CLAUSE )\r\n\t\t:_result ( turkey-in-oil )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Maintain the temperature of the oil at 350 degrees F (175 degrees C), and cook turkey for 3 1/2 minutes per pound, about 45 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Maintain\"@-1:-1 / AC\r\n\t\t:ppt ( \"the temperature of the oil\" / OTHER )\r\n\t\t:heat ( temp-9-0 \"350 degrees F\"@43:56 / TEMPERATURE )\r\n\t\t:heat ( temp-9-1 \"175 degrees C\"@58:71 / TEMPERATURE )\r\n\t\t:_result ( maintained-temperature )\r\n\t)\r\n\t:inform ( ac-9-1 \"cook\"@78:82 / AC\r\n\t\t:ppt ( turkey-in-oil \"turkey\"@83:89 / FOOD )\r\n\t\t:duration ( dur-9-0 \"3 1/2 minutes per pound\"@94:117 / DUR )\r\n\t\t:duration ( dur-9-1 \"45 minutes\"@125:135 / DUR )\r\n\t\t:_result ( cooked-turkey )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-10",
+            "text": "10) Carefully remove basket from oil, and drain turkey.",
+            "type": "instruction",
+            "eamr": "( inst-10 / R\r\n\t:inform ( ac-10-0 \"remove\"@14:20 / AC\r\n\t\t:ppt ( tool-10-0 \"basket\"@21:27 / TOOL )\r\n\t\t:source ( \"oil\"@33:36 / FOOD )\r\n\t\t:_result ( turkey-out-oil )\r\n\t)\r\n\t:inform ( ac-10-1 \"drain\"@42:47 / AC\r\n\t\t:ppt ( turkey-out-oil \"turkey\"@48:54 / FOOD )\r\n\t\t:_result ( drained-turkey )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-11",
+            "text": "11) Insert a meat thermometer into the thickest part of the thigh; the internal temperature must be 180 degrees F (80 degrees C).",
+            "type": "instruction",
+            "eamr": "( inst-11 / R\r\n\t:inform ( ac-11-0 \"Insert\"@4:10 / AC\r\n\t\t:ppt ( tool-11-0 \"a meat thermometer\"@11:29 / TOOL )\r\n\t\t:gol ( drained-turkey \"the thickest part of the thigh\"@35:65 / FOOD )\r\n\t\t:_result ( inserted-thermometer )\r\n\t)\r\n\t:inform ( \"must be\"@67:91 / COPULA\r\n\t\t:subj ( \"the internal temperature\"@-1:-1 / OTHER )\r\n\t\t:obj ( temp-11-0 \"180 degrees F\"@100:113 / TEMPERATURE )\r\n\t\t:obj ( temp-11-1 \"80 degrees C\"@115:127 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-12",
+            "text": "12) Finish draining turkey on the prepared platter.",
+            "type": "instruction",
+            "eamr": "( inst-12 / R\r\n\t:inform ( ac-12-0 \"Finish draining\"@11:19 / AC\r\n\t\t:ppt ( drained-turkey \"turkey\"@20:26 / FOOD )\r\n\t\t:loc ( tool-12-0 \"the prepared platter\"@30:50 / TOOL )\r\n\t\t:_result ( FINAL_PRODUCT )\r\n\t)\r\n)"
+        }
+    ]
+}

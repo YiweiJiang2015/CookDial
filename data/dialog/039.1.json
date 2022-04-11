@@ -1,0 +1,340 @@
+{
+    "messages": [
+        {
+            "utt_id": "utt-0",
+            "utterance": "Hello. I'm all set to make the gingerbread men, tell me what to do!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"greeting; req_start;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-1",
+            "utterance": "First, take a large bowl.",
+            "bot": true,
+            "annotations": "fetch(inst-0, [tool-0-0]);"
+        },
+        {
+            "utt_id": "utt-2",
+            "utterance": "Ok. I'll do that, but could you first guide me through the ingredients, so I can gather everything I need? I've taken the bowl by the way.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_ingredient_list; confirm;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-3",
+            "utterance": "Ok. But the ingredient list is a bit long with 12 ingredients. Would you like me to specify the ingredients when they are needed?",
+            "bot": true,
+            "annotations": "sum_ingredient_list();\r\npropose_skip_ing_list();"
+        },
+        {
+            "utt_id": "utt-4",
+            "utterance": "Ok. that's fine, thanks. Let's get on with it. How long will it take do you think?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm; thank; other;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-5",
+            "utterance": "Sorry, I cannot answer that.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-6",
+            "utterance": "All right thanks. So what do I do with the bowl?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-7",
+            "utterance": "Now, put 1/2 cup margarine and 1/2 cup sugar into the bowl. Then cream them until smooth.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-0);"
+        },
+        {
+            "utt_id": "utt-8",
+            "utterance": "You mean with a mixer?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_tool;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-9",
+            "utterance": "Sorry, I cannot answer it. Shall we continue?",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-10",
+            "utterance": "Er... What I meant is - do I need to cream it with a beater or with an electric mixer? The margarine is quite hard.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_tool;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-0\", \"tracker_requested_step_num\": 13}"
+        },
+        {
+            "utt_id": "utt-11",
+            "utterance": "Sorry, I cannot answer this question.",
+            "bot": true,
+            "annotations": "fence();"
+        },
+        {
+            "utt_id": "utt-12",
+            "utterance": "Ok. done!  What's up next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-0\", \"tracker_completed_step_num\": 13, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-13",
+            "utterance": "Now add 1/2 cup molasses and 1 egg yolk to the bowl. Stir them well.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-1);"
+        },
+        {
+            "utt_id": "utt-14",
+            "utterance": "All right, what do I do with the egg-white? Do I keep it?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-1\", \"tracker_requested_step_num\": 14}"
+        },
+        {
+            "utt_id": "utt-15",
+            "utterance": "Sorry, I cannot find the answer from this recipe. Shall we continue?",
+            "bot": true,
+            "annotations": "fence();\r\npropose_next_instruction();"
+        },
+        {
+            "utt_id": "utt-16",
+            "utterance": "No problem, yes, please, let's continue.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"affirm;\", \"tracker_completed_step\": \"inst-1\", \"tracker_completed_step_num\": 14, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-17",
+            "utterance": "Now in another place, you shall combine 8 ingredients. I will read 3 items one by one.",
+            "bot": true,
+            "annotations": "simplify_begin(ac-2-0);\r\n"
+        },
+        {
+            "utt_id": "utt-18",
+            "utterance": "Ok. I'm waiting.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-19",
+            "utterance": "First, combine 2 cups sifted all-purpose flour, 1/2 teaspoon salt and 1/2 teaspoon baking powder.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-2-0, [ing-4, ing-5, ing-6]);"
+        },
+        {
+            "utt_id": "utt-20",
+            "utterance": "What was the third ingredient, and how much do I need?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat; req_amount;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"ing-6\", \"tracker_requested_step_num\": 7}"
+        },
+        {
+            "utt_id": "utt-21",
+            "utterance": "That is baking powder. You need 1/2 teaspoon of it.",
+            "bot": true,
+            "annotations": "repeat(ing-6);\r\n"
+        },
+        {
+            "utt_id": "utt-22",
+            "utterance": "OK?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-23",
+            "utterance": "Then add 1/2 teaspoon baking soda, 1/2 teaspoon ground cinnamon and 1 teaspoon ground cloves.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-2-0, [ing-7, ing-8, ing-9]);"
+        },
+        {
+            "utt_id": "utt-24",
+            "utterance": "Sorry, what kind of cloves?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_repeat;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"ing-9\", \"tracker_requested_step_num\": 10}"
+        },
+        {
+            "utt_id": "utt-25",
+            "utterance": "That is ground cloves.",
+            "bot": true,
+            "annotations": "repeat(ing-9);"
+        },
+        {
+            "utt_id": "utt-26",
+            "utterance": "Oh, I don't have that, I'll just leave it out. Could you repeat the first two items, please?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"other; req_repeat;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-27",
+            "utterance": "Baking soda and ground cinnamon. Do you have them?",
+            "bot": true,
+            "annotations": "repeat(ac-2-0, [ing-7, ing-8]);\r\nverify(ac-2-0, [ing-7, ing-8]);"
+        },
+        {
+            "utt_id": "utt-28",
+            "utterance": "Yes, sure, how much exactly?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_amount;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"ing-7\", \"tracker_requested_step_num\": 8}"
+        },
+        {
+            "utt_id": "utt-29",
+            "utterance": "1/2 teaspoon baking soda and 1/2 teaspoon ground cinnamon.",
+            "bot": true,
+            "annotations": "inform_amount(ing-7);\r\ninform_amount(ing-8);"
+        },
+        {
+            "utt_id": "utt-30",
+            "utterance": "Okay, I added them. I used a bit less cinnamon, because I don't really like it..",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"ing-8\", \"tracker_completed_step_num\": 9, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-31",
+            "utterance": "That is fine. Good. The final 2 items are 1 teaspoon ginger and 1/2 teaspoon ground nutmeg.",
+            "bot": true,
+            "annotations": "simplify_continue(ac-2-0, [ing-10, ing-11]);"
+        },
+        {
+            "utt_id": "utt-32",
+            "utterance": "Ok. finished!  Do I stir it all together now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-2\", \"tracker_requested_step_num\": 15}"
+        },
+        {
+            "utt_id": "utt-33",
+            "utterance": "Yes, and you should blend them into the molasses mixture until smooth.",
+            "bot": true,
+            "annotations": "affirm();\r\ninform_instruction(ac-2-1);"
+        },
+        {
+            "utt_id": "utt-34",
+            "utterance": "All right, that's done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-2\", \"tracker_completed_step_num\": 15, \"tracker_requested_step\": \"inst-3\", \"tracker_requested_step_num\": 16}"
+        },
+        {
+            "utt_id": "utt-35",
+            "utterance": "Cover the mixture and chill for one hour.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-3);"
+        },
+        {
+            "utt_id": "utt-36",
+            "utterance": "All right, I'll put it in the fridge. Hello. I'm back, so, what now?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-3\", \"tracker_completed_step_num\": 16, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-37",
+            "utterance": "Now you can preheat the oven to 350 degrees Fahrenheit.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-4);"
+        },
+        {
+            "utt_id": "utt-38",
+            "utterance": "Er..  what's that in Celcius?  Sorry, my oven doesn't indicate Fahrenheit.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_temperature;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-4\", \"tracker_requested_step_num\": 17}"
+        },
+        {
+            "utt_id": "utt-39",
+            "utterance": "It is 175 degrees Celsius.",
+            "bot": true,
+            "annotations": "inform_temperature(temp-4-1);"
+        },
+        {
+            "utt_id": "utt-40",
+            "utterance": "Thanks! All right, the oven is heating.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"thank; confirm;\", \"tracker_completed_step\": \"inst-4\", \"tracker_completed_step_num\": 17, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-41",
+            "utterance": "You can prepare a floured surface. Then we wait for the dough until 1 hour passes.",
+            "bot": true,
+            "annotations": "fetch(inst-5, [tool-5-0]);"
+        },
+        {
+            "utt_id": "utt-42",
+            "utterance": "Sorry, I already left the dough to chill in the fridge for an hour, is that what you meant?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-5\", \"tracker_requested_step_num\": 18}"
+        },
+        {
+            "utt_id": "utt-43",
+            "utterance": "Good. Now you can put it on the floured surface. Roll the dough to 1/4 inch thickness.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-5);"
+        },
+        {
+            "utt_id": "utt-44",
+            "utterance": "Okay, that's done.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-5\", \"tracker_completed_step_num\": 18, \"tracker_requested_step\": \"inst-6\", \"tracker_requested_step_num\": 19}"
+        },
+        {
+            "utt_id": "utt-45",
+            "utterance": "Ues a cookie cutter to cut the dough into shapes as you want.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-6);"
+        },
+        {
+            "utt_id": "utt-46",
+            "utterance": "Great. that was fun.  Anything else, or do I put them into the oven?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm; req_instruction;\", \"tracker_completed_step\": \"inst-6\", \"tracker_completed_step_num\": 19, \"tracker_requested_step\": \"inst-7\", \"tracker_requested_step_num\": 20}"
+        },
+        {
+            "utt_id": "utt-47",
+            "utterance": "No, there are still something we have to accomplish. Place these cookies 2 inches apart on ungreased cookie sheets.",
+            "bot": true,
+            "annotations": "negate();\r\ninform_instruction(inst-7);"
+        },
+        {
+            "utt_id": "utt-48",
+            "utterance": "Ok. what's next?",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"req_instruction;\", \"tracker_completed_step\": \"inst-7\", \"tracker_completed_step_num\": 20, \"tracker_requested_step\": \"inst-8\", \"tracker_requested_step_num\": 21}"
+        },
+        {
+            "utt_id": "utt-49",
+            "utterance": "Now you can put cookies in the oven and bake for 8 to 10 minutes.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-8);"
+        },
+        {
+            "utt_id": "utt-50",
+            "utterance": "Ah, all right, I though we needed to do something else first. They're baking now.",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-8\", \"tracker_completed_step_num\": 21, \"tracker_requested_step\": \"inst-9\", \"tracker_requested_step_num\": 22}"
+        },
+        {
+            "utt_id": "utt-51",
+            "utterance": "When the timer runs out, you can remove the cookies from sheets to wire racks.",
+            "bot": true,
+            "annotations": "inform_instruction(inst-9);"
+        },
+        {
+            "utt_id": "utt-52",
+            "utterance": "That's done!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"confirm;\", \"tracker_completed_step\": \"inst-9\", \"tracker_completed_step_num\": 22, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-53",
+            "utterance": "When cookies are cool, you can frost and decorate them as you desire. This is the final step. Do you need other help?",
+            "bot": true,
+            "annotations": "inform_instruction(inst-10);\r\npropose_other_help();"
+        },
+        {
+            "utt_id": "utt-54",
+            "utterance": "No, I think they worked out perfectly, I'll add the toppings, thanks!",
+            "bot": false,
+            "annotations": "{\"section\": \"inst\", \"intent\": \"negate; thank;\", \"tracker_completed_step\": \"inst-10\", \"tracker_completed_step_num\": 23, \"tracker_requested_step\": \"inst-10\", \"tracker_requested_step_num\": 23}"
+        },
+        {
+            "utt_id": "utt-55",
+            "utterance": "Enjoy! Bye!",
+            "bot": true,
+            "annotations": "enjoy();\r\ngoodbye();"
+        }
+    ]
+}

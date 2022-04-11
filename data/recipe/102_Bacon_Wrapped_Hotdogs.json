@@ -1,0 +1,48 @@
+{
+    "id": "102",
+    "title": "Bacon Wrapped Hotdogs",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "10 hot dogs, cut into thirds",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"10 hot dogs, cut into thirds\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "15 slices bacon, cut in half",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"15 slices bacon, cut in half\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/2 cup packed brown sugar",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/2 cup packed brown sugar\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Wrap 1/2 slice of bacon around each piece of hot dog.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Wrap\"@3:7 / AC\r\n\t\t:ppt ( \"1/2 slice of bacon\"@8:26 / FOOD )\r\n\t\t:gol ( ing-0 \"each piece of hot dog\"@34:55 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Secure the bacon with a toothpick.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Secure\"@3:9 / AC\r\n\t\t:ppt ( ing-1 \"the bacon\"@10:19 / FOOD )\r\n\t\t:instrument ( tool-1-0 \"a toothpick\"@25:36 / TOOL )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) Place hot dogs into a slow cooker on low heat.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"Place\"@-1:-1 / AC\r\n\t\t:ppt ( \"hot dogs\"@-1:-1 / FOOD )\r\n\t\t:gol ( tool-2-0 \"a slow cooker\"@23:36 / TOOL )\r\n\t\t:heat ( temp-2-0 \"low heat\"@40:48 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Pour brown sugar over hot dogs, let cook for 5 to 6 hours; until the bacon is cooked.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Pour\"@3:7 / AC\r\n\t\t:ppt ( ing-2 \"brown sugar\"@8:19 / FOOD )\r\n\t\t:gol ( \"hot dogs\"@25:33 / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"cook\"@39:43 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:duration ( dur-3-0 \"5 to 6 hours\"@48:60 / DUR )\r\n\t\t:until ( cond-3-0 \"until the bacon is cooked\"@62:87 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

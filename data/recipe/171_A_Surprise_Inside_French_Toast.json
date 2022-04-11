@@ -1,0 +1,114 @@
+{
+    "id": "171",
+    "title": "A Surprise Inside French Toast",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "6 (2 inch thick) slices French bread",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"6 (2 inch thick) slices French bread\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "1/4 cup ricotta cheese",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"1/4 cup ricotta cheese\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "1/4 cup cottage cheese, whipped",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"1/4 cup cottage cheese, whipped\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "2 tablespoons lowfat cream cheese",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"2 tablespoons lowfat cream cheese\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 teaspoons white sugar",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 teaspoons white sugar\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "2 teaspoons vanilla extract",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"2 teaspoons vanilla extract\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "3 cups egg substitute",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"3 cups egg substitute\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1/4 cup evaporated milk",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1/4 cup evaporated milk\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Cut a pocket in each slice of bread.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Cut\"@3:6 / AC\r\n\t\t:ppt ( \"a pocket\"@7:15 / OTHER )\r\n\t\t:source ( ing-0 \"each slice of bread\"@19:38 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Open carefully",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Open\"@3:7 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) In a large bowl, combine the ricotta, cottage cheese and cream cheese.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"combine\"@20:27 / AC\r\n\t\t:loc ( tool-2-0 \"a large bowl\"@6:18 / TOOL )\r\n\t\t:ppt ( ing-1 \"the ricotta\"@28:39 / FOOD )\r\n\t\t:ppt ( ing-2 \"cottage cheese\"@41:48 / FOOD )\r\n\t\t:ppt ( ing-3 \"cream cheese\"@60:72 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Add the sugar and flavoring extract and beat until smooth.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"Add\"@3:6 / AC\r\n\t\t:ppt ( ing-4 \"the sugar\"@7:16 / FOOD )\r\n\t\t:ppt ( ing-5 \"flavoring extract\"@21:38 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"beat\"@43:47 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t\t:until ( cond-3-0 \"until smooth\"@48:60 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Spread the mixture evenly into each bread pocket.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"Spread\"@3:9 / AC\r\n\t\t:ppt ( \"the mixture\"@10:21 / FOOD )\r\n\t\t:gol ( \"each bread pocket\"@34:51 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Beat together the egg substitutes and milk.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Beat\"@3:7 / AC\r\n\t\t:ppt ( ing-6 \"the egg substitutes\"@17:36 / FOOD )\r\n\t\t:ppt ( ing-7 \"milk\"@41:45 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-6",
+            "text": "6) Dip the slices of bread in the egg mixture.",
+            "type": "instruction",
+            "eamr": "( inst-6 / R\r\n\t:inform ( ac-6-0 \"Dip\"@3:6 / AC\r\n\t\t:ppt ( \"the slices of bread\"@7:26 / FOOD )\r\n\t\t:gol ( \"the egg mixture\"@30:45 / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-7",
+            "text": "7) Heat a nonstick pan over medium-high heat.",
+            "type": "instruction",
+            "eamr": "( inst-7 / R\r\n\t:inform ( ac-7-0 \"Heat\"@3:7 / AC\r\n\t\t:ppt ( tool-7-0 \"a nonstick pan\"@8:22 / TOOL )\r\n\t\t:heat ( temp-7-0 \"medium-high heat\"@28:44 / TEMPERATURE )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-8",
+            "text": "8) Coat with cooking spray.",
+            "type": "instruction",
+            "eamr": "( inst-8 / R\r\n\t:inform ( ac-8-0 \"Coat\"@3:7 / AC\r\n\t\t:ppt ( \"cooking spray\"@13:26 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-9",
+            "text": "9) Cook the toast on each side for about 3 to 4 minutes per side until golden brown.",
+            "type": "instruction",
+            "eamr": "( inst-9 / R\r\n\t:inform ( ac-9-0 \"Cook\"@4:8 / AC\r\n\t\t:ppt ( \"the toast\"@9:18 / FOOD )\r\n\t\t:mnr ( \"on each side\"@22:31 / OTHER )\r\n\t\t:duration ( dur-9-0 \"3 to 4 minutes\"@42:56 / DUR )\r\n\t\t:until ( cond-9-0 \"until golden brown\"@66:84 / CONDITION_CLAUSE )\r\n\t)\r\n)"
+        }
+    ]
+}

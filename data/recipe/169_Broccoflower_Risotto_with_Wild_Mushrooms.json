@@ -1,0 +1,108 @@
+{
+    "id": "169",
+    "title": "Broccoflower Risotto with Wild Mushrooms",
+    "content": [
+        {
+            "id": "ing-0",
+            "text": "1 tablespoon butter, unsalted",
+            "type": "ingredient",
+            "eamr": "( ing-0 \"1 tablespoon butter, unsalted\" )"
+        },
+        {
+            "id": "ing-1",
+            "text": "2 cups Broccoflower, diced",
+            "type": "ingredient",
+            "eamr": "( ing-1 \"2 cups Broccoflower, diced\" )"
+        },
+        {
+            "id": "ing-2",
+            "text": "2 cups assorted wild mushrooms, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-2 \"2 cups assorted wild mushrooms, chopped\" )"
+        },
+        {
+            "id": "ing-3",
+            "text": "1/2 white onion, chopped",
+            "type": "ingredient",
+            "eamr": "( ing-3 \"1/2 white onion, chopped\" )"
+        },
+        {
+            "id": "ing-4",
+            "text": "2 tablespoons garlic, minced",
+            "type": "ingredient",
+            "eamr": "( ing-4 \"2 tablespoons garlic, minced\" )"
+        },
+        {
+            "id": "ing-5",
+            "text": "3 cups Arborio rice",
+            "type": "ingredient",
+            "eamr": "( ing-5 \"3 cups Arborio rice\" )"
+        },
+        {
+            "id": "ing-6",
+            "text": "9 cups chicken stock, unsalted",
+            "type": "ingredient",
+            "eamr": "( ing-6 \"9 cups chicken stock, unsalted\" )"
+        },
+        {
+            "id": "ing-7",
+            "text": "1 pinch fresh ground nutmeg",
+            "type": "ingredient",
+            "eamr": "( ing-7 \"1 pinch fresh ground nutmeg\" )"
+        },
+        {
+            "id": "ing-8",
+            "text": "1/4 cup fresh herbs; tarragon, parsley, chives, diced",
+            "type": "ingredient",
+            "eamr": "( ing-8 \"1/4 cup fresh herbs; tarragon, parsley, chives, diced\" )"
+        },
+        {
+            "id": "ing-9",
+            "text": "1/4 cup Parmesan cheese",
+            "type": "ingredient",
+            "eamr": "( ing-9 \"1/4 cup Parmesan cheese\" )"
+        },
+        {
+            "id": "ing-10",
+            "text": "Salt and pepper to taste",
+            "type": "ingredient",
+            "eamr": "( ing-10 \"Salt and pepper to taste\" )"
+        },
+        {
+            "id": "inst-0",
+            "text": "0) Melt butter and saute Broccoflower, mushrooms, onions and garlic for 10 minutes.",
+            "type": "instruction",
+            "eamr": "( inst-0 / R\r\n\t:inform ( ac-0-0 \"Melt\"@3:7 / AC\r\n\t\t:ppt ( ing-0 \"butter\"@8:14 / FOOD )\r\n\t)\r\n\t:inform ( ac-0-1 \"saute\"@19:24 / AC\r\n\t\t:ppt ( ing-1 \"Broccoflower\"@25:37 / FOOD )\r\n\t\t:ppt ( ing-2 \"mushrooms\"@39:48 / FOOD )\r\n\t\t:ppt ( ing-3 \"onions\"@50:56 / FOOD )\r\n\t\t:ppt ( ing-4 \"garlic\"@61:67 / FOOD )\r\n\t\t:duration ( dur-0-0 \"10 minutes\"@72:82 / DUR )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-1",
+            "text": "1) Remove sauteed ingredients and place aside.",
+            "type": "instruction",
+            "eamr": "( inst-1 / R\r\n\t:inform ( ac-1-0 \"Remove\"@3:9 / AC\r\n\t\t:ppt ( \"sauteed ingredients\"@10:29 / FOOD )\r\n\t)\r\n\t:inform ( ac-1-1 \"place aside\"@34:45 / AC\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-2",
+            "text": "2) In same pan, cook the rice by adding chicken stock one-cup at a time stirring until well incorporated before adding the next cup.",
+            "type": "instruction",
+            "eamr": "( inst-2 / R\r\n\t:inform ( ac-2-0 \"cook\"@16:20 / AC\r\n\t\t:loc ( tool-2-0 \"same pan\"@6:14 / TOOL )\r\n\t\t:ppt ( ing-5 \"the rice\"@21:29 / FOOD )\r\n\t\t:simultaneous ( ac-2-1 \"adding\"@33:39 / AC\r\n\t\t\t:ppt ( ing-6 \"chicken stock\"@40:53 / FOOD )\r\n\t\t\t:mnr ( \"one-cup at a time\"@54:71 / OTHER )\r\n\t\t\t:simultaneous ( ac-2-2 \"stirring\"@72:80 / AC\r\n\t\t\t\t:until ( cond-2-0 \"until well incorporated\"@81:104 / CONDITION_CLAUSE )\r\n\t\t\t\t:duration ( cond-2-1 \"before adding the next cup\"@105:131 / CONDITION_CLAUSE )\r\n\t\t\t)\r\n\t\t)\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-3",
+            "text": "3) Once chicken stock is absorbed and rice is tender, stir in nutmeg, herbs and season with salt and pepper.",
+            "type": "instruction",
+            "eamr": "( inst-3 / R\r\n\t:inform ( ac-3-0 \"stir in\"@54:61 / AC\r\n\t\t:when ( cond-3-0 \"Once chicken stock is absorbed and rice is tender\"@3:52 / CONDITION_CLAUSE )\r\n\t\t:ppt ( ing-7 \"nutmeg\"@62:68 / FOOD )\r\n\t\t:ppt ( ing-8 \"herbs\"@70:75 / FOOD )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n\t:inform ( ac-3-1 \"season\"@80:86 / AC\r\n\t\t:ppt ( ing-10 \"salt and pepper\"@-1:-1 / FOOD )\r\n\t\t:gol ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-4",
+            "text": "4) Once rice risotto is cooked, stir in the sauteed ingredients, salt and pepper to taste.",
+            "type": "instruction",
+            "eamr": "( inst-4 / R\r\n\t:inform ( ac-4-0 \"stir in\"@32:39 / AC\r\n\t\t:ppt ( \"the sauteed ingredients\"@40:63 / FOOD )\r\n\t\t:ppt ( ing-10 \"salt and pepper\"@65:80 / FOOD )\r\n\t\t:prp ( purp-4-0 \"to taste\"@81:89 / PURPOSE_CLAUSE )\r\n\t\t:duration ( cond-4-0 \"Once rice risotto is cooked\"@3:30 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        },
+        {
+            "id": "inst-5",
+            "text": "5) Stir in Parmesan cheese before serving.",
+            "type": "instruction",
+            "eamr": "( inst-5 / R\r\n\t:inform ( ac-5-0 \"Stir in\"@3:10 / AC\r\n\t\t:ppt ( ing-9 \"Parmesan cheese\"@11:26 / FOOD )\r\n\t\t:duration ( cond-5-0 \"before serving\"@27:41 / CONDITION_CLAUSE )\r\n\t\t:ppt ( NULL / FOOD )\r\n\t)\r\n)"
+        }
+    ]
+}
