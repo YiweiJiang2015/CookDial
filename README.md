@@ -280,7 +280,13 @@ tracker_requested_step  Accuracy                       0.881696
 
 If our work is helpful, please cite
 
-> @TODO{jiang-etal-cookdial,
+> @article{jiang2022cookdial,
+  title={CookDial: a dataset for task-oriented dialogs grounded in procedural documents},
+  author={Jiang, Yiwei and Zaporojets, Klim and Deleu, Johannes and Demeester, Thomas and Develder, Chris},
+  journal={Applied Intelligence},
+  pages={1--19},
+  year={2022},
+  publisher={Springer}
 > }
 
 ## Issues
